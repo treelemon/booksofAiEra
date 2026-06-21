@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "../searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e961be59.js"></script>
@@ -194,6 +194,22 @@
 <p><strong>Gemini (Google DeepMind, 2023–):</strong> Google’s counter-strike. After years of internal caution and the shocking loss of public AI leadership to OpenAI, Google merged DeepMind and Google Brain into a single unit. Gemini Ultra (December 2023) was the first model to outperform GPT-4 on MMLU (90.0% vs 86.4%). Gemini 2.5 Pro (2025) introduced “thinking mode” natively and a 1M-token context window. DeepMind’s heritage — AlphaGo, AlphaFold — gave Gemini an edge in scientific reasoning.</p>
 <p><strong>Llama (Meta, 2023–):</strong> The democratization bomb. Meta released LLaMA (65B parameters) to researchers under a non-commercial license in February 2023. Within weeks, it was leaked to the public on 4chan. The floodgates opened: fine-tuned variants (Alpaca, Vicuna, WizardLM) multiplied. Meta leaned in, releasing LLaMA 2 (July 2023) with a commercial license, and LLaMA 3 (2024) at 405B parameters matching GPT-4. The open-source ecosystem — built on LLaMA’s foundation — became a parallel AI universe.</p>
 <p><strong>DeepSeek (China, 2024–2025):</strong> The cost-efficiency revolution. A quiet Chinese quant-trading firm’s AI lab dropped a series of models that shocked the industry. DeepSeek-V2 (2024) trained for $2.78M — roughly 1/70th of GPT-4’s estimated cost. DeepSeek-V3 (2025, 671B total, 37B active per token) used an MoE architecture so efficient it trained on just over 2,000 GPUs. Then DeepSeek-R1 (January 2025) matched OpenAI’s o1 at reasoning — and released the paper describing how they did it. The industry gasped. The US stock market lost $500 billion in a single day. The geopolitical narrative shifted: China was not following — it was innovating.</p>
+<p><strong>The competitor landscape at a glance:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Lab</th><th>Origin Story</th><th>Key Innovation</th><th>Strengths</th><th>Vulnerability</th></tr>
+</thead>
+<tbody>
+<tr><td>OpenAI</td><td>Non-profit turned capped-profit</td><td>RLHF, scaling-first, o-series reasoning</td><td>Research velocity, brand, ecosystem</td><td>Talent retention, governance instability</td></tr>
+<tr><td>Anthropic</td><td>OpenAI safety schism (2021)</td><td>Constitutional AI, RSP framework</td><td>Safety as differentiator, coding quality</td><td>Narrow product line, slower releases</td></tr>
+<tr><td>Google DeepMind</td><td>Merger of DeepMind + Google Brain</td><td>Native multimodality, 1M-token context</td><td>Data scale (YouTube, Images, Earth), science heritage</td><td>Bureaucracy, slow culture</td></tr>
+<tr><td>Meta (LLaMA)</td><td>Zuckerberg’s open-source bet</td><td>Open-weight licensing, ecosystem play</td><td>Community, democratization, zero licensing cost</td><td>No direct revenue model</td></tr>
+<tr><td>DeepSeek</td><td>Chinese quant firm (High-Flyer)</td><td>MoE efficiency, cost 1/70th of GPT-4</td><td>Cost leadership, open science, engineering culture</td><td>Geopolitical risk, hardware constraints</td></tr>
+</tbody>
+</table>
+</div>
+<p>Each lab placed a different bet on what would matter most: scale (OpenAI), safety (Anthropic), data (Google), openness (Meta), or efficiency (DeepSeek). The 2026 results suggest all five bets were partially correct — and the frontier belongs to those who can combine multiple advantages.</p>
 <h2 id="33-the-reasoning-model-breakthrough"><a class="header" href="#33-the-reasoning-model-breakthrough">3.3 The Reasoning Model Breakthrough</a></h2>
 <p>In September 2024, OpenAI released o1 — the first model that “thinks” before answering. The rumors had called it “Strawberry” or “Q*.” The reality was stranger and more important.</p>
 <p><strong>How reasoning models work:</strong></p>
@@ -209,6 +225,24 @@
 <li><strong>Gemini 2.5 Pro “thinking” (2025):</strong> DeepMind’s natively thinking model with 1M token context.</li>
 </ul>
 <p><strong>Why it matters:</strong> We are no longer just scaling training compute. Reasoning models introduced <strong>test-time compute</strong> as a new dimension. A model can now “spend” more compute to think harder about hard problems. This changes everything — cost curves, latency trade-offs, and what we consider possible.</p>
+<p><strong>The reasoning model timeline:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Model</th><th>Date</th><th>Test-Time Compute</th><th>AIME Score</th><th>Key Finding</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-4</td><td>Mar 2023</td><td>None (standard generation)</td><td>12%</td><td>Baseline</td></tr>
+<tr><td>o1-preview</td><td>Sep 2024</td><td>Internal chain-of-thought</td><td>83%</td><td>7× improvement — reasoning is real</td></tr>
+<tr><td>o1 full</td><td>Dec 2024</td><td>Extended thinking</td><td>~90%</td><td>Coding and tool use improved</td></tr>
+<tr><td>DeepSeek R1</td><td>Jan 2025</td><td>Open-source reasoning</td><td>~80%</td><td>Matched o1 at 1/20th cost; published methods</td></tr>
+<tr><td>o3</td><td>Feb 2025</td><td>Multi-branch search + verification</td><td>94%</td><td>87.5% on ARC-AGI (approaching human ceiling)</td></tr>
+<tr><td>Claude Sonnet 4</td><td>Apr 2025</td><td>Long-context reasoning</td><td>~85%</td><td>Stronger on tool orchestration</td></tr>
+<tr><td>Gemini 2.5 Pro</td><td>2025</td><td>Native thinking + 1M context</td><td>82%</td><td>Best at long-document reasoning</td></tr>
+</tbody>
+</table>
+</div>
+<p>The separation between “training compute” and “inference compute” was the most important architectural shift since the transformer itself. Models could now think harder when the problem demanded it — and spend less when it didn’t.</p>
 <h2 id="34-the-capability-trajectory"><a class="header" href="#34-the-capability-trajectory">3.4 The Capability Trajectory</a></h2>
 <p>The pace of improvement between 2024 and 2025 was unlike anything in the history of technology:</p>
 <div class="table-wrapper">

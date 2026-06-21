@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5cb007d1.js";
+            window.path_to_searchindex_js = "../searchindex-351d2851.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-1d9df444.js"></script>
@@ -203,6 +203,22 @@
 <p><strong>Figure 02（Brett Adcock）：</strong> Figure Robotics 与 OpenAI 合作，将 GPT-4 的推理能力放入人形身体。2024 年，一个病毒式演示显示 Figure 02 与人类对话：“你看到了什么？”——“我看到一个盘子上的红苹果。”——“你能把它递给我吗？”——机器人拿起苹果并递了过去。演示中的一些动作是远程操作的，但推理是真实的。到 2026 年，Figure 02 可以在 BMW 工厂自主工作 8 小时轮班。</p>
 <p><strong>Physical Intelligence（π0，2024）：</strong> 由 <strong>Chelsea Finn</strong>（Stanford）和 <strong>Sergey Levine</strong>（UC Berkeley）创立的创业公司发布了 π0——一个在互联网数据和机器人数据上训练的视觉-语言-行动模型。演示：π0 看人类叠了一次衣服，然后自己叠了衣服。泛化能力是突破——一个模型可以叠衣服、装洗碗机和煮咖啡。</p>
 <p>共同主题：<strong>机器人身体中的基础模型。</strong> 推动 GPT-3 涌现的相同缩放定律正在应用于物理任务。硬件仍然昂贵（每台 Optimus 15 万美元），但软件的学习速度超出了所有人的预期。</p>
+<p><strong>到 2026 年的具身 AI 图景：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>公司/实验室</th><th>机器人</th><th>AI 方法</th><th>最佳能力</th><th>状态</th></tr>
+</thead>
+<tbody>
+<tr><td>Tesla</td><td>Optimus Gen 3</td><td>端到端视频神经网络</td><td>装配线分拣、叠衣服、崎岖地形</td><td>早期生产（约 1,000 台）</td></tr>
+<tr><td>Figure Robotics</td><td>Figure 02</td><td>GPT-4 推理 + 远程操作微调</td><td>BMW 工厂 8 小时自主轮班</td><td>生产部署</td></tr>
+<tr><td>Physical Intelligence</td><td>π0</td><td>视觉-语言-行动模型，一模型多任务</td><td>泛化——叠衣服、装洗碗机、煮咖啡</td><td>研究阶段</td></tr>
+<tr><td>Google DeepMind</td><td>RT-2 / AutoRT</td><td>互联网 + 机器人数据训练</td><td>零样本泛化到新任务</td><td>研究阶段</td></tr>
+<tr><td>Meta</td><td>Sparrow + Habitat 模拟器</td><td>仿真到现实迁移</td><td>模拟环境中的操作</td><td>研究阶段</td></tr>
+</tbody>
+</table>
+</div>
+<p>关键分野：Tesla 和 Figure 在构建特定的硬件平台，配备越来越强大的 AI 大脑。Physical Intelligence 在构建一个通用的 AI 大脑，可以工作在任何机器人上。前者是硬件竞赛；后者是软件竞赛。历史表明软件竞赛更重要。</p>
 <h2 id="85-多模态前沿"><a class="header" href="#85-多模态前沿">8.5 多模态前沿</a></h2>
 <p>到 2026 年，“多模态“的标准已大幅提升：</p>
 <div class="table-wrapper">
@@ -231,6 +247,20 @@
 <p><strong>吴恩达</strong>（DeepLearning.AI）持相反观点：“语言包含了足够多的世界结构。你可以从文本中学习物理。你可以从文本中学习因果关系。具身化有帮助，但它是可选的。”</p>
 <p>截至 2026 年的证据是混合的。处理物理任务视频的多模态模型学到了一些物理知识——物体永久性、重力、碰撞——无需具身化。但它们在与重量、质地、刚性等需要交互的属性上仍然挣扎。一个模型可以看一千个人搬箱子的视频，但在真正搬起之前不会知道箱子是重还是轻。</p>
 <p>未解决的问题：<strong>真正的理解是否需要身体？</strong> 答案将决定 AI 是仍然是一种软件技术——还是变成一种机器人技术。</p>
+<p><strong>具身化之争框架：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>立场</th><th>支持者</th><th>论点</th><th>证据</th><th>影响</th></tr>
+</thead>
+<tbody>
+<tr><td>具身化必要</td><td>Yann LeCun, Meta</td><td>智能来自物理交互；仅有语言不够</td><td>多模态模型仍在重量、质地、刚性上挣扎——需要触觉的属性</td><td>AI 需要机器人技术；纯软件路径有限</td></tr>
+<tr><td>具身化可选</td><td>吴恩达, DeepLearning.AI</td><td>语言包含足够结构来学习物理和因果</td><td>模型能通过物理基准，仅从视频理解物体永久性</td><td>AI 无需身体即可达到 AGI</td></tr>
+<tr><td>混合立场</td><td>Demis Hassabis, DeepMind</td><td>具身化有帮助但可能非必要；模拟可能足够</td><td>虚拟环境中模拟机器人学习复杂任务；向现实迁移不断改进</td><td>模拟可能弥合差距；物理具身化可选</td></tr>
+</tbody>
+</table>
+</div>
+<p>这场争论不会通过论证来解决，而是通过工程。如果纯软件模型在没有身体的情况下实现了具身任务的 AGI 级推理，LeCun 就错了。如果最强大的系统持续需要物理训练数据，Ng 就错了。2026 年的证据倾向于混合：具身化有帮助，但模拟和视频正在以超出预期的速度缩小差距。</p>
 
                     </main>
 

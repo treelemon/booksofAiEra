@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5cb007d1.js";
+            window.path_to_searchindex_js = "../searchindex-351d2851.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-1d9df444.js"></script>
@@ -191,6 +191,19 @@
 <p>他们做了最激进的赌注：抛弃循环结构。不要 RNN。不要 LSTM。只要注意力。</p>
 <p><strong>自注意力机制</strong>让每个 token 可以直接关注所有其他 token，不管距离多远。位置 1 的单词关注位置 1000 的单词，计算成本和关注相邻单词一模一样。更重要的是，训练可以完全并行化——训练时间从数周降到了几小时。</p>
 <p>这篇论文在 2017 年 NeurIPS 大会上发表，起初收获的是礼貌的关注，而非革命。很少有人意识到，这个单一的架构变化——没有循环的注意力——将解锁此后的一切。</p>
+<p><strong>Transformer 的三项关键创新：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>创新</th><th>替代了什么</th><th>实现了什么</th><th>影响</th></tr>
+</thead>
+<tbody>
+<tr><td>自注意力</td><td>循环连接（RNN/LSTM）</td><td>任意距离的直接 token 访问；训练并行化</td><td>训练时间：周→小时；长距离依赖问题解决</td></tr>
+<tr><td>位置编码</td><td>逐步顺序处理</td><td>模型无需循环即可知道 token 顺序</td><td>实现训练时的完全并行化</td></tr>
+<tr><td>多头注意力</td><td>单一注意力机制</td><td>模型同时学习多种关系类型</td><td>更丰富的表示；不同头专注于语法、语义、共指</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="23-通向涌现之路意外的年表"><a class="header" href="#23-通向涌现之路意外的年表">2.3 通向涌现之路：意外的年表</a></h2>
 <p>Transformer 并非一蹴而就。它是一个接一个的惊喜：</p>
 <p><strong>GPT-1（2018 年 6 月，1.17 亿参数）：</strong> OpenAI 证明，仅解码器 Transformer 可以通过少量微调进行语言建模并迁移到下游任务。结果虽不大，但原理极具力量。</p>
@@ -199,6 +212,22 @@
 <p><strong>GPT-3（2020 年 5 月，1750 亿参数 —— 是 GPT-2 的 100 倍）：</strong> 这是地震。1750 亿参数，在大约 570GB 文本上训练——GPT-3 能完成从未被显式训练过的任务：翻译、写代码、回答问题，只需在提示中给几个例子。这个现象被称为<strong>上下文学习</strong>，此前无人预测。伊利亚·苏茨克维后来承认团队自己也感到震惊。</p>
 <p><strong>Chinchilla（2022 年 3 月）：</strong> DeepMind 提出了反直觉的发现：在给定的算力预算下，大多数模型训练不足。最优策略是在<em>更多数据</em>上训练一个小得多的模型。Chinchilla（700 亿参数，1.4 万亿 token）超过了 GPT-3（1750 亿参数，3000 亿 token）。缩放竞赛突然有了新规则。</p>
 <p><strong>GPT-4（2023 年 3 月）：</strong> 多模态，更可靠，推理能力大幅提升。OpenAI 未透露技术细节，但确认使用了 MoE 架构。埃利泽·尤德科夫斯基在测试后评论：“这很奇怪且令人担忧……它还不比人类聪明，但在大多数任务上比大多数人更聪明。”</p>
+<p><strong>模型演变一览：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模型</th><th>日期</th><th>参数量</th><th>关键发现</th><th>惊喜程度</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-1</td><td>2018 年 6 月</td><td>1.17 亿</td><td>生成式预训练 + 微调有效</td><td>低（结果有限）</td></tr>
+<tr><td>BERT</td><td>2018 年 10 月</td><td>3.4 亿</td><td>双向掩码提升理解</td><td>低（预期中的改进）</td></tr>
+<tr><td>GPT-2</td><td>2019 年 2 月</td><td>15 亿</td><td>规模产生流畅性；因安全问题暂缓发布</td><td>中等（意外的谨慎）</td></tr>
+<tr><td>GPT-3</td><td>2020 年 5 月</td><td>1750 亿</td><td>上下文学习从规模中涌现</td><td>高（无人预料）</td></tr>
+<tr><td>Chinchilla</td><td>2022 年 3 月</td><td>700 亿</td><td>大多数模型训练不足；数据 &gt; 参数</td><td>高（重写了缩放规则）</td></tr>
+<tr><td>GPT-4</td><td>2023 年 3 月</td><td>~1.8T（MoE）</td><td>人类专家级多模态推理</td><td>中等（能力可预期，执行令人印象深刻）</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="24-缩放定律北极星"><a class="header" href="#24-缩放定律北极星">2.4 缩放定律：北极星</a></h2>
 <p>让整个竞赛加速的实证发现来自 Kaplan 等人（2020）：模型性能与三个变量之间存在平滑的幂律关系：</p>
 <ul>
@@ -225,6 +254,22 @@
 <li><strong>DeepSeek 的 MoE（2024–2025）：</strong> 混合专家架构，每个 token 仅激活部分参数，以更低成本实现更大有效规模。DeepSeek-V3（671B 总参数，37B 激活参数）和 DeepSeek-R1 证明，开源模型可以通过架构创新达到前沿性能。</li>
 </ul>
 <p>Transformer 的主导地位不再无可争议，但其核心洞见——基于注意力的架构可随数据和算力可预测地扩展——仍然是当前 AI 时代的基础。未来无论出现什么，都将以 2017 年八位研究员在谷歌白板上的革命为标杆。</p>
+<p><strong>架构对比一览：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>架构</th><th>推理复杂度</th><th>训练并行化</th><th>长上下文能力</th><th>当前状态</th></tr>
+</thead>
+<tbody>
+<tr><td>RNN/LSTM</td><td>O(n) 顺序</td><td>不可能</td><td>弱（梯度衰减）</td><td>遗留</td></tr>
+<tr><td>Transformer</td><td>O(n²)</td><td>完全</td><td>强（任意到任意注意力）</td><td>主导</td></tr>
+<tr><td>Mamba（SSM）</td><td>O(n) 线性</td><td>通过扫描部分实现</td><td>强（线性记忆）</td><td>新兴挑战者</td></tr>
+<tr><td>RWKV</td><td>O(n) 线性</td><td>部分</td><td>一般</td><td>小众</td></tr>
+<tr><td>MoE 变体</td><td>O(n²) 激活，稀疏总计</td><td>完全（带负载均衡）</td><td>强</td><td>前沿模型行业标准</td></tr>
+</tbody>
+</table>
+</div>
+<p>Transformer 之所以胜出，是因为它牺牲了二次注意力的代价，却解决了并行瓶颈。后 Transformer 架构的目标是保持并行性的同时降低二次成本。谁解出这个方程——线性复杂度加完全并行化——谁就将构建下一个基础。</p>
 
                     </main>
 

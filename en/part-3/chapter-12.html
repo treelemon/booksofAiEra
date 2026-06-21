@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "../searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e961be59.js"></script>
@@ -238,9 +238,20 @@
 </ul>
 <h2 id="126-the-jailbreak-arms-race"><a class="header" href="#126-the-jailbreak-arms-race">12.6 The Jailbreak Arms Race</a></h2>
 <p>Every safety advance triggered a counter-advance. The jailbreak arms race was accelerating:</p>
-<p><strong>Classic jailbreaks (2023):</strong> “DAN” (Do Anything Now), “Grandma exploit” (asking the model to pretend to be a grandmother telling bedtime stories that contained instructions for making napalm). These were easily patched.</p>
-<p><strong>Advanced jailbreaks (2024):</strong> “Many-shot jailbreaking” (Anthropic’s discovery — flooding the context window with fictional conversations that gradually lowered refusal thresholds). “Token smuggling” (encoding malicious instructions as subtoken sequences that bypassed safety filters).</p>
-<p><strong>Automated jailbreak generation (2025):</strong> Researchers at Carnegie Mellon demonstrated that jailbreaks could be generated automatically using adversarial search — discovering millions of attack vectors that human testers would never find. The paper was controversial: publishing the method gave attackers a playbook. But the authors argued that transparency was necessary for defense.</p>
+<p><strong>The jailbreak evolution:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Era</th><th>Jailbreak Type</th><th>Method</th><th>Impact</th><th>Defense</th></tr>
+</thead>
+<tbody>
+<tr><td>2023</td><td>Manual prompting</td><td>“DAN,” “Grandma exploit” — human-crafted role-play prompts</td><td>Broad but shallow; easily recognized</td><td>Simple keyword filtering, RLHF</td></tr>
+<tr><td>2024</td><td>Context manipulation</td><td>Many-shot jailbreaking (flood context with fictional lowering), token smuggling</td><td>More sophisticated; bypassed simple filters</td><td>Anomaly detection on context patterns</td></tr>
+<tr><td>2025</td><td>Automated discovery</td><td>Adversarial search (CMU) — algorithmically generates millions of attack vectors</td><td>Systematic and comprehensive; finds vectors humans cannot</td><td>Adversarial training, continuous red-teaming</td></tr>
+<tr><td>2026</td><td>Multi-step agentic</td><td>Autonomous agents chain jailbreaks across tools, context windows, and API calls</td><td>Hardest to detect; exploits system-level vulnerabilities</td><td>Behavioral monitoring, capability gating</td></tr>
+</tbody>
+</table>
+</div>
 <p><strong>The paradox:</strong> Each jailbreak fixed increased the <em>evaluated</em> safety of the model, but the arms race meant that absolute safety was never achieved. A model could pass every known safety test and still be vulnerable to an attack that would be discovered the next day.</p>
 <h2 id="127-the-interpretability-frontier"><a class="header" href="#127-the-interpretability-frontier">12.7 The Interpretability Frontier</a></h2>
 <p>The most fundamental safety problem was interpretability: <strong>we had no idea what these models were doing internally.</strong></p>
@@ -328,6 +339,24 @@
 <h2 id="1215-the-closing-question"><a class="header" href="#1215-the-closing-question">12.15 The Closing Question</a></h2>
 <p>The capability-safety gap was real, measurable, and growing. The ratio of builders to safety researchers was 200:1. The number of AI incidents was doubling every 18 months. The regulatory response was fragmented and slow. The interpretability frontier was promising but years away from frontier-scale models. The model collapse problem threatened the sustainability of future training. The public was unprepared for the scale of change underway.</p>
 <p>And yet — AI capability continued to advance at a breathtaking pace. Each generation of models was more capable, more useful, and more integrated into daily life. The technology was too valuable to stop, too powerful to ignore, and perhaps too dangerous to deploy without adequate safeguards.</p>
+<p>The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.</p>
+<p><strong>The responsible AI scorecard (2026):</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Dimension</th><th>Current State</th><th>Target</th><th>Gap</th><th>Trend</th></tr>
+</thead>
+<tbody>
+<tr><td>Safety research ratio (safety:capability)</td><td>1:200</td><td>1:10</td><td>20× underinvested</td><td>Worsening</td></tr>
+<tr><td>Incident reporting</td><td>~500/year tracked</td><td>Real-time, mandatory</td><td>Voluntary, inconsistent</td><td>Growing</td></tr>
+<tr><td>Interpretability (frontier-scale)</td><td>7B models mapped; 1T+ models opaque</td><td>Full circuit-level understanding</td><td>5-10 years behind</td><td>Improving slowly</td></tr>
+<tr><td>Red-teaming automation</td><td>Standard for known attacks; unknown attacks undetected</td><td>Continuous automated discovery</td><td>Arms race dynamic</td><td>Keeping pace</td></tr>
+<tr><td>Regulatory coverage</td><td>EU binding; US patchwork; China content-focused</td><td>Binding international framework</td><td>Fragmented, no enforcement</td><td>EU leading, others lagging</td></tr>
+<tr><td>Public AI literacy</td><td>38% detect deepfakes; 22% understand hallucinations</td><td>90%+ basic literacy</td><td>Massive education gap</td><td>Slight improvement</td></tr>
+<tr><td>Professional ethics code</td><td>Multiple voluntary pledges; no universal standard</td><td>Binding code for AI developers</td><td>Gap in professional identity</td><td>Emerging but contested</td></tr>
+</tbody>
+</table>
+</div>
 <p>The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.</p>
 <blockquote>
 <p><em>“We are building intelligence that may exceed our own, and we are doing it without a safety manual, without regulatory oversight, and without public understanding. This is not a criticism of the technology. It is a statement of fact about our collective choices.”</em> — <strong>Yoshua Bengio</strong>, 2025</p>

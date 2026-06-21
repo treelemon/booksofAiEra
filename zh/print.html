@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-5cb007d1.js";
+            window.path_to_searchindex_js = "searchindex-351d2851.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-1d9df444.js"></script>
@@ -296,16 +296,24 @@
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>浪潮</th><th>核心理念</th><th>巅峰</th><th>失败模式</th></tr>
+<tr><th>波次</th><th>核心思想</th><th>时间跨度</th><th>关键推动力</th><th>顶峰</th><th>局限</th><th>遗产</th></tr>
 </thead>
 <tbody>
-<tr><td>符号 AI</td><td>手工编码规则</td><td>专家系统（1980 年代）</td><td>脆弱性——规则无法扩展</td></tr>
-<tr><td>统计机器学习</td><td>从数据中学习模式</td><td>深度学习（2010 年代）</td><td>狭窄性——每个模型解决一个任务</td></tr>
-<tr><td>基础模型</td><td>大规模预训练</td><td>GPT-4 + 推理（2024–2025）</td><td>真实性、对齐、控制</td></tr>
+<tr><td>符号 AI</td><td>手工编码规则</td><td>1956–2010</td><td>逻辑、专家知识</td><td>专家系统（1980 年代）</td><td>脆弱性——规则无法扩展</td><td>证明了 AI 是可能的；确立了推理作为目标</td></tr>
+<tr><td>统计机器学习</td><td>从数据中学习模式</td><td>2010–2020</td><td>互联网数据、GPU、反向传播</td><td>深度学习（2010 年代）</td><td>狭窄性——每个模型解决一个任务</td><td>证明学习比编程更有效</td></tr>
+<tr><td>基础模型</td><td>大规模预训练</td><td>2020 至今</td><td>Transformer、缩放定律</td><td>GPT-4 + 推理（2024–2025）</td><td>真实性、对齐、控制</td><td>证明规模 + 数据 + 算力产生涌现</td></tr>
 </tbody>
 </table>
 </div>
 <p>钟摆从<strong>规则</strong>摆向<strong>统计</strong>，再摆向<strong>规模</strong>。每一次浪潮在其当下都看似不可逾越，然后又崩塌成下一波的种子。</p>
+<p><strong>以波驭智：专业分析框架：</strong></p>
+<pre><code>对于任何 AI 技术，请问：
+  1. 它属于哪一波？（符号、统计还是基础模型？）
+  2. 它的核心机制是什么？（规则、模式还是规模？）
+  3. 它当前的局限是什么？（脆弱性、狭窄性还是对齐？）
+  4. 下一波需要什么才能突破这一局限？
+</code></pre>
+<p>这个框架不是历史趣闻。它是评估任何新 AI 主张的实用工具：识别它属于哪一波，检查那一波的局限是否已被解决，并评估这个主张是真正的进步还是旧想法的重新包装。</p>
 <p><strong>这段历史教会我们的：</strong></p>
 <ul>
 <li>今天 AI 的每一个明显局限，都是未来等待发生的突破</li>
@@ -325,6 +333,19 @@
 <p>他们做了最激进的赌注：抛弃循环结构。不要 RNN。不要 LSTM。只要注意力。</p>
 <p><strong>自注意力机制</strong>让每个 token 可以直接关注所有其他 token，不管距离多远。位置 1 的单词关注位置 1000 的单词，计算成本和关注相邻单词一模一样。更重要的是，训练可以完全并行化——训练时间从数周降到了几小时。</p>
 <p>这篇论文在 2017 年 NeurIPS 大会上发表，起初收获的是礼貌的关注，而非革命。很少有人意识到，这个单一的架构变化——没有循环的注意力——将解锁此后的一切。</p>
+<p><strong>Transformer 的三项关键创新：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>创新</th><th>替代了什么</th><th>实现了什么</th><th>影响</th></tr>
+</thead>
+<tbody>
+<tr><td>自注意力</td><td>循环连接（RNN/LSTM）</td><td>任意距离的直接 token 访问；训练并行化</td><td>训练时间：周→小时；长距离依赖问题解决</td></tr>
+<tr><td>位置编码</td><td>逐步顺序处理</td><td>模型无需循环即可知道 token 顺序</td><td>实现训练时的完全并行化</td></tr>
+<tr><td>多头注意力</td><td>单一注意力机制</td><td>模型同时学习多种关系类型</td><td>更丰富的表示；不同头专注于语法、语义、共指</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="23-通向涌现之路意外的年表"><a class="header" href="#23-通向涌现之路意外的年表">2.3 通向涌现之路：意外的年表</a></h2>
 <p>Transformer 并非一蹴而就。它是一个接一个的惊喜：</p>
 <p><strong>GPT-1（2018 年 6 月，1.17 亿参数）：</strong> OpenAI 证明，仅解码器 Transformer 可以通过少量微调进行语言建模并迁移到下游任务。结果虽不大，但原理极具力量。</p>
@@ -333,6 +354,22 @@
 <p><strong>GPT-3（2020 年 5 月，1750 亿参数 —— 是 GPT-2 的 100 倍）：</strong> 这是地震。1750 亿参数，在大约 570GB 文本上训练——GPT-3 能完成从未被显式训练过的任务：翻译、写代码、回答问题，只需在提示中给几个例子。这个现象被称为<strong>上下文学习</strong>，此前无人预测。伊利亚·苏茨克维后来承认团队自己也感到震惊。</p>
 <p><strong>Chinchilla（2022 年 3 月）：</strong> DeepMind 提出了反直觉的发现：在给定的算力预算下，大多数模型训练不足。最优策略是在<em>更多数据</em>上训练一个小得多的模型。Chinchilla（700 亿参数，1.4 万亿 token）超过了 GPT-3（1750 亿参数，3000 亿 token）。缩放竞赛突然有了新规则。</p>
 <p><strong>GPT-4（2023 年 3 月）：</strong> 多模态，更可靠，推理能力大幅提升。OpenAI 未透露技术细节，但确认使用了 MoE 架构。埃利泽·尤德科夫斯基在测试后评论：“这很奇怪且令人担忧……它还不比人类聪明，但在大多数任务上比大多数人更聪明。”</p>
+<p><strong>模型演变一览：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模型</th><th>日期</th><th>参数量</th><th>关键发现</th><th>惊喜程度</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-1</td><td>2018 年 6 月</td><td>1.17 亿</td><td>生成式预训练 + 微调有效</td><td>低（结果有限）</td></tr>
+<tr><td>BERT</td><td>2018 年 10 月</td><td>3.4 亿</td><td>双向掩码提升理解</td><td>低（预期中的改进）</td></tr>
+<tr><td>GPT-2</td><td>2019 年 2 月</td><td>15 亿</td><td>规模产生流畅性；因安全问题暂缓发布</td><td>中等（意外的谨慎）</td></tr>
+<tr><td>GPT-3</td><td>2020 年 5 月</td><td>1750 亿</td><td>上下文学习从规模中涌现</td><td>高（无人预料）</td></tr>
+<tr><td>Chinchilla</td><td>2022 年 3 月</td><td>700 亿</td><td>大多数模型训练不足；数据 &gt; 参数</td><td>高（重写了缩放规则）</td></tr>
+<tr><td>GPT-4</td><td>2023 年 3 月</td><td>~1.8T（MoE）</td><td>人类专家级多模态推理</td><td>中等（能力可预期，执行令人印象深刻）</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="24-缩放定律北极星"><a class="header" href="#24-缩放定律北极星">2.4 缩放定律：北极星</a></h2>
 <p>让整个竞赛加速的实证发现来自 Kaplan 等人（2020）：模型性能与三个变量之间存在平滑的幂律关系：</p>
 <ul>
@@ -359,6 +396,22 @@
 <li><strong>DeepSeek 的 MoE（2024–2025）：</strong> 混合专家架构，每个 token 仅激活部分参数，以更低成本实现更大有效规模。DeepSeek-V3（671B 总参数，37B 激活参数）和 DeepSeek-R1 证明，开源模型可以通过架构创新达到前沿性能。</li>
 </ul>
 <p>Transformer 的主导地位不再无可争议，但其核心洞见——基于注意力的架构可随数据和算力可预测地扩展——仍然是当前 AI 时代的基础。未来无论出现什么，都将以 2017 年八位研究员在谷歌白板上的革命为标杆。</p>
+<p><strong>架构对比一览：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>架构</th><th>推理复杂度</th><th>训练并行化</th><th>长上下文能力</th><th>当前状态</th></tr>
+</thead>
+<tbody>
+<tr><td>RNN/LSTM</td><td>O(n) 顺序</td><td>不可能</td><td>弱（梯度衰减）</td><td>遗留</td></tr>
+<tr><td>Transformer</td><td>O(n²)</td><td>完全</td><td>强（任意到任意注意力）</td><td>主导</td></tr>
+<tr><td>Mamba（SSM）</td><td>O(n) 线性</td><td>通过扫描部分实现</td><td>强（线性记忆）</td><td>新兴挑战者</td></tr>
+<tr><td>RWKV</td><td>O(n) 线性</td><td>部分</td><td>一般</td><td>小众</td></tr>
+<tr><td>MoE 变体</td><td>O(n²) 激活，稀疏总计</td><td>完全（带负载均衡）</td><td>强</td><td>前沿模型行业标准</td></tr>
+</tbody>
+</table>
+</div>
+<p>Transformer 之所以胜出，是因为它牺牲了二次注意力的代价，却解决了并行瓶颈。后 Transformer 架构的目标是保持并行性的同时降低二次成本。谁解出这个方程——线性复杂度加完全并行化——谁就将构建下一个基础。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第三章从-gpt-到推理模型"><a class="header" href="#第三章从-gpt-到推理模型">第三章：从 GPT 到推理模型</a></h1>
 <h2 id="31-gpt-系列"><a class="header" href="#31-gpt-系列">3.1 GPT 系列</a></h2>
@@ -374,6 +427,22 @@
 <p><strong>Gemini（Google DeepMind，2023–）：</strong> 谷歌的反击。在多年的内部谨慎和在 AI 公众领导力上输给 OpenAI 的震惊之后，谷歌将 DeepMind 和 Google Brain 合并为一个部门。Gemini Ultra（2023 年 12 月）是第一个在 MMLU 上超越 GPT-4 的模型（90.0% 对 86.4%）。Gemini 2.5 Pro（2025）原生引入了“思考模式“和 100 万 token 的上下文窗口。DeepMind 的血统——AlphaGo、AlphaFold——赋予 Gemini 在科学推理上的优势。</p>
 <p><strong>Llama（Meta，2023–）：</strong> 民主化炸弹。Meta 于 2023 年 2 月以非商业许可向研究人员发布了 LLaMA（650 亿参数）。数周内，它在 4chan 上被泄露到公众。闸门打开了：微调变体（Alpaca、Vicuna、WizardLM）成倍增长。Meta 顺势而为，发布了带商业许可的 LLaMA 2（2023 年 7 月）和匹敌 GPT-4 的 LLaMA 3（2024 年，4050 亿参数）。基于 LLaMA 的开源生态系统成为了一个并行的 AI 宇宙。</p>
 <p><strong>DeepSeek（中国，2024–2025）：</strong> 成本效率革命。一家低调的中国量化交易公司的 AI 实验室发布了一系列震撼行业的模型。DeepSeek-V2（2024）的训练成本为 278 万美元——大约是 GPT-4 估计成本的 1/70。DeepSeek-V3（2025 年，671B 总参数，每个 token 激活 37B）使用的 MoE 架构极其高效，仅用 2000 多块 GPU 就完成了训练。然后 DeepSeek-R1（2025 年 1 月）在推理上匹敌 OpenAI 的 o1——并发布了描述方法的论文。行业倒吸一口凉气。美国股市单日蒸发 5000 亿美元。地缘政治叙事改变了：中国不是在追赶——它在创新。</p>
+<p><strong>竞争对手格局一览：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>实验室</th><th>起源故事</th><th>关键创新</th><th>优势</th><th>弱点</th></tr>
+</thead>
+<tbody>
+<tr><td>OpenAI</td><td>非营利转为封顶利润</td><td>RLHF、优先扩展、o 系列推理</td><td>研究速度、品牌、生态系统</td><td>人才保留、治理不稳定</td></tr>
+<tr><td>Anthropic</td><td>2021 年 OpenAI 安全分裂</td><td>宪法 AI、RSP 框架</td><td>安全作为差异化、编程质量</td><td>产品线狭窄、发布较慢</td></tr>
+<tr><td>Google DeepMind</td><td>DeepMind + Google Brain 合并</td><td>原生多模态、100 万 token 上下文</td><td>数据规模（YouTube、图像、地球）、科学遗产</td><td>官僚主义、文化缓慢</td></tr>
+<tr><td>Meta（LLaMA）</td><td>扎克伯格的开源赌注</td><td>开放权重许可、生态系统玩法</td><td>社区、民主化、零许可成本</td><td>无直接收入模式</td></tr>
+<tr><td>DeepSeek</td><td>中国量化公司（幻方量化）</td><td>MoE 效率、成本为 GPT-4 的 1/70</td><td>成本领先、开放科学、工程文化</td><td>地缘政治风险、硬件限制</td></tr>
+</tbody>
+</table>
+</div>
+<p>每个实验室对什么最重要做出了不同的赌注：规模（OpenAI）、安全（Anthropic）、数据（Google）、开放（Meta）或效率（DeepSeek）。2026 年的结果表明，五个赌注都部分正确——而前沿属于那些能够结合多种优势的玩家。</p>
 <h2 id="33-推理模型的突破"><a class="header" href="#33-推理模型的突破">3.3 推理模型的突破</a></h2>
 <p>2024 年 9 月，OpenAI 发布了 o1——第一个在回答前会“思考“的模型。传闻中它被称为“Strawberry“或“Q*“。现实比传闻更奇特、更重要。</p>
 <p><strong>推理模型的工作原理：</strong></p>
@@ -389,6 +458,24 @@
 <li><strong>Gemini 2.5 Pro 思考（2025）：</strong> DeepMind 的原生思考模型，支持 100 万 token 上下文。</li>
 </ul>
 <p><strong>为什么重要：</strong> 我们不再仅仅扩展训练算力。推理模型引入了<strong>测试时计算</strong>作为新维度。模型现在可以“花费“更多算力来更深入地思考难题。这改变了一切——成本曲线、延迟权衡，以及我们认为可能的事情。</p>
+<p><strong>推理模型时间线：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模型</th><th>日期</th><th>测试时计算</th><th>AIME 分数</th><th>关键发现</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-4</td><td>2023 年 3 月</td><td>无（标准生成）</td><td>12%</td><td>基线</td></tr>
+<tr><td>o1-preview</td><td>2024 年 9 月</td><td>内部思维链</td><td>83%</td><td>7× 提升——推理真实有效</td></tr>
+<tr><td>o1 完整版</td><td>2024 年 12 月</td><td>扩展思考</td><td>~90%</td><td>编程和工具使用提升</td></tr>
+<tr><td>DeepSeek R1</td><td>2025 年 1 月</td><td>开源推理</td><td>~80%</td><td>以 1/20 成本匹敌 o1；发布方法</td></tr>
+<tr><td>o3</td><td>2025 年 2 月</td><td>多分支搜索 + 验证</td><td>94%</td><td>ARC-AGI 达到 87.5%（接近人类天花板）</td></tr>
+<tr><td>Claude Sonnet 4</td><td>2025 年 4 月</td><td>长上下文推理</td><td>~85%</td><td>工具编排更强</td></tr>
+<tr><td>Gemini 2.5 Pro</td><td>2025</td><td>原生思考 + 100 万上下文</td><td>82%</td><td>长文档推理最佳</td></tr>
+</tbody>
+</table>
+</div>
+<p>“训练算力“与“推理算力“的区分是自 Transformer 以来最重要的架构转变。模型现在可以在问题需要时更努力地思考——不需要时则花费更少。</p>
 <h2 id="34-能力发展轨迹"><a class="header" href="#34-能力发展轨迹">3.4 能力发展轨迹</a></h2>
 <p>2024 到 2025 年间，改进速度在技术史上前所未有：</p>
 <div class="table-wrapper">
@@ -446,6 +533,24 @@
 <p>2025 年 1 月，一篇来自中国量化交易公司 AI 实验室的论文震撼了整个行业。DeepSeek-R1 在推理基准上匹敌 OpenAI 的 o1——并发布了完整的方法论。美国股市单日蒸发 5000 亿美元。黄仁勋的 NVIDIA 暴跌 17%。</p>
 <p>创始人<strong>梁文锋</strong>曾是一名对冲基金交易员，从 2020 年开始为量化交易购买 GPU。到 2023 年，他将算力转向 LLM 研究。DeepSeek 的优势是纯粹的工程：他们构建的混合专家架构极其高效，训练成本仅为同类模型的 1/70。DeepSeek-V4（2026）仅花费 680 万美元训练——不到 GPT-5 预算中的一个零头——同时在除最难基准外的所有项目上匹敌 Gemini 3。</p>
 <p>地缘政治影响立竿见影。中美 AI 差距——2023 年估计为 2-3 年——到 2026 年已在综合基准上缩小到 2.7%。中国不仅在追赶——它在不同的成本曲线上创新。</p>
+<p><strong>四种前沿策略对比：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>OpenAI</th><th>Anthropic</th><th>Google DeepMind</th><th>DeepSeek</th></tr>
+</thead>
+<tbody>
+<tr><td>首要赌注</td><td>规模 + 推理</td><td>安全 + 数据质量</td><td>数据 + 多模态</td><td>效率 + 架构</td></tr>
+<tr><td>最佳模型（2026）</td><td>GPT-5 / o3</td><td>Claude Opus 5</td><td>Gemini 3 Ultra</td><td>V4 / R1</td></tr>
+<tr><td>训练成本</td><td>10 亿美元以上（估）</td><td>~5 亿美元（估）</td><td>~5 亿美元（估）</td><td>~680 万美元</td></tr>
+<tr><td>模型来源</td><td>闭源</td><td>闭源</td><td>闭源</td><td>开放权重</td></tr>
+<tr><td>安全方法</td><td>自愿报告</td><td>RSP、公开评估</td><td>AI 安全框架</td><td>最低限度的公开披露</td></tr>
+<tr><td>关键优势</td><td>品牌、先发优势</td><td>开发者信任、代码质量</td><td>生态系统、科学遗产</td><td>成本、开放科学</td></tr>
+<tr><td>关键风险</td><td>人才流失</td><td>产品焦点狭窄</td><td>官僚主义、速度</td><td>地缘政治约束</td></tr>
+</tbody>
+</table>
+</div>
+<p>这张表揭示了一个令人不安的真相：安全最透明的实验室（Anthropic）并非市场领导者。成本最高效的实验室（DeepSeek）在一个模型上的花费不及 OpenAI 一周的数据中心电费。前沿不是单一竞赛——它是四条不同赛道上的四场竞赛。</p>
 <h2 id="43-开源平行宇宙"><a class="header" href="#43-开源平行宇宙">4.3 开源平行宇宙</a></h2>
 <p>Meta 的 <strong>Yann LeCun</strong> 多年来一直说开源会赢。到 2026 年，他的预测看起来很有先见之明。</p>
 <p><strong>Llama 5</strong>（2026）在大多数基准测试上匹敌 GPT-5——差距从 2023 年的 30% 缩小到不到 5%。建立在 LLaMA 上的生态系统已变成平行 AI 宇宙：数千个微调变体，专门针对医学、法律、金融和教育。Llama 5 版本使用了一种新架构——“双通道推理”——将推理成本减半。</p>
@@ -490,6 +595,22 @@
 <p><strong>Amazon（AWS）：</strong> Trainium 3 在 2025 年发布，专为在 AWS 上训练大型模型而设计。Amazon 正在构建垂直整合的 AI 栈——硬件（Trainium）、芯片（Annapurna Labs）和云平台。</p>
 <p><strong>华为（中国）：</strong> 受到美国持续升级的出口管制打击，华为的昇腾 910C 使用 7nm 级光刻技术（而 NVIDIA 是台积电 3nm）。性能比 H100 低 30-50%，但它是国产的、可用的、正在改进的。中国 AI 实验室正在开发芯片到芯片的网络来弥补单个芯片的不足。</p>
 <p><strong>Apple（Tim Cook / Johny Srouji）：</strong> M 系列芯片集成了神经引擎，可在设备上运行 300 亿以上参数的模型。Apple Intelligence（2024）证明本地 AI 可以处理大多数日常任务——摘要、图像编辑、上下文响应——同时保护用户数据隐私。到 2026 年，边缘和云端 AI 之间的差距已显著缩小。</p>
+<p><strong>重塑 2025–2026 的效率技术：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>技术</th><th>机制</th><th>成本降低</th><th>采用情况</th></tr>
+</thead>
+<tbody>
+<tr><td>混合专家（MoE）</td><td>每个 token 仅激活 10-30% 的参数</td><td>推理计算降低 70-90%</td><td>行业标准（GPT-4、DeepSeek、Gemini）</td></tr>
+<tr><td>量化</td><td>以 FP8、INT8、INT4 而非 FP16 训练/推理</td><td>吞吐量提升 2-4×</td><td>通用推理标准</td></tr>
+<tr><td>蒸馏</td><td>大教师模型训练小型学生模型</td><td>可变（如 Phi-3 以 1/50 尺寸匹敌 GPT-3.5）</td><td>边缘部署常见</td></tr>
+<tr><td>硬件-模型协同优化</td><td>围绕特定芯片约束设计架构</td><td>每瓦效率提升 3-10×</td><td>DeepSeek-H800、Gemini-TPU</td></tr>
+<tr><td>推测解码</td><td>小模型提议，大模型验证</td><td>延迟降低 2-3×</td><td>生产 API 中常见</td></tr>
+</tbody>
+</table>
+</div>
+<p>效率革命有一个悖论效应：推理成本降低反而增加了总 AI 消耗，因此总算力需求仍在上升——但每 token 成本每年下降 10 倍。</p>
 <h2 id="55-能源隐藏的约束"><a class="header" href="#55-能源隐藏的约束">5.5 能源：隐藏的约束</a></h2>
 <p>2024 年，Google 和微软各自发布的环境报告显示，AI 相关排放分别增加了 48% 和 29%。公众反应强烈。</p>
 <p>数字令人震惊：单次 GPT-5 训练消耗约 80 GWh 电力——相当于 8,000 个美国家庭一年的用电量。2026 年整个 AI 行业的电力消耗约为 85 TWh/年，与荷兰相当。</p>
@@ -519,6 +640,22 @@
 <p>意外效果：加速了中国本土芯片产业。华为昇腾 910C 和中芯国际的 N+2 工艺节点现在支撑着一个并行的 AI 基础设施生态系统。中国实验室在 50,000 多块国产芯片的集群上训练——单块性能较弱，但规模有效。</p>
 <p>“算力主权“运动蔓延到欧洲、印度和东南亚。法国承诺为 AI 算力投入 50 亿欧元。印度的“AI for All“计划承诺为公共研究提供 10,000 块 GPU。日本的 Preferred Networks（PFN）构建了 MN-Core 芯片，专为日本的 AI 需求设计。</p>
 <p>开源模型成为一种地缘政治工具：被限制进口最好硬件的地区仍然可以下载最好的模型。LLaMA 5 和 DeepSeek-R1 可以在任何可用的芯片上运行。</p>
+<p><strong>2026 年算力棋盘：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>玩家</th><th>芯片</th><th>工艺节点</th><th>相对性能</th><th>可用性</th></tr>
+</thead>
+<tbody>
+<tr><td>NVIDIA</td><td>H100 → B200 → Rubin</td><td>台积电 4nm → 3nm</td><td>基线（1.0×）</td><td>公开市场（出口限制至中国）</td></tr>
+<tr><td>AMD</td><td>MI300X → MI350</td><td>台积电 5nm → 4nm</td><td>H100 的 0.8×（推理）</td><td>公开市场</td></tr>
+<tr><td>Google</td><td>TPU v7</td><td>台积电 3nm</td><td>H100 的 1.0×（训练，1.3× 能效/W）</td><td>仅限内部</td></tr>
+<tr><td>Amazon</td><td>Trainium 3</td><td>台积电 4nm</td><td>~H100 的 0.8×</td><td>仅限 AWS</td></tr>
+<tr><td>华为</td><td>昇腾 910C</td><td>中芯国际 7nm（N+2）</td><td>H100 的 0.5-0.7×</td><td>仅限中国</td></tr>
+<tr><td>Apple</td><td>M4 神经引擎</td><td>台积电 3nm</td><td>设备上 300 亿参数</td><td>仅限 Apple 设备</td></tr>
+</tbody>
+</table>
+</div>
 <p><strong>2026 年的核心张力：</strong> AI 能力受限于算力，而算力访问由政治决定。控制硬件的国家将塑造智能的未来——但效率突破正在使硬件优势变得不像 2023 年那样绝对。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第六章人工智能经济"><a class="header" href="#第六章人工智能经济">第六章：人工智能经济</a></h1>
@@ -568,26 +705,34 @@
 <p><strong>影响是深远的：</strong> 在以前的技术浪潮中——大型机、PC、云计算——采用成本创造了自然的扩散曲线。AI 没有这样的曲线。技术实际上是免费的，且越来越强大。经济瓶颈不再是技术——而是人类的适应能力。</p>
 <h2 id="66-就业市场地震"><a class="header" href="#66-就业市场地震">6.6 就业市场地震</a></h2>
 <p>到 2026 年，劳动力市场经历了现代史上最快的转型：</p>
-<p><strong>增长的角色：</strong></p>
-<ul>
-<li>AI 工程师：自 2022 年增长 340%</li>
-<li>提示工程师：2022 年不存在；2026 年有超过 50,000 个职位发布</li>
-<li>AI 伦理与对齐：全球 28,000 名专业人员</li>
-<li>模型基础设施（MLOps、LLMOps）：增长 200%</li>
-</ul>
-<p><strong>收缩的角色：</strong></p>
-<ul>
-<li>主要科技公司已放弃初级编程面试流程。一位 Meta 工程总监解释说：“当 AI 能在几秒内反转链表时，为什么还要问别人这个问题？“招聘标准从“你能编程吗？“转向“你能用 AI 解决问题吗？”</li>
-<li>翻译服务：自 2023 年收入下降 40%。实时 AI 翻译已实际商品化这个行业。</li>
-<li>插画师和平面设计师：总可寻址市场从 2022 年的 450 亿美元降至 2026 年的 280 亿美元。</li>
-<li>客服人员：美国就业下降 22%。</li>
-</ul>
-<p><strong>转型的角色：</strong></p>
-<ul>
-<li>医生：AI 处理放射学读片、鉴别诊断生成和病历摘要。使用 AI 的医生完成文书工作快 60%，倦怠率更低。</li>
-<li>律师：电子发现、合同分析和法律研究已基本自动化。按小时计费正被 AI 增强法律服务的固定收费所取代。</li>
-<li>研究员：AI 合著科学论文。到 2025 年，AI 已合著超过 10,000 篇同行评审出版物。</li>
-</ul>
+<p><strong>AI 就业市场影响矩阵：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>类别</th><th>示例</th><th>趋势（2022-2026）</th><th>净影响</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>增长的角色</strong></td><td>AI 工程师（+340%）、提示工程师（新兴，5 万+）、MLOps（+200%）、AI 伦理（2.8 万）</td><td>+200-340%</td><td>技能瓶颈——需求远超供给</td></tr>
+<tr><td><strong>收缩的角色</strong></td><td>翻译（收入 -40%）、插画师（TAM 450 亿→280 亿美元）、客服人员（就业 -22%）、初级程序员（招聘标准提升）</td><td>-22% 至 -40%</td><td>结构性衰退——整类岗位萎缩</td></tr>
+<tr><td><strong>转型的角色</strong></td><td>医生（文书工作快 60%）、律师（电子发现自动化）、研究员（1 万+ AI 合著论文）</td><td>角色重新定义</td><td>任务自动化，专业人员转向更高判断力的工作</td></tr>
+<tr><td><strong>新兴类别</strong></td><td>AI 审计员、对齐研究员、提示工程师、模型基础设施工程师</td><td>2022 年前不存在</td><td>AI 自身创造的全新职业类别</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>转型的关键启示：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>教训</th><th>含义</th></tr>
+</thead>
+<tbody>
+<tr><td>被替代的不是整个岗位——而是任务</td><td>每个职业由许多任务组成；AI 自动化一部分，增强另一部分</td></tr>
+<tr><td>标准在提升</td><td>“你能编程吗？” → “你能用 AI 解决问题吗？”</td></tr>
+<tr><td>判断力成为溢价</td><td>知道该问 AI 什么、如何评估其输出、何时推翻其结论</td></tr>
+<tr><td>再培训是瓶颈</td><td>技术到来速度超过社会再培训工人的速度</td></tr>
+</tbody>
+</table>
+</div>
 <p>对就业的净影响仍有争议。麦肯锡全球研究所预测，到 2030 年，AI 将在美国消除 1200 万个工作岗位，同时创造 1500 万个新的岗位——净正面，但转型成本巨大。问题不是“AI 会摧毁工作吗？“而是“社会能多快进行再培训？”</p>
 <h2 id="67-集中化问题"><a class="header" href="#67-集中化问题">6.7 集中化问题</a></h2>
 <p>AI 经济有令人担忧的集中化趋势。</p>
@@ -595,6 +740,22 @@
 <p>反垄断影响是严重的。美国联邦贸易委员会已对 NVIDIA 的 GPU 捆绑行为以及微软与 OpenAI 的合作展开调查。欧盟的《数字市场法案》正在适用于 AI 基础模型提供商。</p>
 <p><strong>反趋势：</strong> 开源是伟大的均衡器。DeepSeek、LLaMA 和更广泛的开源生态系统确保没有一家公司能永久拥有 AI 能力。欧洲、印度、日本和东南亚的政府正在开源基础上建设本地的 AI 能力。</p>
 <p>2026 年的 AI 经济是一个悖论：历史上最集中的技术市场，与历史上最民主化的技术市场，共存于同一个行业。</p>
+<p><strong>AI 经济悖论总结：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>力量</th><th>集中化</th><th>民主化</th><th>净效应</th></tr>
+</thead>
+<tbody>
+<tr><td>算力</td><td>NVIDIA：80%+ 训练芯片；前 3 云提供商：70%+ 基础设施</td><td>边缘 AI 运行于每部智能手机；量化模型运行于笔记本电脑</td><td>访问扩大，瓶颈缩小</td></tr>
+<tr><td>模型</td><td>OpenAI + Anthropic：60% 前沿市场</td><td>LLaMA、DeepSeek、Olmo：免费、开放、全球</td><td>能力迅速商品化</td></tr>
+<tr><td>人才</td><td>3 家公司雇佣 60% 的顶级研究人员</td><td>开源社区、全球教育</td><td>短期集中，长期分散</td></tr>
+<tr><td>数据</td><td>互联网由 5 个平台控制</td><td>合成数据、联邦学习、数据合作社</td><td>当前瓶颈，未来多元化</td></tr>
+<tr><td>监管</td><td>欧盟、美国、中国为所有人制定规则</td><td>开源司法管辖区、本地适配</td><td>标准区域分化</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>专业人士的启示：</strong> AI 经济奖励那些能够同时驾驭两种力量的人——利用集中化获取基础设施和资本，同时利用民主化获取灵活性和成本。完全押注任何一边都是通往过时的道路。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第七章智能体-ai"><a class="header" href="#第七章智能体-ai">第七章：智能体 AI</a></h1>
 <h2 id="71-智能体定义框架"><a class="header" href="#71-智能体定义框架">7.1 智能体定义框架</a></h2>
@@ -848,6 +1009,22 @@
 <p><strong>Figure 02（Brett Adcock）：</strong> Figure Robotics 与 OpenAI 合作，将 GPT-4 的推理能力放入人形身体。2024 年，一个病毒式演示显示 Figure 02 与人类对话：“你看到了什么？”——“我看到一个盘子上的红苹果。”——“你能把它递给我吗？”——机器人拿起苹果并递了过去。演示中的一些动作是远程操作的，但推理是真实的。到 2026 年，Figure 02 可以在 BMW 工厂自主工作 8 小时轮班。</p>
 <p><strong>Physical Intelligence（π0，2024）：</strong> 由 <strong>Chelsea Finn</strong>（Stanford）和 <strong>Sergey Levine</strong>（UC Berkeley）创立的创业公司发布了 π0——一个在互联网数据和机器人数据上训练的视觉-语言-行动模型。演示：π0 看人类叠了一次衣服，然后自己叠了衣服。泛化能力是突破——一个模型可以叠衣服、装洗碗机和煮咖啡。</p>
 <p>共同主题：<strong>机器人身体中的基础模型。</strong> 推动 GPT-3 涌现的相同缩放定律正在应用于物理任务。硬件仍然昂贵（每台 Optimus 15 万美元），但软件的学习速度超出了所有人的预期。</p>
+<p><strong>到 2026 年的具身 AI 图景：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>公司/实验室</th><th>机器人</th><th>AI 方法</th><th>最佳能力</th><th>状态</th></tr>
+</thead>
+<tbody>
+<tr><td>Tesla</td><td>Optimus Gen 3</td><td>端到端视频神经网络</td><td>装配线分拣、叠衣服、崎岖地形</td><td>早期生产（约 1,000 台）</td></tr>
+<tr><td>Figure Robotics</td><td>Figure 02</td><td>GPT-4 推理 + 远程操作微调</td><td>BMW 工厂 8 小时自主轮班</td><td>生产部署</td></tr>
+<tr><td>Physical Intelligence</td><td>π0</td><td>视觉-语言-行动模型，一模型多任务</td><td>泛化——叠衣服、装洗碗机、煮咖啡</td><td>研究阶段</td></tr>
+<tr><td>Google DeepMind</td><td>RT-2 / AutoRT</td><td>互联网 + 机器人数据训练</td><td>零样本泛化到新任务</td><td>研究阶段</td></tr>
+<tr><td>Meta</td><td>Sparrow + Habitat 模拟器</td><td>仿真到现实迁移</td><td>模拟环境中的操作</td><td>研究阶段</td></tr>
+</tbody>
+</table>
+</div>
+<p>关键分野：Tesla 和 Figure 在构建特定的硬件平台，配备越来越强大的 AI 大脑。Physical Intelligence 在构建一个通用的 AI 大脑，可以工作在任何机器人上。前者是硬件竞赛；后者是软件竞赛。历史表明软件竞赛更重要。</p>
 <h2 id="85-多模态前沿"><a class="header" href="#85-多模态前沿">8.5 多模态前沿</a></h2>
 <p>到 2026 年，“多模态“的标准已大幅提升：</p>
 <div class="table-wrapper">
@@ -876,6 +1053,20 @@
 <p><strong>吴恩达</strong>（DeepLearning.AI）持相反观点：“语言包含了足够多的世界结构。你可以从文本中学习物理。你可以从文本中学习因果关系。具身化有帮助，但它是可选的。”</p>
 <p>截至 2026 年的证据是混合的。处理物理任务视频的多模态模型学到了一些物理知识——物体永久性、重力、碰撞——无需具身化。但它们在与重量、质地、刚性等需要交互的属性上仍然挣扎。一个模型可以看一千个人搬箱子的视频，但在真正搬起之前不会知道箱子是重还是轻。</p>
 <p>未解决的问题：<strong>真正的理解是否需要身体？</strong> 答案将决定 AI 是仍然是一种软件技术——还是变成一种机器人技术。</p>
+<p><strong>具身化之争框架：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>立场</th><th>支持者</th><th>论点</th><th>证据</th><th>影响</th></tr>
+</thead>
+<tbody>
+<tr><td>具身化必要</td><td>Yann LeCun, Meta</td><td>智能来自物理交互；仅有语言不够</td><td>多模态模型仍在重量、质地、刚性上挣扎——需要触觉的属性</td><td>AI 需要机器人技术；纯软件路径有限</td></tr>
+<tr><td>具身化可选</td><td>吴恩达, DeepLearning.AI</td><td>语言包含足够结构来学习物理和因果</td><td>模型能通过物理基准，仅从视频理解物体永久性</td><td>AI 无需身体即可达到 AGI</td></tr>
+<tr><td>混合立场</td><td>Demis Hassabis, DeepMind</td><td>具身化有帮助但可能非必要；模拟可能足够</td><td>虚拟环境中模拟机器人学习复杂任务；向现实迁移不断改进</td><td>模拟可能弥合差距；物理具身化可选</td></tr>
+</tbody>
+</table>
+</div>
+<p>这场争论不会通过论证来解决，而是通过工程。如果纯软件模型在没有身体的情况下实现了具身任务的 AGI 级推理，LeCun 就错了。如果最强大的系统持续需要物理训练数据，Ng 就错了。2026 年的证据倾向于混合：具身化有帮助，但模拟和视频正在以超出预期的速度缩小差距。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第九章ai-驱动的科学发现"><a class="header" href="#第九章ai-驱动的科学发现">第九章：AI 驱动的科学发现</a></h1>
 <h2 id="91-改变科学的诺贝尔奖"><a class="header" href="#91-改变科学的诺贝尔奖">9.1 改变科学的诺贝尔奖</a></h2>
@@ -899,6 +1090,22 @@
 <p><strong>GNoME（2023）：</strong> DeepMind 的材料发现模型预测了 38 万种稳定的无机晶体——相当于人类 800 年的累积发现。团队在真实实验室合成了 736 个最有希望的候选物，确认 41% 是可行的。</p>
 <p><strong>MatterGen（微软，2024）：</strong> 微软的材料设计生成模型可以提出具有特定属性的新材料——特定的导电性、特定的带隙、目标拉伸强度。到 2026 年，MatterGen 发现了一种新的电池正极材料，能量密度提高了 27%。</p>
 <p><strong>碳捕获突破：</strong> 2025 年，MIT 研究人员使用 AI 筛选了 1000 万种潜在的碳捕获材料。排名第一的候选物——一种多孔共价有机框架——以当前最优材料 3 倍的速率吸收二氧化碳。AI 在三周内发现了它。传统方法需要 15 年。</p>
+<p><strong>AI 驱动发现领域对比：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>领域</th><th>突破模型</th><th>年份</th><th>成就</th><th>人类等效时间</th><th>影响</th></tr>
+</thead>
+<tbody>
+<tr><td>蛋白质折叠</td><td>AlphaFold 2/3</td><td>2020/2024</td><td>预测 2 亿+蛋白质结构；模拟分子相互作用</td><td>数十年 → 分钟</td><td>改变了结构生物学；200 万+研究人员使用</td></tr>
+<tr><td>材料发现</td><td>GNoME (DeepMind), MatterGen (微软)</td><td>2023/2024</td><td>预测 38 万种稳定晶体；按目标属性设计材料</td><td>800 年发现 → 数月</td><td>能量密度提高 27% 的电池正极</td></tr>
+<tr><td>算法发现</td><td>AlphaEvolve (DeepMind)</td><td>2025</td><td>生成为数据中心电源、芯片调度的新颖算法</td><td>人类工程师从未考虑过此方案</td><td>降低 15% 能耗，提升 12% 吞吐量</td></tr>
+<tr><td>数学</td><td>FunSearch, AlphaProof (DeepMind)</td><td>2023/2024</td><td>解决帽集问题；获得 IMO 银牌</td><td>停滞数十年的问题 → 解决</td><td>AI 生成并验证数学证明</td></tr>
+<tr><td>药物发现</td><td>AlphaFold 3, INS018_055</td><td>2024</td><td>30 天内识别药物靶点（vs 5-10 年）；AI 发现的药物进入临床试验</td><td>5-10 年 → 30 天</td><td>AI 发现的分子进入人体试验</td></tr>
+</tbody>
+</table>
+</div>
+<p>模式：AI 在问题有明确适应度函数（折叠这个蛋白质、最大化这个晶体稳定性、最小化这个能耗）、有可用的训练数据（已知蛋白质、已知材料、已知算法）、并且可以在物理验证前通过计算机模拟验证时表现出色。</p>
 <h2 id="95-自动化科学家"><a class="header" href="#95-自动化科学家">9.5 自动化科学家</a></h2>
 <p>2024 年 8 月，Sakana AI（由 “Attention Is All You Need” 的合著者 <strong>Llion Jones</strong> 创立）发表了一篇让研究社区不安的论文。</p>
 <p><strong>AI Scientist</strong> 是一个完全自动化的研究系统。它生成研究 idea，写代码，运行实验，制作图表，并撰写带引用的论文。每篇论文成本 15 美元——约为普通学术论文的 1/10,000。</p>
@@ -931,6 +1138,22 @@
 <p><strong>Demis Hassabis</strong> 相信答案是肯定的：“我们同时处于’生物学世纪’和’AI 世纪’的开端。它们的交集将是 21 世纪最重要发现的来源。”</p>
 <p><strong>Yann LeCun</strong> 更加谨慎：“发现需要理解。当前的 AI 系统不理解任何东西。它们是强大的模式匹配器，而非科学家。”</p>
 <p>轨迹偏向 Hassabis。每年，AI 发现系统变得更加自主、更加可靠、更加有创造力。问题不是 AI 是否会做出基础发现——而是<em>何时</em>，以及人类的科学是否准备好接受它们。</p>
+<p><strong>AI 发现成熟度模型：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>级别</th><th>描述</th><th>示例</th><th>瓶颈</th></tr>
+</thead>
+<tbody>
+<tr><td>L1：辅助</td><td>AI 作为人类科学家的工具</td><td>AlphaFold 预测结构，LLM 文献综述</td><td>人类创造力</td></tr>
+<tr><td>L2：建议</td><td>AI 提出候选方案；人类评估</td><td>GNoME 提出材料，FunSearch 提出数学构造</td><td>物理验证能力</td></tr>
+<tr><td>L3：优化</td><td>AI 在定义搜索空间内迭代</td><td>AlphaEvolve 优化算法，AI Scientist 撰写论文</td><td>问题定义</td></tr>
+<tr><td>L4：发现</td><td>AI 在无人类引导下找到真正新颖的解</td><td>尚无（接近但未实现）</td><td>科学创造力，ground truth</td></tr>
+<tr><td>L5：范式转变</td><td>AI 发现新的物理定律、新的数学基础</td><td>推测性</td><td>未知——需要 AI 挑战人类概念框架</td></tr>
+</tbody>
+</table>
+</div>
+<p>我们在大多数领域处于 L2-L3。L4 在地平线上。L5 仍然是万亿美元之问。进展速度表明 L4 将在 5-7 年内到来——L5 在 15-20 年内，或者永远不会。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第十章开源与闭源之争"><a class="header" href="#第十章开源与闭源之争">第十章：开源与闭源之争</a></h1>
 <h2 id="101-引发革命的泄露"><a class="header" href="#101-引发革命的泄露">10.1 引发革命的泄露</a></h2>
@@ -970,6 +1193,22 @@
 <ul>
 <li><strong>Phi-4（微软）：</strong> 140 亿参数，能力远超其体量。专为边缘部署设计——运行在笔记本电脑和手机上。</li>
 </ul>
+<p><strong>开源层级对比：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>层级</th><th>示例</th><th>参数</th><th>开放程度</th><th>最适合</th><th>局限</th></tr>
+</thead>
+<tbody>
+<tr><td>开放权重领导者</td><td>Llama 5</td><td>600B</td><td>权重 + 许可；无训练数据</td><td>通用、商业用途</td><td>训练数据不透明</td></tr>
+<tr><td>完全开放</td><td>Olmo 3, Granite 4</td><td>70-180B</td><td>权重 + 数据 + 代码 + 日志</td><td>研究、审计、受监管行业</td><td>模型较小，能力较弱</td></tr>
+<tr><td>效率冠军</td><td>DeepSeek V4</td><td>1.2T（37B 激活）</td><td>权重 + 架构论文；无数据</td><td>成本敏感应用</td><td>专有数据，地缘政治风险</td></tr>
+<tr><td>欧洲主权</td><td>Mistral Large 3</td><td>250B</td><td>开放权重 + 商用友好许可</td><td>欧盟合规、企业</td><td>生态系统小于 LLaMA</td></tr>
+<tr><td>边缘优化</td><td>Phi-4</td><td>14B</td><td>开放权重 + 研究论文</td><td>设备端部署</td><td>能力范围有限</td></tr>
+</tbody>
+</table>
+</div>
+<p>关键战略洞察：没有一个开源模型在所有维度上胜出。LLaMA 的生态优势（最大社区、最多微调变体）使其成为事实上的开放标准，但 DeepSeek 的效率优势和 Olmo 的透明度优势都开辟了可防御的利基市场。</p>
 <h2 id="104-许可之战"><a class="header" href="#104-许可之战">10.4 许可之战</a></h2>
 <p>在模型性能背后是一场更微妙的战争：<strong>“开源“对 AI 来说意味着什么？</strong></p>
 <p>开源倡议组织（OSI）在 2024 年定义了“开源 AI“——这个过程充满争议。传统定义（OSD）要求任何人可以为任何目的使用软件。但 AI 模型有一个复杂之处：它们不仅仅是代码。它们是<em>权重</em>、<em>数据</em>、<em>训练代码</em>和<em>硬件需求</em>。</p>
@@ -1020,6 +1259,25 @@
 </ul>
 <p>综合基准测试中 2.7% 的差距仍然是真实的。但在实践中，对于大多数应用——编程、写作、分析、客服——开源模型已经足够好了。</p>
 <p><strong>Yann LeCun</strong> 在一件事上是对的：开源赢了。不是打败闭源的意义上，而是 AI 已经变得像互联网——一个没有单一公司能控制的技术，即使是制造它的公司。</p>
+<p><strong>开源 vs 闭源决策框架：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>用例</th><th>推荐</th><th>原因</th></tr>
+</thead>
+<tbody>
+<tr><td>研究、实验</td><td>开源</td><td>无 API 成本，完全控制，可检查修改</td></tr>
+<tr><td>受监管行业（医疗、金融、法律）</td><td>开源（完全透明）</td><td>可审计性、数据主权、合规要求</td></tr>
+<tr><td>企业生产（面向客户）</td><td>闭源</td><td>可靠性保证、SLA、赔偿</td></tr>
+<tr><td>消费产品（基于 API）</td><td>闭源</td><td>无需基础设施管理，无缝扩展</td></tr>
+<tr><td>边缘部署（手机、笔记本）</td><td>开源（小型量化）</td><td>本地处理、隐私、离线能力</td></tr>
+<tr><td>高风险安全应用</td><td>闭源（带公开评估）</td><td>可召回、可审计来源</td></tr>
+<tr><td>全球南方、资源受限</td><td>开源</td><td>零许可成本，可在现有硬件上运行</td></tr>
+<tr><td>军事、情报</td><td>未解决</td><td>双方都有论据；无共识</td></tr>
+</tbody>
+</table>
+</div>
+<p>共存论不是妥协——它是现实。对任何专业人士来说，问题不是“开源还是闭源？“而是“哪个模型、在哪种许可下、用于哪个用例？“答案随着两个生态系统的进步每 6-12 个月变化一次。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第十一章地缘政治与-ai-主权"><a class="header" href="#第十一章地缘政治与-ai-主权">第十一章：地缘政治与 AI 主权</a></h1>
 <h2 id="111-不是斯普特尼克的斯普特尼克时刻"><a class="header" href="#111-不是斯普特尼克的斯普特尼克时刻">11.1 不是斯普特尼克的斯普特尼克时刻</a></h2>
@@ -1041,6 +1299,21 @@
 <p><strong>法国巴黎（2025 年 2 月）：</strong> <strong>Emmanuel Macron</strong> 将基调从安全转向机遇。巴黎 AI 行动峰会产出了“可信 AI 巴黎宣言“——强调开源、创新和产业应用。法国承诺投入 50 亿欧元建设 AI 算力。Mistral 的 CEO <strong>Arthur Mensch</strong> 成为欧洲 AI 主权的非官方外交官。</p>
 <p><strong>美国纽约（2025 年 9 月）：</strong> 联合国大会通过了首个 AI 决议——“把握安全、可靠、可信 AI 的机遇。“由美国发起，120+ 国家共同发起，代表了迄今为止最广泛的国际共识。但与所有联合国决议一样，它没有执行机制。</p>
 <p>模式很清楚：宣言很多，有约束力的法律很少。唯一的例外是欧盟。</p>
+<p><strong>四大 AI 峰会对比：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>峰会</th><th>日期</th><th>主办方</th><th>基调</th><th>关键成果</th><th>有约束力？</th><th>遗产</th></tr>
+</thead>
+<tbody>
+<tr><td>布莱切利园</td><td>2023 年 11 月</td><td>英国（Sunak）</td><td>安全</td><td>布莱切利宣言——共享原则，中国出席</td><td>否</td><td>象征性突破：中国在谈判桌上</td></tr>
+<tr><td>首尔</td><td>2024 年 5 月</td><td>韩国</td><td>互操作性</td><td>16 国兼容监管宣言</td><td>否</td><td>“可互操作治理“进入词典</td></tr>
+<tr><td>巴黎</td><td>2025 年 2 月</td><td>法国（Macron）</td><td>机遇</td><td>可信 AI 巴黎宣言——强调开源</td><td>否</td><td>基调从恐惧转向工业战略</td></tr>
+<tr><td>纽约（联合国）</td><td>2025 年 9 月</td><td>联合国大会</td><td>治理</td><td>首个联合国 AI 决议，120+ 共同提案国</td><td>否</td><td>最广泛共识，零执行</td></tr>
+</tbody>
+</table>
+</div>
+<p>外交模式：每次峰会都逐步推进对话，但没有一个产生有约束力的承诺。外交雄心与监管现实之间的差距是 2026 年 AI 治理的定义性特征。</p>
 <h2 id="114-欧盟-ai-法案全球首部综合性-ai-法律"><a class="header" href="#114-欧盟-ai-法案全球首部综合性-ai-法律">11.4 欧盟 AI 法案：全球首部综合性 AI 法律</a></h2>
 <p>2024 年 8 月，经过三年辩论，欧盟 AI 法案生效。这是历史上监管 AI 最大胆的尝试。</p>
 <p><strong>设计者：</strong> <strong>Margrethe Vestager</strong>（欧盟委员会竞争事务主管）和 <strong>Thierry Breton</strong>（内部市场专员）推动该法案穿越了成员国谈判、行业游说和议会修正案的迷宫。</p>
@@ -1187,7 +1460,24 @@
 <li>军事 AI 遵循可验证的条约（如化学武器）</li>
 <li>通过共享基础设施缩小算力鸿沟</li>
 </ul>
-<p><strong>2026 年最可能的路径：</strong> 都不是。AI 时代正在遵循之前每一种变革性技术的轨迹——共同利益领域合作，战略优势领域竞争，监管速度太慢无法跟上。未来不是预先确定的。它将由未来 24 个月内——在华盛顿、北京、布鲁塞尔和两者之间的每个地方——做出的决定所塑造。选择，一如既往，属于做出决定的人。</p>
+<p><strong>2026 年最可能的路径：</strong> 都不是。AI 时代正在遵循之前每一种变革性技术的轨迹——共同利益领域合作，战略优势领域竞争，监管速度太慢无法跟上。</p>
+<p><strong>2026 年塑造 AI 的六大地缘政治力量：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>力量</th><th>方向</th><th>强度</th><th>关键不确定性</th></tr>
+</thead>
+<tbody>
+<tr><td>中美脱钩</td><td>走向分离</td><td>高（出口管制升级）</td><td>效率突破会绕开硬件限制吗？</td></tr>
+<tr><td>欧盟监管引力</td><td>走向全球标准（布鲁塞尔效应）</td><td>中（AI 法案执法加强）</td><td>执法会匹配雄心吗？</td></tr>
+<tr><td>全球南方算力鸿沟</td><td>扩大</td><td>高（非洲仅有 0.2% 算力）</td><td>开源 + 共享基础设施能弥合差距吗？</td></tr>
+<tr><td>军事 AI 竞赛</td><td>加速（无条约在望）</td><td>高（联合国 LAWS 谈判停滞）</td><td>首次自主武器攻击会引发全球反弹吗？</td></tr>
+<tr><td>信息战</td><td>升级（40%+ 在线内容为 AI 生成）</td><td>非常高</td><td>内容来源标准能大规模工作吗？</td></tr>
+<tr><td>开源地缘政治武器化</td><td>增长（中美双方都在使用）</td><td>中</td><td>开源会保持中立公共资源还是被政治化？</td></tr>
+</tbody>
+</table>
+</div>
+<p>未来不是预先确定的。它将由未来 24 个月内——在华盛顿、北京、布鲁塞尔和两者之间的每个地方——做出的决定所塑造。选择，一如既往，属于做出决定的人。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第十二章负责任-ai日益扩大的鸿沟"><a class="header" href="#第十二章负责任-ai日益扩大的鸿沟">第十二章：负责任 AI——日益扩大的鸿沟</a></h1>
 <h2 id="121-改变一切的周末"><a class="header" href="#121-改变一切的周末">12.1 改变一切的周末</a></h2>
@@ -1247,9 +1537,20 @@
 </ul>
 <h2 id="126-越狱军备竞赛"><a class="header" href="#126-越狱军备竞赛">12.6 越狱军备竞赛</a></h2>
 <p>每一次安全进步都引发了一次反进步。越狱军备竞赛正在加速：</p>
-<p><strong>经典越狱（2023）：</strong> “DAN”（Do Anything Now）、“Grandma 漏洞”（要求模型假装成祖母讲包含制造凝固汽油弹说明的睡前故事）。这些很容易修补。</p>
-<p><strong>高级越狱（2024）：</strong> “多轮越狱”（Anthropic 的发现——用逐渐降低拒绝阈值的虚构对话淹没上下文窗口）。“Token 走私”（将恶意指令编码为绕过安全过滤器的子 token 序列）。</p>
-<p><strong>自动越狱生成（2025）：</strong> 卡内基梅隆大学的研究人员证明，越狱可以使用对抗性搜索自动生成——发现人类测试者永远不会找到的数百万个攻击向量。这篇论文有争议：发布方法给了攻击者一本操作手册。但作者认为透明度对于防御是必要的。</p>
+<p><strong>越狱的演变：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时代</th><th>越狱类型</th><th>方法</th><th>影响</th><th>防御</th></tr>
+</thead>
+<tbody>
+<tr><td>2023</td><td>手动提示</td><td>“DAN”、“Grandma 漏洞”——人工设计的角色扮演提示</td><td>广泛但浅层；易识别</td><td>简单关键词过滤、RLHF</td></tr>
+<tr><td>2024</td><td>上下文操控</td><td>多轮越狱（用虚构内容淹没上下文）、token 走私</td><td>更复杂；绕过简单过滤器</td><td>上下文模式异常检测</td></tr>
+<tr><td>2025</td><td>自动发现</td><td>对抗性搜索（CMU）——算法生成数百万攻击向量</td><td>系统全面；发现人类找不到的向量</td><td>对抗训练、持续红队测试</td></tr>
+<tr><td>2026</td><td>多步智能体</td><td>自主智能体跨工具、上下文窗口和 API 调用链式越狱</td><td>最难检测；利用系统级漏洞</td><td>行为监控、能力门控</td></tr>
+</tbody>
+</table>
+</div>
 <p><strong>悖论：</strong> 每次越狱修复都提高了模型的<em>评估</em>安全性，但军备竞赛意味着绝对安全从未实现。一个模型可以通过所有已知的安全测试，但仍然容易受到第二天才会被发现的攻击。</p>
 <h2 id="127-可解释性前沿"><a class="header" href="#127-可解释性前沿">12.7 可解释性前沿</a></h2>
 <p>最根本的安全问题是可解释性：<strong>我们不知道这些模型内部在做什么。</strong></p>
@@ -1337,6 +1638,24 @@
 <h2 id="1215-结语之问"><a class="header" href="#1215-结语之问">12.15 结语之问</a></h2>
 <p>能力-安全差距是真实的、可测量的，而且正在扩大。建造者与安全研究人员的比例为 200:1。AI 事故数量每 18 个月翻一番。监管应对零散且缓慢。可解释性前沿前景光明，但距离前沿规模模型还有数年。模型塌缩问题威胁着未来训练的可持性。公众对正在发生的变革规模毫无准备。</p>
 <p>然而——AI 能力继续以惊人的速度发展。每一代模型都更加强大、更加有用、更加融入日常生活。这项技术太有价值以至于不能停止，太强大以至于不能忽视，也许太危险以至于不能在没有足够保障的情况下部署。</p>
+<p>差距不是技术的失败。它是集体行动的失败——一个每天都在做出的选择，将能力优先于安全。问题不在于差距是否会弥合。问题在于什么会弥合它：负责任的治理、变革性的安全突破——或者一个替我们做出选择的灾难性事件。</p>
+<p><strong>负责任 AI 评分卡（2026）：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>当前状态</th><th>目标</th><th>差距</th><th>趋势</th></tr>
+</thead>
+<tbody>
+<tr><td>安全研究比例（安全:能力）</td><td>1:200</td><td>1:10</td><td>投入不足 20 倍</td><td>恶化</td></tr>
+<tr><td>事件报告</td><td>约 500/年追踪</td><td>实时、强制</td><td>自愿、不一致</td><td>增长</td></tr>
+<tr><td>可解释性（前沿规模）</td><td>70 亿模型已映射；1 万亿+模型不透明</td><td>完整电路级理解</td><td>落后 5-10 年</td><td>缓慢改善</td></tr>
+<tr><td>红队测试自动化</td><td>已知攻击标准化；未知攻击未检测</td><td>持续自动发现</td><td>军备竞赛动态</td><td>保持同步</td></tr>
+<tr><td>监管覆盖</td><td>欧盟有约束力；美国拼凑；中国聚焦内容</td><td>有约束力的国际框架</td><td>碎片化，无执行</td><td>欧盟领先，其他滞后</td></tr>
+<tr><td>公众 AI 素养</td><td>38% 检测深度伪造；22% 理解幻觉</td><td>90%+ 基本素养</td><td>巨大教育差距</td><td>轻微改善</td></tr>
+<tr><td>职业道德准则</td><td>多个自愿承诺；无统一标准</td><td>对 AI 开发者的有约束力准则</td><td>职业身份差距</td><td>出现但具争议</td></tr>
+</tbody>
+</table>
+</div>
 <p>差距不是技术的失败。它是集体行动的失败——一个每天都在做出的选择，将能力优先于安全。问题不在于差距是否会弥合。问题在于什么会弥合它：负责任的治理、变革性的安全突破——或者一个替我们做出选择的灾难性事件。</p>
 <blockquote>
 <p><em>“我们正在构建可能超越我们自己的智能，而我们是在没有安全手册、没有监管监督、没有公众理解的情况下进行的。这不是对技术的批评。这是关于我们集体选择的事实陈述。”</em> —— <strong>Yoshua Bengio</strong>，2025</p>

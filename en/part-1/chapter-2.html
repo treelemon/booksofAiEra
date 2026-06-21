@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "../searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e961be59.js"></script>
@@ -191,6 +191,20 @@
 <p>The radical bet: throw away recurrence. No RNNs. No LSTMs. Only attention.</p>
 <p><strong>Self-attention</strong> let every token look directly at every other token, regardless of distance. A word at position 1 could attend to a word at position 1,000 with the same computational cost as attending to its immediate neighbor. The architecture could also be fully parallelized during training — suddenly, training time dropped from weeks to hours.</p>
 <p>The paper was presented at NeurIPS 2017 and initially received with polite interest, not revolution. Few realized that this single architectural change — attention without recurrence — would unlock everything that followed.</p>
+<p><strong>The transformer’s three key innovations:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Innovation</th><th>What It Replaced</th><th>What It Enabled</th><th>Impact</th></tr>
+</thead>
+<tbody>
+<tr><td>Self-attention</td><td>Recurrent connections (RNN/LSTM)</td><td>Direct token-to-token access at any distance; parallelized training</td><td>Training time: weeks → hours; long-range dependencies solved</td></tr>
+<tr><td>Positional encoding</td><td>Sequential step-by-step processing</td><td>Model knows token order without recurrence</td><td>Enables full parallelization during training</td></tr>
+<tr><td>Multi-head attention</td><td>Single attention mechanism</td><td>Model learns multiple relationship types simultaneously</td><td>Richer representation; different heads specialize in syntax, semantics, coreference</td></tr>
+</tbody>
+</table>
+</div>
+<p>Together, these three innovations eliminated the sequential bottleneck that had constrained neural networks for decades. The architecture was simpler, faster, and more scalable than anything that came before it.</p>
 <h2 id="23-the-road-to-emergence-a-timeline-of-surprises"><a class="header" href="#23-the-road-to-emergence-a-timeline-of-surprises">2.3 The Road to Emergence: A Timeline of Surprises</a></h2>
 <p>The transformer did not arrive fully formed. It was a series of discoveries, each more surprising than the last:</p>
 <p><strong>GPT-1 (June 2018, 117M parameters):</strong> OpenAI demonstrated that a decoder-only transformer could learn language modeling and transfer to downstream tasks with minimal fine-tuning. The results were modest but the principle was powerful.</p>
@@ -199,6 +213,23 @@
 <p><strong>GPT-3 (May 2020, 175B parameters — 100× GPT-2):</strong> This was the earthquake. At 175 billion parameters, trained on ~570GB of text, GPT-3 could perform tasks it had never been explicitly trained to do — translate languages, write code, answer questions — simply by seeing a few examples in the prompt. The phenomenon was named <strong>in-context learning</strong>, and nobody had predicted it. Ilya Sutskever later admitted the team was genuinely surprised.</p>
 <p><strong>Chinchilla (March 2022):</strong> DeepMind made a counterintuitive discovery: for a given compute budget, most models were undertrained. The optimal strategy was to train a smaller model on <em>far more data</em>. Chinchilla (70B parameters, 1.4 trillion tokens) outperformed GPT-3 (175B parameters, 300 billion tokens). The scaling race suddenly had a new rulebook.</p>
 <p><strong>GPT-4 (March 2023):</strong> Multimodal, more reliable, dramatically better at reasoning. OpenAI revealed few technical details but confirmed it used an MoE architecture. Eliezer Yudkowsky, after testing it, remarked: “This is strange and worrying… it’s not yet smarter than a human, but it’s smarter than most humans on most tasks.”</p>
+<p><strong>The model evolution at a glance:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Model</th><th>Date</th><th>Parameters</th><th>Key Discovery</th><th>Surprise Level</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-1</td><td>Jun 2018</td><td>117M</td><td>Generative pre-training + fine-tuning works</td><td>Low (modest results)</td></tr>
+<tr><td>BERT</td><td>Oct 2018</td><td>340M</td><td>Bidirectional masking improves understanding</td><td>Low (expected improvement)</td></tr>
+<tr><td>GPT-2</td><td>Feb 2019</td><td>1.5B</td><td>Scaling produces coherence; withheld for safety</td><td>Medium (unexpected caution)</td></tr>
+<tr><td>GPT-3</td><td>May 2020</td><td>175B</td><td>In-context learning emerges from scale</td><td>High (nobody predicted it)</td></tr>
+<tr><td>Chinchilla</td><td>Mar 2022</td><td>70B</td><td>Most models undertrained; data &gt; parameters</td><td>High (rewrote scaling rules)</td></tr>
+<tr><td>GPT-4</td><td>Mar 2023</td><td>~1.8T (MoE)</td><td>Multimodal reasoning at human-expert level</td><td>Medium (expected capability, impressive execution)</td></tr>
+</tbody>
+</table>
+</div>
+<p>The pattern is clear: each major model revealed a surprise that the previous generation could not have predicted. The surprises are not bugs — they are the signature of genuine emergence.</p>
 <h2 id="24-scaling-laws-the-north-star"><a class="header" href="#24-scaling-laws-the-north-star">2.4 Scaling Laws: The North Star</a></h2>
 <p>The empirical discovery that turbocharged the entire race came from Kaplan et al. (2020): model performance follows a smooth power-law relationship with three variables:</p>
 <ul>
@@ -225,6 +256,22 @@
 <li><strong>DeepSeek’s MoE (2024–2025):</strong> mixture-of-experts architecture where only a fraction of parameters activate per token, enabling massive effective scale at lower cost. DeepSeek-V3 (671B total, 37B active) and DeepSeek-R1 showed that open-source models could match frontier performance through architectural cleverness.</li>
 </ul>
 <p>The transformer’s dominance is no longer unchallenged, but its core insight — attention-based architectures that scale predictably with data and compute — remains the foundation of the current AI era. Whatever comes next will be measured against the revolution that eight researchers sparked on a whiteboard at Google in 2017.</p>
+<p><strong>Architecture comparison at a glance:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Architecture</th><th>Inference Complexity</th><th>Training Parallelization</th><th>Long-Context Strength</th><th>Current Status</th></tr>
+</thead>
+<tbody>
+<tr><td>RNN/LSTM</td><td>O(n) sequential</td><td>Impossible</td><td>Weak (gradient decay)</td><td>Legacy</td></tr>
+<tr><td>Transformer</td><td>O(n²)</td><td>Full</td><td>Strong (any-to-any attention)</td><td>Dominant</td></tr>
+<tr><td>Mamba (SSM)</td><td>O(n) linear</td><td>Partial via scan</td><td>Strong (linear memory)</td><td>Emerging challenger</td></tr>
+<tr><td>RWKV</td><td>O(n) linear</td><td>Partial</td><td>Moderate</td><td>Niche</td></tr>
+<tr><td>MoE variants</td><td>O(n²) active, sparse total</td><td>Full (with load balancing)</td><td>Strong</td><td>Industry standard for frontier models</td></tr>
+</tbody>
+</table>
+</div>
+<p>The transformer won because it solved the parallelism bottleneck at the cost of quadratic attention. The post-transformer architectures aim to keep the parallelism while reducing the quadratic cost. Whoever solves this equation — linear complexity with full parallelization — will build the next foundation.</p>
 
                     </main>
 

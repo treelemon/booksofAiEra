@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e961be59.js"></script>
@@ -296,16 +296,24 @@
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Wave</th><th>Core Idea</th><th>Peak</th><th>Failure Mode</th></tr>
+<tr><th>Wave</th><th>Core Idea</th><th>Time Span</th><th>Key Enabler</th><th>Peak</th><th>Limitation</th><th>Legacy</th></tr>
 </thead>
 <tbody>
-<tr><td>Symbolic AI</td><td>Hand-coded rules</td><td>Expert systems (1980s)</td><td>Brittleness — rules don’t scale</td></tr>
-<tr><td>Statistical ML</td><td>Learned patterns from data</td><td>Deep learning (2010s)</td><td>Narrowness — each model solves one task</td></tr>
-<tr><td>Foundation Models</td><td>Large-scale pre-training</td><td>GPT-4 + reasoning (2024–2025)</td><td>Truthfulness, alignment, control</td></tr>
+<tr><td>Symbolic AI</td><td>Hand-coded rules</td><td>1956–2010</td><td>Logic, expert knowledge</td><td>Expert systems (1980s)</td><td>Brittleness — rules don’t scale</td><td>Proved AI was possible; established reasoning as a goal</td></tr>
+<tr><td>Statistical ML</td><td>Learned patterns from data</td><td>2010–2020</td><td>Internet data, GPUs, backprop</td><td>Deep learning (2010s)</td><td>Narrowness — each model solves one task</td><td>Proved learning worked better than programming</td></tr>
+<tr><td>Foundation Models</td><td>Large-scale pre-training</td><td>2020–Present</td><td>Transformer, scaling laws</td><td>GPT-4 + reasoning (2024–2025)</td><td>Truthfulness, alignment, control</td><td>Proved that scale + data + compute produces emergence</td></tr>
 </tbody>
 </table>
 </div>
 <p>The pendulum swung from <strong>rules</strong> to <strong>statistics</strong> to <strong>scale</strong>. Each wave seemed insurmountable in its moment, then collapsed into the seed of the next.</p>
+<p><strong>The wave framework for professional analysis:</strong></p>
+<pre><code>For any AI technology, ask:
+  1. Which wave does it belong to? (symbolic, statistical, or foundation?)
+  2. What is its core mechanism? (rules, patterns, or scale?)
+  3. What is its current limitation? (brittleness, narrowness, or alignment?)
+  4. What would the next wave need to overcome this limitation?
+</code></pre>
+<p>This framework is not historical trivia. It is a practical tool for evaluating any new AI claim: identify which wave it belongs to, check whether the limitation of that wave has been solved, and assess whether the claim is real progress or a re-labeling of old ideas.</p>
 <p><strong>What this history teaches us:</strong></p>
 <ul>
 <li>Every apparent limitation of today’s AI is a future breakthrough waiting to happen</li>
@@ -325,6 +333,20 @@
 <p>The radical bet: throw away recurrence. No RNNs. No LSTMs. Only attention.</p>
 <p><strong>Self-attention</strong> let every token look directly at every other token, regardless of distance. A word at position 1 could attend to a word at position 1,000 with the same computational cost as attending to its immediate neighbor. The architecture could also be fully parallelized during training — suddenly, training time dropped from weeks to hours.</p>
 <p>The paper was presented at NeurIPS 2017 and initially received with polite interest, not revolution. Few realized that this single architectural change — attention without recurrence — would unlock everything that followed.</p>
+<p><strong>The transformer’s three key innovations:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Innovation</th><th>What It Replaced</th><th>What It Enabled</th><th>Impact</th></tr>
+</thead>
+<tbody>
+<tr><td>Self-attention</td><td>Recurrent connections (RNN/LSTM)</td><td>Direct token-to-token access at any distance; parallelized training</td><td>Training time: weeks → hours; long-range dependencies solved</td></tr>
+<tr><td>Positional encoding</td><td>Sequential step-by-step processing</td><td>Model knows token order without recurrence</td><td>Enables full parallelization during training</td></tr>
+<tr><td>Multi-head attention</td><td>Single attention mechanism</td><td>Model learns multiple relationship types simultaneously</td><td>Richer representation; different heads specialize in syntax, semantics, coreference</td></tr>
+</tbody>
+</table>
+</div>
+<p>Together, these three innovations eliminated the sequential bottleneck that had constrained neural networks for decades. The architecture was simpler, faster, and more scalable than anything that came before it.</p>
 <h2 id="23-the-road-to-emergence-a-timeline-of-surprises"><a class="header" href="#23-the-road-to-emergence-a-timeline-of-surprises">2.3 The Road to Emergence: A Timeline of Surprises</a></h2>
 <p>The transformer did not arrive fully formed. It was a series of discoveries, each more surprising than the last:</p>
 <p><strong>GPT-1 (June 2018, 117M parameters):</strong> OpenAI demonstrated that a decoder-only transformer could learn language modeling and transfer to downstream tasks with minimal fine-tuning. The results were modest but the principle was powerful.</p>
@@ -333,6 +355,23 @@
 <p><strong>GPT-3 (May 2020, 175B parameters — 100× GPT-2):</strong> This was the earthquake. At 175 billion parameters, trained on ~570GB of text, GPT-3 could perform tasks it had never been explicitly trained to do — translate languages, write code, answer questions — simply by seeing a few examples in the prompt. The phenomenon was named <strong>in-context learning</strong>, and nobody had predicted it. Ilya Sutskever later admitted the team was genuinely surprised.</p>
 <p><strong>Chinchilla (March 2022):</strong> DeepMind made a counterintuitive discovery: for a given compute budget, most models were undertrained. The optimal strategy was to train a smaller model on <em>far more data</em>. Chinchilla (70B parameters, 1.4 trillion tokens) outperformed GPT-3 (175B parameters, 300 billion tokens). The scaling race suddenly had a new rulebook.</p>
 <p><strong>GPT-4 (March 2023):</strong> Multimodal, more reliable, dramatically better at reasoning. OpenAI revealed few technical details but confirmed it used an MoE architecture. Eliezer Yudkowsky, after testing it, remarked: “This is strange and worrying… it’s not yet smarter than a human, but it’s smarter than most humans on most tasks.”</p>
+<p><strong>The model evolution at a glance:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Model</th><th>Date</th><th>Parameters</th><th>Key Discovery</th><th>Surprise Level</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-1</td><td>Jun 2018</td><td>117M</td><td>Generative pre-training + fine-tuning works</td><td>Low (modest results)</td></tr>
+<tr><td>BERT</td><td>Oct 2018</td><td>340M</td><td>Bidirectional masking improves understanding</td><td>Low (expected improvement)</td></tr>
+<tr><td>GPT-2</td><td>Feb 2019</td><td>1.5B</td><td>Scaling produces coherence; withheld for safety</td><td>Medium (unexpected caution)</td></tr>
+<tr><td>GPT-3</td><td>May 2020</td><td>175B</td><td>In-context learning emerges from scale</td><td>High (nobody predicted it)</td></tr>
+<tr><td>Chinchilla</td><td>Mar 2022</td><td>70B</td><td>Most models undertrained; data &gt; parameters</td><td>High (rewrote scaling rules)</td></tr>
+<tr><td>GPT-4</td><td>Mar 2023</td><td>~1.8T (MoE)</td><td>Multimodal reasoning at human-expert level</td><td>Medium (expected capability, impressive execution)</td></tr>
+</tbody>
+</table>
+</div>
+<p>The pattern is clear: each major model revealed a surprise that the previous generation could not have predicted. The surprises are not bugs — they are the signature of genuine emergence.</p>
 <h2 id="24-scaling-laws-the-north-star"><a class="header" href="#24-scaling-laws-the-north-star">2.4 Scaling Laws: The North Star</a></h2>
 <p>The empirical discovery that turbocharged the entire race came from Kaplan et al. (2020): model performance follows a smooth power-law relationship with three variables:</p>
 <ul>
@@ -359,6 +398,22 @@
 <li><strong>DeepSeek’s MoE (2024–2025):</strong> mixture-of-experts architecture where only a fraction of parameters activate per token, enabling massive effective scale at lower cost. DeepSeek-V3 (671B total, 37B active) and DeepSeek-R1 showed that open-source models could match frontier performance through architectural cleverness.</li>
 </ul>
 <p>The transformer’s dominance is no longer unchallenged, but its core insight — attention-based architectures that scale predictably with data and compute — remains the foundation of the current AI era. Whatever comes next will be measured against the revolution that eight researchers sparked on a whiteboard at Google in 2017.</p>
+<p><strong>Architecture comparison at a glance:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Architecture</th><th>Inference Complexity</th><th>Training Parallelization</th><th>Long-Context Strength</th><th>Current Status</th></tr>
+</thead>
+<tbody>
+<tr><td>RNN/LSTM</td><td>O(n) sequential</td><td>Impossible</td><td>Weak (gradient decay)</td><td>Legacy</td></tr>
+<tr><td>Transformer</td><td>O(n²)</td><td>Full</td><td>Strong (any-to-any attention)</td><td>Dominant</td></tr>
+<tr><td>Mamba (SSM)</td><td>O(n) linear</td><td>Partial via scan</td><td>Strong (linear memory)</td><td>Emerging challenger</td></tr>
+<tr><td>RWKV</td><td>O(n) linear</td><td>Partial</td><td>Moderate</td><td>Niche</td></tr>
+<tr><td>MoE variants</td><td>O(n²) active, sparse total</td><td>Full (with load balancing)</td><td>Strong</td><td>Industry standard for frontier models</td></tr>
+</tbody>
+</table>
+</div>
+<p>The transformer won because it solved the parallelism bottleneck at the cost of quadratic attention. The post-transformer architectures aim to keep the parallelism while reducing the quadratic cost. Whoever solves this equation — linear complexity with full parallelization — will build the next foundation.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-3-from-gpt-to-reasoning-models"><a class="header" href="#chapter-3-from-gpt-to-reasoning-models">Chapter 3: From GPT to Reasoning Models</a></h1>
 <h2 id="31-the-gpt-lineage"><a class="header" href="#31-the-gpt-lineage">3.1 The GPT Lineage</a></h2>
@@ -374,6 +429,22 @@
 <p><strong>Gemini (Google DeepMind, 2023–):</strong> Google’s counter-strike. After years of internal caution and the shocking loss of public AI leadership to OpenAI, Google merged DeepMind and Google Brain into a single unit. Gemini Ultra (December 2023) was the first model to outperform GPT-4 on MMLU (90.0% vs 86.4%). Gemini 2.5 Pro (2025) introduced “thinking mode” natively and a 1M-token context window. DeepMind’s heritage — AlphaGo, AlphaFold — gave Gemini an edge in scientific reasoning.</p>
 <p><strong>Llama (Meta, 2023–):</strong> The democratization bomb. Meta released LLaMA (65B parameters) to researchers under a non-commercial license in February 2023. Within weeks, it was leaked to the public on 4chan. The floodgates opened: fine-tuned variants (Alpaca, Vicuna, WizardLM) multiplied. Meta leaned in, releasing LLaMA 2 (July 2023) with a commercial license, and LLaMA 3 (2024) at 405B parameters matching GPT-4. The open-source ecosystem — built on LLaMA’s foundation — became a parallel AI universe.</p>
 <p><strong>DeepSeek (China, 2024–2025):</strong> The cost-efficiency revolution. A quiet Chinese quant-trading firm’s AI lab dropped a series of models that shocked the industry. DeepSeek-V2 (2024) trained for $2.78M — roughly 1/70th of GPT-4’s estimated cost. DeepSeek-V3 (2025, 671B total, 37B active per token) used an MoE architecture so efficient it trained on just over 2,000 GPUs. Then DeepSeek-R1 (January 2025) matched OpenAI’s o1 at reasoning — and released the paper describing how they did it. The industry gasped. The US stock market lost $500 billion in a single day. The geopolitical narrative shifted: China was not following — it was innovating.</p>
+<p><strong>The competitor landscape at a glance:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Lab</th><th>Origin Story</th><th>Key Innovation</th><th>Strengths</th><th>Vulnerability</th></tr>
+</thead>
+<tbody>
+<tr><td>OpenAI</td><td>Non-profit turned capped-profit</td><td>RLHF, scaling-first, o-series reasoning</td><td>Research velocity, brand, ecosystem</td><td>Talent retention, governance instability</td></tr>
+<tr><td>Anthropic</td><td>OpenAI safety schism (2021)</td><td>Constitutional AI, RSP framework</td><td>Safety as differentiator, coding quality</td><td>Narrow product line, slower releases</td></tr>
+<tr><td>Google DeepMind</td><td>Merger of DeepMind + Google Brain</td><td>Native multimodality, 1M-token context</td><td>Data scale (YouTube, Images, Earth), science heritage</td><td>Bureaucracy, slow culture</td></tr>
+<tr><td>Meta (LLaMA)</td><td>Zuckerberg’s open-source bet</td><td>Open-weight licensing, ecosystem play</td><td>Community, democratization, zero licensing cost</td><td>No direct revenue model</td></tr>
+<tr><td>DeepSeek</td><td>Chinese quant firm (High-Flyer)</td><td>MoE efficiency, cost 1/70th of GPT-4</td><td>Cost leadership, open science, engineering culture</td><td>Geopolitical risk, hardware constraints</td></tr>
+</tbody>
+</table>
+</div>
+<p>Each lab placed a different bet on what would matter most: scale (OpenAI), safety (Anthropic), data (Google), openness (Meta), or efficiency (DeepSeek). The 2026 results suggest all five bets were partially correct — and the frontier belongs to those who can combine multiple advantages.</p>
 <h2 id="33-the-reasoning-model-breakthrough"><a class="header" href="#33-the-reasoning-model-breakthrough">3.3 The Reasoning Model Breakthrough</a></h2>
 <p>In September 2024, OpenAI released o1 — the first model that “thinks” before answering. The rumors had called it “Strawberry” or “Q*.” The reality was stranger and more important.</p>
 <p><strong>How reasoning models work:</strong></p>
@@ -389,6 +460,24 @@
 <li><strong>Gemini 2.5 Pro “thinking” (2025):</strong> DeepMind’s natively thinking model with 1M token context.</li>
 </ul>
 <p><strong>Why it matters:</strong> We are no longer just scaling training compute. Reasoning models introduced <strong>test-time compute</strong> as a new dimension. A model can now “spend” more compute to think harder about hard problems. This changes everything — cost curves, latency trade-offs, and what we consider possible.</p>
+<p><strong>The reasoning model timeline:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Model</th><th>Date</th><th>Test-Time Compute</th><th>AIME Score</th><th>Key Finding</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-4</td><td>Mar 2023</td><td>None (standard generation)</td><td>12%</td><td>Baseline</td></tr>
+<tr><td>o1-preview</td><td>Sep 2024</td><td>Internal chain-of-thought</td><td>83%</td><td>7× improvement — reasoning is real</td></tr>
+<tr><td>o1 full</td><td>Dec 2024</td><td>Extended thinking</td><td>~90%</td><td>Coding and tool use improved</td></tr>
+<tr><td>DeepSeek R1</td><td>Jan 2025</td><td>Open-source reasoning</td><td>~80%</td><td>Matched o1 at 1/20th cost; published methods</td></tr>
+<tr><td>o3</td><td>Feb 2025</td><td>Multi-branch search + verification</td><td>94%</td><td>87.5% on ARC-AGI (approaching human ceiling)</td></tr>
+<tr><td>Claude Sonnet 4</td><td>Apr 2025</td><td>Long-context reasoning</td><td>~85%</td><td>Stronger on tool orchestration</td></tr>
+<tr><td>Gemini 2.5 Pro</td><td>2025</td><td>Native thinking + 1M context</td><td>82%</td><td>Best at long-document reasoning</td></tr>
+</tbody>
+</table>
+</div>
+<p>The separation between “training compute” and “inference compute” was the most important architectural shift since the transformer itself. Models could now think harder when the problem demanded it — and spend less when it didn’t.</p>
 <h2 id="34-the-capability-trajectory"><a class="header" href="#34-the-capability-trajectory">3.4 The Capability Trajectory</a></h2>
 <p>The pace of improvement between 2024 and 2025 was unlike anything in the history of technology:</p>
 <div class="table-wrapper">
@@ -446,6 +535,24 @@
 <p>In January 2025, a paper from a Chinese quant-trading firm’s AI lab sent shockwaves through the industry. DeepSeek-R1 had matched OpenAI’s o1 on reasoning benchmarks — and published the full methodology. The US stock market lost half a trillion dollars in a single day. Jensen Huang’s NVIDIA dropped 17%.</p>
 <p>The founder, <strong>Liang Wenfeng</strong>, was a hedge fund trader who had started acquiring GPUs in 2020 for quantitative trading. By 2023, he had redirected the compute to LLM research. DeepSeek’s edge was pure engineering: they built a Mixture-of-Experts architecture so efficient that training cost 1/70th of comparable models. DeepSeek-V4 (2026) cost just $6.8 million to train — less than a rounding error in GPT-5’s budget — while matching Gemini 3 on all but the hardest benchmarks.</p>
 <p>The geopolitical implications were immediate. The US-China AI gap, which had been estimated at 2-3 years in 2023, had narrowed to 2.7% on aggregate benchmarks by 2026. China was not just copying — it was innovating on a different cost curve.</p>
+<p><strong>The four frontier strategies compared:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Dimension</th><th>OpenAI</th><th>Anthropic</th><th>Google DeepMind</th><th>DeepSeek</th></tr>
+</thead>
+<tbody>
+<tr><td>Primary bet</td><td>Scale + reasoning</td><td>Safety + data quality</td><td>Data + multimodality</td><td>Efficiency + architecture</td></tr>
+<tr><td>Best model (2026)</td><td>GPT-5 / o3</td><td>Claude Opus 5</td><td>Gemini 3 Ultra</td><td>V4 / R1</td></tr>
+<tr><td>Training cost</td><td>$1B+ (est.)</td><td>~$500M (est.)</td><td>~$500M (est.)</td><td>~$6.8M</td></tr>
+<tr><td>Source model</td><td>Closed</td><td>Closed</td><td>Closed</td><td>Open-weight</td></tr>
+<tr><td>Safety approach</td><td>Voluntary reporting</td><td>RSP, public evaluations</td><td>AI Safety Framework</td><td>Minimal public disclosure</td></tr>
+<tr><td>Key advantage</td><td>Brand, first-mover</td><td>Developer trust, code quality</td><td>Ecosystem, science heritage</td><td>Cost, open science</td></tr>
+<tr><td>Key risk</td><td>Talent exodus</td><td>Narrow product focus</td><td>Bureaucracy, speed</td><td>Geopolitical constraints</td></tr>
+</tbody>
+</table>
+</div>
+<p>The table reveals an uncomfortable truth: the most safety-transparent lab (Anthropic) was not the market leader. The most cost-efficient lab (DeepSeek) was spending less on a single model than OpenAI spends on data-center electricity in a week. The frontier was not a single race — it was four different races on four different tracks.</p>
 <h2 id="43-the-open-source-parallel-universe"><a class="header" href="#43-the-open-source-parallel-universe">4.3 The Open-Source Parallel Universe</a></h2>
 <p>Meta’s <strong>Yann LeCun</strong> had been saying for years that open-source would win. In 2026, his prediction looked prescient.</p>
 <p><strong>Llama 5</strong> (2026) matched GPT-5 on most benchmarks — the gap had shrunk from 30% in 2023 to less than 5%. The ecosystem built on LLaMA had become a parallel AI universe: thousands of fine-tuned variants, specialized for medicine, law, finance, and education. The Llama 5 release used a new architecture — “dual-pass inference” — that halved inference costs.</p>
@@ -490,6 +597,22 @@
 <p><strong>Amazon (AWS):</strong> Trainium 3, announced in 2025, was designed specifically for training large models on AWS. Amazon was building a vertically integrated AI stack — hardware (Trainium), chips (Annapurna Labs), and cloud platform.</p>
 <p><strong>Huawei (China):</strong> Hit by escalating US export controls, Huawei’s Ascend 910C used 7nm-class lithography (vs. TSMC’s 3nm for NVIDIA). Performance was 30-50% below H100, but it was domestic, available, and improving. Chinese AI labs were developing chip-to-chip networking to compensate for individual chip weakness.</p>
 <p><strong>Apple (Tim Cook / Johny Srouji):</strong> The M-series chips integrated a Neural Engine that ran 30+ billion parameter models on-device. Apple Intelligence (2024) proved that local AI could handle most everyday tasks — summarization, image editing, contextual responses — while keeping user data private. By 2026, the gap between edge and cloud AI had narrowed significantly.</p>
+<p><strong>The efficiency techniques that reshaped 2025–2026:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Technique</th><th>Mechanism</th><th>Cost Reduction</th><th>Adoption</th></tr>
+</thead>
+<tbody>
+<tr><td>Mixture-of-Experts (MoE)</td><td>Activate only 10-30% of parameters per token</td><td>70-90% inference compute</td><td>Industry standard (GPT-4, DeepSeek, Gemini)</td></tr>
+<tr><td>Quantization</td><td>Train/infer at FP8, INT8, INT4 instead of FP16</td><td>2-4× throughput</td><td>Universal for inference</td></tr>
+<tr><td>Distillation</td><td>Large teacher trains smaller student</td><td>Variable (e.g., Phi-3 matched GPT-3.5 at 1/50th size)</td><td>Common for edge deployment</td></tr>
+<tr><td>Hardware-model co-optimization</td><td>Design architecture around specific chip constraints</td><td>3-10× efficiency per watt</td><td>DeepSeek-H800, Gemini-TPU</td></tr>
+<tr><td>Speculative decoding</td><td>Small model proposes, large model verifies</td><td>2-3× latency reduction</td><td>Common in production APIs</td></tr>
+</tbody>
+</table>
+</div>
+<p>The efficiency revolution had a paradoxical effect: cheaper inference increased total AI consumption, so total compute demand still rose — but the cost per token collapsed by 10× per year.</p>
 <h2 id="55-energy-the-hidden-constraint"><a class="header" href="#55-energy-the-hidden-constraint">5.5 Energy: The Hidden Constraint</a></h2>
 <p>In 2024, Google and Microsoft each published environmental reports showing AI-related emissions had increased 48% and 29% respectively. The public reaction was sharp.</p>
 <p>The numbers are stark: a single GPT-5 training run consumes approximately 80 GWh of electricity — equivalent to 8,000 US homes for a year. The entire AI industry’s power consumption in 2026: roughly 85 TWh/year, comparable to the Netherlands.</p>
@@ -519,6 +642,22 @@
 <p>The unintended effect: accelerating China’s domestic chip industry. Huawei’s Ascend 910C and SMIC’s N+2 process node now supply a parallel AI infrastructure ecosystem. Chinese labs train on clusters of 50,000+ domestic chips — less powerful individually, but effective at scale.</p>
 <p>The “compute sovereignty” movement spread to Europe, India, and Southeast Asia. France committed €5 billion to AI compute. India’s “AI for All” initiative pledged 10,000 GPUs for public research. Japan’s Preferred Networks (PFN) built the MN-Core chip, designed specifically for Japanese AI needs.</p>
 <p>Open-source models became a geopolitical tool: regions restricted from importing the best hardware could still download the best models. LLaMA 5 and DeepSeek-R1 ran on whatever chips were available.</p>
+<p><strong>The compute chessboard by 2026:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Player</th><th>Chip</th><th>Process Node</th><th>Relative Performance</th><th>Availability</th></tr>
+</thead>
+<tbody>
+<tr><td>NVIDIA</td><td>H100 → B200 → Rubin</td><td>TSMC 4nm → 3nm</td><td>Baseline (1.0×)</td><td>Open market (export restricted to China)</td></tr>
+<tr><td>AMD</td><td>MI300X → MI350</td><td>TSMC 5nm → 4nm</td><td>0.8× H100 (inference)</td><td>Open market</td></tr>
+<tr><td>Google</td><td>TPU v7</td><td>TSMC 3nm</td><td>1.0× H100 (training, 1.3× efficiency/W)</td><td>Internal only</td></tr>
+<tr><td>Amazon</td><td>Trainium 3</td><td>TSMC 4nm</td><td>~0.8× H100</td><td>AWS only</td></tr>
+<tr><td>Huawei</td><td>Ascend 910C</td><td>SMIC 7nm (N+2)</td><td>0.5-0.7× H100</td><td>China only</td></tr>
+<tr><td>Apple</td><td>M4 Neural Engine</td><td>TSMC 3nm</td><td>30B params on-device</td><td>Apple devices only</td></tr>
+</tbody>
+</table>
+</div>
 <p><strong>The defining tension of 2026:</strong> AI capability is compute-limited, and compute access is politically determined. The countries that control hardware will shape the future of intelligence — but efficiency breakthroughs are making the hardware advantage less absolute than it seemed in 2023.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-6-the-ai-economy"><a class="header" href="#chapter-6-the-ai-economy">Chapter 6: The AI Economy</a></h1>
@@ -568,26 +707,34 @@
 <p><strong>The implication was profound:</strong> In previous technology waves — mainframes, PCs, cloud — the cost of adoption created a natural diffusion curve. AI had no such curve. The technology was effectively free and increasingly capable. The economic bottleneck was no longer technology — it was human adaptation.</p>
 <h2 id="66-the-job-market-earthquake"><a class="header" href="#66-the-job-market-earthquake">6.6 The Job Market Earthquake</a></h2>
 <p>By 2026, the labor market had experienced the fastest transformation in modern history:</p>
-<p><strong>Roles that grew:</strong></p>
-<ul>
-<li>AI Engineer: +340% since 2022</li>
-<li>Prompt Engineer: Did not exist in 2022; 50,000+ job postings in 2026</li>
-<li>AI Ethics &amp; Alignment: 28,000 professionals globally</li>
-<li>Model Infrastructure (MLOps, LLMOps): +200%</li>
-</ul>
-<p><strong>Roles that contracted:</strong></p>
-<ul>
-<li>Entry-level coding interview loops had been abandoned at most major tech companies. “Why ask someone to reverse a linked list when AI does it in seconds?” one Meta engineering director explained. The hiring bar shifted from “can you code?” to “can you solve problems with AI?”</li>
-<li>Translation services: Revenue down 40% since 2023. Real-time AI translation had effectively commoditized the industry.</li>
-<li>Illustrators and graphic designers: Reduced from $45B total addressable market (2022) to $28B (2026).</li>
-<li>Customer service agents: Employment down 22% in the US.</li>
-</ul>
-<p><strong>Roles that transformed:</strong></p>
-<ul>
-<li>Doctors: AI handled radiology reads, differential diagnosis generation, and medical record summarization. Physicians who used AI completed documentation 60% faster and reported lower burnout.</li>
-<li>Lawyers: E-discovery, contract analysis, and legal research were largely automated. The billable hour was being replaced by fixed fees for AI-augmented legal services.</li>
-<li>Researchers: AI co-authored scientific papers. By 2025, AI had co-authored over 10,000 peer-reviewed publications.</li>
-</ul>
+<p><strong>The AI job market impact matrix:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Category</th><th>Examples</th><th>Trend (2022-2026)</th><th>Net Effect</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Growing roles</strong></td><td>AI Engineer (+340%), Prompt Engineer (new, 50K+), MLOps (+200%), AI Ethics (28K)</td><td>+200-340%</td><td>Skill bottleneck — demand far exceeds supply</td></tr>
+<tr><td><strong>Contracting roles</strong></td><td>Translators (-40% revenue), Illustrators ($45B→$28B TAM), Customer service agents (-22% employment), Entry-level coders (hiring bar shifted)</td><td>-22% to -40%</td><td>Structural decline — whole categories shrinking</td></tr>
+<tr><td><strong>Transforming roles</strong></td><td>Doctors (60% faster documentation), Lawyers (e-discovery automated), Researchers (10K+ AI-coauthored papers)</td><td>Role redefinition</td><td>Tasks automated, professionals shifted to higher judgment work</td></tr>
+<tr><td><strong>New categories</strong></td><td>AI auditor, alignment researcher, prompt engineer, model infrastructure engineer</td><td>Did not exist pre-2022</td><td>Net new job categories created by AI itself</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Key insight from the transformation:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Lesson</th><th>Implication</th></tr>
+</thead>
+<tbody>
+<tr><td>Whole roles are not replaced — tasks are</td><td>Every occupation consists of many tasks; AI automates some, augments others</td></tr>
+<tr><td>The bar shifts upward</td><td>“Can you code?” → “Can you solve problems with AI?”</td></tr>
+<tr><td>The premium is on judgment</td><td>Knowing what to ask AI, how to evaluate its output, and when to override</td></tr>
+<tr><td>Reskilling is the bottleneck</td><td>The technology arrives faster than society can retrain workers</td></tr>
+</tbody>
+</table>
+</div>
 <p>The net effect on employment remained contested. The McKinsey Global Institute projected that by 2030, AI would eliminate 12 million jobs in the US while creating 15 million new ones — a net positive, but with enormous transition costs. The question was not “will AI destroy jobs?” but “how quickly can society retrain?”</p>
 <h2 id="67-the-concentration-question"><a class="header" href="#67-the-concentration-question">6.7 The Concentration Question</a></h2>
 <p>The AI economy had a worrying tendency toward concentration.</p>
@@ -595,6 +742,22 @@
 <p>The antitrust implications were serious. The US Federal Trade Commission had opened investigations into NVIDIA’s GPU bundling practices and into Microsoft’s OpenAI partnership. The European Union’s Digital Markets Act was being applied to AI foundation model providers.</p>
 <p><strong>The counter-trend:</strong> Open-source was the great equalizer. DeepSeek, LLaMA, and the broader open ecosystem ensured that no single company could permanently own AI capability. Governments in Europe, India, Japan, and Southeast Asia were building domestic AI capabilities on open-source foundations.</p>
 <p>The AI economy of 2026 was a paradox: the most concentrated technology market in history, with the most democratized technology in history, coexisting in the same industry.</p>
+<p><strong>The AI economy paradox summary:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Force</th><th>Concentration</th><th>Democratization</th><th>Net Effect</th></tr>
+</thead>
+<tbody>
+<tr><td>Compute</td><td>NVIDIA: 80%+ of training chips; top 3 cloud providers: 70%+ of infra</td><td>Edge AI runs on every smartphone; quantized models on laptops</td><td>Access widening, bottleneck narrowing</td></tr>
+<tr><td>Models</td><td>OpenAI + Anthropic: 60% of frontier market</td><td>LLaMA, DeepSeek, Olmo: free, open, global</td><td>Capability commoditizing rapidly</td></tr>
+<tr><td>Talent</td><td>3 companies employ 60% of top researchers</td><td>Open-source community, global education</td><td>Short-term concentration, long-term dispersion</td></tr>
+<tr><td>Data</td><td>Internet controlled by 5 platforms</td><td>Synthetic data, federated learning, data cooperatives</td><td>Current bottleneck, future diversification</td></tr>
+<tr><td>Regulation</td><td>EU, US, China set rules for everyone</td><td>Open-source jurisdictions, local adaptation</td><td>Standards diverging regionally</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>The professional’s takeaway:</strong> The AI economy rewards those who can navigate both forces simultaneously — leverage the concentration for infrastructure and capital, while exploiting the democratization for flexibility and cost. Betting entirely on either side is the path to obsolescence.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-7-agentic-ai"><a class="header" href="#chapter-7-agentic-ai">Chapter 7: Agentic AI</a></h1>
 <h2 id="71-the-agent-definition-framework"><a class="header" href="#71-the-agent-definition-framework">7.1 The Agent Definition Framework</a></h2>
@@ -848,6 +1011,22 @@
 <p><strong>Figure 02 (Brett Adcock):</strong> Figure Robotics partnered with OpenAI to put GPT-4’s reasoning into a humanoid body. In 2024, a viral demo showed Figure 02 talking to a human: “What do you see?” — “I see a red apple on a plate.” — “Can you hand it to me?” — The robot picked up the apple and handed it over. The demo was teleoperated for some movements, but the reasoning was real. By 2026, Figure 02 could work autonomously in a BMW factory for 8-hour shifts.</p>
 <p><strong>Physical Intelligence (π0, 2024):</strong> A startup founded by <strong>Chelsea Finn</strong> (Stanford) and <strong>Sergey Levine</strong> (UC Berkeley) released π0 — a vision-language-action model trained on internet data and robot data. The demo: π0 watched a human fold laundry once, then folded laundry itself. The generalization was the breakthrough — one model could fold clothes, load a dishwasher, and make coffee.</p>
 <p>The common theme: <strong>foundation models in robot bodies.</strong> The same scaling laws that drove GPT-3’s emergence were being applied to physical tasks. The hardware was still expensive ($150K per Optimus unit), but the software was learning faster than anyone expected.</p>
+<p><strong>The embodied AI landscape by 2026:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Company / Lab</th><th>Robot</th><th>AI Approach</th><th>Best Capability</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>Tesla</td><td>Optimus Gen 3</td><td>End-to-end neural net from video</td><td>Assembly line sorting, laundry folding, uneven terrain</td><td>Early production (~1,000 units)</td></tr>
+<tr><td>Figure Robotics</td><td>Figure 02</td><td>GPT-4 reasoning + teleoperation fine-tuning</td><td>BMW factory 8-hour autonomous shifts</td><td>Production deployment</td></tr>
+<tr><td>Physical Intelligence</td><td>π0</td><td>Vision-language-action model, one model many tasks</td><td>Generalization — fold clothes, load dishwasher, make coffee</td><td>Research stage</td></tr>
+<tr><td>Google DeepMind</td><td>RT-2 / AutoRT</td><td>Trained on internet + robot data</td><td>Zero-shot generalization to new tasks</td><td>Research stage</td></tr>
+<tr><td>Meta</td><td>Sparrow + Habitat simulator</td><td>Sim-to-real transfer</td><td>Manipulation in simulated environments</td><td>Research stage</td></tr>
+</tbody>
+</table>
+</div>
+<p>The key divide: Tesla and Figure were building specific hardware platforms with increasingly capable AI brains. Physical Intelligence was building a general-purpose AI brain that could work on any robot. The former was a hardware race; the latter was a software race. History suggests the software race will matter more.</p>
 <h2 id="85-the-multimodal-frontier"><a class="header" href="#85-the-multimodal-frontier">8.5 The Multimodal Frontier</a></h2>
 <p>By 2026, the standard for “multimodal” had escalated dramatically:</p>
 <div class="table-wrapper">
@@ -876,6 +1055,20 @@
 <p><strong>Andrew Ng</strong> (DeepLearning.AI) argued the opposite: “Language contains enough of the world’s structure. You can learn physics from text. You can learn causality from text. Embodiment helps, but it’s optional.”</p>
 <p>The evidence by 2026 was mixed. Multimodal models that processed video of physical tasks learned some physics — object permanence, gravity, collision — without embodiment. But they struggled with properties that required interaction — weight, texture, rigidity. A model could watch a thousand videos of someone picking up a box, but it would not know whether the box was heavy or light until it lifted it.</p>
 <p>The unresolved question: <strong>Will true understanding require a body?</strong> The answer would determine whether AI remains a software technology — or becomes a robotics technology.</p>
+<p><strong>The embodiment debate framework:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Position</th><th>Proponents</th><th>Argument</th><th>Evidence</th><th>Implication</th></tr>
+</thead>
+<tbody>
+<tr><td>Embodiment required</td><td>Yann LeCun, Meta</td><td>Intelligence emerges from physical interaction; language alone is insufficient</td><td>Multimodal models still struggle with weight, texture, rigidity — properties requiring touch</td><td>AI will need robotics; software-only path is limited</td></tr>
+<tr><td>Embodiment optional</td><td>Andrew Ng, DeepLearning.AI</td><td>Language contains enough structure to learn physics and causality</td><td>Models can pass physics benchmarks, understand object permanence from video alone</td><td>AI can reach AGI without a body</td></tr>
+<tr><td>Hybrid position</td><td>Demis Hassabis, DeepMind</td><td>Embodiment helps but may not be necessary; simulation may be sufficient</td><td>Simulated robots in virtual environments learn complex tasks; transfer to reality improving</td><td>Simulation may bridge the gap; physical embodiment optional</td></tr>
+</tbody>
+</table>
+</div>
+<p>The debate will resolve not through argument but through engineering. If a software-only model achieves AGI-level reasoning on embodied tasks without a body, LeCun is wrong. If the most capable systems consistently require physical training data, Ng is wrong. The 2026 evidence leans toward hybrid: embodiment helps, but simulation and video are narrowing the gap faster than expected.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-9-ai-for-discovery"><a class="header" href="#chapter-9-ai-for-discovery">Chapter 9: AI for Discovery</a></h1>
 <h2 id="91-the-nobel-prize-that-changed-science"><a class="header" href="#91-the-nobel-prize-that-changed-science">9.1 The Nobel Prize That Changed Science</a></h2>
@@ -899,6 +1092,22 @@
 <p><strong>GNoME (Graph Networks for Materials Exploration, 2023):</strong> DeepMind’s materials discovery model predicted 380,000 stable inorganic crystals — equivalent to 800 years of cumulative human discovery. The team synthesized 736 of the most promising candidates in a real lab and confirmed 41% were viable.</p>
 <p><strong>MatterGen (Microsoft, 2024):</strong> Microsoft’s generative model for materials design could propose new materials with specific properties — a certain conductivity, a specific bandgap, a target tensile strength. By 2026, MatterGen had discovered a new battery cathode material that increased energy density by 27%.</p>
 <p><strong>The carbon capture breakthrough:</strong> In 2025, MIT researchers used AI to screen 10 million potential materials for carbon capture. The top candidate, a porous covalent organic framework, absorbed CO2 at 3× the rate of current best-in-class materials. The AI had discovered it in three weeks. Traditional methods would have taken 15 years.</p>
+<p><strong>AI-for-discovery domains compared:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Domain</th><th>Breakthrough Model</th><th>Year</th><th>What It Achieved</th><th>Human-Equivalent Time</th><th>Impact</th></tr>
+</thead>
+<tbody>
+<tr><td>Protein folding</td><td>AlphaFold 2/3</td><td>2020/2024</td><td>Predict 200M+ protein structures; simulate molecular interactions</td><td>Decades → minutes</td><td>Transformed structural biology; 2M+ researchers using it</td></tr>
+<tr><td>Materials discovery</td><td>GNoME (DeepMind), MatterGen (Microsoft)</td><td>2023/2024</td><td>Predict 380K stable crystals; design materials with target properties</td><td>800 years of discovery → months</td><td>Battery cathode with 27% higher energy density</td></tr>
+<tr><td>Algorithm discovery</td><td>AlphaEvolve (DeepMind)</td><td>2025</td><td>Generate novel algorithms for datacenter power, chip scheduling</td><td>Human engineers never considered the solution</td><td>15% energy reduction, 12% throughput gain</td></tr>
+<tr><td>Mathematics</td><td>FunSearch, AlphaProof (DeepMind)</td><td>2023/2024</td><td>Solve cap set problem; earn IMO silver medal</td><td>Decades-stuck problem → solved</td><td>AI generates and verifies mathematical proofs</td></tr>
+<tr><td>Drug discovery</td><td>AlphaFold 3, INS018_055</td><td>2024</td><td>Identify drug targets in 30 days (vs 5-10 years); AI-discovered drug in clinical trials</td><td>5-10 years → 30 days</td><td>AI-discovered molecule entered human trials</td></tr>
+</tbody>
+</table>
+</div>
+<p>The pattern: AI excels when the problem has a clear fitness function (fold this protein, maximize this crystal stability, minimize this energy), has accessible training data (known proteins, known materials, known algorithms), and can be verified in silico before physical validation.</p>
 <h2 id="95-the-automated-scientist"><a class="header" href="#95-the-automated-scientist">9.5 The Automated Scientist</a></h2>
 <p>In August 2024, Sakana AI (founded by <strong>Llion Jones</strong> — a coauthor of “Attention Is All You Need”) published a paper that made the research community uncomfortable.</p>
 <p><strong>The AI Scientist</strong> was a fully automated research system. It generated a research idea, wrote the code, ran the experiments, produced the figures, and wrote a paper with citations. The system cost $15 per paper — about 10,000× cheaper than the average academic paper.</p>
@@ -931,6 +1140,22 @@
 <p><strong>Demis Hassabis</strong> believes the answer is yes: “We are at the beginning of the ‘Century of Biology’ and the ‘Century of AI’ simultaneously. The intersection is where the most important discoveries of the 21st century will come from.”</p>
 <p><strong>Yann LeCun</strong> is more cautious: “Discovery requires understanding. Current AI systems don’t understand anything. They are powerful pattern matchers, not scientists.”</p>
 <p>The trajectory favors Hassabis. Each year, AI discovery systems become more autonomous, more reliable, and more creative. The question is not <em>if</em> AI will make fundamental discoveries — it is <em>when</em>, and whether human science will be ready to accept them.</p>
+<p><strong>The AI discovery maturity model:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Level</th><th>Description</th><th>Examples</th><th>Bottleneck</th></tr>
+</thead>
+<tbody>
+<tr><td>L1: Assist</td><td>AI as tool for human scientists</td><td>AlphaFold predicting structures, LLMs for literature review</td><td>Human creativity</td></tr>
+<tr><td>L2: Suggest</td><td>AI proposes candidates; human evaluates</td><td>GNoME proposing materials, FunSearch proposing math constructions</td><td>Physical validation capacity</td></tr>
+<tr><td>L3: Optimize</td><td>AI iterates within defined search space</td><td>AlphaEvolve optimizing algorithms, AI Scientist writing papers</td><td>Problem definition</td></tr>
+<tr><td>L4: Discover</td><td>AI finds genuinely novel solutions without human guidance</td><td>None yet (approached but not achieved)</td><td>Scientific creativity, ground truth</td></tr>
+<tr><td>L5: Paradigm shift</td><td>AI discovers new laws of physics, new mathematical foundations</td><td>Speculative</td><td>Unknown — would require AI to challenge human conceptual frameworks</td></tr>
+</tbody>
+</table>
+</div>
+<p>We are at L2-L3 across most domains. L4 is on the horizon. L5 remains the trillion-dollar question. The rate of progress suggests L4 will arrive within 5-7 years — and L5 within 15-20, or not at all.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-10-open-source-vs-closed-source"><a class="header" href="#chapter-10-open-source-vs-closed-source">Chapter 10: Open-Source vs. Closed-Source</a></h1>
 <h2 id="101-the-leak-that-started-a-revolution"><a class="header" href="#101-the-leak-that-started-a-revolution">10.1 The Leak That Started a Revolution</a></h2>
@@ -970,6 +1195,22 @@
 <ul>
 <li><strong>Phi-4 (Microsoft):</strong> 14B parameters that punched far above its weight. Designed for edge deployment — running on laptops and phones.</li>
 </ul>
+<p><strong>The open-source tiers compared:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Tier</th><th>Example</th><th>Parameters</th><th>Openness</th><th>Best For</th><th>Limitation</th></tr>
+</thead>
+<tbody>
+<tr><td>Open-weight leader</td><td>Llama 5</td><td>600B</td><td>Weights + license; no training data</td><td>General-purpose, commercial</td><td>Training data opaque</td></tr>
+<tr><td>Fully open</td><td>Olmo 3, Granite 4</td><td>70-180B</td><td>Weights + data + code + logs</td><td>Research, auditing, regulated industries</td><td>Smaller models, less capable</td></tr>
+<tr><td>Efficiency champion</td><td>DeepSeek V4</td><td>1.2T (37B active)</td><td>Weights + architecture paper; no data</td><td>Cost-sensitive applications</td><td>Proprietary data, geopolitical risk</td></tr>
+<tr><td>European sovereign</td><td>Mistral Large 3</td><td>250B</td><td>Open weights + commercial-friendly license</td><td>EU compliance, enterprise</td><td>Smaller ecosystem than LLaMA</td></tr>
+<tr><td>Edge-optimized</td><td>Phi-4</td><td>14B</td><td>Open weights + research paper</td><td>On-device deployment</td><td>Limited capability range</td></tr>
+</tbody>
+</table>
+</div>
+<p>The key strategic insight: no single open-source model wins on all dimensions. The ecosystem advantage of LLaMA (largest community, most fine-tuned variants) made it the de facto open standard, but DeepSeek’s efficiency advantage and Olmo’s transparency advantage carved out defensible niches.</p>
 <h2 id="104-the-licenses-war"><a class="header" href="#104-the-licenses-war">10.4 The Licenses War</a></h2>
 <p>Behind the model performance was a subtler war: <strong>what does “open-source” mean for AI?</strong></p>
 <p>The Open Source Initiative (OSI) had spent 2024 defining “Open Source AI” — and the process was contentious. The traditional definition (OSD) required that anyone could use the software for any purpose. But AI models had a complication: they were not just code. They were <em>weights</em>, <em>data</em>, <em>training code</em>, and <em>hardware requirements</em>.</p>
@@ -1020,6 +1261,25 @@
 </ul>
 <p>The 2.7% gap in aggregate benchmarks was still real. But in practice, for most applications — coding, writing, analysis, customer service — open-source models were already good enough.</p>
 <p><strong>Yann LeCun</strong> was right about one thing: open-source won. Not in the sense of defeating closed-source, but in the sense that AI had become like the internet — a technology that no single company could control, even the companies that made it.</p>
+<p><strong>The open vs. closed decision framework:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Use Case</th><th>Recommended</th><th>Why</th></tr>
+</thead>
+<tbody>
+<tr><td>Research, experimentation</td><td>Open-source</td><td>No API costs, full control, ability to inspect and modify</td></tr>
+<tr><td>Regulated industry (healthcare, finance, law)</td><td>Open-source (fully transparent)</td><td>Auditability, data sovereignty, compliance requirements</td></tr>
+<tr><td>Enterprise production (customer-facing)</td><td>Closed-source</td><td>Reliability guarantees, SLAs, indemnification</td></tr>
+<tr><td>Consumer product (API-based)</td><td>Closed-source</td><td>No infrastructure management, seamless scaling</td></tr>
+<tr><td>Edge deployment (phone, laptop)</td><td>Open-source (small, quantized)</td><td>Local processing, privacy, offline capability</td></tr>
+<tr><td>High-stakes safety applications</td><td>Closed-source (with public evaluations)</td><td>Recallable, auditable provenance</td></tr>
+<tr><td>Global South, resource-constrained</td><td>Open-source</td><td>Zero licensing cost, runs on available hardware</td></tr>
+<tr><td>Military, intelligence</td><td>Unresolved</td><td>Both sides have arguments; no consensus</td></tr>
+</tbody>
+</table>
+</div>
+<p>The coexistence thesis is not a compromise — it is the reality. The question for any professional is not “open vs. closed?” but “which model, under which license, for which use case?” The answer changes every 6-12 months as both ecosystems advance.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-11-geopolitics-and-ai-sovereignty"><a class="header" href="#chapter-11-geopolitics-and-ai-sovereignty">Chapter 11: Geopolitics and AI Sovereignty</a></h1>
 <h2 id="111-the-sputnik-moment-that-wasnt"><a class="header" href="#111-the-sputnik-moment-that-wasnt">11.1 The Sputnik Moment That Wasn’t</a></h2>
@@ -1041,6 +1301,21 @@
 <p><strong>Paris, France (February 2025):</strong> <strong>Emmanuel Macron</strong> shifted the tone from safety to opportunity. The Paris AI Action Summit produced the “Paris Declaration for Trustworthy AI” — emphasizing open-source, innovation, and industrial adoption. France committed €5 billion to AI compute. Mistral’s CEO <strong>Arthur Mensch</strong> became an unofficial diplomat for European AI sovereignty.</p>
 <p><strong>New York, USA (September 2025):</strong> The UN General Assembly passed its first resolution on AI — “Seizing the Opportunities of Safe, Secure, and Trustworthy AI.” Sponsored by the US and co-sponsored by 120+ countries, it represented the broadest international consensus to date. But like all UN resolutions, it had no enforcement mechanism.</p>
 <p>The pattern was clear: plenty of declarations, little binding law. The one exception was the European Union.</p>
+<p><strong>The four AI summits compared:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Summit</th><th>Date</th><th>Host</th><th>Tone</th><th>Key Outcome</th><th>Binding?</th><th>Legacy</th></tr>
+</thead>
+<tbody>
+<tr><td>Bletchley Park</td><td>Nov 2023</td><td>UK (Sunak)</td><td>Safety</td><td>Bletchley Declaration — shared principles, China attended</td><td>No</td><td>Symbolic breakthrough: China at the table</td></tr>
+<tr><td>Seoul</td><td>May 2024</td><td>Korea</td><td>Interoperability</td><td>16-country declaration on compatible regulation</td><td>No</td><td>“Interoperable governance” entered lexicon</td></tr>
+<tr><td>Paris</td><td>Feb 2025</td><td>France (Macron)</td><td>Opportunity</td><td>Paris Declaration for Trustworthy AI — open-source emphasis</td><td>No</td><td>Shifted tone from fear to industrial strategy</td></tr>
+<tr><td>New York (UN)</td><td>Sep 2025</td><td>UN General Assembly</td><td>Governance</td><td>First UN AI resolution, 120+ co-sponsors</td><td>No</td><td>Broadest consensus, zero enforcement</td></tr>
+</tbody>
+</table>
+</div>
+<p>The diplomatic pattern: each summit moved the conversation forward incrementally, but none produced binding commitments. The gap between diplomatic ambition and regulatory reality was the defining feature of AI governance in 2026.</p>
 <h2 id="114-the-eu-ai-act-the-worlds-first-comprehensive-ai-law"><a class="header" href="#114-the-eu-ai-act-the-worlds-first-comprehensive-ai-law">11.4 The EU AI Act: The World’s First Comprehensive AI Law</a></h2>
 <p>In August 2024, after three years of debate, the European Union’s AI Act entered into force. It was the most ambitious attempt to regulate AI in history.</p>
 <p><strong>Architects:</strong> <strong>Margrethe Vestager</strong> (European Commission competition chief) and <strong>Thierry Breton</strong> (Internal Market Commissioner) had pushed the Act through a labyrinth of member-state negotiations, industry lobbying, and parliamentary amendments.</p>
@@ -1187,7 +1462,24 @@
 <li>Military AI follows verifiable treaties (like chemical weapons)</li>
 <li>The compute divide narrows through shared infrastructure</li>
 </ul>
-<p><strong>The most likely path by 2026:</strong> Neither. The AI era was following the trajectory of every transformative technology before it — cooperation in areas of mutual interest, competition in areas of strategic advantage, and regulation moving too slowly to keep pace. The future was not predetermined. It would be shaped by decisions made in the next 24 months — in Washington, Beijing, Brussels, and everywhere in between. The choice, as always, belonged to the humans who made it.</p>
+<p><strong>The most likely path by 2026:</strong> Neither. The AI era was following the trajectory of every transformative technology before it — cooperation in areas of mutual interest, competition in areas of strategic advantage, and regulation moving too slowly to keep pace.</p>
+<p><strong>The six geopolitical forces shaping AI in 2026:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Force</th><th>Direction</th><th>Intensity</th><th>Key Uncertainty</th></tr>
+</thead>
+<tbody>
+<tr><td>US-China decoupling</td><td>Toward separation</td><td>High (escalating export controls)</td><td>Will efficiency breakthroughs circumvent hardware restrictions?</td></tr>
+<tr><td>EU regulatory gravity</td><td>Toward global standards (Brussels effect)</td><td>Medium (AI Act enforcement ramping)</td><td>Will enforcement match ambition?</td></tr>
+<tr><td>Global South compute divide</td><td>Widening</td><td>High (Africa has 0.2% of compute)</td><td>Can open-source + shared infrastructure close the gap?</td></tr>
+<tr><td>Military AI race</td><td>Accelerating (no treaty in sight)</td><td>High (UN LAWS talks stalled)</td><td>Will the first autonomous weapon attack trigger global backlash?</td></tr>
+<tr><td>Information warfare</td><td>Escalating (40%+ online content is AI-generated)</td><td>Very high</td><td>Can content provenance standards work at scale?</td></tr>
+<tr><td>Open-source geopolitical weaponization</td><td>Growing (used by both US and China)</td><td>Medium</td><td>Will open-source remain neutral commons or become politicized?</td></tr>
+</tbody>
+</table>
+</div>
+<p>The future was not predetermined. It would be shaped by decisions made in the next 24 months — in Washington, Beijing, Brussels, and everywhere in between. The choice, as always, belonged to the humans who made it.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-12-responsible-ai--the-growing-gap"><a class="header" href="#chapter-12-responsible-ai--the-growing-gap">Chapter 12: Responsible AI — The Growing Gap</a></h1>
 <h2 id="121-the-weekend-that-changed-ai"><a class="header" href="#121-the-weekend-that-changed-ai">12.1 The Weekend That Changed AI</a></h2>
@@ -1247,9 +1539,20 @@
 </ul>
 <h2 id="126-the-jailbreak-arms-race"><a class="header" href="#126-the-jailbreak-arms-race">12.6 The Jailbreak Arms Race</a></h2>
 <p>Every safety advance triggered a counter-advance. The jailbreak arms race was accelerating:</p>
-<p><strong>Classic jailbreaks (2023):</strong> “DAN” (Do Anything Now), “Grandma exploit” (asking the model to pretend to be a grandmother telling bedtime stories that contained instructions for making napalm). These were easily patched.</p>
-<p><strong>Advanced jailbreaks (2024):</strong> “Many-shot jailbreaking” (Anthropic’s discovery — flooding the context window with fictional conversations that gradually lowered refusal thresholds). “Token smuggling” (encoding malicious instructions as subtoken sequences that bypassed safety filters).</p>
-<p><strong>Automated jailbreak generation (2025):</strong> Researchers at Carnegie Mellon demonstrated that jailbreaks could be generated automatically using adversarial search — discovering millions of attack vectors that human testers would never find. The paper was controversial: publishing the method gave attackers a playbook. But the authors argued that transparency was necessary for defense.</p>
+<p><strong>The jailbreak evolution:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Era</th><th>Jailbreak Type</th><th>Method</th><th>Impact</th><th>Defense</th></tr>
+</thead>
+<tbody>
+<tr><td>2023</td><td>Manual prompting</td><td>“DAN,” “Grandma exploit” — human-crafted role-play prompts</td><td>Broad but shallow; easily recognized</td><td>Simple keyword filtering, RLHF</td></tr>
+<tr><td>2024</td><td>Context manipulation</td><td>Many-shot jailbreaking (flood context with fictional lowering), token smuggling</td><td>More sophisticated; bypassed simple filters</td><td>Anomaly detection on context patterns</td></tr>
+<tr><td>2025</td><td>Automated discovery</td><td>Adversarial search (CMU) — algorithmically generates millions of attack vectors</td><td>Systematic and comprehensive; finds vectors humans cannot</td><td>Adversarial training, continuous red-teaming</td></tr>
+<tr><td>2026</td><td>Multi-step agentic</td><td>Autonomous agents chain jailbreaks across tools, context windows, and API calls</td><td>Hardest to detect; exploits system-level vulnerabilities</td><td>Behavioral monitoring, capability gating</td></tr>
+</tbody>
+</table>
+</div>
 <p><strong>The paradox:</strong> Each jailbreak fixed increased the <em>evaluated</em> safety of the model, but the arms race meant that absolute safety was never achieved. A model could pass every known safety test and still be vulnerable to an attack that would be discovered the next day.</p>
 <h2 id="127-the-interpretability-frontier"><a class="header" href="#127-the-interpretability-frontier">12.7 The Interpretability Frontier</a></h2>
 <p>The most fundamental safety problem was interpretability: <strong>we had no idea what these models were doing internally.</strong></p>
@@ -1337,6 +1640,24 @@
 <h2 id="1215-the-closing-question"><a class="header" href="#1215-the-closing-question">12.15 The Closing Question</a></h2>
 <p>The capability-safety gap was real, measurable, and growing. The ratio of builders to safety researchers was 200:1. The number of AI incidents was doubling every 18 months. The regulatory response was fragmented and slow. The interpretability frontier was promising but years away from frontier-scale models. The model collapse problem threatened the sustainability of future training. The public was unprepared for the scale of change underway.</p>
 <p>And yet — AI capability continued to advance at a breathtaking pace. Each generation of models was more capable, more useful, and more integrated into daily life. The technology was too valuable to stop, too powerful to ignore, and perhaps too dangerous to deploy without adequate safeguards.</p>
+<p>The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.</p>
+<p><strong>The responsible AI scorecard (2026):</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Dimension</th><th>Current State</th><th>Target</th><th>Gap</th><th>Trend</th></tr>
+</thead>
+<tbody>
+<tr><td>Safety research ratio (safety:capability)</td><td>1:200</td><td>1:10</td><td>20× underinvested</td><td>Worsening</td></tr>
+<tr><td>Incident reporting</td><td>~500/year tracked</td><td>Real-time, mandatory</td><td>Voluntary, inconsistent</td><td>Growing</td></tr>
+<tr><td>Interpretability (frontier-scale)</td><td>7B models mapped; 1T+ models opaque</td><td>Full circuit-level understanding</td><td>5-10 years behind</td><td>Improving slowly</td></tr>
+<tr><td>Red-teaming automation</td><td>Standard for known attacks; unknown attacks undetected</td><td>Continuous automated discovery</td><td>Arms race dynamic</td><td>Keeping pace</td></tr>
+<tr><td>Regulatory coverage</td><td>EU binding; US patchwork; China content-focused</td><td>Binding international framework</td><td>Fragmented, no enforcement</td><td>EU leading, others lagging</td></tr>
+<tr><td>Public AI literacy</td><td>38% detect deepfakes; 22% understand hallucinations</td><td>90%+ basic literacy</td><td>Massive education gap</td><td>Slight improvement</td></tr>
+<tr><td>Professional ethics code</td><td>Multiple voluntary pledges; no universal standard</td><td>Binding code for AI developers</td><td>Gap in professional identity</td><td>Emerging but contested</td></tr>
+</tbody>
+</table>
+</div>
 <p>The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.</p>
 <blockquote>
 <p><em>“We are building intelligence that may exceed our own, and we are doing it without a safety manual, without regulatory oversight, and without public understanding. This is not a criticism of the technology. It is a statement of fact about our collective choices.”</em> — <strong>Yoshua Bengio</strong>, 2025</p>

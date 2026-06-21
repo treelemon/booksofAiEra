@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5cb007d1.js";
+            window.path_to_searchindex_js = "../searchindex-351d2851.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-1d9df444.js"></script>
@@ -194,6 +194,22 @@
 <p><strong>Gemini（Google DeepMind，2023–）：</strong> 谷歌的反击。在多年的内部谨慎和在 AI 公众领导力上输给 OpenAI 的震惊之后，谷歌将 DeepMind 和 Google Brain 合并为一个部门。Gemini Ultra（2023 年 12 月）是第一个在 MMLU 上超越 GPT-4 的模型（90.0% 对 86.4%）。Gemini 2.5 Pro（2025）原生引入了“思考模式“和 100 万 token 的上下文窗口。DeepMind 的血统——AlphaGo、AlphaFold——赋予 Gemini 在科学推理上的优势。</p>
 <p><strong>Llama（Meta，2023–）：</strong> 民主化炸弹。Meta 于 2023 年 2 月以非商业许可向研究人员发布了 LLaMA（650 亿参数）。数周内，它在 4chan 上被泄露到公众。闸门打开了：微调变体（Alpaca、Vicuna、WizardLM）成倍增长。Meta 顺势而为，发布了带商业许可的 LLaMA 2（2023 年 7 月）和匹敌 GPT-4 的 LLaMA 3（2024 年，4050 亿参数）。基于 LLaMA 的开源生态系统成为了一个并行的 AI 宇宙。</p>
 <p><strong>DeepSeek（中国，2024–2025）：</strong> 成本效率革命。一家低调的中国量化交易公司的 AI 实验室发布了一系列震撼行业的模型。DeepSeek-V2（2024）的训练成本为 278 万美元——大约是 GPT-4 估计成本的 1/70。DeepSeek-V3（2025 年，671B 总参数，每个 token 激活 37B）使用的 MoE 架构极其高效，仅用 2000 多块 GPU 就完成了训练。然后 DeepSeek-R1（2025 年 1 月）在推理上匹敌 OpenAI 的 o1——并发布了描述方法的论文。行业倒吸一口凉气。美国股市单日蒸发 5000 亿美元。地缘政治叙事改变了：中国不是在追赶——它在创新。</p>
+<p><strong>竞争对手格局一览：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>实验室</th><th>起源故事</th><th>关键创新</th><th>优势</th><th>弱点</th></tr>
+</thead>
+<tbody>
+<tr><td>OpenAI</td><td>非营利转为封顶利润</td><td>RLHF、优先扩展、o 系列推理</td><td>研究速度、品牌、生态系统</td><td>人才保留、治理不稳定</td></tr>
+<tr><td>Anthropic</td><td>2021 年 OpenAI 安全分裂</td><td>宪法 AI、RSP 框架</td><td>安全作为差异化、编程质量</td><td>产品线狭窄、发布较慢</td></tr>
+<tr><td>Google DeepMind</td><td>DeepMind + Google Brain 合并</td><td>原生多模态、100 万 token 上下文</td><td>数据规模（YouTube、图像、地球）、科学遗产</td><td>官僚主义、文化缓慢</td></tr>
+<tr><td>Meta（LLaMA）</td><td>扎克伯格的开源赌注</td><td>开放权重许可、生态系统玩法</td><td>社区、民主化、零许可成本</td><td>无直接收入模式</td></tr>
+<tr><td>DeepSeek</td><td>中国量化公司（幻方量化）</td><td>MoE 效率、成本为 GPT-4 的 1/70</td><td>成本领先、开放科学、工程文化</td><td>地缘政治风险、硬件限制</td></tr>
+</tbody>
+</table>
+</div>
+<p>每个实验室对什么最重要做出了不同的赌注：规模（OpenAI）、安全（Anthropic）、数据（Google）、开放（Meta）或效率（DeepSeek）。2026 年的结果表明，五个赌注都部分正确——而前沿属于那些能够结合多种优势的玩家。</p>
 <h2 id="33-推理模型的突破"><a class="header" href="#33-推理模型的突破">3.3 推理模型的突破</a></h2>
 <p>2024 年 9 月，OpenAI 发布了 o1——第一个在回答前会“思考“的模型。传闻中它被称为“Strawberry“或“Q*“。现实比传闻更奇特、更重要。</p>
 <p><strong>推理模型的工作原理：</strong></p>
@@ -209,6 +225,24 @@
 <li><strong>Gemini 2.5 Pro 思考（2025）：</strong> DeepMind 的原生思考模型，支持 100 万 token 上下文。</li>
 </ul>
 <p><strong>为什么重要：</strong> 我们不再仅仅扩展训练算力。推理模型引入了<strong>测试时计算</strong>作为新维度。模型现在可以“花费“更多算力来更深入地思考难题。这改变了一切——成本曲线、延迟权衡，以及我们认为可能的事情。</p>
+<p><strong>推理模型时间线：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模型</th><th>日期</th><th>测试时计算</th><th>AIME 分数</th><th>关键发现</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-4</td><td>2023 年 3 月</td><td>无（标准生成）</td><td>12%</td><td>基线</td></tr>
+<tr><td>o1-preview</td><td>2024 年 9 月</td><td>内部思维链</td><td>83%</td><td>7× 提升——推理真实有效</td></tr>
+<tr><td>o1 完整版</td><td>2024 年 12 月</td><td>扩展思考</td><td>~90%</td><td>编程和工具使用提升</td></tr>
+<tr><td>DeepSeek R1</td><td>2025 年 1 月</td><td>开源推理</td><td>~80%</td><td>以 1/20 成本匹敌 o1；发布方法</td></tr>
+<tr><td>o3</td><td>2025 年 2 月</td><td>多分支搜索 + 验证</td><td>94%</td><td>ARC-AGI 达到 87.5%（接近人类天花板）</td></tr>
+<tr><td>Claude Sonnet 4</td><td>2025 年 4 月</td><td>长上下文推理</td><td>~85%</td><td>工具编排更强</td></tr>
+<tr><td>Gemini 2.5 Pro</td><td>2025</td><td>原生思考 + 100 万上下文</td><td>82%</td><td>长文档推理最佳</td></tr>
+</tbody>
+</table>
+</div>
+<p>“训练算力“与“推理算力“的区分是自 Transformer 以来最重要的架构转变。模型现在可以在问题需要时更努力地思考——不需要时则花费更少。</p>
 <h2 id="34-能力发展轨迹"><a class="header" href="#34-能力发展轨迹">3.4 能力发展轨迹</a></h2>
 <p>2024 到 2025 年间，改进速度在技术史上前所未有：</p>
 <div class="table-wrapper">

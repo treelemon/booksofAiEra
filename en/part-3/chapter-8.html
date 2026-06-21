@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "../searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e961be59.js"></script>
@@ -203,6 +203,22 @@
 <p><strong>Figure 02 (Brett Adcock):</strong> Figure Robotics partnered with OpenAI to put GPT-4’s reasoning into a humanoid body. In 2024, a viral demo showed Figure 02 talking to a human: “What do you see?” — “I see a red apple on a plate.” — “Can you hand it to me?” — The robot picked up the apple and handed it over. The demo was teleoperated for some movements, but the reasoning was real. By 2026, Figure 02 could work autonomously in a BMW factory for 8-hour shifts.</p>
 <p><strong>Physical Intelligence (π0, 2024):</strong> A startup founded by <strong>Chelsea Finn</strong> (Stanford) and <strong>Sergey Levine</strong> (UC Berkeley) released π0 — a vision-language-action model trained on internet data and robot data. The demo: π0 watched a human fold laundry once, then folded laundry itself. The generalization was the breakthrough — one model could fold clothes, load a dishwasher, and make coffee.</p>
 <p>The common theme: <strong>foundation models in robot bodies.</strong> The same scaling laws that drove GPT-3’s emergence were being applied to physical tasks. The hardware was still expensive ($150K per Optimus unit), but the software was learning faster than anyone expected.</p>
+<p><strong>The embodied AI landscape by 2026:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Company / Lab</th><th>Robot</th><th>AI Approach</th><th>Best Capability</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>Tesla</td><td>Optimus Gen 3</td><td>End-to-end neural net from video</td><td>Assembly line sorting, laundry folding, uneven terrain</td><td>Early production (~1,000 units)</td></tr>
+<tr><td>Figure Robotics</td><td>Figure 02</td><td>GPT-4 reasoning + teleoperation fine-tuning</td><td>BMW factory 8-hour autonomous shifts</td><td>Production deployment</td></tr>
+<tr><td>Physical Intelligence</td><td>π0</td><td>Vision-language-action model, one model many tasks</td><td>Generalization — fold clothes, load dishwasher, make coffee</td><td>Research stage</td></tr>
+<tr><td>Google DeepMind</td><td>RT-2 / AutoRT</td><td>Trained on internet + robot data</td><td>Zero-shot generalization to new tasks</td><td>Research stage</td></tr>
+<tr><td>Meta</td><td>Sparrow + Habitat simulator</td><td>Sim-to-real transfer</td><td>Manipulation in simulated environments</td><td>Research stage</td></tr>
+</tbody>
+</table>
+</div>
+<p>The key divide: Tesla and Figure were building specific hardware platforms with increasingly capable AI brains. Physical Intelligence was building a general-purpose AI brain that could work on any robot. The former was a hardware race; the latter was a software race. History suggests the software race will matter more.</p>
 <h2 id="85-the-multimodal-frontier"><a class="header" href="#85-the-multimodal-frontier">8.5 The Multimodal Frontier</a></h2>
 <p>By 2026, the standard for “multimodal” had escalated dramatically:</p>
 <div class="table-wrapper">
@@ -231,6 +247,20 @@
 <p><strong>Andrew Ng</strong> (DeepLearning.AI) argued the opposite: “Language contains enough of the world’s structure. You can learn physics from text. You can learn causality from text. Embodiment helps, but it’s optional.”</p>
 <p>The evidence by 2026 was mixed. Multimodal models that processed video of physical tasks learned some physics — object permanence, gravity, collision — without embodiment. But they struggled with properties that required interaction — weight, texture, rigidity. A model could watch a thousand videos of someone picking up a box, but it would not know whether the box was heavy or light until it lifted it.</p>
 <p>The unresolved question: <strong>Will true understanding require a body?</strong> The answer would determine whether AI remains a software technology — or becomes a robotics technology.</p>
+<p><strong>The embodiment debate framework:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Position</th><th>Proponents</th><th>Argument</th><th>Evidence</th><th>Implication</th></tr>
+</thead>
+<tbody>
+<tr><td>Embodiment required</td><td>Yann LeCun, Meta</td><td>Intelligence emerges from physical interaction; language alone is insufficient</td><td>Multimodal models still struggle with weight, texture, rigidity — properties requiring touch</td><td>AI will need robotics; software-only path is limited</td></tr>
+<tr><td>Embodiment optional</td><td>Andrew Ng, DeepLearning.AI</td><td>Language contains enough structure to learn physics and causality</td><td>Models can pass physics benchmarks, understand object permanence from video alone</td><td>AI can reach AGI without a body</td></tr>
+<tr><td>Hybrid position</td><td>Demis Hassabis, DeepMind</td><td>Embodiment helps but may not be necessary; simulation may be sufficient</td><td>Simulated robots in virtual environments learn complex tasks; transfer to reality improving</td><td>Simulation may bridge the gap; physical embodiment optional</td></tr>
+</tbody>
+</table>
+</div>
+<p>The debate will resolve not through argument but through engineering. If a software-only model achieves AGI-level reasoning on embodied tasks without a body, LeCun is wrong. If the most capable systems consistently require physical training data, Ng is wrong. The 2026 evidence leans toward hybrid: embodiment helps, but simulation and video are narrowing the gap faster than expected.</p>
 
                     </main>
 

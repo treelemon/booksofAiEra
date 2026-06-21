@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5cb007d1.js";
+            window.path_to_searchindex_js = "../searchindex-351d2851.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-1d9df444.js"></script>
@@ -218,6 +218,22 @@
 <ul>
 <li><strong>Phi-4（微软）：</strong> 140 亿参数，能力远超其体量。专为边缘部署设计——运行在笔记本电脑和手机上。</li>
 </ul>
+<p><strong>开源层级对比：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>层级</th><th>示例</th><th>参数</th><th>开放程度</th><th>最适合</th><th>局限</th></tr>
+</thead>
+<tbody>
+<tr><td>开放权重领导者</td><td>Llama 5</td><td>600B</td><td>权重 + 许可；无训练数据</td><td>通用、商业用途</td><td>训练数据不透明</td></tr>
+<tr><td>完全开放</td><td>Olmo 3, Granite 4</td><td>70-180B</td><td>权重 + 数据 + 代码 + 日志</td><td>研究、审计、受监管行业</td><td>模型较小，能力较弱</td></tr>
+<tr><td>效率冠军</td><td>DeepSeek V4</td><td>1.2T（37B 激活）</td><td>权重 + 架构论文；无数据</td><td>成本敏感应用</td><td>专有数据，地缘政治风险</td></tr>
+<tr><td>欧洲主权</td><td>Mistral Large 3</td><td>250B</td><td>开放权重 + 商用友好许可</td><td>欧盟合规、企业</td><td>生态系统小于 LLaMA</td></tr>
+<tr><td>边缘优化</td><td>Phi-4</td><td>14B</td><td>开放权重 + 研究论文</td><td>设备端部署</td><td>能力范围有限</td></tr>
+</tbody>
+</table>
+</div>
+<p>关键战略洞察：没有一个开源模型在所有维度上胜出。LLaMA 的生态优势（最大社区、最多微调变体）使其成为事实上的开放标准，但 DeepSeek 的效率优势和 Olmo 的透明度优势都开辟了可防御的利基市场。</p>
 <h2 id="104-许可之战"><a class="header" href="#104-许可之战">10.4 许可之战</a></h2>
 <p>在模型性能背后是一场更微妙的战争：<strong>“开源“对 AI 来说意味着什么？</strong></p>
 <p>开源倡议组织（OSI）在 2024 年定义了“开源 AI“——这个过程充满争议。传统定义（OSD）要求任何人可以为任何目的使用软件。但 AI 模型有一个复杂之处：它们不仅仅是代码。它们是<em>权重</em>、<em>数据</em>、<em>训练代码</em>和<em>硬件需求</em>。</p>
@@ -268,6 +284,25 @@
 </ul>
 <p>综合基准测试中 2.7% 的差距仍然是真实的。但在实践中，对于大多数应用——编程、写作、分析、客服——开源模型已经足够好了。</p>
 <p><strong>Yann LeCun</strong> 在一件事上是对的：开源赢了。不是打败闭源的意义上，而是 AI 已经变得像互联网——一个没有单一公司能控制的技术，即使是制造它的公司。</p>
+<p><strong>开源 vs 闭源决策框架：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>用例</th><th>推荐</th><th>原因</th></tr>
+</thead>
+<tbody>
+<tr><td>研究、实验</td><td>开源</td><td>无 API 成本，完全控制，可检查修改</td></tr>
+<tr><td>受监管行业（医疗、金融、法律）</td><td>开源（完全透明）</td><td>可审计性、数据主权、合规要求</td></tr>
+<tr><td>企业生产（面向客户）</td><td>闭源</td><td>可靠性保证、SLA、赔偿</td></tr>
+<tr><td>消费产品（基于 API）</td><td>闭源</td><td>无需基础设施管理，无缝扩展</td></tr>
+<tr><td>边缘部署（手机、笔记本）</td><td>开源（小型量化）</td><td>本地处理、隐私、离线能力</td></tr>
+<tr><td>高风险安全应用</td><td>闭源（带公开评估）</td><td>可召回、可审计来源</td></tr>
+<tr><td>全球南方、资源受限</td><td>开源</td><td>零许可成本，可在现有硬件上运行</td></tr>
+<tr><td>军事、情报</td><td>未解决</td><td>双方都有论据；无共识</td></tr>
+</tbody>
+</table>
+</div>
+<p>共存论不是妥协——它是现实。对任何专业人士来说，问题不是“开源还是闭源？“而是“哪个模型、在哪种许可下、用于哪个用例？“答案随着两个生态系统的进步每 6-12 个月变化一次。</p>
 
                     </main>
 

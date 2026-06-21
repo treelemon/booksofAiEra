@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5cb007d1.js";
+            window.path_to_searchindex_js = "../searchindex-351d2851.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-1d9df444.js"></script>
@@ -204,6 +204,22 @@
 <p><strong>Amazon（AWS）：</strong> Trainium 3 在 2025 年发布，专为在 AWS 上训练大型模型而设计。Amazon 正在构建垂直整合的 AI 栈——硬件（Trainium）、芯片（Annapurna Labs）和云平台。</p>
 <p><strong>华为（中国）：</strong> 受到美国持续升级的出口管制打击，华为的昇腾 910C 使用 7nm 级光刻技术（而 NVIDIA 是台积电 3nm）。性能比 H100 低 30-50%，但它是国产的、可用的、正在改进的。中国 AI 实验室正在开发芯片到芯片的网络来弥补单个芯片的不足。</p>
 <p><strong>Apple（Tim Cook / Johny Srouji）：</strong> M 系列芯片集成了神经引擎，可在设备上运行 300 亿以上参数的模型。Apple Intelligence（2024）证明本地 AI 可以处理大多数日常任务——摘要、图像编辑、上下文响应——同时保护用户数据隐私。到 2026 年，边缘和云端 AI 之间的差距已显著缩小。</p>
+<p><strong>重塑 2025–2026 的效率技术：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>技术</th><th>机制</th><th>成本降低</th><th>采用情况</th></tr>
+</thead>
+<tbody>
+<tr><td>混合专家（MoE）</td><td>每个 token 仅激活 10-30% 的参数</td><td>推理计算降低 70-90%</td><td>行业标准（GPT-4、DeepSeek、Gemini）</td></tr>
+<tr><td>量化</td><td>以 FP8、INT8、INT4 而非 FP16 训练/推理</td><td>吞吐量提升 2-4×</td><td>通用推理标准</td></tr>
+<tr><td>蒸馏</td><td>大教师模型训练小型学生模型</td><td>可变（如 Phi-3 以 1/50 尺寸匹敌 GPT-3.5）</td><td>边缘部署常见</td></tr>
+<tr><td>硬件-模型协同优化</td><td>围绕特定芯片约束设计架构</td><td>每瓦效率提升 3-10×</td><td>DeepSeek-H800、Gemini-TPU</td></tr>
+<tr><td>推测解码</td><td>小模型提议，大模型验证</td><td>延迟降低 2-3×</td><td>生产 API 中常见</td></tr>
+</tbody>
+</table>
+</div>
+<p>效率革命有一个悖论效应：推理成本降低反而增加了总 AI 消耗，因此总算力需求仍在上升——但每 token 成本每年下降 10 倍。</p>
 <h2 id="55-能源隐藏的约束"><a class="header" href="#55-能源隐藏的约束">5.5 能源：隐藏的约束</a></h2>
 <p>2024 年，Google 和微软各自发布的环境报告显示，AI 相关排放分别增加了 48% 和 29%。公众反应强烈。</p>
 <p>数字令人震惊：单次 GPT-5 训练消耗约 80 GWh 电力——相当于 8,000 个美国家庭一年的用电量。2026 年整个 AI 行业的电力消耗约为 85 TWh/年，与荷兰相当。</p>
@@ -233,6 +249,22 @@
 <p>意外效果：加速了中国本土芯片产业。华为昇腾 910C 和中芯国际的 N+2 工艺节点现在支撑着一个并行的 AI 基础设施生态系统。中国实验室在 50,000 多块国产芯片的集群上训练——单块性能较弱，但规模有效。</p>
 <p>“算力主权“运动蔓延到欧洲、印度和东南亚。法国承诺为 AI 算力投入 50 亿欧元。印度的“AI for All“计划承诺为公共研究提供 10,000 块 GPU。日本的 Preferred Networks（PFN）构建了 MN-Core 芯片，专为日本的 AI 需求设计。</p>
 <p>开源模型成为一种地缘政治工具：被限制进口最好硬件的地区仍然可以下载最好的模型。LLaMA 5 和 DeepSeek-R1 可以在任何可用的芯片上运行。</p>
+<p><strong>2026 年算力棋盘：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>玩家</th><th>芯片</th><th>工艺节点</th><th>相对性能</th><th>可用性</th></tr>
+</thead>
+<tbody>
+<tr><td>NVIDIA</td><td>H100 → B200 → Rubin</td><td>台积电 4nm → 3nm</td><td>基线（1.0×）</td><td>公开市场（出口限制至中国）</td></tr>
+<tr><td>AMD</td><td>MI300X → MI350</td><td>台积电 5nm → 4nm</td><td>H100 的 0.8×（推理）</td><td>公开市场</td></tr>
+<tr><td>Google</td><td>TPU v7</td><td>台积电 3nm</td><td>H100 的 1.0×（训练，1.3× 能效/W）</td><td>仅限内部</td></tr>
+<tr><td>Amazon</td><td>Trainium 3</td><td>台积电 4nm</td><td>~H100 的 0.8×</td><td>仅限 AWS</td></tr>
+<tr><td>华为</td><td>昇腾 910C</td><td>中芯国际 7nm（N+2）</td><td>H100 的 0.5-0.7×</td><td>仅限中国</td></tr>
+<tr><td>Apple</td><td>M4 神经引擎</td><td>台积电 3nm</td><td>设备上 300 亿参数</td><td>仅限 Apple 设备</td></tr>
+</tbody>
+</table>
+</div>
 <p><strong>2026 年的核心张力：</strong> AI 能力受限于算力，而算力访问由政治决定。控制硬件的国家将塑造智能的未来——但效率突破正在使硬件优势变得不像 2023 年那样绝对。</p>
 
                     </main>

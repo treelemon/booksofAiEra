@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "../searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e961be59.js"></script>
@@ -218,6 +218,22 @@
 <ul>
 <li><strong>Phi-4 (Microsoft):</strong> 14B parameters that punched far above its weight. Designed for edge deployment — running on laptops and phones.</li>
 </ul>
+<p><strong>The open-source tiers compared:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Tier</th><th>Example</th><th>Parameters</th><th>Openness</th><th>Best For</th><th>Limitation</th></tr>
+</thead>
+<tbody>
+<tr><td>Open-weight leader</td><td>Llama 5</td><td>600B</td><td>Weights + license; no training data</td><td>General-purpose, commercial</td><td>Training data opaque</td></tr>
+<tr><td>Fully open</td><td>Olmo 3, Granite 4</td><td>70-180B</td><td>Weights + data + code + logs</td><td>Research, auditing, regulated industries</td><td>Smaller models, less capable</td></tr>
+<tr><td>Efficiency champion</td><td>DeepSeek V4</td><td>1.2T (37B active)</td><td>Weights + architecture paper; no data</td><td>Cost-sensitive applications</td><td>Proprietary data, geopolitical risk</td></tr>
+<tr><td>European sovereign</td><td>Mistral Large 3</td><td>250B</td><td>Open weights + commercial-friendly license</td><td>EU compliance, enterprise</td><td>Smaller ecosystem than LLaMA</td></tr>
+<tr><td>Edge-optimized</td><td>Phi-4</td><td>14B</td><td>Open weights + research paper</td><td>On-device deployment</td><td>Limited capability range</td></tr>
+</tbody>
+</table>
+</div>
+<p>The key strategic insight: no single open-source model wins on all dimensions. The ecosystem advantage of LLaMA (largest community, most fine-tuned variants) made it the de facto open standard, but DeepSeek’s efficiency advantage and Olmo’s transparency advantage carved out defensible niches.</p>
 <h2 id="104-the-licenses-war"><a class="header" href="#104-the-licenses-war">10.4 The Licenses War</a></h2>
 <p>Behind the model performance was a subtler war: <strong>what does “open-source” mean for AI?</strong></p>
 <p>The Open Source Initiative (OSI) had spent 2024 defining “Open Source AI” — and the process was contentious. The traditional definition (OSD) required that anyone could use the software for any purpose. But AI models had a complication: they were not just code. They were <em>weights</em>, <em>data</em>, <em>training code</em>, and <em>hardware requirements</em>.</p>
@@ -268,6 +284,25 @@
 </ul>
 <p>The 2.7% gap in aggregate benchmarks was still real. But in practice, for most applications — coding, writing, analysis, customer service — open-source models were already good enough.</p>
 <p><strong>Yann LeCun</strong> was right about one thing: open-source won. Not in the sense of defeating closed-source, but in the sense that AI had become like the internet — a technology that no single company could control, even the companies that made it.</p>
+<p><strong>The open vs. closed decision framework:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Use Case</th><th>Recommended</th><th>Why</th></tr>
+</thead>
+<tbody>
+<tr><td>Research, experimentation</td><td>Open-source</td><td>No API costs, full control, ability to inspect and modify</td></tr>
+<tr><td>Regulated industry (healthcare, finance, law)</td><td>Open-source (fully transparent)</td><td>Auditability, data sovereignty, compliance requirements</td></tr>
+<tr><td>Enterprise production (customer-facing)</td><td>Closed-source</td><td>Reliability guarantees, SLAs, indemnification</td></tr>
+<tr><td>Consumer product (API-based)</td><td>Closed-source</td><td>No infrastructure management, seamless scaling</td></tr>
+<tr><td>Edge deployment (phone, laptop)</td><td>Open-source (small, quantized)</td><td>Local processing, privacy, offline capability</td></tr>
+<tr><td>High-stakes safety applications</td><td>Closed-source (with public evaluations)</td><td>Recallable, auditable provenance</td></tr>
+<tr><td>Global South, resource-constrained</td><td>Open-source</td><td>Zero licensing cost, runs on available hardware</td></tr>
+<tr><td>Military, intelligence</td><td>Unresolved</td><td>Both sides have arguments; no consensus</td></tr>
+</tbody>
+</table>
+</div>
+<p>The coexistence thesis is not a compromise — it is the reality. The question for any professional is not “open vs. closed?” but “which model, under which license, for which use case?” The answer changes every 6-12 months as both ecosystems advance.</p>
 
                     </main>
 

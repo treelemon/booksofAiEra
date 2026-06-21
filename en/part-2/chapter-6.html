@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-31164cd0.js";
+            window.path_to_searchindex_js = "../searchindex-31d01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-e961be59.js"></script>
@@ -227,26 +227,34 @@
 <p><strong>The implication was profound:</strong> In previous technology waves — mainframes, PCs, cloud — the cost of adoption created a natural diffusion curve. AI had no such curve. The technology was effectively free and increasingly capable. The economic bottleneck was no longer technology — it was human adaptation.</p>
 <h2 id="66-the-job-market-earthquake"><a class="header" href="#66-the-job-market-earthquake">6.6 The Job Market Earthquake</a></h2>
 <p>By 2026, the labor market had experienced the fastest transformation in modern history:</p>
-<p><strong>Roles that grew:</strong></p>
-<ul>
-<li>AI Engineer: +340% since 2022</li>
-<li>Prompt Engineer: Did not exist in 2022; 50,000+ job postings in 2026</li>
-<li>AI Ethics &amp; Alignment: 28,000 professionals globally</li>
-<li>Model Infrastructure (MLOps, LLMOps): +200%</li>
-</ul>
-<p><strong>Roles that contracted:</strong></p>
-<ul>
-<li>Entry-level coding interview loops had been abandoned at most major tech companies. “Why ask someone to reverse a linked list when AI does it in seconds?” one Meta engineering director explained. The hiring bar shifted from “can you code?” to “can you solve problems with AI?”</li>
-<li>Translation services: Revenue down 40% since 2023. Real-time AI translation had effectively commoditized the industry.</li>
-<li>Illustrators and graphic designers: Reduced from $45B total addressable market (2022) to $28B (2026).</li>
-<li>Customer service agents: Employment down 22% in the US.</li>
-</ul>
-<p><strong>Roles that transformed:</strong></p>
-<ul>
-<li>Doctors: AI handled radiology reads, differential diagnosis generation, and medical record summarization. Physicians who used AI completed documentation 60% faster and reported lower burnout.</li>
-<li>Lawyers: E-discovery, contract analysis, and legal research were largely automated. The billable hour was being replaced by fixed fees for AI-augmented legal services.</li>
-<li>Researchers: AI co-authored scientific papers. By 2025, AI had co-authored over 10,000 peer-reviewed publications.</li>
-</ul>
+<p><strong>The AI job market impact matrix:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Category</th><th>Examples</th><th>Trend (2022-2026)</th><th>Net Effect</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Growing roles</strong></td><td>AI Engineer (+340%), Prompt Engineer (new, 50K+), MLOps (+200%), AI Ethics (28K)</td><td>+200-340%</td><td>Skill bottleneck — demand far exceeds supply</td></tr>
+<tr><td><strong>Contracting roles</strong></td><td>Translators (-40% revenue), Illustrators ($45B→$28B TAM), Customer service agents (-22% employment), Entry-level coders (hiring bar shifted)</td><td>-22% to -40%</td><td>Structural decline — whole categories shrinking</td></tr>
+<tr><td><strong>Transforming roles</strong></td><td>Doctors (60% faster documentation), Lawyers (e-discovery automated), Researchers (10K+ AI-coauthored papers)</td><td>Role redefinition</td><td>Tasks automated, professionals shifted to higher judgment work</td></tr>
+<tr><td><strong>New categories</strong></td><td>AI auditor, alignment researcher, prompt engineer, model infrastructure engineer</td><td>Did not exist pre-2022</td><td>Net new job categories created by AI itself</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Key insight from the transformation:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Lesson</th><th>Implication</th></tr>
+</thead>
+<tbody>
+<tr><td>Whole roles are not replaced — tasks are</td><td>Every occupation consists of many tasks; AI automates some, augments others</td></tr>
+<tr><td>The bar shifts upward</td><td>“Can you code?” → “Can you solve problems with AI?”</td></tr>
+<tr><td>The premium is on judgment</td><td>Knowing what to ask AI, how to evaluate its output, and when to override</td></tr>
+<tr><td>Reskilling is the bottleneck</td><td>The technology arrives faster than society can retrain workers</td></tr>
+</tbody>
+</table>
+</div>
 <p>The net effect on employment remained contested. The McKinsey Global Institute projected that by 2030, AI would eliminate 12 million jobs in the US while creating 15 million new ones — a net positive, but with enormous transition costs. The question was not “will AI destroy jobs?” but “how quickly can society retrain?”</p>
 <h2 id="67-the-concentration-question"><a class="header" href="#67-the-concentration-question">6.7 The Concentration Question</a></h2>
 <p>The AI economy had a worrying tendency toward concentration.</p>
@@ -254,6 +262,22 @@
 <p>The antitrust implications were serious. The US Federal Trade Commission had opened investigations into NVIDIA’s GPU bundling practices and into Microsoft’s OpenAI partnership. The European Union’s Digital Markets Act was being applied to AI foundation model providers.</p>
 <p><strong>The counter-trend:</strong> Open-source was the great equalizer. DeepSeek, LLaMA, and the broader open ecosystem ensured that no single company could permanently own AI capability. Governments in Europe, India, Japan, and Southeast Asia were building domestic AI capabilities on open-source foundations.</p>
 <p>The AI economy of 2026 was a paradox: the most concentrated technology market in history, with the most democratized technology in history, coexisting in the same industry.</p>
+<p><strong>The AI economy paradox summary:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Force</th><th>Concentration</th><th>Democratization</th><th>Net Effect</th></tr>
+</thead>
+<tbody>
+<tr><td>Compute</td><td>NVIDIA: 80%+ of training chips; top 3 cloud providers: 70%+ of infra</td><td>Edge AI runs on every smartphone; quantized models on laptops</td><td>Access widening, bottleneck narrowing</td></tr>
+<tr><td>Models</td><td>OpenAI + Anthropic: 60% of frontier market</td><td>LLaMA, DeepSeek, Olmo: free, open, global</td><td>Capability commoditizing rapidly</td></tr>
+<tr><td>Talent</td><td>3 companies employ 60% of top researchers</td><td>Open-source community, global education</td><td>Short-term concentration, long-term dispersion</td></tr>
+<tr><td>Data</td><td>Internet controlled by 5 platforms</td><td>Synthetic data, federated learning, data cooperatives</td><td>Current bottleneck, future diversification</td></tr>
+<tr><td>Regulation</td><td>EU, US, China set rules for everyone</td><td>Open-source jurisdictions, local adaptation</td><td>Standards diverging regionally</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>The professional’s takeaway:</strong> The AI economy rewards those who can navigate both forces simultaneously — leverage the concentration for infrastructure and capital, while exploiting the democratization for flexibility and cost. Betting entirely on either side is the path to obsolescence.</p>
 
                     </main>
 
