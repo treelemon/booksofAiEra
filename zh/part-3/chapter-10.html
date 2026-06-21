@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-9ef7322d.js";
+            window.path_to_searchindex_js = "../searchindex-2ed15f7b.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-0d735100.js"></script>
@@ -181,49 +181,93 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="第十章开源与闭源之争"><a class="header" href="#第十章开源与闭源之争">第十章：开源与闭源之争</a></h1>
-<h2 id="101-两大阵营"><a class="header" href="#101-两大阵营">10.1 两大阵营</a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th></th><th>闭源</th><th>开源/开放权重</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>领导者</strong></td><td>OpenAI、Anthropic、Google</td><td>Meta、DeepSeek、AI2、IBM、Mistral</td></tr>
-<tr><td><strong>优势</strong></td><td>能力领先、安全控制</td><td>成本、透明度、可定制性</td></tr>
-<tr><td><strong>商业模式</strong></td><td>API 定价、订阅</td><td>生态系统、企业服务</td></tr>
-<tr><td><strong>主要关切</strong></td><td>中心化控制</td><td>滥用、双重用途</td></tr>
-</tbody>
-</table>
-</div>
-<p>在 2026 年，差距已缩小至约 2.7%——且开源持续追赶。</p>
-<h2 id="102-deepseek-催化剂"><a class="header" href="#102-deepseek-催化剂">10.2 DeepSeek 催化剂</a></h2>
-<p>DeepSeek 于 2025 年 1 月发布 R1，是一个分水岭时刻：</p>
+<h2 id="101-引发革命的泄露"><a class="header" href="#101-引发革命的泄露">10.1 引发革命的泄露</a></h2>
+<p>2023 年 2 月，Meta 以非商业许可向经过批准的研究人员发布了 <strong>LLaMA</strong>——一个从 7B 到 65B 参数的模型家族。初衷是负责任的科研。结果是事与愿违。</p>
+<p>数周内，模型被泄露到 4chan。任何有互联网的人都可以下载 LLaMA 并在自己的硬件上运行。猫已经出了袋子——再也回不去了。</p>
+<p><strong>Mark Zuckerberg</strong>，Meta 的 CEO，面临一个选择：起诉泄露者、加强安全、扼杀项目——或者顺势而为。他选择了后者。“开源 AI 是前进的最佳道路，“Zuckerberg 在 2023 年 7 月写道，宣布了带有商业许可的 LLaMA 2。“每个人都应该获得 AI 的好处。”</p>
+<p>这个决定是神来之笔。一年之内，LLaMA 生态系统——Alpaca、Vicuna、WizardLM 等微调变体——催生了一个并行的 AI 宇宙。到 2025 年，Hugging Face 上有超过 50,000 个基于 LLaMA 的模型。Meta 没有构建一个 AI 产品。它构建了一个 AI <em>操作系统</em>。</p>
+<p><strong>Yann LeCun</strong>，Meta 的首席 AI 科学家，成为开源 AI 最响亮的倡导者。他和任何愿意听的人辩论——认为开源会赢，因为“当每个人都能参与时，创新加速。“他最喜欢的对手是 <strong>Eliezer Yudkowsky</strong>，后者认为开源模型是一种生存风险，因为“如果权重是公开的，就不会有不对齐 AI 的’关闭开关’。”</p>
+<p>分歧贯穿每一个实验室、每一家公司和每一个政府。</p>
+<h2 id="102-deepseek-分水岭"><a class="header" href="#102-deepseek-分水岭">10.2 DeepSeek 分水岭</a></h2>
+<p>2025 年 1 月是辩论凝固的时刻。</p>
+<p>DeepSeek-R1 在推理基准上匹敌 OpenAI 的 o1——并发布了完整的训练方法。权重可下载。论文可阅读。成本是 600 万美元，不是 2 亿美元。</p>
+<p><strong>梁文锋</strong>，DeepSeek 的创始人，从一开始就没想提出政治主张。他只是建立了世界上最高效的模型架构。但政治影响不可避免：DeepSeek 证明了前沿 AI 可以由任何有工程天赋和 600 万美元的人构建——不仅仅是万亿美元级的科技公司。</p>
+<p>影响波及整个行业：</p>
 <ul>
-<li>前沿级推理能力，训练成本仅为 10–20%</li>
-<li>开放权重，详细技术报告</li>
-<li>引发了中国开源模型发布浪潮（GLM、Moonshot Kimi）</li>
-<li>迫使 OpenAI 发布其首个开放模型（2025 年 8 月）</li>
+<li><strong>中国的 AI 生态系统爆发了。</strong> GLM-5（智谱 AI）、Kimi K2（月之暗面）和字节跳动的豆包在数月内都发布了开放权重模型。</li>
+<li><strong>OpenAI 发布了其首个开放模型</strong>（2025 年 8 月）——一个体积小但能力强的推理模型。这个以“造福人类“为使命的非营利组织，在竞争压力下被迫回到其创始使命。</li>
+<li><strong>美国政府难以应对。</strong> 芯片出口管制可以减缓中国的前沿发展。但当所有软件都免费时，你能控制什么？</li>
 </ul>
-<h2 id="103-当前生态系统"><a class="header" href="#103-当前生态系统">10.3 当前生态系统</a></h2>
+<h2 id="103-2026-年的两大阵营"><a class="header" href="#103-2026-年的两大阵营">10.3 2026 年的两大阵营</a></h2>
+<p>到 2026 年，开源生态系统已成熟为不同的层级：</p>
+<p><strong>通用型领导者：</strong></p>
 <ul>
-<li><strong>Llama 5</strong>（Meta）：最佳通用开源权重模型</li>
-<li><strong>Olmo 3</strong>（AI2）：完全开放（数据 + 权重 + 代码）</li>
-<li><strong>Granite 4</strong>（IBM）：企业级聚焦，宽松许可证</li>
-<li><strong>Mistral Large 3</strong>（Mistral）：与前沿竞争</li>
-<li><strong>DeepSeek V4</strong>（DeepSeek）：MoE 效率领导者</li>
-<li><strong>Phi-4</strong>（Microsoft）：体积小但能力强（适用于边缘/设备）</li>
+<li><strong>Llama 5（Meta）：</strong> 开源王冠上的明珠。600B 参数，双通道推理架构。在大多数基准上匹敌 GPT-5。许可宽松到足以覆盖大多数商业用途。Meta 的策略：送模型，拥有生态。</li>
+<li><strong>DeepSeek V4（DeepSeek）：</strong> 1.2T 总参数，每 token 激活 37B。效率领导者。延续了发布详细技术报告以推动整个领域进步的传统。</li>
 </ul>
-<h2 id="104-标准与互操作性"><a class="header" href="#104-标准与互操作性">10.4 标准与互操作性</a></h2>
-<p>2026 年开源 AI 的三大驱动力：</p>
+<p><strong>完全开放运动：</strong></p>
+<ul>
+<li><strong>Olmo 3（AI2，由 Ali Farhadi 领导）：</strong> 开放性的黄金标准——不仅是权重，还有完整的训练数据、代码、日志和配方。如果你想知道前沿模型<em>到底</em>是如何构建的，Olmo 是唯一的选择。</li>
+<li><strong>Granite 4（IBM）：</strong> 面向企业，采用为受监管行业设计的宽松许可。可审计的训练数据，针对 IP 侵权的合同保证。</li>
+</ul>
+<p><strong>欧洲阵营：</strong></p>
+<ul>
+<li><strong>Mistral Large 3（Mistral）：</strong> 由 <strong>Arthur Mensch</strong>、<strong>Guillaume Lample</strong> 和 <strong>Timothée Lacroix</strong>——均为前 DeepMind 和 Meta 研究员——创立。Mistral 通过将开源精神与可持续商业模式相结合，成为欧洲的 AI 冠军。他们的消费产品 Le Chat 是欧洲唯一原生的前沿 AI 助手。</li>
+</ul>
+<p><strong>小而强大：</strong></p>
+<ul>
+<li><strong>Phi-4（微软）：</strong> 140 亿参数，能力远超其体量。专为边缘部署设计——运行在笔记本电脑和手机上。</li>
+</ul>
+<h2 id="104-许可之战"><a class="header" href="#104-许可之战">10.4 许可之战</a></h2>
+<p>在模型性能背后是一场更微妙的战争：<strong>“开源“对 AI 来说意味着什么？</strong></p>
+<p>开源倡议组织（OSI）在 2024 年定义了“开源 AI“——这个过程充满争议。传统定义（OSD）要求任何人可以为任何目的使用软件。但 AI 模型有一个复杂之处：它们不仅仅是代码。它们是<em>权重</em>、<em>数据</em>、<em>训练代码</em>和<em>硬件需求</em>。</p>
+<p>出现了三个许可阵营：</p>
 <ol>
-<li><strong>全球多样性：</strong> 来自中国、欧洲、美国的多种语言和推理调优发布</li>
-<li><strong>互操作性：</strong> 运行时围绕共享标准（GGML、OpenXLA）对齐</li>
-<li><strong>治理：</strong> 安全审计发布、透明数据管道、模型卡</li>
+<li><strong>开放权重 + 限制性使用（Apache 2.0 加用例限制）：</strong> Llama 的许可禁止“高风险“用途——武器、监控、生物武器。批评者说这不是真正的开源。</li>
+<li><strong>完全开放（Apache 2.0，无限制）：</strong> Olmo 和 Granite 使用传统的宽松许可。最大程度开放，最大程度可能被滥用。</li>
+<li><strong>开放权重，封闭数据（自定义许可）：</strong> DeepSeek 发布了权重和架构，但保留了训练数据的专有性。商业机密和竞争优势。</li>
 </ol>
-<h2 id="105-辩论"><a class="header" href="#105-辩论">10.5 辩论</a></h2>
-<p><strong>支持开源：</strong> 更快的创新、民主化访问、透明度、避免企业控制。
-<strong>反对开源：</strong> 双重用途风险（武器、生物武器、虚假信息）、没有“关闭开关“、碎片化。</p>
-<p>这种张力不会得到解决——它是结构性的。双方将共存。</p>
+<p>OSI 最终批准了一个要求<em>数据透明度</em>才能称为“开源 AI“的定义——但争论仍在继续。<strong>Ali Farhadi</strong>（AI2）认为：“如果不能检查训练数据，就不能审计模型。这不是开源——是开放权重。”<strong>Mark Zuckerberg</strong> 反驳：“完美的开放是好的开放的敌人。带合理限制的开放权重是务实的道路。”</p>
+<h2 id="105-安全分裂"><a class="header" href="#105-安全分裂">10.5 安全分裂</a></h2>
+<p>最深的分歧不是技术性的——它是哲学性的。</p>
+<p><strong>开源安全论（Yann LeCun、Mark Zuckerberg、梁文锋）：</strong></p>
+<ul>
+<li>透明度让安全研究人员发现和修复漏洞</li>
+<li>分布式能力防止单点故障和集中</li>
+<li>公共审查是对齐研究的最佳机制</li>
+<li>封闭模型造成危险的不对称：富人控制 AI，其他人只能消费</li>
+</ul>
+<p><strong>闭源安全论（Dario Amodei、Sam Altman、Eliezer Yudkowsky）：</strong></p>
+<ul>
+<li>强大 AI 落入错误之手是生存风险</li>
+<li>开放权重在它们被用于生物武器或自主战争时无法召回</li>
+<li>集中控制使得安全干预成为可能（监控、微调、关闭）</li>
+<li>民主要求强大技术受到治理，而非扩散</li>
+</ul>
+<p><strong>中间地带（Demis Hassabis）：</strong></p>
+<ul>
+<li>安全要求应随能力增长</li>
+<li>当前开源模型足够安全；未来的可能需要监管</li>
+<li>正确的方法是分层的：研究开放，部署监管</li>
+</ul>
+<p>这场辩论有实际后果。2025 年，Meta 在发布 Llama 5 前委托了第三方安全审计——对开放权重模型来说尚属首次。审计揭示了几个攻击向量，Meta 在发布前修复了。开源倡导者指出这是透明有效的证明。闭源倡导者指出 Llama 5 仍有漏洞，有动机的对手可以利用它。</p>
+<h2 id="106-共存论"><a class="header" href="#106-共存论">10.6 共存论</a></h2>
+<p>到 2026 年，双方都不会赢已经很明显了。两种模式不是竞争——它们在互补。</p>
+<p>开源主导：</p>
+<ul>
+<li><strong>研究与科学：</strong> 学术实验室负担不起大规模的 API 访问。开放模型是唯一实用的选择。</li>
+<li><strong>教育与学习：</strong> 学生和自学者下载、研究和修改开放模型。</li>
+<li><strong>全球南方：</strong> 缺乏基于 API 的 AI 基础设施的国家依赖本地托管的开放模型。</li>
+<li><strong>专业领域：</strong> 医疗、法律和金融应用在私有数据上微调开放模型。</li>
+</ul>
+<p>闭源主导：</p>
+<ul>
+<li><strong>企业生产：</strong> 公司为可靠性、支持、SLA 和赔偿付费。</li>
+<li><strong>安全关键应用：</strong> 受监管行业偏好已知来源和审计跟踪的模型。</li>
+<li><strong>消费产品：</strong> 无缝 API 访问，无需基础设施管理。</li>
+</ul>
+<p>综合基准测试中 2.7% 的差距仍然是真实的。但在实践中，对于大多数应用——编程、写作、分析、客服——开源模型已经足够好了。</p>
+<p><strong>Yann LeCun</strong> 在一件事上是对的：开源赢了。不是打败闭源的意义上，而是 AI 已经变得像互联网——一个没有单一公司能控制的技术，即使是制造它的公司。</p>
 
                     </main>
 
