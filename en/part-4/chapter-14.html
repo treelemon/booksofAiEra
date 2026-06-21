@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-52ca7ea2.js";
+            window.path_to_searchindex_js = "../searchindex-63cced79.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-73d70b89.js"></script>
@@ -181,39 +181,54 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="chapter-14-ai-in-science-and-medicine"><a class="header" href="#chapter-14-ai-in-science-and-medicine">Chapter 14: AI in Science and Medicine</a></h1>
-<h2 id="141-drug-discovery"><a class="header" href="#141-drug-discovery">14.1 Drug Discovery</a></h2>
-<p>AI is transforming the drug development pipeline (historically: 10+ years, $2B+ per drug):</p>
-<ul>
-<li><strong>Target identification:</strong> AlphaFold, ESMFold predict protein structures</li>
-<li><strong>Molecule design:</strong> Generative models propose novel drug candidates</li>
-<li><strong>Screen optimization:</strong> AI predicts binding affinity, toxicity, ADME properties</li>
-<li><strong>Clinical trials:</strong> Patient recruitment, protocol optimization, real-world evidence</li>
-</ul>
-<p>In 2025, the first AI-discovered drugs entered Phase II/III trials.</p>
-<h2 id="142-medical-ai"><a class="header" href="#142-medical-ai">14.2 Medical AI</a></h2>
-<ul>
-<li><strong>Diagnostic imaging:</strong> FDA-approved AI for radiology, pathology, dermatology</li>
-<li><strong>Clinical decision support:</strong> LLMs assisting with diagnosis, treatment planning</li>
-<li><strong>Medical records:</strong> Automated summarization, coding, prior authorization</li>
-<li><strong>Surgery:</strong> Robotic-assisted surgery with AI planning</li>
-</ul>
-<p><strong>Key challenge:</strong> Hallucination in clinical settings is unacceptable. Most deployed AI is narrow (one task) rather than general.</p>
-<h2 id="143-ai-in-research"><a class="header" href="#143-ai-in-research">14.3 AI in Research</a></h2>
-<ul>
-<li><strong>Literature review:</strong> AI can process 10,000 papers overnight</li>
-<li><strong>Hypothesis generation:</strong> Models propose novel experiments</li>
-<li><strong>Laboratory automation:</strong> AI-controlled robots run experiments 24/7</li>
-<li><strong>Peer review:</strong> AI-assisted review (controversial but growing)</li>
-</ul>
-<h2 id="144-the-replication-crisis"><a class="header" href="#144-the-replication-crisis">14.4 The Replication Crisis</a></h2>
-<p>AI’s entry into science raises new concerns:</p>
-<ul>
-<li>AI-generated papers flooding journals</li>
-<li>“Tortured phrases” from LLM-generated text</li>
-<li>AI-hallucinated references and data</li>
-<li>Difficulty distinguishing AI-generated from human research</li>
-</ul>
-<p>The scientific community is still developing norms for AI-assisted research.</p>
+<h2 id="141-the-first-ai-drug-a-50-year-problem-solved-in-two-years"><a class="header" href="#141-the-first-ai-drug-a-50-year-problem-solved-in-two-years">14.1 The First AI Drug: A 50-Year Problem Solved in Two Years</a></h2>
+<p>In February 2024, a biotechnology company called <strong>Insilico Medicine</strong> announced that an AI-discovered drug for idiopathic pulmonary fibrosis (IPF) — a fatal lung disease — had successfully completed Phase II clinical trials. The drug, <strong>INS018_055</strong>, had gone from target discovery to Phase II in less than three years. The traditional timeline for this milestone: eight to twelve years.</p>
+<p><strong>Alex Zhavoronkov</strong>, Insilico’s founder and CEO, had been pursuing AI-driven drug discovery since 2014 — a time when most pharma executives thought he was eccentric. “Biology is not a science of perfect data,” he said. “It’s a science of noisy, incomplete, high-dimensional data. That’s exactly what deep learning is good at.”</p>
+<p>INS018_055 was the first proof that the AI drug discovery pipeline could work end-to-end. It was followed rapidly by others: <strong>Recursion Pharmaceuticals</strong> (led by <strong>Chris Gibson</strong>) had two AI-discovered cancer drugs in Phase II by 2025. <strong>Isomorphic Labs</strong> (Demis Hassabis’s Alphabet spinout) had licensed AI-discovered drug candidates to Eli Lilly and Novartis for $1.2 billion — before any of them reached human trials.</p>
+<p>The economics were staggering. Traditional drug development cost $2–3 billion per approved drug, with a 90% failure rate from Phase I to approval. AI-driven discovery was targeting $300–500 million per drug, with projected success rates of 30-50%. If those numbers held, AI would be the most transformative force in medicine since antibiotics.</p>
+<h2 id="142-the-doctor-will-see-you-now--actually-the-ai-will"><a class="header" href="#142-the-doctor-will-see-you-now--actually-the-ai-will">14.2 The Doctor Will See You Now — Actually, the AI Will</a></h2>
+<p>The transformation of clinical medicine was quieter than drug discovery — but equally profound.</p>
+<p><strong>Med-PaLM 2 (Google, 2023)</strong> achieved 86.5% on the US Medical Licensing Exam (USMLE) — passing with a score comparable to a human physician. GPT-4 followed with 90%+. By 2025, LLMs were scoring in the 95th percentile on board examinations in radiology, dermatology, and pathology.</p>
+<p>The real story was not test scores — it was deployment:</p>
+<p><strong>Radiology:</strong> In 2024, the FDA had approved over 700 AI medical devices — more than half of them for radiology. AI systems for mammography screening (such as <strong>Kheiron Medical</strong> and <strong>Lunit</strong>) were reading mammograms with sensitivity equal to or better than human radiologists. Between 2020 and 2026, the number of radiologists in the US had grown by 5% — but the volume of scans had grown by 40%. AI was the only reason the system had not collapsed.</p>
+<p><strong>Pathology:</strong> <strong>Paige AI</strong> (founded by <strong>Thomas Fuchs</strong>) had developed an AI system for prostate cancer detection that reduced false negatives by 70%. In a landmark 2025 study at Memorial Sloan Kettering, pathologists using Paige AI detected 24% more clinically significant cancers than those working without AI.</p>
+<p><strong>Dermatology:</strong> Smartphone apps with AI-powered skin lesion classification — such as those developed by <strong>Google Health</strong> (led by <strong>Lily Peng</strong>) — could triage skin lesions with dermatologist-level accuracy. The UK’s National Health Service piloted AI triage for skin cancer in 2025, with 92% sensitivity.</p>
+<p><strong>The caveat:</strong> Every deployed medical AI was narrow — trained on one task, one organ, one modality. Generalist medical AI — a “doctor AI” that could diagnose anything — did not exist in clinical practice. The failure modes were too poorly understood.</p>
+<h2 id="143-the-ai-assisted-doctor"><a class="header" href="#143-the-ai-assisted-doctor">14.3 The AI-Assisted Doctor</a></h2>
+<p>The most impactful application was not AI replacing doctors — it was AI giving doctors superpowers.</p>
+<p><strong>The documentation revolution:</strong> A 2024 study at Stanford Medical Center found that physicians spent 49% of their time on electronic health record (EHR) documentation — and only 27% on direct patient care. AI note-taking systems (like <strong>Abridge</strong>, <strong>Ambience</strong>, and <strong>Nuance DAX</strong>) listened to patient conversations and generated clinical notes in real time. Doctors who used AI documentation reported 60% less burnout and spent 15% more time with patients.</p>
+<p><strong>The diagnosis assistant:</strong> <strong>Glass AI</strong> (from OpenEvidence) and <strong>DxGPT</strong> were LLM-based clinical decision support systems. A doctor could describe a case, and the AI would generate a differential diagnosis, suggest relevant tests, and flag drug interactions. In a 2025 study at Mayo Clinic, physicians using AI diagnosis support made the correct diagnosis 23% more often than those working without it — and made it 40% faster.</p>
+<p><strong>The referral triage:</strong> The UK’s NHS used an AI triage system (from <strong>Babylon Health</strong> by <strong>Ali Parsa</strong>) to route patient referrals. Patients described symptoms; the AI determined urgency and specialty. By 2026, the system was handling 30% of all primary care referrals in the NHS. Emergency department visits had decreased by 12%.</p>
+<p><strong>Daphne Koller</strong>, founder of <strong>insitro</strong>, framed it differently: “The question is not whether AI can diagnose better than a doctor. The question is whether the combination of AI + doctor can outperform either alone. The answer is a clear yes — in every study that has tested it.”</p>
+<h2 id="144-the-laboratory-of-the-future"><a class="header" href="#144-the-laboratory-of-the-future">14.4 The Laboratory of the Future</a></h2>
+<p>Scientific research was being transformed from the bench up.</p>
+<p><strong>Automated labs:</strong> <strong>Sebastian Thrun</strong> (founder of Google X, now at Stanford) had demonstrated that AI-controlled robotic laboratories could run experiments 24/7 — designing experiments, executing them, measuring results, and iterating. The “self-driving lab” concept was realized by <strong>Gryphon Scientific</strong> and <strong>Arctoris</strong>. In materials science, AI-driven labs had accelerated discovery by 10-100× in specific domains.</p>
+<p><strong>Literature AI:</strong> AI tools for scientific literature — <strong>Elicit</strong>, <strong>Semantic Scholar</strong>, <strong>Consensus</strong> — could read 10,000 papers in a night and synthesize findings across domains. A 2025 study showed that researchers using AI literature tools discovered 2× more relevant papers and took 70% less time.</p>
+<p><strong>Hypothesis generation:</strong> <strong>Scite.ai</strong>, <strong>Iris.ai</strong>, and <strong>Kamiwaza</strong> were generating novel research hypotheses by connecting findings across disconnected fields. In 2025, an AI at MIT proposed a new mechanism for battery degradation that human researchers had missed for a decade. When tested experimentally, the hypothesis was confirmed.</p>
+<p><strong>The peer review crisis:</strong> AI was both the problem and the solution. AI-generated papers were flooding journals — the Committee on Publication Ethics (COPE) estimated that 15% of submissions to some journals were AI-generated by 2025. But AI-assisted peer review — checking statistics, flagging inconsistencies, detecting fabricated data — was becoming essential. Journals that used AI screening tools (like <strong>Scholarly</strong>, <strong>Penelope AI</strong>) had reduced review times by 30%.</p>
+<h2 id="145-the-gpqa-milestone"><a class="header" href="#145-the-gpqa-milestone">14.5 The GPQA Milestone</a></h2>
+<p>In 2024, a new benchmark called <strong>GPQA (Graduate-Level Google-Proof Q&amp;A)</strong> was introduced — 448 multiple-choice questions at the level of a PhD-qualified expert, designed to be extremely difficult for both humans and AI.</p>
+<p>The results were sobering for humans: domain experts scored 65-80%. GPT-4 scored 42%. By early 2025, o3 scored 87.4% — exceeding the human expert baseline.</p>
+<p>The benchmark was notable because the questions were deliberately “hard for search engines” — requiring genuine reasoning, not retrieval. When AI exceeded human expert performance, it was not memorizing — it was reasoning.</p>
+<p><strong>The implication:</strong> PhD-level scientific reasoning was no longer uniquely human. AI could contribute to the most demanding intellectual work — proposing experiments, interpreting results, generating theories.</p>
+<h2 id="146-the-replication-crisis-amplified"><a class="header" href="#146-the-replication-crisis-amplified">14.6 The Replication Crisis, Amplified</a></h2>
+<p>The integration of AI into science had a dark side — and it was the amplification of a pre-existing crisis.</p>
+<p><strong>Paper mills:</strong> Fraudulent paper factories had been a problem in scientific publishing for years. The field was already plagued by peer-reviewed journals that published anything for a fee. AI made the problem catastrophic. Generative models could produce thousands of plausible-looking papers per day. By 2025, some journals were retracting 20-30% of their published papers due to AI-generated fraud.</p>
+<p><strong>The “tortured phrase” epidemic:</strong> A 2024 investigation by <strong>Nature</strong> revealed that AI-generated text in scientific papers had a distinctive signature — “hallucinated” references, awkward phrasing, and “tortured phrases” where the AI had substituted uncommon words for common ones. “Deep learning” became “profound erudition.” “Artificial intelligence” became “counterfeit consciousness.” The phenomenon was so widespread that it was used as a diagnostic — a paper with tortured phrases was almost certainly AI-generated and probably contained fabricated data.</p>
+<p><strong>The validation crisis:</strong> AI predicted protein structures with atomic accuracy. AI designed molecules with high predicted binding affinity. AI wrote plausible research papers. But the gap between <em>prediction</em> and <em>experimental validation</em> was widening. The rate of AI-generated hypotheses was exceeding the scientific community’s capacity to test them by 10:1 in some fields.</p>
+<p><strong>The response:</strong> “We need an AI for validation to match the AI for generation,” argued <strong>Anne Carpenter</strong>, creator of the CellProfiler platform. The field of “automated experiment” — robotic labs that could test AI predictions at scale — was emerging.</p>
+<h2 id="147-the-trust-problem-in-medicine"><a class="header" href="#147-the-trust-problem-in-medicine">14.7 The Trust Problem in Medicine</a></h2>
+<p>Medical AI faced a challenge that no benchmark could solve: <strong>trust.</strong></p>
+<p>A radiologist using AI to read mammograms faced an impossible dilemma: if the AI flagged a suspicious region that the radiologist had missed, should they change their report? If the AI missed something the radiologist caught, should they downgrade their confidence in the AI?</p>
+<p><strong>The “second reader” paradigm:</strong> The FDA’s most common approval framework treated AI as a “second reader” — the human made the initial decision, then the AI reviewed it. This preserved human accountability while leveraging AI’s pattern-matching strengths.</p>
+<p><strong>The liability question:</strong> If an AI-assisted doctor missed a diagnosis, who was responsible? The doctor? The hospital? The AI vendor? US medical liability law had not been updated for the AI era. Some hospitals were requiring vendors to indemnify AI-related claims. Others required patients to consent to AI-assisted diagnosis.</p>
+<p><strong>The regulation gap:</strong> The FDA’s AI approval process was designed for “locked” algorithms that did not change after deployment. But the most powerful AI models were “continuously learning” — improving with each use. The FDA had approved only 15 continuously-learning AI systems by 2026. The gap between AI capability and regulatory capacity was as wide in medicine as it was in every other domain.</p>
+<h2 id="148-the-frontier-what-comes-next"><a class="header" href="#148-the-frontier-what-comes-next">14.8 The Frontier: What Comes Next</a></h2>
+<p>The trajectory of AI in science and medicine pointed toward three revolutions:</p>
+<p><strong>1. The “100x” biology revolution:</strong> AI was compressing biological discovery timelines from decades to years to months. The first AI-discovered drugs were in Phase II. By 2030, the first fully AI-discovered and AI-developed drug could reach market.</p>
+<p><strong>2. The personalized medicine revolution:</strong> AI that could integrate a patient’s genome, transcriptome, proteome, microbiome, and environmental data into a unified model of their health — and recommend treatments tailored to their specific biology. The “digital twin” concept — a continuously updated AI model of each patient — was being piloted at Stanford and the NHS.</p>
+<p><strong>3. The autonomous scientific discovery:</strong> The ultimate goal — an AI system that could propose hypotheses, design experiments, run them, interpret results, and refine theories without human intervention. The first prototypes existed. The fully realized version was years away — but the direction was unmistakable.</p>
+<p><strong>The warning from Demis Hassabis:</strong> “AI in science is the most important application of AI. But we must be humble. Nature is complex. The human body is complex. AI will make mistakes — and in medicine, mistakes cost lives. We need to proceed with ambition, but also with caution.”</p>
 
                     </main>
 

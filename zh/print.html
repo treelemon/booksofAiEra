@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-8570b0f3.js";
+            window.path_to_searchindex_js = "searchindex-b189dd76.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-0d735100.js"></script>
@@ -1271,39 +1271,54 @@
 <p>答案将不仅决定工作的未来——而且决定社会本身的未来。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第十四章ai-在科学与医学中的应用"><a class="header" href="#第十四章ai-在科学与医学中的应用">第十四章：AI 在科学与医学中的应用</a></h1>
-<h2 id="141-药物发现"><a class="header" href="#141-药物发现">14.1 药物发现</a></h2>
-<p>AI 正在改变药物研发管线（历史上：10 年以上，每款药 20 亿美元以上）：</p>
-<ul>
-<li><strong>靶点识别：</strong> AlphaFold、ESMFold 预测蛋白质结构</li>
-<li><strong>分子设计：</strong> 生成式模型提出新药候选分子</li>
-<li><strong>筛选优化：</strong> AI 预测结合亲和力、毒性、ADME 特性</li>
-<li><strong>临床试验：</strong> 患者招募、方案优化、真实世界证据</li>
-</ul>
-<p>2025 年，首批 AI 发现的药物进入 II/III 期临床试验。</p>
-<h2 id="142-医学-ai"><a class="header" href="#142-医学-ai">14.2 医学 AI</a></h2>
-<ul>
-<li><strong>诊断影像：</strong> FDA 批准的放射学、病理学、皮肤科 AI</li>
-<li><strong>临床决策支持：</strong> LLM 辅助诊断、治疗规划</li>
-<li><strong>医疗记录：</strong> 自动摘要、编码、事先授权</li>
-<li><strong>手术：</strong> 具有 AI 规划的机器人辅助手术</li>
-</ul>
-<p><strong>关键挑战：</strong> 临床环境中的幻觉是不可接受的。大多数已部署的 AI 是狭窄的（单一任务），而非通用型。</p>
-<h2 id="143-ai-在研究中的应用"><a class="header" href="#143-ai-在研究中的应用">14.3 AI 在研究中的应用</a></h2>
-<ul>
-<li><strong>文献综述：</strong> AI 可以在一夜之间处理 10,000 篇论文</li>
-<li><strong>假设生成：</strong> 模型提出新颖的实验方案</li>
-<li><strong>实验室自动化：</strong> AI 控制的机器人 24/7 运行实验</li>
-<li><strong>同行评审：</strong> AI 辅助评审（有争议但在增长）</li>
-</ul>
-<h2 id="144-可重复性危机"><a class="header" href="#144-可重复性危机">14.4 可重复性危机</a></h2>
-<p>AI 进入科学领域引发新的担忧：</p>
-<ul>
-<li>AI 生成的论文涌入期刊</li>
-<li>LLM 生成文本中的“痛苦短语“</li>
-<li>AI 幻觉产生的参考文献和数据</li>
-<li>难以区分 AI 生成和人类的研究</li>
-</ul>
-<p>科学界仍在制定 AI 辅助研究的规范。</p>
+<h2 id="141-第一款-ai-药物50-年的问题两年解决"><a class="header" href="#141-第一款-ai-药物50-年的问题两年解决">14.1 第一款 AI 药物：50 年的问题两年解决</a></h2>
+<p>2024 年 2 月，一家名为 <strong>Insilico Medicine</strong> 的生物技术公司宣布，一款由 AI 发现的用于治疗特发性肺纤维化（IPF）——一种致命肺病——的药物成功完成 II 期临床试验。该药物 <strong>INS018_055</strong> 从靶点发现到 II 期临床用了不到三年。传统时间线：八到十二年。</p>
+<p><strong>Alex Zhavoronkov</strong>，Insilico 的创始人兼 CEO，自 2014 年以来一直在追求 AI 驱动的药物发现——当时大多数制药高管认为他是个怪人。“生物学不是一门关于完美数据的科学，“他说。“它是关于嘈杂、不完整、高维数据的科学。这正是深度学习擅长的。”</p>
+<p>INS018_055 是第一个证明 AI 药物发现管道可以端到端工作的证据。随后迅速出现了其他成果：<strong>Recursion Pharmaceuticals</strong>（由 <strong>Chris Gibson</strong> 领导）到 2025 年有两款 AI 发现的抗癌药物进入 II 期临床。<strong>Isomorphic Labs</strong>（Demis Hassabis 的 Alphabet 衍生公司）已向礼来和诺华授权了 AI 发现的候选药物，交易金额 12 亿美元——其中任何一款都尚未进入人体试验。</p>
+<p>经济影响是惊人的。传统药物开发每款获批药物成本 20-30 亿美元，从 I 期到获批的失败率为 90%。AI 驱动的发现目标为每款药物 3-5 亿美元，预计成功率 30-50%。如果这些数字成立，AI 将成为自抗生素以来医学领域最具变革性的力量。</p>
+<h2 id="142-医生会来看你实际上是-ai"><a class="header" href="#142-医生会来看你实际上是-ai">14.2 医生会来看你——实际上，是 AI</a></h2>
+<p>临床医学的变革比药物发现更安静——但同样深刻。</p>
+<p><strong>Med-PaLM 2（Google，2023）</strong> 在美国医师资格考试（USMLE）上达到 86.5%——得分与人类医生相当。GPT-4 紧随其后达到 90%+。到 2025 年，LLM 在放射学、皮肤病学和病理学的委员会考试中得分进入第 95 百分位。</p>
+<p>真正的故事不是考试分数——而是部署：</p>
+<p><strong>放射学：</strong> 2024 年，FDA 已批准超过 700 种 AI 医疗设备——其中一半以上用于放射学。用于乳腺X线摄影的 AI 系统（如 <strong>Kheiron Medical</strong> 和 <strong>Lunit</strong>）的敏感度等于或优于人类放射科医生。2020 至 2026 年间，美国放射科医生数量增长了 5%——但扫描量增长了 40%。AI 是这个系统没有崩溃的唯一原因。</p>
+<p><strong>病理学：</strong> <strong>Paige AI</strong>（由 <strong>Thomas Fuchs</strong> 创立）开发了用于前列腺癌检测的 AI 系统，将假阴性减少 70%。在纪念斯隆凯特琳癌症中心 2025 年的一项里程碑式研究中，使用 Paige AI 的病理学家比不使用 AI 的病理学家多检测出 24% 的临床显著癌症。</p>
+<p><strong>皮肤病学：</strong> 具有 AI 皮肤病变分类功能的智能手机应用——如 <strong>Google Health</strong>（由 <strong>Lily Peng</strong> 领导）开发的应用——可以以皮肤科医生水平的准确度对皮肤病变进行分诊。英国国家卫生服务系统在 2025 年试点使用 AI 进行皮肤癌分诊，敏感度达 92%。</p>
+<p><strong>警告：</strong> 每个已部署的医学 AI 都是狭窄的——针对一个任务、一个器官、一种模态训练。通用型医学 AI——能够诊断任何疾病的“AI 医生“——在临床实践中不存在。故障模式的理解太不充分。</p>
+<h2 id="143-ai-辅助医生"><a class="header" href="#143-ai-辅助医生">14.3 AI 辅助医生</a></h2>
+<p>最具影响力的应用并不是 AI 取代医生——而是 AI 赋予医生超能力。</p>
+<p><strong>文档革命：</strong> 斯坦福医学中心 2024 年的一项研究发现，医生将 49% 的时间花在电子健康记录（EHR）文档上——只有 27% 用于直接患者护理。AI 笔记系统（如 <strong>Abridge</strong>、<strong>Ambience</strong> 和 <strong>Nuance DAX</strong>）聆听患者对话并实时生成临床笔记。使用 AI 文档的医生报告倦怠感降低 60%，与患者相处的时间增加 15%。</p>
+<p><strong>诊断助手：</strong> <strong>Glass AI</strong>（来自 OpenEvidence）和 <strong>DxGPT</strong> 是基于 LLM 的临床决策支持系统。医生描述病例，AI 会生成鉴别诊断、建议相关检查并标记药物相互作用。在梅奥诊所 2025 年的一项研究中，使用 AI 诊断支持的医生正确诊断率比不使用的高 23%——并且速度快 40%。</p>
+<p><strong>转诊分诊：</strong> 英国 NHS 使用 AI 分诊系统（来自 <strong>Ali Parsa</strong> 的 <strong>Babylon Health</strong>）来引导患者转诊。患者描述症状；AI 确定紧急程度和专科。到 2026 年，该系统处理了 NHS 中 30% 的初级保健转诊。急诊就诊减少了 12%。</p>
+<p><strong>Daphne Koller</strong>，<strong>insitro</strong> 的创始人，以不同的方式思考：“问题不是 AI 是否能比医生更好地诊断。问题是 AI + 医生的组合是否能超越任何一方。答案是明确的是——在每一个测试过它的研究中。”</p>
+<h2 id="144-未来实验室"><a class="header" href="#144-未来实验室">14.4 未来实验室</a></h2>
+<p>科学研究正在从实验台开始被彻底改变。</p>
+<p><strong>自动化实验室：</strong> <strong>Sebastian Thrun</strong>（Google X 创始人，现在斯坦福）已经证明 AI 控制的机器人实验室可以 24/7 运行实验——设计实验、执行、测量结果、迭代。“自动驾驶实验室“概念由 <strong>Gryphon Scientific</strong> 和 <strong>Arctoris</strong> 实现。在材料科学中，AI 驱动的实验室在特定领域将发现速度提高了 10-100 倍。</p>
+<p><strong>文献 AI：</strong> 用于科学文献的 AI 工具——<strong>Elicit</strong>、<strong>Semantic Scholar</strong>、<strong>Consensus</strong>——可以在一夜之间阅读 10,000 篇论文并跨领域综合发现。2025 年的一项研究表明，使用 AI 文献工具的研究人员发现的相关论文多 2 倍，用时少 70%。</p>
+<p><strong>假设生成：</strong> <strong>Scite.ai</strong>、<strong>Iris.ai</strong> 和 <strong>Kamiwaza</strong> 通过连接跨领域之间的发现，生成新颖的研究假设。2025 年，MIT 的一个 AI 提出了一种新的电池退化机制，人类研究人员十年未曾发现。经过实验验证，假设被证实。</p>
+<p><strong>同行评审危机：</strong> AI 既是问题也是解决方案。AI 生成的论文正在涌入期刊——出版伦理委员会（COPE）估计到 2025 年部分期刊的 15% 投稿是 AI 生成的。但 AI 辅助同行评审——检查统计数据、标记不一致、检测伪造数据——正变得必不可少。使用 AI 筛查工具（如 <strong>Scholarly</strong>、<strong>Penelope AI</strong>）的期刊已将审阅时间减少 30%。</p>
+<h2 id="145-gpqa-里程碑"><a class="header" href="#145-gpqa-里程碑">14.5 GPQA 里程碑</a></h2>
+<p>2024 年，一个名为 <strong>GPQA（研究生级谷歌无法解答的问答）</strong> 的新基准被引入——448 道选择题，达到博士级专家水平，设计为对人类和 AI 都极其困难。</p>
+<p>结果对人类来说是清醒的：领域专家得分 65-80%。GPT-4 得分 42%。到 2025 年初，o3 得分 87.4%——超过人类专家基线。</p>
+<p>该基准的显著之处在于题目被故意设计为“搜索引擎难以回答“——需要真正的推理，而非检索。当 AI 超过人类专家表现时，它不是记忆——它在推理。</p>
+<p><strong>影响：</strong> 博士级科学推理不再是人类独有的。AI 可以为最苛刻的智力工作做出贡献——提出实验、解释结果、生成理论。</p>
+<h2 id="146-可重复性危机被放大"><a class="header" href="#146-可重复性危机被放大">14.6 可重复性危机，被放大</a></h2>
+<p>AI 融入科学有一个阴暗面——它放大了已经存在的危机。</p>
+<p><strong>论文工厂：</strong> 欺诈性论文工厂多年来一直是科学出版的问题。该领域已经充斥着为收费什么都发表的同行评审期刊。AI 使这个问题变得灾难性。生成式模型每天可以产生数千篇看起来可信的论文。到 2025 年，一些期刊由于 AI 生成的欺诈而撤回了 20-30% 的已发表论文。</p>
+<p><strong>“痛苦短语“流行病：</strong> 2024 年 <strong>Nature</strong> 的一项调查揭示了科学论文中 AI 生成文本的独特特征——“幻觉“引用、笨拙的措辞，以及 AI 用不常见词替换常见词的“痛苦短语”。“深度学习“变成了“深远学识”。“人工智能“变成了“模拟意识”。这种现象如此普遍，以至于被用作诊断——带有痛苦短语的论文几乎肯定是 AI 生成的，并且可能包含伪造数据。</p>
+<p><strong>验证危机：</strong> AI 以原子精度预测蛋白质结构。AI 设计具有高预测结合亲和力的分子。AI 写出可信的研究论文。但<em>预测</em>与<em>实验验证</em>之间的差距在扩大。AI 生成假设的速度在某些领域超过了科学界测试能力的 10:1。</p>
+<p><strong>应对：</strong> “我们需要一个用于验证的 AI 来匹配用于生成的 AI，”<strong>Anne Carpenter</strong>，CellProfiler 平台的创建者认为。“自动实验“领域——可以大规模测试 AI 预测的机器人实验室——正在兴起。</p>
+<h2 id="147-医学中的信任问题"><a class="header" href="#147-医学中的信任问题">14.7 医学中的信任问题</a></h2>
+<p>医学 AI 面临一个没有基准可以解决的问题：<strong>信任。</strong></p>
+<p>使用 AI 读取乳腺 X 光片的放射科医生面临一个不可能的困境：如果 AI 标记了一个放射科医生漏掉的可疑区域，他们应该改变报告吗？如果 AI 漏掉了医生发现的问题，他们应该降低对 AI 的信心吗？</p>
+<p><strong>“第二读者“范式：</strong> FDA 最常见的批准框架将 AI 视为“第二读者”——人类做出初始决定，然后 AI 审查。这保持了人类问责制，同时利用了 AI 的模式匹配优势。</p>
+<p><strong>责任问题：</strong> 如果 AI 辅助的医生漏诊了，谁负责？医生？医院？AI 供应商？美国的医疗责任法尚未为 AI 时代更新。一些医院要求供应商为 AI 相关索赔提供赔偿。其他医院要求患者同意 AI 辅助诊断。</p>
+<p><strong>监管差距：</strong> FDA 的 AI 审批流程是为部署后不改变的“锁定“算法设计的。但最强大的 AI 模型是“持续学习“的——每次使用都在改进。到 2026 年，FDA 仅批准了 15 个持续学习型 AI 系统。AI 能力与监管能力之间的差距在医学中和在任何其他领域一样大。</p>
+<h2 id="148-前沿接下来会发生什么"><a class="header" href="#148-前沿接下来会发生什么">14.8 前沿：接下来会发生什么</a></h2>
+<p>AI 在科学与医学中的轨迹指向三场革命：</p>
+<p><strong>1. “100 倍“生物学革命：</strong> AI 正在将生物发现时间线从数十年压缩到数年再到数月。首款 AI 发现的药物已进入 II 期。到 2030 年，首款完全由 AI 发现和开发的药物可能上市。</p>
+<p><strong>2. 个性化医疗革命：</strong> AI 可以将患者的基因组、转录组、蛋白质组、微生物组和环境数据整合到统一的健康模型中——并推荐针对其特定生物学定制的治疗方案。“数字孪生“概念——每个患者持续更新的 AI 模型——正在斯坦福和 NHS 试点。</p>
+<p><strong>3. 自主科学发现：</strong> 终极目标——一个可以提出假设、设计实验、运行实验、解释结果并在没有人类干预的情况下完善理论的 AI 系统。第一个原型已存在。完全实现的版本还需要数年——但方向是明确的。</p>
+<p><strong>来自 Demis Hassabis 的警告：</strong> “科学中的 AI 是 AI 最重要的应用。但我们必须谦卑。自然是复杂的。人体是复杂的。AI 会犯错——而在医学中，犯错代价是生命。我们需要有雄心，但也需要谨慎。”</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第十五章ai-在编码与工程中的应用"><a class="header" href="#第十五章ai-在编码与工程中的应用">第十五章：AI 在编码与工程中的应用</a></h1>
 <p><em>软件工程师的实用实地指南——AI 原生时代的工具、论文、工作流和思维模型。</em></p>
