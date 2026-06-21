@@ -1,0 +1,15 @@
+[book]
+authors = ["Your Name"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Intelligence Age: Human Wisdom in the AI Era"
+description = "A living, continuously updated field guide to the AI era — grounded in Human Wisdom: humanity at the center, intelligence as the instrument."
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/your-username/booksofAiEra"
+edit-url-template = "https://github.com/your-username/booksofAiEra/edit/main/{path}"
+site-url = "/booksofAiEra/"
