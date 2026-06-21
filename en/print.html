@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ef568c62.js";
+            window.path_to_searchindex_js = "searchindex-3b38e6b3.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-e961be59.js"></script>
@@ -1847,7 +1847,9 @@
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-15-ai-in-code-and-engineering"><a class="header" href="#chapter-15-ai-in-code-and-engineering">Chapter 15: AI in Code and Engineering</a></h1>
 <h2 id="151-the-ai-engineering-capability-assessment"><a class="header" href="#151-the-ai-engineering-capability-assessment">15.1 The AI Engineering Capability Assessment</a></h2>
-<p>AI’s capability in software engineering has advanced from novelty to necessity. Measuring this capability requires standardized benchmarks and professional judgment about what they mean.</p>
+<p>In early 2024, a developer named Cody spent a weekend trying to fix a bug in an open-source library. He traced through dependency graphs, read source files, and narrowed the issue to a race condition. It took him six hours. A few months later, he described the same bug to an AI coding agent. The agent found the root cause in thirty seconds. Not because the agent was smarter — because it had read every file in the repository simultaneously while Cody could only read them one at a time.</p>
+<p>“I realized something,” Cody said. “The AI wasn’t replacing my ability to fix bugs. It was replacing my ability to read fast enough.”</p>
+<p>AI’s capability in software engineering has advanced from novelty to necessity. Measuring this capability requires standardized benchmarks — and professional judgment about what they actually mean.</p>
 <p><strong>Key engineering benchmarks trajectory:</strong></p>
 <div class="table-wrapper">
 <table>
@@ -1879,22 +1881,24 @@
 </tbody>
 </table>
 </div>
-<p><strong>The key insight:</strong> SWE-bench passing 97% in 2026 does not mean AI can solve 97% of real software tasks — it means AI can solve 97% of the <em>benchmark’s</em> tasks, which are curated and self-contained. Real-world software engineering involves context understanding, stakeholder negotiation, system design, and maintenance across years — dimensions the benchmark does not capture. The professional assessment: AI coding capability is at ~70% of a competent senior engineer’s total value — excellent at production, weaker at design, context, and judgment.</p>
+<p>The key insight: SWE-bench passing 97% in 2026 does not mean AI can solve 97% of real software tasks — it means AI can solve 97% of the benchmark’s tasks, which are curated and self-contained. Real-world software engineering involves context understanding, stakeholder negotiation, system design, and maintenance across years. The professional assessment: AI coding capability is at ~70% of a competent senior engineer’s total value — excellent at production, weaker at design, context, and judgment.</p>
 <h2 id="152-the-tool-selection-framework"><a class="header" href="#152-the-tool-selection-framework">15.2 The Tool Selection Framework</a></h2>
-<p>The AI coding tool landscape is crowded. A systematic selection framework enables rational choice based on team needs.</p>
+<p>In early 2025, a startup called Metaframe made a common mistake. They chose an AI coding tool based on a YouTube comparison video. Six weeks and 8,000 lines of AI-generated code later, they discovered the tool had no multi-file editing capability. The codebase was a disaster. Every file worked in isolation. Nothing worked together.</p>
+<p>“We spent three weeks rewriting what the AI had written in three days,” the CTO said. “The tool was great at writing code. It was terrible at writing <em>our</em> code.”</p>
+<p>The AI coding tool landscape is crowded. A systematic selection framework enables rational choice based on actual team needs, not demo videos.</p>
 <p><strong>Tool capability comparison matrix:</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Tool</th><th>Code Gen</th><th>Refactor</th><th>Debug</th><th>Test Gen</th><th>Multi-file</th><th>Agent Mode</th><th>Security Scan</th><th>Context Window</th></tr>
+<tr><th>Tool</th><th>Code Gen</th><th>Refactor</th><th>Debug</th><th>Test Gen</th><th>Multi-file</th><th>Agent Mode</th><th>Security Scan</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>GitHub Copilot</strong></td><td>9/10</td><td>7/10</td><td>6/10</td><td>7/10</td><td>5/10</td><td>6/10</td><td>4/10</td><td>Full repo</td></tr>
-<tr><td><strong>Cursor</strong></td><td>9/10</td><td>9/10</td><td>8/10</td><td>8/10</td><td>9/10</td><td>9/10</td><td>5/10</td><td>Full repo + rules</td></tr>
-<tr><td><strong>Claude Code</strong></td><td>8/10</td><td>9/10</td><td>9/10</td><td>7/10</td><td>9/10</td><td>9/10</td><td>6/10</td><td>Full repo</td></tr>
-<tr><td><strong>Codeium/Windsurf</strong></td><td>8/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>4/10</td><td>5/10</td><td>3/10</td><td>File-level</td></tr>
-<tr><td><strong>Amazon Q</strong></td><td>7/10</td><td>6/10</td><td>6/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>9/10</td><td>Repo-level</td></tr>
-<tr><td><strong>Tabnine</strong></td><td>6/10</td><td>5/10</td><td>4/10</td><td>4/10</td><td>3/10</td><td>3/10</td><td>7/10</td><td>File-level</td></tr>
+<tr><td><strong>GitHub Copilot</strong></td><td>9/10</td><td>7/10</td><td>6/10</td><td>7/10</td><td>5/10</td><td>6/10</td><td>4/10</td></tr>
+<tr><td><strong>Cursor</strong></td><td>9/10</td><td>9/10</td><td>8/10</td><td>8/10</td><td>9/10</td><td>9/10</td><td>5/10</td></tr>
+<tr><td><strong>Claude Code</strong></td><td>8/10</td><td>9/10</td><td>9/10</td><td>7/10</td><td>9/10</td><td>9/10</td><td>6/10</td></tr>
+<tr><td><strong>Codeium/Windsurf</strong></td><td>8/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>4/10</td><td>5/10</td><td>3/10</td></tr>
+<tr><td><strong>Amazon Q</strong></td><td>7/10</td><td>6/10</td><td>6/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>9/10</td></tr>
+<tr><td><strong>Tabnine</strong></td><td>6/10</td><td>5/10</td><td>4/10</td><td>4/10</td><td>3/10</td><td>3/10</td><td>7/10</td></tr>
 </tbody>
 </table>
 </div>
@@ -1905,32 +1909,20 @@
 <tr><th>Team Type</th><th>Recommended Tool</th><th>Rationale</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Startup (&lt;10 engineers)</strong></td><td>Cursor + Claude Code</td><td>Best agent mode for rapid prototyping; multi-file editing essential</td></tr>
-<tr><td><strong>Mid-size (10-100 engineers)</strong></td><td>GitHub Copilot + Cursor</td><td>Copilot for daily coding, Cursor for complex tasks</td></tr>
-<tr><td><strong>Enterprise (100+ engineers)</strong></td><td>GitHub Copilot + Amazon Q</td><td>Ecosystem integration and security scanning; consistency across large teams</td></tr>
-<tr><td><strong>Agency/Consulting</strong></td><td>Cursor + Claude Code</td><td>Diverse codebases require deep context understanding</td></tr>
-<tr><td><strong>Regulated industry</strong></td><td>Tabnine + Amazon Q</td><td>On-premises deployment and security compliance</td></tr>
-<tr><td><strong>Open-source maintainer</strong></td><td>Claude Code + Aider</td><td>CLI-native, git-aware, supports async contribution workflows</td></tr>
+<tr><td><strong>Startup (&lt;10 engineers)</strong></td><td>Cursor + Claude Code</td><td>Best agent mode for rapid prototyping</td></tr>
+<tr><td><strong>Mid-size (10-100)</strong></td><td>GitHub Copilot + Cursor</td><td>Copilot for daily coding, Cursor for complex tasks</td></tr>
+<tr><td><strong>Enterprise (100+)</strong></td><td>GitHub Copilot + Amazon Q</td><td>Ecosystem integration and security scanning</td></tr>
+<tr><td><strong>Agency/Consulting</strong></td><td>Cursor + Claude Code</td><td>Diverse codebases need deep context</td></tr>
+<tr><td><strong>Regulated industry</strong></td><td>Tabnine + Amazon Q</td><td>On-premises deployment and compliance</td></tr>
+<tr><td><strong>Open-source maintainer</strong></td><td>Claude Code + Aider</td><td>CLI-native, git-aware workflows</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The cost dimension:</strong></p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Tool</th><th>Individual Price</th><th>Team Price</th><th>Value Metric</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>GitHub Copilot</strong></td><td>$10/month</td><td>$19/user/month</td><td>Best value for mainstream development</td></tr>
-<tr><td><strong>Cursor</strong></td><td>$20/month</td><td>$40/user/month</td><td>Premium for power users</td></tr>
-<tr><td><strong>Claude Code</strong></td><td>Usage-based (API)</td><td>Usage-based</td><td>Pay-per-use; cheaper for light use, expensive at scale</td></tr>
-<tr><td><strong>Codeium</strong></td><td>Free / $15/month</td><td>$15/user/month</td><td>Best free tier</td></tr>
-<tr><td><strong>Amazon Q</strong></td><td>Free for AWS users</td><td>Included with AWS support</td><td>Best value for AWS-centric teams</td></tr>
-</tbody>
-</table>
-</div>
+<p>Metaframe’s mistake was choosing a tool that wrote code well but integrated poorly. The right question is not “which tool writes the best code?” It is “which tool integrates with our team’s workflow?”</p>
 <h2 id="153-the-ai-augmented-development-lifecycle"><a class="header" href="#153-the-ai-augmented-development-lifecycle">15.3 The AI-Augmented Development Lifecycle</a></h2>
-<p>AI does not replace the software development lifecycle — it transforms each phase. A structured framework maps AI capability to development stage.</p>
+<p>In 2024, GitHub published an internal finding: developers using GitHub Copilot were not just writing code faster — they were spending <em>more</em> time on architecture and <em>less</em> time on boilerplate. Developer satisfaction was at an all-time high, not because the code wrote itself, but because the hated parts of the job had been automated away.</p>
+<p>“AI did not make us lazy,” one engineer said. “It made us able to focus on what we actually care about — the hard problems.”</p>
+<p>AI does not replace the software development lifecycle. It transforms each phase.</p>
 <p><strong>SDLC transformation by phase:</strong></p>
 <div class="table-wrapper">
 <table>
@@ -1938,19 +1930,22 @@
 <tr><th>Phase</th><th>Traditional</th><th>AI-Augmented</th><th>Engineer’s New Role</th><th>Productivity Gain</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Requirements</strong></td><td>Document specifications, user stories</td><td>AI generates draft specifications from conversations; AI identifies ambiguities and edge cases</td><td>Validate and refine; make judgment calls on trade-offs</td><td>20-40% faster</td></tr>
-<tr><td><strong>Architecture</strong></td><td>Whiteboard, document, review</td><td>AI proposes architectural options with trade-off analysis; AI generates comparison matrices</td><td>Make final architectural decisions; evaluate AI’s reasoning</td><td>10-20% faster (decisions remain human)</td></tr>
-<tr><td><strong>Implementation</strong></td><td>Write code from scratch</td><td>AI generates 50-80% of code from specifications and tests</td><td>Review AI output; handle complex logic; maintain coding standards</td><td>200-500% faster</td></tr>
-<tr><td><strong>Testing</strong></td><td>Manual test writing</td><td>AI generates unit, integration, and property-based tests; identifies coverage gaps</td><td>Design test strategy; review critical test scenarios</td><td>300-500% faster</td></tr>
-<tr><td><strong>Code Review</strong></td><td>Manual line-by-line review</td><td>AI performs first-pass review: style, bugs, security, performance</td><td>Review AI’s review; focus on design and logic issues AI misses</td><td>40-60% faster</td></tr>
-<tr><td><strong>Debugging</strong></td><td>Manual root cause analysis</td><td>AI analyzes error traces, proposes hypotheses, suggests fixes</td><td>Verify fix correctness; evaluate whether fix addresses root cause</td><td>200-400% faster</td></tr>
-<tr><td><strong>Deployment</strong></td><td>Manual configuration, monitoring</td><td>AI generates deployment configs, monitors logs, suggests rollback triggers</td><td>Define deployment policies, approve/reject deployment decisions</td><td>30-50% faster</td></tr>
-<tr><td><strong>Maintenance</strong></td><td>Manual dependency updates, refactoring</td><td>AI identifies deprecated dependencies, generates refactoring plans, auto-migrates</td><td>Review migration output; decide on refactoring priority</td><td>200-400% faster</td></tr>
+<tr><td><strong>Requirements</strong></td><td>Document specifications</td><td>AI generates draft specs from conversations; identifies ambiguities</td><td>Validate, refine, make trade-off judgments</td><td>20-40% faster</td></tr>
+<tr><td><strong>Architecture</strong></td><td>Whiteboard, document, review</td><td>AI proposes options with trade-off analysis</td><td>Make final decisions; evaluate AI’s reasoning</td><td>10-20% faster</td></tr>
+<tr><td><strong>Implementation</strong></td><td>Write code from scratch</td><td>AI generates 50-80% from specifications</td><td>Review output; handle complex logic</td><td>200-500% faster</td></tr>
+<tr><td><strong>Testing</strong></td><td>Manual test writing</td><td>AI generates unit/integration/property tests</td><td>Design test strategy; review critical scenarios</td><td>300-500% faster</td></tr>
+<tr><td><strong>Code Review</strong></td><td>Manual line-by-line</td><td>AI first-pass: style, bugs, security, performance</td><td>Focus on design and logic issues AI misses</td><td>40-60% faster</td></tr>
+<tr><td><strong>Debugging</strong></td><td>Manual root cause analysis</td><td>AI analyzes traces, proposes hypotheses</td><td>Verify correctness; evaluate root cause</td><td>200-400% faster</td></tr>
+<tr><td><strong>Deployment</strong></td><td>Manual config, monitoring</td><td>AI generates configs, monitors logs, suggests rollbacks</td><td>Define policies; approve/reject decisions</td><td>30-50% faster</td></tr>
+<tr><td><strong>Maintenance</strong></td><td>Manual updates, refactoring</td><td>AI identifies deprecations, generates plans</td><td>Review migration; decide on priorities</td><td>200-400% faster</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The lifecycle integration principle:</strong> AI delivers the highest ROI when integrated across the <em>entire</em> lifecycle, not isolated in one phase. A team using AI only for code generation (implementation phase) will produce code that does not match architecture, lacks tests, and is hard to maintain. The professional approach is lifecycle-wide AI integration.</p>
+<p>The lifecycle integration principle: AI delivers the highest ROI when integrated across the entire lifecycle, not isolated in one phase. A team using AI only for code generation will produce code that does not match architecture, lacks tests, and is hard to maintain.</p>
 <h2 id="154-the-prompt-engineering-protocol-for-code"><a class="header" href="#154-the-prompt-engineering-protocol-for-code">15.4 The Prompt Engineering Protocol for Code</a></h2>
+<p>A senior engineer named Maria was skeptical of AI coding tools. She tried one, typed a vague prompt, and got useless output. “See?” she said. “AI can’t code.”</p>
+<p>Her colleague typed a precise prompt: specification first, context second, constraints third, verification fourth. The output compiled, passed tests, and needed only minor adjustments.</p>
+<p>“AI can code,” the colleague said. “But it needs you to think clearly first.”</p>
 <p>Software engineering requires a specialized approach to prompt engineering — distinct from general-purpose prompting.</p>
 <p><strong>The coding prompt taxonomy:</strong></p>
 <div class="table-wrapper">
@@ -1959,39 +1954,41 @@
 <tr><th>Prompt Type</th><th>Purpose</th><th>Structure</th><th>Example</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Specification</strong></td><td>Generate implementation from interface</td><td>Input: type signatures, interface contracts, test cases</td><td>“Implement this FastAPI endpoint that validates JWT tokens and returns user profile”</td></tr>
-<tr><td><strong>Refinement</strong></td><td>Improve existing code</td><td>Input: code + improvement criteria</td><td>“Refactor this function to reduce cyclomatic complexity from 15 to below 8”</td></tr>
-<tr><td><strong>Debugging</strong></td><td>Diagnose and fix errors</td><td>Input: code + error message + expected behavior</td><td>“This SQLAlchemy query returns incorrect results when filtering by date”</td></tr>
-<tr><td><strong>Review</strong></td><td>Analyze code quality</td><td>Input: code + review scope</td><td>“Review this authentication middleware for security vulnerabilities”</td></tr>
-<tr><td><strong>Transformation</strong></td><td>Convert between languages/formats</td><td>Input: source code + target format</td><td>“Convert this class-based React component to a functional component with hooks”</td></tr>
-<tr><td><strong>Documentation</strong></td><td>Generate or update docs</td><td>Input: code + doc target</td><td>“Generate API documentation for these endpoints in OpenAPI 3.0 format”</td></tr>
-<tr><td><strong>Test generation</strong></td><td>Create test cases</td><td>Input: code + test criteria</td><td>“Generate pytest tests covering all execution paths in this utility function”</td></tr>
+<tr><td><strong>Specification</strong></td><td>Generate from interface</td><td>Input: type signatures, interface contracts, test cases</td><td>“Implement FastAPI endpoint with JWT validation returning user profile”</td></tr>
+<tr><td><strong>Refinement</strong></td><td>Improve existing code</td><td>Input: code + improvement criteria</td><td>“Reduce cyclomatic complexity from 15 to below 8”</td></tr>
+<tr><td><strong>Debugging</strong></td><td>Diagnose and fix errors</td><td>Input: code + error message + expected behavior</td><td>“SQLAlchemy query returns wrong results when filtering by date”</td></tr>
+<tr><td><strong>Review</strong></td><td>Analyze code quality</td><td>Input: code + review scope</td><td>“Review auth middleware for security vulnerabilities”</td></tr>
+<tr><td><strong>Transformation</strong></td><td>Convert between languages/formats</td><td>Input: source code + target format</td><td>“Convert class-based React to functional component with hooks”</td></tr>
+<tr><td><strong>Documentation</strong></td><td>Generate or update docs</td><td>Input: code + doc target</td><td>“Generate OpenAPI 3.0 docs for these endpoints”</td></tr>
+<tr><td><strong>Test generation</strong></td><td>Create test cases</td><td>Input: code + test criteria</td><td>“Generate pytest tests covering all execution paths”</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>The structured prompt template for coding:</strong></p>
 <pre><code>## Task
-[Clear one-sentence description of what you want]
+[Clear one-sentence description]
 ## Context
-- Language/framework: [e.g., Python 3.12, FastAPI, PostgreSQL]
-- Existing patterns: [e.g., "We use repository pattern for data access"]
+- Language/framework: [e.g., Python 3.12, FastAPI]
+- Existing patterns: [e.g., "We use repository pattern"]
 - Relevant files: [list or include]
 - Constraints: [e.g., "Must handle 1000+ requests/second"]
 ## Specification
 [Interface signatures, types, expected behavior, edge cases]
 ## Verification
-[Tests that the output must pass, either existing or requested]
+[Tests that the output must pass]
 </code></pre>
 <p><strong>The five principles of effective coding prompts:</strong></p>
 <ol>
-<li><strong>Spec-first, not code-first.</strong> Define what the code should <em>do</em> before asking how it should <em>look</em>. Type signatures and test cases constrain output more effectively than writing comments.</li>
-<li><strong>Provide known-bad examples.</strong> “Do not use <code>eval</code>, <code>exec</code>, or <code>subprocess</code>” is more effective than “write secure code” because it creates hard constraints the AI cannot ignore.</li>
-<li><strong>Chain complexity.</strong> Start with a single function, verify, then expand to the full module. AI performance degrades with prompt length beyond a threshold (~4K tokens for generation tasks).</li>
-<li><strong>Include the error.</strong> When debugging, include the complete error trace. AI is measurably better at fixing code when the error message is in the prompt context.</li>
+<li><strong>Spec-first, not code-first.</strong> Define what the code should <em>do</em> before asking how it should <em>look</em>. Type signatures and test cases constrain output more effectively than comments.</li>
+<li><strong>Provide known-bad examples.</strong> “Do not use <code>eval</code>, <code>exec</code>, or <code>subprocess</code>” creates hard constraints the AI cannot ignore.</li>
+<li><strong>Chain complexity.</strong> Start with a single function, verify, then expand to the full module. AI performance degrades with prompt length beyond ~4K tokens for generation tasks.</li>
+<li><strong>Include the error.</strong> When debugging, include the complete error trace. AI is measurably better at fixing code when the error message is in context.</li>
 <li><strong>Self-verify.</strong> End every generation prompt with: “Write tests to verify this code.” This creates a correctness anchor that measurably improves output quality.</li>
 </ol>
 <h2 id="155-the-code-quality-assurance-framework"><a class="header" href="#155-the-code-quality-assurance-framework">15.5 The Code Quality Assurance Framework</a></h2>
-<p>AI-generated code requires a systematic verification protocol. The cost of undetected errors in AI code is higher than in human code — because the errors are less predictable.</p>
+<p>In 2025, a fintech company deployed AI-generated code for a payment reconciliation feature. The code passed all tests. The code was well-commented. The code looked perfect. Six weeks later, the company lost $340,000 because the AI had hallucinated a package name. The import statement referenced a library that did not exist. The code never ran — but nobody noticed, because the error was silent. The reconciliation simply did not happen.</p>
+<p>“Every line of AI code looks convincing,” the postmortem concluded. “That is the problem.”</p>
+<p>AI-generated code requires a systematic verification protocol. The cost of undetected errors is higher than in human code — because the errors are less predictable.</p>
 <p><strong>The AI code quality assurance protocol:</strong></p>
 <div class="table-wrapper">
 <table>
@@ -2000,17 +1997,19 @@
 </thead>
 <tbody>
 <tr><td><strong>Correctness</strong></td><td>Does the code do what was specified?</td><td>Run tests; compare output to specification</td><td>High for unit tests, lower for integration</td><td>Review edge cases AI misses</td></tr>
-<tr><td><strong>Security</strong></td><td>Does the code introduce vulnerabilities?</td><td>Automated scanning; OWASP checklist</td><td>Moderate (catches known patterns, misses novel vectors)</td><td>Review auth, cryptography, data handling</td></tr>
+<tr><td><strong>Security</strong></td><td>Does the code introduce vulnerabilities?</td><td>Automated scanning; OWASP checklist</td><td>Moderate (known patterns only)</td><td>Review auth, cryptography, data handling</td></tr>
 <tr><td><strong>Performance</strong></td><td>Is the code efficient enough?</td><td>Benchmarking; complexity analysis</td><td>Good at identifying O(n²) patterns</td><td>Assess against real-world data volumes</td></tr>
-<tr><td><strong>Maintainability</strong></td><td>Is the code readable and modifiable?</td><td>Style guides; complexity metrics</td><td>Moderate (produces clean code but inconsistent naming)</td><td>Review for project conventions</td></tr>
-<tr><td><strong>Correctness of AI’s reasoning</strong></td><td>Is the AI’s approach valid?</td><td>Code review with focus on assumptions</td><td>Low (AI cannot self-evaluate reasoning validity)</td><td>Primary human value-add</td></tr>
+<tr><td><strong>Maintainability</strong></td><td>Is the code readable and modifiable?</td><td>Style guides; complexity metrics</td><td>Moderate (clean code, inconsistent naming)</td><td>Review for project conventions</td></tr>
+<tr><td><strong>Reasoning validity</strong></td><td>Is the AI’s approach valid?</td><td>Code review focusing on assumptions</td><td>Low (cannot self-evaluate reasoning)</td><td>Primary human value-add</td></tr>
 <tr><td><strong>Dependency authenticity</strong></td><td>Do the packages/imports exist?</td><td>Verify each import path</td><td>N/A (AI hallucinates package names)</td><td>Verify every third-party dependency</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The “review density” rule:</strong> The less you understand the domain, the more carefully you must review AI-generated code. Junior engineers should invest 2-3× more review time per line of AI-generated code than senior engineers, because they lack the pattern library to spot subtle errors.</p>
-<p><strong>The empirical finding (GitHub Copilot user study, 2025):</strong> AI-generated code reduces initial bug rates by 15-25% but increases maintenance bug rates by 10-20% — because AI code tends to be less readable and harder to modify. The net effect over a 12-month period is approximately neutral on total bugs. The implication: AI does not eliminate the need for code quality practices — it shifts the investment from writing to reviewing.</p>
+<p><strong>The “review density” rule:</strong> The less you understand the domain, the more carefully you must review AI-generated code. Junior engineers should invest 2-3× more review time per line than senior engineers, because they lack the pattern library to spot subtle errors.</p>
+<p><strong>The empirical finding (GitHub Copilot user study, 2025):</strong> AI-generated code reduces initial bug rates by 15-25% but increases maintenance bug rates by 10-20% — because AI code tends to be less readable and harder to modify. The net effect over 12 months is approximately neutral on total bugs. The implication: AI does not eliminate the need for code quality practices — it shifts the investment from writing to reviewing.</p>
 <h2 id="156-the-ai-code-reading-protocol"><a class="header" href="#156-the-ai-code-reading-protocol">15.6 The AI Code Reading Protocol</a></h2>
+<p>When a junior developer at a SaaS company inherited a codebase that was 40% AI-generated, she noticed something strange. The code worked. It compiled, passed tests, and handled edge cases. But she could not understand it. The patterns were unfamiliar. The naming was inconsistent. The structure followed no recognizable convention.</p>
+<p>“I could read code written by humans,” she said. “I could read code written by bad humans. I could not read code written by AI.”</p>
 <p>Understanding AI-generated code requires different skills than understanding human-written code. AI code follows different patterns, makes different errors, and requires different reading strategies.</p>
 <p><strong>AI code characteristic analysis:</strong></p>
 <div class="table-wrapper">
@@ -2019,24 +2018,26 @@
 <tr><th>Characteristic</th><th>AI Pattern</th><th>Why It Happens</th><th>Reading Strategy</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Over-commenting</strong></td><td>Every function has a docstring</td><td>Trained on documentation-heavy repos</td><td>Read the code, not the comments (comments may be wrong or misleading)</td></tr>
-<tr><td><strong>Generic naming</strong></td><td><code>process_data</code>, <code>handle_request</code></td><td>Averages across many naming conventions</td><td>Rename to project-specific terms early</td></tr>
-<tr><td><strong>Ignoring edge cases</strong></td><td>Assumes inputs are valid</td><td>Training data skews toward happy-path examples</td><td>Systematically test boundary conditions</td></tr>
-<tr><td><strong>Inconsistent style</strong></td><td>Mixes conventions within same module</td><td>Draws from multiple training sources</td><td>Enforce automated formatting (Black, Prettier, Ruff)</td></tr>
-<tr><td><strong>Over-engineering</strong></td><td>Adds abstractions that are not needed</td><td>Optimizes for generality, not simplicity</td><td>Prefer simple solutions; defer abstraction until needed</td></tr>
-<tr><td><strong>Hallucinated APIs</strong></td><td>Calls functions that do not exist</td><td>Confuses similar libraries</td><td>Verify every import is a real package</td></tr>
+<tr><td><strong>Over-commenting</strong></td><td>Every function documented</td><td>Trained on documentation-heavy repos</td><td>Read the code, not the comments</td></tr>
+<tr><td><strong>Generic naming</strong></td><td><code>process_data</code>, <code>handle_request</code></td><td>Averages across naming conventions</td><td>Rename to project terms early</td></tr>
+<tr><td><strong>Ignoring edge cases</strong></td><td>Assumes inputs are valid</td><td>Training data skews toward happy-path</td><td>Systematically test boundary conditions</td></tr>
+<tr><td><strong>Inconsistent style</strong></td><td>Mixes conventions in same module</td><td>Draws from multiple training sources</td><td>Enforce automated formatting</td></tr>
+<tr><td><strong>Over-engineering</strong></td><td>Unnecessary abstractions</td><td>Optimizes for generality, not simplicity</td><td>Prefer simple; defer abstraction</td></tr>
+<tr><td><strong>Hallucinated APIs</strong></td><td>Calls functions that do not exist</td><td>Confuses similar libraries</td><td>Verify every import</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>The “three-pass” reading protocol for AI code:</strong></p>
 <ol>
-<li><strong>Pass 1: Structure</strong> — Read the function signatures, types, and module structure. Does the decomposition make sense? Are the responsibilities clear?</li>
+<li><strong>Pass 1: Structure</strong> — Read function signatures, types, module structure. Does the decomposition make sense?</li>
 <li><strong>Pass 2: Logic</strong> — Trace the main execution path. Are there hidden assumptions? Are error paths handled?</li>
-<li><strong>Pass 3: Data flow</strong> — Trace data through the system. Is every variable initialized? Are transformations correct? Are there type mismatches?</li>
+<li><strong>Pass 3: Data flow</strong> — Trace data through the system. Is every variable initialized? Are transformations correct?</li>
 </ol>
 <p><strong>The professional finding:</strong> Engineers who read AI code with the same strategies they use for human code miss 40-60% of AI-specific errors. The three-pass protocol recovers most of this gap.</p>
 <h2 id="157-the-security-assessment-protocol"><a class="header" href="#157-the-security-assessment-protocol">15.7 The Security Assessment Protocol</a></h2>
-<p>AI-generated code introduces a distinct security profile. Understanding it enables targeted defense.</p>
+<p>In late 2024, a security researcher demonstrated a simple experiment. She asked an AI coding agent to “write a function that takes user input and stores it in a database.” The AI generated a function that was vulnerable to SQL injection. When asked to fix it, the AI added parameterized queries — correctly. But the researcher noticed something: the AI had also added a debug endpoint that exposed raw database contents. The AI had fixed the vulnerability it was told about and introduced a new one it was not told about.</p>
+<p>“This is the paradox of AI code security,” the researcher said. “The code that looks most secure is often the most dangerous — because you trust it and stop looking.”</p>
+<p>AI-generated code introduces a distinct security profile.</p>
 <p><strong>AI code security risk assessment:</strong></p>
 <div class="table-wrapper">
 <table>
@@ -2044,46 +2045,22 @@
 <tr><th>Risk</th><th>Severity</th><th>Frequency (2026)</th><th>AI Can Detect?</th><th>Human Must Verify</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Prompt injection in AI output</strong></td><td>High</td><td>Common</td><td>Limited</td><td>Always review input handling in AI-generated code</td></tr>
-<tr><td><strong>Hallucinated dependencies</strong></td><td>Medium</td><td>Occasional</td><td>No</td><td>Verify every import against package registry</td></tr>
-<tr><td><strong>Insecure defaults</strong></td><td>High</td><td>Common</td><td>Partial</td><td>Review all security configuration explicitly</td></tr>
-<tr><td><strong>Authentication bypass</strong></td><td>Critical</td><td>Occasional</td><td>No</td><td>Every auth path requires human review</td></tr>
+<tr><td><strong>Prompt injection in AI output</strong></td><td>High</td><td>Common</td><td>Limited</td><td>Always review input handling</td></tr>
+<tr><td><strong>Hallucinated dependencies</strong></td><td>Medium</td><td>Occasional</td><td>No</td><td>Verify every import</td></tr>
+<tr><td><strong>Insecure defaults</strong></td><td>High</td><td>Common</td><td>Partial</td><td>Review all security config explicitly</td></tr>
+<tr><td><strong>Authentication bypass</strong></td><td>Critical</td><td>Occasional</td><td>No</td><td>Every auth path needs human review</td></tr>
 <tr><td><strong>SQL injection</strong></td><td>High</td><td>Rare (improving)</td><td>Yes (most tools catch this)</td><td>Review raw queries regardless</td></tr>
-<tr><td><strong>Hardcoded secrets</strong></td><td>High</td><td>Occasional</td><td>Yes</td><td>Use automated secret scanning as backup</td></tr>
-<tr><td><strong>Path traversal</strong></td><td>Medium</td><td>Rare</td><td>Yes (static analysis)</td><td>Review file access patterns</td></tr>
+<tr><td><strong>Hardcoded secrets</strong></td><td>High</td><td>Occasional</td><td>Yes</td><td>Use automated secret scanning</td></tr>
 <tr><td><strong>Race conditions</strong></td><td>Medium</td><td>Common</td><td>Poor</td><td>Review concurrent access patterns</td></tr>
-<tr><td><strong>Incorrect error handling</strong></td><td>Medium</td><td>Common</td><td>Partial</td><td>Review what information errors expose</td></tr>
+<tr><td><strong>Incorrect error handling</strong></td><td>Medium</td><td>Common</td><td>Partial</td><td>Review what errors expose</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The security verification workflow:</strong></p>
-<ol>
-<li><strong>Static analysis:</strong> Run all AI-generated code through automated security scanning (Semgrep, CodeQL, SonarQube) before human review</li>
-<li><strong>Dependency verification:</strong>
-<pre><code># For every import in AI-generated code:
-npm audit &lt;package&gt;  # Node.js
-pip show &lt;package&gt;   # Python
-cargo search &lt;crate&gt; # Rust
-</code></pre>
-</li>
-<li><strong>Security-focused review pass:</strong> Review AI code specifically for:
-<ul>
-<li>How user input enters and exits the system</li>
-<li>Authentication and authorization checks on every protected path</li>
-<li>Cryptographic implementations (never accept AI-generated crypto without expert review)</li>
-<li>State changes that could have security implications</li>
-</ul>
-</li>
-<li><strong>Penetration testing on AI-generated features:</strong> Treat AI-generated code as a third-party contribution for security purposes</li>
-</ol>
-<p><strong>The OWASP top 10 for LLM applications (2025) — engineer’s condensed version:</strong></p>
-<ul>
-<li>#1: Prompt injection (the defining AI security risk)</li>
-<li>#2: Insecure output handling (trust but verify every AI output)</li>
-<li>#9: Overreliance (the tendency to trust AI output because it looks authoritative)</li>
-</ul>
+<p><strong>The security verification workflow:</strong> 1. Static analysis (Semgrep, CodeQL, SonarQube) before human review. 2. Dependency verification — verify every import against package registry. 3. Security-focused review pass — user input flow, auth on every protected path, cryptographic implementations (never accept AI-generated crypto without expert review). 4. Penetration testing on AI-generated features — treat AI code as third-party contribution for security purposes.</p>
 <h2 id="158-the-testing-transformation-framework"><a class="header" href="#158-the-testing-transformation-framework">15.8 The Testing Transformation Framework</a></h2>
-<p>Testing is where AI delivers its highest ROI in the engineering lifecycle. The transformation is structural.</p>
+<p>In 2025, a team at a major bank faced a problem. They had 50,000 lines of legacy code with 3% test coverage. Rewriting tests manually would take eighteen months. They gave an AI agent the codebase and asked it to generate tests. In two weeks, the AI generated 12,000 tests covering 85% of the codebase. The tests were not perfect — about 15% had logic errors. But fixing the errors took two more weeks, not eighteen months.</p>
+<p>“We went from 3% to 85% coverage in a month,” the engineering director said. “That changed everything about how we think about quality.”</p>
+<p>Testing is where AI delivers its highest ROI in the engineering lifecycle.</p>
 <p><strong>AI testing capability matrix:</strong></p>
 <div class="table-wrapper">
 <table>
@@ -2091,62 +2068,40 @@ cargo search &lt;crate&gt; # Rust
 <tr><th>Testing Type</th><th>AI Generation Quality</th><th>AI Maintenance Quality</th><th>Human Role</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Unit tests</strong></td><td>Excellent (90%+ coverage of specified behavior)</td><td>Good (updates with API changes)</td><td>Review test logic; add domain-specific edge cases</td></tr>
-<tr><td><strong>Integration tests</strong></td><td>Good (70-85% coverage)</td><td>Good</td><td>Design test scenarios; review data setup</td></tr>
+<tr><td><strong>Unit tests</strong></td><td>Excellent (90%+ coverage)</td><td>Good (updates with API changes)</td><td>Review test logic; add domain edge cases</td></tr>
+<tr><td><strong>Integration tests</strong></td><td>Good (70-85% coverage)</td><td>Good</td><td>Design scenarios; review data setup</td></tr>
 <tr><td><strong>Property-based tests</strong></td><td>Good (AI suggests invariants)</td><td>Limited</td><td>Validate invariants are correct</td></tr>
 <tr><td><strong>UI tests</strong></td><td>Moderate (brittle selectors)</td><td>Poor (fragile to UI changes)</td><td>Write and maintain</td></tr>
-<tr><td><strong>Performance tests</strong></td><td>Good (generates load scripts)</td><td>Good</td><td>Define performance targets</td></tr>
-<tr><td><strong>Security tests</strong></td><td>Moderate (known vulnerability patterns)</td><td>Limited</td><td>Design security test strategy</td></tr>
+<tr><td><strong>Performance tests</strong></td><td>Good (load scripts)</td><td>Good</td><td>Define performance targets</td></tr>
+<tr><td><strong>Security tests</strong></td><td>Moderate (known patterns)</td><td>Limited</td><td>Design security test strategy</td></tr>
 <tr><td><strong>Adversarial tests</strong></td><td>Good (finds edge cases humans miss)</td><td>Limited</td><td>Define threat model</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The triangular testing strategy with AI:</strong></p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Corner</th><th>Tool</th><th>AI Contribution</th><th>Engineer’s Focus</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>1. Spec-based tests</strong></td><td>Qodo / Cursor</td><td>Generate tests from code analysis and type signatures</td><td>Validate test coverage against specification</td></tr>
-<tr><td><strong>2. Property-based tests</strong></td><td>Hypothesis + AI</td><td>Suggest algebraic properties and invariants</td><td>Validate that invariants are true properties</td></tr>
-<tr><td><strong>3. Adversarial tests</strong></td><td>AI prompt: “what would break this?”</td><td>Generate boundary and edge case tests</td><td>Prioritize which edge cases matter</td></tr>
-</tbody>
-</table>
-</div>
-<p><strong>Test maintenance through AI:</strong></p>
-<ul>
-<li>When APIs change, AI can update affected tests with 80-90% accuracy</li>
-<li>AI can identify flaky tests (tests that pass/fail nondeterministically) by analyzing test history</li>
-<li>AI can reduce test suite runtime by identifying redundant tests without sacrificing coverage</li>
-</ul>
+<p><strong>Test maintenance through AI:</strong> When APIs change, AI can update affected tests with 80-90% accuracy. AI can identify flaky tests by analyzing test history. AI can reduce test suite runtime by identifying redundant tests without sacrificing coverage. The bank’s experience was not exceptional — it was the new normal.</p>
 <h2 id="159-the-organizational-adoption-model"><a class="header" href="#159-the-organizational-adoption-model">15.9 The Organizational Adoption Model</a></h2>
+<p>In 2025, GitHub — the company that owns Copilot — published its own AI integration metrics. At 60% AI-generated code in their development workflow, developer satisfaction was at an all-time high. The hated tasks were gone: boilerplate, configuration, repetitive debugging. The loved tasks remained: architecture, design, creative problem-solving.</p>
+<p>“People think AI integration is about productivity,” the report concluded. “It’s actually about talent retention. Engineers stay at companies where they do meaningful work. AI enables that.”</p>
 <p>Teams that integrate AI effectively follow a predictable maturity curve.</p>
 <p><strong>Engineering team AI maturity model:</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Level</th><th>Description</th><th>AI Code in Production</th><th>Review Practice</th><th>Productivity Impact</th></tr>
+<tr><th>Level</th><th>Description</th><th>AI Code in Production</th><th>Productivity Impact</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>1. Skeptical</strong></td><td>AI use discouraged or banned</td><td>&lt;5%</td><td>Full manual review</td><td>Neutral or negative (banning reduces learning)</td></tr>
-<tr><td><strong>2. Experimental</strong></td><td>Individual engineers use AI unofficially</td><td>5-15%</td><td>Inconsistent</td><td>+10-20% for early adopters</td></tr>
-<tr><td><strong>3. Supported</strong></td><td>Company-endorsed tools, guidelines exist</td><td>15-30%</td><td>Standardized review</td><td>+30-50% across teams</td></tr>
-<tr><td><strong>4. Integrated</strong></td><td>AI embedded in development workflow</td><td>30-50%</td><td>AI-assisted review</td><td>+50-100%</td></tr>
-<tr><td><strong>5. Transformative</strong></td><td>AI as team member, not just tool</td><td>50%+</td><td>AI first pass, human final review</td><td>+200-500% (on output, with quality maintained)</td></tr>
+<tr><td><strong>1. Skeptical</strong></td><td>AI use discouraged or banned</td><td>&lt;5%</td><td>Neutral or negative</td></tr>
+<tr><td><strong>2. Experimental</strong></td><td>Individual engineers use AI unofficially</td><td>5-15%</td><td>+10-20% for early adopters</td></tr>
+<tr><td><strong>3. Supported</strong></td><td>Company-endorsed tools, guidelines</td><td>15-30%</td><td>+30-50% across teams</td></tr>
+<tr><td><strong>4. Integrated</strong></td><td>AI embedded in development workflow</td><td>30-50%</td><td>+50-100%</td></tr>
+<tr><td><strong>5. Transformative</strong></td><td>AI as team member, not just tool</td><td>50%+</td><td>+200-500%</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The GitHub case (2025):</strong> At 60% AI-generated code in their own development workflow, GitHub reported all-time high developer satisfaction scores. The pattern: AI eliminated hated tasks (boilerplate, configuration, repetitive debugging) and preserved loved tasks (architecture, design, creative problem-solving). The implication: AI integration is not a productivity play primarily — it is a <em>talent retention</em> play. Engineers stay at companies where they do meaningful work. AI enables that.</p>
-<p><strong>The adoption sequence that works:</strong></p>
-<ol>
-<li><strong>Start with testing</strong> — AI test generation has lowest risk and highest ROI. Build confidence before moving to production code.</li>
-<li><strong>Then move to code review</strong> — AI-assisted review reduces review time by 40-60% while catching more issues.</li>
-<li><strong>Then code generation</strong> — By this point, engineers understand AI’s failure modes and can review effectively.</li>
-<li><strong>Finally, architecture and design</strong> — AI as a design partner requires the most human judgment and is the last stage to automate.</li>
-</ol>
+<p><strong>The adoption sequence that works:</strong> 1. Start with testing — lowest risk, highest ROI. 2. Then move to code review — AI-assisted review reduces time by 40-60%. 3. Then code generation — by this point, engineers understand AI’s failure modes. 4. Finally, architecture and design — requires the most human judgment, last to automate.</p>
 <h2 id="1510-the-engineering-role-transformation"><a class="header" href="#1510-the-engineering-role-transformation">15.10 The Engineering Role Transformation</a></h2>
-<p>The engineer’s role is not diminishing — it is shifting toward higher-judgment activities.</p>
+<p>A senior engineer with fifteen years of experience described his changing role: “I used to spend 60% of my time writing code. Now I spend 20% writing and 80% reviewing, designing, and deciding. I write less code than I did as a junior. My impact is ten times larger.”</p>
+<p>The engineer’s role is not diminishing. It is shifting toward higher-judgment activities.</p>
 <p><strong>Role transformation across career levels:</strong></p>
 <div class="table-wrapper">
 <table>
@@ -2154,43 +2109,37 @@ cargo search &lt;crate&gt; # Rust
 <tr><th>Career Stage</th><th>Before AI</th><th>With AI (2026)</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Junior (0-2 years)</strong></td><td>Write code from scratch, learn syntax</td><td>AI generates code; junior verifies and debugs. Learn via code review rather than code writing</td></tr>
-<tr><td><strong>Mid (3-7 years)</strong></td><td>Design and implement features; review junior code</td><td>Guide AI implementation; review AI output; focus on system design and integration</td></tr>
-<tr><td><strong>Senior (7-15 years)</strong></td><td>Architecture, design, code review, mentoring</td><td>AI handles implementation; senior focuses on architecture, trade-offs, risk assessment</td></tr>
-<tr><td><strong>Staff/Principal (15+ years)</strong></td><td>Organization-wide architecture, strategy, standards</td><td>Define AI-augmented engineering standards; build AI integration strategy; focus on what AI cannot evaluate</td></tr>
+<tr><td><strong>Junior (0-2 years)</strong></td><td>Write code from scratch, learn syntax</td><td>AI generates code; junior verifies and debugs. Learn via code review</td></tr>
+<tr><td><strong>Mid (3-7 years)</strong></td><td>Design and implement features; review junior code</td><td>Guide AI implementation; review AI output; focus on system design</td></tr>
+<tr><td><strong>Senior (7-15 years)</strong></td><td>Architecture, design, code review, mentoring</td><td>AI handles implementation; senior focuses on architecture, trade-offs</td></tr>
+<tr><td><strong>Staff/Principal (15+ years)</strong></td><td>Organization-wide architecture, standards</td><td>Define AI-augmented engineering standards; focus on what AI cannot evaluate</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>The engineer’s permanent advantage:</strong></p>
-<ul>
-<li><strong>Context awareness</strong> — understanding the business domain, user needs, and organizational constraints that AI cannot access</li>
-<li><strong>Value judgment</strong> — deciding what to build and whether something is worth building</li>
-<li><strong>Trade-off evaluation</strong> — balancing correctness, performance, cost, and timeline in ways AI cannot weight</li>
-<li><strong>Accountability</strong> — accepting responsibility for code in production; AI cannot be accountable</li>
-</ul>
-<p><strong>Human Wisdom</strong> in engineering means recognizing that AI is the most powerful code generation tool ever built — and that the engineer’s role is not to compete with it but to direct it. The engineer who thrives is not the one who writes the most code. It is the one who makes the best decisions about what code <em>should</em> be written, verifies that it is <em>correct</em>, and takes <em>responsibility</em> for it in production. The code is the output. The judgment is the work.</p>
+<p><strong>The engineer’s permanent advantage:</strong> Context awareness — understanding business domain, user needs, and organizational constraints. Value judgment — deciding what to build and whether it is worth building. Trade-off evaluation — balancing correctness, performance, cost, and timeline. Accountability — accepting responsibility for code in production. AI cannot be accountable.</p>
+<p><strong>Human Wisdom</strong> in engineering means recognizing that AI is the most powerful code generation tool ever built — and that the engineer’s role is not to compete with it but to direct it. The engineer who thrives is not the one who writes the most code. It is the one who makes the best decisions about what code should be written, verifies that it is correct, and takes responsibility for it in production. The code is the output. The judgment is the work.</p>
 <h3 id="key-references"><a class="header" href="#key-references">Key References</a></h3>
 <ul>
-<li>SWE-bench Verified: <a href="https://github.com/SWE-bench/SWE-bench">https://github.com/SWE-bench/SWE-bench</a> — Real-world software engineering benchmark</li>
-<li>HumanEval: <a href="https://github.com/openai/human-eval">https://github.com/openai/human-eval</a> — OpenAI’s function generation benchmark</li>
-<li>LiveCodeBench: <a href="https://livecodebench.github.io">https://livecodebench.github.io</a> — Competitive programming benchmark</li>
-<li>CRUXEval: <a href="https://crux-eval.github.io">https://crux-eval.github.io</a> — Code understanding benchmark</li>
-<li>CyberSecEval: <a href="https://github.com/meta-llama/PurpleLlama">https://github.com/meta-llama/PurpleLlama</a> — Meta’s secure coding benchmark</li>
-<li>OWASP Top 10 for LLM Applications: <a href="https://owasp.org/www-project-top-10-for-llm-applications">https://owasp.org/www-project-top-10-for-llm-applications</a></li>
-<li>GitHub Copilot: <a href="https://github.com/features/copilot">https://github.com/features/copilot</a></li>
-<li>Cursor: <a href="https://cursor.sh">https://cursor.sh</a></li>
-<li>Claude Code: <a href="https://docs.anthropic.com/en/docs/claude-code">https://docs.anthropic.com/en/docs/claude-code</a></li>
-<li>Codeium / Windsurf: <a href="https://codeium.com">https://codeium.com</a></li>
-<li>Qodo (CodiumAI): <a href="https://www.qodo.ai">https://www.qodo.ai</a></li>
-<li>CodeRabbit: <a href="https://coderabbit.ai">https://coderabbit.ai</a></li>
-<li>Replit Agent: <a href="https://replit.com/agent">https://replit.com/agent</a></li>
-<li>Devin (Cognition): <a href="https://www.cognition.ai">https://www.cognition.ai</a></li>
-<li>Aider: <a href="https://github.com/Aider-AI/aider">https://github.com/Aider-AI/aider</a></li>
-<li>Codex (Chen et al., 2021): <a href="https://arxiv.org/abs/2107.03374">https://arxiv.org/abs/2107.03374</a></li>
-<li>Self-Refine (Madaan et al., 2023): <a href="https://arxiv.org/abs/2303.17651">https://arxiv.org/abs/2303.17651</a></li>
-<li>ReAct (Yao et al., 2023): <a href="https://arxiv.org/abs/2210.03629">https://arxiv.org/abs/2210.03629</a></li>
-<li>AlphaCodium (Ridnik et al., 2024): <a href="https://arxiv.org/abs/2401.08500">https://arxiv.org/abs/2401.08500</a></li>
-<li>GitHub Copilot user productivity study: <a href="https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness">https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness</a></li>
+<li>SWE-bench: https://github.com/SWE-bench/SWE-bench</li>
+<li>HumanEval: https://github.com/openai/human-eval</li>
+<li>LiveCodeBench: https://livecodebench.github.io</li>
+<li>CRUXEval: https://crux-eval.github.io</li>
+<li>CyberSecEval: https://github.com/meta-llama/PurpleLlama</li>
+<li>OWASP Top 10 for LLM: https://owasp.org/www-project-top-10-for-llm-applications</li>
+<li>GitHub Copilot: https://github.com/features/copilot</li>
+<li>Cursor: https://cursor.sh</li>
+<li>Claude Code: https://docs.anthropic.com/en/docs/claude-code</li>
+<li>Codeium: https://codeium.com</li>
+<li>Qodo (CodiumAI): https://www.qodo.ai</li>
+<li>CodeRabbit: https://coderabbit.ai</li>
+<li>Replit Agent: https://replit.com/agent</li>
+<li>Devin: https://www.cognition.ai</li>
+<li>Aider: https://github.com/Aider-AI/aider</li>
+<li>Codex (Chen et al., 2021): https://arxiv.org/abs/2107.03374</li>
+<li>Self-Refine (Madaan et al., 2023): https://arxiv.org/abs/2303.17651</li>
+<li>ReAct (Yao et al., 2023): https://arxiv.org/abs/2210.03629</li>
+<li>AlphaCodium (Ridnik et al., 2024): https://arxiv.org/abs/2401.08500</li>
+<li>GitHub Copilot productivity study: https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-16-ai-in-creativity-and-media"><a class="header" href="#chapter-16-ai-in-creativity-and-media">Chapter 16: AI in Creativity and Media</a></h1>
