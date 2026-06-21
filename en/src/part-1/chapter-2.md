@@ -104,3 +104,18 @@ The transformer's dominance is no longer unchallenged, but its core insight — 
 | MoE variants | O(n²) active, sparse total | Full (with load balancing) | Strong | Industry standard for frontier models |
 
 The transformer won because it solved the parallelism bottleneck at the cost of quadratic attention. The post-transformer architectures aim to keep the parallelism while reducing the quadratic cost. Whoever solves this equation — linear complexity with full parallelization — will build the next foundation.
+
+### Key References
+
+- Attention Is All You Need (Vaswani et al., 2017): https://arxiv.org/abs/1706.03762
+- GPT-1 (Radford et al., 2018): https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+- BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
+- GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+- GPT-3 (Brown et al., 2020): https://arxiv.org/abs/2005.14165
+- Scaling Laws (Kaplan et al., 2020): https://arxiv.org/abs/2001.08361
+- Chinchilla (Hoffmann et al., 2022): https://arxiv.org/abs/2203.15556
+- GPT-4 (OpenAI, 2023): https://arxiv.org/abs/2303.08774
+- LLaMA (Touvron et al., 2023): https://arxiv.org/abs/2302.13971
+- Mamba (Gu & Dao, 2023): https://arxiv.org/abs/2312.00752
+- RWKV (Peng et al., 2023): https://arxiv.org/abs/2305.13048
+- DeepSeek-V2 (2024): https://arxiv.org/abs/2405.04434

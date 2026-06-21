@@ -148,3 +148,22 @@ Geoffrey Hinton 的观察捕捉了不确定性："时间线问题无法回答—
 最危险的错误是混淆这两种 AGI 感。如果我们认为 AGI 已到来（经济意义），我们可能在系统缺乏真正理解的领域鲁莽部署。如果我们认为 AGI 未到来（认知意义），我们可能未能为已经做出高风险决策的系统做准备。
 
 **以人驭智**之路是承认两个真相：在使用 AI 当前能力时充分意识到其局限，同时为一个这些局限可能突然扩展的未来做准备。通往 AGI 之路不是一个技术必然。它是一个人类选择——通过每个部署决策、每个安全投入、每个治理框架做出。那个选择，而非算法，将决定 AGI 成为什么。
+
+### 关键参考资源
+
+- ARC-AGI (Chollet, 2019): https://arxiv.org/abs/1911.01547
+- o3 score (ARC-AGI, 2024): https://arcprize.org/blog/o3-arc-solve
+- GPT-4: https://arxiv.org/abs/2303.08774
+- DeepSeek-V3: https://arxiv.org/abs/2412.19437
+- Scaling Laws (Kaplan et al., 2020): https://arxiv.org/abs/2001.08361
+- Chinchilla (Hoffmann et al., 2022): https://arxiv.org/abs/2203.15556
+- MMLU: https://arxiv.org/abs/2009.03300
+- GPQA: https://arxiv.org/abs/2311.12022
+- SWE-bench: https://arxiv.org/abs/2310.06770
+- o1 System Card: https://openai.com/index/learning-to-reason-with-llms/
+- DeepSeek-R1: https://arxiv.org/abs/2501.12948
+- AI Impacts survey: https://aiimpacts.org
+- Metaculus / Superforecasters: https://www.metaculus.com
+- Joseph Weizenbaum "Computer Power and Human Reason" (1976): https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason
+- Geoffrey Hinton (AI timelines interviews): https://en.wikipedia.org/wiki/Geoffrey_Hinton
+- Ilya Sutskever (on reasoning): https://en.wikipedia.org/wiki/Ilya_Sutskever

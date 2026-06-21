@@ -46,3 +46,9 @@
 | 19 | 艾登·戈麦斯 | Cohere CEO | [阅读](voices/aiden-gomez.md) |
 
 > **注意：** 此列表既非详尽也非固定。新的人物将在他们出现时添加。如果你发现重要人物缺失，请发起 issue 建议添加。
+
+### 关键参考资源
+
+- Future of Life Institute (diverse AI perspectives): https://futureoflife.org
+- Stanford HAI (Human-Centered AI): https://hai.stanford.edu
+- Google PAIR (People + AI Research): https://pair.withgoogle.com

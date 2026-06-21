@@ -230,3 +230,20 @@ The gap was not a failure of technology. It was a failure of collective action �
 The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.
 
 > *"We are building intelligence that may exceed our own, and we are doing it without a safety manual, without regulatory oversight, and without public understanding. This is not a criticism of the technology. It is a statement of fact about our collective choices."* — **Yoshua Bengio**, 2025
+
+### Key References
+- AI Incident Database (AIAAIC): https://www.aiaaic.org
+- Anthropic RSP (Responsible Scaling Policy): https://www.anthropic.com/news/anthropics-responsible-scaling-policy
+- OpenAI Superalignment: https://openai.com/index/introducing-superalignment/
+- Anthropic sparse autoencoders (Templeton et al., 2024): https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
+- Model collapse (Shumailov et al., 2024): https://www.nature.com/articles/s41586-024-07566-y
+- Nicholas Carlini on synthetic data: https://arxiv.org/abs/2302.10149
+- Jan Leike resignation: https://x.com/janleike
+- "Pause Giant AI Experiments" open letter (2023): https://futureoflife.org/open-letter/pause-giant-ai-experiments/
+- Yoshua Bengio: https://yoshuabengio.org
+- Eliezer Yudkowsky: https://www.intelligence.org
+- Marc Andreessen "Why AI Will Save the World": https://a16z.com/why-ai-will-save-the-world/
+- New York Times v. OpenAI: https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html
+- Getty Images v. Stability AI: https://en.wikipedia.org/wiki/Stability_AI
+- CA SB-1047: https://en.wikipedia.org/wiki/SB-1047
+- Colorado AI Act: https://leg.colorado.gov

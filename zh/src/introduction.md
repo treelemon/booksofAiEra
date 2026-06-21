@@ -28,3 +28,10 @@
 7. **AI 时代的声音**——塑造 AI 革命的关键人物侧写
 
 让我们开始吧。
+
+### 关键参考资源
+
+- Wikipedia: Artificial intelligence: https://en.wikipedia.org/wiki/Artificial_intelligence
+- Wikipedia: Generative artificial intelligence: https://en.wikipedia.org/wiki/Generative_artificial_intelligence
+- Wikipedia: History of artificial intelligence: https://en.wikipedia.org/wiki/History_of_artificial_intelligence
+- State of AI Report: https://www.stateof.ai/

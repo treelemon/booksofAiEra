@@ -89,3 +89,21 @@ The pace of improvement between 2024 and 2025 was unlike anything in the history
 The headline: **one year compressed a decade of expected progress.** In 2024, coding agents could solve about half of real-world GitHub issues. By 2025, they solved nearly all of them. In 2024, AI could not pass the AIME math competition. By 2025, it was scoring near the top human participants.
 
 This trajectory shows no sign of plateauing. Each reasoning model release pushes the boundary further. The question is no longer *whether* AI will reach expert-level capability in most cognitive domains — it is *when*, and what we build with it.
+
+### Key References
+
+- GPT-1 (Radford et al., 2018): https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+- GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+- GPT-3 (Brown et al., 2020): https://arxiv.org/abs/2005.14165
+- InstructGPT (Ouyang et al., 2022): https://arxiv.org/abs/2203.02155
+- Constitutional AI (Bai et al., 2022): https://arxiv.org/abs/2212.08073
+- LLaMA (Touvron et al., 2023): https://arxiv.org/abs/2302.13971
+- GPT-4 (OpenAI, 2023): https://arxiv.org/abs/2303.08774
+- Gemini (Google DeepMind, 2023): https://arxiv.org/abs/2312.11805
+- Claude (Anthropic): https://www.anthropic.com
+- DeepSeek-V2 (2024): https://arxiv.org/abs/2405.04434
+- DeepSeek-R1 (2025): https://arxiv.org/abs/2501.12948
+- o1 System Card (OpenAI, 2024): https://openai.com/index/learning-to-reason-with-llms/
+- AIME: https://www.maa.org/math-competitions/american-invitational-mathematics-examination-aime
+- ARC-AGI (Chollet, 2019): https://arxiv.org/abs/1911.01547
+- SWE-bench (Jimenez et al., 2024): https://arxiv.org/abs/2310.06770

@@ -48,3 +48,9 @@ This section is a living reference. Each entry documents a major figure in the A
 ---
 
 > **Note:** This list is neither exhaustive nor fixed. New voices will be added as they emerge. If you spot a missing figure whose voice has shaped the conversation, open an issue to suggest them.
+
+### Key References
+
+- Future of Life Institute (diverse AI perspectives): https://futureoflife.org
+- Stanford HAI (Human-Centered AI): https://hai.stanford.edu
+- Google PAIR (People + AI Research): https://pair.withgoogle.com

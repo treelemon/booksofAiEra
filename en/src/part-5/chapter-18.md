@@ -148,3 +148,22 @@ The professional perspective holds both truths simultaneously:
 The most dangerous mistake is conflating these two senses. If we believe AGI has arrived (economic sense), we may deploy recklessly in domains where the system lacks true understanding. If we believe AGI has not arrived (cognitive sense), we may fail to prepare for systems that already make high-stakes decisions.
 
 The path of **Human Wisdom** is to acknowledge both truths: to use AI's current capabilities with full awareness of their limits, while preparing for a future where those limits expand — potentially suddenly. The path to AGI is not a technological inevitability. It is a human choice — made through every deployment decision, every safety investment, every governance framework. That choice, not the algorithm, will determine what AGI becomes.
+
+### Key References
+
+- ARC-AGI (Chollet, 2019): https://arxiv.org/abs/1911.01547
+- o3 score (ARC-AGI, 2024): https://arcprize.org/blog/o3-arc-solve
+- GPT-4: https://arxiv.org/abs/2303.08774
+- DeepSeek-V3: https://arxiv.org/abs/2412.19437
+- Scaling Laws (Kaplan et al., 2020): https://arxiv.org/abs/2001.08361
+- Chinchilla (Hoffmann et al., 2022): https://arxiv.org/abs/2203.15556
+- MMLU: https://arxiv.org/abs/2009.03300
+- GPQA: https://arxiv.org/abs/2311.12022
+- SWE-bench: https://arxiv.org/abs/2310.06770
+- o1 System Card: https://openai.com/index/learning-to-reason-with-llms/
+- DeepSeek-R1: https://arxiv.org/abs/2501.12948
+- AI Impacts survey: https://aiimpacts.org
+- Metaculus / Superforecasters: https://www.metaculus.com
+- Joseph Weizenbaum "Computer Power and Human Reason" (1976): https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason
+- Geoffrey Hinton (AI timelines interviews): https://en.wikipedia.org/wiki/Geoffrey_Hinton
+- Ilya Sutskever (on reasoning): https://en.wikipedia.org/wiki/Ilya_Sutskever

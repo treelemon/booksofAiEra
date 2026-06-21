@@ -250,3 +250,18 @@ The defining geopolitical question of the AI era remained unanswered.
 | Open-source geopolitical weaponization | Growing (used by both US and China) | Medium | Will open-source remain neutral commons or become politicized? |
 
 The future was not predetermined. It would be shaped by decisions made in the next 24 months — in Washington, Beijing, Brussels, and everywhere in between. The choice, as always, belonged to the humans who made it.
+
+### Key References
+- Bletchley Declaration (2023): https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
+- EU AI Act: https://artificialintelligenceact.eu
+- Biden Executive Order on AI (2023): https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+- US export controls on AI chips (2022-2024): https://www.bis.gov
+- UN AI Resolution (2025): https://www.un.org
+- Morris Chang / TSMC: https://www.tsmc.com
+- C2PA content provenance: https://c2pa.org
+- LAWS (Lethal Autonomous Weapons): https://www.un.org/disarmament/ccw/
+- Stuart Russell on autonomous weapons: https://people.eecs.berkeley.edu/~russell/
+- Project Maven: https://en.wikipedia.org/wiki/Project_Maven
+- DeepSeek stock market impact: https://www.reuters.com/technology/artificial-intelligence/
+- Fei-Fei Li testimony: https://www.feifeili.org
+- Timnit Gebru / DAIR: https://www.dair-institute.org

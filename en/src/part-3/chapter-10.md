@@ -127,3 +127,16 @@ The 2.7% gap in aggregate benchmarks was still real. But in practice, for most a
 | Military, intelligence | Unresolved | Both sides have arguments; no consensus |
 
 The coexistence thesis is not a compromise — it is the reality. The question for any professional is not "open vs. closed?" but "which model, under which license, for which use case?" The answer changes every 6-12 months as both ecosystems advance.
+
+### Key References
+- LLaMA (Touvron et al., 2023): https://arxiv.org/abs/2302.13971
+- LLaMA 2 (2023): https://arxiv.org/abs/2307.09288
+- DeepSeek-R1 (2025): https://arxiv.org/abs/2501.12948
+- Hugging Face: https://huggingface.co
+- OSI Open Source AI Definition: https://opensource.org/ai
+- Mistral AI: https://mistral.ai
+- Olmo (AI2): https://arxiv.org/abs/2402.00838
+- AI2: https://allenai.org
+- IBM Granite: https://www.ibm.com/granite
+- Phi-3 (Microsoft): https://arxiv.org/abs/2404.14219
+- Mark Zuckerberg open-source letter: https://about.meta.com

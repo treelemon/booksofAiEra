@@ -257,3 +257,12 @@ The systematic pipeline reduced errors by 72% at a cost of less than 4 minutes p
 The pipeline is not heavy. It is a habit. And the habit is the toolkit.
 
 The tool is not the model. The tool is the judgment that decides when to trust it.
+
+### Key References
+
+- MMLU: https://arxiv.org/abs/2009.03300
+- HumanEval: https://github.com/openai/human-eval
+- TruthfulQA: https://arxiv.org/abs/2109.07958
+- BIG-bench: https://arxiv.org/abs/2206.04615
+- HELM (Stanford CRFM): https://crfm.stanford.edu/helm/
+- Anthropic (evaluation and safety research): https://www.anthropic.com

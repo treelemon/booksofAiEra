@@ -219,3 +219,14 @@ AI 时代将持续数十年——不是几年。赢家不会是 2024-2026 年冲
 **以人驭智**不仅仅是关于明智地使用 AI。是关于明智地使用你自己的职业生涯——将时间投资于能复利的地方，避免消散精力的干扰，构建超越当前炒作周期的东西。
 
 工具箱是你使用的工具。长期主义是你成为的人。
+
+### 关键参考资源
+
+- ArXiv: https://arxiv.org
+- Hugging Face: https://huggingface.co
+- GitHub Copilot: https://github.com/features/copilot
+- NeurIPS: https://neurips.cc
+- ICML: https://icml.cc
+- ICLR: https://iclr.cc
+- MLOps community: https://ml-ops.org
+- Metaculus (forecasting): https://www.metaculus.com

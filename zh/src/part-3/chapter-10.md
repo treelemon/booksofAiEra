@@ -127,3 +127,16 @@ OSI 最终批准了一个要求*数据透明度*才能称为"开源 AI"的定义
 | 军事、情报 | 未解决 | 双方都有论据；无共识 |
 
 共存论不是妥协——它是现实。对任何专业人士来说，问题不是"开源还是闭源？"而是"哪个模型、在哪种许可下、用于哪个用例？"答案随着两个生态系统的进步每 6-12 个月变化一次。
+
+### 关键参考资源
+- LLaMA (Touvron et al., 2023): https://arxiv.org/abs/2302.13971
+- LLaMA 2 (2023): https://arxiv.org/abs/2307.09288
+- DeepSeek-R1 (2025): https://arxiv.org/abs/2501.12948
+- Hugging Face: https://huggingface.co
+- OSI Open Source AI Definition: https://opensource.org/ai
+- Mistral AI: https://mistral.ai
+- Olmo (AI2): https://arxiv.org/abs/2402.00838
+- AI2: https://allenai.org
+- IBM Granite: https://www.ibm.com/granite
+- Phi-3 (Microsoft): https://arxiv.org/abs/2404.14219
+- Mark Zuckerberg open-source letter: https://about.meta.com

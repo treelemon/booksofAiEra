@@ -220,3 +220,19 @@ This is the trust problem at its core. Reliability is necessary but not sufficie
 Most organizations reverse this order — building reliability first and treating safety and accountability as afterthoughts. This is the primary cause of agent deployment failures. The hospital's agent was reliable. It was not safe. It was not recoverable. The 0.07% error rate was not the problem. The absence of safety infrastructure around that error was the problem.
 
 **Human Wisdom** in the agentic AI context means recognizing that agents are not just tools but *delegates* — they act on our behalf in the world. The decision to deploy an agent is not just a technical decision about capability. It is a decision about trust: what we authorize, what we monitor, and what we remain accountable for. Using agents wisely means deploying them only within a framework of trust that matches the stakes of their actions — and never delegating judgment that only a human can exercise.
+
+### Key References
+- SWE-bench: https://arxiv.org/abs/2310.06770
+- OSWorld: https://arxiv.org/abs/2404.07972
+- Devin (Cognition): https://www.cognition.ai
+- ReAct (Yao et al., 2023): https://arxiv.org/abs/2210.03629
+- Toolformer (Schick et al., 2023): https://arxiv.org/abs/2302.04761
+- Agent Benchmark GAIA: https://arxiv.org/abs/2311.12983
+- Anthropic Computer Use: https://docs.anthropic.com/en/docs/agents-and-tools/computer-use
+- AutoGPT: https://github.com/Significant-Gravitas/AutoGPT
+- BabyAGI: https://github.com/yoheinakajima/babyagi
+- CodeAct (Wang et al., 2024): https://arxiv.org/abs/2402.01030
+- Stanford HAI (Fei-Fei Li): https://hai.stanford.edu
+- AgentDojo (ETH Zurich): https://arxiv.org/abs/2406.13352
+- LangChain: https://www.langchain.com
+- CrewAI: https://www.crewai.com

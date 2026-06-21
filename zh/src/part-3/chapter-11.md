@@ -250,3 +250,18 @@ AI 时代定义性的地缘政治问题仍然没有答案。
 | 开源地缘政治武器化 | 增长（中美双方都在使用） | 中 | 开源会保持中立公共资源还是被政治化？ |
 
 未来不是预先确定的。它将由未来 24 个月内——在华盛顿、北京、布鲁塞尔和两者之间的每个地方——做出的决定所塑造。选择，一如既往，属于做出决定的人。
+
+### 关键参考资源
+- Bletchley Declaration (2023): https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
+- EU AI Act: https://artificialintelligenceact.eu
+- Biden Executive Order on AI (2023): https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+- US export controls on AI chips (2022-2024): https://www.bis.gov
+- UN AI Resolution (2025): https://www.un.org
+- Morris Chang / TSMC: https://www.tsmc.com
+- C2PA content provenance: https://c2pa.org
+- LAWS (Lethal Autonomous Weapons): https://www.un.org/disarmament/ccw/
+- Stuart Russell on autonomous weapons: https://people.eecs.berkeley.edu/~russell/
+- Project Maven: https://en.wikipedia.org/wiki/Project_Maven
+- DeepSeek stock market impact: https://www.reuters.com/technology/artificial-intelligence/
+- Fei-Fei Li testimony: https://www.feifeili.org
+- Timnit Gebru / DAIR: https://www.dair-institute.org

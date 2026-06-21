@@ -145,3 +145,10 @@ This chapter closes where human identity begins: with the recognition that ident
 > *"The question is not whether AI can be like us. The question is whether we can remember who we are."*
 
 Identity is not found. It is practiced. In every choice to use AI as instrument rather than identity, to set it aside when presence matters more than efficiency, to make something imperfectly human when a perfect machine output is available — that is how human identity is preserved. Not by fighting AI. By remembering what only humans can choose.
+
+### Key References
+
+- Garry Kasparov / Deep Blue: https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov
+- Kasparov "Deep Thinking": https://www.amazon.com/Deep-Thinking-Machine-Intelligence-Creativity/dp/161039805X
+- ELIZA / Weizenbaum: https://en.wikipedia.org/wiki/ELIZA
+- Joseph Weizenbaum "Computer Power and Human Reason": https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason

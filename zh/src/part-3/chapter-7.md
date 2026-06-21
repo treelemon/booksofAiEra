@@ -220,3 +220,19 @@
 大多数组织反向这个顺序——先构建可靠性，将安全性和问责性视为事后考虑。这是智能体部署失败的主要原因。医院的那个智能体是可靠的。它不安全。它不可恢复。0.07% 的错误率不是问题。围绕该错误缺乏安全基础设施才是问题。
 
 **以人驭智**在智能体 AI 背景下意味着认识到智能体不仅仅是工具，而是*代理人*——它们代表我们在世界中行事。部署一个智能体的决定不仅仅是关于能力的技术决定。它是关于信任的决定：我们授权什么、监控什么、对什么负责。明智地使用智能体意味着只在信任框架与行动风险相匹配时部署它们——并且绝不委托只有人类才能行使的判断。
+
+### 关键参考资源
+- SWE-bench: https://arxiv.org/abs/2310.06770
+- OSWorld: https://arxiv.org/abs/2404.07972
+- Devin (Cognition): https://www.cognition.ai
+- ReAct (Yao et al., 2023): https://arxiv.org/abs/2210.03629
+- Toolformer (Schick et al., 2023): https://arxiv.org/abs/2302.04761
+- Agent Benchmark GAIA: https://arxiv.org/abs/2311.12983
+- Anthropic Computer Use: https://docs.anthropic.com/en/docs/agents-and-tools/computer-use
+- AutoGPT: https://github.com/Significant-Gravitas/AutoGPT
+- BabyAGI: https://github.com/yoheinakajima/babyagi
+- CodeAct (Wang et al., 2024): https://arxiv.org/abs/2402.01030
+- Stanford HAI (Fei-Fei Li): https://hai.stanford.edu
+- AgentDojo (ETH Zurich): https://arxiv.org/abs/2406.13352
+- LangChain: https://www.langchain.com
+- CrewAI: https://www.crewai.com

@@ -114,3 +114,21 @@ Open-source models became a geopolitical tool: regions restricted from importing
 | Apple | M4 Neural Engine | TSMC 3nm | 30B params on-device | Apple devices only |
 
 **The defining tension of 2026:** AI capability is compute-limited, and compute access is politically determined. The countries that control hardware will shape the future of intelligence — but efficiency breakthroughs are making the hardware advantage less absolute than it seemed in 2023.
+
+### Key References
+- NVIDIA H100: https://www.nvidia.com/en-us/data-center/h100/
+- DeepSeek-V3: https://arxiv.org/abs/2412.19437
+- Stargate announcement: https://openai.com/index/stargate/
+- AMD MI300X: https://www.amd.com/en/products/accelerators/instinct/mi300.html
+- Google TPU: https://cloud.google.com/tpu
+- Huawei Ascend: https://www.hiascend.com
+- Apple Neural Engine: https://www.apple.com
+- Three Mile Island nuclear-Microsoft deal: https://www.wsj.com
+- NAIRR: https://nairrpilot.org
+- EU AI Act: https://artificialintelligenceact.eu
+- AWS Trainium: https://aws.amazon.com/machine-learning/trainium/
+- AMD ROCm: https://www.amd.com/en/products/software/rocm.html
+- Qualcomm Snapdragon X Elite: https://www.qualcomm.com/products/technology/snapdragon-x-elite
+- TSMC: https://www.tsmc.com
+- SMIC: https://www.smics.com
+- Preferred Networks MN-Core: https://www.preferred.net

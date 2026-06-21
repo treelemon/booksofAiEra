@@ -13,3 +13,8 @@ This book is the result of years of watching, building, and thinking about artif
 I wrote this as a living document because AI doesn't stand still. Every chapter will be updated as the landscape shifts. My goal is to make this the single best resource for understanding the AI era — not as a static reference, but as a continuously updated field guide.
 
 If you're reading this, you're probably already feeling the acceleration. Let's understand it together.
+
+### Key References
+
+- mdBook documentation: https://rust-lang.github.io/mdBook/
+- GitHub Pages documentation: https://docs.github.com/en/pages

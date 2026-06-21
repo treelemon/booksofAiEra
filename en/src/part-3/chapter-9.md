@@ -114,3 +114,20 @@ The trajectory favors Hassabis. Each year, AI discovery systems become more auto
 | L5: Paradigm shift | AI discovers new laws of physics, new mathematical foundations | Speculative | Unknown — would require AI to challenge human conceptual frameworks |
 
 We are at L2-L3 across most domains. L4 is on the horizon. L5 remains the trillion-dollar question. The rate of progress suggests L4 will arrive within 5-7 years — and L5 within 15-20, or not at all.
+
+### Key References
+- AlphaFold (Jumper et al., 2021): https://arxiv.org/abs/1911.02541
+- AlphaFold 3 (Abramson et al., 2024): https://www.nature.com/articles/s41586-024-07487-w
+- GNoME (Merchant et al., 2023): https://www.nature.com/articles/s41586-023-06735-9
+- MatterGen (Microsoft, 2024): https://arxiv.org/abs/2312.03687
+- FunSearch (Romera-Paredes et al., 2023): https://www.nature.com/articles/s41586-023-06924-6
+- AlphaProof (DeepMind, 2024): https://deepmind.google/discover/blog/alphaproof-alphageometry/
+- AI Scientist (Sakana AI, 2024): https://arxiv.org/abs/2408.06292
+- Sakana AI: https://sakana.ai
+- Nobel Prize in Chemistry 2024 (AlphaFold): https://www.nobelprize.org/prizes/chemistry/2024/summary/
+- David Baker protein design: https://www.bakerlab.org
+- INS018_055 (Insilico Medicine): https://insilico.com
+- "Attention Is All You Need" (Vaswani et al., 2017): https://arxiv.org/abs/1706.03762
+- CASP competition: https://predictioncenter.org
+- Yoshua Bengio / MILA: https://mila.quebec
+- Andrew Ng / DeepLearning.AI: https://www.deeplearning.ai

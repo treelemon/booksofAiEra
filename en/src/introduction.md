@@ -28,3 +28,10 @@ This book is organized in seven parts:
 7. **Voices of the AI Era** — profiles of the key figures shaping the AI revolution
 
 Let's begin.
+
+### Key References
+
+- Wikipedia: Artificial intelligence: https://en.wikipedia.org/wiki/Artificial_intelligence
+- Wikipedia: Generative artificial intelligence: https://en.wikipedia.org/wiki/Generative_artificial_intelligence
+- Wikipedia: History of artificial intelligence: https://en.wikipedia.org/wiki/History_of_artificial_intelligence
+- State of AI Report: https://www.stateof.ai/

@@ -219,3 +219,14 @@ The AI specialist who thrives in 2035 will not be the one who was fastest in 202
 **Human Wisdom** is not just about using AI wisely. It is about using your own career wisely — investing time where it compounds, avoiding distractions that dissipate, and building something that lasts beyond the current hype cycle.
 
 The toolkit is what you use. The long game is who you become.
+
+### Key References
+
+- ArXiv: https://arxiv.org
+- Hugging Face: https://huggingface.co
+- GitHub Copilot: https://github.com/features/copilot
+- NeurIPS: https://neurips.cc
+- ICML: https://icml.cc
+- ICLR: https://iclr.cc
+- MLOps community: https://ml-ops.org
+- Metaculus (forecasting): https://www.metaculus.com

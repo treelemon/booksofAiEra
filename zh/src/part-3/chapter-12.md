@@ -230,3 +230,20 @@ AI 事故数据库（AIAAIC）追踪了一系列令人沮丧的失败：
 差距不是技术的失败。它是集体行动的失败——一个每天都在做出的选择，将能力优先于安全。问题不在于差距是否会弥合。问题在于什么会弥合它：负责任的治理、变革性的安全突破——或者一个替我们做出选择的灾难性事件。
 
 > *"我们正在构建可能超越我们自己的智能，而我们是在没有安全手册、没有监管监督、没有公众理解的情况下进行的。这不是对技术的批评。这是关于我们集体选择的事实陈述。"* —— **Yoshua Bengio**，2025
+
+### 关键参考资源
+- AI Incident Database (AIAAIC): https://www.aiaaic.org
+- Anthropic RSP (Responsible Scaling Policy): https://www.anthropic.com/news/anthropics-responsible-scaling-policy
+- OpenAI Superalignment: https://openai.com/index/introducing-superalignment/
+- Anthropic sparse autoencoders (Templeton et al., 2024): https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
+- Model collapse (Shumailov et al., 2024): https://www.nature.com/articles/s41586-024-07566-y
+- Nicholas Carlini on synthetic data: https://arxiv.org/abs/2302.10149
+- Jan Leike resignation: https://x.com/janleike
+- "Pause Giant AI Experiments" open letter (2023): https://futureoflife.org/open-letter/pause-giant-ai-experiments/
+- Yoshua Bengio: https://yoshuabengio.org
+- Eliezer Yudkowsky: https://www.intelligence.org
+- Marc Andreessen "Why AI Will Save the World": https://a16z.com/why-ai-will-save-the-world/
+- New York Times v. OpenAI: https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html
+- Getty Images v. Stability AI: https://en.wikipedia.org/wiki/Stability_AI
+- CA SB-1047: https://en.wikipedia.org/wiki/SB-1047
+- Colorado AI Act: https://leg.colorado.gov

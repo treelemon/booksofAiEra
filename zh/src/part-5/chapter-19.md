@@ -205,3 +205,17 @@ AI 治理努力已经激增——但其有效性差异巨大。
 > *"真正的风险不是 AI 将变得恶意。真正的风险是 AI 将变得能干——而我们将赋予它不反映我们真实价值观的目标。"* —— Stuart Russell，2023
 
 面对 AI 风险的**以人驭智**既不是否认危险，也不是被其瘫痪。它是与证据互动、做出校准判断、据此行动、并保持对新信息的开放。智慧的道路不是确定性——是在不确定性下明智行动的能力。那种能力是存在性挑战要求的，也是**以人驭智**所提供的。
+
+### 关键参考资源
+
+- Bletchley Declaration (2023): https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
+- EU AI Act: https://artificialintelligenceact.eu
+- Biden Executive Order (2023): https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
+- Apollo Research deception findings (2024): https://www.apolloresearch.ai
+- Jan Leike resignation: https://x.com/janleike
+- OpenAI board restructuring (Nov 2023): https://en.wikipedia.org/wiki/OpenAI#2023_board_restructuring
+- RLHF (Ouyang et al., 2022): https://arxiv.org/abs/2203.02155
+- Constitutional AI (Bai et al., 2022): https://arxiv.org/abs/2212.08073
+- Stuart Russell: https://people.eecs.berkeley.edu/~russell/
+- Anthropic Responsible Scaling Policy: https://www.anthropic.com/news/anthropics-responsible-scaling-policy
+- AIAAIC incident database: https://www.aiaaic.org

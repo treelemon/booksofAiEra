@@ -197,3 +197,15 @@ The most successful creatives in 2026 were not pure technicians. They were curat
 | Can you find your audience? | Can you signal authenticity in an AI flood? | Trust metrics (return readership) |
 
 The final irony: AI solved the production problem but worsened the discovery problem. The curators — book reviewers, influencers, librarians — became more important, not less. The instrument does not make the musician. The brush does not make the painter. And the AI does not make the artist. Creativity has always been about what humans bring — their experience, their pain, their joy, their unique way of seeing. AI can generate. Only humans can create.
+
+### Key References
+- Jason Allen Midjourney win: https://www.nytimes.com/2022/09/02/technology/ai-artificial-intelligence-artists.html
+- WGA strike 2023: https://www.wgacontract2023.org
+- NYT v. OpenAI: https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html
+- Hollywood SAG-AFTRA strike: https://www.sagaftra.org
+- Refik Anadol: https://refikanadol.com
+- "Heart on My Sleeve" Drake fake song: https://www.nytimes.com/2023/04/19/arts/music/drake-heart-on-my-sleeve-ai.html
+- Roblox AI: https://www.roblox.com
+- Getty Images v. Stability AI: https://en.wikipedia.org/wiki/Stability_AI
+- Medium 40% purge: https://medium.com
+- C2PA content provenance: https://c2pa.org
