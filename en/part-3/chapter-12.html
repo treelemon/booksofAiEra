@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-d571523b.js";
+            window.path_to_searchindex_js = "../searchindex-f5e5dcb0.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-73d70b89.js"></script>
@@ -311,6 +311,24 @@
 <li>Professional ethics standards for AI developers</li>
 </ul>
 <p>The gap between capability and safety was not inevitable. It was a choice — made every day, by every company, by every researcher, by every regulator. The question was not whether the gap existed. It was whether we would close it before something catastrophic happened.</p>
+<h2 id="1213-the-model-collapse-problem"><a class="header" href="#1213-the-model-collapse-problem">12.13 The Model Collapse Problem</a></h2>
+<p>In 2024, a team of researchers led by <strong>Ilia Shumailov</strong> published a paper with an ominous finding: <strong>model collapse</strong>. When AI models are trained on AI-generated data, they degrade. The generated content becomes less diverse, more repetitive, and eventually meaningless.</p>
+<p>The mechanism was straightforward. Each generation amplifies the statistical biases of the previous one. Rare but important outputs — the unusual turn of phrase, the novel idea, the creative solution — get pruned away. The model learns a caricature of its training distribution. Iterate enough times, and the output converges to nonsense.</p>
+<p>The implications were staggering. If the internet was increasingly populated with AI-generated content, and future AI models were trained on that content, each generation would be slightly worse than the last. <strong>Data poisoning at planetary scale.</strong></p>
+<p><strong>Nicholas Carlini</strong> (Google DeepMind) confirmed the finding in a 2025 study: even small amounts of synthetic data in training sets caused measurable degradation. The paper’s title was blunt: “AI Models Cannot Be Trained on AI Data.”</p>
+<p><strong>The practical response:</strong> Data provenance became a critical priority. Companies rushed to verify that their training datasets were “human-origin.” OpenAI and Anthropic developed synthetic data detection tools. The open-source community launched the “Human Data Trust” — a certification that training datasets contained no synthetic content.</p>
+<p><strong>The deeper question:</strong> If the internet became flooded with AI content, and AI models could not train on AI content, was there a finite amount of human-generated data — and were we approaching the ceiling? The era of “scrape everything” was ending. The era of “authenticated data” was beginning.</p>
+<h2 id="1214-the-societal-resilience-gap"><a class="header" href="#1214-the-societal-resilience-gap">12.14 The Societal Resilience Gap</a></h2>
+<p>The final dimension of the responsibility gap was societal: <strong>how prepared was the public for an AI-transformed world?</strong></p>
+<p><strong>The literacy problem:</strong> A 2025 Pew survey found that only 38% of Americans could correctly identify a deepfake video. Only 22% understood that AI chatbots could “hallucinate.” The majority of respondents believed AI was either “magic” or “hypnotized computers.” Public understanding of AI was roughly where public understanding of the internet was in 1998 — fragmented, superficial, and shaped by pop culture.</p>
+<p><strong>The education gap:</strong> Less than 5% of K-12 schools in the US had AI literacy curricula in 2025. India and Singapore were ahead — both had national AI education frameworks. China had integrated AI into the national curriculum starting in middle school.</p>
+<p><strong>The media challenge:</strong> Traditional media struggled to report on AI accurately — coverage oscillated between “AI will save everything” and “AI will destroy everything.” The nuance — that AI was a powerful tool with specific limitations, specific risks, and specific opportunities — was lost in the attention economy.</p>
+<p><strong>The professional ethics void:</strong> No standard professional ethics existed for AI developers. Unlike doctors (Hippocratic Oath), lawyers (bar ethics), or engineers (professional engineering ethics), AI developers had no universally recognized code of conduct. Attempts to create one — the “AI Developer’s Oath,” the “Responsible AI Pledge” — had limited adoption.</p>
+<p><strong>The generational divide:</strong> Gen Z and Gen Alpha were growing up with AI as a default interface. They had never known a world without generative AI. The long-term psychological and cognitive effects of growing up with an omniscient oracle in your pocket were unknown. The first studies on “AI-native cognition” were just beginning in 2026.</p>
+<h2 id="1215-the-closing-question"><a class="header" href="#1215-the-closing-question">12.15 The Closing Question</a></h2>
+<p>The capability-safety gap was real, measurable, and growing. The ratio of builders to safety researchers was 200:1. The number of AI incidents was doubling every 18 months. The regulatory response was fragmented and slow. The interpretability frontier was promising but years away from frontier-scale models. The model collapse problem threatened the sustainability of future training. The public was unprepared for the scale of change underway.</p>
+<p>And yet — AI capability continued to advance at a breathtaking pace. Each generation of models was more capable, more useful, and more integrated into daily life. The technology was too valuable to stop, too powerful to ignore, and perhaps too dangerous to deploy without adequate safeguards.</p>
+<p>The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.</p>
 <blockquote>
 <p><em>“We are building intelligence that may exceed our own, and we are doing it without a safety manual, without regulatory oversight, and without public understanding. This is not a criticism of the technology. It is a statement of fact about our collective choices.”</em> — <strong>Yoshua Bengio</strong>, 2025</p>
 </blockquote>
