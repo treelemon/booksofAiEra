@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-499bc2ef.js";
+            window.path_to_searchindex_js = "../searchindex-20ba8adc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-73d70b89.js"></script>
@@ -181,55 +181,61 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="chapter-4-the-state-of-frontier-models"><a class="header" href="#chapter-4-the-state-of-frontier-models">Chapter 4: The State of Frontier Models</a></h1>
-<h2 id="41-benchmark-snapshot-mid-2026"><a class="header" href="#41-benchmark-snapshot-mid-2026">4.1 Benchmark Snapshot (Mid-2026)</a></h2>
+<h2 id="41-the-benchmark-trap"><a class="header" href="#41-the-benchmark-trap">4.1 The Benchmark Trap</a></h2>
+<p>By mid-2026, the standard benchmarks tell a story that is both remarkable and misleading:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Benchmark</th><th>Best Score</th><th>Human Baseline</th><th>Notes</th></tr>
+<tr><th>Benchmark</th><th>Best Score</th><th>Human Baseline</th><th>Saturation</th></tr>
 </thead>
 <tbody>
-<tr><td>MMLU</td><td>96.5%</td><td>~90%</td><td>Multi-task language understanding</td></tr>
-<tr><td>GSM8K</td><td>98.2%</td><td>~95%</td><td>Grade-school math</td></tr>
-<tr><td>SWE-bench Verified</td><td>97.3%</td><td>~85%</td><td>Real-world coding tasks</td></tr>
-<tr><td>MATH</td><td>94.1%</td><td>~90%</td><td>Competition mathematics</td></tr>
-<tr><td>IMO</td><td>Gold medal</td><td>Gold medal</td><td>International Math Olympiad</td></tr>
-<tr><td>OSWorld (agents)</td><td>66%</td><td>~80%</td><td>Real computer tasks</td></tr>
+<tr><td>MMLU</td><td>96.5%</td><td>~90%</td><td>Near ceiling</td></tr>
+<tr><td>GSM8K</td><td>98.2%</td><td>~95%</td><td>Near ceiling</td></tr>
+<tr><td>SWE-bench Verified</td><td>97.3%</td><td>~85%</td><td>Near ceiling</td></tr>
+<tr><td>MATH</td><td>94.1%</td><td>~90%</td><td>Near ceiling</td></tr>
+<tr><td>IMO</td><td>Gold medal</td><td>Gold medal</td><td>Saturated</td></tr>
+<tr><td>OSWorld (agents)</td><td>66%</td><td>~80%</td><td>3× improvement in 18 months</td></tr>
 </tbody>
 </table>
 </div>
-<p>The jagged frontier remains: PhD-level math is near-saturated, but analog clock reading is at 50.1%.</p>
-<h2 id="42-frontier-model-landscape-2026"><a class="header" href="#42-frontier-model-landscape-2026">4.2 Frontier Model Landscape (2026)</a></h2>
-<p><strong>Closed-source leaders:</strong></p>
+<p>The headline numbers suggest AI is approaching omniscience. The reality is stranger. Ethan Mollick’s <strong>jagged frontier</strong> — the irregular boundary where AI excels at some tasks and fails at others with no obvious pattern — is alive and well. The same model that solves PhD-level physics problems cannot reliably read an analog clock (best score: 50.1%). The model that passes the bar exam still struggles with simple spatial reasoning.</p>
+<p>This paradox created a quiet crisis in the AI industry by early 2025: <strong>benchmark saturation</strong>. When every model scores 95%+ on MMLU, MMLU stops measuring anything useful. The community responded with harder benchmarks — GPQA for PhD-level science, ARC-AGI for visual reasoning, OSWorld for agentic tasks — but the pattern repeats: models consume benchmarks like Pac-Man eats dots.</p>
+<h2 id="42-the-frontier-model-war-four-stories-in-2026"><a class="header" href="#42-the-frontier-model-war-four-stories-in-2026">4.2 The Frontier Model War: Four Stories in 2026</a></h2>
+<h3 id="openai-the-former-king"><a class="header" href="#openai-the-former-king">OpenAI: The Former King</a></h3>
+<p>Satya Nadella once joked that Microsoft’s partnership with OpenAI was “the most expensive deal in tech history.” By 2026, the joke had teeth. OpenAI had spent over $10 billion on compute, lost its early lead, but remained lethal.</p>
+<p><strong>GPT-5</strong> arrived in late 2025 after a year of delays and internal turmoil. The launch was overshadowed by a very public board struggle — Sam Altman had returned after the dramatic 2023 firing-and-rehiring, but scar tissue remained. Key researchers had left for Anthropic, SSI, and their own startups. GPT-5 matched Claude Opus 5 on most benchmarks but lacked the polish in coding and tool use.</p>
+<p>OpenAI’s ace in the hole was <strong>o3</strong>, their reasoning model line. By February 2025, o3 scored 87.5% on ARC-AGI — the visual reasoning benchmark that had been considered “AI-complete” just two years earlier. François Chollet, who created ARC-AGI, admitted: “I didn’t expect this to be solved so quickly.” OpenAI’s internal motto remained unchanged: scale first, ask questions later.</p>
+<h3 id="anthropic-the-safety-first-champion"><a class="header" href="#anthropic-the-safety-first-champion">Anthropic: The Safety-First Champion</a></h3>
+<p>In early 2024, Anthropic was the underdog. Dario Amodei, the CEO who had left OpenAI in 2021 over safety concerns, often described his company’s mission in existential terms — building “a benevolent AGI.” Critics called it marketing. By 2026, it was hard to argue with results.</p>
+<p><strong>Claude Opus 5</strong> was widely considered the #1 frontier model. It excelled not on any single benchmark but on the <em>gestalt</em>: developers preferred it for coding, scientists for research, and the safety team for its refusal rates. The secret was not just scale but data quality — Anthropic invested heavily in curated training data and constitutional AI, creating a model that was both capable and aligned.</p>
+<p>Dario Amodei had written a long essay in 2024 titled “Machines of Loving Grace,” predicting powerful AI by 2026. Even his timeline was conservative. By mid-2026, Claude was writing scientific papers, managing codebases, and operating desktop computers through Anthropic’s “computer use” API.</p>
+<h3 id="google-deepmind-the-empire-strikes-back"><a class="header" href="#google-deepmind-the-empire-strikes-back">Google DeepMind: The Empire Strikes Back</a></h3>
+<p>Demis Hassabis had been waiting for this moment. After the shocking launch of ChatGPT in 2022, Google had been caught flat-footed — the company that invented the transformer was losing the AI race. Hassabis, the chess prodigy who had founded DeepMind in 2010, had a simple strategy: merge DeepMind and Google Brain, unify resources, and build a model that leveraged Google’s unique advantages.</p>
+<p><strong>Gemini 3 Ultra</strong> arrived in 2026 with two weapons no competitor could match: 1M-token native context and deep integration with Google’s ecosystem. It could ingest entire codebases, entire legal archives, entire scientific literatures — and reason across them in a single pass. Its “thinking mode” matched o3 on reasoning benchmarks while consuming half the compute.</p>
+<p>Hassabis told the Financial Times: “We always believed multimodality was the path to general intelligence. The other labs are catching up, but we have a decade of AlphaGo and AlphaFold experience that they don’t.”</p>
+<h3 id="deepseek-the-cost-rebel"><a class="header" href="#deepseek-the-cost-rebel">DeepSeek: The Cost Rebel</a></h3>
+<p>In January 2025, a paper from a Chinese quant-trading firm’s AI lab sent shockwaves through the industry. DeepSeek-R1 had matched OpenAI’s o1 on reasoning benchmarks — and published the full methodology. The US stock market lost half a trillion dollars in a single day. Jensen Huang’s NVIDIA dropped 17%.</p>
+<p>The founder, <strong>Liang Wenfeng</strong>, was a hedge fund trader who had started acquiring GPUs in 2020 for quantitative trading. By 2023, he had redirected the compute to LLM research. DeepSeek’s edge was pure engineering: they built a Mixture-of-Experts architecture so efficient that training cost 1/70th of comparable models. DeepSeek-V4 (2026) cost just $6.8 million to train — less than a rounding error in GPT-5’s budget — while matching Gemini 3 on all but the hardest benchmarks.</p>
+<p>The geopolitical implications were immediate. The US-China AI gap, which had been estimated at 2-3 years in 2023, had narrowed to 2.7% on aggregate benchmarks by 2026. China was not just copying — it was innovating on a different cost curve.</p>
+<h2 id="43-the-open-source-parallel-universe"><a class="header" href="#43-the-open-source-parallel-universe">4.3 The Open-Source Parallel Universe</a></h2>
+<p>Meta’s <strong>Yann LeCun</strong> had been saying for years that open-source would win. In 2026, his prediction looked prescient.</p>
+<p><strong>Llama 5</strong> (2026) matched GPT-5 on most benchmarks — the gap had shrunk from 30% in 2023 to less than 5%. The ecosystem built on LLaMA had become a parallel AI universe: thousands of fine-tuned variants, specialized for medicine, law, finance, and education. The Llama 5 release used a new architecture — “dual-pass inference” — that halved inference costs.</p>
+<p>The fully open movement had its champions too. <strong>AI2’s Olmo 3</strong>, led by <strong>Ali Farhadi</strong>, released not just weights but full training data and code. <strong>IBM’s Granite 4</strong> focused on enterprise reliability — models designed to be auditable and contractually guaranteed.</p>
+<p>The closed-source vs. open-source debate had evolved from ideology to economics. As one investor put it: “Proprietary models are like proprietary internet protocols in 1995. They matter until they don’t.”</p>
+<h2 id="44-architectural-convergence"><a class="header" href="#44-architectural-convergence">4.4 Architectural Convergence</a></h2>
+<p>Despite the competition, the frontier models were converging on a common architectural template by 2026:</p>
 <ul>
-<li><strong>Claude Opus 5</strong> (Anthropic) — currently #1 overall</li>
-<li><strong>GPT-5</strong> (OpenAI) — strong across all categories</li>
-<li><strong>Gemini 3 Ultra</strong> (Google DeepMind) — multimodal leader</li>
+<li><strong>Mixture-of-Experts (MoE):</strong> Almost every frontier model uses MoE — activating only 10-30% of total parameters per token. DeepSeek V4’s 1.2T total parameters cost only 37B active per token.</li>
+<li><strong>Test-time compute:</strong> Every major model now supports inference-time thinking. The industry standard was 2-30 seconds of internal reasoning per hard query.</li>
+<li><strong>Native multimodality:</strong> Text, image, audio, and video input are standard. Output remains primarily text, with image generation via integrated diffusion decoders.</li>
+<li><strong>Long context:</strong> 128K tokens is the minimum. Claude and Gemini lead at 1M tokens. Research labs are working on infinite context windows via retrieval-augmented architectures.</li>
 </ul>
-<p><strong>Open-source / open-weight leaders:</strong></p>
-<ul>
-<li><strong>Llama 5</strong> (Meta) — best open-weight general model</li>
-<li><strong>DeepSeek V4</strong> (DeepSeek) — cost leader, MoE architecture</li>
-<li><strong>Olmo 3</strong> (AI2) — fully open data + weights</li>
-<li><strong>Granite 4</strong> (IBM) — enterprise-focused</li>
-</ul>
-<p><strong>The gap:</strong> Closed-source still leads by ~2.7% aggregate, but open-source is closing fast.</p>
-<h2 id="43-architectural-trends"><a class="header" href="#43-architectural-trends">4.3 Architectural Trends</a></h2>
-<ul>
-<li><strong>Mixture-of-Experts (MoE):</strong> Most frontier models use MoE for efficiency</li>
-<li><strong>Test-time compute scaling:</strong> Reasoning models at inference time</li>
-<li><strong>Tool use and function calling:</strong> Native agent capabilities</li>
-<li><strong>Multimodality:</strong> All major models are natively multimodal (text + image + audio)</li>
-<li><strong>Long context:</strong> Standard is 128K–1M tokens</li>
-</ul>
-<h2 id="44-the-intelligence-plateau-debate"><a class="header" href="#44-the-intelligence-plateau-debate">4.4 The Intelligence Plateau Debate</a></h2>
-<p>Is AI capability growth slowing? The evidence says <strong>no</strong>:</p>
-<ul>
-<li>Benchmarks continue to saturate (requiring new, harder ones)</li>
-<li>Reasoning models opened a new scaling axis</li>
-<li>Agentic capabilities are accelerating from a low base</li>
-<li>Scientific discovery applications are just beginning</li>
-</ul>
-<p>The real question isn’t “are we plateauing?” but “what happens when models are better than experts at everything measurable?”</p>
+<h2 id="45-the-intelligence-plateau-debate"><a class="header" href="#45-the-intelligence-plateau-debate">4.5 The Intelligence Plateau Debate</a></h2>
+<p>Is AI capability growth slowing? The debate splits the industry.</p>
+<p><strong>Ilya Sutskever</strong> — who left OpenAI in 2024 to found Safe Superintelligence (SSI) — argued in a rare 2026 interview that “the easy scaling gains are behind us. We need new ideas.” Sutskever had been right before (he predicted the scaling laws era), and his warning carried weight.</p>
+<p><strong>Yann LeCun</strong> disagreed publicly: “Reports of scaling’s death are greatly exaggerated. We’ve discovered test-time compute, we’re finding better architectures, and data efficiency is improving. The plateau is a myth.”</p>
+<p>The evidence supports LeCun’s view, at least for now. Benchmarks continue to saturate — but each saturation reveals new capability that was previously impossible. The real question, increasingly urgent, is not “are we plateauing?” but “what happens when models exceed human experts at everything measurable?”</p>
+<p>The frontier models of 2026 offer a preview. They are not omniscient, but they are omnipresent — embedded in tools, workflows, decisions, and discovery. The war for the frontier is no longer about whether AI works. It is about who controls it, how much it costs, and whose values it reflects.</p>
 
                     </main>
 
