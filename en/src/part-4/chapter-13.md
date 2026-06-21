@@ -127,3 +127,29 @@ Beneath the data, the debates, and the policy proposals, a more fundamental ques
 The jobs that survived and thrived in the AI era were not the ones that AI could not do. They were the ones where human judgment, human accountability, and human creativity added value *on top of* AI output. The question was not "will AI replace me?" but "can I use AI to do work I could never do before?"
 
 The answer would vary by person, by profession, and by country. But the era of asking the question was over. The era of living the answer had begun.
+
+## 13.11 The Companies That Got It Right
+
+A small number of companies became case studies in AI workforce integration:
+
+**Anthropic** itself was the most striking example. By 2026, the company had 2,500 employees but operated with an organizational structure that looked like no other company in history. Every employee had access to Claude as a "co-pilot" for their work — drafting documents, reviewing code, analyzing data, summarizing research. The company published a detailed blog post explaining how each team used AI. The head of engineering reported that Claude reviewed 40% of all production code before it was merged. The legal team used Claude to draft and review contracts. The research team used Claude as a sounding board for hypotheses.
+
+**Branch**, the AI-powered contract analysis company, had no traditional "engineering department." Its entire product was built by non-technical founders using AI tools. The CTO — who started as a lawyer — described the team as "30 people who look like a 300-person company because of AI."
+
+**GitHub** integrated Copilot so deeply into its own development workflow that by 2025, 60% of all code written at GitHub was AI-generated. The interesting detail: developer satisfaction scores were at an all-time high. AI had not replaced developers — it had eliminated the parts of development they hated (boilerplate, configuration, repetitive debugging) and left them with the parts they loved (architecture, design, creative problem-solving).
+
+These companies shared a pattern: they treated AI as a **team member**, not a **tool**. The distinction mattered. A tool is something you use. A team member is something you collaborate with. The companies that succeeded were not the ones with the best AI — they were the ones that built the best workflows for human-AI collaboration.
+
+## 13.12 The Long View
+
+The narrative was easy to get wrong. Headlines screamed "AI will destroy millions of jobs!" or "AI will create millions of new jobs!" Both were true. Both were incomplete.
+
+The Industrial Revolution destroyed 60% of agricultural jobs but created more jobs in manufacturing and services than it eliminated — over 50 years. The AI transition was happening in 5 years, not 50. The speed of change was the problem, not the direction.
+
+**Jensen Huang**, NVIDIA's CEO, offered a characteristically direct take: "AI will not replace people. But people who use AI will replace people who don't."
+
+The historical pattern held: every major technological transformation created more economic activity than it destroyed. But the distribution of gains was uneven, the transition was painful, and the people hurt first were rarely the people who benefited most.
+
+The challenge of the next decade was not technological — it was political and social. Could societies retrain displaced workers faster than AI displaced them? Could education systems adapt in real time? Could safety nets catch people before they fell?
+
+The answer would determine not just the future of work — but the future of society itself.
