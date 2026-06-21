@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-20ba8adc.js";
+            window.path_to_searchindex_js = "../searchindex-751823e1.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-73d70b89.js"></script>
@@ -181,56 +181,59 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="chapter-5-the-infrastructure-race"><a class="header" href="#chapter-5-the-infrastructure-race">Chapter 5: The Infrastructure Race</a></h1>
-<h2 id="51-compute-as-the-new-oil"><a class="header" href="#51-compute-as-the-new-oil">5.1 Compute as the New Oil</a></h2>
-<p>AI capability is compute-limited. Every frontier model requires:</p>
+<h2 id="51-the-man-who-sold-shovels-in-a-gold-rush"><a class="header" href="#51-the-man-who-sold-shovels-in-a-gold-rush">5.1 The Man Who Sold Shovels in a Gold Rush</a></h2>
+<p>In May 2023, <strong>Jensen Huang</strong> stood on stage in Taipei and held a single GPU above his head. “The H100,” he said, “is the first computer designed specifically for generative AI.” The audience applauded. They did not yet know they were watching the most important hardware launch of the decade.</p>
+<p>Two years later, NVIDIA was the most valuable company on earth — worth more than Apple, Microsoft, and Google combined at its peak. The H100 sold for $30,000 on the open market and $50,000 on the gray market. Tech companies fought bidding wars for allocations. Huang’s signature leather jacket became the uniform of a man who had placed a single, perfect bet: that the world would need an unimaginable amount of compute to run transformers.</p>
+<p>The numbers are dizzying. Training GPT-4 consumed an estimated 25,000 H100-equivalent GPUs running for 90–100 days. The electricity bill alone was $50 million. Total training cost: ~$200 million. By 2026, NVIDIA had shipped over 3 million H100s and its successor B200. The H100 was the fastest-ramping product in computing history — and it was already sold out for months in advance.</p>
+<p>But by 2026, the question had shifted from “how do we get more GPUs?” to “how do we spend less?”</p>
+<h2 id="52-the-deepseek-bombshell"><a class="header" href="#52-the-deepseek-bombshell">5.2 The DeepSeek Bombshell</a></h2>
+<p>On Christmas Day 2024, a small team at a Chinese quant-trading firm called High-Flyer published a paper on arXiv. DeepSeek-V3 had been trained on 2,048 H800 GPUs — an export-restricted version of the H100 with reduced inter-chip bandwidth — for just $5.6 million. It matched GPT-4 on most benchmarks.</p>
+<p>The industry did not notice until January 2025, when DeepSeek-R1 proved open-source reasoning models could match OpenAI’s o1 at 1/20th the cost. The numbers were devastating: DeepSeek-R1 training cost ~$6 million vs. o1’s estimated $100-200 million. NVIDIA’s stock dropped 17% in a single day. $500 billion in market value evaporated.</p>
+<p><strong>Liang Wenfeng</strong>, DeepSeek’s founder, had started buying GPUs in 2020 for algorithmic trading. By 2023 he controlled 10,000 A100s. His insight was architectural, not just financial: DeepSeek’s Mixture-of-Experts design activated only 37 billion of 671 billion parameters per token, combined with Multi-head Latent Attention that compressed the key-value cache by 75%. The result was frontier capability at a fraction of the compute.</p>
+<p>The lesson was seismic: <strong>efficiency now mattered as much as raw scale.</strong> The era of brute-force scaling was over. The era of optimization had begun.</p>
+<h2 id="53-the-500-billion-bet-stargate"><a class="header" href="#53-the-500-billion-bet-stargate">5.3 The $500 Billion Bet: Stargate</a></h2>
+<p>In January 2025, President Trump stood alongside <strong>Sam Altman</strong> (OpenAI), <strong>Masayoshi Son</strong> (SoftBank), and <strong>Larry Ellison</strong> (Oracle) at the White House to announce Stargate — a $500 billion AI infrastructure project. OpenAI would build massive data centers across the United States. Microsoft, NVIDIA, and Arm joined as technology partners. The first $100 billion tranche was committed immediately.</p>
+<p>Stargate was not just a construction project. It represented a thesis: that compute demand would continue growing exponentially, and that the winner of the AI race would be whoever controlled the most hardware.</p>
+<p>By 2026, the Stargate data centers were visible from space. A single facility in Abilene, Texas consumed 200 MW — enough to power 150,000 homes. The total Stargate footprint by mid-2026: 3 GW, with 5 GW under construction. The cost had already overrun by 40%.</p>
+<p>Europe, Canada, and the UK launched their own national compute initiatives — smaller, but symbolically important. The NAIRR program in the US provided academic access to 30,000 GPUs. Compute had become strategic infrastructure, like roads and electricity.</p>
+<h2 id="54-the-hardware-chessboard"><a class="header" href="#54-the-hardware-chessboard">5.4 The Hardware Chessboard</a></h2>
+<p>By 2026, the hardware landscape was no longer a one-company show:</p>
+<p><strong>NVIDIA (Jensen Huang):</strong> Still dominant, but the moat was narrowing. The H100 had been followed by the B200 “Blackwell” (training throughput 4× H100), then the “Rubin” platform in 2026. CUDA remained the industry’s software backbone — 5 million developers, decades of libraries — but competitors were finally breaking through.</p>
+<p><strong>AMD (Lisa Su):</strong> The MI300X had challenged H100 in 2024. By 2026, the MI350 matched B200 on inference at 60% of the cost. AMD’s open-source ROCm software stack had matured, and Microsoft’s Azure had become AMD’s largest AI customer. Lisa Su’s quiet, relentless execution had made AMD the credible alternative.</p>
+<p><strong>Google (Sundar Pichai / Jeff Dean):</strong> TPU v7 was the dark horse. While NVIDIA dominated the market, Google ran almost entirely on TPUs — their internal workload had reached 90% TPU by 2026. TPU v7 matched H100 on training throughput with 30% better power efficiency. The catch: TPUs only worked well with Google’s JAX framework. You could not buy them off the shelf.</p>
+<p><strong>Amazon (AWS):</strong> Trainium 3, announced in 2025, was designed specifically for training large models on AWS. Amazon was building a vertically integrated AI stack — hardware (Trainium), chips (Annapurna Labs), and cloud platform.</p>
+<p><strong>Huawei (China):</strong> Hit by escalating US export controls, Huawei’s Ascend 910C used 7nm-class lithography (vs. TSMC’s 3nm for NVIDIA). Performance was 30-50% below H100, but it was domestic, available, and improving. Chinese AI labs were developing chip-to-chip networking to compensate for individual chip weakness.</p>
+<p><strong>Apple (Tim Cook / Johny Srouji):</strong> The M-series chips integrated a Neural Engine that ran 30+ billion parameter models on-device. Apple Intelligence (2024) proved that local AI could handle most everyday tasks — summarization, image editing, contextual responses — while keeping user data private. By 2026, the gap between edge and cloud AI had narrowed significantly.</p>
+<h2 id="55-energy-the-hidden-constraint"><a class="header" href="#55-energy-the-hidden-constraint">5.5 Energy: The Hidden Constraint</a></h2>
+<p>In 2024, Google and Microsoft each published environmental reports showing AI-related emissions had increased 48% and 29% respectively. The public reaction was sharp.</p>
+<p>The numbers are stark: a single GPT-5 training run consumes approximately 80 GWh of electricity — equivalent to 8,000 US homes for a year. The entire AI industry’s power consumption in 2026: roughly 85 TWh/year, comparable to the Netherlands.</p>
+<p>The response:</p>
 <ul>
-<li><strong>Training:</strong> tens of thousands of GPUs for months (hundreds of millions of dollars)</li>
-<li><strong>Inference:</strong> massive serving infrastructure</li>
+<li><strong>Microsoft signed a deal to restart Three Mile Island</strong> (2024), buying nuclear power to fuel AI data centers.</li>
+<li><strong>Google partnered with Kairos Power</strong> to develop small modular reactors (SMRs) for data center power.</li>
+<li><strong>DeepSeek and others</strong> made efficiency a first-class design goal, proving that model architecture could dramatically reduce power consumption.</li>
 </ul>
-<p>The Stargate project (US, announced 2025) pledged $500B for AI infrastructure. The UK and Canada announced national compute initiatives. NAIRR (National AI Research Resource) provides academic access.</p>
-<h2 id="52-the-hardware-landscape"><a class="header" href="#52-the-hardware-landscape">5.2 The Hardware Landscape</a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Hardware</th><th>Strengths</th><th>Best For</th></tr>
-</thead>
-<tbody>
-<tr><td>NVIDIA H100/B200</td><td>General purpose, software ecosystem</td><td>Training + inference</td></tr>
-<tr><td>AMD MI350</td><td>Competitive performance, lower cost</td><td>Inference</td></tr>
-<tr><td>Google TPU v7</td><td>Custom for TensorFlow/JAX</td><td>Training</td></tr>
-<tr><td>AWS Trainium 3</td><td>AWS integration</td><td>Training</td></tr>
-<tr><td>ASIC accelerators</td><td>Task-specific efficiency</td><td>Inference</td></tr>
-<tr><td>Chiplet designs</td><td>Modular, scalable</td><td>Edge + data center</td></tr>
-<tr><td>Analog inference</td><td>Ultra-low power</td><td>Edge AI</td></tr>
-<tr><td>Quantum-assisted</td><td>Emerging</td><td>Optimization</td></tr>
-</tbody>
-</table>
-</div>
-<h2 id="53-the-efficiency-shift"><a class="header" href="#53-the-efficiency-shift">5.3 The Efficiency Shift</a></h2>
-<p>The dominant narrative for 2025–2026 is <strong>efficiency</strong>, not raw scale:</p>
+<p>The long-term solution remains unclear. AI’s energy appetite will not shrink. The infrastructure race of 2026 is as much about power generation as it is about chip fabrication.</p>
+<h2 id="56-the-efficiency-revolution"><a class="header" href="#56-the-efficiency-revolution">5.6 The Efficiency Revolution</a></h2>
+<p>The narrative shift from “scale” to “efficiency” defined 2025–2026. The key techniques:</p>
 <ul>
-<li>DeepSeek proved frontier performance at 10–20% of the cost</li>
-<li>MoE architectures reduce active parameters per token</li>
-<li>Quantization, distillation, pruning becoming standard</li>
-<li>Hardware-aware model design (co-optimization)</li>
+<li><strong>Mixture-of-Experts (MoE):</strong> Activating only a fraction of parameters per token. DeepSeek’s 1.2T-parameter model used 37B active — a 97% reduction in compute per token.</li>
+<li><strong>Quantization:</strong> FP16 training gave way to FP8, INT8, and even INT4 inference. Models ran 2-4× faster on the same hardware.</li>
+<li><strong>Distillation:</strong> Large teacher models trained smaller student models to match their performance. Microsoft’s Phi-3 (3.8B parameters) matched GPT-3.5 (175B) on several benchmarks.</li>
+<li><strong>Hardware-model co-optimization:</strong> DeepSeek’s architecture was designed around H800’s specific constraints. Google’s Gemini was optimized for TPU v7. The boundary between hardware and software design was dissolving.</li>
 </ul>
-<p><strong>Consequence:</strong> The “scaling is all you need” era is over. Now we optimize.</p>
-<h2 id="54-edge-ai"><a class="header" href="#54-edge-ai">5.4 Edge AI</a></h2>
-<p>In 2026, edge AI moves from hype to reality:</p>
-<ul>
-<li>On-device LLMs (Apple Intelligence, Samsung Galaxy AI)</li>
-<li>Specialized edge chips for agentic workloads</li>
-<li>Privacy-preserving local inference</li>
-</ul>
-<p><strong>Implication:</strong> AI capability will be ubiquitously available, not locked in data centers.</p>
-<h2 id="55-geopolitics-of-compute"><a class="header" href="#55-geopolitics-of-compute">5.5 Geopolitics of Compute</a></h2>
-<p>Compute access is now a national security concern:</p>
-<ul>
-<li>US export controls on advanced chips to China</li>
-<li>China’s domestically produced alternatives (Huawei Ascend)</li>
-<li>“Compute sovereignty” movements in Europe, India, Southeast Asia</li>
-<li>Open-source models as a workaround for compute-restricted regions</li>
-</ul>
+<h2 id="57-edge-ai-the-invisible-revolution"><a class="header" href="#57-edge-ai-the-invisible-revolution">5.7 Edge AI: The Invisible Revolution</a></h2>
+<p>By 2026, the smartest device in your pocket ran models that would have required a data center in 2022.</p>
+<p>Apple’s <strong>A18 Pro</strong> chip ran a 30B-parameter model on-device for summarization, writing, and image editing. Samsung’s Galaxy S27 processed 15B-parameter models locally. Qualcomm’s <strong>Snapdragon X Elite</strong> laptop chips ran full 7B-parameter LLMs. Apple Intelligence alone was processing over 1 billion on-device inference requests per day by late 2025.</p>
+<p>The implications: <strong>privacy</strong> (data never leaves the device), <strong>latency</strong> (milliseconds vs seconds), and <strong>universal access</strong> (anyone with a modern smartphone has frontier AI capabilities in their pocket).</p>
+<p>The fight for edge AI is now a fight between <strong>Apple</strong> (vertical integration, privacy narrative), <strong>Qualcomm</strong> (Android ecosystem dominance), and <strong>Samsung</strong> (scale, display-integrated AI).</p>
+<h2 id="58-the-geopolitics-of-compute"><a class="header" href="#58-the-geopolitics-of-compute">5.8 The Geopolitics of Compute</a></h2>
+<p>Compute has replaced oil as the most strategically contested resource.</p>
+<p>In October 2022, the US imposed its first export controls on advanced AI chips to China. By 2024, the restrictions had tightened twice — first to close loopholes, then to target key NVIDIA datacenter products. The intended effect: slowing China’s frontier model development.</p>
+<p>The unintended effect: accelerating China’s domestic chip industry. Huawei’s Ascend 910C and SMIC’s N+2 process node now supply a parallel AI infrastructure ecosystem. Chinese labs train on clusters of 50,000+ domestic chips — less powerful individually, but effective at scale.</p>
+<p>The “compute sovereignty” movement spread to Europe, India, and Southeast Asia. France committed €5 billion to AI compute. India’s “AI for All” initiative pledged 10,000 GPUs for public research. Japan’s Preferred Networks (PFN) built the MN-Core chip, designed specifically for Japanese AI needs.</p>
+<p>Open-source models became a geopolitical tool: regions restricted from importing the best hardware could still download the best models. LLaMA 5 and DeepSeek-R1 ran on whatever chips were available.</p>
+<p><strong>The defining tension of 2026:</strong> AI capability is compute-limited, and compute access is politically determined. The countries that control hardware will shape the future of intelligence — but efficiency breakthroughs are making the hardware advantage less absolute than it seemed in 2023.</p>
 
                     </main>
 
