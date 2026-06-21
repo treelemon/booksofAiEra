@@ -47,6 +47,25 @@
 # Part VII: Voices of the AI Era
 
 - [19 Key Figures Who Shaped the AI Revolution](part-voices/README.md)
+    - [Geoffrey Hinton](part-voices/voices/geoffrey-hinton.md)
+    - [Yoshua Bengio](part-voices/voices/yoshua-bengio.md)
+    - [Fei-Fei Li](part-voices/voices/feifei-li.md)
+    - [Yann LeCun](part-voices/voices/yann-lecun.md)
+    - [Andrew Ng](part-voices/voices/andrew-ng.md)
+    - [Ilya Sutskever](part-voices/voices/ilya-sutskever.md)
+    - [Sam Altman](part-voices/voices/sam-altman.md)
+    - [Dario Amodei](part-voices/voices/dario-amodei.md)
+    - [Demis Hassabis](part-voices/voices/demis-hassabis.md)
+    - [Elon Musk](part-voices/voices/elon-musk.md)
+    - [Mark Zuckerberg](part-voices/voices/mark-zuckerberg.md)
+    - [Satya Nadella](part-voices/voices/satya-nadella.md)
+    - [Sundar Pichai](part-voices/voices/sundar-pichai.md)
+    - [Jensen Huang](part-voices/voices/jensen-huang.md)
+    - [Kaifu Lee](part-voices/voices/kaifu-lee.md)
+    - [Eliezer Yudkowsky](part-voices/voices/eliezer-yudkowsky.md)
+    - [Max Tegmark](part-voices/voices/max-tegmark.md)
+    - [Nick Bostrom](part-voices/voices/nick-bostrom.md)
+    - [Aiden Gomez](part-voices/voices/aiden-gomez.md)
 
 # Appendices
 

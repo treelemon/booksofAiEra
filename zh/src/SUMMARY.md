@@ -47,6 +47,25 @@
 # 第七部分：人工智能时代的声音
 
 - [塑造 AI 革命的 19 位关键人物](part-voices/README.md)
+    - [Geoffrey Hinton](part-voices/voices/geoffrey-hinton.md)
+    - [Yoshua Bengio](part-voices/voices/yoshua-bengio.md)
+    - [李飞飞 (Fei-Fei Li)](part-voices/voices/feifei-li.md)
+    - [Yann LeCun](part-voices/voices/yann-lecun.md)
+    - [Andrew Ng](part-voices/voices/andrew-ng.md)
+    - [Ilya Sutskever](part-voices/voices/ilya-sutskever.md)
+    - [Sam Altman](part-voices/voices/sam-altman.md)
+    - [Dario Amodei](part-voices/voices/dario-amodei.md)
+    - [Demis Hassabis](part-voices/voices/demis-hassabis.md)
+    - [Elon Musk](part-voices/voices/elon-musk.md)
+    - [Mark Zuckerberg](part-voices/voices/mark-zuckerberg.md)
+    - [Satya Nadella](part-voices/voices/satya-nadella.md)
+    - [Sundar Pichai](part-voices/voices/sundar-pichai.md)
+    - [黄仁勋 (Jensen Huang)](part-voices/voices/jensen-huang.md)
+    - [李开复 (Kaifu Lee)](part-voices/voices/kaifu-lee.md)
+    - [Eliezer Yudkowsky](part-voices/voices/eliezer-yudkowsky.md)
+    - [Max Tegmark](part-voices/voices/max-tegmark.md)
+    - [Nick Bostrom](part-voices/voices/nick-bostrom.md)
+    - [Aiden Gomez](part-voices/voices/aiden-gomez.md)
 
 # 附录
 
