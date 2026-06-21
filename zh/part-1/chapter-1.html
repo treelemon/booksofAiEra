@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>人工智能的三次浪潮 - 智能时代：AI 时代的人本智慧</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="一本持续更新的 AI 时代实地指南——立足于「人本智用」：以人为本，智能为用。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-0392ca55.css">
+        <link rel="stylesheet" href="../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-bf74bb57.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cd4bc68e.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">智能时代：AI 时代的人本智慧</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/your-username/booksofAiEra" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/your-username/booksofAiEra/edit/main/zh/src/part-1/chapter-1.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第一章人工智能的三次浪潮"><a class="header" href="#第一章人工智能的三次浪潮">第一章：人工智能的三次浪潮</a></h1>
+<p><em>每一项技术都有它的创世神话。AI 的故事始于 1956 年夏天，达特茅斯学院的校园里，一小群人聚集在一起，想要建造一个神。</em></p>
+<hr>
+<h2 id="11-第一波符号-ai19562010"><a class="header" href="#11-第一波符号-ai19562010">1.1 第一波：符号 AI（1956–2010）</a></h2>
+<h3 id="大梦想的夏天"><a class="header" href="#大梦想的夏天">大梦想的夏天</a></h3>
+<p>1956 年 8 月，约翰·麦卡锡、马文·明斯基、克劳德·香农等七人齐聚达特茅斯，举行为期六周的工作坊。他们的提议是大胆的：</p>
+<blockquote>
+<p><em>“学习或任何其他智能特征的每一个方面，原则上都可以被精确描述，以至于机器可以被制造出来模拟它。”</em></p>
+</blockquote>
+<p>他们称之为“人工智能“。这个术语本身是战略性的选择——足够中性以避免控制论的污名，足够雄心勃勃以吸引资金。它奏效了。</p>
+<p>早期的成果令人振奋。1958 年，弗兰克·罗森布拉特在康奈尔大学构建了<strong>感知机</strong>——一个能够学习识别视觉模式的神经网络。《纽约时报》称其为“人脑的第一个真正竞争对手“。美国军方为“思维机器“研究投入了数百万美元。</p>
+<p>1966 年，MIT 的约瑟夫·魏森鲍姆创建了 <strong>ELIZA</strong>——一个模拟罗杰斯式心理治疗师的聊天机器人。令他震惊的是，人们把它当作真人来对待。他的秘书请求他离开房间，以便她可以和 ELIZA 私下交谈。魏森鲍姆成为了 AI 最早的批评者之一，警告人们会把模拟误认为是理解。</p>
+<h3 id="第一个冬天"><a class="header" href="#第一个冬天">第一个冬天</a></h3>
+<p>到 1970 年代初，承诺已经远远超出了现实。机器翻译是一场灾难——一个著名的例子将“the spirit is willing but the flesh is weak“翻译成俄语再翻译回来，变成了“伏特加很好，但肉坏了“。英国政府的莱特希尔报告（1973 年）是毁灭性的：AI 未能兑现其宏伟承诺。</p>
+<p>资金枯竭了。第一个 AI 寒冬开始了。</p>
+<h3 id="专家系统的繁荣"><a class="header" href="#专家系统的繁荣">专家系统的繁荣</a></h3>
+<p>1980 年代，该领域凭借<strong>专家系统</strong>迎来了第二春——这些程序将人类专业知识编码成数千条手工编写的规则。<strong>MYCIN</strong>（1976 年）在诊断血液感染方面与斯坦福医生水平相当。<strong>XCON</strong>（1980 年）每年为 DEC 节省 4000 万美元的计算机配置成本。</p>
+<p>日本政府启动了第五代计算机项目（1982 年），承诺投入数十亿美元构建革命性的 AI。美国也推出了相应的战略计算计划作为回应。</p>
+<h3 id="第二个更深的冬天"><a class="header" href="#第二个更深的冬天">第二个、更深的冬天</a></h3>
+<p>第五代项目失败了。专家系统被证明是脆弱的——它们在实验室中运行良好，但在真实世界的复杂性面前崩溃了。每条规则都需要手写。没有学习，没有适应，没有常识。</p>
+<p>到 1987 年，AI 硬件市场崩溃了。日本的第五代项目悄然废弃。第二个 AI 寒冬降临了——这一次如此寒冷，以至于研究者们开始重新命名他们的工作以避开“AI“的污名。它变成了“机器学习“。它变成了“数据科学“。它变成了“统计学“。</p>
+<p>一些最优秀的 AI 头脑在 1990 年代流离失所。</p>
+<h3 id="象棋的胜利以及一个教训"><a class="header" href="#象棋的胜利以及一个教训">象棋的胜利——以及一个教训</a></h3>
+<p>1997 年，IBM 的<strong>深蓝</strong>击败了世界冠军加里·卡斯帕罗夫。这成了头版新闻：“大脑的最后防线。“但深蓝在任何有意义的意义上都不是智能的。它使用暴力搜索和定制硬件每秒评估 2 亿个位置。它是一个天才——惊人地狭窄，没有学习能力，除了下棋之外毫无用处。</p>
+<p>公众被震撼了。AI 研究者们却忧心忡忡。如果暴力搜索是唯一路径，那我们就完全走错了路。</p>
+<p>第二次浪潮已经在酝酿之中，只是大多数人没有注意到。</p>
+<hr>
+<h2 id="12-第二波统计机器学习20102020"><a class="header" href="#12-第二波统计机器学习20102020">1.2 第二波：统计机器学习（2010–2020）</a></h2>
+<h3 id="改变一切的赌注"><a class="header" href="#改变一切的赌注">改变一切的赌注</a></h3>
+<p>2009 年，斯坦福大学教授<strong>李飞飞</strong>做出了一个决定：AI 需要看世界。她构建了 <strong>ImageNet</strong>——1400 万张标注图像，跨越 20000 个类别，通过亚马逊 Mechanical Turk 以巨大的努力完成。大多数研究者认为她在浪费时间。“我们的数据已经够多了，“他们对她说。</p>
+<p>2012 年，由<strong>亚历克斯·克里热夫斯基、伊利亚·苏茨克维和杰弗里·辛顿</strong>组成的团队带着一个名为 <strong>AlexNet</strong> 的深度神经网络参加了 ImageNet 竞赛。他们碾压了对手——错误率是 15.3%，而第二名是 26.2%。这不是改进，这是革命。</p>
+<p>关键的洞察：三个要素终于汇聚了。<strong>互联网</strong>提供了数据。<strong>NVIDIA GPU</strong> 提供了算力——辛顿在多伦多的一家电脑商店买了两块。而<strong>反向传播</strong>——几十年前发明的算法——终于有了足够的规模来发挥作用。</p>
+<h3 id="寒武纪大爆发"><a class="header" href="#寒武纪大爆发">寒武纪大爆发</a></h3>
+<p>大坝决堤了。接踵而至：</p>
+<ul>
+<li>
+<p><strong>2013 年：</strong> 谷歌的托马斯·米科洛夫发布了 <strong>Word2vec</strong>，展示了单词可以被表示为向量，且具有惊人的语义属性。“国王 - 男人 + 女人 = 女王。“机器从统计中学会了意义。</p>
+</li>
+<li>
+<p><strong>2014 年：</strong> <strong>生成对抗网络（GAN）</strong> 诞生于一场酒吧赌局。当时还是博士生的伊恩·古德费洛与朋友争论一个网络是否可以生成逼真的图像。他回到家，当晚写好了代码，成功了。杨·勒丘恩称其为“过去 20 年里 AI 最重要的想法。“</p>
+</li>
+<li>
+<p><strong>2016 年：</strong> <strong>AlphaGo</strong> 击败了李世石——世界上最伟大的围棋棋手。第二局比赛产生了<strong>第 37 手</strong>——一着如此出人意料的棋，最初被认为是一个错误。它不是。AI 第一次做了某种<em>有创造力</em>的事情，某种人类不会做的事情。李世石称之为“美的“。</p>
+</li>
+<li>
+<p><strong>2018 年：</strong> <strong>BERT</strong>（谷歌）改变了自然语言理解。它能够回答问题、分析情感和理解上下文——不是完美的，但达到了前所未有的水平。</p>
+</li>
+</ul>
+<h3 id="第二波做不到的事"><a class="header" href="#第二波做不到的事">第二波做不到的事</a></h3>
+<p>尽管取得了诸多成就，这一波有一个根本缺陷：<strong>狭窄性</strong>。你训练一个单独的模型来做翻译，一个单独的模型来做图像识别，一个单独的模型来做问答。没有迁移能力。没有常识。没有推理。</p>
+<p>每一个模型都是聪明的白痴天才。</p>
+<p>“AI“这个说法在很大程度上仍然具有误导性。人们称之为 AI 的东西实际上是一组专门的模式匹配器，每一个在其训练领域之外都毫无用处。</p>
+<p>但第三波已经在地平线上显现了。</p>
+<hr>
+<h2 id="13-第三波基础模型2020-至今"><a class="header" href="#13-第三波基础模型2020-至今">1.3 第三波：基础模型（2020 至今）</a></h2>
+<h3 id="扩展的启示"><a class="header" href="#扩展的启示">扩展的启示</a></h3>
+<p>2020 年，OpenAI 发布了 <strong>GPT-3</strong>——1750 亿个参数，在大部分公开互联网上训练。它能写诗、回答问题、生成代码、翻译语言，以及做其创造者从未预料到的事情。</p>
+<p>关键的发现是<strong>上下文学习</strong>：GPT-3 可以从提示中的几个示例中学习执行新任务，而无需任何权重更新。没有人设计过这种能力。它是从规模中<em>涌现</em>出来的。</p>
+<p>Kaplan 等人（2020 年）发表了缩放定律：随着参数量、数据量和算力的增加，模型性能遵循可预测的幂律。其含义令人屏息：<strong>视野中看不到天花板。</strong></p>
+<h3 id="生成式大爆发"><a class="header" href="#生成式大爆发">生成式大爆发</a></h3>
+<ul>
+<li><strong>2021 年：</strong> OpenAI 的 <strong>DALL-E</strong> 从文本描述生成图像。AI 第一次可以从想象中创造视觉艺术。</li>
+<li><strong>2022 年：</strong> <strong>ChatGPT</strong> 在两个月内达到 1 亿用户——历史上最快的普及速度。AI 在一夜之间从研究新奇事物变成了主流实用工具。</li>
+<li><strong>2023 年：</strong> <strong>GPT-4</strong> 通过了律师资格考试（得分在 90 百分位）、SAT 和多项 AP 考试。微软的萨提亚·纳德拉称其为“与 PC、网络和智能手机同等重要的平台转型。“</li>
+</ul>
+<h3 id="伟大的开源起义"><a class="header" href="#伟大的开源起义">伟大的开源起义</a></h3>
+<p>2023 年 2 月，Meta 以非商业许可证向研究者发布了 <strong>Llama</strong>。几周之内，模型被泄露给了公众。一个全球生态系统爆发了：微调变体、在笔记本电脑上运行的量化版本、针对医学、法律、编程的专门模型。</p>
+<p>DeepSeek 的 <strong>R1</strong>（2025 年 1 月）证明了前沿级推理能力可以以闭源模型 10–20% 的成本实现。开源与闭源之间的差距崩溃了。</p>
+<h3 id="推理的突破"><a class="header" href="#推理的突破">推理的突破</a></h3>
+<p>2024 年，OpenAI 发布了 <strong>o1</strong>——第一个推理模型。它不再立即回答，而是生成内部思维链，探索多个分支，回溯，验证其结论。这种“测试时计算“的扩展开辟了新的改进维度。</p>
+<p>到 2025 年，<strong>o3</strong>、<strong>DeepSeek R1</strong> 和 <strong>Claude 推理</strong>已使测试时思考成为标准。在 SWE-bench（衡量真实世界软件工程的编程基准）上，AI 在两年内从 33% 提升到了 97%。</p>
+<h3 id="智能体转向"><a class="header" href="#智能体转向">智能体转向</a></h3>
+<p>2025–2026 年标志着一个新阶段：AI 不仅仅做出回应，而是<strong>行动</strong>。自主智能体能够规划、使用工具、执行代码，并在长时间任务中持续运作。OSWorld 任务成功率在一年内从 12% 跃升至 66%。</p>
+<p>我们仍处于这一浪潮的早期阶段。</p>
+<hr>
+<h2 id="关键要点故事脉络"><a class="header" href="#关键要点故事脉络">关键要点——故事脉络</a></h2>
+<p>三次浪潮，每一次都建立在之前的基础上：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>浪潮</th><th>核心理念</th><th>巅峰</th><th>失败模式</th></tr>
+</thead>
+<tbody>
+<tr><td>符号 AI</td><td>手工编码规则</td><td>专家系统（1980 年代）</td><td>脆弱性——规则无法扩展</td></tr>
+<tr><td>统计机器学习</td><td>从数据中学习模式</td><td>深度学习（2010 年代）</td><td>狭窄性——每个模型解决一个任务</td></tr>
+<tr><td>基础模型</td><td>大规模预训练</td><td>GPT-4 + 推理（2024–2025）</td><td>真实性、对齐、控制</td></tr>
+</tbody>
+</table>
+</div>
+<p>钟摆从<strong>规则</strong>摆向<strong>统计</strong>，再摆向<strong>规模</strong>。每一次浪潮在其当下都看似不可逾越，然后又崩塌成下一波的种子。</p>
+<p><strong>这段历史教会我们的：</strong></p>
+<ul>
+<li>今天 AI 的每一个明显局限，都是未来等待发生的突破</li>
+<li>人类倾向于高估 AI 短期能做的事，低估长期能做的事——我们已经这样做了三次</li>
+<li>下一波最重要的能力，将是我们没有明确设计的能力</li>
+</ul>
+<p>最危险的错误不是认为 AI 太强大。而是认为 AI“只是一个模式匹配器“——却没有意识到，在足够的规模下，模式匹配开始看起来很像理解。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-voices/voices/aiden-gomez.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-1/chapter-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-voices/voices/aiden-gomez.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-1/chapter-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

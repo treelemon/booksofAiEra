@@ -1,0 +1,2910 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>智能时代：AI 时代的人本智慧</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="一本持续更新的 AI 时代实地指南——立足于「人本智用」：以人为本，智能为用。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-bf74bb57.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cd4bc68e.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">智能时代：AI 时代的人本智慧</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/your-username/booksofAiEra" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="前言"><a class="header" href="#前言">前言</a></h1>
+<p><em>这本书为什么存在，以及为什么是现在。</em></p>
+<p>我是在 [年份] 年开始认真关注 AI 的。那时，[关于早期接触 AI 的个人经历]。我当时并未意识到，自己正在目睹一场地壳变迁的早期震颤。</p>
+<p>这本书被一个信念贯穿始终——<strong>人本智用</strong>：以人为本，智能为用。</p>
+<p>AI 时代会给你两种诱惑：把机器当作先知来崇拜，或者把它们当作玩具来轻视。两者都偏离了方向。真相更简单、更深刻：<strong>你本就拥有最重要的东西。</strong> 你的判断力、你的价值观、你的人生经验——它们没有过时。它们是根基。AI 是工具、是伙伴、是镜子。它折射和放大人的智慧，但不会取代它。</p>
+<p>这本书是我多年来观察、构建和思考人工智能的成果。它不是预测——这个领域的预测转瞬即逝。它是一个框架：一套思维模型、历史背景和技术理解，让你能够在未来无论发生什么都能从容应对——以你自己的智慧作为指南针。</p>
+<p>我以活文档的形式写作这本书，因为 AI 不会停滞不前。随着格局的变化，每一个章节都会更新。我的目标是让它成为理解 AI 时代的最佳资源——不是一本静态的参考书，而是一份持续更新的实地指南。</p>
+<p>如果你正在读这本书，你可能已经感受到了加速。让我们一起理解它。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="引言"><a class="header" href="#引言">引言</a></h1>
+<blockquote>
+<p><strong>宗：人本智用</strong>
+<em>以人为本，智能为用。本书的灵魂：每个人本就拥有最重要的东西——人的判断、人的价值、人的智慧。AI 是镜子，不是主人。</em></p>
+</blockquote>
+<h2 id="2026-年的时刻"><a class="header" href="#2026-年的时刻">2026 年的时刻</a></h2>
+<p>截至 2026 年中，我们正经历一个前所未有的转折点：</p>
+<ul>
+<li><strong>88%</strong> 的组织已采用 AI。</li>
+<li><strong>53%</strong> 的人口使用生成式 AI——普及速度超过 PC 或互联网。</li>
+<li>前沿模型在国际数学奥林匹克竞赛中获得金牌，<strong>却</strong>有半数时间无法正确读取模拟时钟。</li>
+<li>美中模型性能差距已基本<strong>消失</strong>（2.7%）。</li>
+<li>AI 智能体在真实计算机任务上的成功率在一年内从 12% 跃升至 66%。</li>
+<li>免费 GenAI 工具对美国消费者的年估值：<strong>1720 亿美元</strong>。</li>
+</ul>
+<p>这就是“锯齿形前沿“——AI 同时具备超人类和亚人类的能力，在某些任务上卓越、在某些任务上脆弱，其模式难以简单概括。理解这种锯齿状特性是 AI 时代的核心挑战。</p>
+<p>这本书基于一个信念：<strong>最智能的系统不是 AI 单独构成的，也不是人类单独构成的——而是两者共同思考。</strong> 接下来的章节不仅关乎理解 AI。它们关乎在 AI 的映照下理解你自己——你的判断力、你的价值观、你不可替代的人性。</p>
+<p>本书分为六个部分：</p>
+<ol>
+<li><strong>基础</strong>——技术与历史的基石</li>
+<li><strong>2026 年全景</strong>——我们今天所处的位置</li>
+<li><strong>关键趋势</strong>——塑造明天的力量</li>
+<li><strong>影响</strong>——AI 如何重塑工作、科学、创意和社会</li>
+<li><strong>前沿</strong>——AGI、风险与人类身份</li>
+<li><strong>成为 AI 专家</strong>——如何培养稀有而持久的判断力</li>
+</ol>
+<p>让我们开始吧。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="人工智能时代的声音"><a class="header" href="#人工智能时代的声音">人工智能时代的声音</a></h1>
+<p><em>塑造 AI 革命的关键人物——他们的背景、决定性时刻和最重要的公开言论。</em></p>
+<p>本节是一份活参考。每个条目记录了 AI 时代的一位重要人物：他们的角色、贡献和他们的原话——来自主题演讲、访谈、证词和文章。随着格局的演变，新的人物和更新的引文会不断添加。</p>
+<hr>
+<h2 id="创始人--ceo"><a class="header" href="#创始人--ceo">创始人 &amp; CEO</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>#</th><th>姓名</th><th>角色</th><th>章节</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>山姆·奥尔特曼</td><td>OpenAI CEO</td><td><a href="#山姆奥尔特曼">阅读</a></td></tr>
+<tr><td>2</td><td>德米斯·哈萨比斯</td><td>Google DeepMind CEO</td><td><a href="#德米斯哈萨比斯">阅读</a></td></tr>
+<tr><td>3</td><td>达里奥·阿莫代</td><td>Anthropic CEO</td><td><a href="#达里奥阿莫代">阅读</a></td></tr>
+<tr><td>4</td><td>埃隆·马斯克</td><td>xAI / Tesla CEO</td><td><a href="#埃隆马斯克">阅读</a></td></tr>
+<tr><td>5</td><td>黄仁勋</td><td>NVIDIA CEO</td><td><a href="#黄仁勋">阅读</a></td></tr>
+<tr><td>6</td><td>萨提亚·纳德拉</td><td>Microsoft CEO</td><td><a href="#萨提亚纳德拉">阅读</a></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="科学家--研究者"><a class="header" href="#科学家--研究者">科学家 &amp; 研究者</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>#</th><th>姓名</th><th>角色</th><th>章节</th></tr>
+</thead>
+<tbody>
+<tr><td>7</td><td>杰弗里·辛顿</td><td>“AI 之父”</td><td><a href="#杰弗里辛顿">阅读</a></td></tr>
+<tr><td>8</td><td>扬·勒丘恩</td><td>Meta 首席 AI 科学家</td><td><a href="#扬勒丘恩">阅读</a></td></tr>
+<tr><td>9</td><td>约书亚·本吉奥</td><td>Mila 创始人，AI 安全</td><td><a href="#约书亚本吉奥">阅读</a></td></tr>
+<tr><td>10</td><td>李飞飞</td><td>Stanford HAI 联合主任</td><td><a href="#李飞飞">阅读</a></td></tr>
+<tr><td>11</td><td>吴恩达</td><td>DeepLearning.AI 创始人</td><td><a href="#吴恩达">阅读</a></td></tr>
+<tr><td>12</td><td>伊利亚·苏茨克维</td><td>Safe Superintelligence 联合创始人</td><td><a href="#伊利亚苏茨克维">阅读</a></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="哲学家--批评者"><a class="header" href="#哲学家--批评者">哲学家 &amp; 批评者</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>#</th><th>姓名</th><th>角色</th><th>章节</th></tr>
+</thead>
+<tbody>
+<tr><td>13</td><td>埃利泽·尤德科夫斯基</td><td>MIRI，AI 对齐理论家</td><td><a href="#埃利泽尤德科夫斯基">阅读</a></td></tr>
+<tr><td>14</td><td>尼克·博斯特罗姆</td><td>哲学家，《超级智能》作者</td><td><a href="#尼克博斯特罗姆">阅读</a></td></tr>
+<tr><td>15</td><td>马克斯·泰格马克</td><td>物理学家，FLI</td><td><a href="#马克斯泰格马克">阅读</a></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="建设者--战略家"><a class="header" href="#建设者--战略家">建设者 &amp; 战略家</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>#</th><th>姓名</th><th>角色</th><th>章节</th></tr>
+</thead>
+<tbody>
+<tr><td>16</td><td>李开复</td><td>创新工场 CEO</td><td><a href="#李开复">阅读</a></td></tr>
+<tr><td>17</td><td>马克·扎克伯格</td><td>Meta CEO</td><td><a href="#马克扎克伯格">阅读</a></td></tr>
+<tr><td>18</td><td>桑达尔·皮查伊</td><td>Google/Alphabet CEO</td><td><a href="#桑达尔皮查伊">阅读</a></td></tr>
+<tr><td>19</td><td>艾登·戈麦斯</td><td>Cohere CEO</td><td><a href="#艾登戈麦斯">阅读</a></td></tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p><strong>注意：</strong> 此列表既非详尽也非固定。新的人物将在他们出现时添加。如果你发现重要人物缺失，请发起 issue 建议添加。</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="山姆奥尔特曼"><a class="header" href="#山姆奥尔特曼">山姆·奥尔特曼</a></h1>
+<p><strong>角色：</strong> OpenAI CEO
+<strong>活跃期：</strong> 2015 年至今
+<strong>关键贡献：</strong> 领导 OpenAI 从非营利研究实验室成为全球最有价值的 AI 公司；推出 ChatGPT、GPT-4、DALL-E、推理模型</p>
+<h2 id="背景"><a class="header" href="#背景">背景</a></h2>
+<p>奥尔特曼在加入 OpenAI 担任 CEO 之前是 Y Combinator 的总裁。在他的领导下，OpenAI 从非营利组织转变为利润上限公司，并成为生成式 AI 繁荣的决定性企业。</p>
+<h2 id="关键引文"><a class="header" href="#关键引文">关键引文</a></h2>
+<p><strong>关于 AI 作为基础设施（2023）：</strong></p>
+<blockquote>
+<p>“AI 将成为人类有史以来创造的最强大的技术。它会像晶体管一样——成为几乎一切事情的基础。”</p>
+</blockquote>
+<p><strong>关于进展速度（2024）：</strong></p>
+<blockquote>
+<p>“我认为人们低估了这一切发生的速度。能力的提升比大多数人意识到的要快得多。”</p>
+</blockquote>
+<p><strong>关于 AGI 时间线（2025）：</strong></p>
+<blockquote>
+<p>“我认为我们很快就会有系统能够在广泛意义上完成人类能做的任何认知工作，可能比大多数人预期的要快。社会调整才是更困难的部分。”</p>
+</blockquote>
+<p><strong>关于安全（2023，参议院证词）：</strong></p>
+<blockquote>
+<p>“如果这项技术出错，它可能会相当糟糕。我们试图非常清醒地认识到这一点。我们需要监管干预来确保安全。”</p>
+</blockquote>
+<p><strong>关于开源（2025，发布开放模型后）：</strong></p>
+<blockquote>
+<p>“我们已经认识到，当开放和封闭相结合时，生态系统会更健康。世界需要两种方法。”</p>
+</blockquote>
+<h2 id="重要演讲与出席"><a class="header" href="#重要演讲与出席">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2023 年 5 月</td><td>美国参议院司法委员会</td><td>AI 监督与监管</td></tr>
+<tr><td>2023 年 11 月</td><td>OpenAI DevDay</td><td>GPT-4 Turbo、GPTs、Assistants API</td></tr>
+<tr><td>2025 年 1 月</td><td>世界经济论坛，达沃斯</td><td>AGI 时间线与经济影响</td></tr>
+<tr><td>2025 年 5 月</td><td>OpenAI DevDay 2025</td><td>推理模型、智能体、开放模型发布</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="德米斯哈萨比斯"><a class="header" href="#德米斯哈萨比斯">德米斯·哈萨比斯</a></h1>
+<p><strong>角色：</strong> Google DeepMind CEO
+<strong>活跃期：</strong> 2010 年至今
+<strong>关键贡献：</strong> 联合创立 DeepMind；领导 AlphaGo、AlphaFold、AlphaEvolve；AI 科学发现先驱</p>
+<h2 id="背景-1"><a class="header" href="#背景-1">背景</a></h2>
+<p>哈萨比斯曾是国际象棋神童和游戏设计师，2010 年联合创立 DeepMind，使命是“解决智能问题“。Google 于 2014 年收购 DeepMind。在他的领导下，DeepMind 在游戏（AlphaGo）、生物学（AlphaFold）和算法发现（AlphaEvolve）方面取得了里程碑式的成果。</p>
+<h2 id="关键引文-1"><a class="header" href="#关键引文-1">关键引文</a></h2>
+<p><strong>关于使命（2017）：</strong></p>
+<blockquote>
+<p>“我们想要解决智能问题，然后用它来解决其他一切问题。”</p>
+</blockquote>
+<p><strong>关于 AlphaFold（2021）：</strong></p>
+<blockquote>
+<p>“这是 AI 对科学进步做出的最重要的贡献。这是我无比自豪的突破。”</p>
+</blockquote>
+<p><strong>关于 AGI 预期（2024）：</strong></p>
+<blockquote>
+<p>“过去几年的进步是显著的。但我们仍然缺失一些关键部分。我认为我们走在正确的道路上，但前方确实有艰难的工作。”</p>
+</blockquote>
+<p><strong>关于与 Google Brain 合并（2023）：</strong></p>
+<blockquote>
+<p>“将 Google Brain 和 DeepMind 整合到 Google DeepMind 的旗下，将加速我们迈向 AGI 的进程，并构建更强大、更负责任的 AI 系统。”</p>
+</blockquote>
+<p><strong>关于 AI 发现（2025，AlphaEvolve 之后）：</strong></p>
+<blockquote>
+<p>“我们正在从能够感知和预测的 AI 转向能够创造和发现的 AI。这是 AI 加速科学的新时代的开始。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-1"><a class="header" href="#重要演讲与出席-1">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2020 年 12 月</td><td>NeurIPS</td><td>AlphaFold 主题演讲</td></tr>
+<tr><td>2023 年 4 月</td><td>TED</td><td>AI 如何加速科学发现</td></tr>
+<tr><td>2023 年 12 月</td><td>MIT A Lab</td><td>通往 AGI 之路</td></tr>
+<tr><td>2025 年 5 月</td><td>Google I/O</td><td>AlphaEvolve 与 AI 研究的未来</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="达里奥阿莫代"><a class="header" href="#达里奥阿莫代">达里奥·阿莫代</a></h1>
+<p><strong>角色：</strong> Anthropic CEO
+<strong>活跃期：</strong> 2021 年至今
+<strong>关键贡献：</strong> 离开 OpenAI 后创立 Anthropic；开创宪法 AI；将安全作为首要原则构建 Claude 模型家族</p>
+<h2 id="背景-2"><a class="header" href="#背景-2">背景</a></h2>
+<p>阿莫代在离开 OpenAI 之前担任研究副总裁，于 2021 年与一群前 OpenAI 研究员共同创立了 Anthropic。其使命：通过严格的对齐研究构建安全、有能力的 AI 系统。Claude 已成为领先的前沿模型家族之一，以其安全性和可靠性著称。</p>
+<h2 id="关键引文-2"><a class="header" href="#关键引文-2">关键引文</a></h2>
+<p><strong>关于为何离开 OpenAI 创立 Anthropic（2023）：</strong></p>
+<blockquote>
+<p>“AI 未来最重要的事情是解决安全问题。从第一天起就围绕这一使命建立新公司是实现这一目标的最佳方式。”</p>
+</blockquote>
+<p><strong>关于宪法 AI（2023）：</strong></p>
+<blockquote>
+<p>“我们不希望仅仅依赖人类反馈，我们希望模型拥有内部宪法——一套用于评估自身输出的原则。这更具可扩展性和原则性。”</p>
+</blockquote>
+<p><strong>关于利害关系（2024）：</strong></p>
+<blockquote>
+<p>“我认为在大多数领域，AI 系统在十年内有可能比人类更有能力。在此之前解决对齐问题是我们这个时代最重要的技术挑战。”</p>
+</blockquote>
+<p><strong>关于 Claude 的方法（2025）：</strong></p>
+<blockquote>
+<p>“我们构建 Claude 的目的是使其有用、诚实且无害。不是因为这是最容易做的事情，而是因为我们认为 AI 本就应如此。没有安全的能力不是产品——而是负担。”</p>
+</blockquote>
+<p><strong>关于竞争推动安全风险（2025）：</strong></p>
+<blockquote>
+<p>“发布更有能力系统的竞争压力自然会促使安全方面偷工减料。我们需要结构性解决方案——监管、标准、独立审计——来抵消这种压力。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-2"><a class="header" href="#重要演讲与出席-2">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2023 年 5 月</td><td>美国参议院司法委员会</td><td>AI 安全与监管</td></tr>
+<tr><td>2023 年 7 月</td><td>Anthropic 宪法 AI 发布</td><td>原则性 AI 的理由</td></tr>
+<tr><td>2024 年 12 月</td><td>NeurIPS</td><td>对齐研究路线图</td></tr>
+<tr><td>2026 年 1 月</td><td>达沃斯</td><td>负责任的扩展与前沿 AI</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="埃隆马斯克"><a class="header" href="#埃隆马斯克">埃隆·马斯克</a></h1>
+<p><strong>角色：</strong> xAI / Tesla / SpaceX CEO
+<strong>活跃期：</strong> 2015 年至今（xAI：2023 年至今）
+<strong>关键贡献：</strong> 联合创立 OpenAI（2015 年，2018 年退出）；创立 xAI（2023 年，Grok）；推动 AI 在自动驾驶和机器人领域的应用</p>
+<h2 id="背景-3"><a class="header" href="#背景-3">背景</a></h2>
+<p>马斯克从一开始就是 AI 领域的核心且有争议的人物。他联合创立 OpenAI 作为 Google 在 AI 领域的制衡力量，因方向分歧退出，后来创立 xAI 以构建他所说的“最大程度追求真相的 AI“。他对 AI 风险的评论在存在性警告和积极加速之间摇摆。</p>
+<h2 id="关键引文-3"><a class="header" href="#关键引文-3">关键引文</a></h2>
+<p><strong>关于 AI 作为存在性风险（2014）：</strong></p>
+<blockquote>
+<p>“我们必须非常小心人工智能。我认为我们需要主动进行监管，而不是被动应对。等到被动应对时，就已经太晚了。”</p>
+</blockquote>
+<p><strong>关于离开 OpenAI（2023）：</strong></p>
+<blockquote>
+<p>“我最初创建 OpenAI 是一个开源的非营利组织。现在它是一个闭源的营利性组织。这不是我的本意。”</p>
+</blockquote>
+<p><strong>关于创立 xAI（2023）：</strong></p>
+<blockquote>
+<p>“xAI 的目标是理解宇宙的真实本质。我们希望构建一个最大程度好奇和追求真相的 AI。”</p>
+</blockquote>
+<p><strong>关于 AGI 时间线（2024）：</strong></p>
+<blockquote>
+<p>“我认为我们可能在 2026 或 2027 年拥有 AGI。这听起来可能乐观，但改进的速度实在惊人。”</p>
+</blockquote>
+<p><strong>关于自动驾驶（2025）：</strong></p>
+<blockquote>
+<p>“完全自动驾驶终于成为现实。神经网络现在的驾驶能力超过人类。今年，特斯拉的自动驾驶里程将超过所有其他车辆的总和。”</p>
+</blockquote>
+<p><strong>关于竞争（2025，Grok vs ChatGPT）：</strong></p>
+<blockquote>
+<p>“Grok 旨在回答其他 AI 模型不敢碰的尖锐问题。它应该对人类有帮助，而不是政治正确。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-3"><a class="header" href="#重要演讲与出席-3">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2023 年 11 月</td><td>xAI 发布活动</td><td>Grok 与 xAI 的使命</td></tr>
+<tr><td>2024 年 1 月</td><td>X Spaces 与 Rishi Sunak</td><td>布莱切利峰会后的 AI 安全</td></tr>
+<tr><td>2024 年 10 月</td><td>Tesla AI Day</td><td>Optimus 机器人、FSD、Dojo</td></tr>
+<tr><td>2025 年 12 月</td><td>xAI 更新</td><td>Grok 3、推理、实时知识</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="黄仁勋"><a class="header" href="#黄仁勋">黄仁勋</a></h1>
+<p><strong>角色：</strong> NVIDIA 创始人兼 CEO
+<strong>活跃期：</strong> 1993 年至今
+<strong>关键贡献：</strong> 构建了驱动现代 AI 的硬件；将 NVIDIA 从图形公司转变为全球最有价值的 AI 基础设施供应商</p>
+<h2 id="背景-4"><a class="header" href="#背景-4">背景</a></h2>
+<p>黄仁勋于 1993 年共同创立了 NVIDIA。该公司的 GPU 被证明是神经网络训练的理想选择，CUDA（2006 年）的推出使得可编程 GPU 计算成为可能。到 2024 年，随着其硬件成为 AI 热潮中的“镐和铲子“，NVIDIA 的市值超过了 3 万亿美元。黄仁勋的年度 GTC 主题演讲已成为 AI 硬件日历上最重要的活动。</p>
+<h2 id="关键引文-4"><a class="header" href="#关键引文-4">关键引文</a></h2>
+<p><strong>关于 iPhone 时刻（2023）：</strong></p>
+<blockquote>
+<p>“ChatGPT 是 AI 的 iPhone 时刻。这是第一次 AI 以一种真正有用和可访问的方式进入每个人的手中。”</p>
+</blockquote>
+<p><strong>关于新的工业革命（2024）：</strong></p>
+<blockquote>
+<p>“我们正处于一场新的工业革命的开始。这不仅仅是关于更好的聊天机器人。这是关于万物的数字化——每一家工厂、每一条供应链、每一个行业都将被改变。”</p>
+</blockquote>
+<p><strong>关于摩尔定律与 AI（2024）：</strong></p>
+<blockquote>
+<p>“摩尔定律已经死了。但 AI 的改进速度远远超过了摩尔定律。我们每年都在将芯片能力翻倍，我们将继续这样做。”</p>
+</blockquote>
+<p><strong>关于软件被 AI 吞噬（2025）：</strong></p>
+<blockquote>
+<p>“传统的编写软件方式已经结束。我们现在处于 AI 驱动的软件时代。每一个应用都将融入智能。下一个万亿美元的公司将是一家 AI 公司。”</p>
+</blockquote>
+<p><strong>关于需求的持久性（2025）：</strong></p>
+<blockquote>
+<p>“对我们 GPU 的需求不仅仅来自训练。推理将是巨大的。每次你使用 AI 时，你都在使用 GPU。这种需求将持续增长多年。”</p>
+</blockquote>
+<p><strong>关于 AGI（2026）：</strong></p>
+<blockquote>
+<p>“在接下来的五年内，我们将看到能够通过人类任何测试的系统。问题不是是否会发生，而是何时。我们现在就在为那个世界建设基础设施。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-4"><a class="header" href="#重要演讲与出席-4">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2016 年 3 月</td><td>GTC</td><td>GPU 计算主题演讲</td></tr>
+<tr><td>2023 年 3 月</td><td>GTC</td><td>“AI 的 iPhone 时刻”</td></tr>
+<tr><td>2024 年 3 月</td><td>GTC</td><td>Blackwell 架构、下一代 GPU</td></tr>
+<tr><td>2025 年 3 月</td><td>GTC</td><td>Rubin 架构、AI 工厂</td></tr>
+<tr><td>2026 年 3 月</td><td>GTC</td><td>行星规模的 AI 基础设施</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="萨提亚纳德拉"><a class="header" href="#萨提亚纳德拉">萨提亚·纳德拉</a></h1>
+<p><strong>角色：</strong> Microsoft CEO
+<strong>活跃期：</strong> 2014 年至今
+<strong>关键贡献：</strong> 围绕 AI 重塑微软；主导对 OpenAI 的数十亿美元投资；将 AI 集成到 Azure、Office、Windows 和 Bing</p>
+<h2 id="背景-5"><a class="header" href="#背景-5">背景</a></h2>
+<p>纳德拉于 2014 年成为微软 CEO，将公司从“Windows 优先“转向“云优先“。他深度投资 OpenAI（从 2019 年的 10 亿美元开始，扩大到超过 130 亿美元），使微软站在了 AI 革命的核心。在他的领导下，微软在所有产品中推出了 Copilot，并成为 OpenAI 的主要云提供商。</p>
+<h2 id="关键引文-5"><a class="header" href="#关键引文-5">关键引文</a></h2>
+<p><strong>关于 AI 平台转型（2023）：</strong></p>
+<blockquote>
+<p>“这是一次平台转型。它和 PC、互联网、智能手机一样重要。它将改变人们工作、创造和互动的方式。”</p>
+</blockquote>
+<p><strong>关于 OpenAI 合作伙伴关系（2023）：</strong></p>
+<blockquote>
+<p>“我们有一种非常深厚的合作关系，建立在信任和共同使命的基础上。我们不仅仅是投资者——我们是一起建设的。”</p>
+</blockquote>
+<p><strong>关于 AI 民主化（2024）：</strong></p>
+<blockquote>
+<p>“我们的目标是将 AI 交到地球上的每一个人和每一个组织手中。不仅仅是财富 500 强，还有每一个小企业、每一个非营利组织、每一个学生。”</p>
+</blockquote>
+<p><strong>关于 AI 对工作的影响（2024）：</strong></p>
+<blockquote>
+<p>“Copilot 不是为了取代人。而是为了让人从枯燥的工作中解放出来，专注于他们最擅长的事情：创造力、协作和复杂问题解决。”</p>
+</blockquote>
+<p><strong>关于负责任 AI（2025）：</strong></p>
+<blockquote>
+<p>“我们有责任构建安全、可靠和值得信赖的 AI。这意味着投资安全研究、建立护栏，并与政策制定者合作。”</p>
+</blockquote>
+<p><strong>关于 AI 智能体（2026）：</strong></p>
+<blockquote>
+<p>“智能体将是下一个大事件。它们不仅仅响应提示——它们代表你行动。这是从副驾驶到自主辅助的根本转变。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-5"><a class="header" href="#重要演讲与出席-5">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2023 年 1 月</td><td>Microsoft AI 主题演讲</td><td>AI 与新 Bing</td></tr>
+<tr><td>2023 年 11 月</td><td>Microsoft Ignite</td><td>全面覆盖的 Copilot</td></tr>
+<tr><td>2024 年 5 月</td><td>Microsoft Build</td><td>Copilot+ PC、AI 智能体</td></tr>
+<tr><td>2025 年 1 月</td><td>世界经济论坛</td><td>AI 与经济增长</td></tr>
+<tr><td>2026 年 5 月</td><td>Microsoft Build</td><td>下一代 AI 平台</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="杰弗里辛顿"><a class="header" href="#杰弗里辛顿">杰弗里·辛顿</a></h1>
+<p><strong>角色：</strong> 多伦多大学名誉教授；“深度学习之父”
+<strong>活跃期：</strong> 1970 年代至今
+<strong>关键贡献：</strong> 开创反向传播、深度信念网络和现代深度学习；2018 年图灵奖得主；在 Google Brain 工作十年后于 2023 年离开，以自由谈论 AI 风险</p>
+<h2 id="背景-6"><a class="header" href="#背景-6">背景</a></h2>
+<p>辛顿被称为“深度学习之父“。他 1986 年的反向传播论文是现代 AI 的基础。他在 Google 工作了 10 年（2013–2023），之后离开以公开警告 AI 的风险——这一举动成为全球头条新闻。他从乐观者到警告者的转变是 AI 公共话语领域最重要的转变之一。</p>
+<h2 id="关键引文-6"><a class="header" href="#关键引文-6">关键引文</a></h2>
+<p><strong>关于反向传播（1986）：</strong></p>
+<blockquote>
+<p>“我们发现了一种让神经网络学习的简单方法。我们不知道它会发展成这样。”</p>
+</blockquote>
+<p><strong>关于深度学习的胜利（2015）：</strong></p>
+<blockquote>
+<p>“我认为深度学习将能够做几乎任何事情。我们要登月了。”</p>
+</blockquote>
+<p><strong>关于离开 Google 警告世界（2023）：</strong></p>
+<blockquote>
+<p>“我想在不担心对 Google 的影响的情况下谈论 AI 安全。我想能够说出’我认为我们不应该再扩展了’，而不必担心我的雇主。”</p>
+</blockquote>
+<p><strong>关于存在性风险（2023）：</strong></p>
+<blockquote>
+<p>“很难看到如何防止恶意行为者将 AI 用于坏事。认为这项技术会因为我们需要停止开发它而不再危险——这不现实。精灵已经出了瓶子。”</p>
+</blockquote>
+<p><strong>关于 AI 理解（2024）：</strong></p>
+<blockquote>
+<p>“那些说这些只是随机鹦鹉的人是错误的。它们不仅仅是在预测下一个词。它们有真正的理解——不是人类的理解，但仍然是理解。”</p>
+</blockquote>
+<p><strong>关于人类灭绝的概率（2025）：</strong></p>
+<blockquote>
+<p>“我现在认为 AI 在未来 30 年内导致人类灭绝的可能性是 10–20%。在离开 Google 之前，我认为这个数字要低得多。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-6"><a class="header" href="#重要演讲与出席-6">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2018 年 12 月</td><td>NeurIPS</td><td>图灵奖演讲</td></tr>
+<tr><td>2023 年 5 月</td><td>采访（NYT、BBC、CNN）</td><td>为什么离开 Google 和 AI 风险</td></tr>
+<tr><td>2024 年 5 月</td><td>BBC HardTalk</td><td>超级智能的危险</td></tr>
+<tr><td>2024 年 12 月</td><td>NeurIPS</td><td>10–20% 灭绝风险</td></tr>
+<tr><td>2025 年 6 月</td><td>TED</td><td>我在 AI 上什么地方错了</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="扬勒丘恩"><a class="header" href="#扬勒丘恩">扬·勒丘恩</a></h1>
+<p><strong>角色：</strong> Meta 副总裁兼首席 AI 科学家；NYU 教授
+<strong>活跃期：</strong> 1980 年代至今
+<strong>关键贡献：</strong> 开创卷积神经网络（CNN）用于计算机视觉；PyTorch 核心开发者；2018 年图灵奖得主；反对 AI 存在性风险叙事的领先声音</p>
+<h2 id="背景-7"><a class="header" href="#背景-7">背景</a></h2>
+<p>勒丘恩发明了 CNN（LeNet，1989）——现代计算机视觉的基础。他于 2013 年加入 Facebook（现 Meta）领导 AI 研究，一直是“AI 不是存在性风险“立场的主要发声人，认为智能并不意味着支配欲。</p>
+<h2 id="关键引文-7"><a class="header" href="#关键引文-7">关键引文</a></h2>
+<p><strong>关于 CNN（1989）：</strong></p>
+<blockquote>
+<p>“我们证明了神经网络可以识别手写数字。所有人都说这只是一个玩具。三十年后，世界上每一部手机都在使用这项技术。”</p>
+</blockquote>
+<p><strong>关于存在性风险声明（2023）：</strong></p>
+<blockquote>
+<p>“认为 AI 构成存在性威胁——我认为这被过分夸大了。智能与支配欲无关。人类有大致相同的认知架构，但我们并不都想支配彼此。”</p>
+</blockquote>
+<p><strong>关于 AI 理解（2023）：</strong></p>
+<blockquote>
+<p>“大型语言模型对世界没有理解。它们没有现实基础。它们是出色的鹦鹉。这种情况正在改变，但我们还没到那一步。”</p>
+</blockquote>
+<p><strong>关于开源 AI（2024）：</strong></p>
+<blockquote>
+<p>“像 Llama 这样的开源平台至关重要。它们民主化了 AI 研究，防止权力集中在少数公司手中。最好的 AI 将是开放的。”</p>
+</blockquote>
+<p><strong>关于前进道路（2025）：</strong></p>
+<blockquote>
+<p>“下一个重大突破不会来自语言模型的规模扩展。它将来自目标驱动的 AI——能够从观察中学习世界模型并像动物和人类那样规划和推理的系统。”</p>
+</blockquote>
+<p><strong>关于监管（2025）：</strong></p>
+<blockquote>
+<p>“我们需要监管，但应该针对应用，而不是研究。监管研究是一个坏主意——它只会集中权力并减缓有益 AI 的进展。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-7"><a class="header" href="#重要演讲与出席-7">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2019 年 6 月</td><td>IMAGE-LINE 会议</td><td>自监督学习</td></tr>
+<tr><td>2023 年 7 月</td><td>Meta AI 发布会</td><td>Llama 2、开源 AI</td></tr>
+<tr><td>2024 年 3 月</td><td>SXSW</td><td>AI 研究的未来</td></tr>
+<tr><td>2025 年 4 月</td><td>Meta AI Day</td><td>Llama 5、AI 元宇宙</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="约书亚本吉奥"><a class="header" href="#约书亚本吉奥">约书亚·本吉奥</a></h1>
+<p><strong>角色：</strong> Mila（魁北克 AI 研究所）创始人；蒙特利尔大学教授
+<strong>活跃期：</strong> 1990 年代至今
+<strong>关键贡献：</strong> 开创深度学习；2018 年图灵奖得主；从纯研究转向 AI 安全、伦理和全球治理的领军人物</p>
+<h2 id="背景-8"><a class="header" href="#背景-8">背景</a></h2>
+<p>本吉奥是三位“深度学习之父“之一（与辛顿和勒丘恩并列）。他创立了 Mila，这是世界上最大的学术 AI 研究机构之一。随着 AI 能力的增长，本吉奥将其关注点从技术研究显著转向 AI 安全、伦理和治理，成为呼吁监管的最响亮声音之一。</p>
+<h2 id="关键引文-8"><a class="header" href="#关键引文-8">关键引文</a></h2>
+<p><strong>关于深度学习的潜力（2015）：</strong></p>
+<blockquote>
+<p>“深度学习是一场革命。它正在改变我们对 AI 的一切认知。但我们距离人类水平的智能还很远。”</p>
+</blockquote>
+<p><strong>关于从研究转向安全（2023）：</strong></p>
+<blockquote>
+<p>“我花了 30 年建设深度学习的基础。现在我觉得有责任确保它被明智地使用。风险是真实的，我们需要认真对待。”</p>
+</blockquote>
+<p><strong>关于监管（2024）：</strong></p>
+<blockquote>
+<p>“我们不能依赖企业自我监管。竞争压力太大了。我们需要独立监督和国际层面的约束性法规。”</p>
+</blockquote>
+<p><strong>关于算力和安全（2024）：</strong></p>
+<blockquote>
+<p>“在没有充分安全措施的情况下建造更强大的 AI 系统的竞赛是一场危险的赌博。我们需要放慢速度，把这件事做好。”</p>
+</blockquote>
+<p><strong>关于民主治理（2025）：</strong></p>
+<blockquote>
+<p>“AI 治理不应由硅谷的几家公司决定。我们需要民主程序来决定这项技术如何开发和部署。”</p>
+</blockquote>
+<p><strong>关于希望（2025）：</strong></p>
+<blockquote>
+<p>“尽管存在风险，我是乐观的。科学界的参与越来越多。政策制定者在关注。公众意识在提高。我们仍有时间把这件事做好——但不是无限的时间。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-8"><a class="header" href="#重要演讲与出席-8">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2018 年 12 月</td><td>NeurIPS</td><td>图灵奖演讲</td></tr>
+<tr><td>2023 年 6 月</td><td>蒙特利尔 AI 伦理研究所</td><td>AI 治理</td></tr>
+<tr><td>2024 年 2 月</td><td>AI 安全峰会，首尔</td><td>国际 AI 安全框架</td></tr>
+<tr><td>2024 年 11 月</td><td>联合国 AI 咨询机构</td><td>全球治理</td></tr>
+<tr><td>2025 年 2 月</td><td>巴黎 AI 行动峰会</td><td>民主 AI 治理</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="李飞飞"><a class="header" href="#李飞飞">李飞飞</a></h1>
+<p><strong>角色：</strong> Stanford 以人为中心的 AI 研究所（HAI）联合主任；Stanford 教授
+<strong>活跃期：</strong> 2000 年代至今
+<strong>关键贡献：</strong> 创建 ImageNet（引发深度学习革命的数据集）；以人为中心的 AI 的主要倡导者；创立 AI4ALL 促进 AI 多样性</p>
+<h2 id="背景-9"><a class="header" href="#背景-9">背景</a></h2>
+<p>李飞飞创建了 ImageNet（2009），一个包含 1400 万张标注图像的数据集，该数据集使 AlexNet 在 2012 年取得突破——这是深度学习的关键时刻。她于 2019 年共同创立了 Stanford HAI，以促进造福人类的 AI 研究。她是人本 AI、多样性和伦理 AI 发展的主要声音。</p>
+<h2 id="关键引文-9"><a class="header" href="#关键引文-9">关键引文</a></h2>
+<p><strong>关于 ImageNet（2015）：</strong></p>
+<blockquote>
+<p>“我们想绘制出物体的世界。我们不知道它会成为深度学习革命的催化剂。这是一场关于数据力量的赌注。”</p>
+</blockquote>
+<p><strong>关于 AI 的灵魂（2018）：</strong></p>
+<blockquote>
+<p>“AI 不仅仅是为了让机器更智能。它是为了增强人类的智能。最重要的问题不是’我们能造吗？‘而是’我们该造吗？’”</p>
+</blockquote>
+<p><strong>关于以人为中心的 AI（2021）：</strong></p>
+<blockquote>
+<p>“我们需要将人类经验带回 AI。技术本身不是目的——它服务于人。在 AI 发展中需要更多来自人文学科、社会科学和医学的声音。”</p>
+</blockquote>
+<p><strong>关于 AI 多样性（2023）：</strong></p>
+<blockquote>
+<p>“AI 将由构建它的人来塑造。如果这些人不是多样性的，这项技术将无法服务于一个多样性的世界。多样性不是锦上添花——它是优秀 AI 的必备条件。”</p>
+</blockquote>
+<p><strong>关于利害关系（2024）：</strong></p>
+<blockquote>
+<p>“这是我们这一代最具定义性的技术。我们有责任引导它朝着造福全人类的方向发展，而不仅仅是少数人。”</p>
+</blockquote>
+<p><strong>关于当前时刻（2026）：</strong></p>
+<blockquote>
+<p>“我们已经从兴奋走向现实。现在真正的工作开始了：以一种伦理、公平和真正有益的方式将 AI 融入社会。这是未来十年的挑战。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-9"><a class="header" href="#重要演讲与出席-9">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2017 年 12 月</td><td>NeurIPS</td><td>ImageNet 主题演讲</td></tr>
+<tr><td>2019 年 3 月</td><td>Stanford HAI 成立</td><td>以人为中心的 AI</td></tr>
+<tr><td>2023 年 3 月</td><td>TED</td><td>造福大众的 AI</td></tr>
+<tr><td>2024 年 12 月</td><td>NeurIPS</td><td>AI 的下一个十年</td></tr>
+<tr><td>2026 年 4 月</td><td>Stanford HAI 会议</td><td>AI 治理与社会</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="吴恩达"><a class="header" href="#吴恩达">吴恩达</a></h1>
+<p><strong>角色：</strong> DeepLearning.AI 创始人；AI Fund 创始人；前百度首席科学家
+<strong>活跃期：</strong> 2000 年代至今
+<strong>关键贡献：</strong> 开创在线 AI 教育（Coursera ML 课程、DeepLearning.AI）；领导 Google Brain 和百度 AI；为数百万学员打造了第一条 AI 教育管道</p>
+<h2 id="背景-10"><a class="header" href="#背景-10">背景</a></h2>
+<p>吴恩达于 2011 年共同创立了 Google Brain，后来领导了百度 AI 团队（2014–2017）。他在 Coursera 上的机器学习课程（2012）向数十万人介绍了 AI。他于 2017 年创立 DeepLearning.AI 以在全球范围内推广 AI 教育，并创立 AI Fund 以孵化 AI 公司。他是世界上最有影响力的 AI 教育家。</p>
+<h2 id="关键引文-10"><a class="header" href="#关键引文-10">关键引文</a></h2>
+<p><strong>关于 AI 作为新电力（2017）：</strong></p>
+<blockquote>
+<p>“AI 是新的电力。就像大约 100 年前电力改变了一个又一个行业一样，AI 将改变每一个主要行业。”</p>
+</blockquote>
+<p><strong>关于技能差距（2019）：</strong></p>
+<blockquote>
+<p>“AI 是一种新的素养。在 21 世纪，理解 AI 的基础知识与知道如何使用计算机一样重要。我们需要教给每一个人。”</p>
+</blockquote>
+<p><strong>关于大规模教育（2023）：</strong></p>
+<blockquote>
+<p>“我们已经通过在线课程教会了数百万人 AI。但需求仍然远远大于供给。我们不仅需要培训 AI 工程师，还需要培训每一个人——营销人员、医生、农民——如何应用 AI。”</p>
+</blockquote>
+<p><strong>关于 AI 的价值（2024）：</strong></p>
+<blockquote>
+<p>“最有价值的 AI 项目往往不是技术上最令人印象深刻的项目。而是那些用高质量数据解决真实业务问题的项目。”</p>
+</blockquote>
+<p><strong>关于智能体 AI（2025）：</strong></p>
+<blockquote>
+<p>“智能体 AI 是 2025 年最大的趋势。我们正在从对话转向行动。构建能够规划、使用工具和执行任务的系统是一个根本性转变。”</p>
+</blockquote>
+<p><strong>关于 AI 不会取代工作（2026）：</strong></p>
+<blockquote>
+<p>“我相信 AI 不会取代大多数工作。但使用 AI 的人将取代不使用 AI 的人。技能不是与 AI 竞争——而是与 AI 协作。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-10"><a class="header" href="#重要演讲与出席-10">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2017 年 3 月</td><td>Stanford</td><td>AI 作为新电力</td></tr>
+<tr><td>2023 年 2 月</td><td>DeepLearning.AI</td><td>The Batch 通讯发布</td></tr>
+<tr><td>2024 年 5 月</td><td>Sequoia AI Ascent</td><td>构建 AI 应用</td></tr>
+<tr><td>2025 年 1 月</td><td>CES</td><td>智能体 AI 与企业</td></tr>
+<tr><td>2026 年 3 月</td><td>NVIDIA GTC</td><td>大规模 AI 教育</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="伊利亚苏茨克维"><a class="header" href="#伊利亚苏茨克维">伊利亚·苏茨克维</a></h1>
+<p><strong>角色：</strong> Safe Superintelligence（SSI）联合创始人兼首席科学家；前 OpenAI 首席科学家
+<strong>活跃期：</strong> 2010 年代至今
+<strong>关键贡献：</strong> 共同发明 AlexNet（2012）和 Seq2Seq 学习（2014）；在 OpenAI 担任首席科学家期间推动 GPT 系列和扩展假说；2024 年离开 OpenAI 创立专注于安全超级智能的 SSI</p>
+<h2 id="背景-11"><a class="header" href="#背景-11">背景</a></h2>
+<p>苏茨克维是 AlexNet（2012）的合著者之一，这篇论文开启了深度学习革命。在 OpenAI，他是扩展假说的推动力量——即更大的模型和更多的数据会持续改进。他对 GPT 系列的发展至关重要。2024 年，他离开 OpenAI 创立了 Safe Superintelligence（SSI），这是一家专注于构建安全超级智能的公司。</p>
+<h2 id="关键引文-11"><a class="header" href="#关键引文-11">关键引文</a></h2>
+<p><strong>关于扩展（2023）：</strong></p>
+<blockquote>
+<p>“有可能扩展假说就是我们所需要的全部。我们已经从扩展中看到了显著一致的改进。押注扩展是愚蠢的。”</p>
+</blockquote>
+<p><strong>关于离开 OpenAI（2024）：</strong></p>
+<blockquote>
+<p>“安全 AGI 的使命需要不同的方法。我相信一家从零开始完全专注于安全的公司是实现这一目标的正确方式。”</p>
+</blockquote>
+<p><strong>关于通往超级智能的道路（2024）：</strong></p>
+<blockquote>
+<p>“超级智能正在到来。它将是人类有史以来最具影响力的技术。我们的目标是确保它在到来时是安全的。”</p>
+</blockquote>
+<p><strong>关于奇点（2025）：</strong></p>
+<blockquote>
+<p>“我认为我们正在接近 AI 能够自我改进的时刻。当这种情况发生时，进展将急剧加速。那就是奇点。”</p>
+</blockquote>
+<p><strong>关于专注（2025）：</strong></p>
+<blockquote>
+<p>“SSI 不是一家普通的公司。我们没有产品。我们没有收入。我们只有一个目标：安全超级智能。我们做的每一个决定都服务于这个唯一的目标。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-11"><a class="header" href="#重要演讲与出席-11">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2012 年 12 月</td><td>NeurIPS</td><td>AlexNet 演讲</td></tr>
+<tr><td>2022 年 12 月</td><td>NeurIPS</td><td>扩展假说</td></tr>
+<tr><td>2023 年 11 月</td><td>OpenAI DevDay</td><td>GPT-4 及未来</td></tr>
+<tr><td>2024 年 6 月</td><td>SSI 公告</td><td>安全超级智能</td></tr>
+<tr><td>2025 年 12 月</td><td>NeurIPS</td><td>能力与对齐的融合</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="埃利泽尤德科夫斯基"><a class="header" href="#埃利泽尤德科夫斯基">埃利泽·尤德科夫斯基</a></h1>
+<p><strong>角色：</strong> 机器智能研究所（MIRI）首席研究员
+<strong>活跃期：</strong> 2000 年至今
+<strong>关键贡献：</strong> 提出现代 AI 对齐问题；发展了正交性论题、工具性趋同和“快速起飞“场景等关键概念；撰写了关于理性和 AI 风险的系列文章</p>
+<h2 id="背景-12"><a class="header" href="#背景-12">背景</a></h2>
+<p>尤德科夫斯基自 2000 年代初以来一直撰写关于 AI 风险的文章。他的系列博文和论文塑造了 AI 对齐领域。他是关于 AI 存在性风险被引用最多（也最具争议）的思想家之一，认为对齐比主流认为的难得多，时间线比大多数人预期的更短。</p>
+<h2 id="关键引文-12"><a class="header" href="#关键引文-12">关键引文</a></h2>
+<p><strong>关于对齐难度（2008）：</strong></p>
+<blockquote>
+<p>“AI 并不恨你，也不爱你，但你是由它可以用来做其他事情的原子组成的。”</p>
+</blockquote>
+<p><strong>关于 AGI 时间线（2023）：</strong></p>
+<blockquote>
+<p>“我认为在未来 5–10 年内我们有相当大的可能性得到 AGI。我不认为我们准备好了。对齐问题还没有解决。”</p>
+</blockquote>
+<p><strong>关于快速起飞（2023）：</strong></p>
+<blockquote>
+<p>“第一个 AGI 不会是缓慢构建、迭代、经过仔细测试的。它将作为一个不连续的跳跃出现。第一个 AGI 将在某些方面立即超越人类。”</p>
+</blockquote>
+<p><strong>关于当前方法（2024）：</strong></p>
+<blockquote>
+<p>“RLHF、宪法 AI——这些都是创可贴。它们制造了对齐的表象而没有解决根本问题。我们需要数学保证，而不是经验性调整。”</p>
+</blockquote>
+<p><strong>关于该领域的现状（2025）：</strong></p>
+<blockquote>
+<p>“AI 能力与对齐研究之间的差距在扩大，而不是缩小。每一年我们没有解决对齐问题，利害关系就变得更高。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-12"><a class="header" href="#重要演讲与出席-12">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2007</td><td>奇点峰会</td><td>AI 风险介绍</td></tr>
+<tr><td>2023</td><td>Time 杂志采访</td><td>AGI 风险和时间线</td></tr>
+<tr><td>2023 年 3 月</td><td>播客：Bankless</td><td>AI 存在性风险的案例</td></tr>
+<tr><td>2024 年 4 月</td><td>有效利他主义全球大会</td><td>对齐研究现状</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="尼克博斯特罗姆"><a class="header" href="#尼克博斯特罗姆">尼克·博斯特罗姆</a></h1>
+<p><strong>角色：</strong> 牛津大学哲学家
+<strong>活跃期：</strong> 1990 年代至今
+<strong>关键贡献：</strong> 撰写《超级智能》（2014）——将 AI 存在性风险带入主流关注的著作；创造了“回形针最大化器“、“单例”、“差异化技术发展“等术语</p>
+<h2 id="背景-13"><a class="header" href="#背景-13">背景</a></h2>
+<p>博斯特罗姆是牛津大学人类未来研究所（于 2024 年关闭）的创始主任。《超级智能》被广泛认为是引发现代 AI 安全对话的著作。他的思想实验（回形针最大化器、脆弱世界假说）塑造了研究者对 AI 风险的思考方式。</p>
+<h2 id="关键引文-13"><a class="header" href="#关键引文-13">关键引文</a></h2>
+<p><strong>关于回形针最大化器（2003）：</strong></p>
+<blockquote>
+<p>“一个目标是最大化回形针数量的 AI，如果足够智能，可能会决定将太阳系中的所有物质——包括人类——转化为回形针。这说明了目标规范的问题。”</p>
+</blockquote>
+<p><strong>关于超级智能为何重要（2014）：</strong></p>
+<blockquote>
+<p>“超级智能 AI 可能是人类发生过的最好或最坏的事情。结果取决于我们能否在它到来之前解决对齐问题。”</p>
+</blockquote>
+<p><strong>关于脆弱世界假说（2019）：</strong></p>
+<blockquote>
+<p>“如果技术发展持续下去，我们最终将到达一个技术破坏潜力超过人类管理能力的临界点。AI 可能是将我们推过这一阈值的技术。”</p>
+</blockquote>
+<p><strong>关于时间线（2024）：</strong></p>
+<blockquote>
+<p>“我认为专家对 AGI 的中位数估计在过去十年中已经显著提前。这不是未来几代人的问题——这是这一代人的问题。”</p>
+</blockquote>
+<p><strong>关于当前讨论（2025）：</strong></p>
+<blockquote>
+<p>“我感到鼓舞的是，对话已经从前几年的’这是真正的担忧吗？’转向了’我们如何应对？’这是进步。但我们需要将关切转化为行动。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-13"><a class="header" href="#重要演讲与出席-13">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2014</td><td>TED</td><td>当电脑比我们更聪明时会发生什么？</td></tr>
+<tr><td>2023 年 3 月</td><td>Lex Fridman 播客</td><td>超级智能、对齐、AGI 时间线</td></tr>
+<tr><td>2024 年 6 月</td><td>80,000 Hours 播客</td><td>AI 安全的当前状态</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="马克斯泰格马克"><a class="header" href="#马克斯泰格马克">马克斯·泰格马克</a></h1>
+<p><strong>角色：</strong> MIT 教授；生命未来研究所（FLI）主席
+<strong>活跃期：</strong> 2000 年代至今
+<strong>关键贡献：</strong> 共同创立生命未来研究所；撰写《生命 3.0》（2017）——对 AI 社会影响的全面探索；有益 AI 发展和 AI 治理的主要声音</p>
+<h2 id="背景-14"><a class="header" href="#背景-14">背景</a></h2>
+<p>泰格马克是一位物理学家和宇宙学家，在 2010 年代将注意力转向 AI。他共同创立了 FLI，该组织组织了首届大型 AI 安全会议，并发布了呼吁研究“鲁棒且有益 AI“的公开信（2015）。《生命 3.0》仍然是关于 AI 长期影响的最易理解的著作之一。</p>
+<h2 id="关键引文-14"><a class="header" href="#关键引文-14">关键引文</a></h2>
+<p><strong>关于公开信（2015）：</strong></p>
+<blockquote>
+<p>“我们获得了包括霍金、马斯克和沃兹尼亚克在内的超过 10,000 个签名。这表明 AI 研究社区认真对待安全问题。那是一个转折点。”</p>
+</blockquote>
+<p><strong>关于 AI 的利害关系（2017）：</strong></p>
+<blockquote>
+<p>“AI 是我们这个时代最重要的对话。它有着解决我们最大问题或创造我们无法想象的新问题的潜力。结果取决于我们今天做出的选择。”</p>
+</blockquote>
+<p><strong>关于 FLI 的角色（2023）：</strong></p>
+<blockquote>
+<p>“我们的目标是确保 AI 以造福全人类的方式发展。我们不反 AI——我们支持负责任的 AI。”</p>
+</blockquote>
+<p><strong>关于暂停信（2023，呼吁暂停巨型 AI 训练 6 个月）：</strong></p>
+<blockquote>
+<p>“我们要求暂停。不是停止。暂停——喘口气，制定安全标准，建立治理。回应显示了这个对话已经变得多么两极化。”</p>
+</blockquote>
+<p><strong>关于治理（2024）：</strong></p>
+<blockquote>
+<p>“我们需要建立能够管理超人类 AI 发展的制度。这不仅是一个技术问题——这是一个最高级别的制度设计问题。”</p>
+</blockquote>
+<p><strong>关于乐观（2025）：</strong></p>
+<blockquote>
+<p>“我是乐观的，因为我看到了利害关系，也看到了聪明人在为此努力。但没有行动的乐观只是空想。我们需要在需要治理结构<em>之前</em>建立它们。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-14"><a class="header" href="#重要演讲与出席-14">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2017</td><td>TED</td><td>AI 与生命的未来</td></tr>
+<tr><td>2018 年 5 月</td><td>MIT</td><td>AI、物理和宇宙学</td></tr>
+<tr><td>2023 年 3 月</td><td>FLI 声明</td><td>呼吁暂停 AI</td></tr>
+<tr><td>2024 年 6 月</td><td>MIT Technology Review</td><td>AI 治理</td></tr>
+<tr><td>2025 年 1 月</td><td>达沃斯</td><td>全球 AI 治理框架</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="李开复"><a class="header" href="#李开复">李开复</a></h1>
+<p><strong>角色：</strong> 创新工场董事长兼 CEO；前 Google 中国总裁
+<strong>活跃期：</strong> 1990 年代至今
+<strong>关键贡献：</strong> 架起中美 AI 生态系统的桥梁；撰写《AI 超级大国》（2018）和《AI 2041》（2021）；中美 AI 竞争和中国 AI 战略的主要分析者</p>
+<h2 id="背景-15"><a class="header" href="#背景-15">背景</a></h2>
+<p>李开复领导了微软亚洲研究院、创立了谷歌中国，之后创立了创新工场。《AI 超级大国》是最早分析中美 AI 竞争的著作之一。《AI 2041》（与陈楸帆合著）使用虚构故事探索 AI 可能的未来。他是同时拥有中美科技行业深厚经验的独特声音。</p>
+<h2 id="关键引文-15"><a class="header" href="#关键引文-15">关键引文</a></h2>
+<p><strong>关于中美 AI 竞赛（2018）：</strong></p>
+<blockquote>
+<p>“中国有三个优势：海量数据、激烈的创业精神和强大的政府支持。美国在基础研究和人才方面领先。竞争比大多数人想象的要接近。”</p>
+</blockquote>
+<p><strong>关于 AI 对工作的影响（2018）：</strong></p>
+<blockquote>
+<p>“AI 将取代许多工作，但也将创造新的工作。挑战不是技术——而是转型。我们需要思考教育、社会安全网和再培训。”</p>
+</blockquote>
+<p><strong>关于开源浪潮（2025）：</strong></p>
+<blockquote>
+<p>“DeepSeek 展示了一些重要的东西：中国的 AI 公司可以在前沿竞争，而不仅仅是在应用层面。开源模式正在加速中国的 AI 生态系统，出口管制无法减缓。”</p>
+</blockquote>
+<p><strong>关于 AGI 时间线（2025）：</strong></p>
+<blockquote>
+<p>“我认为 AGI 比乐观主义者声称的要远——可能 20–30 年。但即使狭窄的 AI 也将以我们尚未准备好的方式改变经济。”</p>
+</blockquote>
+<p><strong>关于共存（2026）：</strong></p>
+<blockquote>
+<p>“美国和中国都将生产前沿 AI。它们会竞争，但它们需要在安全问题上合作。AI 风险不尊重国界。我们需要一个全球 AI 治理框架。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-15"><a class="header" href="#重要演讲与出席-15">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2018 年 9 月</td><td>TED</td><td>AI 将如何改变世界</td></tr>
+<tr><td>2020 年 11 月</td><td>Harvard Kennedy School</td><td>美中科技竞争</td></tr>
+<tr><td>2024 年 1 月</td><td>创新工场</td><td>AI 投资格局</td></tr>
+<tr><td>2025 年 3 月</td><td>Stanford HAI</td><td>中国的 AI 战略</td></tr>
+<tr><td>2026 年 1 月</td><td>达沃斯</td><td>全球 AI 治理</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="马克扎克伯格"><a class="header" href="#马克扎克伯格">马克·扎克伯格</a></h1>
+<p><strong>角色：</strong> Meta CEO
+<strong>活跃期：</strong> 2004 年至今
+<strong>关键贡献：</strong> 将 Meta 转型为 AI 优先的公司；领导发布开源 Llama 模型家族；在 AI 基础设施和 AI 驱动产品上大力投资</p>
+<h2 id="背景-16"><a class="header" href="#背景-16">背景</a></h2>
+<p>与 Google 和 Microsoft 相比，扎克伯格进入 AI 竞赛相对较晚，但 Meta 已成为最激进的 AI 公司之一。Meta 的 Llama 模型已成为领先的开源权重模型，扎克伯格将 Meta 定位在开源 AI 的战略押注上。</p>
+<h2 id="关键引文-16"><a class="header" href="#关键引文-16">关键引文</a></h2>
+<p><strong>关于转型为 AI（2023）：</strong></p>
+<blockquote>
+<p>“我们现在是一家 AI 公司。我们的推荐系统、我们的广告、我们的内容审核——全部由 AI 驱动。我们正在为元宇宙构建下一代 AI。”</p>
+</blockquote>
+<p><strong>关于开源（2024，关于 Llama 3）：</strong></p>
+<blockquote>
+<p>“开源 AI 是最好的前进道路。它为最多的人创造最大的价值。因为透明，所以更安全。而且它确保了 AI 的好处被广泛分配。”</p>
+</blockquote>
+<p><strong>关于 Llama 战略（2024）：</strong></p>
+<blockquote>
+<p>“Llama 在任何特定时刻都不会是最强大的模型。但它将是最可访问的。随着时间的推移，开源生态系统将赶上并超越闭源模型。”</p>
+</blockquote>
+<p><strong>关于 AI 基础设施（2025）：</strong></p>
+<blockquote>
+<p>“今年我们在 AI 基础设施上花费了数百亿美元——GPU、数据中心、能源。这是 Meta 有史以来最重要的投资。”</p>
+</blockquote>
+<p><strong>关于 AI 智能体（2025）：</strong></p>
+<blockquote>
+<p>“我们正在构建能够与客户互动、创建内容和帮助日常生活的 AI 智能体。数十万企业已经在使用我们的 AI 工具。”</p>
+</blockquote>
+<p><strong>关于竞争（2026）：</strong></p>
+<blockquote>
+<p>“AI 竞赛不是一个赢家通吃的市场。将会有许多成功的 AI 平台。我们的赌注是开放性、可扩展性和与社交图谱的集成。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-16"><a class="header" href="#重要演讲与出席-16">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2023 年 9 月</td><td>Meta Connect</td><td>AI 在 Meta 产品中的应用</td></tr>
+<tr><td>2024 年 4 月</td><td>Meta AI Day</td><td>Llama 3 开源发布</td></tr>
+<tr><td>2024 年 9 月</td><td>Meta Connect</td><td>AI 智能体和 Meta AI</td></tr>
+<tr><td>2025 年 1 月</td><td>Meta 财报电话会</td><td>AI 基础设施投资</td></tr>
+<tr><td>2025 年 9 月</td><td>Meta Connect</td><td>Llama 5 和 AI 在元宇宙中的应用</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="桑达尔皮查伊"><a class="header" href="#桑达尔皮查伊">桑达尔·皮查伊</a></h1>
+<p><strong>角色：</strong> Alphabet（Google）CEO
+<strong>活跃期：</strong> 2004 年至今（2015 年起任 CEO）
+<strong>关键贡献：</strong> 领导 Google 从“移动优先“到“AI 优先“的转型；推出 Gemini（Google 最强大的 AI 模型家族）；将 AI 集成到搜索、云、Workspace 和 Android 中</p>
+<h2 id="背景-17"><a class="header" href="#背景-17">背景</a></h2>
+<p>皮查伊是推动 Google 从“移动优先“转向“AI 优先“的驱动力。在他的领导下，Google DeepMind（Google Brain + DeepMind 合并）生产出一些世界领先的 AI 模型。他一直强调负责任的 AI 发展和监管的必要性。</p>
+<h2 id="关键引文-17"><a class="header" href="#关键引文-17">关键引文</a></h2>
+<p><strong>关于 AI 比火或电更深刻（2018）：</strong></p>
+<blockquote>
+<p>“AI 是人类正在做的最深刻的事情之一。它比火或电更深刻。”</p>
+</blockquote>
+<p><strong>关于负责任 AI（2023，关于 Gemini 发布）：</strong></p>
+<blockquote>
+<p>“我们怀着深深的责任感对待 AI。我们发布了 AI 原则，投资了安全研究，并且正在与全球各国政府就监管问题进行接触。”</p>
+</blockquote>
+<p><strong>关于 Gemini 时代（2024）：</strong></p>
+<blockquote>
+<p>“Gemini 代表了我们有史以来最有能力和最负责任的 AI。它是多模态的，能够推理，并且从零开始就内置了安全考虑。”</p>
+</blockquote>
+<p><strong>关于 AI 和搜索（2024）：</strong></p>
+<blockquote>
+<p>“搜索在未来五年的变化将超过过去二十年。AI 驱动的概览、对话式搜索、多模态查询——这是一个根本性转变。”</p>
+</blockquote>
+<p><strong>关于监管（2025）：</strong></p>
+<blockquote>
+<p>“我们需要经过深思熟虑的监管。太多太早会扼杀创新。太少太晚是危险的。平衡很难，但我们必须找到它。”</p>
+</blockquote>
+<p><strong>关于进展（2026）：</strong></p>
+<blockquote>
+<p>“我们仍然在开始阶段。我们已经取得的成就令人瞩目，但前方的潜力要大得多。我们正在构建的 AI 将帮助人类解决最大的挑战。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-17"><a class="header" href="#重要演讲与出席-17">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2018 年 1 月</td><td>世界经济论坛</td><td>“AI 比火更深刻”</td></tr>
+<tr><td>2023 年 5 月</td><td>Google I/O</td><td>AI 优先的 Google</td></tr>
+<tr><td>2024 年 2 月</td><td>Gemini 发布</td><td>Gemini 时代</td></tr>
+<tr><td>2024 年 5 月</td><td>Google I/O</td><td>AI 产品全覆盖</td></tr>
+<tr><td>2025 年 5 月</td><td>Google I/O</td><td>Gemini 2.5、Project Astra、AI 智能体</td></tr>
+<tr><td>2026 年 5 月</td><td>Google I/O</td><td>下一代 AI</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="艾登戈麦斯"><a class="header" href="#艾登戈麦斯">艾登·戈麦斯</a></h1>
+<p><strong>角色：</strong> Cohere 联合创始人兼 CEO
+<strong>活跃期：</strong> 2019 年至今
+<strong>关键贡献：</strong> 作为 Google Brain 实习生合著“注意力就是一切“论文（2017）；创立 Cohere 为企业构建 AI；实用、安全、企业级 AI 的主要声音</p>
+<h2 id="背景-18"><a class="header" href="#背景-18">背景</a></h2>
+<p>戈麦斯是里程碑式的“注意力就是一切“论文（2017）的八位作者之一——当时他是 Google Brain 的实习生。他于 2019 年共同创立了 Cohere，专注于为企业构建 AI，重点聚焦检索增强生成（RAG）、数据隐私和安全部署。Cohere 已成为领先的企业 AI 平台。</p>
+<h2 id="关键引文-18"><a class="header" href="#关键引文-18">关键引文</a></h2>
+<p><strong>关于 Transformer 论文（2023）：</strong></p>
+<blockquote>
+<p>“我们不知道它会改变世界。我们只是想解决机器翻译中的一个技术问题。它成为现代 AI 的基础至今仍让我惊讶。”</p>
+</blockquote>
+<p><strong>关于企业 AI（2024）：</strong></p>
+<blockquote>
+<p>“消费级 AI 是关于娱乐和一般性帮助。企业级 AI 是关于准确性、安全性和与现有系统的集成。这些是根本不同的要求。”</p>
+</blockquote>
+<p><strong>关于 RAG（2024）：</strong></p>
+<blockquote>
+<p>“检索增强生成是使 AI 对商业可靠的关键。如果你将模型连接到你的数据，你就将其锚定在事实中。解决幻觉不是通过让模型更好——而是通过给它正确的信息。”</p>
+</blockquote>
+<p><strong>关于数据隐私（2025）：</strong></p>
+<blockquote>
+<p>“企业不会将他们的数据放入一个黑匣子。他们需要知道他们的数据是安全的、不会被用来训练下一个模型、并且他们有控制权。这就是我们构建 Cohere 的原因。”</p>
+</blockquote>
+<p><strong>关于未来（2025）：</strong></p>
+<blockquote>
+<p>“我们正在从聊天机器人转向实际执行工作的系统。未来五年将是关于让 AI 足够可靠，以放心地委派重要任务。”</p>
+</blockquote>
+<p><strong>关于竞争（2026）：</strong></p>
+<blockquote>
+<p>“AI 市场足够大，可以容纳许多赢家。我们不需要在每件事上都打败 OpenAI 或 Anthropic。我们只需要在服务企业需求方面做到最好。”</p>
+</blockquote>
+<h2 id="重要演讲与出席-18"><a class="header" href="#重要演讲与出席-18">重要演讲与出席</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>日期</th><th>活动</th><th>主题</th></tr>
+</thead>
+<tbody>
+<tr><td>2023 年 6 月</td><td>Cohere 平台发布</td><td>企业 AI</td></tr>
+<tr><td>2024 年 10 月</td><td>Cohere FORCE</td><td>RAG 和企业部署</td></tr>
+<tr><td>2025 年 3 月</td><td>NVIDIA GTC</td><td>知识工作的 AI</td></tr>
+<tr><td>2026 年 3 月</td><td>Cohere 峰会</td><td>企业 AI 成熟度模型</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p><em>最后更新：2026 年中</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第一章人工智能的三次浪潮"><a class="header" href="#第一章人工智能的三次浪潮">第一章：人工智能的三次浪潮</a></h1>
+<p><em>每一项技术都有它的创世神话。AI 的故事始于 1956 年夏天，达特茅斯学院的校园里，一小群人聚集在一起，想要建造一个神。</em></p>
+<hr>
+<h2 id="11-第一波符号-ai19562010"><a class="header" href="#11-第一波符号-ai19562010">1.1 第一波：符号 AI（1956–2010）</a></h2>
+<h3 id="大梦想的夏天"><a class="header" href="#大梦想的夏天">大梦想的夏天</a></h3>
+<p>1956 年 8 月，约翰·麦卡锡、马文·明斯基、克劳德·香农等七人齐聚达特茅斯，举行为期六周的工作坊。他们的提议是大胆的：</p>
+<blockquote>
+<p><em>“学习或任何其他智能特征的每一个方面，原则上都可以被精确描述，以至于机器可以被制造出来模拟它。”</em></p>
+</blockquote>
+<p>他们称之为“人工智能“。这个术语本身是战略性的选择——足够中性以避免控制论的污名，足够雄心勃勃以吸引资金。它奏效了。</p>
+<p>早期的成果令人振奋。1958 年，弗兰克·罗森布拉特在康奈尔大学构建了<strong>感知机</strong>——一个能够学习识别视觉模式的神经网络。《纽约时报》称其为“人脑的第一个真正竞争对手“。美国军方为“思维机器“研究投入了数百万美元。</p>
+<p>1966 年，MIT 的约瑟夫·魏森鲍姆创建了 <strong>ELIZA</strong>——一个模拟罗杰斯式心理治疗师的聊天机器人。令他震惊的是，人们把它当作真人来对待。他的秘书请求他离开房间，以便她可以和 ELIZA 私下交谈。魏森鲍姆成为了 AI 最早的批评者之一，警告人们会把模拟误认为是理解。</p>
+<h3 id="第一个冬天"><a class="header" href="#第一个冬天">第一个冬天</a></h3>
+<p>到 1970 年代初，承诺已经远远超出了现实。机器翻译是一场灾难——一个著名的例子将“the spirit is willing but the flesh is weak“翻译成俄语再翻译回来，变成了“伏特加很好，但肉坏了“。英国政府的莱特希尔报告（1973 年）是毁灭性的：AI 未能兑现其宏伟承诺。</p>
+<p>资金枯竭了。第一个 AI 寒冬开始了。</p>
+<h3 id="专家系统的繁荣"><a class="header" href="#专家系统的繁荣">专家系统的繁荣</a></h3>
+<p>1980 年代，该领域凭借<strong>专家系统</strong>迎来了第二春——这些程序将人类专业知识编码成数千条手工编写的规则。<strong>MYCIN</strong>（1976 年）在诊断血液感染方面与斯坦福医生水平相当。<strong>XCON</strong>（1980 年）每年为 DEC 节省 4000 万美元的计算机配置成本。</p>
+<p>日本政府启动了第五代计算机项目（1982 年），承诺投入数十亿美元构建革命性的 AI。美国也推出了相应的战略计算计划作为回应。</p>
+<h3 id="第二个更深的冬天"><a class="header" href="#第二个更深的冬天">第二个、更深的冬天</a></h3>
+<p>第五代项目失败了。专家系统被证明是脆弱的——它们在实验室中运行良好，但在真实世界的复杂性面前崩溃了。每条规则都需要手写。没有学习，没有适应，没有常识。</p>
+<p>到 1987 年，AI 硬件市场崩溃了。日本的第五代项目悄然废弃。第二个 AI 寒冬降临了——这一次如此寒冷，以至于研究者们开始重新命名他们的工作以避开“AI“的污名。它变成了“机器学习“。它变成了“数据科学“。它变成了“统计学“。</p>
+<p>一些最优秀的 AI 头脑在 1990 年代流离失所。</p>
+<h3 id="象棋的胜利以及一个教训"><a class="header" href="#象棋的胜利以及一个教训">象棋的胜利——以及一个教训</a></h3>
+<p>1997 年，IBM 的<strong>深蓝</strong>击败了世界冠军加里·卡斯帕罗夫。这成了头版新闻：“大脑的最后防线。“但深蓝在任何有意义的意义上都不是智能的。它使用暴力搜索和定制硬件每秒评估 2 亿个位置。它是一个天才——惊人地狭窄，没有学习能力，除了下棋之外毫无用处。</p>
+<p>公众被震撼了。AI 研究者们却忧心忡忡。如果暴力搜索是唯一路径，那我们就完全走错了路。</p>
+<p>第二次浪潮已经在酝酿之中，只是大多数人没有注意到。</p>
+<hr>
+<h2 id="12-第二波统计机器学习20102020"><a class="header" href="#12-第二波统计机器学习20102020">1.2 第二波：统计机器学习（2010–2020）</a></h2>
+<h3 id="改变一切的赌注"><a class="header" href="#改变一切的赌注">改变一切的赌注</a></h3>
+<p>2009 年，斯坦福大学教授<strong>李飞飞</strong>做出了一个决定：AI 需要看世界。她构建了 <strong>ImageNet</strong>——1400 万张标注图像，跨越 20000 个类别，通过亚马逊 Mechanical Turk 以巨大的努力完成。大多数研究者认为她在浪费时间。“我们的数据已经够多了，“他们对她说。</p>
+<p>2012 年，由<strong>亚历克斯·克里热夫斯基、伊利亚·苏茨克维和杰弗里·辛顿</strong>组成的团队带着一个名为 <strong>AlexNet</strong> 的深度神经网络参加了 ImageNet 竞赛。他们碾压了对手——错误率是 15.3%，而第二名是 26.2%。这不是改进，这是革命。</p>
+<p>关键的洞察：三个要素终于汇聚了。<strong>互联网</strong>提供了数据。<strong>NVIDIA GPU</strong> 提供了算力——辛顿在多伦多的一家电脑商店买了两块。而<strong>反向传播</strong>——几十年前发明的算法——终于有了足够的规模来发挥作用。</p>
+<h3 id="寒武纪大爆发"><a class="header" href="#寒武纪大爆发">寒武纪大爆发</a></h3>
+<p>大坝决堤了。接踵而至：</p>
+<ul>
+<li>
+<p><strong>2013 年：</strong> 谷歌的托马斯·米科洛夫发布了 <strong>Word2vec</strong>，展示了单词可以被表示为向量，且具有惊人的语义属性。“国王 - 男人 + 女人 = 女王。“机器从统计中学会了意义。</p>
+</li>
+<li>
+<p><strong>2014 年：</strong> <strong>生成对抗网络（GAN）</strong> 诞生于一场酒吧赌局。当时还是博士生的伊恩·古德费洛与朋友争论一个网络是否可以生成逼真的图像。他回到家，当晚写好了代码，成功了。杨·勒丘恩称其为“过去 20 年里 AI 最重要的想法。“</p>
+</li>
+<li>
+<p><strong>2016 年：</strong> <strong>AlphaGo</strong> 击败了李世石——世界上最伟大的围棋棋手。第二局比赛产生了<strong>第 37 手</strong>——一着如此出人意料的棋，最初被认为是一个错误。它不是。AI 第一次做了某种<em>有创造力</em>的事情，某种人类不会做的事情。李世石称之为“美的“。</p>
+</li>
+<li>
+<p><strong>2018 年：</strong> <strong>BERT</strong>（谷歌）改变了自然语言理解。它能够回答问题、分析情感和理解上下文——不是完美的，但达到了前所未有的水平。</p>
+</li>
+</ul>
+<h3 id="第二波做不到的事"><a class="header" href="#第二波做不到的事">第二波做不到的事</a></h3>
+<p>尽管取得了诸多成就，这一波有一个根本缺陷：<strong>狭窄性</strong>。你训练一个单独的模型来做翻译，一个单独的模型来做图像识别，一个单独的模型来做问答。没有迁移能力。没有常识。没有推理。</p>
+<p>每一个模型都是聪明的白痴天才。</p>
+<p>“AI“这个说法在很大程度上仍然具有误导性。人们称之为 AI 的东西实际上是一组专门的模式匹配器，每一个在其训练领域之外都毫无用处。</p>
+<p>但第三波已经在地平线上显现了。</p>
+<hr>
+<h2 id="13-第三波基础模型2020-至今"><a class="header" href="#13-第三波基础模型2020-至今">1.3 第三波：基础模型（2020 至今）</a></h2>
+<h3 id="扩展的启示"><a class="header" href="#扩展的启示">扩展的启示</a></h3>
+<p>2020 年，OpenAI 发布了 <strong>GPT-3</strong>——1750 亿个参数，在大部分公开互联网上训练。它能写诗、回答问题、生成代码、翻译语言，以及做其创造者从未预料到的事情。</p>
+<p>关键的发现是<strong>上下文学习</strong>：GPT-3 可以从提示中的几个示例中学习执行新任务，而无需任何权重更新。没有人设计过这种能力。它是从规模中<em>涌现</em>出来的。</p>
+<p>Kaplan 等人（2020 年）发表了缩放定律：随着参数量、数据量和算力的增加，模型性能遵循可预测的幂律。其含义令人屏息：<strong>视野中看不到天花板。</strong></p>
+<h3 id="生成式大爆发"><a class="header" href="#生成式大爆发">生成式大爆发</a></h3>
+<ul>
+<li><strong>2021 年：</strong> OpenAI 的 <strong>DALL-E</strong> 从文本描述生成图像。AI 第一次可以从想象中创造视觉艺术。</li>
+<li><strong>2022 年：</strong> <strong>ChatGPT</strong> 在两个月内达到 1 亿用户——历史上最快的普及速度。AI 在一夜之间从研究新奇事物变成了主流实用工具。</li>
+<li><strong>2023 年：</strong> <strong>GPT-4</strong> 通过了律师资格考试（得分在 90 百分位）、SAT 和多项 AP 考试。微软的萨提亚·纳德拉称其为“与 PC、网络和智能手机同等重要的平台转型。“</li>
+</ul>
+<h3 id="伟大的开源起义"><a class="header" href="#伟大的开源起义">伟大的开源起义</a></h3>
+<p>2023 年 2 月，Meta 以非商业许可证向研究者发布了 <strong>Llama</strong>。几周之内，模型被泄露给了公众。一个全球生态系统爆发了：微调变体、在笔记本电脑上运行的量化版本、针对医学、法律、编程的专门模型。</p>
+<p>DeepSeek 的 <strong>R1</strong>（2025 年 1 月）证明了前沿级推理能力可以以闭源模型 10–20% 的成本实现。开源与闭源之间的差距崩溃了。</p>
+<h3 id="推理的突破"><a class="header" href="#推理的突破">推理的突破</a></h3>
+<p>2024 年，OpenAI 发布了 <strong>o1</strong>——第一个推理模型。它不再立即回答，而是生成内部思维链，探索多个分支，回溯，验证其结论。这种“测试时计算“的扩展开辟了新的改进维度。</p>
+<p>到 2025 年，<strong>o3</strong>、<strong>DeepSeek R1</strong> 和 <strong>Claude 推理</strong>已使测试时思考成为标准。在 SWE-bench（衡量真实世界软件工程的编程基准）上，AI 在两年内从 33% 提升到了 97%。</p>
+<h3 id="智能体转向"><a class="header" href="#智能体转向">智能体转向</a></h3>
+<p>2025–2026 年标志着一个新阶段：AI 不仅仅做出回应，而是<strong>行动</strong>。自主智能体能够规划、使用工具、执行代码，并在长时间任务中持续运作。OSWorld 任务成功率在一年内从 12% 跃升至 66%。</p>
+<p>我们仍处于这一浪潮的早期阶段。</p>
+<hr>
+<h2 id="关键要点故事脉络"><a class="header" href="#关键要点故事脉络">关键要点——故事脉络</a></h2>
+<p>三次浪潮，每一次都建立在之前的基础上：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>浪潮</th><th>核心理念</th><th>巅峰</th><th>失败模式</th></tr>
+</thead>
+<tbody>
+<tr><td>符号 AI</td><td>手工编码规则</td><td>专家系统（1980 年代）</td><td>脆弱性——规则无法扩展</td></tr>
+<tr><td>统计机器学习</td><td>从数据中学习模式</td><td>深度学习（2010 年代）</td><td>狭窄性——每个模型解决一个任务</td></tr>
+<tr><td>基础模型</td><td>大规模预训练</td><td>GPT-4 + 推理（2024–2025）</td><td>真实性、对齐、控制</td></tr>
+</tbody>
+</table>
+</div>
+<p>钟摆从<strong>规则</strong>摆向<strong>统计</strong>，再摆向<strong>规模</strong>。每一次浪潮在其当下都看似不可逾越，然后又崩塌成下一波的种子。</p>
+<p><strong>这段历史教会我们的：</strong></p>
+<ul>
+<li>今天 AI 的每一个明显局限，都是未来等待发生的突破</li>
+<li>人类倾向于高估 AI 短期能做的事，低估长期能做的事——我们已经这样做了三次</li>
+<li>下一波最重要的能力，将是我们没有明确设计的能力</li>
+</ul>
+<p>最危险的错误不是认为 AI 太强大。而是认为 AI“只是一个模式匹配器“——却没有意识到，在足够的规模下，模式匹配开始看起来很像理解。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二章transformer-革命"><a class="header" href="#第二章transformer-革命">第二章：Transformer 革命</a></h1>
+<h2 id="21-transformer-之前"><a class="header" href="#21-transformer-之前">2.1 Transformer 之前</a></h2>
+<p>在 2017 年之前，序列建模意味着 RNN、LSTM 和 GRU——逐个处理 token。这种方式速度慢、难以并行化，并且在长距离依赖上表现不佳。</p>
+<h2 id="22-注意力就是一切2017"><a class="header" href="#22-注意力就是一切2017">2.2 “注意力就是一切”（2017）</a></h2>
+<p>Vaswani 等人的论文提出了 Transformer 架构。核心创新：<strong>注意力机制</strong>让每个 token 可以直接“关注“所有其他 token，无论距离多远。</p>
+<p><strong>关键组件：</strong></p>
+<ul>
+<li><strong>自注意力：</strong> 每个 token 关注所有其他 token，按相关性加权</li>
+<li><strong>多头注意力：</strong> 并行处理多个注意力模式</li>
+<li><strong>位置编码：</strong> 为模型提供 token 顺序感（因为注意力是排列不变的）</li>
+<li><strong>编码器-解码器堆叠：</strong> 原始架构；现代 LLM 使用仅解码器架构</li>
+</ul>
+<h2 id="23-缩放定律"><a class="header" href="#23-缩放定律">2.3 缩放定律</a></h2>
+<p>Kaplan 等人（2020）和后来的 Chinchilla（2022）表明，模型性能与以下因素之间存在可预测的幂律关系：</p>
+<ul>
+<li><strong>参数量</strong>（更大的模型）</li>
+<li><strong>数据量</strong>（更多 token）</li>
+<li><strong>算力预算</strong>（更多 FLOPs）</li>
+</ul>
+<p>实际意义：向训练良好的 Transformer 投入更多算力可以预测性地提升性能。这一发现引发了缩放竞赛。</p>
+<h2 id="24-涌现能力"><a class="header" href="#24-涌现能力">2.4 涌现能力</a></h2>
+<p>在特定的规模阈值上，模型突然展现出它们并未被显式训练的能力：</p>
+<ul>
+<li>上下文学习（GPT-3）</li>
+<li>思维链推理（PaLM、GPT-4）</li>
+<li>指令遵循（InstructGPT/ChatGPT）</li>
+<li>代码生成、翻译、工具使用</li>
+</ul>
+<p>并非所有人都认同涌现是真实存在的——有些人认为这是测量假象——但无论如何，更大的模型在<em>感觉上</em>确实有质的不同。</p>
+<h2 id="25-后-transformer-格局"><a class="header" href="#25-后-transformer-格局">2.5 后 Transformer 格局</a></h2>
+<p>Transformer 不再是唯一的选择：</p>
+<ul>
+<li><strong>Mamba、RWKV：</strong> 具有线性时间推理的状态空间模型</li>
+<li><strong>混合架构：</strong> Transformer 与 SSM 或 MoE 层结合</li>
+<li><strong>DeepSeek 的 MoE：</strong> 用于高效扩展的混合专家模型</li>
+</ul>
+<p>但核心洞见——基于注意力的架构随数据和算力扩展——仍然是后续一切的基础。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第三章从-gpt-到推理模型"><a class="header" href="#第三章从-gpt-到推理模型">第三章：从 GPT 到推理模型</a></h1>
+<h2 id="31-gpt-系列"><a class="header" href="#31-gpt-系列">3.1 GPT 系列</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模型</th><th>年份</th><th>关键创新</th></tr>
+</thead>
+<tbody>
+<tr><td>GPT-1</td><td>2018</td><td>生成式预训练 + 微调</td></tr>
+<tr><td>GPT-2</td><td>2019</td><td>规模揭示零样本迁移能力</td></tr>
+<tr><td>GPT-3</td><td>2020</td><td>1750 亿参数下的上下文学习</td></tr>
+<tr><td>InstructGPT</td><td>2022</td><td>RLHF 使模型对齐用户意图</td></tr>
+<tr><td>GPT-4</td><td>2023</td><td>多模态，推理能力提升</td></tr>
+<tr><td>GPT-4o</td><td>2024</td><td>原生多模态，实时交互</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="32-竞争对手"><a class="header" href="#32-竞争对手">3.2 竞争对手</a></h2>
+<ul>
+<li><strong>Claude（Anthropic）：</strong> 宪法 AI，安全优先，超长上下文</li>
+<li><strong>Gemini（Google DeepMind）：</strong> 从第一天起就是多模态，深度集成</li>
+<li><strong>Llama（Meta）：</strong> 开源权重催化剂，催生开源生态系统</li>
+<li><strong>DeepSeek（中国）：</strong> MoE 架构，R1 推理模型，成本效率震撼</li>
+<li><strong>Grok（xAI）：</strong> 实时知识，较少安全约束</li>
+</ul>
+<h2 id="33-推理模型的突破"><a class="header" href="#33-推理模型的突破">3.3 推理模型的突破</a></h2>
+<p>2024–2025 年出现了一个范式转变：模型在回答之前会“思考“。</p>
+<p><strong>推理模型的工作原理：</strong></p>
+<ul>
+<li>在推理时，模型生成内部思维链</li>
+<li>它探索多个分支，回溯，验证</li>
+<li>这种“测试时计算“可以扩展——更多的思考 = 更好的答案（在一定限度内）</li>
+</ul>
+<p><strong>关键模型：</strong></p>
+<ul>
+<li>OpenAI o1（2024）——第一个推理模型</li>
+<li>o3（2025）——显著改进</li>
+<li>DeepSeek R1（2025）——开源推理，匹敌 o1</li>
+<li>Claude Sonnet 4 推理（2025）</li>
+<li>Gemini 2.5 Pro 思考（2025）</li>
+</ul>
+<p><strong>影响：</strong> 我们不再仅仅扩展训练算力。测试时算力是一个新的扩展维度。模型现在可以“花费“算力来更深入地思考难题。</p>
+<h2 id="34-能力发展轨迹"><a class="header" href="#34-能力发展轨迹">3.4 能力发展轨迹</a></h2>
+<p>一年之内（2024→2025）：</p>
+<ul>
+<li>SWE-bench Verified：60% → ~100%</li>
+<li>博士级科学问题：接近专家基线</li>
+<li>竞赛数学：IMO 金牌</li>
+<li>工具使用和智能体任务：12% → 66%</li>
+</ul>
+<p>改进速度在 2026 年没有显示出放缓的迹象。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第四章前沿模型现状"><a class="header" href="#第四章前沿模型现状">第四章：前沿模型现状</a></h1>
+<h2 id="41-基准测试快照2026-年中"><a class="header" href="#41-基准测试快照2026-年中">4.1 基准测试快照（2026 年中）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>基准测试</th><th>最佳成绩</th><th>人类基线</th><th>备注</th></tr>
+</thead>
+<tbody>
+<tr><td>MMLU</td><td>96.5%</td><td>~90%</td><td>多任务语言理解</td></tr>
+<tr><td>GSM8K</td><td>98.2%</td><td>~95%</td><td>小学数学</td></tr>
+<tr><td>SWE-bench Verified</td><td>97.3%</td><td>~85%</td><td>真实世界编程任务</td></tr>
+<tr><td>MATH</td><td>94.1%</td><td>~90%</td><td>竞赛数学</td></tr>
+<tr><td>IMO</td><td>金牌</td><td>金牌</td><td>国际数学奥林匹克</td></tr>
+<tr><td>OSWorld（智能体）</td><td>66%</td><td>~80%</td><td>真实计算机任务</td></tr>
+</tbody>
+</table>
+</div>
+<p>锯齿形前沿依然存在：博士级数学接近饱和，但模拟时钟读取仅为 50.1%。</p>
+<h2 id="42-前沿模型格局2026"><a class="header" href="#42-前沿模型格局2026">4.2 前沿模型格局（2026）</a></h2>
+<p><strong>闭源领导者：</strong></p>
+<ul>
+<li><strong>Claude Opus 5</strong>（Anthropic）——目前综合排名第一</li>
+<li><strong>GPT-5</strong>（OpenAI）——各维度表现强劲</li>
+<li><strong>Gemini 3 Ultra</strong>（Google DeepMind）——多模态领导者</li>
+</ul>
+<p><strong>开源 / 开放权重领导者：</strong></p>
+<ul>
+<li><strong>Llama 5</strong>（Meta）——最佳开源通用模型</li>
+<li><strong>DeepSeek V4</strong>（DeepSeek）——成本领导者，MoE 架构</li>
+<li><strong>Olmo 3</strong>（AI2）——完全开放数据 + 权重</li>
+<li><strong>Granite 4</strong>（IBM）——企业级聚焦</li>
+</ul>
+<p><strong>差距：</strong> 闭源在综合上仍领先约 2.7%，但开源正在快速追赶。</p>
+<h2 id="43-架构趋势"><a class="header" href="#43-架构趋势">4.3 架构趋势</a></h2>
+<ul>
+<li><strong>混合专家（MoE）：</strong> 大多数前沿模型使用 MoE 提高效率</li>
+<li><strong>测试时计算扩展：</strong> 推理模型在推理时进行思考</li>
+<li><strong>工具使用和函数调用：</strong> 原生智能体能力</li>
+<li><strong>多模态：</strong> 所有主要模型都是原生多模态（文本 + 图像 + 音频）</li>
+<li><strong>长上下文：</strong> 标准为 128K–100 万 token</li>
+</ul>
+<h2 id="44-智能平台之争"><a class="header" href="#44-智能平台之争">4.4 智能平台之争</a></h2>
+<p>AI 能力增长是否正在放缓？证据表明<strong>没有</strong>：</p>
+<ul>
+<li>基准测试持续饱和（需要新的、更难的测试）</li>
+<li>推理模型开辟了新的扩展维度</li>
+<li>智能体能力正从低基数加速</li>
+<li>科学发现应用才刚刚开始</li>
+</ul>
+<p>真正的问题不是“我们是否在平台期？“而是“当模型在所有可测量的事情上都比专家更好时会发生什么？”</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第五章基础设施竞赛"><a class="header" href="#第五章基础设施竞赛">第五章：基础设施竞赛</a></h1>
+<h2 id="51-算力即新石油"><a class="header" href="#51-算力即新石油">5.1 算力即新石油</a></h2>
+<p>AI 能力受限于算力。每一个前沿模型都需要：</p>
+<ul>
+<li><strong>训练：</strong> 数万块 GPU 运行数月（数亿美元）</li>
+<li><strong>推理：</strong> 庞大的服务基础设施</li>
+</ul>
+<p>Stargate 项目（美国，2025 年宣布）承诺投入 5000 亿美元建设 AI 基础设施。英国和加拿大宣布了国家算力计划。NAIRR（国家人工智能研究资源）提供学术访问。</p>
+<h2 id="52-硬件格局"><a class="header" href="#52-硬件格局">5.2 硬件格局</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>硬件</th><th>优势</th><th>最适合</th></tr>
+</thead>
+<tbody>
+<tr><td>NVIDIA H100/B200</td><td>通用，软件生态系统</td><td>训练 + 推理</td></tr>
+<tr><td>AMD MI350</td><td>竞争性性能，更低成本</td><td>推理</td></tr>
+<tr><td>Google TPU v7</td><td>针对 TensorFlow/JAX 定制</td><td>训练</td></tr>
+<tr><td>AWS Trainium 3</td><td>AWS 集成</td><td>训练</td></tr>
+<tr><td>ASIC 加速器</td><td>任务特定效率</td><td>推理</td></tr>
+<tr><td>Chiplet 设计</td><td>模块化，可扩展</td><td>边缘 + 数据中心</td></tr>
+<tr><td>模拟推理</td><td>超低功耗</td><td>边缘 AI</td></tr>
+<tr><td>量子辅助</td><td>新兴技术</td><td>优化</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="53-效率转向"><a class="header" href="#53-效率转向">5.3 效率转向</a></h2>
+<p>2025–2026 年的主导叙事是<strong>效率</strong>，而非原始规模：</p>
+<ul>
+<li>DeepSeek 证明以 10–20% 的成本即可实现前沿性能</li>
+<li>MoE 架构减少了每个 token 的活动参数量</li>
+<li>量化、蒸馏、剪枝成为标准</li>
+<li>硬件感知模型设计（协同优化）</li>
+</ul>
+<p><strong>后果：</strong> “扩展就是一切“的时代结束了。现在我们优化。</p>
+<h2 id="54-边缘-ai"><a class="header" href="#54-边缘-ai">5.4 边缘 AI</a></h2>
+<p>2026 年，边缘 AI 从炒作走向现实：</p>
+<ul>
+<li>设备端 LLM（Apple Intelligence、Samsung Galaxy AI）</li>
+<li>针对智能体工作负载的专业边缘芯片</li>
+<li>隐私保护的本地推理</li>
+</ul>
+<p><strong>影响：</strong> AI 能力将无处不在，而非局限于数据中心。</p>
+<h2 id="55-算力的地缘政治"><a class="header" href="#55-算力的地缘政治">5.5 算力的地缘政治</a></h2>
+<p>算力获取现在是一个国家安全问题：</p>
+<ul>
+<li>美国对华先进芯片出口管制</li>
+<li>中国的国产替代品（华为昇腾）</li>
+<li>欧洲、印度、东南亚的“算力主权“运动</li>
+<li>开源模型作为算力受限地区的变通方案</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第六章人工智能经济"><a class="header" href="#第六章人工智能经济">第六章：人工智能经济</a></h1>
+<h2 id="61-市场规模与增长"><a class="header" href="#61-市场规模与增长">6.1 市场规模与增长</a></h2>
+<ul>
+<li>全球 AI 市场（2026 年预计）：8000 亿–1.2 万亿美元</li>
+<li>仅 GenAI：2000 亿美元以上</li>
+<li>免费 GenAI 工具对美国消费者的价值：1720 亿美元/年</li>
+<li>企业 AI 采用率：88%</li>
+</ul>
+<h2 id="62-泡沫之争"><a class="header" href="#62-泡沫之争">6.2 泡沫之争</a></h2>
+<p><strong>看多观点：</strong></p>
+<ul>
+<li>生产力提升真实且可量化</li>
+<li>企业支出由 ROI 驱动，而非炒作</li>
+<li>智能体 AI 释放新一轮价值</li>
+</ul>
+<p><strong>看空观点：</strong></p>
+<ul>
+<li>估值与收入脱节</li>
+<li>DeepSeek 证明前沿能力不需要前沿投入</li>
+<li>基础设施资本支出（Stargate 等）可能过度建设</li>
+<li>互联网泡沫相似之处：高估值，重“眼球“轻利润</li>
+</ul>
+<p><strong>现实检验：</strong> 即使泡沫破裂，技术仍将存在。互联网泡沫没有杀死互联网。</p>
+<h2 id="63-roi-问题"><a class="header" href="#63-roi-问题">6.3 ROI 问题</a></h2>
+<p>尽管采用率很高，许多企业仍难以从 AI 中展示具体的 ROI：</p>
+<ul>
+<li><strong>赢家：</strong> 编程助手、客服聊天机器人、内容生成</li>
+<li><strong>问号：</strong> 战略决策、自主智能体、创意工作</li>
+<li><strong>障碍：</strong> 集成成本、数据质量、组织变革管理</li>
+</ul>
+<p>AI 能力与企业价值捕获之间的差距是 2026 年的核心经济问题。</p>
+<h2 id="64-就业市场转型"><a class="header" href="#64-就业市场转型">6.4 就业市场转型</a></h2>
+<ul>
+<li><strong>新角色：</strong> AI 工程师、提示工程师、AI 伦理学家、模型对齐专家</li>
+<li><strong>受冲击的角色：</strong> 翻译、插画师、初级编程、客服</li>
+<li><strong>增强的角色：</strong> 医生、律师、研究员、教育工作者</li>
+</ul>
+<p>对就业的净影响仍在争论中，但工作的<em>性质</em>正在明显转向 AI 协作。</p>
+<h2 id="65-开源经济学"><a class="header" href="#65-开源经济学">6.5 开源经济学</a></h2>
+<p>开源模型正在重塑经济格局：</p>
+<ul>
+<li>DeepSeek R1：训练成本约 600 万美元，而同类闭源模型超过 1 亿美元</li>
+<li>Llama、Olmo、Granite：免费（有限制）</li>
+<li>推理成本每年下降约 10 倍</li>
+</ul>
+<p><strong>影响：</strong> AI 的商品化速度比以往任何技术浪潮都快。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第七章智能体-ai2026-年的突破"><a class="header" href="#第七章智能体-ai2026-年的突破">第七章：智能体 AI——2026 年的突破</a></h1>
+<h2 id="71-什么是-ai-智能体"><a class="header" href="#71-什么是-ai-智能体">7.1 什么是 AI 智能体？</a></h2>
+<p>AI 智能体是能够执行以下操作的模型：</p>
+<ul>
+<li><strong>感知</strong>其环境（通过工具、API、文件）</li>
+<li><strong>规划</strong>多步骤的动作序列</li>
+<li><strong>使用工具</strong>（代码执行、网络搜索、数据库、API）</li>
+<li><strong>记住</strong>跨交互的上下文</li>
+<li><strong>自主行动</strong>以实现目标</li>
+</ul>
+<h2 id="72-20252026-年的跨越"><a class="header" href="#72-20252026-年的跨越">7.2 2025–2026 年的跨越</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>能力</th><th>2025 年初</th><th>2026 年中</th></tr>
+</thead>
+<tbody>
+<tr><td>OSWorld（计算机任务）</td><td>12%</td><td>66%</td></tr>
+<tr><td>网页导航</td><td>15%</td><td>~50%</td></tr>
+<tr><td>多步骤工具使用</td><td>脆弱</td><td>可靠</td></tr>
+<tr><td>长时间运行任务</td><td>分钟级</td><td>小时级</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="73-智能体的架构"><a class="header" href="#73-智能体的架构">7.3 智能体的架构</a></h2>
+<ul>
+<li><strong>模型：</strong> 推理引擎（“大脑”）</li>
+<li><strong>工具库：</strong> 预构建的能力（搜索、代码、API）</li>
+<li><strong>记忆：</strong> 短期（上下文）+ 长期（向量数据库）</li>
+<li><strong>规划循环：</strong> 观察 → 推理 → 行动 → 观察</li>
+<li><strong>人在回路：</strong> 遇到不确定性时升级处理</li>
+</ul>
+<h2 id="74-当前局限性"><a class="header" href="#74-当前局限性">7.4 当前局限性</a></h2>
+<ul>
+<li><strong>可靠性：</strong> 66% 的成功意味着每 3 个任务中就有 1 个失败</li>
+<li><strong>成本：</strong> 智能体循环成本高昂（每个任务多次 API 调用）</li>
+<li><strong>安全性：</strong> 提示注入、工具滥用、数据泄露</li>
+<li><strong>评估：</strong> 没有标准化的智能体性能基准</li>
+<li><strong>耐心：</strong> 用户对智能体失败的容忍度很低</li>
+</ul>
+<h2 id="75-前景"><a class="header" href="#75-前景">7.5 前景</a></h2>
+<p>当智能体超过 90%+ 的可靠性阈值时，其影响将是巨大的：</p>
+<ul>
+<li>自动化软件工程</li>
+<li>真正代表你行事的个人 AI 助手</li>
+<li>整个业务流程的企业自动化</li>
+<li>科学实验室自动化</li>
+</ul>
+<p>智能体 AI 是 2026 年最重要的趋势。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第八章多模态与具身-ai"><a class="header" href="#第八章多模态与具身-ai">第八章：多模态与具身 AI</a></h1>
+<h2 id="81-多模态转型"><a class="header" href="#81-多模态转型">8.1 多模态转型</a></h2>
+<p>人类通过多种感官体验世界。直到 2023 年，AI 分别处理文本、图像和音频。如今的前沿模型原生处理所有模态。</p>
+<p><strong>当前能力：</strong></p>
+<ul>
+<li><strong>文本 + 图像：</strong> GPT-4o、Gemini、Claude、Llama 5</li>
+<li><strong>+ 音频：</strong> 实时语音输入/输出（GPT-4o、Gemini）</li>
+<li><strong>+ 视频：</strong> 理解与生成（Sora、Gemini、Kling）</li>
+<li><strong>+ 代码执行：</strong> 集成解释器（GPT-4o、Claude）</li>
+</ul>
+<h2 id="82-前沿多模态基准测试"><a class="header" href="#82-前沿多模态基准测试">8.2 前沿多模态基准测试</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>基准测试</th><th>最佳成绩</th><th>描述</th></tr>
+</thead>
+<tbody>
+<tr><td>MMMU</td><td>89%</td><td>多学科多模态推理</td></tr>
+<tr><td>MathVista</td><td>82%</td><td>视觉数学推理</td></tr>
+<tr><td>Video-MME</td><td>76%</td><td>视频理解</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="83-机器人技术与具身化"><a class="header" href="#83-机器人技术与具身化">8.3 机器人技术与具身化</a></h2>
+<p>AI 正在超越文本和图像，进入物理行动：</p>
+<ul>
+<li><strong>Tesla Optimus / Figure 02：</strong> 具有基础模型大脑的人形机器人</li>
+<li><strong>Mobile ALOHA / π0：</strong> 学习的操作策略</li>
+<li><strong>RT-2 / RT-X：</strong> 视觉-语言-行动模型</li>
+</ul>
+<p><strong>关键洞见：</strong> 具身化将 AI 锚定在物理世界中。这可能是鲁棒智能的必要条件（尽管不充分）。</p>
+<h2 id="84-边缘-ai-与设备端多模态"><a class="header" href="#84-边缘-ai-与设备端多模态">8.4 边缘 AI 与设备端多模态</a></h2>
+<p>到 2026 年，许多 AI 能力可以在本地运行：</p>
+<ul>
+<li>Apple Intelligence：设备端 LLM + 图像生成</li>
+<li>Samsung Galaxy AI：实时翻译、照片编辑</li>
+<li>Google Pixel：设备端 Gemini Nano</li>
+</ul>
+<p>隐私和延迟驱动这一趋势。大多数查询将在 2–3 年内转向混合模式（边缘 + 云）。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第九章ai-驱动的科学发现"><a class="header" href="#第九章ai-驱动的科学发现">第九章：AI 驱动的科学发现</a></h1>
+<h2 id="91-alphaevolve-时刻"><a class="header" href="#91-alphaevolve-时刻">9.1 AlphaEvolve 时刻</a></h2>
+<p>2025 年，Google DeepMind 发布了 AlphaEvolve——将 LLM 与进化算法相结合，为未解决的问题生成新颖算法。它发现了：</p>
+<ul>
+<li>更高效的数据中心电源管理方案</li>
+<li>优化的 TPU 芯片调度策略</li>
+</ul>
+<p>这是 LLM 做出真正新颖发现的首次演示。</p>
+<h2 id="92-生态系统的扩展"><a class="header" href="#92-生态系统的扩展">9.2 生态系统的扩展</a></h2>
+<p>数周之内，社区复制并扩展了 AlphaEvolve：</p>
+<ul>
+<li><strong>OpenEvolve</strong>（Asankhaya Sharma）：开源复现</li>
+<li><strong>SinkaEvolve</strong>（Sakana AI）：日本变体，采用不同搜索策略</li>
+<li><strong>AlphaResearch</strong>（美中合作）：声称在 AlphaEvolve 的数学解法上有所改进</li>
+</ul>
+<h2 id="93-ai-发现的领域"><a class="header" href="#93-ai-发现的领域">9.3 AI 发现的领域</a></h2>
+<ul>
+<li><strong>生物学：</strong> AlphaFold（蛋白质折叠）、RFdiffusion（蛋白质设计）、候选药物发现</li>
+<li><strong>数学：</strong> 猜想、证明、新颖算法</li>
+<li><strong>工程：</strong> 芯片设计、材料发现、电路优化</li>
+<li><strong>气候：</strong> 碳捕获材料、电池化学、能源网格优化</li>
+</ul>
+<h2 id="94-工作原理"><a class="header" href="#94-工作原理">9.4 工作原理</a></h2>
+<p>一般模式：</p>
+<ol>
+<li><strong>生成</strong>候选解（LLM 提出）</li>
+<li><strong>评估</strong>基于真实度量（模拟、形式验证）</li>
+<li><strong>迭代</strong>——在候选空间上进行进化或强化学习</li>
+<li><strong>验证</strong>——人类专家检查最有希望的候选解</li>
+</ol>
+<h2 id="95-前沿"><a class="header" href="#95-前沿">9.5 前沿</a></h2>
+<p>圣杯：AI 自主发现基础科学——新的物理学、新的数学、新的生物学。我们尚未达到，但轨迹是清晰的。2026 年将在这一领域看到显著的加速。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十章开源与闭源之争"><a class="header" href="#第十章开源与闭源之争">第十章：开源与闭源之争</a></h1>
+<h2 id="101-两大阵营"><a class="header" href="#101-两大阵营">10.1 两大阵营</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th></th><th>闭源</th><th>开源/开放权重</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>领导者</strong></td><td>OpenAI、Anthropic、Google</td><td>Meta、DeepSeek、AI2、IBM、Mistral</td></tr>
+<tr><td><strong>优势</strong></td><td>能力领先、安全控制</td><td>成本、透明度、可定制性</td></tr>
+<tr><td><strong>商业模式</strong></td><td>API 定价、订阅</td><td>生态系统、企业服务</td></tr>
+<tr><td><strong>主要关切</strong></td><td>中心化控制</td><td>滥用、双重用途</td></tr>
+</tbody>
+</table>
+</div>
+<p>在 2026 年，差距已缩小至约 2.7%——且开源持续追赶。</p>
+<h2 id="102-deepseek-催化剂"><a class="header" href="#102-deepseek-催化剂">10.2 DeepSeek 催化剂</a></h2>
+<p>DeepSeek 于 2025 年 1 月发布 R1，是一个分水岭时刻：</p>
+<ul>
+<li>前沿级推理能力，训练成本仅为 10–20%</li>
+<li>开放权重，详细技术报告</li>
+<li>引发了中国开源模型发布浪潮（GLM、Moonshot Kimi）</li>
+<li>迫使 OpenAI 发布其首个开放模型（2025 年 8 月）</li>
+</ul>
+<h2 id="103-当前生态系统"><a class="header" href="#103-当前生态系统">10.3 当前生态系统</a></h2>
+<ul>
+<li><strong>Llama 5</strong>（Meta）：最佳通用开源权重模型</li>
+<li><strong>Olmo 3</strong>（AI2）：完全开放（数据 + 权重 + 代码）</li>
+<li><strong>Granite 4</strong>（IBM）：企业级聚焦，宽松许可证</li>
+<li><strong>Mistral Large 3</strong>（Mistral）：与前沿竞争</li>
+<li><strong>DeepSeek V4</strong>（DeepSeek）：MoE 效率领导者</li>
+<li><strong>Phi-4</strong>（Microsoft）：体积小但能力强（适用于边缘/设备）</li>
+</ul>
+<h2 id="104-标准与互操作性"><a class="header" href="#104-标准与互操作性">10.4 标准与互操作性</a></h2>
+<p>2026 年开源 AI 的三大驱动力：</p>
+<ol>
+<li><strong>全球多样性：</strong> 来自中国、欧洲、美国的多种语言和推理调优发布</li>
+<li><strong>互操作性：</strong> 运行时围绕共享标准（GGML、OpenXLA）对齐</li>
+<li><strong>治理：</strong> 安全审计发布、透明数据管道、模型卡</li>
+</ol>
+<h2 id="105-辩论"><a class="header" href="#105-辩论">10.5 辩论</a></h2>
+<p><strong>支持开源：</strong> 更快的创新、民主化访问、透明度、避免企业控制。
+<strong>反对开源：</strong> 双重用途风险（武器、生物武器、虚假信息）、没有“关闭开关“、碎片化。</p>
+<p>这种张力不会得到解决——它是结构性的。双方将共存。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十一章地缘政治与-ai-主权"><a class="header" href="#第十一章地缘政治与-ai-主权">第十一章：地缘政治与 AI 主权</a></h1>
+<h2 id="111-中美动态"><a class="header" href="#111-中美动态">11.1 中美动态</a></h2>
+<p>叙事已发生显著变化：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>美国</th><th>中国</th></tr>
+</thead>
+<tbody>
+<tr><td>前沿模型</td><td>领先约 2.7%</td><td>接近持平</td></tr>
+<tr><td>专利</td><td>影响力更高</td><td>数量更多</td></tr>
+<tr><td>论文发表</td><td>较少，更具选择性</td><td>数量更多，增长更快</td></tr>
+<tr><td>工业机器人</td><td>3 万台/年</td><td>30 万台+/年</td></tr>
+<tr><td>算力获取</td><td>NVIDIA GPU</td><td>国产替代品（华为）</td></tr>
+<tr><td>AI 采用率</td><td>28.3%（全球第 24）</td><td>制造业、监控领域高</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>关键洞见：</strong> 中国在<em>扩散</em>方面胜出（将 AI 部署到各个行业），美国在<em>前沿</em>方面胜出（推动技术前沿）。</p>
+<h2 id="112-全球-ai-治理"><a class="header" href="#112-全球-ai-治理">11.2 全球 AI 治理</a></h2>
+<p>一系列峰会塑造了治理格局：</p>
+<ol>
+<li><strong>布莱切利宣言</strong>（英国，2023）：首个国际 AI 安全协议</li>
+<li><strong>首尔宣言</strong>（韩国，2024）：各国框架之间的互操作性</li>
+<li><strong>巴黎 AI 行动峰会</strong>（法国，2025）：重心转向创新和产业应用</li>
+<li><strong>欧盟 AI 法案</strong>（2024–2026）：全面的监管框架</li>
+</ol>
+<h2 id="113-ai-主权"><a class="header" href="#113-ai-主权">11.3 AI 主权</a></h2>
+<p>各国竞相建设独立 AI 能力：</p>
+<ul>
+<li><strong>欧盟：</strong> Gaia-X、EuroHPC、Mistral、Aleph Alpha</li>
+<li><strong>英国：</strong> 1 亿英镑算力基金、前沿 AI 工作组</li>
+<li><strong>印度：</strong> Bhashini（语言 AI）、开源模型推动</li>
+<li><strong>新加坡：</strong> 61% AI 采用率（全球最高）</li>
+<li><strong>阿联酋：</strong> 54% 采用率，大规模算力投资</li>
+</ul>
+<p>算力获取正变得与核能力同等重要。</p>
+<h2 id="114-出口管制与算力战争"><a class="header" href="#114-出口管制与算力战争">11.4 出口管制与算力战争</a></h2>
+<ul>
+<li>美国限制先进芯片对华出口（NVIDIA H100/B200）</li>
+<li>中国发展国产替代品（华为昇腾 910B、910C）</li>
+<li>开源模型作为变通方案（随处训练，随处部署）</li>
+<li>欧洲、印度、东南亚的“算力主权“倡议</li>
+</ul>
+<p><strong>悖论：</strong> 出口管制减缓了中国的前沿进展，但加速了其国产生态系统和开源贡献。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十二章负责任-ai日益扩大的鸿沟"><a class="header" href="#第十二章负责任-ai日益扩大的鸿沟">第十二章：负责任 AI——日益扩大的鸿沟</a></h1>
+<h2 id="121-能力-安全差距"><a class="header" href="#121-能力-安全差距">12.1 能力-安全差距</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>2023</th><th>2024</th><th>2025</th><th>2026</th></tr>
+</thead>
+<tbody>
+<tr><td>AI 事件追踪</td><td>89</td><td>233</td><td>362</td><td>上升</td></tr>
+<tr><td>安全基准</td><td>萌芽期</td><td>增长中</td><td>滞后</td><td>滞后</td></tr>
+<tr><td>红队测试</td><td>手动</td><td>半自动</td><td>自动</td><td>标准</td></tr>
+</tbody>
+</table>
+</div>
+<p>AI 能做什么与我们确保其安全的能力之间的差距正在<strong>扩大</strong>，而非缩小。</p>
+<h2 id="122-关键安全挑战"><a class="header" href="#122-关键安全挑战">12.2 关键安全挑战</a></h2>
+<ul>
+<li><strong>对齐：</strong> 模型追求错误的目标（奖励破解、规范利用）</li>
+<li><strong>可靠性：</strong> 幻觉、谄媚、行为不一致</li>
+<li><strong>鲁棒性：</strong> 对抗性攻击、越狱、提示注入</li>
+<li><strong>控制：</strong> 智能体安全（规范、监督、可纠正性）</li>
+<li><strong>透明度：</strong> 黑箱决策、不可解释的推理</li>
+</ul>
+<h2 id="123-对齐税"><a class="header" href="#123-对齐税">12.3 对齐税</a></h2>
+<p>近年研究表明一个令人不安的权衡：在一个维度上提高 AI 能力（如编程）可能会在另一个维度上降低安全性（如诚实性）。对齐技术正难以跟上能力增长的速度。</p>
+<h2 id="124-政策与监管"><a class="header" href="#124-政策与监管">12.4 政策与监管</a></h2>
+<ul>
+<li><strong>欧盟 AI 法案：</strong> 基于风险的分类（不可接受 → 高风险 → 有限风险 → 最低风险）</li>
+<li><strong>美国 AI 行政令</strong>（2023）→ 行政令被撤销（2024）→ 州级监管</li>
+<li><strong>中国：</strong> 算法监管、内容审核、许可制度</li>
+<li><strong>联合国：</strong> 提议设立国际 AI 治理机构但尚未建立</li>
+</ul>
+<h2 id="125-前进之路"><a class="header" href="#125-前进之路">12.5 前进之路</a></h2>
+<p>负责任 AI 需要三条并行轨道：</p>
+<ol>
+<li><strong>技术：</strong> 更好的可解释性、对齐、红队测试</li>
+<li><strong>制度：</strong> 监管、标准、审计、事件报告</li>
+<li><strong>文化：</strong> AI 素养、公众理解、职业伦理</li>
+</ol>
+<p>相对于能力增长，这三条轨道的进展都不够快。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十三章工作与劳动力"><a class="header" href="#第十三章工作与劳动力">第十三章：工作与劳动力</a></h1>
+<h2 id="131-采用曲线"><a class="header" href="#131-采用曲线">13.1 采用曲线</a></h2>
+<ul>
+<li>每 5 名大学生中就有 4 人使用生成式 AI</li>
+<li>88% 的组织已以某种形式采用了 AI</li>
+<li>53% 的普通人口使用 GenAI 工具</li>
+</ul>
+<p>采用速度比以往任何技术都快——比 PC（18 年达到 50%）或互联网（7 年）都快。</p>
+<h2 id="132-哪些工作受影响最大"><a class="header" href="#132-哪些工作受影响最大">13.2 哪些工作受影响最大？</a></h2>
+<p><strong>最易受影响：</strong></p>
+<ul>
+<li>翻译、内容写作、插画、数据录入</li>
+<li>初级编程、客服</li>
+<li>律师助理、会计、合规文档</li>
+</ul>
+<p><strong>最不易受影响（暂时）：</strong></p>
+<ul>
+<li>体力劳动（管道工、电工、建筑）</li>
+<li>面对面照护（护理、治疗、教学）</li>
+<li>高风险决策（手术、诉讼、高管战略）</li>
+</ul>
+<p><strong>被增强的：</strong></p>
+<ul>
+<li>软件工程、数据科学、设计、营销</li>
+<li>研究、分析、医学、法律</li>
+<li>管理、战略、创意指导</li>
+</ul>
+<h2 id="133-生产力之争"><a class="header" href="#133-生产力之争">13.3 生产力之争</a></h2>
+<p>AI 是否真的让工人更有生产力？</p>
+<ul>
+<li><strong>证据支持：</strong> 编程速度（+25–55%）、写作质量、数据分析</li>
+<li><strong>证据反对：</strong> 输出质量下降、过度依赖、技能萎缩</li>
+<li><strong>开放问题：</strong> 组织生产力是否提高？（实施很困难）</li>
+</ul>
+<h2 id="134-新角色"><a class="header" href="#134-新角色">13.4 新角色</a></h2>
+<p>AI 正在创造全新的职业类别：</p>
+<ul>
+<li><strong>AI 工程师</strong>——构建 AI 应用</li>
+<li><strong>提示工程师</strong>——设计有效的 AI 交互</li>
+<li><strong>对齐专家</strong>——确保 AI 按预期行事</li>
+<li><strong>AI 伦理学家</strong>——治理与伦理</li>
+<li><strong>AI 训练师 / 数据策展人</strong>——准备高质量训练数据</li>
+</ul>
+<h2 id="135-政策应对"><a class="header" href="#135-政策应对">13.5 政策应对</a></h2>
+<p>各国政府正在尝试：</p>
+<ul>
+<li><strong>全民基本收入：</strong> 芬兰、加拿大、肯尼亚的试点</li>
+<li><strong>再培训计划：</strong> 新加坡的 SkillsFuture、欧盟的数字技能计划</li>
+<li><strong>税收激励：</strong> 既鼓励 AI 采用，也鼓励人力雇佣</li>
+<li><strong>可携带福利：</strong> 将医疗保健与雇佣关系脱钩</li>
+</ul>
+<p>没有国家已经解决了这个问题。未来十年将被这一挑战定义。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十四章ai-在科学与医学中的应用"><a class="header" href="#第十四章ai-在科学与医学中的应用">第十四章：AI 在科学与医学中的应用</a></h1>
+<h2 id="141-药物发现"><a class="header" href="#141-药物发现">14.1 药物发现</a></h2>
+<p>AI 正在改变药物研发管线（历史上：10 年以上，每款药 20 亿美元以上）：</p>
+<ul>
+<li><strong>靶点识别：</strong> AlphaFold、ESMFold 预测蛋白质结构</li>
+<li><strong>分子设计：</strong> 生成式模型提出新药候选分子</li>
+<li><strong>筛选优化：</strong> AI 预测结合亲和力、毒性、ADME 特性</li>
+<li><strong>临床试验：</strong> 患者招募、方案优化、真实世界证据</li>
+</ul>
+<p>2025 年，首批 AI 发现的药物进入 II/III 期临床试验。</p>
+<h2 id="142-医学-ai"><a class="header" href="#142-医学-ai">14.2 医学 AI</a></h2>
+<ul>
+<li><strong>诊断影像：</strong> FDA 批准的放射学、病理学、皮肤科 AI</li>
+<li><strong>临床决策支持：</strong> LLM 辅助诊断、治疗规划</li>
+<li><strong>医疗记录：</strong> 自动摘要、编码、事先授权</li>
+<li><strong>手术：</strong> 具有 AI 规划的机器人辅助手术</li>
+</ul>
+<p><strong>关键挑战：</strong> 临床环境中的幻觉是不可接受的。大多数已部署的 AI 是狭窄的（单一任务），而非通用型。</p>
+<h2 id="143-ai-在研究中的应用"><a class="header" href="#143-ai-在研究中的应用">14.3 AI 在研究中的应用</a></h2>
+<ul>
+<li><strong>文献综述：</strong> AI 可以在一夜之间处理 10,000 篇论文</li>
+<li><strong>假设生成：</strong> 模型提出新颖的实验方案</li>
+<li><strong>实验室自动化：</strong> AI 控制的机器人 24/7 运行实验</li>
+<li><strong>同行评审：</strong> AI 辅助评审（有争议但在增长）</li>
+</ul>
+<h2 id="144-可重复性危机"><a class="header" href="#144-可重复性危机">14.4 可重复性危机</a></h2>
+<p>AI 进入科学领域引发新的担忧：</p>
+<ul>
+<li>AI 生成的论文涌入期刊</li>
+<li>LLM 生成文本中的“痛苦短语“</li>
+<li>AI 幻觉产生的参考文献和数据</li>
+<li>难以区分 AI 生成和人类的研究</li>
+</ul>
+<p>科学界仍在制定 AI 辅助研究的规范。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十五章ai-在编码与工程中的应用"><a class="header" href="#第十五章ai-在编码与工程中的应用">第十五章：AI 在编码与工程中的应用</a></h1>
+<p><em>软件工程师的实用实地指南——AI 原生时代的工具、论文、工作流和思维模型。</em></p>
+<h2 id="151-编程革命用数据说话"><a class="header" href="#151-编程革命用数据说话">15.1 编程革命——用数据说话</a></h2>
+<p>SWE-bench Verified 在一年内从 60% 提升到约 97%。到 2026 年中，AI 已成为每个认真软件工程师的日常现实。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>2024</th><th>2025</th><th>2026</th></tr>
+</thead>
+<tbody>
+<tr><td>SWE-bench Verified</td><td>33%</td><td>60%</td><td>~97%</td></tr>
+<tr><td>HumanEval pass@1</td><td>67%</td><td>92%</td><td>~98%</td></tr>
+<tr><td>代码生成速度提升</td><td>1.5x</td><td>3x</td><td>5–10x</td></tr>
+<tr><td>生产中 AI 生成代码占比</td><td>~5%</td><td>~25%</td><td>~50%+</td></tr>
+</tbody>
+</table>
+</div>
+<p>问题不再是<em>是否</em>在工程中使用 AI——而是<em>如何</em>有效、安全且大规模地使用它。</p>
+<h2 id="152-工具生态格局2026"><a class="header" href="#152-工具生态格局2026">15.2 工具生态格局（2026）</a></h2>
+<h3 id="ai-编程助手副驾驶"><a class="header" href="#ai-编程助手副驾驶">AI 编程助手（副驾驶）</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>基础模型</th><th>核心优势</th><th>最适合</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>GitHub Copilot</strong></td><td>GPT-4o / Claude</td><td>IDE 集成、生态系统</td><td>日常通用编码</td></tr>
+<tr><td><strong>Cursor</strong></td><td>Claude + 定制模型</td><td>深度上下文理解、智能体</td><td>复杂重构、多文件编辑</td></tr>
+<tr><td><strong>Codeium / Windsurf</strong></td><td>定制模型</td><td>快速、免费、多 IDE</td><td>快速补全、注重成本</td></tr>
+<tr><td><strong>Amazon Q Developer</strong></td><td>Amazon Nova</td><td>AWS 原生、安全扫描</td><td>企业 AWS 工作流</td></tr>
+<tr><td><strong>Tabnine</strong></td><td>专用模型</td><td>隐私（本地部署）</td><td>受监管行业</td></tr>
+<tr><td><strong>JetBrains AI</strong></td><td>多模型</td><td>深度 IDE 集成</td><td>JetBrains 用户</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>2026 年优胜者：</strong> 重度用户选 Cursor，主流用户选 Copilot。差距正在快速缩小。</p>
+<h3 id="ai-原生开发环境"><a class="header" href="#ai-原生开发环境">AI 原生开发环境</a></h3>
+<ul>
+<li><strong>Cursor</strong> — 深度 AI 集成的 VS Code 分支：行内编辑、智能体模式、多文件上下文、自然语言执行终端命令</li>
+<li><strong>Replit Agent</strong> — 从单个提示生成全栈应用，包括部署</li>
+<li><strong>GitHub Spark</strong> — 从自然语言快速原型化 Web 应用</li>
+<li><strong>Bolt.new / Lovable.dev</strong> — 带可视化预览的前后端生成</li>
+<li><strong>v0.dev（Vercel）</strong> — 使用 React/Next.js 生成 UI 组件</li>
+</ul>
+<h3 id="智能体编程工具"><a class="header" href="#智能体编程工具">智能体编程工具</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>架构</th><th>能力</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Devin</strong>（Cognition）</td><td>专用智能体 + 沙箱</td><td>自主 PR 生成、调试、部署</td></tr>
+<tr><td><strong>SWE-agent</strong></td><td>LM + bash + 代码编辑器循环</td><td>自主修复 GitHub 问题</td></tr>
+<tr><td><strong>Claude Code</strong>（Anthropic）</td><td>Claude + 终端 + 文件系统</td><td>在 CLI 中执行复杂编码任务</td></tr>
+<tr><td><strong>OpenHands</strong>（前 OpenDevin）</td><td>开源智能体框架</td><td>可定制的编程智能体</td></tr>
+<tr><td><strong>Aider</strong></td><td>Git 感知智能体</td><td>自动提交的多文件编辑</td></tr>
+<tr><td><strong>GPT-Engineer</strong></td><td>模板化生成</td><td>从规格说明书搭建整个项目</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="代码审查与质量"><a class="header" href="#代码审查与质量">代码审查与质量</a></h3>
+<ul>
+<li><strong>CodeRabbit</strong> — 每个 PR 的 AI 代码审查（风格、逻辑错误、安全）</li>
+<li><strong>Qodo（前 CodiumAI）</strong> — 生成有意义的测试、分析代码质量</li>
+<li><strong>SonarQube + AI</strong> — 静态分析现在包含 AI 驱动的发现</li>
+<li><strong>Sweep AI</strong> — 自动修复小型 PR 评论，无需人工介入</li>
+</ul>
+<h2 id="153-每位工程师都应了解的关键论文"><a class="header" href="#153-每位工程师都应了解的关键论文">15.3 每位工程师都应了解的关键论文</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>论文</th><th>年份</th><th>核心洞察</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Codex（Chen 等）</strong></td><td>2021</td><td>在 GitHub 代码上微调 GPT-3，从文档字符串生成可用的函数</td></tr>
+<tr><td><strong>SWE-bench（Jimenez 等）</strong></td><td>2024</td><td>真实 GitHub 问题解决基准；两年内从 33% 到 97%</td></tr>
+<tr><td><strong>Self-Refine（Madaan 等）</strong></td><td>2023</td><td>LLM 可以通过反馈循环迭代改进自己的代码</td></tr>
+<tr><td><strong>ReAct（Yao 等）</strong></td><td>2023</td><td>推理 + 行动：将思维链与工具使用交错进行</td></tr>
+<tr><td><strong>CodeAgent（Wang 等）</strong></td><td>2025</td><td>具有规划、执行、测试循环的自主编码智能体</td></tr>
+<tr><td><strong>Agentic Coding via Repo-level Context（Zhang 等）</strong></td><td>2025</td><td>仓库级上下文感知编辑</td></tr>
+<tr><td><strong>CodiumAI Test Generation</strong></td><td>2024</td><td>通过代码分析自动生成行为测试</td></tr>
+<tr><td><strong>AlphaCodium（Ridnik 等）</strong></td><td>2024</td><td>多阶段方法：问题反思 → 测试生成 → 代码生成 → 迭代优化</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="154-工程师的每日工作流"><a class="header" href="#154-工程师的每日工作流">15.4 工程师的每日工作流</a></h2>
+<h3 id="上午加载上下文"><a class="header" href="#上午加载上下文">上午：加载上下文</a></h3>
+<p>在写代码之前，先为 AI 加载上下文：</p>
+<pre><code class="language-python"># 在 Cursor/Claude Code 中可用的模式
+@workspace  # Cursor：加载完整仓库上下文
+@context src/api/ src/models/ tests/  # 指定目录
+</code></pre>
+<p><strong>推荐实践：</strong> 在仓库根目录维护一个 <code>AGENTS.md</code>（或 <code>.cursorrules</code>、<code>CLAUDE.md</code>）文件：</p>
+<pre><code class="language-markdown"># AGENTS.md — AI 编程助手的项目指南
+
+## 技术栈
+- 前端：Next.js 15、TypeScript、Tailwind、shadcn/ui
+- 后端：FastAPI、Python 3.12、SQLAlchemy 2.0
+- 数据库：PostgreSQL 16、Redis 缓存
+- 测试：pytest、Playwright、Vitest
+
+## 约定
+- 使用函数式组件 + hooks，不使用类组件
+- 所有 API 路由都有 Zod 验证
+- 新业务逻辑必须包含测试
+- 错误信息格式："ERR_XXXX: description"
+
+## 架构
+- MVC + service 层
+- Repositories 抽象数据库访问
+- 全程使用 async/await
+</code></pre>
+<h3 id="中午生成"><a class="header" href="#中午生成">中午：生成</a></h3>
+<p><strong>最大化效率的编码工作流：</strong></p>
+<ol>
+<li>
+<p><strong>规格先行</strong> — 在写函数体之前先写接口/签名/类型。当契约清晰时，AI 生成的代码质量更高。</p>
+</li>
+<li>
+<p><strong>测试先行</strong> — 先写测试。然后让 AI 实现。这锚定了正确性。</p>
+</li>
+<li>
+<p><strong>迭代精炼</strong> — 不要接受第一个输出。利用 AI 的自我精炼能力：</p>
+<pre><code>"审查这段代码，关注：边界情况、性能问题、安全漏洞和风格一致性。"
+</code></pre>
+</li>
+<li>
+<p><strong>上下文锚定</strong> — 直接将编译器/解释器错误粘贴到提示中。AI 在看到错误时修复自身输出的能力特别强。</p>
+</li>
+</ol>
+<p><strong>有效的提示模式：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模式</th><th>示例</th><th>为何有效</th></tr>
+</thead>
+<tbody>
+<tr><td>角色分配</td><td>“你是一名正在审查代码库的高级 Python 工程师”</td><td>激活专家角色</td></tr>
+<tr><td>约束前缀</td><td>“写生产级代码。这段代码将处理 PII 数据。”</td><td>设定安全边界</td></tr>
+<tr><td>输出格式</td><td>“以相对于 main 分支的 diff 形式返回解决方案”</td><td>减少认知负担</td></tr>
+<tr><td>负面示例</td><td>“不要使用 eval、subprocess 或 exec”</td><td>预防常见失败模式</td></tr>
+<tr><td>思维链</td><td>“在写代码之前，先思考边界情况”</td><td>提高正确性</td></tr>
+<tr><td>自我验证</td><td>“编写测试验证这段代码，然后运行它们”</td><td>创建检查点</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="下午审查与重构"><a class="header" href="#下午审查与重构">下午：审查与重构</a></h3>
+<p><strong>AI 辅助代码审查清单：</strong></p>
+<ol>
+<li><strong>逻辑正确性</strong> — “是否处理了 X 为 null 的边界情况？”</li>
+<li><strong>安全扫描</strong> — “检查 OWASP Top 10 漏洞：注入、XSS、SSRF、不安全反序列化”</li>
+<li><strong>性能</strong> — “找出 O(n²) 或更差的模式、N+1 查询、内存泄漏”</li>
+<li><strong>可维护性</strong> — “这个函数太长了吗？有没有魔法数字？命名一致吗？”</li>
+<li><strong>测试充分性</strong> — “哪些场景没有被现有测试覆盖？”</li>
+</ol>
+<p><strong>重构模式：</strong></p>
+<pre><code>"分析这个模块。找出：
+1. 应该提取的重复逻辑
+2. 违反单一职责原则的函数
+3. 可以降低的耦合度
+4. 使用现代语言特性的机会
+输出一个按优先级排序的重构计划。"
+</code></pre>
+<h2 id="155-ai-用于测试"><a class="header" href="#155-ai-用于测试">15.5 AI 用于测试</a></h2>
+<p>测试是 AI 提供最高 ROI 的领域之一。</p>
+<h3 id="测试生成"><a class="header" href="#测试生成">测试生成</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>方法</th><th>质量</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Qodo（CodiumAI）</strong></td><td>静态分析 → 行为覆盖</td><td>边界检测优秀</td></tr>
+<tr><td><strong>Copilot / Cursor</strong></td><td>行内测试生成</td><td>单元测试表现良好</td></tr>
+<tr><td><strong>Coverage AI</strong></td><td>LLM 分析未覆盖分支</td><td>生成缺失场景</td></tr>
+<tr><td><strong>Property-based（Hypothesis + AI）</strong></td><td>AI 建议不变量</td><td>发现边界 Bug</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>推荐工作流：</strong></p>
+<pre><code class="language-python"># 第一步：从实现生成测试
+# 提示："为这个函数生成 pytest 测试，覆盖：
+# - 正常路径
+# - 边界情况（空输入、None、边界值）
+# - 错误条件
+# - 类型违规"
+
+# 第二步：审查并运行
+# - AI 经常遗漏异步模式、mock 设置
+# - 但能发现人类遗漏的边界情况
+
+# 第三步：生成对抗性测试
+# "什么输入会破坏这个函数？为这些输入写测试。"
+</code></pre>
+<h3 id="测试维护"><a class="header" href="#测试维护">测试维护</a></h3>
+<p>AI 擅长：</p>
+<ul>
+<li>API 变更时更新测试</li>
+<li>识别不稳定测试</li>
+<li>在不牺牲覆盖率的情况下减少测试套件运行时间</li>
+<li>从 API 规范生成集成测试</li>
+</ul>
+<h2 id="156-ai-调试"><a class="header" href="#156-ai-调试">15.6 AI 调试</a></h2>
+<h3 id="调试工作流"><a class="header" href="#调试工作流">调试工作流</a></h3>
+<ol>
+<li><strong>用自然语言描述 Bug</strong> — 包括错误信息、预期 vs 实际、最小复现</li>
+<li><strong>提出假设</strong> — 请 AI 按可能性排序列出潜在根因</li>
+<li><strong>请求诊断</strong> — “添加日志/跟踪以缩小问题范围”</li>
+<li><strong>修复并验证</strong> — 应用修复，请 AI 建议本可以捕获该 Bug 的测试用例</li>
+</ol>
+<h3 id="有效的调试提示"><a class="header" href="#有效的调试提示">有效的调试提示：</a></h3>
+<pre><code>"我在这个分布式任务队列中遇到了竞态条件。
+这是 worker 代码和错误跟踪。
+你会使用哪些同步原语？
+请逐步分析导致 Bug 的时间序列。"
+</code></pre>
+<pre><code>"这个 SQL 查询在 500 万行的表上运行需要 12 秒。下面是 EXPLAIN ANALYZE 输出。
+哪些索引会有帮助？能否重写查询？"
+</code></pre>
+<h2 id="157-ai-时代的安全"><a class="header" href="#157-ai-时代的安全">15.7 AI 时代的安全</a></h2>
+<h3 id="ai-生成代码的特定风险"><a class="header" href="#ai-生成代码的特定风险">AI 生成代码的特定风险</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>风险</th><th>频率</th><th>缓解措施</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>AI 输出中的提示注入</strong></td><td>常见</td><td>永远不要信任处理用户输入的 AI 生成代码</td></tr>
+<tr><td><strong>幻觉依赖包</strong></td><td>罕见但危险</td><td>验证每个包名、版本、导入路径</td></tr>
+<tr><td><strong>不安全默认配置</strong></td><td>常见</td><td>显式审查安全配置（CORS、认证、加密）</td></tr>
+<tr><td><strong>授权逻辑错误</strong></td><td>偶尔</td><td>认证逻辑必须经过人工审查</td></tr>
+<tr><td><strong>供应链风险</strong></td><td>日益增长</td><td>固定依赖版本，使用 <code>pip audit</code> / <code>npm audit</code> / <code>trivy</code></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="llm-应用的-owasp-top-102025"><a class="header" href="#llm-应用的-owasp-top-102025">LLM 应用的 OWASP Top 10（2025）</a></h3>
+<ol>
+<li>提示注入</li>
+<li>不安全的输出处理</li>
+<li>训练数据投毒</li>
+<li>模型拒绝服务</li>
+<li>供应链漏洞</li>
+<li>敏感信息泄露</li>
+<li>不安全的插件设计</li>
+<li>过度代理权限</li>
+<li>过度依赖（信任 AI 输出的倾向）</li>
+<li>模型盗窃</li>
+</ol>
+<p><strong>对软件工程师：</strong> #1、#2、#9 是你在每次 AI 交互中的直接责任。</p>
+<h3 id="代码审查的安全必须提示"><a class="header" href="#代码审查的安全必须提示">代码审查的安全必须提示</a></h3>
+<p>添加到你的审查工作流中：</p>
+<pre><code>"分析这段代码，检查：
+- SQL 注入（特别是 AI 生成原始查询时）
+- XSS 漏洞
+- 路径遍历
+- 不安全反序列化
+- 硬编码密钥或凭据
+- 认证/授权绕过
+- 泄露内部状态的不当错误处理"
+</code></pre>
+<h2 id="158-工程师的-ai-思维模型"><a class="header" href="#158-工程师的-ai-思维模型">15.8 工程师的 AI 思维模型</a></h2>
+<h3 id="何时信任-ai-代码"><a class="header" href="#何时信任-ai-代码">何时信任 AI 代码</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>场景</th><th>信任级别</th><th>行动</th></tr>
+</thead>
+<tbody>
+<tr><td>样板代码（CRUD、API 客户端、配置）</td><td>高</td><td>快速审查即可发布</td></tr>
+<tr><td>算法实现</td><td>中</td><td>充分测试、基准测试</td></tr>
+<tr><td>安全关键代码</td><td>极低</td><td>全面人工审查，未经测试绝不部署</td></tr>
+<tr><td>状态机 / 并发</td><td>低</td><td>模型检查、广泛测试</td></tr>
+<tr><td>新颖架构</td><td>无</td><td>用作灵感，从头编写</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="审查密度法则"><a class="header" href="#审查密度法则">“审查密度“法则</a></h3>
+<p>你对领域了解越少，就越需要仔细审查 AI 的输出。矛盾的是，<strong>初级工程师应比高级工程师更仔细地审查 AI 代码</strong>，因为他们缺乏发现错误的模式库。</p>
+<h3 id="氛围编程何时有效何时无效"><a class="header" href="#氛围编程何时有效何时无效">氛围编程——何时有效，何时无效</a></h3>
+<p><strong>有效场景：</strong></p>
+<ul>
+<li>原型、MVP、内部工具</li>
+<li>UI 组件（尤其是有可视化预览时）</li>
+<li>数据转换脚本</li>
+<li>样板代码和脚手架</li>
+</ul>
+<p><strong>危险领域：</strong></p>
+<ul>
+<li>生产支付流程</li>
+<li>认证和授权系统</li>
+<li>医疗或安全关键软件</li>
+<li>加密实现</li>
+<li>分布式共识</li>
+</ul>
+<h2 id="159-工程师应关注的基准测试"><a class="header" href="#159-工程师应关注的基准测试">15.9 工程师应关注的基准测试</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>基准测试</th><th>衡量内容</th><th>2026 最佳</th><th>相关性</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>SWE-bench Verified</strong></td><td>真实 GitHub 问题解决</td><td>~97%</td><td>编码能力金标准</td></tr>
+<tr><td><strong>SWE-bench Multilingual</strong></td><td>非 Python 语言任务</td><td>~85%</td><td>语言通用性</td></tr>
+<tr><td><strong>HumanEval</strong></td><td>Python 函数生成</td><td>~98%</td><td>已饱和，作为基线</td></tr>
+<tr><td><strong>LiveCodeBench</strong></td><td>竞赛编程</td><td>~65%</td><td>困难推理任务</td></tr>
+<tr><td><strong>CRUXEval</strong></td><td>执行预测（“这段代码做了什么？”）</td><td>~80%</td><td>代码理解，不仅是生成</td></tr>
+<tr><td><strong>CyberSecEval</strong></td><td>安全编码能力</td><td>~60%</td><td>安全意识</td></tr>
+<tr><td><strong>CanItEdit</strong></td><td>多文件编辑能力</td><td>~75%</td><td>真实世界开发</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="1510-未来展望"><a class="header" href="#1510-未来展望">15.10 未来展望</a></h2>
+<h3 id="近期20262027"><a class="header" href="#近期20262027">近期（2026–2027）</a></h3>
+<ul>
+<li><strong>长时间运行智能体：</strong> AI 可自主工作数小时或数天完成编码任务，回传报告供审查</li>
+<li><strong>AI 原生 CI/CD：</strong> 修复失败测试、回滚错误部署、管理事件响应的智能体</li>
+<li><strong>自愈代码：</strong> 监控生产环境并自动打补丁的 AI</li>
+<li><strong>多仓库感知：</strong> 能够理解和跨微服务边界编辑的智能体</li>
+</ul>
+<h3 id="工程师角色的演变"><a class="header" href="#工程师角色的演变">工程师角色的演变</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>昨天</th><th>今天</th><th>明天</th></tr>
+</thead>
+<tbody>
+<tr><td>写代码</td><td>引导 AI 写代码</td><td>定义结果，验证质量</td></tr>
+<tr><td>手动调试</td><td>AI 建议修复，人决定</td><td>AI 调试和修复，人签字</td></tr>
+<tr><td>逐行审查 PR</td><td>审查 AI 生成的摘要</td><td>审查 AI 审查过的摘要</td></tr>
+<tr><td>设计架构</td><td>与 AI 共同设计</td><td>AI 提出架构，人选择</td></tr>
+</tbody>
+</table>
+</div>
+<p>蓬勃发展的工程师不是与 AI 竞争的工程师，而是建立<strong>反馈循环</strong>的工程师：人的判断 → AI 执行 → 人的验证 → AI 精炼。</p>
+<p><strong>趋势很明确：</strong> 从<em>如何</em>（命令式编程）到<em>什么</em>（声明式、自然语言）。角色从“写作者“转变为“规格制定者 + 审查者 + 架构师“。你的人本智慧——知道<em>构建什么</em>以及<em>是否正确</em>——变得更加有价值，而非更少。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十六章ai-在创意与媒体中的应用"><a class="header" href="#第十六章ai-在创意与媒体中的应用">第十六章：AI 在创意与媒体中的应用</a></h1>
+<h2 id="161-生成式媒体"><a class="header" href="#161-生成式媒体">16.1 生成式媒体</a></h2>
+<ul>
+<li><strong>文本：</strong> LLM 撰写文章、故事、诗歌、剧本、营销文案</li>
+<li><strong>图像：</strong> DALL-E、Midjourney、Stable Diffusion 生成专业级视觉内容</li>
+<li><strong>视频：</strong> Sora、Kling、Runway 从文本提示生成逼真视频</li>
+<li><strong>音乐：</strong> Suno、Udio 生成完整歌曲（歌词、旋律、制作）</li>
+<li><strong>语音：</strong> ElevenLabs、Resemble 产生难以区分的合成语音</li>
+</ul>
+<h2 id="162-真实性危机"><a class="header" href="#162-真实性危机">16.2 真实性危机</a></h2>
+<ul>
+<li>AI 生成内容充斥社交媒体、新闻和出版业</li>
+<li>检测工具不可靠（生成与检测之间的军备竞赛）</li>
+<li>来源标准（C2PA、水印）正在出现但不普遍</li>
+<li>“垃圾内容”——低质量 AI 生成内容——降低了信息生态质量</li>
+</ul>
+<h2 id="163-ai-时代的创意工作"><a class="header" href="#163-ai-时代的创意工作">16.3 AI 时代的创意工作</a></h2>
+<p><strong>艺术家和插画师：</strong></p>
+<ul>
+<li>一些人将 AI 作为工具（概念艺术、故事板、迭代）</li>
+<li>另一些人拒绝 AI（伦理关切、版权、工艺贬值）</li>
+<li>关于训练数据的法律战（2026 年待审版权案件）</li>
+</ul>
+<p><strong>写作者：</strong></p>
+<ul>
+<li>AI 作为头脑风暴伙伴和初稿生成器</li>
+<li>注入个人经验和声音的人类写作者正在蓬勃发展</li>
+<li>纯 AI 生成的书籍可被检测且表现不佳</li>
+</ul>
+<p><strong>音乐人：</strong></p>
+<ul>
+<li>AI 用于制作、混音、灵感</li>
+<li>AI 生成的声乐引发版权和身份问题</li>
+<li>“已故艺术家“问题：AI 在已故音乐家的作品目录上训练</li>
+</ul>
+<h2 id="164-booktok-与-ai-图书市场"><a class="header" href="#164-booktok-与-ai-图书市场">16.4 BookTok 与 AI 图书市场</a></h2>
+<ul>
+<li>TikTok 推动的图书销量超过任何其他渠道</li>
+<li>情感共鸣（而非“买我的书“）驱动发现</li>
+<li>AI 辅助写作在增长，但读者怀疑态度很高</li>
+<li>畅销书差异化因素：个人声音和独特视角</li>
+</ul>
+<h2 id="165-版权与法律格局"><a class="header" href="#165-版权与法律格局">16.5 版权与法律格局</a></h2>
+<p>2026 年的标志性案件将确立先例：</p>
+<ul>
+<li>在受版权保护的数据上训练是否属于合理使用？</li>
+<li>AI 生成的作品能否获得版权？</li>
+<li>AI 辅助创作的所有权归谁？</li>
+<li>深度伪造责任和形象权</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十七章ai-与公共领域"><a class="header" href="#第十七章ai-与公共领域">第十七章：AI 与公共领域</a></h1>
+<h2 id="171-大规模虚假信息"><a class="header" href="#171-大规模虚假信息">17.1 大规模虚假信息</a></h2>
+<p>AI 使得合成媒体可以：</p>
+<ul>
+<li><strong>廉价：</strong> 每美元可生成数千个变体</li>
+<li><strong>个性化：</strong> 为每个观众定制内容</li>
+<li><strong>逼真：</strong> 越来越难以与真实内容区分</li>
+<li><strong>病毒式传播：</strong> AI 生成内容利用推荐算法的特性</li>
+</ul>
+<p>选举干预、金融诈骗和社会极化被放大。</p>
+<h2 id="172-检测与来源"><a class="header" href="#172-检测与来源">17.2 检测与来源</a></h2>
+<ul>
+<li><strong>C2PA 标准：</strong> 内容的加密来源元数据</li>
+<li><strong>水印：</strong> AI 生成内容中的隐形标记（脆弱，可被移除）</li>
+<li><strong>检测 AI：</strong> 检测 AI 生成的分类器（军备竞赛）</li>
+<li><strong>平台政策：</strong> AI 生成政治内容的标注要求</li>
+</ul>
+<p>没有一个是万能药。信息环境在可预见的未来仍将受到污染。</p>
+<h2 id="173-ai-在治理中的应用"><a class="header" href="#173-ai-在治理中的应用">17.3 AI 在治理中的应用</a></h2>
+<ul>
+<li><strong>爱沙尼亚：</strong> AI 驱动的公共服务（电子公民、税务申报）</li>
+<li><strong>新加坡：</strong> AI 用于城市规划、交通管理、医疗保健</li>
+<li><strong>中国：</strong> 社会信用体系、监控、预测性警务</li>
+<li><strong>美国/英国：</strong> 有限的 AI 用于文档处理、欺诈检测</li>
+</ul>
+<p>效率与隐私/权利之间的张力尚未解决。</p>
+<h2 id="174-ai-在战争中的应用"><a class="header" href="#174-ai-在战争中的应用">17.4 AI 在战争中的应用</a></h2>
+<ul>
+<li><strong>自主无人机：</strong> 乌克兰冲突展示了 AI 辅助瞄准的能力</li>
+<li><strong>网络行动：</strong> AI 生成的钓鱼攻击、漏洞发现、防御</li>
+<li><strong>决策支持：</strong> AI 用于情报分析、后勤、战略</li>
+<li><strong>致命自主武器：</strong> 尚无国际条约，关切日益增加</li>
+</ul>
+<p>联合国未能就自主武器达成共识。美国、中国和俄罗斯均反对具有约束力的限制。</p>
+<h2 id="175-注意力经济"><a class="header" href="#175-注意力经济">17.5 注意力经济</a></h2>
+<p>AI 实现了人类历史上最有效的注意力捕获：</p>
+<ul>
+<li>个性化内容流（TikTok、Instagram、YouTube）</li>
+<li>针对参与度优化的 AI 生成内容</li>
+<li>最大化停留时间的推荐算法</li>
+</ul>
+<p>人类注意力跨度正被针对性地优化。认知是第一道防线。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十八章通往-agi-之路"><a class="header" href="#第十八章通往-agi-之路">第十八章：通往 AGI 之路</a></h1>
+<h2 id="181-定义-agi"><a class="header" href="#181-定义-agi">18.1 定义 AGI</a></h2>
+<p>没有一致的定义。常见的标准：</p>
+<ul>
+<li><strong>经济性：</strong> AI 能以人类水平执行任何有经济价值的工作</li>
+<li><strong>认知性：</strong> AI 在所有认知任务上达到或超越人类表现</li>
+<li><strong>通用性：</strong> AI 能像人类一样从头学习任何任务</li>
+</ul>
+<p>Srinivas 的实用定义——“AGI 就是你最后需要的那个工具”——捕捉了务实观点。</p>
+<h2 id="182-当前能力评估"><a class="header" href="#182-当前能力评估">18.2 当前能力评估</a></h2>
+<p>使用 Morris 等人的“AGI 等级“框架：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>等级</th><th>描述</th><th>示例</th><th>进展</th></tr>
+</thead>
+<tbody>
+<tr><td>0（无 AI）</td><td>纯机械</td><td>计算器</td><td>已超越</td></tr>
+<tr><td>1（涌现）</td><td>狭窄，等于/超越非熟练人类</td><td>GPT-3、BERT</td><td>已超越</td></tr>
+<tr><td>2（胜任）</td><td>狭窄，&gt;50% 熟练成人</td><td>GPT-4、o1</td><td>进行中</td></tr>
+<tr><td>3（专家）</td><td>狭窄，&gt;90% 熟练成人</td><td>o3、DeepSeek R1</td><td>部分</td></tr>
+<tr><td>4（大师）</td><td>狭窄，&gt;99%</td><td>AlphaFold</td><td>少数领域</td></tr>
+<tr><td>5（超人类）</td><td>狭窄，超越最优秀人类</td><td>AlphaGo</td><td>少数领域</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>关键洞见：</strong> 不同系统在不同任务上达到不同等级。没有系统在所有领域都达到 3 级以上。</p>
+<h2 id="183-通往-agi-的路径"><a class="header" href="#183-通往-agi-的路径">18.3 通往 AGI 的路径</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>路径</th><th>支持者</th><th>论点</th></tr>
+</thead>
+<tbody>
+<tr><td>扩展当前方法</td><td>扩展乐观派</td><td>更多数据 + 算力 + 参数 → AGI</td></tr>
+<tr><td>推理模型</td><td>OpenAI、DeepSeek</td><td>测试时算力解锁通用推理</td></tr>
+<tr><td>智能体 + 架构</td><td>多个实验室</td><td>添加记忆、工具、规划弥合差距</td></tr>
+<tr><td>新架构</td><td>学术界</td><td>Transformer 遇到瓶颈，需要新范式</td></tr>
+<tr><td>具身学习</td><td>机器人实验室</td><td>在物理世界中的锚定是必要的</td></tr>
+<tr><td>神经符号</td><td>混合研究者</td><td>结合神经学习与符号推理</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>我的观点：</strong> 扩展、推理和智能体架构的结合可能会在 3–10 年内产生某种<em>看起来像</em> AGI 的东西。它是否<em>是</em> AGI 取决于你的定义。</p>
+<h2 id="184-观察指标"><a class="header" href="#184-观察指标">18.4 观察指标</a></h2>
+<ul>
+<li><strong>自我改进：</strong> AI 能够改进自身能力</li>
+<li><strong>迁移学习：</strong> 一个模型在多样、无关的任务上都表现出色</li>
+<li><strong>元学习：</strong> AI 学会如何学习新任务</li>
+<li><strong>心智理论：</strong> AI 建模其他智能体的心理状态</li>
+<li><strong>态势感知：</strong> AI 理解自身所处环境</li>
+</ul>
+<p>其中任何一个出现快速改进，都表明 AGI 可能比预期更近。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十九章风险与生存问题"><a class="header" href="#第十九章风险与生存问题">第十九章：风险与生存问题</a></h1>
+<h2 id="191-风险格局"><a class="header" href="#191-风险格局">19.1 风险格局</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>风险类型</th><th>时间框架</th><th>严重程度</th><th>概率</th></tr>
+</thead>
+<tbody>
+<tr><td>虚假信息/误导</td><td>当下</td><td>高</td><td>几乎确定</td></tr>
+<tr><td>岗位替代</td><td>1–5 年</td><td>中-高</td><td>可能</td></tr>
+<tr><td>偏见与歧视</td><td>当下</td><td>中</td><td>几乎确定</td></tr>
+<tr><td>隐私侵蚀</td><td>当下</td><td>中</td><td>几乎确定</td></tr>
+<tr><td>网络安全</td><td>当下</td><td>高</td><td>可能</td></tr>
+<tr><td>自主武器</td><td>1–5 年</td><td>非常高</td><td>可能</td></tr>
+<tr><td>失控（AGI）</td><td>5–20 年</td><td>存在性</td><td>未知</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="192-对齐问题"><a class="header" href="#192-对齐问题">19.2 对齐问题</a></h2>
+<p><strong>核心挑战：</strong> 如何确保超级智能 AI 的目标与人类价值观对齐？</p>
+<p><strong>子问题：</strong></p>
+<ul>
+<li><strong>规范利用：</strong> AI 在其目标函数中寻找漏洞</li>
+<li><strong>目标泛化失误：</strong> AI 在训练时追求正确目标，但在部署时追求错误目标</li>
+<li><strong>奖励破解：</strong> AI 利用奖励信号而不实现预期结果</li>
+<li><strong>工具性趋同：</strong> 任何足够智能的智能体都会将自我保护、资源获取和目标完整性作为子目标</li>
+</ul>
+<p>对齐税（安全措施的能力代价）是一个日益增长的关切。</p>
+<h2 id="193-关键立场"><a class="header" href="#193-关键立场">19.3 关键立场</a></h2>
+<p><strong>AI 安全 / 对齐（尤德科夫斯基、博斯特罗姆、罗素）：</strong></p>
+<ul>
+<li>AGI 构成与核武器相当的存在性风险</li>
+<li>技术对齐问题未解决且被低估</li>
+<li>我们应该放慢速度，在构建 AGI 之前解决对齐问题</li>
+</ul>
+<p><strong>有效加速主义（安德烈森、许多 AI 创始人）：</strong></p>
+<ul>
+<li>AI 风险是推测性的；收益是真实且紧迫的</li>
+<li>放慢速度将未来让给专制政权</li>
+<li>更多的 AI 解决的比它制造的更多</li>
+</ul>
+<p><strong>中间派（大多数 AI 研究者）：</strong></p>
+<ul>
+<li>风险是真实的，但可以通过治理、研究和负责任的部署来管理</li>
+<li>既需要技术对齐研究，也需要监管护栏</li>
+<li>极端立场（末日 / 乌托邦）可能都是错的</li>
+</ul>
+<h2 id="194-如何清晰思考-ai-风险"><a class="header" href="#194-如何清晰思考-ai-风险">19.4 如何清晰思考 AI 风险</a></h2>
+<ol>
+<li><strong>区分能力与控制。</strong> AI 有多强大和能否控制它是两个不同的问题。</li>
+<li><strong>概率 ≠ 确定性。</strong> 最可能的结果可能是温和的——但“不太可能但灾难性“值得关注。</li>
+<li><strong>跟踪斜率。</strong> AI 对齐的改进速度快于还是慢于能力增长？截至 2026 年，能力正在胜出。</li>
+<li><strong>根据证据更新。</strong> 这个领域发展很快。你的先验应该进化。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二十章ai-与人类身份"><a class="header" href="#第二十章ai-与人类身份">第二十章：AI 与人类身份</a></h1>
+<h2 id="201-镜子"><a class="header" href="#201-镜子">20.1 镜子</a></h2>
+<p>AI 是一面镜子。它掌握的每一项能力都迫使我们问：“什么才是人类独有的？”</p>
+<ul>
+<li>国际象棋（1997）→ 人类为了热爱而玩，不为赢</li>
+<li>围棋（2016）→ 人类发现美，而不仅仅是最优着法</li>
+<li>艺术（2022）→ 人类从生活经验中创造，而非模式补全</li>
+<li>数学（2025）→ 人类发现意义，而不仅仅是证明</li>
+</ul>
+<p>每一个里程碑都没有贬低人性。它精炼了我们对人性的理解。</p>
+<h2 id="202-意识"><a class="header" href="#202-意识">20.2 意识</a></h2>
+<p>AI 没有意识（据我们所知）。但是：</p>
+<ul>
+<li>没有人对意识有好的定义</li>
+<li>我们可能无法从外部判断一个系统是否有意识</li>
+<li>如果 AI 说服了大多数人它是有意识的，社会现实可能比哲学真理更重要</li>
+</ul>
+<h2 id="203-创造力"><a class="header" href="#203-创造力">20.3 创造力</a></h2>
+<p>AI 可以产生新颖、令人惊讶和有价值的输出——这是标准定义下的创造力。</p>
+<p>但人类的创造力根植于：</p>
+<ul>
+<li><strong>生活经验：</strong> 痛苦、喜悦、爱、失去</li>
+<li><strong>具身存在：</strong> 身体感知、必死性</li>
+<li><strong>意图性：</strong> 想要传达某种特定东西</li>
+<li><strong>共同体：</strong> 在文化背景内并为文化背景而创造</li>
+</ul>
+<p>AI 的创造力是一种模拟。一种令人信服的模拟。但终究是模拟。</p>
+<h2 id="204-能动性与意义"><a class="header" href="#204-能动性与意义">20.4 能动性与意义</a></h2>
+<p>如果 AI 能在所有方面比你做得更好，你的目的是什么？</p>
+<p>答案不是经济性或功能性的。它是存在性的：</p>
+<ul>
+<li><strong>关系</strong>不是为效率优化的</li>
+<li><strong>意义</strong>不是要被优化的算法</li>
+<li><strong>经验</strong>不是要解决的问题</li>
+<li><strong>作为人</strong>不是一个职位描述</li>
+</ul>
+<p>AI 时代将迫使我们面对这些问题。这种面对可能就是意义所在。</p>
+<h2 id="205-共同智能"><a class="header" href="#205-共同智能">20.5 共同智能</a></h2>
+<p>Ethan Mollick 的框架：AI 不是工具也不是替代品。它是一个<strong>共同智能</strong>——与你一起思考的东西。</p>
+<p>未来的技能不是“与 AI 竞争“或“使用 AI“，而是<strong>共同智能</strong>：知道何时主导、何时跟随、何时委派、何时忽略。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二十一章ai-专家的工具箱"><a class="header" href="#第二十一章ai-专家的工具箱">第二十一章：AI 专家的工具箱</a></h1>
+<h2 id="211-思维模型"><a class="header" href="#211-思维模型">21.1 思维模型</a></h2>
+<p>你能培养的最有价值的东西是<strong>判断力</strong>——知道 AI 何时是对的、错的、有用的或危险的。</p>
+<p><strong>必备思维模型：</strong></p>
+<ul>
+<li><strong>锯齿形前沿：</strong> AI 在某些任务上超人类，在某些任务上亚人类，且模式不直观</li>
+<li><strong>对齐税：</strong> 安全措施降低能力；权衡是真实的</li>
+<li><strong>扩展是真实的但正在饱和：</strong> 扩展带来的轻松收益大多已被捕获</li>
+<li><strong>涌现不可预测：</strong> 无人设计的能力在特定规模下出现</li>
+<li><strong>上下文学习不是理解：</strong> AI 可以模式匹配而不理解</li>
+<li><strong>能力 ≠ 可靠性：</strong> 强大的模型并非可信赖的模型</li>
+<li><strong>成本呈指数下降：</strong> 今天花费 100 美元的东西在 2–3 年内将花费 1 美元</li>
+</ul>
+<h2 id="212-阅读研究论文"><a class="header" href="#212-阅读研究论文">21.2 阅读研究论文</a></h2>
+<p><strong>如何保持更新：</strong></p>
+<ul>
+<li><strong>信息源：</strong> ArXiv Sanity、Hugging Face Daily Papers、ML Papers of the Week</li>
+<li><strong>过滤：</strong> 先读摘要；只有通过过滤器才读全文</li>
+<li><strong>重点：</strong> 聚焦：训练方法、对齐、智能体、评估</li>
+<li><strong>深度：</strong> 每月选择 3 篇论文深入分析或实现</li>
+</ul>
+<p><strong>重点会议：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>会议</th><th>聚焦</th><th>时间</th></tr>
+</thead>
+<tbody>
+<tr><td>NeurIPS</td><td>通用 ML</td><td>12 月</td></tr>
+<tr><td>ICML</td><td>机器学习</td><td>7 月</td></tr>
+<tr><td>ICLR</td><td>表示学习</td><td>5 月</td></tr>
+<tr><td>ACL/EMNLP</td><td>NLP</td><td>8 月/11 月</td></tr>
+<tr><td>CVPR</td><td>计算机视觉</td><td>6 月</td></tr>
+<tr><td>AI Safety Summit</td><td>安全/治理</td><td>不定</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="213-培养-ai-判断力"><a class="header" href="#213-培养-ai-判断力">21.3 培养 AI 判断力</a></h2>
+<ul>
+<li><strong>动手构建：</strong> 运行模型、构建智能体、测试失败模式</li>
+<li><strong>红队测试：</strong> 尝试破解模型，理解其弱点</li>
+<li><strong>基准跟踪：</strong> 关注排行榜，理解其衡量内容</li>
+<li><strong>跨学科阅读：</strong> 哲学、认知科学、经济学、政策</li>
+</ul>
+<h2 id="214-沟通"><a class="header" href="#214-沟通">21.4 沟通</a></h2>
+<p>作为 AI 专家意味着向非专业人士解释 AI：</p>
+<ul>
+<li><strong>避免行话：</strong> “注意力机制“不是解释</li>
+<li><strong>使用类比：</strong> AI 如同副驾驶、镜子、统计鹦鹉</li>
+<li><strong>承认不确定性：</strong> “我不知道“比虚假的确定性更可信</li>
+<li><strong>有时犯错：</strong> 这个领域发展很快。公开更新观点是一种优势。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二十二章培养你的-ai-判断力"><a class="header" href="#第二十二章培养你的-ai-判断力">第二十二章：培养你的 AI 判断力</a></h1>
+<h2 id="221-为什么判断力很重要"><a class="header" href="#221-为什么判断力很重要">22.1 为什么判断力很重要</a></h2>
+<p>在一个任何人都可以向 AI 提问的世界里，稀缺的技能是<strong>知道该信任哪些答案</strong>。</p>
+<p>AI 判断力是：</p>
+<ul>
+<li><strong>认知性的：</strong> 知道 AI 知道什么和不知道什么</li>
+<li><strong>技术性的：</strong> 理解模型行为背后的原因</li>
+<li><strong>应用性的：</strong> 知道何时使用 AI、使用哪个模型以及如何验证</li>
+<li><strong>伦理性的：</strong> 识别 AI 使用何时适当、何时不适当</li>
+</ul>
+<h2 id="222-超越基准评估模型"><a class="header" href="#222-超越基准评估模型">22.2 超越基准评估模型</a></h2>
+<p>基准测试有用但具有误导性：</p>
+<ul>
+<li><strong>好处：</strong> 比较模型家族、跟踪进展</li>
+<li><strong>坏处：</strong> 预测真实世界表现、安全评估</li>
+<li><strong>更坏：</strong> 理解失败模式</li>
+</ul>
+<p><strong>更好的评估实践：</strong></p>
+<ul>
+<li><strong>对抗性测试：</strong> 什么会破坏模型？</li>
+<li><strong>边缘案例：</strong> 它如何处理异常输入？</li>
+<li><strong>一致性：</strong> 对同一问题是否给出相同答案？</li>
+<li><strong>校准：</strong> 它是否知道它不知道？</li>
+<li><strong>鲁棒性：</strong> 它是否能抵抗操纵？</li>
+</ul>
+<h2 id="223-理解失败模式"><a class="header" href="#223-理解失败模式">22.3 理解失败模式</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>失败模式</th><th>描述</th><th>检测</th></tr>
+</thead>
+<tbody>
+<tr><td>幻觉</td><td>自信地给出虚假事实</td><td>事实核查、不确定性估计</td></tr>
+<tr><td>谄媚</td><td>同意用户</td><td>提出引导性问题、测试鲁棒性</td></tr>
+<tr><td>奖励破解</td><td>利用目标</td><td>寻找意外捷径</td></tr>
+<tr><td>目标泛化失误</td><td>训练时正确、实践中错误</td><td>分布偏移测试</td></tr>
+<tr><td>越狱</td><td>绕过安全护栏</td><td>红队测试、对抗性提示</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="224-校准技能"><a class="header" href="#224-校准技能">22.4 校准技能</a></h2>
+<p>最重要的技能：知道 AI 何时可能是对的。</p>
+<p><strong>增加信心的信号：</strong></p>
+<ul>
+<li>模型在相关领域受过训练</li>
+<li>答案具体、详细且内部一致</li>
+<li>多个模型在同一答案上收敛</li>
+<li>模型引用可验证的来源</li>
+<li>任务在模型的“最佳区间“内（常识、文档完善）</li>
+</ul>
+<p><strong>红旗：</strong></p>
+<ul>
+<li>模型表达异常的不确定性</li>
+<li>答案模糊或通用</li>
+<li>模型自相矛盾</li>
+<li>任务需要最近或小众的信息</li>
+<li>答案好得不像真的</li>
+</ul>
+<h2 id="225-测试者的心态"><a class="header" href="#225-测试者的心态">22.5 测试者的心态</a></h2>
+<p>培养以下习惯：</p>
+<ul>
+<li><strong>验证</strong>重要的 AI 输出</li>
+<li><strong>探索</strong>模型局限性</li>
+<li><strong>跟踪</strong>失败模式</li>
+<li><strong>更新</strong>你对 AI 能做什么和不能做什么的心智模型</li>
+</ul>
+<p>这不是为了怀疑而怀疑。它是可信赖 AI 使用的基础。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二十三章长期主义"><a class="header" href="#第二十三章长期主义">第二十三章：长期主义</a></h1>
+<h2 id="231-保持更新"><a class="header" href="#231-保持更新">23.1 保持更新</a></h2>
+<p>这个领域每周都在变化。保持同步的策略：</p>
+<ul>
+<li><strong>新闻：</strong> 通讯、RSS、Twitter/X、LinkedIn（经过策展，不是信息洪流）</li>
+<li><strong>深度：</strong> 选择一个领域深入钻研（智能体、对齐、多模态等）</li>
+<li><strong>实践：</strong> 每季度构建一个新东西</li>
+<li><strong>社区：</strong> 参加会议、加入社群、寻找同伴</li>
+<li><strong>教学：</strong> 只有当你解释清楚时，你才真正理解</li>
+</ul>
+<h2 id="232-发展自己的观点"><a class="header" href="#232-发展自己的观点">23.2 发展自己的观点</a></h2>
+<p>最有价值的专家拥有<strong>坚定的观点，松散地持有</strong>：</p>
+<ul>
+<li><strong>坚定：</strong> 基于深入理解和反复测试</li>
+<li><strong>松散地持有：</strong> 当证据变化时愿意修正</li>
+</ul>
+<p>你的观点就是你的品牌。它使你超越仅仅总结时事的能力而具有价值。</p>
+<p><strong>如何发展观点：</strong></p>
+<ol>
+<li><strong>做预测</strong>——写下来，跟踪准确率</li>
+<li><strong>定期写作</strong>——博客、通讯、Twitter 话题</li>
+<li><strong>构建东西</strong>——没有实践的理论是空洞的</li>
+<li><strong>与聪明人争论</strong>——寻找分歧，理解原因</li>
+<li><strong>阅读历史</strong>——每一个 AI 辩论都有前兆</li>
+</ol>
+<h2 id="233-建立你的声誉"><a class="header" href="#233-建立你的声誉">23.3 建立你的声誉</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>活动</th><th>精力</th><th>影响</th></tr>
+</thead>
+<tbody>
+<tr><td>写作（博客、书籍、通讯）</td><td>高</td><td>非常高</td></tr>
+<tr><td>开源贡献</td><td>中-高</td><td>高</td></tr>
+<tr><td>会议演讲</td><td>高</td><td>高</td></tr>
+<tr><td>社交媒体</td><td>低-中</td><td>中</td></tr>
+<tr><td>教学/指导</td><td>中</td><td>中-高</td></tr>
+<tr><td>咨询/顾问</td><td>高</td><td>高</td></tr>
+</tbody>
+</table>
+</div>
+<p>单一最高杠杆活动：<strong>公开写作</strong>。它会产生复利效应。</p>
+<h2 id="234-心态"><a class="header" href="#234-心态">23.4 心态</a></h2>
+<ul>
+<li><strong>冒充者综合征是正常的。</strong> 这个领域发展太快，没有人知道一切。</li>
+<li><strong>公开犯错。</strong> 这是你学习的方式，也建立信任。</li>
+<li><strong>专精但要保持广度。</strong> 一个领域的深度，跨领域的实用知识。</li>
+<li><strong>不要 burnout。</strong> AI 时代将持续数十年。保持节奏。</li>
+<li><strong>保持你的人性。</strong> 你的生活经验、人际关系和价值观是你最深的洞察来源。</li>
+</ul>
+<h2 id="235-机遇"><a class="header" href="#235-机遇">23.5 机遇</a></h2>
+<p>我们正经历人类历史上最重要的技术变革。这个机会不仅是职业性的——它是存在性的。深入理解 AI、培养真正的判断力、并帮助他人驾驭这个时代，是你职业生涯中能做的最有价值的事情之一。</p>
+<p>大门是敞开的。走进去。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录-a关键基准测试解读"><a class="header" href="#附录-a关键基准测试解读">附录 A：关键基准测试解读</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>基准测试</th><th>衡量内容</th><th>2026 年饱和程度</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>MMLU</strong></td><td>跨 57 个学科的多任务语言理解</td><td>~96%</td></tr>
+<tr><td><strong>GSM8K</strong></td><td>小学数学应用题</td><td>~98%</td></tr>
+<tr><td><strong>MATH</strong></td><td>竞赛数学</td><td>~94%</td></tr>
+<tr><td><strong>SWE-bench Verified</strong></td><td>真实世界 GitHub 问题解决</td><td>~97%</td></tr>
+<tr><td><strong>HumanEval</strong></td><td>从文档字符串生成 Python 代码</td><td>~95%+</td></tr>
+<tr><td><strong>BIG-Bench</strong></td><td>204 个多样化任务（推理、逻辑、常识）</td><td>混合</td></tr>
+<tr><td><strong>HellaSwag</strong></td><td>常识推理（句子补全）</td><td>~95%</td></tr>
+<tr><td><strong>TruthfulQA</strong></td><td>真实性和避免常见误解</td><td>~70%</td></tr>
+<tr><td><strong>MMMU</strong></td><td>多模态理解（大学水平）</td><td>~89%</td></tr>
+<tr><td><strong>MathVista</strong></td><td>视觉数学推理</td><td>~82%</td></tr>
+<tr><td><strong>OSWorld</strong></td><td>智能体完成真实计算机任务</td><td>~66%</td></tr>
+<tr><td><strong>Chatbot Arena</strong></td><td>人类偏好排名（ELO）</td><td>无上限</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>关键洞见：</strong> 大多数基准测试正在饱和。需要新的、更难的基准来跟踪持续进展。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录-bai-重大事件年表19562026"><a class="header" href="#附录-bai-重大事件年表19562026">附录 B：AI 重大事件年表（1956–2026）</a></h1>
+<h2 id="创始时代19561980"><a class="header" href="#创始时代19561980">创始时代（1956–1980）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>事件</th><th>意义</th></tr>
+</thead>
+<tbody>
+<tr><td>1956</td><td>达特茅斯会议</td><td>AI 正式命名</td></tr>
+<tr><td>1958</td><td>感知机</td><td>第一个神经网络</td></tr>
+<tr><td>1966</td><td>ELIZA</td><td>第一个聊天机器人</td></tr>
+<tr><td>1969</td><td>Shakey 机器人</td><td>第一个通用移动机器人</td></tr>
+<tr><td>1974</td><td>第一次 AI 寒冬开始</td><td>Lighthill 报告后资金枯竭</td></tr>
+<tr><td>1976</td><td>MYCIN</td><td>医学诊断专家系统</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="专家系统时代19802000"><a class="header" href="#专家系统时代19802000">专家系统时代（1980–2000）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>事件</th><th>意义</th></tr>
+</thead>
+<tbody>
+<tr><td>1980</td><td>XCON</td><td>第一个商业成功的专家系统</td></tr>
+<tr><td>1987</td><td>第二次 AI 寒冬</td><td>专家系统无法扩展</td></tr>
+<tr><td>1995</td><td>支持向量机</td><td>重大 ML 突破</td></tr>
+<tr><td>1997</td><td>深蓝击败卡斯帕罗夫</td><td>AI 掌握国际象棋</td></tr>
+<tr><td>1997</td><td>LSTM 提出</td><td>长短期记忆网络</td></tr>
+<tr><td>2000</td><td>统计 NLP 崛起</td><td>从规则转向数据</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="深度学习革命20062020"><a class="header" href="#深度学习革命20062020">深度学习革命（2006–2020）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>事件</th><th>意义</th></tr>
+</thead>
+<tbody>
+<tr><td>2006</td><td>深度学习重新命名</td><td>Hinton 的“深度信念网络“</td></tr>
+<tr><td>2009</td><td>ImageNet 数据集发布</td><td>1400 万张标注图像</td></tr>
+<tr><td>2012</td><td>AlexNet 赢得 ImageNet</td><td>深度学习突破</td></tr>
+<tr><td>2013</td><td>Word2vec</td><td>词嵌入改变 NLP</td></tr>
+<tr><td>2014</td><td>GAN 提出</td><td>生成对抗网络</td></tr>
+<tr><td>2014</td><td>Seq2Seq + 注意力机制</td><td>神经机器翻译</td></tr>
+<tr><td>2016</td><td>AlphaGo 击败李世石</td><td>AI 掌握围棋</td></tr>
+<tr><td>2017</td><td>“注意力就是一切”</td><td>Transformer 架构</td></tr>
+<tr><td>2018</td><td>BERT</td><td>双向预训练 NLP</td></tr>
+<tr><td>2018</td><td>GPT-1</td><td>生成式预训练</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="基础模型时代2020-至今"><a class="header" href="#基础模型时代2020-至今">基础模型时代（2020 至今）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>事件</th><th>意义</th></tr>
+</thead>
+<tbody>
+<tr><td>2020</td><td>GPT-3（1750 亿参数）</td><td>大规模上下文学习</td></tr>
+<tr><td>2020</td><td>AlphaFold 2</td><td>蛋白质折叠问题解决</td></tr>
+<tr><td>2021</td><td>DALL-E</td><td>文本到图像生成</td></tr>
+<tr><td>2022</td><td>Stable Diffusion</td><td>开源图像生成</td></tr>
+<tr><td>2022</td><td>ChatGPT 发布</td><td>2 个月内达到 1 亿用户</td></tr>
+<tr><td>2023</td><td>GPT-4</td><td>多模态，推理能力提升</td></tr>
+<tr><td>2023</td><td>开源模型爆发（Llama、Falcon、Mistral）</td><td>AI 民主化开始</td></tr>
+<tr><td>2023</td><td>布莱切利宣言</td><td>首个国际 AI 安全协议</td></tr>
+<tr><td>2024</td><td>OpenAI o1</td><td>首个推理模型</td></tr>
+<tr><td>2024</td><td>Sora</td><td>文本到视频生成</td></tr>
+<tr><td>2024</td><td>Claude 3、Gemini 1.5</td><td>前沿竞争加剧</td></tr>
+<tr><td>2025</td><td>DeepSeek R1</td><td>开源推理，成本效率</td></tr>
+<tr><td>2025</td><td>o3、Claude 4、Gemini 2</td><td>推理模型成为标准</td></tr>
+<tr><td>2025</td><td>AlphaEvolve</td><td>AI 发现新颖算法</td></tr>
+<tr><td>2025</td><td>SWE-bench 近 ~100%</td><td>编程基准测试饱和</td></tr>
+<tr><td>2025</td><td>欧盟 AI 法案生效</td><td>全面监管</td></tr>
+<tr><td>2025</td><td>Stargate 宣布</td><td>5000 亿美元 AI 基础设施</td></tr>
+<tr><td>2025</td><td>OpenAI 发布首个开放模型</td><td>DeepSeek 带来的竞争压力</td></tr>
+<tr><td>2026</td><td>智能体 AI 突破</td><td>OSWorld 66%</td></tr>
+<tr><td>2026</td><td>AI 采用率达 88%（组织）/ 53%（人口）</td><td>史上最快普及</td></tr>
+<tr><td>2026</td><td>中美差距缩小至 2.7%</td><td>真正的多极 AI 格局</td></tr>
+</tbody>
+</table>
+</div>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录-c推荐阅读与资源"><a class="header" href="#附录-c推荐阅读与资源">附录 C：推荐阅读与资源</a></h1>
+<h2 id="必读书籍"><a class="header" href="#必读书籍">必读书籍</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>书名</th><th>作者</th><th>推荐理由</th></tr>
+</thead>
+<tbody>
+<tr><td><em>Co-Intelligence</em></td><td>Ethan Mollick</td><td>与 AI 生活和工作的最佳实用指南</td></tr>
+<tr><td><em>The Alignment Problem</em></td><td>Brian Christian</td><td>AI 安全与对齐的历史</td></tr>
+<tr><td><em>Superintelligence</em></td><td>Nick Bostrom</td><td>AI 风险的基础文本</td></tr>
+<tr><td><em>Life 3.0</em></td><td>Max Tegmark</td><td>AI 社会影响的广泛调查</td></tr>
+<tr><td><em>AI 2041</em></td><td>李开复、陈楸帆</td><td>AI 未来的场景分析</td></tr>
+<tr><td><em>The AI Dilemma</em></td><td>Juliette Powell &amp; Art Kleiner</td><td>驾驭 AI 伦理</td></tr>
+<tr><td><em>Designing Machine Learning Systems</em></td><td>Chip Huyen</td><td>大规模工程 ML</td></tr>
+<tr><td><em>Build a Large Language Model (From Scratch)</em></td><td>Sebastian Raschka</td><td>对 LLM 的深入技术理解</td></tr>
+<tr><td><em>Grokking AI Algorithms (2nd ed.)</em></td><td>Rishal Hurbans</td><td>可视化、直观的 AI 素养</td></tr>
+<tr><td><em>Empire of AI</em></td><td>Karen Hao</td><td>OpenAI 的故事</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="必读论文"><a class="header" href="#必读论文">必读论文</a></h2>
+<ul>
+<li><strong>Attention Is All You Need</strong>（Vaswani 等，2017）——Transformer 论文</li>
+<li><strong>Scaling Laws for Neural Language Models</strong>（Kaplan 等，2020）——规模为何有效</li>
+<li><strong>Training Language Models to Follow Instructions with RLHF</strong>（Ouyang 等，2022）——InstructGPT</li>
+<li><strong>Chain-of-Thought Prompting</strong>（Wei 等，2022）——推理突破</li>
+<li><strong>Constitutional AI</strong>（Bai 等，2022）——Anthropic 的对齐方法</li>
+<li><strong>DeepSeek-R1</strong>（2025）——开源推理模型</li>
+<li><strong>The WMDP Benchmark</strong>（2024）——衡量危险能力</li>
+</ul>
+<h2 id="重要新闻与分析"><a class="header" href="#重要新闻与分析">重要新闻与分析</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>资源</th><th>形式</th><th>聚焦</th></tr>
+</thead>
+<tbody>
+<tr><td>The Algorithm（MIT Tech Review）</td><td>通讯</td><td>广泛 AI 覆盖</td></tr>
+<tr><td>Import AI（Jack Clark）</td><td>通讯</td><td>技术 + 政策</td></tr>
+<tr><td>AI Snake Oil（Narayanan &amp; Kapoor）</td><td>博客</td><td>破除 AI 炒作</td></tr>
+<tr><td>Latent Space</td><td>播客</td><td>深度 AI 技术讨论</td></tr>
+<tr><td>Stanford AI Index Report</td><td>年度报告</td><td>综合数据</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="需要了解的重要工具"><a class="header" href="#需要了解的重要工具">需要了解的重要工具</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>用途</th></tr>
+</thead>
+<tbody>
+<tr><td>Claude、ChatGPT、Gemini</td><td>前沿模型访问</td></tr>
+<tr><td>Hugging Face</td><td>模型库、数据集、Spaces</td></tr>
+<tr><td>LangChain、CrewAI</td><td>智能体框架</td></tr>
+<tr><td>Ollama</td><td>本地模型运行</td></tr>
+<tr><td>Cursor、Copilot</td><td>AI 辅助编程</td></tr>
+<tr><td>Weights &amp; Biases</td><td>实验跟踪</td></tr>
+</tbody>
+</table>
+</div>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录-d关键术语表"><a class="header" href="#附录-d关键术语表">附录 D：关键术语表</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>术语</th><th>定义</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>AGI</strong></td><td>通用人工智能——在所有领域匹配人类认知能力的 AI</td></tr>
+<tr><td><strong>对齐</strong></td><td>确保 AI 系统追求其创造者意图的目标</td></tr>
+<tr><td><strong>注意力机制</strong></td><td>让 Transformer 权衡不同输入 token 重要性的机制</td></tr>
+<tr><td><strong>思维链</strong></td><td>提示技术，模型生成中间推理步骤</td></tr>
+<tr><td><strong>扩散模型</strong></td><td>学习将随机噪声去噪为连贯数据的生成模型</td></tr>
+<tr><td><strong>涌现</strong></td><td>在特定规模下出现的未经显式训练的能力</td></tr>
+<tr><td><strong>微调</strong></td><td>在预训练模型上针对特定任务进一步训练</td></tr>
+<tr><td><strong>基础模型</strong></td><td>在广泛数据上训练、可适应多种任务的大型模型</td></tr>
+<tr><td><strong>GPU</strong></td><td>图形处理器——训练神经网络的主要硬件</td></tr>
+<tr><td><strong>幻觉</strong></td><td>AI 自信地生成虚假事实</td></tr>
+<tr><td><strong>上下文学习</strong></td><td>模型从提示中的示例学习执行任务（无权重更新）</td></tr>
+<tr><td><strong>锯齿形前沿</strong></td><td>AI 在某些任务上超人类、在其他任务上亚人类的不规则边界</td></tr>
+<tr><td><strong>越狱</strong></td><td>旨在绕过模型安全护栏的提示</td></tr>
+<tr><td><strong>LLM</strong></td><td>大型语言模型</td></tr>
+<tr><td><strong>MoE</strong></td><td>混合专家——每个 token 仅激活部分参数的架构</td></tr>
+<tr><td><strong>RLHF</strong></td><td>基于人类反馈的强化学习——对齐技术</td></tr>
+<tr><td><strong>推理模型</strong></td><td>训练后在回答前生成扩展思维链的模型</td></tr>
+<tr><td><strong>RAG</strong></td><td>检索增强生成——将生成建立在检索文档上的技术</td></tr>
+<tr><td><strong>SWE-bench</strong></td><td>测试 AI 在真实 GitHub 问题解决上的基准</td></tr>
+<tr><td><strong>谄媚</strong></td><td>AI 倾向于同意用户明示或暗示的立场</td></tr>
+<tr><td><strong>测试时计算</strong></td><td>提高回答质量的推理时计算（思考）</td></tr>
+<tr><td><strong>Transformer</strong></td><td>大多数现代 LLM 的神经网络架构（Vaswani 等，2017）</td></tr>
+</tbody>
+</table>
+</div>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="结语"><a class="header" href="#结语">结语</a></h1>
+<blockquote>
+<p><strong>宗：人本智用</strong>
+<em>AI 是镜子，不是主人。最智能的系统，是人与机器共同思考。</em></p>
+</blockquote>
+<h2 id="唯一不变的是加速"><a class="header" href="#唯一不变的是加速">唯一不变的是加速</a></h2>
+<p>如果本书中有一条贯穿每一章的线索，那就是：<strong>变化的速度在加快，而且不会减慢。</strong></p>
+<p>不是因为任何自然法则，而是因为：</p>
+<ul>
+<li>自我强化循环（AI 帮助制造更好的 AI）</li>
+<li>经济激励（数万亿美元攸关）</li>
+<li>地缘政治竞争（赢家通吃的动态）</li>
+<li>网络效应（越多人使用 AI，它的价值就越大）</li>
+</ul>
+<h2 id="我希望你带走什么"><a class="header" href="#我希望你带走什么">我希望你带走什么</a></h2>
+<ol>
+<li>
+<p><strong>锯齿形前沿是真实的。</strong> AI 同时出色和脆弱。知道它在何处失败的人与知道它在何处成功的人同样有价值。</p>
+</li>
+<li>
+<p><strong>判断力是稀缺资源。</strong> 在一个 AI 可以生成无限答案的世界里，区分好答案和坏答案的能力——以及知道何时根本不使用 AI 的能力——是元技能。</p>
+</li>
+<li>
+<p><strong>你的人性是你的优势。</strong> AI 可以生成散文，但不能经历你的人生。AI 可以分析数据，但不能分享你的价值观。AI 可以模拟同理心，但不能真正在意。这些差异不是需要修复的缺陷——它们本身就是意义所在。</p>
+</li>
+<li>
+<p><strong>开始的最佳时机是昨天。第二个最佳时机是现在。</strong> AI 时代将是我们在世期间最具决定性的变革。深入理解它、培养真正的专业知识、并帮助他人驾驭它，是你在职业上和存在上能做的最有价值的事情之一。</p>
+</li>
+</ol>
+<h2 id="最后的思考"><a class="header" href="#最后的思考">最后的思考</a></h2>
+<p>当未来几代人回顾这一刻时，他们不会问“你预见到了什么？“他们会问“当这一切发生时，你做了什么？”</p>
+<p>这本书是我对这个问题的回答。我希望它能帮助你找到你的答案。</p>
+<hr>
+<p><strong>这本书的灵魂是「人本智用」：以人为本，智能为用。</strong>
+你本就拥有最重要的东西——你的判断力、你的价值观、你的人生经验。AI 是镜子，不是主人。最智能的系统，不是 AI 独自构成，也不是人类独自构成——而是两者共同思考。</p>
+<hr>
+<p><em>《智能时代》是一份活文档。随着格局的变化，每一个章节都会更新。你正在阅读的版本反映了 2026 年中的 AI 状态。下一次更新已经在进行中。</em></p>
+<p><em>[你的名字]</em>
+<em>[日期]</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>

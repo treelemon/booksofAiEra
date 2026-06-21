@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>AI 在编码与工程中的应用 - 智能时代：AI 时代的人本智慧</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="一本持续更新的 AI 时代实地指南——立足于「人本智用」：以人为本，智能为用。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-0392ca55.css">
+        <link rel="stylesheet" href="../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-bf74bb57.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cd4bc68e.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">智能时代：AI 时代的人本智慧</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/your-username/booksofAiEra" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/your-username/booksofAiEra/edit/main/zh/src/part-4/chapter-15.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第十五章ai-在编码与工程中的应用"><a class="header" href="#第十五章ai-在编码与工程中的应用">第十五章：AI 在编码与工程中的应用</a></h1>
+<p><em>软件工程师的实用实地指南——AI 原生时代的工具、论文、工作流和思维模型。</em></p>
+<h2 id="151-编程革命用数据说话"><a class="header" href="#151-编程革命用数据说话">15.1 编程革命——用数据说话</a></h2>
+<p>SWE-bench Verified 在一年内从 60% 提升到约 97%。到 2026 年中，AI 已成为每个认真软件工程师的日常现实。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>2024</th><th>2025</th><th>2026</th></tr>
+</thead>
+<tbody>
+<tr><td>SWE-bench Verified</td><td>33%</td><td>60%</td><td>~97%</td></tr>
+<tr><td>HumanEval pass@1</td><td>67%</td><td>92%</td><td>~98%</td></tr>
+<tr><td>代码生成速度提升</td><td>1.5x</td><td>3x</td><td>5–10x</td></tr>
+<tr><td>生产中 AI 生成代码占比</td><td>~5%</td><td>~25%</td><td>~50%+</td></tr>
+</tbody>
+</table>
+</div>
+<p>问题不再是<em>是否</em>在工程中使用 AI——而是<em>如何</em>有效、安全且大规模地使用它。</p>
+<h2 id="152-工具生态格局2026"><a class="header" href="#152-工具生态格局2026">15.2 工具生态格局（2026）</a></h2>
+<h3 id="ai-编程助手副驾驶"><a class="header" href="#ai-编程助手副驾驶">AI 编程助手（副驾驶）</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>基础模型</th><th>核心优势</th><th>最适合</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>GitHub Copilot</strong></td><td>GPT-4o / Claude</td><td>IDE 集成、生态系统</td><td>日常通用编码</td></tr>
+<tr><td><strong>Cursor</strong></td><td>Claude + 定制模型</td><td>深度上下文理解、智能体</td><td>复杂重构、多文件编辑</td></tr>
+<tr><td><strong>Codeium / Windsurf</strong></td><td>定制模型</td><td>快速、免费、多 IDE</td><td>快速补全、注重成本</td></tr>
+<tr><td><strong>Amazon Q Developer</strong></td><td>Amazon Nova</td><td>AWS 原生、安全扫描</td><td>企业 AWS 工作流</td></tr>
+<tr><td><strong>Tabnine</strong></td><td>专用模型</td><td>隐私（本地部署）</td><td>受监管行业</td></tr>
+<tr><td><strong>JetBrains AI</strong></td><td>多模型</td><td>深度 IDE 集成</td><td>JetBrains 用户</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>2026 年优胜者：</strong> 重度用户选 Cursor，主流用户选 Copilot。差距正在快速缩小。</p>
+<h3 id="ai-原生开发环境"><a class="header" href="#ai-原生开发环境">AI 原生开发环境</a></h3>
+<ul>
+<li><strong>Cursor</strong> — 深度 AI 集成的 VS Code 分支：行内编辑、智能体模式、多文件上下文、自然语言执行终端命令</li>
+<li><strong>Replit Agent</strong> — 从单个提示生成全栈应用，包括部署</li>
+<li><strong>GitHub Spark</strong> — 从自然语言快速原型化 Web 应用</li>
+<li><strong>Bolt.new / Lovable.dev</strong> — 带可视化预览的前后端生成</li>
+<li><strong>v0.dev（Vercel）</strong> — 使用 React/Next.js 生成 UI 组件</li>
+</ul>
+<h3 id="智能体编程工具"><a class="header" href="#智能体编程工具">智能体编程工具</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>架构</th><th>能力</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Devin</strong>（Cognition）</td><td>专用智能体 + 沙箱</td><td>自主 PR 生成、调试、部署</td></tr>
+<tr><td><strong>SWE-agent</strong></td><td>LM + bash + 代码编辑器循环</td><td>自主修复 GitHub 问题</td></tr>
+<tr><td><strong>Claude Code</strong>（Anthropic）</td><td>Claude + 终端 + 文件系统</td><td>在 CLI 中执行复杂编码任务</td></tr>
+<tr><td><strong>OpenHands</strong>（前 OpenDevin）</td><td>开源智能体框架</td><td>可定制的编程智能体</td></tr>
+<tr><td><strong>Aider</strong></td><td>Git 感知智能体</td><td>自动提交的多文件编辑</td></tr>
+<tr><td><strong>GPT-Engineer</strong></td><td>模板化生成</td><td>从规格说明书搭建整个项目</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="代码审查与质量"><a class="header" href="#代码审查与质量">代码审查与质量</a></h3>
+<ul>
+<li><strong>CodeRabbit</strong> — 每个 PR 的 AI 代码审查（风格、逻辑错误、安全）</li>
+<li><strong>Qodo（前 CodiumAI）</strong> — 生成有意义的测试、分析代码质量</li>
+<li><strong>SonarQube + AI</strong> — 静态分析现在包含 AI 驱动的发现</li>
+<li><strong>Sweep AI</strong> — 自动修复小型 PR 评论，无需人工介入</li>
+</ul>
+<h2 id="153-每位工程师都应了解的关键论文"><a class="header" href="#153-每位工程师都应了解的关键论文">15.3 每位工程师都应了解的关键论文</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>论文</th><th>年份</th><th>核心洞察</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Codex（Chen 等）</strong></td><td>2021</td><td>在 GitHub 代码上微调 GPT-3，从文档字符串生成可用的函数</td></tr>
+<tr><td><strong>SWE-bench（Jimenez 等）</strong></td><td>2024</td><td>真实 GitHub 问题解决基准；两年内从 33% 到 97%</td></tr>
+<tr><td><strong>Self-Refine（Madaan 等）</strong></td><td>2023</td><td>LLM 可以通过反馈循环迭代改进自己的代码</td></tr>
+<tr><td><strong>ReAct（Yao 等）</strong></td><td>2023</td><td>推理 + 行动：将思维链与工具使用交错进行</td></tr>
+<tr><td><strong>CodeAgent（Wang 等）</strong></td><td>2025</td><td>具有规划、执行、测试循环的自主编码智能体</td></tr>
+<tr><td><strong>Agentic Coding via Repo-level Context（Zhang 等）</strong></td><td>2025</td><td>仓库级上下文感知编辑</td></tr>
+<tr><td><strong>CodiumAI Test Generation</strong></td><td>2024</td><td>通过代码分析自动生成行为测试</td></tr>
+<tr><td><strong>AlphaCodium（Ridnik 等）</strong></td><td>2024</td><td>多阶段方法：问题反思 → 测试生成 → 代码生成 → 迭代优化</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="154-工程师的每日工作流"><a class="header" href="#154-工程师的每日工作流">15.4 工程师的每日工作流</a></h2>
+<h3 id="上午加载上下文"><a class="header" href="#上午加载上下文">上午：加载上下文</a></h3>
+<p>在写代码之前，先为 AI 加载上下文：</p>
+<pre><code class="language-python"># 在 Cursor/Claude Code 中可用的模式
+@workspace  # Cursor：加载完整仓库上下文
+@context src/api/ src/models/ tests/  # 指定目录
+</code></pre>
+<p><strong>推荐实践：</strong> 在仓库根目录维护一个 <code>AGENTS.md</code>（或 <code>.cursorrules</code>、<code>CLAUDE.md</code>）文件：</p>
+<pre><code class="language-markdown"># AGENTS.md — AI 编程助手的项目指南
+
+## 技术栈
+- 前端：Next.js 15、TypeScript、Tailwind、shadcn/ui
+- 后端：FastAPI、Python 3.12、SQLAlchemy 2.0
+- 数据库：PostgreSQL 16、Redis 缓存
+- 测试：pytest、Playwright、Vitest
+
+## 约定
+- 使用函数式组件 + hooks，不使用类组件
+- 所有 API 路由都有 Zod 验证
+- 新业务逻辑必须包含测试
+- 错误信息格式："ERR_XXXX: description"
+
+## 架构
+- MVC + service 层
+- Repositories 抽象数据库访问
+- 全程使用 async/await
+</code></pre>
+<h3 id="中午生成"><a class="header" href="#中午生成">中午：生成</a></h3>
+<p><strong>最大化效率的编码工作流：</strong></p>
+<ol>
+<li>
+<p><strong>规格先行</strong> — 在写函数体之前先写接口/签名/类型。当契约清晰时，AI 生成的代码质量更高。</p>
+</li>
+<li>
+<p><strong>测试先行</strong> — 先写测试。然后让 AI 实现。这锚定了正确性。</p>
+</li>
+<li>
+<p><strong>迭代精炼</strong> — 不要接受第一个输出。利用 AI 的自我精炼能力：</p>
+<pre><code>"审查这段代码，关注：边界情况、性能问题、安全漏洞和风格一致性。"
+</code></pre>
+</li>
+<li>
+<p><strong>上下文锚定</strong> — 直接将编译器/解释器错误粘贴到提示中。AI 在看到错误时修复自身输出的能力特别强。</p>
+</li>
+</ol>
+<p><strong>有效的提示模式：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>模式</th><th>示例</th><th>为何有效</th></tr>
+</thead>
+<tbody>
+<tr><td>角色分配</td><td>“你是一名正在审查代码库的高级 Python 工程师”</td><td>激活专家角色</td></tr>
+<tr><td>约束前缀</td><td>“写生产级代码。这段代码将处理 PII 数据。”</td><td>设定安全边界</td></tr>
+<tr><td>输出格式</td><td>“以相对于 main 分支的 diff 形式返回解决方案”</td><td>减少认知负担</td></tr>
+<tr><td>负面示例</td><td>“不要使用 eval、subprocess 或 exec”</td><td>预防常见失败模式</td></tr>
+<tr><td>思维链</td><td>“在写代码之前，先思考边界情况”</td><td>提高正确性</td></tr>
+<tr><td>自我验证</td><td>“编写测试验证这段代码，然后运行它们”</td><td>创建检查点</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="下午审查与重构"><a class="header" href="#下午审查与重构">下午：审查与重构</a></h3>
+<p><strong>AI 辅助代码审查清单：</strong></p>
+<ol>
+<li><strong>逻辑正确性</strong> — “是否处理了 X 为 null 的边界情况？”</li>
+<li><strong>安全扫描</strong> — “检查 OWASP Top 10 漏洞：注入、XSS、SSRF、不安全反序列化”</li>
+<li><strong>性能</strong> — “找出 O(n²) 或更差的模式、N+1 查询、内存泄漏”</li>
+<li><strong>可维护性</strong> — “这个函数太长了吗？有没有魔法数字？命名一致吗？”</li>
+<li><strong>测试充分性</strong> — “哪些场景没有被现有测试覆盖？”</li>
+</ol>
+<p><strong>重构模式：</strong></p>
+<pre><code>"分析这个模块。找出：
+1. 应该提取的重复逻辑
+2. 违反单一职责原则的函数
+3. 可以降低的耦合度
+4. 使用现代语言特性的机会
+输出一个按优先级排序的重构计划。"
+</code></pre>
+<h2 id="155-ai-用于测试"><a class="header" href="#155-ai-用于测试">15.5 AI 用于测试</a></h2>
+<p>测试是 AI 提供最高 ROI 的领域之一。</p>
+<h3 id="测试生成"><a class="header" href="#测试生成">测试生成</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>方法</th><th>质量</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Qodo（CodiumAI）</strong></td><td>静态分析 → 行为覆盖</td><td>边界检测优秀</td></tr>
+<tr><td><strong>Copilot / Cursor</strong></td><td>行内测试生成</td><td>单元测试表现良好</td></tr>
+<tr><td><strong>Coverage AI</strong></td><td>LLM 分析未覆盖分支</td><td>生成缺失场景</td></tr>
+<tr><td><strong>Property-based（Hypothesis + AI）</strong></td><td>AI 建议不变量</td><td>发现边界 Bug</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>推荐工作流：</strong></p>
+<pre><code class="language-python"># 第一步：从实现生成测试
+# 提示："为这个函数生成 pytest 测试，覆盖：
+# - 正常路径
+# - 边界情况（空输入、None、边界值）
+# - 错误条件
+# - 类型违规"
+
+# 第二步：审查并运行
+# - AI 经常遗漏异步模式、mock 设置
+# - 但能发现人类遗漏的边界情况
+
+# 第三步：生成对抗性测试
+# "什么输入会破坏这个函数？为这些输入写测试。"
+</code></pre>
+<h3 id="测试维护"><a class="header" href="#测试维护">测试维护</a></h3>
+<p>AI 擅长：</p>
+<ul>
+<li>API 变更时更新测试</li>
+<li>识别不稳定测试</li>
+<li>在不牺牲覆盖率的情况下减少测试套件运行时间</li>
+<li>从 API 规范生成集成测试</li>
+</ul>
+<h2 id="156-ai-调试"><a class="header" href="#156-ai-调试">15.6 AI 调试</a></h2>
+<h3 id="调试工作流"><a class="header" href="#调试工作流">调试工作流</a></h3>
+<ol>
+<li><strong>用自然语言描述 Bug</strong> — 包括错误信息、预期 vs 实际、最小复现</li>
+<li><strong>提出假设</strong> — 请 AI 按可能性排序列出潜在根因</li>
+<li><strong>请求诊断</strong> — “添加日志/跟踪以缩小问题范围”</li>
+<li><strong>修复并验证</strong> — 应用修复，请 AI 建议本可以捕获该 Bug 的测试用例</li>
+</ol>
+<h3 id="有效的调试提示"><a class="header" href="#有效的调试提示">有效的调试提示：</a></h3>
+<pre><code>"我在这个分布式任务队列中遇到了竞态条件。
+这是 worker 代码和错误跟踪。
+你会使用哪些同步原语？
+请逐步分析导致 Bug 的时间序列。"
+</code></pre>
+<pre><code>"这个 SQL 查询在 500 万行的表上运行需要 12 秒。下面是 EXPLAIN ANALYZE 输出。
+哪些索引会有帮助？能否重写查询？"
+</code></pre>
+<h2 id="157-ai-时代的安全"><a class="header" href="#157-ai-时代的安全">15.7 AI 时代的安全</a></h2>
+<h3 id="ai-生成代码的特定风险"><a class="header" href="#ai-生成代码的特定风险">AI 生成代码的特定风险</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>风险</th><th>频率</th><th>缓解措施</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>AI 输出中的提示注入</strong></td><td>常见</td><td>永远不要信任处理用户输入的 AI 生成代码</td></tr>
+<tr><td><strong>幻觉依赖包</strong></td><td>罕见但危险</td><td>验证每个包名、版本、导入路径</td></tr>
+<tr><td><strong>不安全默认配置</strong></td><td>常见</td><td>显式审查安全配置（CORS、认证、加密）</td></tr>
+<tr><td><strong>授权逻辑错误</strong></td><td>偶尔</td><td>认证逻辑必须经过人工审查</td></tr>
+<tr><td><strong>供应链风险</strong></td><td>日益增长</td><td>固定依赖版本，使用 <code>pip audit</code> / <code>npm audit</code> / <code>trivy</code></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="llm-应用的-owasp-top-102025"><a class="header" href="#llm-应用的-owasp-top-102025">LLM 应用的 OWASP Top 10（2025）</a></h3>
+<ol>
+<li>提示注入</li>
+<li>不安全的输出处理</li>
+<li>训练数据投毒</li>
+<li>模型拒绝服务</li>
+<li>供应链漏洞</li>
+<li>敏感信息泄露</li>
+<li>不安全的插件设计</li>
+<li>过度代理权限</li>
+<li>过度依赖（信任 AI 输出的倾向）</li>
+<li>模型盗窃</li>
+</ol>
+<p><strong>对软件工程师：</strong> #1、#2、#9 是你在每次 AI 交互中的直接责任。</p>
+<h3 id="代码审查的安全必须提示"><a class="header" href="#代码审查的安全必须提示">代码审查的安全必须提示</a></h3>
+<p>添加到你的审查工作流中：</p>
+<pre><code>"分析这段代码，检查：
+- SQL 注入（特别是 AI 生成原始查询时）
+- XSS 漏洞
+- 路径遍历
+- 不安全反序列化
+- 硬编码密钥或凭据
+- 认证/授权绕过
+- 泄露内部状态的不当错误处理"
+</code></pre>
+<h2 id="158-工程师的-ai-思维模型"><a class="header" href="#158-工程师的-ai-思维模型">15.8 工程师的 AI 思维模型</a></h2>
+<h3 id="何时信任-ai-代码"><a class="header" href="#何时信任-ai-代码">何时信任 AI 代码</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>场景</th><th>信任级别</th><th>行动</th></tr>
+</thead>
+<tbody>
+<tr><td>样板代码（CRUD、API 客户端、配置）</td><td>高</td><td>快速审查即可发布</td></tr>
+<tr><td>算法实现</td><td>中</td><td>充分测试、基准测试</td></tr>
+<tr><td>安全关键代码</td><td>极低</td><td>全面人工审查，未经测试绝不部署</td></tr>
+<tr><td>状态机 / 并发</td><td>低</td><td>模型检查、广泛测试</td></tr>
+<tr><td>新颖架构</td><td>无</td><td>用作灵感，从头编写</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="审查密度法则"><a class="header" href="#审查密度法则">“审查密度“法则</a></h3>
+<p>你对领域了解越少，就越需要仔细审查 AI 的输出。矛盾的是，<strong>初级工程师应比高级工程师更仔细地审查 AI 代码</strong>，因为他们缺乏发现错误的模式库。</p>
+<h3 id="氛围编程何时有效何时无效"><a class="header" href="#氛围编程何时有效何时无效">氛围编程——何时有效，何时无效</a></h3>
+<p><strong>有效场景：</strong></p>
+<ul>
+<li>原型、MVP、内部工具</li>
+<li>UI 组件（尤其是有可视化预览时）</li>
+<li>数据转换脚本</li>
+<li>样板代码和脚手架</li>
+</ul>
+<p><strong>危险领域：</strong></p>
+<ul>
+<li>生产支付流程</li>
+<li>认证和授权系统</li>
+<li>医疗或安全关键软件</li>
+<li>加密实现</li>
+<li>分布式共识</li>
+</ul>
+<h2 id="159-工程师应关注的基准测试"><a class="header" href="#159-工程师应关注的基准测试">15.9 工程师应关注的基准测试</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>基准测试</th><th>衡量内容</th><th>2026 最佳</th><th>相关性</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>SWE-bench Verified</strong></td><td>真实 GitHub 问题解决</td><td>~97%</td><td>编码能力金标准</td></tr>
+<tr><td><strong>SWE-bench Multilingual</strong></td><td>非 Python 语言任务</td><td>~85%</td><td>语言通用性</td></tr>
+<tr><td><strong>HumanEval</strong></td><td>Python 函数生成</td><td>~98%</td><td>已饱和，作为基线</td></tr>
+<tr><td><strong>LiveCodeBench</strong></td><td>竞赛编程</td><td>~65%</td><td>困难推理任务</td></tr>
+<tr><td><strong>CRUXEval</strong></td><td>执行预测（“这段代码做了什么？”）</td><td>~80%</td><td>代码理解，不仅是生成</td></tr>
+<tr><td><strong>CyberSecEval</strong></td><td>安全编码能力</td><td>~60%</td><td>安全意识</td></tr>
+<tr><td><strong>CanItEdit</strong></td><td>多文件编辑能力</td><td>~75%</td><td>真实世界开发</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="1510-未来展望"><a class="header" href="#1510-未来展望">15.10 未来展望</a></h2>
+<h3 id="近期20262027"><a class="header" href="#近期20262027">近期（2026–2027）</a></h3>
+<ul>
+<li><strong>长时间运行智能体：</strong> AI 可自主工作数小时或数天完成编码任务，回传报告供审查</li>
+<li><strong>AI 原生 CI/CD：</strong> 修复失败测试、回滚错误部署、管理事件响应的智能体</li>
+<li><strong>自愈代码：</strong> 监控生产环境并自动打补丁的 AI</li>
+<li><strong>多仓库感知：</strong> 能够理解和跨微服务边界编辑的智能体</li>
+</ul>
+<h3 id="工程师角色的演变"><a class="header" href="#工程师角色的演变">工程师角色的演变</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>昨天</th><th>今天</th><th>明天</th></tr>
+</thead>
+<tbody>
+<tr><td>写代码</td><td>引导 AI 写代码</td><td>定义结果，验证质量</td></tr>
+<tr><td>手动调试</td><td>AI 建议修复，人决定</td><td>AI 调试和修复，人签字</td></tr>
+<tr><td>逐行审查 PR</td><td>审查 AI 生成的摘要</td><td>审查 AI 审查过的摘要</td></tr>
+<tr><td>设计架构</td><td>与 AI 共同设计</td><td>AI 提出架构，人选择</td></tr>
+</tbody>
+</table>
+</div>
+<p>蓬勃发展的工程师不是与 AI 竞争的工程师，而是建立<strong>反馈循环</strong>的工程师：人的判断 → AI 执行 → 人的验证 → AI 精炼。</p>
+<p><strong>趋势很明确：</strong> 从<em>如何</em>（命令式编程）到<em>什么</em>（声明式、自然语言）。角色从“写作者“转变为“规格制定者 + 审查者 + 架构师“。你的人本智慧——知道<em>构建什么</em>以及<em>是否正确</em>——变得更加有价值，而非更少。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-4/chapter-14.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-4/chapter-16.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-4/chapter-14.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-4/chapter-16.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
