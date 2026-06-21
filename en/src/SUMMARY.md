@@ -56,3 +56,7 @@
 - [Glossary of Key Terms](appendices/appendix-d.md)
 
 [Conclusion](conclusion.md)
+
+---
+
+[License](license.md)

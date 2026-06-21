@@ -1,5 +1,5 @@
 [book]
-authors = ["Your Name"]
+authors = ["treelemon"]
 language = "en"
 src = "src"
 title = "The Intelligence Age: Human Wisdom in the AI Era"
@@ -9,6 +9,7 @@ description = "A living, continuously updated field guide to the AI era — grou
 build-dir = "book"
 
 [output.html]
-git-repository-url = "https://github.com/your-username/booksofAiEra"
-edit-url-template = "https://github.com/your-username/booksofAiEra/edit/main/en/{path}"
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/en/{path}"
 site-url = "/booksofAiEra/en/"
+copyright = "© 2026 treelemon. All rights reserved. Commercial use requires authorization."

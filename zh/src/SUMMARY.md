@@ -56,3 +56,7 @@
 - [关键术语表](appendices/appendix-d.md)
 
 [结语](conclusion.md)
+
+---
+
+[版权声明](license.md)
