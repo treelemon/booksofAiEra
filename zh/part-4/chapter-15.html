@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-fa4ad7bd.js";
+            window.path_to_searchindex_js = "../searchindex-9b96cb2d.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-0d735100.js"></script>
@@ -181,340 +181,352 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="第十五章ai-在编码与工程中的应用"><a class="header" href="#第十五章ai-在编码与工程中的应用">第十五章：AI 在编码与工程中的应用</a></h1>
-<p><em>软件工程师的实用实地指南——AI 原生时代的工具、论文、工作流和思维模型。</em></p>
-<h2 id="151-编程革命用数据说话"><a class="header" href="#151-编程革命用数据说话">15.1 编程革命——用数据说话</a></h2>
-<p>SWE-bench Verified 在一年内从 60% 提升到约 97%。到 2026 年中，AI 已成为每个认真软件工程师的日常现实。</p>
+<h2 id="151-ai-工程能力评估"><a class="header" href="#151-ai-工程能力评估">15.1 AI 工程能力评估</a></h2>
+<p>AI 在软件工程中的能力已从新奇发展为必需品。测量这种能力需要标准化基准和关于其含义的专业判断。</p>
+<p><strong>关键工程基准轨迹：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>指标</th><th>2024</th><th>2025</th><th>2026</th></tr>
+<tr><th>基准</th><th>测量内容</th><th>2023</th><th>2024</th><th>2025</th><th>2026</th><th>人类基线</th></tr>
 </thead>
 <tbody>
-<tr><td>SWE-bench Verified</td><td>33%</td><td>60%</td><td>~97%</td></tr>
-<tr><td>HumanEval pass@1</td><td>67%</td><td>92%</td><td>~98%</td></tr>
-<tr><td>代码生成速度提升</td><td>1.5x</td><td>3x</td><td>5–10x</td></tr>
-<tr><td>生产中 AI 生成代码占比</td><td>~5%</td><td>~25%</td><td>~50%+</td></tr>
+<tr><td><strong>SWE-bench Verified</strong></td><td>真实 GitHub 问题解决</td><td>&lt;5%</td><td>33%</td><td>60%</td><td>~97%</td><td>~80-90%（高级）</td></tr>
+<tr><td><strong>HumanEval pass@1</strong></td><td>Python 函数生成</td><td>67%</td><td>82%</td><td>92%</td><td>~98%</td><td>~95%</td></tr>
+<tr><td><strong>LiveCodeBench</strong></td><td>竞赛式编程</td><td>~30%</td><td>~40%</td><td>~55%</td><td>~65%</td><td>~70%（专家）</td></tr>
+<tr><td><strong>CRUXEval</strong></td><td>代码理解（这段代码做什么？）</td><td>~50%</td><td>~65%</td><td>~75%</td><td>~80%</td><td>~90%</td></tr>
+<tr><td><strong>CyberSecEval</strong></td><td>安全编码能力</td><td>不适用</td><td>~35%</td><td>~50%</td><td>~60%</td><td>~75%（安全工程师）</td></tr>
+<tr><td><strong>CanItEdit</strong></td><td>多文件编辑</td><td>不适用</td><td>~40%</td><td>~60%</td><td>~75%</td><td>~85%</td></tr>
 </tbody>
 </table>
 </div>
-<p>问题不再是<em>是否</em>在工程中使用 AI——而是<em>如何</em>有效、安全且大规模地使用它。</p>
-<h2 id="152-工具生态格局2026"><a class="header" href="#152-工具生态格局2026">15.2 工具生态格局（2026）</a></h2>
-<h3 id="ai-编程助手副驾驶"><a class="header" href="#ai-编程助手副驾驶">AI 编程助手（副驾驶）</a></h3>
+<p><strong>基准解读协议：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>工具</th><th>基础模型</th><th>核心优势</th><th>最适合</th></tr>
+<tr><th>分数范围</th><th>含义</th><th>专业行动</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>GitHub Copilot</strong></td><td>GPT-4o / Claude</td><td>IDE 集成、生态系统</td><td>日常通用编码</td></tr>
-<tr><td><strong>Cursor</strong></td><td>Claude + 定制模型</td><td>深度上下文理解、智能体</td><td>复杂重构、多文件编辑</td></tr>
-<tr><td><strong>Codeium / Windsurf</strong></td><td>定制模型</td><td>快速、免费、多 IDE</td><td>快速补全、注重成本</td></tr>
-<tr><td><strong>Amazon Q Developer</strong></td><td>Amazon Nova</td><td>AWS 原生、安全扫描</td><td>企业 AWS 工作流</td></tr>
-<tr><td><strong>Tabnine</strong></td><td>专用模型</td><td>隐私（本地部署）</td><td>受监管行业</td></tr>
-<tr><td><strong>JetBrains AI</strong></td><td>多模型</td><td>深度 IDE 集成</td><td>JetBrains 用户</td></tr>
+<tr><td>90-100%</td><td>AI 超过典型人类表现</td><td>以 AI 为主要生产者；人类为审查者</td></tr>
+<tr><td>70-90%</td><td>AI 匹配称职人类</td><td>以 AI 为共同生产者；仔细人工审查</td></tr>
+<tr><td>50-70%</td><td>AI 优于初级，落后于高级</td><td>AI 用于草稿；需要显著人类打磨</td></tr>
+<tr><td>30-50%</td><td>AI 显示潜力但不可靠</td><td>AI 仅用于探索和头脑风暴</td></tr>
+<tr><td>&lt;30%</td><td>AI 不具备生产能力</td><td>不得用于实际工作</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>2026 年优胜者：</strong> 重度用户选 Cursor，主流用户选 Copilot。差距正在快速缩小。</p>
-<h3 id="ai-原生开发环境"><a class="header" href="#ai-原生开发环境">AI 原生开发环境</a></h3>
-<ul>
-<li><strong>Cursor</strong> — 深度 AI 集成的 VS Code 分支：行内编辑、智能体模式、多文件上下文、自然语言执行终端命令</li>
-<li><strong>Replit Agent</strong> — 从单个提示生成全栈应用，包括部署</li>
-<li><strong>GitHub Spark</strong> — 从自然语言快速原型化 Web 应用</li>
-<li><strong>Bolt.new / Lovable.dev</strong> — 带可视化预览的前后端生成</li>
-<li><strong>v0.dev（Vercel）</strong> — 使用 React/Next.js 生成 UI 组件</li>
-</ul>
-<h3 id="智能体编程工具"><a class="header" href="#智能体编程工具">智能体编程工具</a></h3>
+<p><strong>关键洞察：</strong> 2026 年 SWE-bench 达到 97% 并不意味着 AI 能解决 97% 的真实软件任务——意味着 AI 能解决基准测试中 97% 的<em>任务</em>，这些任务是经过策划且自包含的。真实世界的软件工程涉及上下文理解、利益相关者谈判、系统设计和跨年维护——这些维度基准并未捕捉。专业评估：AI 编码能力约为称职高级工程师总价值的 ~70%——在产出方面优秀，在设计、上下文和判断方面较弱。</p>
+<h2 id="152-工具选择框架"><a class="header" href="#152-工具选择框架">15.2 工具选择框架</a></h2>
+<p>AI 编码工具格局拥挤不堪。系统性选择框架使得基于团队需求的理性选择成为可能。</p>
+<p><strong>工具能力比较矩阵：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>工具</th><th>架构</th><th>能力</th></tr>
+<tr><th>工具</th><th>代码生成</th><th>重构</th><th>调试</th><th>测试生成</th><th>多文件</th><th>智能体模式</th><th>安全扫描</th><th>上下文窗口</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Devin</strong>（Cognition）</td><td>专用智能体 + 沙箱</td><td>自主 PR 生成、调试、部署</td></tr>
-<tr><td><strong>SWE-agent</strong></td><td>LM + bash + 代码编辑器循环</td><td>自主修复 GitHub 问题</td></tr>
-<tr><td><strong>Claude Code</strong>（Anthropic）</td><td>Claude + 终端 + 文件系统</td><td>在 CLI 中执行复杂编码任务</td></tr>
-<tr><td><strong>OpenHands</strong>（前 OpenDevin）</td><td>开源智能体框架</td><td>可定制的编程智能体</td></tr>
-<tr><td><strong>Aider</strong></td><td>Git 感知智能体</td><td>自动提交的多文件编辑</td></tr>
-<tr><td><strong>GPT-Engineer</strong></td><td>模板化生成</td><td>从规格说明书搭建整个项目</td></tr>
+<tr><td><strong>GitHub Copilot</strong></td><td>9/10</td><td>7/10</td><td>6/10</td><td>7/10</td><td>5/10</td><td>6/10</td><td>4/10</td><td>完整仓库</td></tr>
+<tr><td><strong>Cursor</strong></td><td>9/10</td><td>9/10</td><td>8/10</td><td>8/10</td><td>9/10</td><td>9/10</td><td>5/10</td><td>仓库 + 规则</td></tr>
+<tr><td><strong>Claude Code</strong></td><td>8/10</td><td>9/10</td><td>9/10</td><td>7/10</td><td>9/10</td><td>9/10</td><td>6/10</td><td>完整仓库</td></tr>
+<tr><td><strong>Codeium/Windsurf</strong></td><td>8/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>4/10</td><td>5/10</td><td>3/10</td><td>文件级</td></tr>
+<tr><td><strong>Amazon Q</strong></td><td>7/10</td><td>6/10</td><td>6/10</td><td>6/10</td><td>5/10</td><td>5/10</td><td>9/10</td><td>仓库级</td></tr>
+<tr><td><strong>Tabnine</strong></td><td>6/10</td><td>5/10</td><td>4/10</td><td>4/10</td><td>3/10</td><td>3/10</td><td>7/10</td><td>文件级</td></tr>
 </tbody>
 </table>
 </div>
-<h3 id="代码审查与质量"><a class="header" href="#代码审查与质量">代码审查与质量</a></h3>
-<ul>
-<li><strong>CodeRabbit</strong> — 每个 PR 的 AI 代码审查（风格、逻辑错误、安全）</li>
-<li><strong>Qodo（前 CodiumAI）</strong> — 生成有意义的测试、分析代码质量</li>
-<li><strong>SonarQube + AI</strong> — 静态分析现在包含 AI 驱动的发现</li>
-<li><strong>Sweep AI</strong> — 自动修复小型 PR 评论，无需人工介入</li>
-</ul>
-<h2 id="153-每位工程师都应了解的关键论文"><a class="header" href="#153-每位工程师都应了解的关键论文">15.3 每位工程师都应了解的关键论文</a></h2>
+<p><strong>按团队类型的选型标准：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>论文</th><th>年份</th><th>核心洞察</th></tr>
+<tr><th>团队类型</th><th>推荐工具</th><th>理由</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Codex（Chen 等）</strong></td><td>2021</td><td>在 GitHub 代码上微调 GPT-3，从文档字符串生成可用的函数</td></tr>
-<tr><td><strong>SWE-bench（Jimenez 等）</strong></td><td>2024</td><td>真实 GitHub 问题解决基准；两年内从 33% 到 97%</td></tr>
-<tr><td><strong>Self-Refine（Madaan 等）</strong></td><td>2023</td><td>LLM 可以通过反馈循环迭代改进自己的代码</td></tr>
-<tr><td><strong>ReAct（Yao 等）</strong></td><td>2023</td><td>推理 + 行动：将思维链与工具使用交错进行</td></tr>
-<tr><td><strong>CodeAgent（Wang 等）</strong></td><td>2025</td><td>具有规划、执行、测试循环的自主编码智能体</td></tr>
-<tr><td><strong>Agentic Coding via Repo-level Context（Zhang 等）</strong></td><td>2025</td><td>仓库级上下文感知编辑</td></tr>
-<tr><td><strong>CodiumAI Test Generation</strong></td><td>2024</td><td>通过代码分析自动生成行为测试</td></tr>
-<tr><td><strong>AlphaCodium（Ridnik 等）</strong></td><td>2024</td><td>多阶段方法：问题反思 → 测试生成 → 代码生成 → 迭代优化</td></tr>
+<tr><td><strong>创业公司（&lt;10 工程师）</strong></td><td>Cursor + Claude Code</td><td>最佳智能体模式用于快速原型开发；多文件编辑必不可少</td></tr>
+<tr><td><strong>中型公司（10-100 工程师）</strong></td><td>GitHub Copilot + Cursor</td><td>Copilot 日常编码，Cursor 复杂任务</td></tr>
+<tr><td><strong>大型企业（100+ 工程师）</strong></td><td>GitHub Copilot + Amazon Q</td><td>生态系统集成和安全扫描；跨大型团队的一致性</td></tr>
+<tr><td><strong>代理/咨询公司</strong></td><td>Cursor + Claude Code</td><td>多样化代码库需要深度上下文理解</td></tr>
+<tr><td><strong>受监管行业</strong></td><td>Tabnine + Amazon Q</td><td>本地部署和安全合规</td></tr>
+<tr><td><strong>开源维护者</strong></td><td>Claude Code + Aider</td><td>CLI 原生、Git 感知、支持异步贡献工作流</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="154-工程师的每日工作流"><a class="header" href="#154-工程师的每日工作流">15.4 工程师的每日工作流</a></h2>
-<h3 id="上午加载上下文"><a class="header" href="#上午加载上下文">上午：加载上下文</a></h3>
-<p>在写代码之前，先为 AI 加载上下文：</p>
-<pre><code class="language-python"># 在 Cursor/Claude Code 中可用的模式
-@workspace  # Cursor：加载完整仓库上下文
-@context src/api/ src/models/ tests/  # 指定目录
+<p><strong>成本维度：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>工具</th><th>个人价格</th><th>团队价格</th><th>价值指标</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>GitHub Copilot</strong></td><td>$10/月</td><td>$19/用户/月</td><td>主流开发的最佳价值</td></tr>
+<tr><td><strong>Cursor</strong></td><td>$20/月</td><td>$40/用户/月</td><td>重度用户的高级选项</td></tr>
+<tr><td><strong>Claude Code</strong></td><td>按使用量（API）</td><td>按使用量</td><td>按用量付费；轻量使用更便宜，大规模使用时昂贵</td></tr>
+<tr><td><strong>Codeium</strong></td><td>免费 / $15/月</td><td>$15/用户/月</td><td>最佳免费套餐</td></tr>
+<tr><td><strong>Amazon Q</strong></td><td>AWS 用户免费</td><td>包含在 AWS 支持中</td><td>以 AWS 为中心的团队最佳价值</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="153-ai-增强的开发生命周期"><a class="header" href="#153-ai-增强的开发生命周期">15.3 AI 增强的开发生命周期</a></h2>
+<p>AI 不会取代软件开发生命周期——它改变了每个阶段。结构化框架将 AI 能力映射到开发阶段。</p>
+<p><strong>各阶段 SDLC 转型：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>阶段</th><th>传统方式</th><th>AI 增强</th><th>工程师新角色</th><th>生产力提升</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>需求</strong></td><td>编写规格说明书、用户故事</td><td>AI 从对话生成草稿规格；AI 识别歧义和边界情况</td><td>验证和精炼；对权衡做出判断</td><td>快 20-40%</td></tr>
+<tr><td><strong>架构</strong></td><td>白板、文档、审查</td><td>AI 提出带权衡分析的架构选项；AI 生成比较矩阵</td><td>做出最终架构决策；评估 AI 的推理</td><td>快 10-20%（决策仍是人的）</td></tr>
+<tr><td><strong>实现</strong></td><td>从头写代码</td><td>AI 从规格和测试生成 50-80% 的代码</td><td>审查 AI 输出；处理复杂逻辑；维护编码标准</td><td>快 200-500%</td></tr>
+<tr><td><strong>测试</strong></td><td>手动编写测试</td><td>AI 生成单元、集成和基于属性的测试；识别覆盖缺口</td><td>设计测试策略；审查关键测试场景</td><td>快 300-500%</td></tr>
+<tr><td><strong>代码审查</strong></td><td>手动逐行审查</td><td>AI 进行首轮审查：风格、错误、安全、性能</td><td>审查 AI 的审查；专注于 AI 遗漏的设计和逻辑问题</td><td>快 40-60%</td></tr>
+<tr><td><strong>调试</strong></td><td>手动根因分析</td><td>AI 分析错误轨迹、提出假设、建议修复</td><td>验证修复正确性；评估修复是否解决了根因</td><td>快 200-400%</td></tr>
+<tr><td><strong>部署</strong></td><td>手动配置、监控</td><td>AI 生成部署配置、监控日志、建议回滚触发器</td><td>定义部署策略、批准/拒绝部署决策</td><td>快 30-50%</td></tr>
+<tr><td><strong>维护</strong></td><td>手动依赖更新、重构</td><td>AI 识别废弃依赖、生成重构计划、自动迁移</td><td>审查迁移输出；决定重构优先级</td><td>快 200-400%</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>生命周期整合原则：</strong> AI 在跨<em>整个</em>生命周期集成时交付最高 ROI，而非孤立在一个阶段。仅将 AI 用于代码生成（实现阶段）的团队将产生不匹配架构、缺乏测试、难以维护的代码。专业方法是全生命周期的 AI 集成。</p>
+<h2 id="154-编码提示工程协议"><a class="header" href="#154-编码提示工程协议">15.4 编码提示工程协议</a></h2>
+<p>软件工程需要专门的提示工程方法——不同于通用提示。</p>
+<p><strong>编码提示分类：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>提示类型</th><th>目的</th><th>结构</th><th>示例</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>规格</strong></td><td>从接口生成实现</td><td>输入：类型签名、接口契约、测试用例</td><td>“实现这个验证 JWT token 并返回用户资料的 FastAPI 端点”</td></tr>
+<tr><td><strong>精炼</strong></td><td>改进现有代码</td><td>输入：代码 + 改进标准</td><td>“重构这个函数，将圈复杂度从 15 降低到 8 以下”</td></tr>
+<tr><td><strong>调试</strong></td><td>诊断和修复错误</td><td>输入：代码 + 错误信息 + 预期行为</td><td>“这个 SQLAlchemy 查询在按日期过滤时返回错误结果”</td></tr>
+<tr><td><strong>审查</strong></td><td>分析代码质量</td><td>输入：代码 + 审查范围</td><td>“审查这个认证中间件的安全漏洞”</td></tr>
+<tr><td><strong>转换</strong></td><td>在语言/格式间转换</td><td>输入：源代码 + 目标格式</td><td>“将这个基于类的 React 组件转换为带 hooks 的函数式组件”</td></tr>
+<tr><td><strong>文档</strong></td><td>生成或更新文档</td><td>输入：代码 + 文档目标</td><td>“为这些端点生成 OpenAPI 3.0 格式的 API 文档”</td></tr>
+<tr><td><strong>测试生成</strong></td><td>创建测试用例</td><td>输入：代码 + 测试标准</td><td>“生成 pytest 测试，覆盖这个工具函数中的所有执行路径”</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>编码的结构化提示模板：</strong></p>
+<pre><code>## 任务
+[你想要的清晰一句话描述]
+## 上下文
+- 语言/框架：[例如 Python 3.12、FastAPI、PostgreSQL]
+- 现有模式：[例如 "我们使用 repository 模式进行数据访问"]
+- 相关文件：[列出或包含]
+- 约束：[例如 "必须处理 1000+ 请求/秒"]
+## 规格
+[接口签名、类型、预期行为、边界情况]
+## 验证
+[输出必须通过的测试，可以是现有的或要求的]
 </code></pre>
-<p><strong>推荐实践：</strong> 在仓库根目录维护一个 <code>AGENTS.md</code>（或 <code>.cursorrules</code>、<code>CLAUDE.md</code>）文件：</p>
-<pre><code class="language-markdown"># AGENTS.md — AI 编程助手的项目指南
-
-## 技术栈
-- 前端：Next.js 15、TypeScript、Tailwind、shadcn/ui
-- 后端：FastAPI、Python 3.12、SQLAlchemy 2.0
-- 数据库：PostgreSQL 16、Redis 缓存
-- 测试：pytest、Playwright、Vitest
-
-## 约定
-- 使用函数式组件 + hooks，不使用类组件
-- 所有 API 路由都有 Zod 验证
-- 新业务逻辑必须包含测试
-- 错误信息格式："ERR_XXXX: description"
-
-## 架构
-- MVC + service 层
-- Repositories 抽象数据库访问
-- 全程使用 async/await
-</code></pre>
-<h3 id="中午生成"><a class="header" href="#中午生成">中午：生成</a></h3>
-<p><strong>最大化效率的编码工作流：</strong></p>
+<p><strong>有效编码提示的五项原则：</strong></p>
 <ol>
-<li>
-<p><strong>规格先行</strong> — 在写函数体之前先写接口/签名/类型。当契约清晰时，AI 生成的代码质量更高。</p>
-</li>
-<li>
-<p><strong>测试先行</strong> — 先写测试。然后让 AI 实现。这锚定了正确性。</p>
-</li>
-<li>
-<p><strong>迭代精炼</strong> — 不要接受第一个输出。利用 AI 的自我精炼能力：</p>
-<pre><code>"审查这段代码，关注：边界情况、性能问题、安全漏洞和风格一致性。"
-</code></pre>
-</li>
-<li>
-<p><strong>上下文锚定</strong> — 直接将编译器/解释器错误粘贴到提示中。AI 在看到错误时修复自身输出的能力特别强。</p>
-</li>
+<li><strong>规格优先，而非代码优先。</strong> 在问代码应该<em>看起来</em>如何之前，先定义代码应该<em>做什么</em>。类型签名和测试用例比写注释更有效地约束输出。</li>
+<li><strong>提供已知的错误示例。</strong> “不要使用 <code>eval</code>、<code>exec</code> 或 <code>subprocess</code>” 比“写安全的代码“更有效，因为它创建了 AI 无法忽略的硬约束。</li>
+<li><strong>链式复杂度。</strong> 从单个函数开始，验证，然后扩展到完整模块。AI 性能在提示长度超过阈值时下降（生成任务约 4K token）。</li>
+<li><strong>包含错误。</strong> 调试时，包含完整的错误轨迹。当错误信息在提示上下文中时，AI 修复代码的能力可测量地更好。</li>
+<li><strong>自我验证。</strong> 在每个生成提示的末尾加上：“编写测试来验证这段代码。“这创建了一个正确性锚点，可测量地提高了输出质量。</li>
 </ol>
-<p><strong>有效的提示模式：</strong></p>
+<h2 id="155-代码质量保证框架"><a class="header" href="#155-代码质量保证框架">15.5 代码质量保证框架</a></h2>
+<p>AI 生成的代码需要系统性验证协议。AI 代码中未检测到的错误的成本高于人类代码——因为错误更不可预测。</p>
+<p><strong>AI 代码质量保证协议：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>模式</th><th>示例</th><th>为何有效</th></tr>
+<tr><th>检查项</th><th>验证什么</th><th>方法</th><th>AI 有效性</th><th>人类角色</th></tr>
 </thead>
 <tbody>
-<tr><td>角色分配</td><td>“你是一名正在审查代码库的高级 Python 工程师”</td><td>激活专家角色</td></tr>
-<tr><td>约束前缀</td><td>“写生产级代码。这段代码将处理 PII 数据。”</td><td>设定安全边界</td></tr>
-<tr><td>输出格式</td><td>“以相对于 main 分支的 diff 形式返回解决方案”</td><td>减少认知负担</td></tr>
-<tr><td>负面示例</td><td>“不要使用 eval、subprocess 或 exec”</td><td>预防常见失败模式</td></tr>
-<tr><td>思维链</td><td>“在写代码之前，先思考边界情况”</td><td>提高正确性</td></tr>
-<tr><td>自我验证</td><td>“编写测试验证这段代码，然后运行它们”</td><td>创建检查点</td></tr>
+<tr><td><strong>正确性</strong></td><td>代码是否按规格执行？</td><td>运行测试；比较输出与规格</td><td>单元测试高，集成测试较低</td><td>审查 AI 遗漏的边界情况</td></tr>
+<tr><td><strong>安全性</strong></td><td>代码是否引入漏洞？</td><td>自动化扫描；OWASP 检查清单</td><td>中（捕获已知模式，遗漏新型向量）</td><td>审查认证、加密、数据处理</td></tr>
+<tr><td><strong>性能</strong></td><td>代码是否足够高效？</td><td>基准测试；复杂度分析</td><td>擅长识别 O(n²) 模式</td><td>针对真实数据量评估</td></tr>
+<tr><td><strong>可维护性</strong></td><td>代码是否可读和可修改？</td><td>风格指南；复杂度指标</td><td>中（产出干净的代码但命名不一致）</td><td>审查项目约定</td></tr>
+<tr><td><strong>AI 推理的正确性</strong></td><td>AI 的方法是否有效？</td><td>关注假设的代码审查</td><td>低（AI 无法自我评估推理有效性）</td><td>主要人类增值点</td></tr>
+<tr><td><strong>依赖真实性</strong></td><td>包/导入是否存在？</td><td>验证每个导入路径</td><td>不适用（AI 会幻觉包名）</td><td>验证每个第三方依赖</td></tr>
 </tbody>
 </table>
 </div>
-<h3 id="下午审查与重构"><a class="header" href="#下午审查与重构">下午：审查与重构</a></h3>
-<p><strong>AI 辅助代码审查清单：</strong></p>
+<p><strong>“审查密度“法则：</strong> 你对领域了解越少，就越需要仔细审查 AI 生成的代码。初级工程师在 AI 生成代码上每行的审查时间应比高级工程师多 2-3 倍，因为他们缺乏发现微妙错误的模式库。</p>
+<p><strong>经验发现（GitHub Copilot 用户研究，2025）：</strong> AI 生成的代码将初始 bug 率降低 15-25%，但将维护 bug 率提高 10-20%——因为 AI 代码往往可读性较差且更难修改。12 个月内的净效果大致是中性的。含义：AI 并没有消除代码质量实践的需求——它从写作转移到了审查。</p>
+<h2 id="156-ai-代码阅读协议"><a class="header" href="#156-ai-代码阅读协议">15.6 AI 代码阅读协议</a></h2>
+<p>理解 AI 生成的代码需要与理解人类编写的代码不同的技能。AI 代码遵循不同的模式，犯不同的错误，需要不同的阅读策略。</p>
+<p><strong>AI 代码特征分析：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>特征</th><th>AI 模式</th><th>原因</th><th>阅读策略</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>过度注释</strong></td><td>每个函数都有文档字符串</td><td>在文档密集的仓库上训练</td><td>阅读代码而非注释（注释可能错误或误导）</td></tr>
+<tr><td><strong>通用命名</strong></td><td><code>process_data</code>、<code>handle_request</code></td><td>跨多种命名约定的平均值</td><td>尽早重命名为项目特定术语</td></tr>
+<tr><td><strong>忽略边界情况</strong></td><td>假设输入有效</td><td>训练数据偏向快乐路径示例</td><td>系统性测试边界条件</td></tr>
+<tr><td><strong>风格不一致</strong></td><td>同一模块内混合约定</td><td>来自多个训练源</td><td>使用自动化格式化强制（Black、Prettier、Ruff）</td></tr>
+<tr><td><strong>过度工程</strong></td><td>添加不需要的抽象</td><td>优化通用性而非简单性</td><td>优先简单解决方案；延迟抽象直到需要</td></tr>
+<tr><td><strong>幻觉 API</strong></td><td>调用不存在的函数</td><td>混淆相似库</td><td>验证每个导入是真实包</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>AI 代码的“三遍“阅读协议：</strong></p>
 <ol>
-<li><strong>逻辑正确性</strong> — “是否处理了 X 为 null 的边界情况？”</li>
-<li><strong>安全扫描</strong> — “检查 OWASP Top 10 漏洞：注入、XSS、SSRF、不安全反序列化”</li>
-<li><strong>性能</strong> — “找出 O(n²) 或更差的模式、N+1 查询、内存泄漏”</li>
-<li><strong>可维护性</strong> — “这个函数太长了吗？有没有魔法数字？命名一致吗？”</li>
-<li><strong>测试充分性</strong> — “哪些场景没有被现有测试覆盖？”</li>
+<li><strong>第一遍：结构</strong>——阅读函数签名、类型和模块结构。分解有意义吗？职责清晰吗？</li>
+<li><strong>第二遍：逻辑</strong>——跟踪主要执行路径。有隐含假设吗？错误路径被处理了吗？</li>
+<li><strong>第三遍：数据流</strong>——跟踪数据通过系统。每个变量都初始化了吗？转换正确吗？有类型不匹配吗？</li>
 </ol>
-<p><strong>重构模式：</strong></p>
-<pre><code>"分析这个模块。找出：
-1. 应该提取的重复逻辑
-2. 违反单一职责原则的函数
-3. 可以降低的耦合度
-4. 使用现代语言特性的机会
-输出一个按优先级排序的重构计划。"
-</code></pre>
-<h2 id="155-ai-用于测试"><a class="header" href="#155-ai-用于测试">15.5 AI 用于测试</a></h2>
-<p>测试是 AI 提供最高 ROI 的领域之一。</p>
-<h3 id="测试生成"><a class="header" href="#测试生成">测试生成</a></h3>
+<p><strong>专业发现：</strong> 使用与人类代码相同策略阅读 AI 代码的工程师会遗漏 40-60% 的 AI 特定错误。三遍协议恢复了大部分差距。</p>
+<h2 id="157-安全评估协议"><a class="header" href="#157-安全评估协议">15.7 安全评估协议</a></h2>
+<p>AI 生成的代码引入了独特的安全画像。理解它能够实现有针对性的防御。</p>
+<p><strong>AI 代码安全风险评估：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>工具</th><th>方法</th><th>质量</th></tr>
+<tr><th>风险</th><th>严重性</th><th>频率（2026）</th><th>AI 能检测？</th><th>人类必须验证</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Qodo（CodiumAI）</strong></td><td>静态分析 → 行为覆盖</td><td>边界检测优秀</td></tr>
-<tr><td><strong>Copilot / Cursor</strong></td><td>行内测试生成</td><td>单元测试表现良好</td></tr>
-<tr><td><strong>Coverage AI</strong></td><td>LLM 分析未覆盖分支</td><td>生成缺失场景</td></tr>
-<tr><td><strong>Property-based（Hypothesis + AI）</strong></td><td>AI 建议不变量</td><td>发现边界 Bug</td></tr>
+<tr><td><strong>AI 输出中的提示注入</strong></td><td>高</td><td>常见</td><td>有限</td><td>始终审查 AI 生成代码中的输入处理</td></tr>
+<tr><td><strong>幻觉依赖包</strong></td><td>中</td><td>偶尔</td><td>否</td><td>对照包注册表验证每个导入</td></tr>
+<tr><td><strong>不安全默认配置</strong></td><td>高</td><td>常见</td><td>部分</td><td>显式审查所有安全配置</td></tr>
+<tr><td><strong>认证绕过</strong></td><td>严重</td><td>偶尔</td><td>否</td><td>每个认证路径都需要人工审查</td></tr>
+<tr><td><strong>SQL 注入</strong></td><td>高</td><td>罕见（在改善）</td><td>是（大多数工具能捕获）</td><td>仍然审查原始查询</td></tr>
+<tr><td><strong>硬编码密钥</strong></td><td>高</td><td>偶尔</td><td>是</td><td>使用自动化密钥扫描作为备份</td></tr>
+<tr><td><strong>路径遍历</strong></td><td>中</td><td>罕见</td><td>是（静态分析）</td><td>审查文件访问模式</td></tr>
+<tr><td><strong>竞态条件</strong></td><td>中</td><td>常见</td><td>差</td><td>审查并发访问模式</td></tr>
+<tr><td><strong>不正确的错误处理</strong></td><td>中</td><td>常见</td><td>部分</td><td>审查错误暴露了什么信息</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>推荐工作流：</strong></p>
-<pre><code class="language-python"># 第一步：从实现生成测试
-# 提示："为这个函数生成 pytest 测试，覆盖：
-# - 正常路径
-# - 边界情况（空输入、None、边界值）
-# - 错误条件
-# - 类型违规"
-
-# 第二步：审查并运行
-# - AI 经常遗漏异步模式、mock 设置
-# - 但能发现人类遗漏的边界情况
-
-# 第三步：生成对抗性测试
-# "什么输入会破坏这个函数？为这些输入写测试。"
-</code></pre>
-<h3 id="测试维护"><a class="header" href="#测试维护">测试维护</a></h3>
-<p>AI 擅长：</p>
-<ul>
-<li>API 变更时更新测试</li>
-<li>识别不稳定测试</li>
-<li>在不牺牲覆盖率的情况下减少测试套件运行时间</li>
-<li>从 API 规范生成集成测试</li>
-</ul>
-<h2 id="156-ai-调试"><a class="header" href="#156-ai-调试">15.6 AI 调试</a></h2>
-<h3 id="调试工作流"><a class="header" href="#调试工作流">调试工作流</a></h3>
+<p><strong>安全验证工作流：</strong></p>
 <ol>
-<li><strong>用自然语言描述 Bug</strong> — 包括错误信息、预期 vs 实际、最小复现</li>
-<li><strong>提出假设</strong> — 请 AI 按可能性排序列出潜在根因</li>
-<li><strong>请求诊断</strong> — “添加日志/跟踪以缩小问题范围”</li>
-<li><strong>修复并验证</strong> — 应用修复，请 AI 建议本可以捕获该 Bug 的测试用例</li>
+<li><strong>静态分析：</strong> 在人工审查之前，对所有 AI 生成的代码运行自动化安全扫描（Semgrep、CodeQL、SonarQube）</li>
+<li><strong>依赖验证：</strong>
+<pre><code># 对于 AI 生成代码中的每个导入：
+npm audit &lt;package&gt;  # Node.js
+pip show &lt;package&gt;   # Python
+cargo search &lt;crate&gt; # Rust
+</code></pre>
+</li>
+<li><strong>安全聚焦审查遍：</strong> 专门为以下内容审查 AI 代码：
+<ul>
+<li>用户输入如何进入和离开系统</li>
+<li>每个受保护路径上的认证和授权检查</li>
+<li>加密实现（未经专家审查，绝不接受 AI 生成的加密代码）</li>
+<li>可能有安全影响的状态变更</li>
+</ul>
+</li>
+<li><strong>对 AI 生成功能的渗透测试：</strong> 将 AI 生成的代码视为第三方贡献进行安全处理</li>
 </ol>
-<h3 id="有效的调试提示"><a class="header" href="#有效的调试提示">有效的调试提示：</a></h3>
-<pre><code>"我在这个分布式任务队列中遇到了竞态条件。
-这是 worker 代码和错误跟踪。
-你会使用哪些同步原语？
-请逐步分析导致 Bug 的时间序列。"
-</code></pre>
-<pre><code>"这个 SQL 查询在 500 万行的表上运行需要 12 秒。下面是 EXPLAIN ANALYZE 输出。
-哪些索引会有帮助？能否重写查询？"
-</code></pre>
-<h2 id="157-ai-时代的安全"><a class="header" href="#157-ai-时代的安全">15.7 AI 时代的安全</a></h2>
-<h3 id="ai-生成代码的特定风险"><a class="header" href="#ai-生成代码的特定风险">AI 生成代码的特定风险</a></h3>
+<p><strong>LLM 应用的 OWASP 前十（2025）——工程师精简版：</strong></p>
+<ul>
+<li>#1：提示注入（定义性的 AI 安全风险）</li>
+<li>#2：不安全的输出处理（信任但要验证每个 AI 输出）</li>
+<li>#9：过度依赖（因为 AI 输出看起来权威而信任它的倾向）</li>
+</ul>
+<h2 id="158-测试转型框架"><a class="header" href="#158-测试转型框架">15.8 测试转型框架</a></h2>
+<p>测试是 AI 在工程生命周期中交付最高 ROI 的领域。转型是结构性的。</p>
+<p><strong>AI 测试能力矩阵：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>风险</th><th>频率</th><th>缓解措施</th></tr>
+<tr><th>测试类型</th><th>AI 生成质量</th><th>AI 维护质量</th><th>人类角色</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>AI 输出中的提示注入</strong></td><td>常见</td><td>永远不要信任处理用户输入的 AI 生成代码</td></tr>
-<tr><td><strong>幻觉依赖包</strong></td><td>罕见但危险</td><td>验证每个包名、版本、导入路径</td></tr>
-<tr><td><strong>不安全默认配置</strong></td><td>常见</td><td>显式审查安全配置（CORS、认证、加密）</td></tr>
-<tr><td><strong>授权逻辑错误</strong></td><td>偶尔</td><td>认证逻辑必须经过人工审查</td></tr>
-<tr><td><strong>供应链风险</strong></td><td>日益增长</td><td>固定依赖版本，使用 <code>pip audit</code> / <code>npm audit</code> / <code>trivy</code></td></tr>
+<tr><td><strong>单元测试</strong></td><td>优秀（指定行为覆盖 90%+）</td><td>好（随 API 变化更新）</td><td>审查测试逻辑；添加领域特定边界情况</td></tr>
+<tr><td><strong>集成测试</strong></td><td>好（70-85% 覆盖）</td><td>好</td><td>设计测试场景；审查数据设置</td></tr>
+<tr><td><strong>基于属性的测试</strong></td><td>好（AI 建议不变量）</td><td>有限</td><td>验证不变量是否正确</td></tr>
+<tr><td><strong>UI 测试</strong></td><td>中（选择器脆弱）</td><td>差（对 UI 变化敏感）</td><td>编写和维护</td></tr>
+<tr><td><strong>性能测试</strong></td><td>好（生成负载脚本）</td><td>好</td><td>定义性能目标</td></tr>
+<tr><td><strong>安全测试</strong></td><td>中（已知漏洞模式）</td><td>有限</td><td>设计安全测试策略</td></tr>
+<tr><td><strong>对抗性测试</strong></td><td>好（发现人类遗漏的边界情况）</td><td>有限</td><td>定义威胁模型</td></tr>
 </tbody>
 </table>
 </div>
-<h3 id="llm-应用的-owasp-top-102025"><a class="header" href="#llm-应用的-owasp-top-102025">LLM 应用的 OWASP Top 10（2025）</a></h3>
+<p><strong>使用 AI 的三角测试策略：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>角点</th><th>工具</th><th>AI 贡献</th><th>工程师的焦点</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1. 基于规格的测试</strong></td><td>Qodo / Cursor</td><td>从代码分析和类型签名生成测试</td><td>验证测试覆盖是否满足规格</td></tr>
+<tr><td><strong>2. 基于属性的测试</strong></td><td>Hypothesis + AI</td><td>建议代数属性和不变量</td><td>验证不变量是真正的属性</td></tr>
+<tr><td><strong>3. 对抗性测试</strong></td><td>AI 提示：“什么会破坏这个？”</td><td>生成边界和极限测试用例</td><td>优先考虑哪些边界情况重要</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>通过 AI 进行测试维护：</strong></p>
+<ul>
+<li>当 API 变化时，AI 可以以 80-90% 的准确率更新受影响的测试</li>
+<li>AI 可以通过分析测试历史来识别不稳定测试（非确定性通过/失败的测试）</li>
+<li>AI 可以通过识别冗余测试来减少测试套件运行时间，而不牺牲覆盖率</li>
+</ul>
+<h2 id="159-组织采用模型"><a class="header" href="#159-组织采用模型">15.9 组织采用模型</a></h2>
+<p>有效集成 AI 的团队遵循可预测的成熟度曲线。</p>
+<p><strong>工程团队 AI 成熟度模型：</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>级别</th><th>描述</th><th>生产中 AI 代码占比</th><th>审查实践</th><th>生产力影响</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>1. 怀疑</strong></td><td>AI 使用被劝阻或禁止</td><td>&lt;5%</td><td>全面人工审查</td><td>中性或负面（禁止减少学习）</td></tr>
+<tr><td><strong>2. 实验</strong></td><td>个别工程师非正式使用 AI</td><td>5-15%</td><td>不一致</td><td>早期采用者 +10-20%</td></tr>
+<tr><td><strong>3. 支持</strong></td><td>公司认可工具、指南存在</td><td>15-30%</td><td>标准化审查</td><td>团队 +30-50%</td></tr>
+<tr><td><strong>4. 整合</strong></td><td>AI 嵌入开发工作流</td><td>30-50%</td><td>AI 辅助审查</td><td>+50-100%</td></tr>
+<tr><td><strong>5. 转型</strong></td><td>AI 作为团队成员，而不仅仅是工具</td><td>50%+</td><td>AI 首轮，人类最终审查</td><td>+200-500%（产出，质量保持）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>GitHub 案例（2025）：</strong> 在自身开发工作流中 AI 生成代码占 60% 时，GitHub 报告了史上最高的开发者满意度。模式：AI 消除了讨厌的任务（样板代码、配置、重复调试）并保留了热爱的任务（架构、设计、创造性问题解决）。含义：AI 整合主要不是生产力策略——而是<em>人才保留</em>策略。工程师留在他们做有意义工作的公司。AI 使其成为可能。</p>
+<p><strong>有效的采用顺序：</strong></p>
 <ol>
-<li>提示注入</li>
-<li>不安全的输出处理</li>
-<li>训练数据投毒</li>
-<li>模型拒绝服务</li>
-<li>供应链漏洞</li>
-<li>敏感信息泄露</li>
-<li>不安全的插件设计</li>
-<li>过度代理权限</li>
-<li>过度依赖（信任 AI 输出的倾向）</li>
-<li>模型盗窃</li>
+<li><strong>从测试开始</strong>——AI 测试生成风险最低，ROI 最高。在转向生产代码前建立信心。</li>
+<li><strong>然后转向代码审查</strong>——AI 辅助审查将审查时间减少 40-60%，同时捕获更多问题。</li>
+<li><strong>然后是代码生成</strong>——到这时，工程师理解 AI 的故障模式，可以有效地审查。</li>
+<li><strong>最后是架构和设计</strong>——AI 作为设计伙伴需要最多的人类判断，是最后一个自动化阶段。</li>
 </ol>
-<p><strong>对软件工程师：</strong> #1、#2、#9 是你在每次 AI 交互中的直接责任。</p>
-<h3 id="代码审查的安全必须提示"><a class="header" href="#代码审查的安全必须提示">代码审查的安全必须提示</a></h3>
-<p>添加到你的审查工作流中：</p>
-<pre><code>"分析这段代码，检查：
-- SQL 注入（特别是 AI 生成原始查询时）
-- XSS 漏洞
-- 路径遍历
-- 不安全反序列化
-- 硬编码密钥或凭据
-- 认证/授权绕过
-- 泄露内部状态的不当错误处理"
-</code></pre>
-<h2 id="158-工程师的-ai-思维模型"><a class="header" href="#158-工程师的-ai-思维模型">15.8 工程师的 AI 思维模型</a></h2>
-<h3 id="何时信任-ai-代码"><a class="header" href="#何时信任-ai-代码">何时信任 AI 代码</a></h3>
+<h2 id="1510-工程角色转型"><a class="header" href="#1510-工程角色转型">15.10 工程角色转型</a></h2>
+<p>工程师的角色不是在缩小——而是在向更高判断力的活动转移。</p>
+<p><strong>跨职业阶段的角色转型：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>场景</th><th>信任级别</th><th>行动</th></tr>
+<tr><th>职业阶段</th><th>AI 之前</th><th>使用 AI（2026）</th></tr>
 </thead>
 <tbody>
-<tr><td>样板代码（CRUD、API 客户端、配置）</td><td>高</td><td>快速审查即可发布</td></tr>
-<tr><td>算法实现</td><td>中</td><td>充分测试、基准测试</td></tr>
-<tr><td>安全关键代码</td><td>极低</td><td>全面人工审查，未经测试绝不部署</td></tr>
-<tr><td>状态机 / 并发</td><td>低</td><td>模型检查、广泛测试</td></tr>
-<tr><td>新颖架构</td><td>无</td><td>用作灵感，从头编写</td></tr>
+<tr><td><strong>初级（0-2 年）</strong></td><td>从头写代码，学习语法</td><td>AI 生成代码；初级验证和调试。通过代码审查而非编写代码来学习</td></tr>
+<tr><td><strong>中级（3-7 年）</strong></td><td>设计和实现功能；审查初级代码</td><td>引导 AI 实现；审查 AI 输出；专注于系统设计和集成</td></tr>
+<tr><td><strong>高级（7-15 年）</strong></td><td>架构、设计、代码审查、指导</td><td>AI 处理实现；高级专注于架构、权衡、风险评估</td></tr>
+<tr><td><strong>主管/首席（15+ 年）</strong></td><td>组织级架构、策略、标准</td><td>定义 AI 增强工程标准；构建 AI 集成策略；专注于 AI 无法评估的方面</td></tr>
 </tbody>
 </table>
 </div>
-<h3 id="审查密度法则"><a class="header" href="#审查密度法则">“审查密度“法则</a></h3>
-<p>你对领域了解越少，就越需要仔细审查 AI 的输出。矛盾的是，<strong>初级工程师应比高级工程师更仔细地审查 AI 代码</strong>，因为他们缺乏发现错误的模式库。</p>
-<h3 id="氛围编程何时有效何时无效"><a class="header" href="#氛围编程何时有效何时无效">氛围编程——何时有效，何时无效</a></h3>
-<p><strong>有效场景：</strong></p>
+<p><strong>工程师的持久优势：</strong></p>
 <ul>
-<li>原型、MVP、内部工具</li>
-<li>UI 组件（尤其是有可视化预览时）</li>
-<li>数据转换脚本</li>
-<li>样板代码和脚手架</li>
+<li><strong>上下文感知</strong>——理解 AI 无法访问的业务领域、用户需求和组织约束</li>
+<li><strong>价值判断</strong>——决定构建什么以及某事是否值得构建</li>
+<li><strong>权衡评估</strong>——以 AI 无法权重的方式平衡正确性、性能、成本和时间线</li>
+<li><strong>可问责性</strong>——承担生产环境代码的责任；AI 不能被问责</li>
 </ul>
-<p><strong>危险领域：</strong></p>
+<p><strong>以人驭智</strong>在工程中意味着认识到 AI 是有史以来最强大的代码生成工具——而工程师的角色不是与之竞争，而是引导它。蓬勃发展的工程师不是写最多代码的工程师。是就<em>应该</em>编写什么代码做出最佳决策、验证其<em>正确性</em>、并在生产中为其承担<em>责任</em>的工程师。代码是产出。判断力是工作。</p>
+<h3 id="关键参考链接"><a class="header" href="#关键参考链接">关键参考链接</a></h3>
 <ul>
-<li>生产支付流程</li>
-<li>认证和授权系统</li>
-<li>医疗或安全关键软件</li>
-<li>加密实现</li>
-<li>分布式共识</li>
+<li>SWE-bench Verified: <a href="https://github.com/SWE-bench/SWE-bench">https://github.com/SWE-bench/SWE-bench</a> — 真实世界软件工程基准</li>
+<li>HumanEval: <a href="https://github.com/openai/human-eval">https://github.com/openai/human-eval</a> — OpenAI 的函数生成基准</li>
+<li>LiveCodeBench: <a href="https://livecodebench.github.io">https://livecodebench.github.io</a> — 竞赛编程基准</li>
+<li>CRUXEval: <a href="https://crux-eval.github.io">https://crux-eval.github.io</a> — 代码理解基准</li>
+<li>CyberSecEval: <a href="https://github.com/meta-llama/PurpleLlama">https://github.com/meta-llama/PurpleLlama</a> — Meta 的安全编码基准</li>
+<li>OWASP Top 10 for LLM Apps: <a href="https://owasp.org/www-project-top-10-for-llm-applications">https://owasp.org/www-project-top-10-for-llm-applications</a></li>
+<li>GitHub Copilot: <a href="https://github.com/features/copilot">https://github.com/features/copilot</a></li>
+<li>Cursor: <a href="https://cursor.sh">https://cursor.sh</a></li>
+<li>Claude Code: <a href="https://docs.anthropic.com/en/docs/claude-code">https://docs.anthropic.com/en/docs/claude-code</a></li>
+<li>Codeium / Windsurf: <a href="https://codeium.com">https://codeium.com</a></li>
+<li>Qodo (CodiumAI): <a href="https://www.qodo.ai">https://www.qodo.ai</a></li>
+<li>CodeRabbit: <a href="https://coderabbit.ai">https://coderabbit.ai</a></li>
+<li>Replit Agent: <a href="https://replit.com/agent">https://replit.com/agent</a></li>
+<li>Devin (Cognition): <a href="https://www.cognition.ai">https://www.cognition.ai</a></li>
+<li>Aider: <a href="https://github.com/Aider-AI/aider">https://github.com/Aider-AI/aider</a></li>
+<li>Codex (Chen 等, 2021): <a href="https://arxiv.org/abs/2107.03374">https://arxiv.org/abs/2107.03374</a></li>
+<li>Self-Refine (Madaan 等, 2023): <a href="https://arxiv.org/abs/2303.17651">https://arxiv.org/abs/2303.17651</a></li>
+<li>ReAct (Yao 等, 2023): <a href="https://arxiv.org/abs/2210.03629">https://arxiv.org/abs/2210.03629</a></li>
+<li>AlphaCodium (Ridnik 等, 2024): <a href="https://arxiv.org/abs/2401.08500">https://arxiv.org/abs/2401.08500</a></li>
+<li>GitHub Copilot 生产力研究: <a href="https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness">https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness</a></li>
 </ul>
-<h2 id="159-工程师应关注的基准测试"><a class="header" href="#159-工程师应关注的基准测试">15.9 工程师应关注的基准测试</a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>基准测试</th><th>衡量内容</th><th>2026 最佳</th><th>相关性</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>SWE-bench Verified</strong></td><td>真实 GitHub 问题解决</td><td>~97%</td><td>编码能力金标准</td></tr>
-<tr><td><strong>SWE-bench Multilingual</strong></td><td>非 Python 语言任务</td><td>~85%</td><td>语言通用性</td></tr>
-<tr><td><strong>HumanEval</strong></td><td>Python 函数生成</td><td>~98%</td><td>已饱和，作为基线</td></tr>
-<tr><td><strong>LiveCodeBench</strong></td><td>竞赛编程</td><td>~65%</td><td>困难推理任务</td></tr>
-<tr><td><strong>CRUXEval</strong></td><td>执行预测（“这段代码做了什么？”）</td><td>~80%</td><td>代码理解，不仅是生成</td></tr>
-<tr><td><strong>CyberSecEval</strong></td><td>安全编码能力</td><td>~60%</td><td>安全意识</td></tr>
-<tr><td><strong>CanItEdit</strong></td><td>多文件编辑能力</td><td>~75%</td><td>真实世界开发</td></tr>
-</tbody>
-</table>
-</div>
-<h2 id="1510-未来展望"><a class="header" href="#1510-未来展望">15.10 未来展望</a></h2>
-<h3 id="近期20262027"><a class="header" href="#近期20262027">近期（2026–2027）</a></h3>
-<ul>
-<li><strong>长时间运行智能体：</strong> AI 可自主工作数小时或数天完成编码任务，回传报告供审查</li>
-<li><strong>AI 原生 CI/CD：</strong> 修复失败测试、回滚错误部署、管理事件响应的智能体</li>
-<li><strong>自愈代码：</strong> 监控生产环境并自动打补丁的 AI</li>
-<li><strong>多仓库感知：</strong> 能够理解和跨微服务边界编辑的智能体</li>
-</ul>
-<h3 id="工程师角色的演变"><a class="header" href="#工程师角色的演变">工程师角色的演变</a></h3>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>昨天</th><th>今天</th><th>明天</th></tr>
-</thead>
-<tbody>
-<tr><td>写代码</td><td>引导 AI 写代码</td><td>定义结果，验证质量</td></tr>
-<tr><td>手动调试</td><td>AI 建议修复，人决定</td><td>AI 调试和修复，人签字</td></tr>
-<tr><td>逐行审查 PR</td><td>审查 AI 生成的摘要</td><td>审查 AI 审查过的摘要</td></tr>
-<tr><td>设计架构</td><td>与 AI 共同设计</td><td>AI 提出架构，人选择</td></tr>
-</tbody>
-</table>
-</div>
-<p>蓬勃发展的工程师不是与 AI 竞争的工程师，而是建立<strong>反馈循环</strong>的工程师：人的判断 → AI 执行 → 人的验证 → AI 精炼。</p>
-<p><strong>趋势很明确：</strong> 从<em>如何</em>（命令式编程）到<em>什么</em>（声明式、自然语言）。角色从“写作者“转变为“规格制定者 + 审查者 + 架构师“。你的人本智慧——知道<em>构建什么</em>以及<em>是否正确</em>——变得更加有价值，而非更少。</p>
 
                     </main>
 
