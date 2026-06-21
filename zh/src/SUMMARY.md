@@ -3,29 +3,6 @@
 [前言](foreword.md)
 [引言](introduction.md)
 
-# 人工智能时代的声音
-
-- [概览](part-voices/README.md)
-- [山姆·奥尔特曼（OpenAI）](part-voices/voices/sam-altman.md)
-- [德米斯·哈萨比斯（Google DeepMind）](part-voices/voices/demis-hassabis.md)
-- [达里奥·阿莫代（Anthropic）](part-voices/voices/dario-amodei.md)
-- [埃隆·马斯克（xAI / Tesla）](part-voices/voices/elon-musk.md)
-- [黄仁勋（NVIDIA）](part-voices/voices/jensen-huang.md)
-- [萨提亚·纳德拉（Microsoft）](part-voices/voices/satya-nadella.md)
-- [杰弗里·辛顿（AI 之父）](part-voices/voices/geoffrey-hinton.md)
-- [扬·勒丘恩（Meta AI）](part-voices/voices/yann-lecun.md)
-- [约书亚·本吉奥（Mila）](part-voices/voices/yoshua-bengio.md)
-- [李飞飞（Stanford HAI）](part-voices/voices/feifei-li.md)
-- [吴恩达（DeepLearning.AI）](part-voices/voices/andrew-ng.md)
-- [伊利亚·苏茨克维（SSI）](part-voices/voices/ilya-sutskever.md)
-- [埃利泽·尤德科夫斯基（MIRI）](part-voices/voices/eliezer-yudkowsky.md)
-- [尼克·博斯特罗姆（Oxford）](part-voices/voices/nick-bostrom.md)
-- [马克斯·泰格马克（FLI / MIT）](part-voices/voices/max-tegmark.md)
-- [李开复（创新工场）](part-voices/voices/kaifu-lee.md)
-- [马克·扎克伯格（Meta）](part-voices/voices/mark-zuckerberg.md)
-- [桑达尔·皮查伊（Google/Alphabet）](part-voices/voices/sundar-pichai.md)
-- [艾登·戈麦斯（Cohere）](part-voices/voices/aiden-gomez.md)
-
 # 第一部分：基础——我们如何走到今天
 
 - [人工智能的三次浪潮](part-1/chapter-1.md)
@@ -73,5 +50,28 @@
 - [AI 重大事件年表（1956–2026）](appendices/appendix-b.md)
 - [推荐阅读与资源](appendices/appendix-c.md)
 - [关键术语表](appendices/appendix-d.md)
+
+# 第七部分：人工智能时代的声音
+
+- [概览](part-voices/README.md)
+- [山姆·奥尔特曼（OpenAI）](part-voices/voices/sam-altman.md)
+- [德米斯·哈萨比斯（Google DeepMind）](part-voices/voices/demis-hassabis.md)
+- [达里奥·阿莫代（Anthropic）](part-voices/voices/dario-amodei.md)
+- [埃隆·马斯克（xAI / Tesla）](part-voices/voices/elon-musk.md)
+- [黄仁勋（NVIDIA）](part-voices/voices/jensen-huang.md)
+- [萨提亚·纳德拉（Microsoft）](part-voices/voices/satya-nadella.md)
+- [杰弗里·辛顿（AI 之父）](part-voices/voices/geoffrey-hinton.md)
+- [扬·勒丘恩（Meta AI）](part-voices/voices/yann-lecun.md)
+- [约书亚·本吉奥（Mila）](part-voices/voices/yoshua-bengio.md)
+- [李飞飞（Stanford HAI）](part-voices/voices/feifei-li.md)
+- [吴恩达（DeepLearning.AI）](part-voices/voices/andrew-ng.md)
+- [伊利亚·苏茨克维（SSI）](part-voices/voices/ilya-sutskever.md)
+- [埃利泽·尤德科夫斯基（MIRI）](part-voices/voices/eliezer-yudkowsky.md)
+- [尼克·博斯特罗姆（Oxford）](part-voices/voices/nick-bostrom.md)
+- [马克斯·泰格马克（FLI / MIT）](part-voices/voices/max-tegmark.md)
+- [李开复（创新工场）](part-voices/voices/kaifu-lee.md)
+- [马克·扎克伯格（Meta）](part-voices/voices/mark-zuckerberg.md)
+- [桑达尔·皮查伊（Google/Alphabet）](part-voices/voices/sundar-pichai.md)
+- [艾登·戈麦斯（Cohere）](part-voices/voices/aiden-gomez.md)
 
 [结语](conclusion.md)

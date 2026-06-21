@@ -3,29 +3,6 @@
 [Foreword](foreword.md)
 [Introduction](introduction.md)
 
-# Voices of the AI Era
-
-- [Overview](part-voices/README.md)
-- [Sam Altman (OpenAI)](part-voices/voices/sam-altman.md)
-- [Demis Hassabis (Google DeepMind)](part-voices/voices/demis-hassabis.md)
-- [Dario Amodei (Anthropic)](part-voices/voices/dario-amodei.md)
-- [Elon Musk (xAI / Tesla)](part-voices/voices/elon-musk.md)
-- [Jensen Huang (NVIDIA)](part-voices/voices/jensen-huang.md)
-- [Satya Nadella (Microsoft)](part-voices/voices/satya-nadella.md)
-- [Geoffrey Hinton (Godfather of AI)](part-voices/voices/geoffrey-hinton.md)
-- [Yann LeCun (Meta AI)](part-voices/voices/yann-lecun.md)
-- [Yoshua Bengio (Mila)](part-voices/voices/yoshua-bengio.md)
-- [Fei-Fei Li (Stanford HAI)](part-voices/voices/feifei-li.md)
-- [Andrew Ng (DeepLearning.AI)](part-voices/voices/andrew-ng.md)
-- [Ilya Sutskever (SSI)](part-voices/voices/ilya-sutskever.md)
-- [Eliezer Yudkowsky (MIRI)](part-voices/voices/eliezer-yudkowsky.md)
-- [Nick Bostrom (Oxford)](part-voices/voices/nick-bostrom.md)
-- [Max Tegmark (FLI / MIT)](part-voices/voices/max-tegmark.md)
-- [Kai-Fu Lee (Sinovation)](part-voices/voices/kaifu-lee.md)
-- [Mark Zuckerberg (Meta)](part-voices/voices/mark-zuckerberg.md)
-- [Sundar Pichai (Google/Alphabet)](part-voices/voices/sundar-pichai.md)
-- [Aiden Gomez (Cohere)](part-voices/voices/aiden-gomez.md)
-
 # Part I: Foundations — How We Got Here
 
 - [The Three Waves of AI](part-1/chapter-1.md)
@@ -73,5 +50,28 @@
 - [Timeline of Major AI Events (1956–2026)](appendices/appendix-b.md)
 - [Recommended Reading & Resources](appendices/appendix-c.md)
 - [Glossary of Key Terms](appendices/appendix-d.md)
+
+# Part VII: Voices of the AI Era
+
+- [Overview](part-voices/README.md)
+- [Sam Altman (OpenAI)](part-voices/voices/sam-altman.md)
+- [Demis Hassabis (Google DeepMind)](part-voices/voices/demis-hassabis.md)
+- [Dario Amodei (Anthropic)](part-voices/voices/dario-amodei.md)
+- [Elon Musk (xAI / Tesla)](part-voices/voices/elon-musk.md)
+- [Jensen Huang (NVIDIA)](part-voices/voices/jensen-huang.md)
+- [Satya Nadella (Microsoft)](part-voices/voices/satya-nadella.md)
+- [Geoffrey Hinton (Godfather of AI)](part-voices/voices/geoffrey-hinton.md)
+- [Yann LeCun (Meta AI)](part-voices/voices/yann-lecun.md)
+- [Yoshua Bengio (Mila)](part-voices/voices/yoshua-bengio.md)
+- [Fei-Fei Li (Stanford HAI)](part-voices/voices/feifei-li.md)
+- [Andrew Ng (DeepLearning.AI)](part-voices/voices/andrew-ng.md)
+- [Ilya Sutskever (SSI)](part-voices/voices/ilya-sutskever.md)
+- [Eliezer Yudkowsky (MIRI)](part-voices/voices/eliezer-yudkowsky.md)
+- [Nick Bostrom (Oxford)](part-voices/voices/nick-bostrom.md)
+- [Max Tegmark (FLI / MIT)](part-voices/voices/max-tegmark.md)
+- [Kai-Fu Lee (Sinovation)](part-voices/voices/kaifu-lee.md)
+- [Mark Zuckerberg (Meta)](part-voices/voices/mark-zuckerberg.md)
+- [Sundar Pichai (Google/Alphabet)](part-voices/voices/sundar-pichai.md)
+- [Aiden Gomez (Cohere)](part-voices/voices/aiden-gomez.md)
 
 [Conclusion](conclusion.md)

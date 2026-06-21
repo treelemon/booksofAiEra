@@ -1,4 +1,4 @@
-# Voices of the AI Era
+# Part VII: Voices of the AI Era
 
 *Key figures who shaped the AI revolution — their backgrounds, defining moments, and most significant public statements.*
 
