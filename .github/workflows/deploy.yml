@@ -18,7 +18,8 @@ jobs:
             | tar xz -C /usr/local/bin
 
       - name: Build English version
-        run: mdbook build . -d book/en
+        run: mdbook build . -d ../book/en
+        working-directory: en
 
       - name: Build Chinese version
         run: mdbook build . -d ../book/zh
