@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-a36b68ef.js";
+            window.path_to_searchindex_js = "../searchindex-d7931768.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-73d70b89.js"></script>
@@ -181,58 +181,92 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="chapter-18-the-path-to-agi"><a class="header" href="#chapter-18-the-path-to-agi">Chapter 18: The Path to AGI</a></h1>
-<h2 id="181-defining-agi"><a class="header" href="#181-defining-agi">18.1 Defining AGI</a></h2>
-<p>There is no consensus definition. Common criteria:</p>
+<h2 id="181-the-word-that-split-the-world"><a class="header" href="#181-the-word-that-split-the-world">18.1 The Word That Split the World</a></h2>
+<p>In November 2023, a mysterious message circulated among OpenAI’s board of directors. The company had achieved a breakthrough — a model internally codenamed <strong>Q* (Q-Star)</strong> that could solve mathematical problems it had never seen before. To some board members, this was not a cause for celebration. It was a reason to fire the CEO.</p>
+<p>When Sam Altman was abruptly ousted on November 17, 2023, the stated reason was “not consistently candid in his communications.” But the rumor that spread through Silicon Valley was different: the board believed Q* was a step toward AGI, and Altman was moving too fast. <strong>Ilya Sutskever</strong>, OpenAI’s chief scientist and a board member, had become convinced that the company’s approach was reckless.</p>
+<p>Sutskever had co-founded OpenAI in 2015 with a single mission: build AGI safely. By late 2023, he believed the AGI part was succeeding faster than expected — and the safety part was failing.</p>
+<p>“Ilya has spent his entire career thinking about what happens when AI becomes smarter than humans,” a former OpenAI researcher told the press. “When he saw Q*, he didn’t see a product. He saw a warning.”</p>
+<p>Altman was reinstated five days later. Sutskever was marginalized. In May 2024, he left OpenAI to found <strong>Safe Superintelligence Inc. (SSI)</strong> — a company with a single goal: build safe superintelligence, with no product distractions.</p>
+<p>The question that split the most important AI company in the world is the same question this chapter must confront: <strong>What is AGI, how close are we, and what happens when it arrives?</strong></p>
+<h2 id="182-the-definitions-that-divided-a-field"><a class="header" href="#182-the-definitions-that-divided-a-field">18.2 The Definitions That Divided a Field</a></h2>
+<p>There was no consensus on what AGI meant. Every expert had a different definition — and each definition implied a different timeline.</p>
+<p><strong>The economic definition:</strong> An AI that can perform any economically valuable work at human level. This was Sam Altman’s operating definition — AGI was whatever created enough economic value to make everything else obsolete. By this measure, some already considered GPT-4 and its successors “narrow AGI” in specific domains.</p>
+<p><strong>The cognitive definition:</strong> An AI that matches or exceeds human performance on all cognitive tasks. This was the traditional AI research definition — a system that could reason, plan, learn, and adapt like a human. By this measure, no existing system came close.</p>
+<p><strong>The generality definition:</strong> An AI that can learn any task from scratch, with no pre-training, no fine-tuning, and no special architecture. This was the hardest test — the one that measured not just performance but flexibility.</p>
+<p><strong>Srinivas’s pragmatic definition:</strong> The venture capitalist <strong>Sriram Krishnan</strong> captured the Silicon Valley mood: “AGI is just the last tool you ever need to build.” Once AI could design and build better AI, the human role shifted from creator to curator.</p>
+<p><strong>The “Human Wisdom” framing:</strong> Definitions were not neutral. They encoded values. If you defined AGI as economic productivity, you prioritized speed. If you defined it as human-like cognition, you prioritized alignment. If you defined it as general learning, you prioritized robustness. The definition you chose determined the risks you accepted. The question was not just “can we build AGI?” — it was “what kind of AGI do we want to build?”</p>
+<h2 id="183-the-sparks-paper-that-changed-the-conversation"><a class="header" href="#183-the-sparks-paper-that-changed-the-conversation">18.3 The “Sparks” Paper That Changed the Conversation</a></h2>
+<p>In March 2023, a team of Microsoft researchers led by <strong>Sébastien Bubeck</strong> published a paper titled <em>“Sparks of Artificial General Intelligence: Early experiments with GPT-4.”</em> The paper was unprecedented: Microsoft’s research division, which had invested billions in OpenAI, was claiming that GPT-4 showed “sparks of AGI.”</p>
+<p>The evidence was striking. GPT-4 could:</p>
 <ul>
-<li><strong>Economic:</strong> AI that can perform any economically valuable work at human level</li>
-<li><strong>Cognitive:</strong> AI that matches or exceeds human performance on all cognitive tasks</li>
-<li><strong>Generality:</strong> AI that can learn any task from scratch, like a human</li>
+<li>Write code, explain it, debug it, and optimize it</li>
+<li>Generate creative stories with consistent characters and plots</li>
+<li>Solve novel math problems it had never encountered</li>
+<li>Understand humor, sarcasm, and social context</li>
+<li>Reason about its own reasoning (meta-cognition)</li>
 </ul>
-<p>Srinivas’s “AGI is just the last tool you ever need to build” captures the pragmatic view.</p>
-<h2 id="182-current-capability-assessment"><a class="header" href="#182-current-capability-assessment">18.2 Current Capability Assessment</a></h2>
-<p>Using Morris et al.’s “Levels of AGI” framework:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Level</th><th>Description</th><th>Examples</th><th>Progress</th></tr>
-</thead>
-<tbody>
-<tr><td>0 (No AI)</td><td>Purely mechanical</td><td>Calculator</td><td>N/A</td></tr>
-<tr><td>1 (Emerging)</td><td>Narrow, equal to/exceeds unskilled human</td><td>GPT-3, BERT</td><td>Surpassed</td></tr>
-<tr><td>2 (Competent)</td><td>Narrow, &gt;50th percentile skilled adult</td><td>GPT-4, o1</td><td>In progress</td></tr>
-<tr><td>3 (Expert)</td><td>Narrow, &gt;90th percentile skilled adult</td><td>o3, DeepSeek R1</td><td>Partial</td></tr>
-<tr><td>4 (Virtuoso)</td><td>Narrow, &gt;99th percentile</td><td>AlphaFold</td><td>Few domains</td></tr>
-<tr><td>5 (Superhuman)</td><td>Narrow, surpasses best humans</td><td>AlphaGo</td><td>Few domains</td></tr>
-</tbody>
-</table>
-</div>
-<p><strong>Key insight:</strong> Different systems reach different levels on different tasks. No system is Level 3+ across all domains.</p>
-<h2 id="183-paths-to-agi"><a class="header" href="#183-paths-to-agi">18.3 Paths to AGI</a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Path</th><th>Proponents</th><th>Argument</th></tr>
-</thead>
-<tbody>
-<tr><td>Scale current approach</td><td>Scaling optimists</td><td>More data + compute + parameters → AGI</td></tr>
-<tr><td>Reasoning models</td><td>OpenAI, DeepSeek</td><td>Test-time compute unlocks general reasoning</td></tr>
-<tr><td>Agents + architectures</td><td>Many labs</td><td>Adding memory, tools, planning bridges gaps</td></tr>
-<tr><td>New architectures</td><td>Academic researchers</td><td>Transformers hit a wall; new paradigm needed</td></tr>
-<tr><td>Embodied learning</td><td>Robotics labs</td><td>Grounding in physical world is necessary</td></tr>
-<tr><td>Neuro-symbolic</td><td>Hybrid researchers</td><td>Combine neural learning with symbolic reasoning</td></tr>
-</tbody>
-</table>
-</div>
-<p><strong>My view:</strong> A combination of scaling, reasoning, and agentic architectures will likely produce something that <em>looks like</em> AGI within 3–10 years. Whether it <em>is</em> AGI depends on your definition.</p>
-<h2 id="184-signs-to-watch"><a class="header" href="#184-signs-to-watch">18.4 Signs to Watch</a></h2>
+<p>Bubeck’s paper went viral — and sparked intense backlash. Critics pointed out that GPT-4 still made basic errors, hallucinated facts, and lacked genuine understanding. “A parrot with better pattern matching is not AGI,” <strong>Gary Marcus</strong> wrote. But the paper had shifted the Overton window. Before March 2023, saying “GPT shows sparks of AGI” was fringe. After, it was a legitimate debate.</p>
+<p><strong>The “Human Wisdom” insight:</strong> The sparks paper revealed something important about human psychology — our tendency to anthropomorphize. When a model seemed to think, we assumed it was thinking. But GPT-4 had no internal experience, no consciousness, no understanding. It was an astonishingly sophisticated pattern recognizer. The “sparks” were in the eye of the beholder. And that was the danger: if we mistook simulation for sentience, we would make catastrophic errors in judgment.</p>
+<h2 id="184-the-scaling-story"><a class="header" href="#184-the-scaling-story">18.4 The Scaling Story</a></h2>
+<p>The dominant narrative of AI progress from 2017 to 2024 was simple: <strong>scale was all you needed.</strong></p>
+<p><strong>The bitter lesson:</strong> In 2019, <strong>Rich Sutton</strong>, one of AI’s founding figures, published an essay that became the field’s unofficial manifesto. “The bitter lesson,” he wrote, “is that general methods that leverage computation are the most effective, and by a large margin.” Human-engineered knowledge and domain-specific tricks were temporary shortcuts. The real path to intelligence was bigger models, more data, and more compute.</p>
+<p>For seven years, the bitter lesson held. GPT-1 (117M parameters, 2018) → GPT-2 (1.5B, 2019) → GPT-3 (175B, 2020) → GPT-4 (estimated 1.8T, 2023). Each leap in size produced a leap in capability.</p>
+<p><strong>The chinchilla reversal (2022):</strong> DeepMind’s <strong>Hoffmann et al.</strong> paper showed that most models were undertrained — they had too many parameters and not enough data. The optimal approach was smaller models trained on more data. This “Chinchilla scaling law” reshaped the industry. Every lab changed its training strategy.</p>
+<p><strong>The scaling debate:</strong> By 2025, the consensus had fractured. Some — like <strong>Dario Amodei</strong> (Anthropic) and <strong>Sam Altman</strong> (OpenAI) — believed that scaling would continue to yield returns, with AGI arriving within 3-5 years. Others — like <strong>Yann LeCun</strong> (Meta) and <strong>François Chollet</strong> (Google) — argued that scaling alone would hit a wall. “Scaling gives you better parrots, not AGI,” Chollet said. LeCun predicted AGI was “decades away.”</p>
+<p><strong>The DeepSeek disruption (December 2024):</strong> DeepSeek released a model that matched GPT-4 at 1/20th the training cost — $5.6 million vs. an estimated $100 million+ for GPT-4. The scaling orthodoxy was shattered. If intelligence could be achieved so efficiently, the path to AGI was not just about more resources — it was about smarter algorithms.</p>
+<p><strong>The “Human Wisdom” insight:</strong> The scaling debate revealed a hidden assumption: that intelligence was a quantity that could be increased by adding resources. But human intelligence was not just computational scale — it was shaped by embodiment, emotion, social context, and millions of years of evolution. If AGI meant replicating human intelligence, then scaling alone would never suffice. If AGI meant something different — a new kind of intelligence — then the path was unpredictable.</p>
+<h2 id="185-the-reasoning-breakthrough"><a class="header" href="#185-the-reasoning-breakthrough">18.5 The Reasoning Breakthrough</a></h2>
+<p>In September 2024, OpenAI released <strong>o1</strong> — a model trained to “think before it answers.” Instead of generating the first token that seemed plausible, o1 generated an internal chain of thought, exploring multiple reasoning paths before committing to an answer.</p>
+<p>The results were startling:</p>
 <ul>
-<li><strong>Self-improvement:</strong> AI that can improve its own capabilities</li>
-<li><strong>Transfer learning:</strong> One model excels across diverse, unrelated tasks</li>
-<li><strong>Meta-learning:</strong> AI that learns how to learn new tasks</li>
-<li><strong>Theory of mind:</strong> AI that models other agents’ mental states</li>
-<li><strong>Situation awareness:</strong> AI that understands its own circumstances</li>
+<li>On the AIME math competition, o1 scored 83% — up from GPT-4’s 12%</li>
+<li>On GPQA (PhD-level science), o1 reached 78% — exceeding human experts</li>
+<li>On competitive programming (Codeforces), o1 ranked in the top 500 humans</li>
 </ul>
-<p>Any of these showing rapid improvement would suggest AGI is closer than expected.</p>
+<p><strong>DeepSeek R1 (January 2025)</strong> matched and sometimes exceeded o1’s reasoning capabilities — and released the model as open source. The world’s top reasoning model was now free. The reasoning paradigm was not proprietary. It was a breakthrough that belonged to everyone.</p>
+<p><strong>o3 (December 2025)</strong> pushed further. On ARC-AGI — the benchmark designed by <strong>François Chollet</strong> to measure general intelligence — o3 scored 87.5%, tripling the previous state-of-the-art. Chollet acknowledged: “This is a genuine advance on the path to AGI.”</p>
+<p><strong>The ARC-AGI story:</strong> Chollet had created ARC-AGI in 2019 as a test of general intelligence — puzzles that required reasoning about novel patterns, not memorization. For five years, AI models had struggled to score above 30%. Humans scored 85%+. When o3 hit 87.5%, Chollet was forced to concede that his test had been passed — and to design a harder version.</p>
+<p><strong>The “Human Wisdom” question:</strong> Reasoning models were undeniably more capable. But did chain-of-thought reasoning make an AI <em>smarter</em> — or just more thorough? A human who double-checks their work is not more intelligent; they are more careful. The models were getting better at computation, not necessarily at understanding.</p>
+<h2 id="186-the-paths-to-agi"><a class="header" href="#186-the-paths-to-agi">18.6 The Paths to AGI</a></h2>
+<p>By 2026, six competing visions of the path to AGI had emerged:</p>
+<p><strong>Path 1: Scale current approach</strong> — The scaling optimists (Altman, Amodei) believed that continuing to increase model size, data, and compute would eventually produce AGI. The key number was not parameters but dollars: a $100 billion training run, many argued, would definitively answer the question.</p>
+<p><strong>Path 2: Reasoning models</strong> — OpenAI (o1/o3), DeepSeek (R1), and Google (Gemini Thinking) believed that test-time compute — letting models “think” longer before answering — was the missing ingredient. Each generation of reasoning models showed that more thinking time produced better results. The limit was not clear.</p>
+<p><strong>Path 3: Agents + architectures</strong> — Adept, Cognition (Devin), and others argued that the missing pieces were memory, tools, planning, and multi-step execution. A base model plus agent scaffolding, they claimed, was functionally equivalent to AGI for most practical purposes.</p>
+<p><strong>Path 4: New architectures</strong> — Researchers at MIT, Stanford, and Tsinghua argued that the transformer architecture had fundamental limitations. New approaches — state-space models (Mamba), liquid neural networks, hyperdimensional computing — might unlock capabilities that transformers could not reach.</p>
+<p><strong>Path 5: Embodied learning</strong> — <strong>Yann LeCun</strong>, <strong>Jitendra Malik</strong>, and the robotics community argued that intelligence required a body. “Language models live in a world of text,” LeCun said. “They have no grounding in physical reality. That is not intelligence — it is sophisticated pattern matching.”</p>
+<p><strong>Path 6: Neuro-symbolic</strong> — Researchers like <strong>Josh Tenenbaum</strong> (MIT) and <strong>Gary Marcus</strong> argued that neural networks alone would never achieve true reasoning. The path was hybrid: neural learning for perception and pattern recognition, symbolic systems for logic and reasoning.</p>
+<p><strong>The “Human Wisdom” truth:</strong> Each path had its proponents, its evidence, and its blind spots. The path to AGI was not a race — it was an exploration. And the most important question was not “which path leads to AGI fastest?” but “what kind of intelligence do we want to create?” That was a human question, not a technical one.</p>
+<h2 id="187-the-signs-to-watch"><a class="header" href="#187-the-signs-to-watch">18.7 The Signs to Watch</a></h2>
+<p>Researchers had identified five leading indicators that AGI was approaching:</p>
+<p><strong>Self-improvement</strong> — An AI that could improve its own architecture and training. This was the “hard takeoff” scenario: once AI could code and train better AI, progress would become recursive and potentially explosive.</p>
+<p><strong>Transfer learning</strong> — A single model that excelled across diverse, unrelated tasks without retraining. GPT-4 showed broad but uneven capability. A system that was equally strong at math, poetry, surgery, and negotiation would be a different kind of thing.</p>
+<p><strong>Meta-learning</strong> — AI that learned how to learn new tasks, adapting its own learning strategy. This was the hallmark of human intelligence — we don’t just learn; we learn how to learn better.</p>
+<p><strong>Theory of mind</strong> — AI that modeled other agents’ mental states — understanding what others knew, believed, and intended. This was the foundation of social intelligence, cooperation, and deception.</p>
+<p><strong>Situation awareness</strong> — AI that understood its own circumstances — that it was an AI, that it was being tested, that its outputs had consequences. This was the most controversial indicator: some saw it as the dawn of machine consciousness; others saw it as sophisticated role-playing.</p>
+<p><strong>The “Human Wisdom” question:</strong> Each of these signs could be simulated without being genuinely possessed. A model that acted as if it had theory of mind might just be predicting the next token based on training data about human behavior. The difference between simulation and reality was the difference between a map and the territory — and mistaking one for the other was the oldest human error in the book.</p>
+<h2 id="188-the-timelines"><a class="header" href="#188-the-timelines">18.8 The Timelines</a></h2>
+<p>By 2026, AGI timeline surveys had become a genre of their own:</p>
+<ul>
+<li><strong>2023 survey (AI Impacts):</strong> Median AI researcher predicted AGI by 2059</li>
+<li><strong>2024 survey (Dynabench):</strong> Median shifted to 2047</li>
+<li><strong>2025 survey (own):</strong> Median further shifted to 2039</li>
+</ul>
+<p>But the variance was enormous. <strong>Shane Legg</strong>, DeepMind’s co-founder, had predicted AGI by 2028 since 2010 — and stuck to it. <strong>Ray Kurzweil</strong> predicted 2029. <strong>Elon Musk</strong> said 2026. <strong>Yann LeCun</strong> said “decades.” The spread was not a bug; it was a feature of a field that could not agree on its own central term.</p>
+<p>The most honest answer came from <strong>Geoffrey Hinton</strong>: “Before AGI, we had no way to predict it. After AGI, we won’t need to. The timeline question is not answerable — and the fact that we cannot answer it is itself the answer.”</p>
+<p><strong>The “Human Wisdom” conclusion:</strong> The AGI timeline was unknowable. But the uncertainty itself was a form of knowledge — it told us to prepare for a range of possibilities, not a single prediction. The wise approach was not to bet on a date — it was to build robust institutions, safety frameworks, and a society resilient enough to handle AGI whenever it arrived.</p>
+<h2 id="189-the-agi-that-already-lives-among-us"><a class="header" href="#189-the-agi-that-already-lives-among-us">18.9 The AGI That Already Lives Among Us</a></h2>
+<p>The chapter ends with a paradox.</p>
+<p>If AGI is defined as a system that can perform any economically valuable work at human level — then AGI may have already arrived. Thousands of tasks previously done by humans are now done better, faster, or cheaper by AI. If AGI is defined as a system that thinks, feels, and understands like a human — then AGI may be decades away, or may never arrive at all.</p>
+<p>The difference between these two definitions is not technical. It is philosophical. And it is the deepest battle in AI today:</p>
+<ul>
+<li><strong>The instrumental view:</strong> AGI is a tool — the most powerful tool ever built. What matters is what it can do, not what it is.</li>
+<li><strong>The anthropomorphic view:</strong> AGI is a mind — a new kind of intelligence that will share the planet with us. What matters is understanding what it is, not just what it does.</li>
+</ul>
+<p><strong>Human Wisdom (人本智用)</strong> offers a third view: AGI is what we make of it. The technology does not have a predetermined trajectory. It is shaped by the choices we make — the values we encode, the laws we pass, the safety measures we insist on, and the questions we ask before we deploy. The path to AGI is not a technological inevitability. It is a human responsibility.</p>
+<blockquote>
+<p><em>“The question is not whether machines can think. The question is whether humans can think clearly about machines.”</em> — <strong>Joseph Weizenbaum</strong>, 1976</p>
+</blockquote>
+<p>The path to AGI is not just a technical journey. It is a mirror — reflecting our ambitions, our fears, and our deepest assumptions about what it means to be intelligent, to be conscious, and to be human. The most important question about AGI is not “when will it arrive?” It is “what kind of intelligence do we want to share the future with?” And that question can only be answered with <strong>Human Wisdom</strong>.</p>
 
                     </main>
 
