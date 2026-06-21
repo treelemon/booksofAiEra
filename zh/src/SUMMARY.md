@@ -44,13 +44,6 @@
 - [培养你的 AI 判断力](part-6/chapter-22.md)
 - [长期主义](part-6/chapter-23.md)
 
-# 附录
-
-- [关键基准测试解读](appendices/appendix-a.md)
-- [AI 重大事件年表（1956–2026）](appendices/appendix-b.md)
-- [推荐阅读与资源](appendices/appendix-c.md)
-- [关键术语表](appendices/appendix-d.md)
-
 # 第七部分：人工智能时代的声音
 
 - [概览](part-voices/README.md)
@@ -75,3 +68,10 @@
 - [艾登·戈麦斯（Cohere）](part-voices/voices/aiden-gomez.md)
 
 [结语](conclusion.md)
+
+# 附录
+
+- [关键基准测试解读](appendices/appendix-a.md)
+- [AI 重大事件年表（1956–2026）](appendices/appendix-b.md)
+- [推荐阅读与资源](appendices/appendix-c.md)
+- [关键术语表](appendices/appendix-d.md)

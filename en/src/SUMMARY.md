@@ -44,13 +44,6 @@
 - [Developing Your AI Judgment](part-6/chapter-22.md)
 - [The Long Game](part-6/chapter-23.md)
 
-# Appendices
-
-- [Key Benchmarks Explained](appendices/appendix-a.md)
-- [Timeline of Major AI Events (1956–2026)](appendices/appendix-b.md)
-- [Recommended Reading & Resources](appendices/appendix-c.md)
-- [Glossary of Key Terms](appendices/appendix-d.md)
-
 # Part VII: Voices of the AI Era
 
 - [Overview](part-voices/README.md)
@@ -75,3 +68,10 @@
 - [Aiden Gomez (Cohere)](part-voices/voices/aiden-gomez.md)
 
 [Conclusion](conclusion.md)
+
+# Appendices
+
+- [Key Benchmarks Explained](appendices/appendix-a.md)
+- [Timeline of Major AI Events (1956–2026)](appendices/appendix-b.md)
+- [Recommended Reading & Resources](appendices/appendix-c.md)
+- [Glossary of Key Terms](appendices/appendix-d.md)
