@@ -12,4 +12,4 @@ build-dir = "book"
 [output.html]
 git-repository-url = "https://github.com/your-username/booksofAiEra"
 edit-url-template = "https://github.com/your-username/booksofAiEra/edit/main/{path}"
-site-url = "/booksofAiEra/"
+site-url = "/booksofAiEra/en/"
