@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-fda1eafb.js";
+            window.path_to_searchindex_js = "../searchindex-da84ad1b.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-0d735100.js"></script>
@@ -181,44 +181,56 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="第八章多模态与具身-ai"><a class="header" href="#第八章多模态与具身-ai">第八章：多模态与具身 AI</a></h1>
-<h2 id="81-多模态转型"><a class="header" href="#81-多模态转型">8.1 多模态转型</a></h2>
-<p>人类通过多种感官体验世界。直到 2023 年，AI 分别处理文本、图像和音频。如今的前沿模型原生处理所有模态。</p>
-<p><strong>当前能力：</strong></p>
-<ul>
-<li><strong>文本 + 图像：</strong> GPT-4o、Gemini、Claude、Llama 5</li>
-<li><strong>+ 音频：</strong> 实时语音输入/输出（GPT-4o、Gemini）</li>
-<li><strong>+ 视频：</strong> 理解与生成（Sora、Gemini、Kling）</li>
-<li><strong>+ 代码执行：</strong> 集成解释器（GPT-4o、Claude）</li>
-</ul>
-<h2 id="82-前沿多模态基准测试"><a class="header" href="#82-前沿多模态基准测试">8.2 前沿多模态基准测试</a></h2>
+<h2 id="81-她时刻gpt-4o-改变一切"><a class="header" href="#81-她时刻gpt-4o-改变一切">8.1 “她“时刻：GPT-4o 改变一切</a></h2>
+<p>2024 年 5 月 13 日，<strong>Mira Murati</strong>——时任 OpenAI CTO——站在旧金山的舞台上，演示了感觉像科幻小说般的东西。GPT-4o（“omni”）可以实时看、听、说。它能读取你的面部表情，检测你的情绪状态，并以自然的语调、笑声和停顿回应。</p>
+<p>走红的演示：Mira 让模型用越来越戏剧化的声音讲一个睡前故事。GPT-4o 从平静的叙述者变成了戏剧化的表演者，充满了紧张感、低语和激昂的结局。感觉就像在和一个人说话——或者就像<strong>电影《她》中斯嘉丽·约翰逊的 AI 角色。</strong></p>
+<p>这个对比如此强烈，以至于 OpenAI 无意中雇用了声音听起来像约翰逊的演员，引发了一场迫使 OpenAI 暂停语音功能的争议。但精灵已经出了瓶子：AI 跨过了多模态的卢比孔河。</p>
+<p>GPT-4o 原生处理<strong>文本、图像、音频和视频</strong>——一个同时在所有模态上训练的单一神经网络。以前的方法是将单独的模型拼接在一起。GPT-4o 是一个模型，在所有数据上端到端训练。语音对话的延迟从 5 秒（GPT-4 + Whisper + TTS 流水线）下降到 320 毫秒——与人类对话难以区分。</p>
+<h2 id="82-sora世界模拟器"><a class="header" href="#82-sora世界模拟器">8.2 Sora：世界模拟器</a></h2>
+<p>三个月前，2024 年 2 月，OpenAI 发布了另一重磅炸弹：<strong>Sora</strong>，一个文本到视频模型，可以从一句话生成逼真的 60 秒视频。</p>
+<p>演示片段令人着迷。一个女人在黄金时刻走过东京——路面上的雨、反射、一致的光照。雪地中的猛犸象——毛发自然飘动，雪花落下。一只猫在床上醒来——床单像真床单一样移动。</p>
+<p>研究论文将 Sora 描述为一个**“世界模拟器”**——它通过视频数据学习了物理、光照、物体永久性和因果关系。它可以模拟场景，而不仅仅是渲染像素。</p>
+<p>局限性很快显现：Sora 在复杂的多物体交互上表现不佳，经常让物体消失和重新出现。它在因果关系上表现很差——一个角色可能往杯子里倒咖啡，但杯子仍然是空的。它是一个没有保证一致性的世界模拟器。</p>
+<p>到 2026 年，Sora 已被 <strong>OpenAI 的 Sora 2</strong>、Google 的 <strong>Veo 3</strong> 和中国的 <strong>Kling 2.0</strong> 所超越——每个都能生成 2 分钟的逼真视频，一致性显著提高。Sora 2024 和 Sora 2026 之间的差距比第一代 iPhone 和 iPhone 14 之间的差距还要大。</p>
+<h2 id="83-gemini-理念生而多模态"><a class="header" href="#83-gemini-理念生而多模态">8.3 Gemini 理念：生而多模态</a></h2>
+<p><strong>Demis Hassabis</strong>，Google DeepMind 的 CEO，自 2023 年以来一直主张多模态不是一种功能——它是通向通用智能的道路。“人类智能是深度多模态的，“他告诉 MIT Technology Review。“我们通过看、听、触摸来学习。一个只处理文本的 AI 错过了世界的大部分。”</p>
+<p>Google 对这一理念的执行是系统性的。<strong>Gemini</strong> 从零开始就作为多模态模型训练——不是以文本为先再附加上视觉。结果：Gemini Ultra（2023 年 12 月）是第一个在 MMLU 上击败 GPT-4 的模型。到 Gemini 2.5 Pro（2025），模型可以原生处理 100 万 token 的文本、图像、音频和视频——并在一次前向传播中跨它们推理。</p>
+<p>Google 的独特优势是数据：YouTube（数十亿小时视频）、Google Images（数千亿张照片）、Google Earth（万亿级空间数据点）和 Google 的音频语料库（Google Voice、Google Meet、YouTube 音频）。没有其他公司能访问这种规模的多模态数据。</p>
+<p>结果是一个可以观看 10 小时视频讲座、分析幻灯片、阅读引用论文并回答内容的模型。到 2026 年，Gemini 3 Ultra 已成为科学研究的默认选择——不是因为它是最聪明的模型，而是因为它能吸收最多的数据。</p>
+<h2 id="84-机器人的觉醒"><a class="header" href="#84-机器人的觉醒">8.4 机器人的觉醒</a></h2>
+<p>当语言模型主导头条新闻时，一场平行的革命正在硬件领域发生。</p>
+<p><strong>Tesla Optimus（Elon Musk）：</strong> 2024 年，Optimus 可以从桌子上拿起物体——缓慢、小心，就像学抓东西的幼儿。到 2026 年，Optimus Gen 3 可以叠衣服、在装配线上分拣零件、在崎岖地形上导航。Musk 的赌注：“Optimus 将比 Tesla 的汽车业务更大。“怀疑者指出时间线已经推迟了三次，但进展是真实的。</p>
+<p><strong>Figure 02（Brett Adcock）：</strong> Figure Robotics 与 OpenAI 合作，将 GPT-4 的推理能力放入人形身体。2024 年，一个病毒式演示显示 Figure 02 与人类对话：“你看到了什么？”——“我看到一个盘子上的红苹果。”——“你能把它递给我吗？”——机器人拿起苹果并递了过去。演示中的一些动作是远程操作的，但推理是真实的。到 2026 年，Figure 02 可以在 BMW 工厂自主工作 8 小时轮班。</p>
+<p><strong>Physical Intelligence（π0，2024）：</strong> 由 <strong>Chelsea Finn</strong>（Stanford）和 <strong>Sergey Levine</strong>（UC Berkeley）创立的创业公司发布了 π0——一个在互联网数据和机器人数据上训练的视觉-语言-行动模型。演示：π0 看人类叠了一次衣服，然后自己叠了衣服。泛化能力是突破——一个模型可以叠衣服、装洗碗机和煮咖啡。</p>
+<p>共同主题：<strong>机器人身体中的基础模型。</strong> 推动 GPT-3 涌现的相同缩放定律正在应用于物理任务。硬件仍然昂贵（每台 Optimus 15 万美元），但软件的学习速度超出了所有人的预期。</p>
+<h2 id="85-多模态前沿"><a class="header" href="#85-多模态前沿">8.5 多模态前沿</a></h2>
+<p>到 2026 年，“多模态“的标准已大幅提升：</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>基准测试</th><th>最佳成绩</th><th>描述</th></tr>
+<tr><th>能力</th><th>2023</th><th>2026</th></tr>
 </thead>
 <tbody>
-<tr><td>MMMU</td><td>89%</td><td>多学科多模态推理</td></tr>
-<tr><td>MathVista</td><td>82%</td><td>视觉数学推理</td></tr>
-<tr><td>Video-MME</td><td>76%</td><td>视频理解</td></tr>
+<tr><td>图像识别</td><td>分类物体</td><td>描述构图、光线、意图</td></tr>
+<tr><td>视频理解</td><td>片段级</td><td>完整叙事推理</td></tr>
+<tr><td>音频处理</td><td>语音转文字</td><td>情绪、说话人识别、声音事件检测</td></tr>
+<tr><td>视频生成</td><td>4 秒片段</td><td>2 分钟连贯场景</td></tr>
+<tr><td>实时语音</td><td>5 秒延迟</td><td>320ms 带情绪</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="83-机器人技术与具身化"><a class="header" href="#83-机器人技术与具身化">8.3 机器人技术与具身化</a></h2>
-<p>AI 正在超越文本和图像，进入物理行动：</p>
-<ul>
-<li><strong>Tesla Optimus / Figure 02：</strong> 具有基础模型大脑的人形机器人</li>
-<li><strong>Mobile ALOHA / π0：</strong> 学习的操作策略</li>
-<li><strong>RT-2 / RT-X：</strong> 视觉-语言-行动模型</li>
-</ul>
-<p><strong>关键洞见：</strong> 具身化将 AI 锚定在物理世界中。这可能是鲁棒智能的必要条件（尽管不充分）。</p>
-<h2 id="84-边缘-ai-与设备端多模态"><a class="header" href="#84-边缘-ai-与设备端多模态">8.4 边缘 AI 与设备端多模态</a></h2>
-<p>到 2026 年，许多 AI 能力可以在本地运行：</p>
-<ul>
-<li>Apple Intelligence：设备端 LLM + 图像生成</li>
-<li>Samsung Galaxy AI：实时翻译、照片编辑</li>
-<li>Google Pixel：设备端 Gemini Nano</li>
-</ul>
-<p>隐私和延迟驱动这一趋势。大多数查询将在 2–3 年内转向混合模式（边缘 + 云）。</p>
+<p>基准排行榜讲述了同样的故事：MMMU（多模态推理）从 60% 到 89%。MathVista（视觉数学）从 45% 到 82%。Video-MME（视频理解）从 55% 到 76%。</p>
+<h2 id="86-apple-策略边缘多模态"><a class="header" href="#86-apple-策略边缘多模态">8.6 Apple 策略：边缘多模态</a></h2>
+<p><strong>Tim Cook</strong> 的 Apple 走了不同的路：不是构建最大的云端模型，而是构建最好的设备端 AI。</p>
+<p>Apple Intelligence（2024 年 6 月宣布，9 月发布）将多模态带到了你口袋里的设备。<strong>A18 Pro</strong> 和 <strong>M4</strong> 芯片包含 16 核神经引擎，每秒可执行 38 万亿次操作——足以在本地运行 300 亿参数的模型。</p>
+<p>能力：实时通知优先级排序、图像生成（Image Playground）、自定义表情符号（Genmoji）、设备端写作助手，以及具有屏幕感知能力的 Siri——你可以问“我下一个会议是什么时候？“Siri 可以看到屏幕上的日历。</p>
+<p>隐私信息是 Apple 的差异化优势：“理解你但不收集你的 AI。“到 2026 年，Apple Intelligence 每天处理超过 10 亿次设备端请求。三星的 Galaxy AI 和 Google 的 Pixel AI 遵循了相同的轨迹——强大的 AI 在本地运行，复杂任务则回退到云端。</p>
+<h2 id="87-具身化之问"><a class="header" href="#87-具身化之问">8.7 具身化之问</a></h2>
+<p>在多模态进展之下，一场争论在酝酿：<strong>具身化对智能是否必要？</strong></p>
+<p><strong>Yann LeCun</strong>（Meta 首席 AI 科学家）认为是的：“智能来自与物理世界的互动。如果你从未碰过任何东西，你不可能聪明。“Meta 正在大力投资具身 AI——PyRobot、Habitat 模拟器，以及与机器人实验室的合作。</p>
+<p><strong>吴恩达</strong>（DeepLearning.AI）持相反观点：“语言包含了足够多的世界结构。你可以从文本中学习物理。你可以从文本中学习因果关系。具身化有帮助，但它是可选的。”</p>
+<p>截至 2026 年的证据是混合的。处理物理任务视频的多模态模型学到了一些物理知识——物体永久性、重力、碰撞——无需具身化。但它们在与重量、质地、刚性等需要交互的属性上仍然挣扎。一个模型可以看一千个人搬箱子的视频，但在真正搬起之前不会知道箱子是重还是轻。</p>
+<p>未解决的问题：<strong>真正的理解是否需要身体？</strong> 答案将决定 AI 是仍然是一种软件技术——还是变成一种机器人技术。</p>
 
                     </main>
 

@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-e1511208.js";
+            window.path_to_searchindex_js = "../searchindex-7f52b2b5.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-73d70b89.js"></script>
@@ -181,44 +181,56 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="chapter-8-multimodal-and-embodied-ai"><a class="header" href="#chapter-8-multimodal-and-embodied-ai">Chapter 8: Multimodal and Embodied AI</a></h1>
-<h2 id="81-the-multimodal-shift"><a class="header" href="#81-the-multimodal-shift">8.1 The Multimodal Shift</a></h2>
-<p>Humans experience the world through multiple senses. Until 2023, AI handled text, images, and audio separately. Today’s frontier models handle all modalities natively.</p>
-<p><strong>Current capabilities:</strong></p>
-<ul>
-<li><strong>Text + images:</strong> GPT-4o, Gemini, Claude, Llama 5</li>
-<li><strong>+ Audio:</strong> Real-time speech in/out (GPT-4o, Gemini)</li>
-<li><strong>+ Video:</strong> Understanding and generation (Sora, Gemini, Kling)</li>
-<li><strong>+ Code execution:</strong> Integrated interpreter (GPT-4o, Claude)</li>
-</ul>
-<h2 id="82-frontier-multimodal-benchmarks"><a class="header" href="#82-frontier-multimodal-benchmarks">8.2 Frontier Multimodal Benchmarks</a></h2>
+<h2 id="81-the-her-moment-gpt-4o-changes-everything"><a class="header" href="#81-the-her-moment-gpt-4o-changes-everything">8.1 The “Her” Moment: GPT-4o Changes Everything</a></h2>
+<p>On May 13, 2024, <strong>Mira Murati</strong> — OpenAI’s CTO at the time — stood on a stage in San Francisco and demonstrated something that felt like science fiction. GPT-4o (“omni”) could see, hear, and speak in real time. It could read your facial expressions, detect your emotional state, and respond with natural intonation, laughter, and pauses.</p>
+<p>The demo that went viral: Mira asked the model to tell a bedtime story in an increasingly dramatic voice. GPT-4o went from calm narrator to dramatic performer, complete with tension, whispers, and a roaring finale. It felt like talking to a person — or like <strong>Scarlett Johansson’s AI character in the film <em>Her</em></strong>.</p>
+<p>The comparison was so powerful that OpenAI accidentally hired an actor whose voice sounded like Johansson, leading to a controversy that forced OpenAI to pause the voice feature. But the genie was out of the bottle: AI had crossed the multimodal Rubicon.</p>
+<p>GPT-4o processed <strong>text, images, audio, and video</strong> natively — a single neural network trained on all modalities simultaneously. Previous approaches had stitched separate models together. GPT-4o was one model, trained end-to-end on everything. The latency for voice conversations dropped from 5 seconds (GPT-4 + Whisper + TTS pipeline) to 320 milliseconds — indistinguishable from human conversation.</p>
+<h2 id="82-sora-the-world-simulator"><a class="header" href="#82-sora-the-world-simulator">8.2 Sora: The World Simulator</a></h2>
+<p>Three months earlier, in February 2024, OpenAI had released another bombshell: <strong>Sora</strong>, a text-to-video model that could generate photorealistic 60-second videos from a sentence.</p>
+<p>The demos were hypnotic. A woman walking through Tokyo at golden hour — rain on the pavement, reflections, consistent lighting. A woolly mammoth in the snow — fur moving naturally, snowflakes settling. A cat waking up in bed — the sheets moved like real sheets.</p>
+<p>The research paper described Sora not as a video model but as a <strong>“world simulator”</strong> — it had learned physics, lighting, object permanence, and cause-and-effect through video data. It could simulate a scene, not just render pixels.</p>
+<p>The limitations emerged quickly: Sora struggled with complex multi-object interactions, often making objects disappear and reappear. It was bad at cause-and-effect — a character might pour coffee into a cup and the cup would remain empty. It was a world simulator with no guaranteed consistency.</p>
+<p>By 2026, Sora had been superseded by <strong>OpenAI’s Sora 2</strong>, Google’s <strong>Veo 3</strong>, and China’s <strong>Kling 2.0</strong> — each capable of 2-minute photorealistic videos with significantly better consistency. The gap between Sora 2024 and Sora 2026 was larger than the gap between the first iPhone and the iPhone 14.</p>
+<h2 id="83-the-gemini-thesis-born-multimodal"><a class="header" href="#83-the-gemini-thesis-born-multimodal">8.3 The Gemini Thesis: Born Multimodal</a></h2>
+<p><strong>Demis Hassabis</strong>, CEO of Google DeepMind, had argued since 2023 that multimodality was not a feature — it was the path to general intelligence. “Human intelligence is deeply multimodal,” he told the MIT Technology Review. “We learn by seeing, hearing, touching. An AI that only processes text is missing most of the world.”</p>
+<p>Google’s execution of this thesis was methodical. <strong>Gemini</strong> was trained from the ground up as a multimodal model — not text-first with vision bolted on. The result: Gemini Ultra (December 2023) was the first model to beat GPT-4 on MMLU. By Gemini 2.5 Pro (2025), the model could natively process 1 million tokens of text, images, audio, and video — and reason across them in a single pass.</p>
+<p>Google’s unique advantage was data: YouTube (billions of hours of video), Google Images (hundreds of billions of photos), Google Earth (trillions of spatial data points), and Google’s audio corpus (Google Voice, Google Meet, YouTube audio). No other company had access to this scale of multimodal data.</p>
+<p>The result was a model that could watch a 10-hour video lecture, analyze the slides, read the cited papers, and answer questions about the content. By 2026, Gemini 3 Ultra had become the default choice for scientific research — not because it was the smartest model, but because it could ingest the most data.</p>
+<h2 id="84-the-robot-awakening"><a class="header" href="#84-the-robot-awakening">8.4 The Robot Awakening</a></h2>
+<p>While language models dominated headlines, a parallel revolution was happening in hardware.</p>
+<p><strong>Tesla Optimus (Elon Musk):</strong> In 2024, Optimus could pick up objects from a table — slowly, carefully, like a toddler learning to grab. By 2026, Optimus Gen 3 could fold laundry, sort parts on an assembly line, and navigate uneven terrain. Musk’s bet: “Optimus will be bigger than Tesla’s car business.” The skeptics noted that the timeline had slipped three times, but the progress was real.</p>
+<p><strong>Figure 02 (Brett Adcock):</strong> Figure Robotics partnered with OpenAI to put GPT-4’s reasoning into a humanoid body. In 2024, a viral demo showed Figure 02 talking to a human: “What do you see?” — “I see a red apple on a plate.” — “Can you hand it to me?” — The robot picked up the apple and handed it over. The demo was teleoperated for some movements, but the reasoning was real. By 2026, Figure 02 could work autonomously in a BMW factory for 8-hour shifts.</p>
+<p><strong>Physical Intelligence (π0, 2024):</strong> A startup founded by <strong>Chelsea Finn</strong> (Stanford) and <strong>Sergey Levine</strong> (UC Berkeley) released π0 — a vision-language-action model trained on internet data and robot data. The demo: π0 watched a human fold laundry once, then folded laundry itself. The generalization was the breakthrough — one model could fold clothes, load a dishwasher, and make coffee.</p>
+<p>The common theme: <strong>foundation models in robot bodies.</strong> The same scaling laws that drove GPT-3’s emergence were being applied to physical tasks. The hardware was still expensive ($150K per Optimus unit), but the software was learning faster than anyone expected.</p>
+<h2 id="85-the-multimodal-frontier"><a class="header" href="#85-the-multimodal-frontier">8.5 The Multimodal Frontier</a></h2>
+<p>By 2026, the standard for “multimodal” had escalated dramatically:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Benchmark</th><th>Best Score</th><th>Description</th></tr>
+<tr><th>Capability</th><th>2023</th><th>2026</th></tr>
 </thead>
 <tbody>
-<tr><td>MMMU</td><td>89%</td><td>Multi-disciplinary multimodal reasoning</td></tr>
-<tr><td>MathVista</td><td>82%</td><td>Visual math reasoning</td></tr>
-<tr><td>Video-MME</td><td>76%</td><td>Video understanding</td></tr>
+<tr><td>Image recognition</td><td>Classify objects</td><td>Describe composition, lighting, intent</td></tr>
+<tr><td>Video understanding</td><td>Clip-level</td><td>Full-narrative reasoning</td></tr>
+<tr><td>Audio processing</td><td>Speech-to-text</td><td>Emotion, speaker ID, sound event detection</td></tr>
+<tr><td>Video generation</td><td>4 second clips</td><td>2 minute coherent scenes</td></tr>
+<tr><td>Real-time voice</td><td>5 second latency</td><td>320ms with emotion</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="83-robotics-and-embodiment"><a class="header" href="#83-robotics-and-embodiment">8.3 Robotics and Embodiment</a></h2>
-<p>AI is moving beyond text and images into physical action:</p>
-<ul>
-<li><strong>Tesla Optimus / Figure 02:</strong> humanoid robots with foundation model brains</li>
-<li><strong>Mobile ALOHA / π0:</strong> learned manipulation policies</li>
-<li><strong>RT-2 / RT-X:</strong> vision-language-action models</li>
-</ul>
-<p><strong>Key insight:</strong> Embodiment grounds AI in physics. This may be necessary (though not sufficient) for robust intelligence.</p>
-<h2 id="84-edge-ai-and-on-device-multimodality"><a class="header" href="#84-edge-ai-and-on-device-multimodality">8.4 Edge AI and On-Device Multimodality</a></h2>
-<p>By 2026, many AI capabilities run locally:</p>
-<ul>
-<li>Apple Intelligence: on-device LLM + image generation</li>
-<li>Samsung Galaxy AI: real-time translation, photo editing</li>
-<li>Google Pixel: on-device Gemini Nano</li>
-</ul>
-<p>Privacy and latency drive this trend. Most queries will shift to hybrid (edge + cloud) within 2–3 years.</p>
+<p>The benchmark leaderboard told the same story: MMMU (multimodal reasoning) had gone from 60% to 89%. MathVista (visual math) from 45% to 82%. Video-MME (video understanding) from 55% to 76%.</p>
+<h2 id="86-the-apple-strategy-edge-multimodality"><a class="header" href="#86-the-apple-strategy-edge-multimodality">8.6 The Apple Strategy: Edge Multimodality</a></h2>
+<p><strong>Tim Cook’s</strong> Apple took a different path: instead of building the biggest cloud model, Apple built the best on-device AI.</p>
+<p>Apple Intelligence (announced June 2024, launched September 2024) brought multimodality to the device in your pocket. The <strong>A18 Pro</strong> and <strong>M4</strong> chips included a 16-core Neural Engine capable of 38 trillion operations per second — enough to run a 30-billion-parameter model locally.</p>
+<p>The capabilities: real-time notification prioritization, image generation (Image Playground), custom emoji (Genmoji), on-device writing assistant, and Siri with screen awareness — you could ask “what time is my next meeting?” and Siri could see the calendar on your screen.</p>
+<p>The privacy message was Apple’s differentiator: “AI that understands you without collecting you.” By 2026, Apple Intelligence was processing over 1 billion on-device requests per day. Samsung’s Galaxy AI and Google’s Pixel AI followed the same trajectory — powerful AI running locally, with cloud fallback for complex tasks.</p>
+<h2 id="87-the-embodiment-question"><a class="header" href="#87-the-embodiment-question">8.7 The Embodiment Question</a></h2>
+<p>A debate simmered beneath the multimodal progress: <strong>is embodiment necessary for intelligence?</strong></p>
+<p><strong>Yann LeCun</strong> (Meta’s chief AI scientist) argued yes: “Intelligence emerges from interaction with the physical world. You can’t be smart if you’ve never touched anything.” Meta was investing heavily in embodied AI — PyRobot, Habitat simulator, and partnership with robotics labs.</p>
+<p><strong>Andrew Ng</strong> (DeepLearning.AI) argued the opposite: “Language contains enough of the world’s structure. You can learn physics from text. You can learn causality from text. Embodiment helps, but it’s optional.”</p>
+<p>The evidence by 2026 was mixed. Multimodal models that processed video of physical tasks learned some physics — object permanence, gravity, collision — without embodiment. But they struggled with properties that required interaction — weight, texture, rigidity. A model could watch a thousand videos of someone picking up a box, but it would not know whether the box was heavy or light until it lifted it.</p>
+<p>The unresolved question: <strong>Will true understanding require a body?</strong> The answer would determine whether AI remains a software technology — or becomes a robotics technology.</p>
 
                     </main>
 
