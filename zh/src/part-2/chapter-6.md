@@ -117,17 +117,17 @@ NVIDIA 控制着 80%+ 的 AI 训练芯片市场。OpenAI 和 Anthropic 共享 60
 **专业人士的启示：** AI 经济奖励那些能够同时驾驭两种力量的人——利用集中化获取基础设施和资本，同时利用民主化获取灵活性和成本。完全押注任何一边都是通往过时的道路。
 
 ### 关键参考资源
-- McKinsey AI report: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai
-- Goldman Sachs AI report: https://www.goldmansachs.com/intelligence/
-- Daron Acemoglu AI productivity: https://economics.mit.edu
-- Sequoia Capital "AI $500B gap": https://www.sequoiacap.com
-- Klarna AI: https://www.klarna.com
-- GitHub Copilot: https://github.com/features/copilot
-- NVIDIA market cap history: https://en.wikipedia.org/wiki/Nvidia
-- DeepSeek market impact: https://www.reuters.com/technology/artificial-intelligence/
-- McKinsey Global Institute jobs: https://www.mckinsey.com/mgi
-- Microsoft Copilot: https://www.microsoft.com/en-us/microsoft-copilot
-- Cohere: https://cohere.com
-- Founders Fund: https://foundersfund.com
-- US Federal Trade Commission AI investigations: https://www.ftc.gov
-- EU Digital Markets Act: https://digital-markets-act.ec.europa.eu
+- [McKinsey AI report](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai)
+- [Goldman Sachs AI report](https://www.goldmansachs.com/intelligence/)
+- [Daron Acemoglu AI productivity](https://economics.mit.edu)
+- [Sequoia Capital "AI $500B gap"](https://www.sequoiacap.com)
+- [Klarna AI](https://www.klarna.com)
+- [GitHub Copilot](https://github.com/features/copilot)
+- [NVIDIA market cap history](https://en.wikipedia.org/wiki/Nvidia)
+- [DeepSeek market impact](https://www.reuters.com/technology/artificial-intelligence/)
+- [McKinsey Global Institute jobs](https://www.mckinsey.com/mgi)
+- [Microsoft Copilot](https://www.microsoft.com/en-us/microsoft-copilot)
+- [Cohere](https://cohere.com)
+- [Founders Fund](https://foundersfund.com)
+- [US Federal Trade Commission AI investigations](https://www.ftc.gov)
+- [EU Digital Markets Act](https://digital-markets-act.ec.europa.eu)

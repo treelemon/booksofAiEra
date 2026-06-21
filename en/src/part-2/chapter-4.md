@@ -97,20 +97,20 @@ The evidence supports LeCun's view, at least for now. Benchmarks continue to sat
 The frontier models of 2026 offer a preview. They are not omniscient, but they are omnipresent — embedded in tools, workflows, decisions, and discovery. The war for the frontier is no longer about whether AI works. It is about who controls it, how much it costs, and whose values it reflects.
 
 ### Key References
-- MMLU: https://arxiv.org/abs/2009.03300
-- GPQA: https://arxiv.org/abs/2311.12022
-- SWE-bench: https://arxiv.org/abs/2310.06770
-- ARC-AGI: https://arxiv.org/abs/1911.01547
-- OSWorld: https://arxiv.org/abs/2404.07972
-- Ethan Mollick "jagged frontier": https://www.oneusefulthing.org
-- GPT-4: https://arxiv.org/abs/2303.08774
-- Claude (Anthropic): https://www.anthropic.com
-- Gemini: https://arxiv.org/abs/2312.11805
-- DeepSeek-V3: https://arxiv.org/abs/2412.19437
-- LLaMA: https://arxiv.org/abs/2302.13971
-- Mixture-of-Experts (Shazeer et al., 2017): https://arxiv.org/abs/1701.06538
-- Constitutional AI (Bai et al., 2022): https://arxiv.org/abs/2212.08073
-- Dario Amodei "Machines of Loving Grace": https://darioamodei.com/machines-of-loving-grace
-- Safe Superintelligence (SSI): https://ssi.inc
-- AI2 Olmo: https://allenai.org/olmo
-- IBM Granite: https://www.ibm.com/granite
+- [MMLU](https://arxiv.org/abs/2009.03300)
+- [GPQA](https://arxiv.org/abs/2311.12022)
+- [SWE-bench](https://arxiv.org/abs/2310.06770)
+- [ARC-AGI](https://arxiv.org/abs/1911.01547)
+- [OSWorld](https://arxiv.org/abs/2404.07972)
+- [Ethan Mollick "jagged frontier"](https://www.oneusefulthing.org)
+- [GPT-4](https://arxiv.org/abs/2303.08774)
+- [Claude (Anthropic)](https://www.anthropic.com)
+- [Gemini](https://arxiv.org/abs/2312.11805)
+- [DeepSeek-V3](https://arxiv.org/abs/2412.19437)
+- [LLaMA](https://arxiv.org/abs/2302.13971)
+- [Mixture-of-Experts (Shazeer et al., 2017)](https://arxiv.org/abs/1701.06538)
+- [Constitutional AI (Bai et al., 2022)](https://arxiv.org/abs/2212.08073)
+- [Dario Amodei "Machines of Loving Grace"](https://darioamodei.com/machines-of-loving-grace)
+- [Safe Superintelligence (SSI)](https://ssi.inc)
+- [AI2 Olmo](https://allenai.org/olmo)
+- [IBM Granite](https://www.ibm.com/granite)

@@ -43,6 +43,6 @@ You already have what matters most — your judgment, your values, your lived ex
 
 ### Key References
 
-- Wikipedia: Artificial intelligence: https://en.wikipedia.org/wiki/Artificial_intelligence
-- Wikipedia: Technological singularity: https://en.wikipedia.org/wiki/Technological_singularity
-- AI Index Report (Stanford HAI): https://hai.stanford.edu/ai-index
+- [Wikipedia: Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)
+- [Wikipedia: Technological singularity](https://en.wikipedia.org/wiki/Technological_singularity)
+- [AI Index Report (Stanford HAI)](https://hai.stanford.edu/ai-index)

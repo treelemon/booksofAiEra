@@ -260,9 +260,9 @@ The tool is not the model. The tool is the judgment that decides when to trust i
 
 ### Key References
 
-- MMLU: https://arxiv.org/abs/2009.03300
-- HumanEval: https://github.com/openai/human-eval
-- TruthfulQA: https://arxiv.org/abs/2109.07958
-- BIG-bench: https://arxiv.org/abs/2206.04615
-- HELM (Stanford CRFM): https://crfm.stanford.edu/helm/
-- Anthropic (evaluation and safety research): https://www.anthropic.com
+- [MMLU](https://arxiv.org/abs/2009.03300)
+- [HumanEval](https://github.com/openai/human-eval)
+- [TruthfulQA](https://arxiv.org/abs/2109.07958)
+- [BIG-bench](https://arxiv.org/abs/2206.04615)
+- [HELM (Stanford CRFM)](https://crfm.stanford.edu/helm/)
+- [Anthropic (evaluation and safety research)](https://www.anthropic.com)

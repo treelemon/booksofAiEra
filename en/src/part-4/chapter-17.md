@@ -174,10 +174,10 @@ The public sphere in the AI era is not doomed — but it requires active mainten
 In an age of infinite synthetic content, the only thing that cannot be faked is character. The only thing that cannot be algorithmically optimized is wisdom. The public sphere will survive this technology — not because we will build better filters, but because we will learn, slowly and painfully, to be better humans.
 
 ### Key References
-- Biden robocall (2024 primary): https://www.nytimes.com/2024/01/22/us/politics/biden-robocall-new-hampshire.html
-- Slovakia deepfake election: https://www.wired.com
-- Imran Khan AI-cloned voice: https://www.aljazeera.com
-- India 968M voter AI campaign: https://www.bbc.com
-- CNET 75-AI-article scandal: https://www.cnet.com
-- C2PA: https://c2pa.org
-- EU AI Act: https://artificialintelligenceact.eu
+- [Biden robocall (2024 primary)](https://www.nytimes.com/2024/01/22/us/politics/biden-robocall-new-hampshire.html)
+- [Slovakia deepfake election](https://www.wired.com)
+- [Imran Khan AI-cloned voice](https://www.aljazeera.com)
+- [India 968M voter AI campaign](https://www.bbc.com)
+- [CNET 75-AI-article scandal](https://www.cnet.com)
+- [C2PA](https://c2pa.org)
+- [EU AI Act](https://artificialintelligenceact.eu)

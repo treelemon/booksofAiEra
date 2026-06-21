@@ -240,9 +240,9 @@ The economic dimension is staggering: AI could reduce US healthcare spending by 
 The verdict is not that AI will replace doctors. It is that AI will redefine what it means to be a doctor — eliminating the parts the profession dislikes (documentation, data entry, routine screening) and amplifying the parts that matter most (diagnosis, treatment planning, patient relationships). The best clinicians of 2026 are not competing with AI. They are collaborating with it — because the most intelligent diagnostic system is not human alone, nor AI alone. It is the two thinking together.
 
 ### Key References
-- AlphaFold (Jumper et al., 2021): https://www.nature.com/articles/s41586-021-03819-2
-- AlphaFold 3 (2024): https://www.nature.com/articles/s41586-024-07487-w
-- David Baker protein design: https://www.bakerlab.org
-- Hassabis Nobel Prize: https://www.nobelprize.org/prizes/chemistry/2024/summary/
-- INS018_055 (Insilico Medicine): https://insilico.com
-- Nature "tortured phrases" investigation: https://www.nature.com
+- [AlphaFold (Jumper et al., 2021)](https://www.nature.com/articles/s41586-021-03819-2)
+- [AlphaFold 3 (2024)](https://www.nature.com/articles/s41586-024-07487-w)
+- [David Baker protein design](https://www.bakerlab.org)
+- [Hassabis Nobel Prize](https://www.nobelprize.org/prizes/chemistry/2024/summary/)
+- [INS018_055 (Insilico Medicine)](https://insilico.com)
+- [Nature "tortured phrases" investigation](https://www.nature.com)

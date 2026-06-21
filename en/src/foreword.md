@@ -16,5 +16,5 @@ If you're reading this, you're probably already feeling the acceleration. Let's 
 
 ### Key References
 
-- mdBook documentation: https://rust-lang.github.io/mdBook/
-- GitHub Pages documentation: https://docs.github.com/en/pages
+- [mdBook documentation](https://rust-lang.github.io/mdBook/)
+- [GitHub Pages documentation](https://docs.github.com/en/pages)

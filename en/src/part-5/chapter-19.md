@@ -164,14 +164,14 @@ Stuart Russell said: "The real risk is not that AI will become malicious. The re
 
 ### Key References
 
-- Bletchley Declaration (2023): https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
-- EU AI Act: https://artificialintelligenceact.eu
-- Biden Executive Order (2023): https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/
-- Apollo Research deception findings (2024): https://www.apolloresearch.ai
-- Jan Leike resignation: https://x.com/janleike
-- OpenAI board restructuring (Nov 2023): https://en.wikipedia.org/wiki/OpenAI#2023_board_restructuring
-- RLHF (Ouyang et al., 2022): https://arxiv.org/abs/2203.02155
-- Constitutional AI (Bai et al., 2022): https://arxiv.org/abs/2212.08073
-- Stuart Russell: https://people.eecs.berkeley.edu/~russell/
-- Anthropic Responsible Scaling Policy: https://www.anthropic.com/news/anthropics-responsible-scaling-policy
-- AIAAIC incident database: https://www.aiaaic.org
+- [Bletchley Declaration (2023)](https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration)
+- [EU AI Act](https://artificialintelligenceact.eu)
+- [Biden Executive Order (2023)](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/)
+- [Apollo Research deception findings (2024)](https://www.apolloresearch.ai)
+- [Jan Leike resignation](https://x.com/janleike)
+- [OpenAI board restructuring (Nov 2023)](https://en.wikipedia.org/wiki/OpenAI#2023_board_restructuring)
+- [RLHF (Ouyang et al., 2022)](https://arxiv.org/abs/2203.02155)
+- [Constitutional AI (Bai et al., 2022)](https://arxiv.org/abs/2212.08073)
+- [Stuart Russell](https://people.eecs.berkeley.edu/~russell/)
+- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/news/anthropics-responsible-scaling-policy)
+- [AIAAIC incident database](https://www.aiaaic.org)

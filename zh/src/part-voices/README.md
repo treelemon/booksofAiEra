@@ -49,6 +49,6 @@
 
 ### 关键参考资源
 
-- Future of Life Institute (diverse AI perspectives): https://futureoflife.org
-- Stanford HAI (Human-Centered AI): https://hai.stanford.edu
-- Google PAIR (People + AI Research): https://pair.withgoogle.com
+- [Future of Life Institute (diverse AI perspectives)](https://futureoflife.org)
+- [Stanford HAI (Human-Centered AI)](https://hai.stanford.edu)
+- [Google PAIR (People + AI Research)](https://pair.withgoogle.com)

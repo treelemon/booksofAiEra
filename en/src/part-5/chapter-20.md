@@ -148,7 +148,7 @@ Identity is not found. It is practiced. In every choice to use AI as instrument 
 
 ### Key References
 
-- Garry Kasparov / Deep Blue: https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov
-- Kasparov "Deep Thinking": https://www.amazon.com/Deep-Thinking-Machine-Intelligence-Creativity/dp/161039805X
-- ELIZA / Weizenbaum: https://en.wikipedia.org/wiki/ELIZA
-- Joseph Weizenbaum "Computer Power and Human Reason": https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason
+- [Garry Kasparov / Deep Blue](https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov)
+- [Kasparov "Deep Thinking"](https://www.amazon.com/Deep-Thinking-Machine-Intelligence-Creativity/dp/161039805X)
+- [ELIZA / Weizenbaum](https://en.wikipedia.org/wiki/ELIZA)
+- [Joseph Weizenbaum "Computer Power and Human Reason"](https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason)

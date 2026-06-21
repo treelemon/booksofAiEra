@@ -203,9 +203,9 @@ AI 负责执行。专家负责思考。
 
 ### 关键参考资源
 
-- MMLU: https://arxiv.org/abs/2009.03300
-- HELM (Stanford CRFM): https://crfm.stanford.edu/helm/
-- EU AI Act: https://artificialintelligenceact.eu
-- Anthropic (red-teaming and safety research): https://www.anthropic.com
-- RLHF (Ouyang et al., 2022): https://arxiv.org/abs/2203.02155
-- Human-in-the-loop: https://en.wikipedia.org/wiki/Human-in-the-loop
+- [MMLU](https://arxiv.org/abs/2009.03300)
+- [HELM (Stanford CRFM)](https://crfm.stanford.edu/helm/)
+- [EU AI Act](https://artificialintelligenceact.eu)
+- [Anthropic (red-teaming and safety research)](https://www.anthropic.com)
+- [RLHF (Ouyang et al., 2022)](https://arxiv.org/abs/2203.02155)
+- [Human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop)

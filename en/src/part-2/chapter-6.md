@@ -117,17 +117,17 @@ The AI economy of 2026 was a paradox: the most concentrated technology market in
 **The professional's takeaway:** The AI economy rewards those who can navigate both forces simultaneously — leverage the concentration for infrastructure and capital, while exploiting the democratization for flexibility and cost. Betting entirely on either side is the path to obsolescence.
 
 ### Key References
-- McKinsey AI report: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai
-- Goldman Sachs AI report: https://www.goldmansachs.com/intelligence/
-- Daron Acemoglu AI productivity: https://economics.mit.edu
-- Sequoia Capital "AI $500B gap": https://www.sequoiacap.com
-- Klarna AI: https://www.klarna.com
-- GitHub Copilot: https://github.com/features/copilot
-- NVIDIA market cap history: https://en.wikipedia.org/wiki/Nvidia
-- DeepSeek market impact: https://www.reuters.com/technology/artificial-intelligence/
-- McKinsey Global Institute jobs: https://www.mckinsey.com/mgi
-- Microsoft Copilot: https://www.microsoft.com/en-us/microsoft-copilot
-- Cohere: https://cohere.com
-- Founders Fund: https://foundersfund.com
-- US Federal Trade Commission AI investigations: https://www.ftc.gov
-- EU Digital Markets Act: https://digital-markets-act.ec.europa.eu
+- [McKinsey AI report](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai)
+- [Goldman Sachs AI report](https://www.goldmansachs.com/intelligence/)
+- [Daron Acemoglu AI productivity](https://economics.mit.edu)
+- [Sequoia Capital "AI $500B gap"](https://www.sequoiacap.com)
+- [Klarna AI](https://www.klarna.com)
+- [GitHub Copilot](https://github.com/features/copilot)
+- [NVIDIA market cap history](https://en.wikipedia.org/wiki/Nvidia)
+- [DeepSeek market impact](https://www.reuters.com/technology/artificial-intelligence/)
+- [McKinsey Global Institute jobs](https://www.mckinsey.com/mgi)
+- [Microsoft Copilot](https://www.microsoft.com/en-us/microsoft-copilot)
+- [Cohere](https://cohere.com)
+- [Founders Fund](https://foundersfund.com)
+- [US Federal Trade Commission AI investigations](https://www.ftc.gov)
+- [EU Digital Markets Act](https://digital-markets-act.ec.europa.eu)

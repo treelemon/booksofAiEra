@@ -151,21 +151,21 @@ DeepSeek 的 **R1**（2025 年 1 月）证明了前沿级推理能力可以以�
 
 ### 关键参考资源
 
-- Dartmouth workshop: https://en.wikipedia.org/wiki/Dartmouth_workshop
-- Perceptron (Rosenblatt, 1958): https://en.wikipedia.org/wiki/Perceptron
-- ELIZA (Weizenbaum, 1966): https://en.wikipedia.org/wiki/ELIZA
-- Lighthill Report (1973): https://en.wikipedia.org/wiki/Lighthill_report
-- Deep Blue (IBM, 1997): https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)
-- ImageNet (Fei-Fei Li, 2009): https://en.wikipedia.org/wiki/ImageNet
-- AlexNet (Krizhevsky et al., 2012): https://dl.acm.org/doi/10.1145/3065386
-- Word2vec (Mikolov et al., 2013): https://arxiv.org/abs/1301.3781
-- GANs (Goodfellow, 2014): https://arxiv.org/abs/1406.2661
-- AlphaGo (DeepMind, 2016): https://en.wikipedia.org/wiki/AlphaGo
-- BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
-- GPT-3 (Brown et al., 2020): https://arxiv.org/abs/2005.14165
-- Scaling Laws (Kaplan et al., 2020): https://arxiv.org/abs/2001.08361
-- DALL-E (Ramesh et al., 2021): https://arxiv.org/abs/2102.12092
-- ChatGPT (OpenAI, 2022): https://openai.com/blog/chatgpt/
-- LLaMA (Touvron et al., 2023): https://arxiv.org/abs/2302.13971
-- GPT-4 (OpenAI, 2023): https://arxiv.org/abs/2303.08774
-- DeepSeek-R1 (2025): https://arxiv.org/abs/2501.12948
+- [Dartmouth workshop](https://en.wikipedia.org/wiki/Dartmouth_workshop)
+- [Perceptron (Rosenblatt, 1958)](https://en.wikipedia.org/wiki/Perceptron)
+- [ELIZA (Weizenbaum, 1966)](https://en.wikipedia.org/wiki/ELIZA)
+- [Lighthill Report (1973)](https://en.wikipedia.org/wiki/Lighthill_report)
+- [Deep Blue (IBM, 1997)](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer))
+- [ImageNet (Fei-Fei Li, 2009)](https://en.wikipedia.org/wiki/ImageNet)
+- [AlexNet (Krizhevsky et al., 2012)](https://dl.acm.org/doi/10.1145/3065386)
+- [Word2vec (Mikolov et al., 2013)](https://arxiv.org/abs/1301.3781)
+- [GANs (Goodfellow, 2014)](https://arxiv.org/abs/1406.2661)
+- [AlphaGo (DeepMind, 2016)](https://en.wikipedia.org/wiki/AlphaGo)
+- [BERT (Devlin et al., 2018)](https://arxiv.org/abs/1810.04805)
+- [GPT-3 (Brown et al., 2020)](https://arxiv.org/abs/2005.14165)
+- [Scaling Laws (Kaplan et al., 2020)](https://arxiv.org/abs/2001.08361)
+- [DALL-E (Ramesh et al., 2021)](https://arxiv.org/abs/2102.12092)
+- [ChatGPT (OpenAI, 2022)](https://openai.com/blog/chatgpt/)
+- [LLaMA (Touvron et al., 2023)](https://arxiv.org/abs/2302.13971)
+- [GPT-4 (OpenAI, 2023)](https://arxiv.org/abs/2303.08774)
+- [DeepSeek-R1 (2025)](https://arxiv.org/abs/2501.12948)

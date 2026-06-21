@@ -238,13 +238,13 @@ The speed difference is the difference between a glacier and a flood. The first 
 **Human Wisdom** in the workforce context means recognizing that the value of human work is not solely economic. It is relational, creative, and existential. The goal of workforce adaptation is not to preserve every job — it is to preserve human flourishing through the transition. That requires both practical career management and a deeper understanding of what makes work meaningful beyond its economic function. The toolkit for the transition is in this chapter. The wisdom to navigate it is developed through the practice of **Human Wisdom** — knowing when to adapt, when to resist, and when to redefine what work means.
 
 ### Key References
-- ChatGPT 100M users: https://openai.com/blog/chatgpt/
-- Klarna AI: https://www.klarna.com
-- GitHub Copilot productivity study: https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/
-- Karim Lakhani (Harvard): https://www.hbs.edu/faculty/Pages/profile.aspx?facId=246623
-- Sal Khan / Khan Academy: https://www.khanacademy.org/khan-labs
-- Anthropic co-pilot model: https://www.anthropic.com
-- McKinsey job displacement: https://www.mckinsey.com/mgi
-- World Economic Forum Future of Jobs: https://www.weforum.org/reports/the-future-of-jobs-report-2025/
-- Prompt engineer market: https://www.indeed.com
-- SkillsFuture (Singapore): https://www.skillsfuture.gov.sg
+- [ChatGPT 100M users](https://openai.com/blog/chatgpt/)
+- [Klarna AI](https://www.klarna.com)
+- [GitHub Copilot productivity study](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+- [Karim Lakhani (Harvard)](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=246623)
+- [Sal Khan / Khan Academy](https://www.khanacademy.org/khan-labs)
+- [Anthropic co-pilot model](https://www.anthropic.com)
+- [McKinsey job displacement](https://www.mckinsey.com/mgi)
+- [World Economic Forum Future of Jobs](https://www.weforum.org/reports/the-future-of-jobs-report-2025/)
+- [Prompt engineer market](https://www.indeed.com)
+- [SkillsFuture (Singapore)](https://www.skillsfuture.gov.sg)

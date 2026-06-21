@@ -257,18 +257,18 @@ AI 生成的代码引入了独特的安全特征。
 
 ### 关键参考资源
 
-- SWE-bench: https://github.com/SWE-bench/SWE-bench
-- HumanEval: https://github.com/openai/human-eval
-- LiveCodeBench: https://livecodebench.github.io
-- CRUXEval: https://crux-eval.github.io
-- CyberSecEval: https://github.com/meta-llama/PurpleLlama
-- OWASP Top 10 for LLM: https://owasp.org/www-project-top-10-for-llm-applications
-- GitHub Copilot: https://github.com/features/copilot
-- Cursor: https://cursor.sh
-- Claude Code: https://docs.anthropic.com/en/docs/claude-code
-- Codeium: https://codeium.com
-- Qodo (CodiumAI): https://www.qodo.ai
-- CodeRabbit: https://coderabbit.ai
-- Replit Agent: https://replit.com/agent
-- Devin: https://www.cognition.ai
-- Aider: https://github.com/Aider-AI/aider
+- [SWE-bench](https://github.com/SWE-bench/SWE-bench)
+- [HumanEval](https://github.com/openai/human-eval)
+- [LiveCodeBench](https://livecodebench.github.io)
+- [CRUXEval](https://crux-eval.github.io)
+- [CyberSecEval](https://github.com/meta-llama/PurpleLlama)
+- [OWASP Top 10 for LLM](https://owasp.org/www-project-top-10-for-llm-applications)
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Cursor](https://cursor.sh)
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
+- [Codeium](https://codeium.com)
+- [Qodo (CodiumAI)](https://www.qodo.ai)
+- [CodeRabbit](https://coderabbit.ai)
+- [Replit Agent](https://replit.com/agent)
+- [Devin](https://www.cognition.ai)
+- [Aider](https://github.com/Aider-AI/aider)

@@ -97,20 +97,20 @@ AI 能力增长是否放缓？这场争论分裂了整个行业。
 2026 年的前沿模型提供了一个预览。它们并非全知，但它们无处不在——嵌入于工具、工作流、决策和发现之中。前沿的战争不再关乎 AI 是否有效。它关乎谁控制它、它花费多少、以及它反映谁的价值观。
 
 ### 关键参考资源
-- MMLU: https://arxiv.org/abs/2009.03300
-- GPQA: https://arxiv.org/abs/2311.12022
-- SWE-bench: https://arxiv.org/abs/2310.06770
-- ARC-AGI: https://arxiv.org/abs/1911.01547
-- OSWorld: https://arxiv.org/abs/2404.07972
-- Ethan Mollick "jagged frontier": https://www.oneusefulthing.org
-- GPT-4: https://arxiv.org/abs/2303.08774
-- Claude (Anthropic): https://www.anthropic.com
-- Gemini: https://arxiv.org/abs/2312.11805
-- DeepSeek-V3: https://arxiv.org/abs/2412.19437
-- LLaMA: https://arxiv.org/abs/2302.13971
-- Mixture-of-Experts (Shazeer et al., 2017): https://arxiv.org/abs/1701.06538
-- Constitutional AI (Bai et al., 2022): https://arxiv.org/abs/2212.08073
-- Dario Amodei "Machines of Loving Grace": https://darioamodei.com/machines-of-loving-grace
-- Safe Superintelligence (SSI): https://ssi.inc
-- AI2 Olmo: https://allenai.org/olmo
-- IBM Granite: https://www.ibm.com/granite
+- [MMLU](https://arxiv.org/abs/2009.03300)
+- [GPQA](https://arxiv.org/abs/2311.12022)
+- [SWE-bench](https://arxiv.org/abs/2310.06770)
+- [ARC-AGI](https://arxiv.org/abs/1911.01547)
+- [OSWorld](https://arxiv.org/abs/2404.07972)
+- [Ethan Mollick "jagged frontier"](https://www.oneusefulthing.org)
+- [GPT-4](https://arxiv.org/abs/2303.08774)
+- [Claude (Anthropic)](https://www.anthropic.com)
+- [Gemini](https://arxiv.org/abs/2312.11805)
+- [DeepSeek-V3](https://arxiv.org/abs/2412.19437)
+- [LLaMA](https://arxiv.org/abs/2302.13971)
+- [Mixture-of-Experts (Shazeer et al., 2017)](https://arxiv.org/abs/1701.06538)
+- [Constitutional AI (Bai et al., 2022)](https://arxiv.org/abs/2212.08073)
+- [Dario Amodei "Machines of Loving Grace"](https://darioamodei.com/machines-of-loving-grace)
+- [Safe Superintelligence (SSI)](https://ssi.inc)
+- [AI2 Olmo](https://allenai.org/olmo)
+- [IBM Granite](https://www.ibm.com/granite)

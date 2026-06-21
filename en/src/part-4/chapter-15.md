@@ -267,23 +267,23 @@ The engineer's role is not diminishing. It is shifting toward higher-judgment ac
 
 ### Key References
 
-- SWE-bench: https://github.com/SWE-bench/SWE-bench
-- HumanEval: https://github.com/openai/human-eval
-- LiveCodeBench: https://livecodebench.github.io
-- CRUXEval: https://crux-eval.github.io
-- CyberSecEval: https://github.com/meta-llama/PurpleLlama
-- OWASP Top 10 for LLM: https://owasp.org/www-project-top-10-for-llm-applications
-- GitHub Copilot: https://github.com/features/copilot
-- Cursor: https://cursor.sh
-- Claude Code: https://docs.anthropic.com/en/docs/claude-code
-- Codeium: https://codeium.com
-- Qodo (CodiumAI): https://www.qodo.ai
-- CodeRabbit: https://coderabbit.ai
-- Replit Agent: https://replit.com/agent
-- Devin: https://www.cognition.ai
-- Aider: https://github.com/Aider-AI/aider
-- Codex (Chen et al., 2021): https://arxiv.org/abs/2107.03374
-- Self-Refine (Madaan et al., 2023): https://arxiv.org/abs/2303.17651
-- ReAct (Yao et al., 2023): https://arxiv.org/abs/2210.03629
-- AlphaCodium (Ridnik et al., 2024): https://arxiv.org/abs/2401.08500
-- GitHub Copilot productivity study: https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness
+- [SWE-bench](https://github.com/SWE-bench/SWE-bench)
+- [HumanEval](https://github.com/openai/human-eval)
+- [LiveCodeBench](https://livecodebench.github.io)
+- [CRUXEval](https://crux-eval.github.io)
+- [CyberSecEval](https://github.com/meta-llama/PurpleLlama)
+- [OWASP Top 10 for LLM](https://owasp.org/www-project-top-10-for-llm-applications)
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Cursor](https://cursor.sh)
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
+- [Codeium](https://codeium.com)
+- [Qodo (CodiumAI)](https://www.qodo.ai)
+- [CodeRabbit](https://coderabbit.ai)
+- [Replit Agent](https://replit.com/agent)
+- [Devin](https://www.cognition.ai)
+- [Aider](https://github.com/Aider-AI/aider)
+- [Codex (Chen et al., 2021)](https://arxiv.org/abs/2107.03374)
+- [Self-Refine (Madaan et al., 2023)](https://arxiv.org/abs/2303.17651)
+- [ReAct (Yao et al., 2023)](https://arxiv.org/abs/2210.03629)
+- [AlphaCodium (Ridnik et al., 2024)](https://arxiv.org/abs/2401.08500)
+- [GitHub Copilot productivity study](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness)

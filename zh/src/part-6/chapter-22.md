@@ -260,9 +260,9 @@ AI 判断中最被忽视的组成部分是人。你自己的偏见、疲劳模�
 
 ### 关键参考资源
 
-- MMLU: https://arxiv.org/abs/2009.03300
-- HumanEval: https://github.com/openai/human-eval
-- TruthfulQA: https://arxiv.org/abs/2109.07958
-- BIG-bench: https://arxiv.org/abs/2206.04615
-- HELM (Stanford CRFM): https://crfm.stanford.edu/helm/
-- Anthropic (evaluation and safety research): https://www.anthropic.com
+- [MMLU](https://arxiv.org/abs/2009.03300)
+- [HumanEval](https://github.com/openai/human-eval)
+- [TruthfulQA](https://arxiv.org/abs/2109.07958)
+- [BIG-bench](https://arxiv.org/abs/2206.04615)
+- [HELM (Stanford CRFM)](https://crfm.stanford.edu/helm/)
+- [Anthropic (evaluation and safety research)](https://www.anthropic.com)

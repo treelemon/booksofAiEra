@@ -222,11 +222,11 @@ AI 时代将持续数十年——不是几年。赢家不会是 2024-2026 年冲
 
 ### 关键参考资源
 
-- ArXiv: https://arxiv.org
-- Hugging Face: https://huggingface.co
-- GitHub Copilot: https://github.com/features/copilot
-- NeurIPS: https://neurips.cc
-- ICML: https://icml.cc
-- ICLR: https://iclr.cc
-- MLOps community: https://ml-ops.org
-- Metaculus (forecasting): https://www.metaculus.com
+- [ArXiv](https://arxiv.org)
+- [Hugging Face](https://huggingface.co)
+- [GitHub Copilot](https://github.com/features/copilot)
+- [NeurIPS](https://neurips.cc)
+- [ICML](https://icml.cc)
+- [ICLR](https://iclr.cc)
+- [MLOps community](https://ml-ops.org)
+- [Metaculus (forecasting)](https://www.metaculus.com)

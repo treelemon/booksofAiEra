@@ -103,17 +103,17 @@ The unresolved question: **Will true understanding require a body?** The answer 
 The debate will resolve not through argument but through engineering. If a software-only model achieves AGI-level reasoning on embodied tasks without a body, LeCun is wrong. If the most capable systems consistently require physical training data, Ng is wrong. The 2026 evidence leans toward hybrid: embodiment helps, but simulation and video are narrowing the gap faster than expected.
 
 ### Key References
-- GPT-4o announcement: https://openai.com/index/hello-gpt-4o/
-- Sora (OpenAI, 2024): https://openai.com/index/sora/
-- Veo (Google DeepMind): https://deepmind.google/technologies/veo/
-- Gemini: https://arxiv.org/abs/2312.11805
-- Tesla Optimus: https://www.tesla.com/optimus
-- Figure Robotics: https://www.figure.ai
-- Physical Intelligence π0: https://www.physicalintelligence.company
-- Apple Intelligence: https://www.apple.com/apple-intelligence/
-- RT-2 (Brohan et al., 2023): https://arxiv.org/abs/2307.15818
-- MMMU benchmark: https://arxiv.org/abs/2311.16502
-- MathVista: https://arxiv.org/abs/2310.02255
-- Google DeepMind: https://deepmind.google
-- Meta Habitat Simulator: https://ai.meta.com/tools/habitat-sim/
-- Kling (Kuaishou): https://www.klingai.com
+- [GPT-4o announcement](https://openai.com/index/hello-gpt-4o/)
+- [Sora (OpenAI, 2024)](https://openai.com/index/sora/)
+- [Veo (Google DeepMind)](https://deepmind.google/technologies/veo/)
+- [Gemini](https://arxiv.org/abs/2312.11805)
+- [Tesla Optimus](https://www.tesla.com/optimus)
+- [Figure Robotics](https://www.figure.ai)
+- [Physical Intelligence π0](https://www.physicalintelligence.company)
+- [Apple Intelligence](https://www.apple.com/apple-intelligence/)
+- [RT-2 (Brohan et al., 2023)](https://arxiv.org/abs/2307.15818)
+- [MMMU benchmark](https://arxiv.org/abs/2311.16502)
+- [MathVista](https://arxiv.org/abs/2310.02255)
+- [Google DeepMind](https://deepmind.google)
+- [Meta Habitat Simulator](https://ai.meta.com/tools/habitat-sim/)
+- [Kling (Kuaishou)](https://www.klingai.com)

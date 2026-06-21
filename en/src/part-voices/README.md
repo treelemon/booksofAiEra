@@ -51,6 +51,6 @@ This section is a living reference. Each entry documents a major figure in the A
 
 ### Key References
 
-- Future of Life Institute (diverse AI perspectives): https://futureoflife.org
-- Stanford HAI (Human-Centered AI): https://hai.stanford.edu
-- Google PAIR (People + AI Research): https://pair.withgoogle.com
+- [Future of Life Institute (diverse AI perspectives)](https://futureoflife.org)
+- [Stanford HAI (Human-Centered AI)](https://hai.stanford.edu)
+- [Google PAIR (People + AI Research)](https://pair.withgoogle.com)

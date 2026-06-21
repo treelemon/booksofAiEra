@@ -222,11 +222,11 @@ The toolkit is what you use. The long game is who you become.
 
 ### Key References
 
-- ArXiv: https://arxiv.org
-- Hugging Face: https://huggingface.co
-- GitHub Copilot: https://github.com/features/copilot
-- NeurIPS: https://neurips.cc
-- ICML: https://icml.cc
-- ICLR: https://iclr.cc
-- MLOps community: https://ml-ops.org
-- Metaculus (forecasting): https://www.metaculus.com
+- [ArXiv](https://arxiv.org)
+- [Hugging Face](https://huggingface.co)
+- [GitHub Copilot](https://github.com/features/copilot)
+- [NeurIPS](https://neurips.cc)
+- [ICML](https://icml.cc)
+- [ICLR](https://iclr.cc)
+- [MLOps community](https://ml-ops.org)
+- [Metaculus (forecasting)](https://www.metaculus.com)
