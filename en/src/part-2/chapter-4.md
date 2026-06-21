@@ -51,6 +51,20 @@ The founder, **Liang Wenfeng**, was a hedge fund trader who had started acquirin
 
 The geopolitical implications were immediate. The US-China AI gap, which had been estimated at 2-3 years in 2023, had narrowed to 2.7% on aggregate benchmarks by 2026. China was not just copying — it was innovating on a different cost curve.
 
+**The four frontier strategies compared:**
+
+| Dimension | OpenAI | Anthropic | Google DeepMind | DeepSeek |
+|-----------|--------|-----------|-----------------|----------|
+| Primary bet | Scale + reasoning | Safety + data quality | Data + multimodality | Efficiency + architecture |
+| Best model (2026) | GPT-5 / o3 | Claude Opus 5 | Gemini 3 Ultra | V4 / R1 |
+| Training cost | $1B+ (est.) | ~$500M (est.) | ~$500M (est.) | ~$6.8M |
+| Source model | Closed | Closed | Closed | Open-weight |
+| Safety approach | Voluntary reporting | RSP, public evaluations | AI Safety Framework | Minimal public disclosure |
+| Key advantage | Brand, first-mover | Developer trust, code quality | Ecosystem, science heritage | Cost, open science |
+| Key risk | Talent exodus | Narrow product focus | Bureaucracy, speed | Geopolitical constraints |
+
+The table reveals an uncomfortable truth: the most safety-transparent lab (Anthropic) was not the market leader. The most cost-efficient lab (DeepSeek) was spending less on a single model than OpenAI spends on data-center electricity in a week. The frontier was not a single race — it was four different races on four different tracks.
+
 ## 4.3 The Open-Source Parallel Universe
 
 Meta's **Yann LeCun** had been saying for years that open-source would win. In 2026, his prediction looked prescient.

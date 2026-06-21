@@ -46,6 +46,18 @@ By 2026, the hardware landscape was no longer a one-company show:
 
 **Apple (Tim Cook / Johny Srouji):** The M-series chips integrated a Neural Engine that ran 30+ billion parameter models on-device. Apple Intelligence (2024) proved that local AI could handle most everyday tasks — summarization, image editing, contextual responses — while keeping user data private. By 2026, the gap between edge and cloud AI had narrowed significantly.
 
+**The efficiency techniques that reshaped 2025–2026:**
+
+| Technique | Mechanism | Cost Reduction | Adoption |
+|-----------|-----------|---------------|----------|
+| Mixture-of-Experts (MoE) | Activate only 10-30% of parameters per token | 70-90% inference compute | Industry standard (GPT-4, DeepSeek, Gemini) |
+| Quantization | Train/infer at FP8, INT8, INT4 instead of FP16 | 2-4× throughput | Universal for inference |
+| Distillation | Large teacher trains smaller student | Variable (e.g., Phi-3 matched GPT-3.5 at 1/50th size) | Common for edge deployment |
+| Hardware-model co-optimization | Design architecture around specific chip constraints | 3-10× efficiency per watt | DeepSeek-H800, Gemini-TPU |
+| Speculative decoding | Small model proposes, large model verifies | 2-3× latency reduction | Common in production APIs |
+
+The efficiency revolution had a paradoxical effect: cheaper inference increased total AI consumption, so total compute demand still rose — but the cost per token collapsed by 10× per year.
+
 ## 5.5 Energy: The Hidden Constraint
 
 In 2024, Google and Microsoft each published environmental reports showing AI-related emissions had increased 48% and 29% respectively. The public reaction was sharp.
@@ -89,5 +101,16 @@ The unintended effect: accelerating China's domestic chip industry. Huawei's Asc
 The "compute sovereignty" movement spread to Europe, India, and Southeast Asia. France committed €5 billion to AI compute. India's "AI for All" initiative pledged 10,000 GPUs for public research. Japan's Preferred Networks (PFN) built the MN-Core chip, designed specifically for Japanese AI needs.
 
 Open-source models became a geopolitical tool: regions restricted from importing the best hardware could still download the best models. LLaMA 5 and DeepSeek-R1 ran on whatever chips were available.
+
+**The compute chessboard by 2026:**
+
+| Player | Chip | Process Node | Relative Performance | Availability |
+|--------|------|-------------|---------------------|--------------|
+| NVIDIA | H100 → B200 → Rubin | TSMC 4nm → 3nm | Baseline (1.0×) | Open market (export restricted to China) |
+| AMD | MI300X → MI350 | TSMC 5nm → 4nm | 0.8× H100 (inference) | Open market |
+| Google | TPU v7 | TSMC 3nm | 1.0× H100 (training, 1.3× efficiency/W) | Internal only |
+| Amazon | Trainium 3 | TSMC 4nm | ~0.8× H100 | AWS only |
+| Huawei | Ascend 910C | SMIC 7nm (N+2) | 0.5-0.7× H100 | China only |
+| Apple | M4 Neural Engine | TSMC 3nm | 30B params on-device | Apple devices only |
 
 **The defining tension of 2026:** AI capability is compute-limited, and compute access is politically determined. The countries that control hardware will shape the future of intelligence — but efficiency breakthroughs are making the hardware advantage less absolute than it seemed in 2023.

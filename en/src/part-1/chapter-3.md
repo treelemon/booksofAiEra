@@ -26,6 +26,18 @@ The GPT lineage sparked forks in every direction. Each competitor represents a d
 
 **DeepSeek (China, 2024–2025):** The cost-efficiency revolution. A quiet Chinese quant-trading firm's AI lab dropped a series of models that shocked the industry. DeepSeek-V2 (2024) trained for $2.78M — roughly 1/70th of GPT-4's estimated cost. DeepSeek-V3 (2025, 671B total, 37B active per token) used an MoE architecture so efficient it trained on just over 2,000 GPUs. Then DeepSeek-R1 (January 2025) matched OpenAI's o1 at reasoning — and released the paper describing how they did it. The industry gasped. The US stock market lost $500 billion in a single day. The geopolitical narrative shifted: China was not following — it was innovating.
 
+**The competitor landscape at a glance:**
+
+| Lab | Origin Story | Key Innovation | Strengths | Vulnerability |
+|-----|-------------|----------------|-----------|---------------|
+| OpenAI | Non-profit turned capped-profit | RLHF, scaling-first, o-series reasoning | Research velocity, brand, ecosystem | Talent retention, governance instability |
+| Anthropic | OpenAI safety schism (2021) | Constitutional AI, RSP framework | Safety as differentiator, coding quality | Narrow product line, slower releases |
+| Google DeepMind | Merger of DeepMind + Google Brain | Native multimodality, 1M-token context | Data scale (YouTube, Images, Earth), science heritage | Bureaucracy, slow culture |
+| Meta (LLaMA) | Zuckerberg's open-source bet | Open-weight licensing, ecosystem play | Community, democratization, zero licensing cost | No direct revenue model |
+| DeepSeek | Chinese quant firm (High-Flyer) | MoE efficiency, cost 1/70th of GPT-4 | Cost leadership, open science, engineering culture | Geopolitical risk, hardware constraints |
+
+Each lab placed a different bet on what would matter most: scale (OpenAI), safety (Anthropic), data (Google), openness (Meta), or efficiency (DeepSeek). The 2026 results suggest all five bets were partially correct — and the frontier belongs to those who can combine multiple advantages.
+
 ## 3.3 The Reasoning Model Breakthrough
 
 In September 2024, OpenAI released o1 — the first model that "thinks" before answering. The rumors had called it "Strawberry" or "Q*." The reality was stranger and more important.
@@ -46,6 +58,20 @@ This was a paradigm shift. Previously, all scaling happened at training time. Re
 - **Gemini 2.5 Pro "thinking" (2025):** DeepMind's natively thinking model with 1M token context.
 
 **Why it matters:** We are no longer just scaling training compute. Reasoning models introduced **test-time compute** as a new dimension. A model can now "spend" more compute to think harder about hard problems. This changes everything — cost curves, latency trade-offs, and what we consider possible.
+
+**The reasoning model timeline:**
+
+| Model | Date | Test-Time Compute | AIME Score | Key Finding |
+|-------|------|-------------------|-----------|-------------|
+| GPT-4 | Mar 2023 | None (standard generation) | 12% | Baseline |
+| o1-preview | Sep 2024 | Internal chain-of-thought | 83% | 7× improvement — reasoning is real |
+| o1 full | Dec 2024 | Extended thinking | ~90% | Coding and tool use improved |
+| DeepSeek R1 | Jan 2025 | Open-source reasoning | ~80% | Matched o1 at 1/20th cost; published methods |
+| o3 | Feb 2025 | Multi-branch search + verification | 94% | 87.5% on ARC-AGI (approaching human ceiling) |
+| Claude Sonnet 4 | Apr 2025 | Long-context reasoning | ~85% | Stronger on tool orchestration |
+| Gemini 2.5 Pro | 2025 | Native thinking + 1M context | 82% | Best at long-document reasoning |
+
+The separation between "training compute" and "inference compute" was the most important architectural shift since the transformer itself. Models could now think harder when the problem demanded it — and spend less when it didn't.
 
 ## 3.4 The Capability Trajectory
 

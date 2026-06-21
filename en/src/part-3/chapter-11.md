@@ -38,6 +38,17 @@ A sequence of international summits attempted to build governance frameworks for
 
 The pattern was clear: plenty of declarations, little binding law. The one exception was the European Union.
 
+**The four AI summits compared:**
+
+| Summit | Date | Host | Tone | Key Outcome | Binding? | Legacy |
+|--------|------|------|------|-------------|----------|--------|
+| Bletchley Park | Nov 2023 | UK (Sunak) | Safety | Bletchley Declaration — shared principles, China attended | No | Symbolic breakthrough: China at the table |
+| Seoul | May 2024 | Korea | Interoperability | 16-country declaration on compatible regulation | No | "Interoperable governance" entered lexicon |
+| Paris | Feb 2025 | France (Macron) | Opportunity | Paris Declaration for Trustworthy AI — open-source emphasis | No | Shifted tone from fear to industrial strategy |
+| New York (UN) | Sep 2025 | UN General Assembly | Governance | First UN AI resolution, 120+ co-sponsors | No | Broadest consensus, zero enforcement |
+
+The diplomatic pattern: each summit moved the conversation forward incrementally, but none produced binding commitments. The gap between diplomatic ambition and regulatory reality was the defining feature of AI governance in 2026.
+
 ## 11.4 The EU AI Act: The World's First Comprehensive AI Law
 
 In August 2024, after three years of debate, the European Union's AI Act entered into force. It was the most ambitious attempt to regulate AI in history.
@@ -225,4 +236,17 @@ The defining geopolitical question of the AI era remained unanswered.
 - Military AI follows verifiable treaties (like chemical weapons)
 - The compute divide narrows through shared infrastructure
 
-**The most likely path by 2026:** Neither. The AI era was following the trajectory of every transformative technology before it — cooperation in areas of mutual interest, competition in areas of strategic advantage, and regulation moving too slowly to keep pace. The future was not predetermined. It would be shaped by decisions made in the next 24 months — in Washington, Beijing, Brussels, and everywhere in between. The choice, as always, belonged to the humans who made it.
+**The most likely path by 2026:** Neither. The AI era was following the trajectory of every transformative technology before it — cooperation in areas of mutual interest, competition in areas of strategic advantage, and regulation moving too slowly to keep pace.
+
+**The six geopolitical forces shaping AI in 2026:**
+
+| Force | Direction | Intensity | Key Uncertainty |
+|-------|-----------|-----------|-----------------|
+| US-China decoupling | Toward separation | High (escalating export controls) | Will efficiency breakthroughs circumvent hardware restrictions? |
+| EU regulatory gravity | Toward global standards (Brussels effect) | Medium (AI Act enforcement ramping) | Will enforcement match ambition? |
+| Global South compute divide | Widening | High (Africa has 0.2% of compute) | Can open-source + shared infrastructure close the gap? |
+| Military AI race | Accelerating (no treaty in sight) | High (UN LAWS talks stalled) | Will the first autonomous weapon attack trigger global backlash? |
+| Information warfare | Escalating (40%+ online content is AI-generated) | Very high | Can content provenance standards work at scale? |
+| Open-source geopolitical weaponization | Growing (used by both US and China) | Medium | Will open-source remain neutral commons or become politicized? |
+
+The future was not predetermined. It would be shaped by decisions made in the next 24 months — in Washington, Beijing, Brussels, and everywhere in between. The choice, as always, belonged to the humans who made it.

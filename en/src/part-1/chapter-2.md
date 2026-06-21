@@ -20,6 +20,16 @@ The radical bet: throw away recurrence. No RNNs. No LSTMs. Only attention.
 
 The paper was presented at NeurIPS 2017 and initially received with polite interest, not revolution. Few realized that this single architectural change — attention without recurrence — would unlock everything that followed.
 
+**The transformer's three key innovations:**
+
+| Innovation | What It Replaced | What It Enabled | Impact |
+|------------|-----------------|-----------------|--------|
+| Self-attention | Recurrent connections (RNN/LSTM) | Direct token-to-token access at any distance; parallelized training | Training time: weeks → hours; long-range dependencies solved |
+| Positional encoding | Sequential step-by-step processing | Model knows token order without recurrence | Enables full parallelization during training |
+| Multi-head attention | Single attention mechanism | Model learns multiple relationship types simultaneously | Richer representation; different heads specialize in syntax, semantics, coreference |
+
+Together, these three innovations eliminated the sequential bottleneck that had constrained neural networks for decades. The architecture was simpler, faster, and more scalable than anything that came before it.
+
 ## 2.3 The Road to Emergence: A Timeline of Surprises
 
 The transformer did not arrive fully formed. It was a series of discoveries, each more surprising than the last:
@@ -35,6 +45,19 @@ The transformer did not arrive fully formed. It was a series of discoveries, eac
 **Chinchilla (March 2022):** DeepMind made a counterintuitive discovery: for a given compute budget, most models were undertrained. The optimal strategy was to train a smaller model on *far more data*. Chinchilla (70B parameters, 1.4 trillion tokens) outperformed GPT-3 (175B parameters, 300 billion tokens). The scaling race suddenly had a new rulebook.
 
 **GPT-4 (March 2023):** Multimodal, more reliable, dramatically better at reasoning. OpenAI revealed few technical details but confirmed it used an MoE architecture. Eliezer Yudkowsky, after testing it, remarked: "This is strange and worrying... it's not yet smarter than a human, but it's smarter than most humans on most tasks."
+
+**The model evolution at a glance:**
+
+| Model | Date | Parameters | Key Discovery | Surprise Level |
+|-------|------|-----------|---------------|----------------|
+| GPT-1 | Jun 2018 | 117M | Generative pre-training + fine-tuning works | Low (modest results) |
+| BERT | Oct 2018 | 340M | Bidirectional masking improves understanding | Low (expected improvement) |
+| GPT-2 | Feb 2019 | 1.5B | Scaling produces coherence; withheld for safety | Medium (unexpected caution) |
+| GPT-3 | May 2020 | 175B | In-context learning emerges from scale | High (nobody predicted it) |
+| Chinchilla | Mar 2022 | 70B | Most models undertrained; data > parameters | High (rewrote scaling rules) |
+| GPT-4 | Mar 2023 | ~1.8T (MoE) | Multimodal reasoning at human-expert level | Medium (expected capability, impressive execution) |
+
+The pattern is clear: each major model revealed a surprise that the previous generation could not have predicted. The surprises are not bugs — they are the signature of genuine emergence.
 
 ## 2.4 Scaling Laws: The North Star
 
@@ -69,3 +92,15 @@ Transformers are no longer the only game, but every challenger measures itself a
 - **DeepSeek's MoE (2024–2025):** mixture-of-experts architecture where only a fraction of parameters activate per token, enabling massive effective scale at lower cost. DeepSeek-V3 (671B total, 37B active) and DeepSeek-R1 showed that open-source models could match frontier performance through architectural cleverness.
 
 The transformer's dominance is no longer unchallenged, but its core insight — attention-based architectures that scale predictably with data and compute — remains the foundation of the current AI era. Whatever comes next will be measured against the revolution that eight researchers sparked on a whiteboard at Google in 2017.
+
+**Architecture comparison at a glance:**
+
+| Architecture | Inference Complexity | Training Parallelization | Long-Context Strength | Current Status |
+|-------------|---------------------|------------------------|----------------------|----------------|
+| RNN/LSTM | O(n) sequential | Impossible | Weak (gradient decay) | Legacy |
+| Transformer | O(n²) | Full | Strong (any-to-any attention) | Dominant |
+| Mamba (SSM) | O(n) linear | Partial via scan | Strong (linear memory) | Emerging challenger |
+| RWKV | O(n) linear | Partial | Moderate | Niche |
+| MoE variants | O(n²) active, sparse total | Full (with load balancing) | Strong | Industry standard for frontier models |
+
+The transformer won because it solved the parallelism bottleneck at the cost of quadratic attention. The post-transformer architectures aim to keep the parallelism while reducing the quadratic cost. Whoever solves this equation — linear complexity with full parallelization — will build the next foundation.

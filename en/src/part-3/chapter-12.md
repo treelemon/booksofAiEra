@@ -74,11 +74,14 @@ The AI Incident Database (AIAAIC) tracked a grim parade of failures:
 
 Every safety advance triggered a counter-advance. The jailbreak arms race was accelerating:
 
-**Classic jailbreaks (2023):** "DAN" (Do Anything Now), "Grandma exploit" (asking the model to pretend to be a grandmother telling bedtime stories that contained instructions for making napalm). These were easily patched.
+**The jailbreak evolution:**
 
-**Advanced jailbreaks (2024):** "Many-shot jailbreaking" (Anthropic's discovery — flooding the context window with fictional conversations that gradually lowered refusal thresholds). "Token smuggling" (encoding malicious instructions as subtoken sequences that bypassed safety filters).
-
-**Automated jailbreak generation (2025):** Researchers at Carnegie Mellon demonstrated that jailbreaks could be generated automatically using adversarial search — discovering millions of attack vectors that human testers would never find. The paper was controversial: publishing the method gave attackers a playbook. But the authors argued that transparency was necessary for defense.
+| Era | Jailbreak Type | Method | Impact | Defense |
+|-----|---------------|--------|--------|---------|
+| 2023 | Manual prompting | "DAN," "Grandma exploit" — human-crafted role-play prompts | Broad but shallow; easily recognized | Simple keyword filtering, RLHF |
+| 2024 | Context manipulation | Many-shot jailbreaking (flood context with fictional lowering), token smuggling | More sophisticated; bypassed simple filters | Anomaly detection on context patterns |
+| 2025 | Automated discovery | Adversarial search (CMU) — algorithmically generates millions of attack vectors | Systematic and comprehensive; finds vectors humans cannot | Adversarial training, continuous red-teaming |
+| 2026 | Multi-step agentic | Autonomous agents chain jailbreaks across tools, context windows, and API calls | Hardest to detect; exploits system-level vulnerabilities | Behavioral monitoring, capability gating |
 
 **The paradox:** Each jailbreak fixed increased the *evaluated* safety of the model, but the arms race meant that absolute safety was never achieved. A model could pass every known safety test and still be vulnerable to an attack that would be discovered the next day.
 
@@ -209,6 +212,20 @@ The final dimension of the responsibility gap was societal: **how prepared was t
 The capability-safety gap was real, measurable, and growing. The ratio of builders to safety researchers was 200:1. The number of AI incidents was doubling every 18 months. The regulatory response was fragmented and slow. The interpretability frontier was promising but years away from frontier-scale models. The model collapse problem threatened the sustainability of future training. The public was unprepared for the scale of change underway.
 
 And yet — AI capability continued to advance at a breathtaking pace. Each generation of models was more capable, more useful, and more integrated into daily life. The technology was too valuable to stop, too powerful to ignore, and perhaps too dangerous to deploy without adequate safeguards.
+
+The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.
+
+**The responsible AI scorecard (2026):**
+
+| Dimension | Current State | Target | Gap | Trend |
+|-----------|--------------|--------|-----|-------|
+| Safety research ratio (safety:capability) | 1:200 | 1:10 | 20× underinvested | Worsening |
+| Incident reporting | ~500/year tracked | Real-time, mandatory | Voluntary, inconsistent | Growing |
+| Interpretability (frontier-scale) | 7B models mapped; 1T+ models opaque | Full circuit-level understanding | 5-10 years behind | Improving slowly |
+| Red-teaming automation | Standard for known attacks; unknown attacks undetected | Continuous automated discovery | Arms race dynamic | Keeping pace |
+| Regulatory coverage | EU binding; US patchwork; China content-focused | Binding international framework | Fragmented, no enforcement | EU leading, others lagging |
+| Public AI literacy | 38% detect deepfakes; 22% understand hallucinations | 90%+ basic literacy | Massive education gap | Slight improvement |
+| Professional ethics code | Multiple voluntary pledges; no universal standard | Binding code for AI developers | Gap in professional identity | Emerging but contested |
 
 The gap was not a failure of technology. It was a failure of collective action — a choice, made every day, to prioritize capability over safety. The question was not whether the gap would close. The question was what would close it: responsible governance, a transformative safety breakthrough — or a catastrophic incident that made the choice for us.
 

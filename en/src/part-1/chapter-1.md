@@ -122,13 +122,25 @@ We are still in the early days of this wave.
 
 Three waves, each built on the last:
 
-| Wave | Core Idea | Peak | Failure Mode |
-|------|-----------|------|-------------|
-| Symbolic AI | Hand-coded rules | Expert systems (1980s) | Brittleness — rules don't scale |
-| Statistical ML | Learned patterns from data | Deep learning (2010s) | Narrowness — each model solves one task |
-| Foundation Models | Large-scale pre-training | GPT-4 + reasoning (2024–2025) | Truthfulness, alignment, control |
+| Wave | Core Idea | Time Span | Key Enabler | Peak | Limitation | Legacy |
+|------|-----------|-----------|-------------|------|------------|--------|
+| Symbolic AI | Hand-coded rules | 1956–2010 | Logic, expert knowledge | Expert systems (1980s) | Brittleness — rules don't scale | Proved AI was possible; established reasoning as a goal |
+| Statistical ML | Learned patterns from data | 2010–2020 | Internet data, GPUs, backprop | Deep learning (2010s) | Narrowness — each model solves one task | Proved learning worked better than programming |
+| Foundation Models | Large-scale pre-training | 2020–Present | Transformer, scaling laws | GPT-4 + reasoning (2024–2025) | Truthfulness, alignment, control | Proved that scale + data + compute produces emergence |
 
 The pendulum swung from **rules** to **statistics** to **scale**. Each wave seemed insurmountable in its moment, then collapsed into the seed of the next.
+
+**The wave framework for professional analysis:**
+
+```
+For any AI technology, ask:
+  1. Which wave does it belong to? (symbolic, statistical, or foundation?)
+  2. What is its core mechanism? (rules, patterns, or scale?)
+  3. What is its current limitation? (brittleness, narrowness, or alignment?)
+  4. What would the next wave need to overcome this limitation?
+```
+
+This framework is not historical trivia. It is a practical tool for evaluating any new AI claim: identify which wave it belongs to, check whether the limitation of that wave has been solved, and assess whether the claim is real progress or a re-labeling of old ideas.
 
 **What this history teaches us:**
 - Every apparent limitation of today's AI is a future breakthrough waiting to happen

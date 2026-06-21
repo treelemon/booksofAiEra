@@ -45,6 +45,18 @@ The open-source ecosystem had matured into distinct tiers by 2026:
 **The Small but Mighty:**
 - **Phi-4 (Microsoft):** 14B parameters that punched far above its weight. Designed for edge deployment — running on laptops and phones.
 
+**The open-source tiers compared:**
+
+| Tier | Example | Parameters | Openness | Best For | Limitation |
+|------|---------|-----------|----------|----------|------------|
+| Open-weight leader | Llama 5 | 600B | Weights + license; no training data | General-purpose, commercial | Training data opaque |
+| Fully open | Olmo 3, Granite 4 | 70-180B | Weights + data + code + logs | Research, auditing, regulated industries | Smaller models, less capable |
+| Efficiency champion | DeepSeek V4 | 1.2T (37B active) | Weights + architecture paper; no data | Cost-sensitive applications | Proprietary data, geopolitical risk |
+| European sovereign | Mistral Large 3 | 250B | Open weights + commercial-friendly license | EU compliance, enterprise | Smaller ecosystem than LLaMA |
+| Edge-optimized | Phi-4 | 14B | Open weights + research paper | On-device deployment | Limited capability range |
+
+The key strategic insight: no single open-source model wins on all dimensions. The ecosystem advantage of LLaMA (largest community, most fine-tuned variants) made it the de facto open standard, but DeepSeek's efficiency advantage and Olmo's transparency advantage carved out defensible niches.
+
 ## 10.4 The Licenses War
 
 Behind the model performance was a subtler war: **what does "open-source" mean for AI?**
@@ -100,3 +112,18 @@ Closed-source dominated:
 The 2.7% gap in aggregate benchmarks was still real. But in practice, for most applications — coding, writing, analysis, customer service — open-source models were already good enough.
 
 **Yann LeCun** was right about one thing: open-source won. Not in the sense of defeating closed-source, but in the sense that AI had become like the internet — a technology that no single company could control, even the companies that made it.
+
+**The open vs. closed decision framework:**
+
+| Use Case | Recommended | Why |
+|----------|------------|-----|
+| Research, experimentation | Open-source | No API costs, full control, ability to inspect and modify |
+| Regulated industry (healthcare, finance, law) | Open-source (fully transparent) | Auditability, data sovereignty, compliance requirements |
+| Enterprise production (customer-facing) | Closed-source | Reliability guarantees, SLAs, indemnification |
+| Consumer product (API-based) | Closed-source | No infrastructure management, seamless scaling |
+| Edge deployment (phone, laptop) | Open-source (small, quantized) | Local processing, privacy, offline capability |
+| High-stakes safety applications | Closed-source (with public evaluations) | Recallable, auditable provenance |
+| Global South, resource-constrained | Open-source | Zero licensing cost, runs on available hardware |
+| Military, intelligence | Unresolved | Both sides have arguments; no consensus |
+
+The coexistence thesis is not a compromise — it is the reality. The question for any professional is not "open vs. closed?" but "which model, under which license, for which use case?" The answer changes every 6-12 months as both ecosystems advance.

@@ -42,6 +42,18 @@ Proteins were just the beginning. AI was rewriting the materials science playboo
 
 **The carbon capture breakthrough:** In 2025, MIT researchers used AI to screen 10 million potential materials for carbon capture. The top candidate, a porous covalent organic framework, absorbed CO2 at 3× the rate of current best-in-class materials. The AI had discovered it in three weeks. Traditional methods would have taken 15 years.
 
+**AI-for-discovery domains compared:**
+
+| Domain | Breakthrough Model | Year | What It Achieved | Human-Equivalent Time | Impact |
+|--------|-------------------|------|------------------|----------------------|--------|
+| Protein folding | AlphaFold 2/3 | 2020/2024 | Predict 200M+ protein structures; simulate molecular interactions | Decades → minutes | Transformed structural biology; 2M+ researchers using it |
+| Materials discovery | GNoME (DeepMind), MatterGen (Microsoft) | 2023/2024 | Predict 380K stable crystals; design materials with target properties | 800 years of discovery → months | Battery cathode with 27% higher energy density |
+| Algorithm discovery | AlphaEvolve (DeepMind) | 2025 | Generate novel algorithms for datacenter power, chip scheduling | Human engineers never considered the solution | 15% energy reduction, 12% throughput gain |
+| Mathematics | FunSearch, AlphaProof (DeepMind) | 2023/2024 | Solve cap set problem; earn IMO silver medal | Decades-stuck problem → solved | AI generates and verifies mathematical proofs |
+| Drug discovery | AlphaFold 3, INS018_055 | 2024 | Identify drug targets in 30 days (vs 5-10 years); AI-discovered drug in clinical trials | 5-10 years → 30 days | AI-discovered molecule entered human trials |
+
+The pattern: AI excels when the problem has a clear fitness function (fold this protein, maximize this crystal stability, minimize this energy), has accessible training data (known proteins, known materials, known algorithms), and can be verified in silico before physical validation.
+
 ## 9.5 The Automated Scientist
 
 In August 2024, Sakana AI (founded by **Llion Jones** — a coauthor of "Attention Is All You Need") published a paper that made the research community uncomfortable.
@@ -90,3 +102,15 @@ The trillion-dollar question: **Can AI discover something truly fundamental — 
 **Yann LeCun** is more cautious: "Discovery requires understanding. Current AI systems don't understand anything. They are powerful pattern matchers, not scientists."
 
 The trajectory favors Hassabis. Each year, AI discovery systems become more autonomous, more reliable, and more creative. The question is not *if* AI will make fundamental discoveries — it is *when*, and whether human science will be ready to accept them.
+
+**The AI discovery maturity model:**
+
+| Level | Description | Examples | Bottleneck |
+|-------|-------------|----------|------------|
+| L1: Assist | AI as tool for human scientists | AlphaFold predicting structures, LLMs for literature review | Human creativity |
+| L2: Suggest | AI proposes candidates; human evaluates | GNoME proposing materials, FunSearch proposing math constructions | Physical validation capacity |
+| L3: Optimize | AI iterates within defined search space | AlphaEvolve optimizing algorithms, AI Scientist writing papers | Problem definition |
+| L4: Discover | AI finds genuinely novel solutions without human guidance | None yet (approached but not achieved) | Scientific creativity, ground truth |
+| L5: Paradigm shift | AI discovers new laws of physics, new mathematical foundations | Speculative | Unknown — would require AI to challenge human conceptual frameworks |
+
+We are at L2-L3 across most domains. L4 is on the horizon. L5 remains the trillion-dollar question. The rate of progress suggests L4 will arrive within 5-7 years — and L5 within 15-20, or not at all.
