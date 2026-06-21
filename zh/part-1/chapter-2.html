@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-7ec4f9df.js";
+            window.path_to_searchindex_js = "../searchindex-97cf33ac.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-0d735100.js"></script>
@@ -181,42 +181,50 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="第二章transformer-革命"><a class="header" href="#第二章transformer-革命">第二章：Transformer 革命</a></h1>
-<h2 id="21-transformer-之前"><a class="header" href="#21-transformer-之前">2.1 Transformer 之前</a></h2>
-<p>在 2017 年之前，序列建模意味着 RNN、LSTM 和 GRU——逐个处理 token。这种方式速度慢、难以并行化，并且在长距离依赖上表现不佳。</p>
-<h2 id="22-注意力就是一切2017"><a class="header" href="#22-注意力就是一切2017">2.2 “注意力就是一切”（2017）</a></h2>
-<p>Vaswani 等人的论文提出了 Transformer 架构。核心创新：<strong>注意力机制</strong>让每个 token 可以直接“关注“所有其他 token，无论距离多远。</p>
-<p><strong>关键组件：</strong></p>
+<h2 id="21-循环之狱"><a class="header" href="#21-循环之狱">2.1 循环之狱</a></h2>
+<p>想象一下，你一次只能读一个词——而且必须按顺序把每个词都记在脑子里，不能回头重读。这就是 2017 年之前的世界。</p>
+<p>RNN、LSTM 和 GRU 逐个 token 地处理序列，用一个隐藏状态将所见一切压缩成固定大小的向量。对短句有效。但对长距离依赖——段落开头的代词指代的是三段之后的先行词时——信号衰减成了噪音。</p>
+<p>训练同样痛苦。RNN 的计算是串行的：你无法在时间步上并行。训练 GPT-1 的 1.17 亿参数 RNN 前身，一个语料库就要数周。到 2017 年，所有人都知道必须改变。</p>
+<p>然后，八位谷歌研究员发表了一篇改变世界的论文。</p>
+<h2 id="22-改变世界的八个人"><a class="header" href="#22-改变世界的八个人">2.2 改变世界的八个人</a></h2>
+<p>“Attention Is All You Need” 的作者名单读起来像创世神话：<strong>Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan N. Gomez、Łukasz Kaiser 和 Illia Polosukhin。</strong> 八个人，八个不同的背景，因一个共同的信念聚集在谷歌：顺序瓶颈完全可以消除。</p>
+<p>他们做了最激进的赌注：抛弃循环结构。不要 RNN。不要 LSTM。只要注意力。</p>
+<p><strong>自注意力机制</strong>让每个 token 可以直接关注所有其他 token，不管距离多远。位置 1 的单词关注位置 1000 的单词，计算成本和关注相邻单词一模一样。更重要的是，训练可以完全并行化——训练时间从数周降到了几小时。</p>
+<p>这篇论文在 2017 年 NeurIPS 大会上发表，起初收获的是礼貌的关注，而非革命。很少有人意识到，这个单一的架构变化——没有循环的注意力——将解锁此后的一切。</p>
+<h2 id="23-通向涌现之路意外的年表"><a class="header" href="#23-通向涌现之路意外的年表">2.3 通向涌现之路：意外的年表</a></h2>
+<p>Transformer 并非一蹴而就。它是一个接一个的惊喜：</p>
+<p><strong>GPT-1（2018 年 6 月，1.17 亿参数）：</strong> OpenAI 证明，仅解码器 Transformer 可以通过少量微调进行语言建模并迁移到下游任务。结果虽不大，但原理极具力量。</p>
+<p><strong>BERT（2018 年 10 月，3.4 亿参数）：</strong> 谷歌以双向编码器回击。通过遮罩单词并让模型预测它们，BERT 在 11 项 NLP 基准上达到了最高水平。编码器-解码器与仅解码器之争就此开始。</p>
+<p><strong>GPT-2（2019 年 2 月，15 亿参数）：</strong> OpenAI 开始放大。结果太流畅了，OpenAI 最初拒绝发布完整模型，理由是担心滥用。“GPT-2 争议“让全世界学会了关注规模。</p>
+<p><strong>GPT-3（2020 年 5 月，1750 亿参数 —— 是 GPT-2 的 100 倍）：</strong> 这是地震。1750 亿参数，在大约 570GB 文本上训练——GPT-3 能完成从未被显式训练过的任务：翻译、写代码、回答问题，只需在提示中给几个例子。这个现象被称为<strong>上下文学习</strong>，此前无人预测。伊利亚·苏茨克维后来承认团队自己也感到震惊。</p>
+<p><strong>Chinchilla（2022 年 3 月）：</strong> DeepMind 提出了反直觉的发现：在给定的算力预算下，大多数模型训练不足。最优策略是在<em>更多数据</em>上训练一个小得多的模型。Chinchilla（700 亿参数，1.4 万亿 token）超过了 GPT-3（1750 亿参数，3000 亿 token）。缩放竞赛突然有了新规则。</p>
+<p><strong>GPT-4（2023 年 3 月）：</strong> 多模态，更可靠，推理能力大幅提升。OpenAI 未透露技术细节，但确认使用了 MoE 架构。埃利泽·尤德科夫斯基在测试后评论：“这很奇怪且令人担忧……它还不比人类聪明，但在大多数任务上比大多数人更聪明。”</p>
+<h2 id="24-缩放定律北极星"><a class="header" href="#24-缩放定律北极星">2.4 缩放定律：北极星</a></h2>
+<p>让整个竞赛加速的实证发现来自 Kaplan 等人（2020）：模型性能与三个变量之间存在平滑的幂律关系：</p>
 <ul>
-<li><strong>自注意力：</strong> 每个 token 关注所有其他 token，按相关性加权</li>
-<li><strong>多头注意力：</strong> 并行处理多个注意力模式</li>
-<li><strong>位置编码：</strong> 为模型提供 token 顺序感（因为注意力是排列不变的）</li>
-<li><strong>编码器-解码器堆叠：</strong> 原始架构；现代 LLM 使用仅解码器架构</li>
+<li><strong>模型大小</strong>（参数量）：参数翻倍，损失可预测地降低</li>
+<li><strong>数据集大小</strong>（token 数）：数据量翻倍，损失可预测地降低</li>
+<li><strong>算力预算</strong>（FLOPs）：总预算决定了最佳权衡点</li>
 </ul>
-<h2 id="23-缩放定律"><a class="header" href="#23-缩放定律">2.3 缩放定律</a></h2>
-<p>Kaplan 等人（2020）和后来的 Chinchilla（2022）表明，模型性能与以下因素之间存在可预测的幂律关系：</p>
+<p>这是 AI 行业的北极星。它的含义是：向训练良好的 Transformer 投入更多算力将可预测地提升智能——无需任何架构突破。AI 从研究问题变成了工程缩放问题。</p>
+<p>经济含义令人炫目：如果你负担得起 1 亿美元的训训练成本，你就可以买到可预测的模型质量提升。缩放竞赛开始了。</p>
+<p>Chinchilla 在 2022 年修正了这幅图景：大多数模型在错误的区间上达到了计算最优。正确的公式是让数据增长快于参数增长。这直接催生了 LLaMA（Meta，2023）：在 1.4 万亿 token 上训练了一个 650 亿参数的模型——证明了并非只有最大的模型才能竞争。</p>
+<h2 id="25-编码器-解码器岔路与仅解码器的崛起"><a class="header" href="#25-编码器-解码器岔路与仅解码器的崛起">2.5 编码器-解码器岔路与仅解码器的崛起</a></h2>
+<p>Transformer 家族树中出现了一条分叉：</p>
 <ul>
-<li><strong>参数量</strong>（更大的模型）</li>
-<li><strong>数据量</strong>（更多 token）</li>
-<li><strong>算力预算</strong>（更多 FLOPs）</li>
+<li><strong>编码器-解码器（T5、BART）：</strong> 双向理解 + 生成式输出。擅长翻译和摘要。</li>
+<li><strong>仅解码器（GPT 系列、LLaMA、Claude、Gemini）：</strong> 单向，自回归。通用 AI 的主流。</li>
 </ul>
-<p>实际意义：向训练良好的 Transformer 投入更多算力可以预测性地提升性能。这一发现引发了缩放竞赛。</p>
-<h2 id="24-涌现能力"><a class="header" href="#24-涌现能力">2.4 涌现能力</a></h2>
-<p>在特定的规模阈值上，模型突然展现出它们并未被显式训练的能力：</p>
+<p>到 2024 年，仅解码器胜出。原因：语言生成本质上是自回归的，单一堆栈的简洁性扩展性更好。每一个前沿模型——GPT-4、Claude 3、Gemini、DeepSeek——都使用了带有微小变体的仅解码器 Transformer。</p>
+<h2 id="26-后-transformer-格局"><a class="header" href="#26-后-transformer-格局">2.6 后 Transformer 格局</a></h2>
+<p>Transformer 不再是唯一的选择，但每个挑战者都在与自己推翻的架构对标：</p>
 <ul>
-<li>上下文学习（GPT-3）</li>
-<li>思维链推理（PaLM、GPT-4）</li>
-<li>指令遵循（InstructGPT/ChatGPT）</li>
-<li>代码生成、翻译、工具使用</li>
+<li><strong>Mamba（2024）：</strong> 状态空间模型，线性时间推理。在长上下文任务上与 Transformer 相当，但内存使用减少 5 倍。</li>
+<li><strong>RWKV（2024）：</strong> 结合 Transformer 风格的注意力与 RNN 风格的线性时间推理。</li>
+<li><strong>混合架构（2025）：</strong> Jamba（AI21）、Samba（微软）等将 Transformer 层与 SSM 或 MoE 层结合，实现最佳性能。</li>
+<li><strong>DeepSeek 的 MoE（2024–2025）：</strong> 混合专家架构，每个 token 仅激活部分参数，以更低成本实现更大有效规模。DeepSeek-V3（671B 总参数，37B 激活参数）和 DeepSeek-R1 证明，开源模型可以通过架构创新达到前沿性能。</li>
 </ul>
-<p>并非所有人都认同涌现是真实存在的——有些人认为这是测量假象——但无论如何，更大的模型在<em>感觉上</em>确实有质的不同。</p>
-<h2 id="25-后-transformer-格局"><a class="header" href="#25-后-transformer-格局">2.5 后 Transformer 格局</a></h2>
-<p>Transformer 不再是唯一的选择：</p>
-<ul>
-<li><strong>Mamba、RWKV：</strong> 具有线性时间推理的状态空间模型</li>
-<li><strong>混合架构：</strong> Transformer 与 SSM 或 MoE 层结合</li>
-<li><strong>DeepSeek 的 MoE：</strong> 用于高效扩展的混合专家模型</li>
-</ul>
-<p>但核心洞见——基于注意力的架构随数据和算力扩展——仍然是后续一切的基础。</p>
+<p>Transformer 的主导地位不再无可争议，但其核心洞见——基于注意力的架构可随数据和算力可预测地扩展——仍然是当前 AI 时代的基础。未来无论出现什么，都将以 2017 年八位研究员在谷歌白板上的革命为标杆。</p>
 
                     </main>
 
