@@ -44,4 +44,5 @@
 | LangChain、CrewAI | 智能体框架 | [LangChain](https://www.langchain.com/) · [CrewAI](https://www.crewai.com/) |
 | Ollama | 本地模型运行 | [访问](https://ollama.ai/) |
 | Cursor、Copilot | AI 辅助编程 | [Cursor](https://cursor.sh/) · [Copilot](https://github.com/features/copilot) |
+| opencode | 终端中的 AI 驱动编程助手 | [访问](https://opencode.ai/) |
 | Weights & Biases | 实验跟踪 | [访问](https://wandb.ai/) |

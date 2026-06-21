@@ -44,4 +44,5 @@
 | LangChain, CrewAI | Agent frameworks | [LangChain](https://www.langchain.com/) · [CrewAI](https://www.crewai.com/) |
 | Ollama | Local model running | [Visit](https://ollama.ai/) |
 | Cursor, Copilot | AI-assisted coding | [Cursor](https://cursor.sh/) · [Copilot](https://github.com/features/copilot) |
+| opencode | AI-powered coding assistant in terminal | [Visit](https://opencode.ai/) |
 | Weights & Biases | Experiment tracking | [Visit](https://wandb.ai/) |
