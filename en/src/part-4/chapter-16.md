@@ -10,7 +10,7 @@ The backlash was immediate and ferocious. Allen had created the piece using **Mi
 
 The fair's rules said nothing about AI. After the controversy, they added a new category: "AI-assisted digital art." But the question Allen's win raised — *what is creativity when a machine can generate art?* — would never be settled by a rule change.
 
-This question sits at the heart of **Human Wisdom (人本智用)** — the principle that technology is an instrument, and humanity must remain the center. In creativity, this tenet faces its most emotional test.
+This question sits at the heart of **Human Wisdom (以人驭智)** — the principle that technology is an instrument, and humanity must remain the center. In creativity, this tenet faces its most emotional test.
 
 ## 16.2 The Generative Flood
 
@@ -145,6 +145,6 @@ The most successful creatives in 2026 were not pure technicians. They were **cur
 
 > *"The instrument does not make the musician. The brush does not make the painter. And the AI does not make the artist. Creativity has always been about what humans bring — their experience, their pain, their joy, their unique way of seeing. AI can generate. Only humans can create."* — **Refik Anadol**, 2026
 
-The battle for creativity was never about technology. It was always about **Human Wisdom (人本智用)** — the courage to use the most powerful instruments ever built, while never forgetting that the source of meaning has always been, and will always be, human.
+The battle for creativity was never about technology. It was always about **Human Wisdom (以人驭智)** — the courage to use the most powerful instruments ever built, while never forgetting that the source of meaning has always been, and will always be, human.
 
 **The final irony:** In 2026, the most valuable creative brands were not AI companies. They were human-centered platforms — Substack (where readers paid for specific writers), Patreon (where fans funded specific artists), and are.na (a carefully curated visual collection). These platforms grew exactly because AI content devalued generic creation. When anyone could generate anything, the only thing worth paying for was someone's *specific* voice — their unique perspective, their consistent taste, their irreplaceable humanity. The market did not collapse. It clarified.

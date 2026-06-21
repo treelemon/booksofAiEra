@@ -135,7 +135,7 @@ The difference between these two definitions is not technical. It is philosophic
 - **The instrumental view:** AGI is a tool — the most powerful tool ever built. What matters is what it can do, not what it is.
 - **The anthropomorphic view:** AGI is a mind — a new kind of intelligence that will share the planet with us. What matters is understanding what it is, not just what it does.
 
-**Human Wisdom (人本智用)** offers a third view: AGI is what we make of it. The technology does not have a predetermined trajectory. It is shaped by the choices we make — the values we encode, the laws we pass, the safety measures we insist on, and the questions we ask before we deploy. The path to AGI is not a technological inevitability. It is a human responsibility.
+**Human Wisdom (以人驭智)** offers a third view: AGI is what we make of it. The technology does not have a predetermined trajectory. It is shaped by the choices we make — the values we encode, the laws we pass, the safety measures we insist on, and the questions we ask before we deploy. The path to AGI is not a technological inevitability. It is a human responsibility.
 
 > *"The question is not whether machines can think. The question is whether humans can think clearly about machines."* — **Joseph Weizenbaum**, 1976
 

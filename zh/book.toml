@@ -3,7 +3,7 @@ authors = ["Your Name"]
 language = "zh"
 src = "src"
 title = "智能时代：AI 时代的人本智慧"
-description = "一本持续更新的 AI 时代实地指南——立足于「人本智用」：以人为本，智能为用。"
+description = "一本持续更新的 AI 时代实地指南——立足于「以人驭智」：以人为本，智能为用。"
 
 [build]
 build-dir = "book"

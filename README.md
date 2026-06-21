@@ -1,6 +1,6 @@
 # The Intelligence Age · 智能时代
 
-> **宗：Human Wisdom · 人本智用**
+> **宗：Human Wisdom · 以人驭智**
 > *Humanity at the center, intelligence as the instrument.*
 > *以人为本，智能为用。*
 
