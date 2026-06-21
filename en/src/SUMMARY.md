@@ -67,11 +67,11 @@
 - [Sundar Pichai (Google/Alphabet)](part-voices/voices/sundar-pichai.md)
 - [Aiden Gomez (Cohere)](part-voices/voices/aiden-gomez.md)
 
-[Conclusion](conclusion.md)
-
 # Appendices
 
 - [Key Benchmarks Explained](appendices/appendix-a.md)
 - [Timeline of Major AI Events (1956–2026)](appendices/appendix-b.md)
 - [Recommended Reading & Resources](appendices/appendix-c.md)
 - [Glossary of Key Terms](appendices/appendix-d.md)
+
+[Conclusion](conclusion.md)
