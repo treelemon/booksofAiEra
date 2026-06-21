@@ -252,7 +252,7 @@ A 2025 study of AI-assisted decision-making across 12 companies found:
 
 The systematic pipeline reduced errors by 72% at a cost of less than 4 minutes per decision. For high-stakes decisions — legal, medical, financial — that is the best ROI available.
 
-**以人驭智** is not a philosophy. It is this pipeline. Running it every time. Not because the AI is untrustworthy. Because the cost of one undetected error exceeds the cost of a thousand checks.
+**Human Wisdom** is not a philosophy. It is this pipeline. Running it every time. Not because the AI is untrustworthy. Because the cost of one undetected error exceeds the cost of a thousand checks.
 
 The pipeline is not heavy. It is a habit. And the habit is the toolkit.
 

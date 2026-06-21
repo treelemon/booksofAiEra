@@ -193,7 +193,7 @@ The specialist who evaluates models across multiple metrics, not a single number
 
 None of these can be automated. None can be delegated to AI. They are the human practices that make AI use responsible, effective, and trustworthy.
 
-**以人驭智** in practice means: the AI generates the output. The specialist evaluates it across the right metrics, tests its edge cases, monitors its degradation, calculates its economics, documents its behavior, and designs the escalation framework for when it fails.
+**Human Wisdom** in practice means: the AI generates the output. The specialist evaluates it across the right metrics, tests its edge cases, monitors its degradation, calculates its economics, documents its behavior, and designs the escalation framework for when it fails.
 
 The AI does the doing. The specialist does the thinking.
 

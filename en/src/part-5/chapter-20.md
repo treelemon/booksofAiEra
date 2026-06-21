@@ -193,4 +193,4 @@ The point was that a human being, imperfect and tired, chose to be present for a
 
 In a world where AI can generate anything, one thing cannot be generated: a human being, fully present, choosing to give their imperfect attention to another imperfect human being.
 
-**以人驭智** is not a philosophy. It is this moment. Knowing when to use the instrument, and when to set it aside. Knowing when to generate, and when to create. Knowing that the most powerful thing in the world is not a machine that can do everything — it is a human who chooses to do one thing, for one person, with nothing but their imperfect, irreplaceable self.
+**Human Wisdom** is not a philosophy. It is this moment. Knowing when to use the instrument, and when to set it aside. Knowing when to generate, and when to create. Knowing that the most powerful thing in the world is not a machine that can do everything — it is a human who chooses to do one thing, for one person, with nothing but their imperfect, irreplaceable self.
