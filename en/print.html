@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-7f52b2b5.js";
+            window.path_to_searchindex_js = "searchindex-cf056091.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-73d70b89.js"></script>
@@ -699,37 +699,59 @@
 <p>The unresolved question: <strong>Will true understanding require a body?</strong> The answer would determine whether AI remains a software technology — or becomes a robotics technology.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-9-ai-for-discovery"><a class="header" href="#chapter-9-ai-for-discovery">Chapter 9: AI for Discovery</a></h1>
-<h2 id="91-the-alphaevolve-moment"><a class="header" href="#91-the-alphaevolve-moment">9.1 The AlphaEvolve Moment</a></h2>
-<p>In 2025, Google DeepMind revealed AlphaEvolve — an LLM combined with evolutionary algorithms to generate novel algorithms for unsolved problems. It discovered:</p>
+<h2 id="91-the-nobel-prize-that-changed-science"><a class="header" href="#91-the-nobel-prize-that-changed-science">9.1 The Nobel Prize That Changed Science</a></h2>
+<p>In October 2024, the Royal Swedish Academy of Sciences announced the Nobel Prize in Chemistry. The winners: <strong>Demis Hassabis</strong> and <strong>John Jumper</strong> of Google DeepMind, alongside <strong>David Baker</strong> of the University of Washington.</p>
+<p>The prize was for protein folding — a problem that had haunted biology for 50 years. Proteins fold into three-dimensional shapes determined by their amino acid sequences. Get the shape, understand the function. For decades, determining a single protein structure cost hundreds of thousands of dollars and took years. By 2021, AlphaFold could predict the structure of any of the 200 million known proteins in minutes — for free.</p>
+<p>The Nobel was not just for a scientific breakthrough. It was the moment the world recognized that AI had become a tool for <em>discovery</em>, not just automation.</p>
+<h2 id="92-alphafold-the-story-behind-the-prize"><a class="header" href="#92-alphafold-the-story-behind-the-prize">9.2 AlphaFold: The Story Behind the Prize</a></h2>
+<p><strong>John Jumper</strong> was a 35-year-old PhD who had left a career in physics to work on protein folding at DeepMind. In 2018, the first version of AlphaFold placed first in the biennial CASP competition — but the predictions were not accurate enough for practical use. Jumper and his team went back to the drawing board, rethinking the architecture from scratch.</p>
+<p><strong>AlphaFold 2 (2020)</strong> was the result. It achieved atomic-level accuracy — the equivalent of solving a 50-year-old grand challenge. The team published the code, the weights, and a database of 350,000 predicted protein structures. By 2025, over 2 million researchers worldwide had used AlphaFold. The database had expanded to cover all 200+ million known proteins.</p>
+<p><strong>AlphaFold 3 (May 2024)</strong> went further: it could predict interactions between proteins, DNA, RNA, and small molecules — opening drug discovery. For the first time, a computational model could simulate the molecular dance that underlies all of biology.</p>
+<p>The impact was staggering. In 2023, researchers at the University of California used AlphaFold to identify a protein target for a new liver cancer drug — a process that traditionally took 5-10 years. They did it in 30 days.</p>
+<h2 id="93-alphaevolve-when-ai-becomes-the-inventor"><a class="header" href="#93-alphaevolve-when-ai-becomes-the-inventor">9.3 AlphaEvolve: When AI Becomes the Inventor</a></h2>
+<p>In 2025, DeepMind released <strong>AlphaEvolve</strong> — and the definition of “AI capability” shifted again.</p>
+<p>AlphaEvolve combined a large language model with evolutionary search to generate novel algorithms. The LLM proposed candidate algorithms; the evolutionary algorithm selected, mutated, and recombined the best ones; the cycle repeated. The result: algorithms for data center power management that reduced energy consumption by 15%, and TPU chip scheduling algorithms that improved throughput by 12%.</p>
+<p>These were not optimizations of existing approaches. They were <em>new algorithms</em> — approaches that human engineers had never considered. When the DeepMind team analyzed the discovered solutions, they found strategies that were counterintuitive but effective.</p>
+<p><strong>Max Jaderberg</strong>, who led the AlphaEvolve team, described the moment: “We gave the system a problem, and it came back with something we hadn’t thought of. Not a better version of our approach — a completely different approach.”</p>
+<p>Within weeks, the community had replicated and extended the work. <strong>Asankhaya Sharma</strong> released <strong>OpenEvolve</strong>, an open-source reproduction. Tokyo-based <strong>Sakana AI</strong> (founded by former Google researchers) released <strong>SinkaEvolve</strong>, adapting the approach for Japanese industrial problems. A US-China collaboration claimed improvements on AlphaEvolve’s mathematical solutions.</p>
+<p>The message was clear: AI could now invent. Not just retrieve or combine. <em>Invent</em>.</p>
+<h2 id="94-the-materials-revolution"><a class="header" href="#94-the-materials-revolution">9.4 The Materials Revolution</a></h2>
+<p>Proteins were just the beginning. AI was rewriting the materials science playbook.</p>
+<p><strong>GNoME (Graph Networks for Materials Exploration, 2023):</strong> DeepMind’s materials discovery model predicted 380,000 stable inorganic crystals — equivalent to 800 years of cumulative human discovery. The team synthesized 736 of the most promising candidates in a real lab and confirmed 41% were viable.</p>
+<p><strong>MatterGen (Microsoft, 2024):</strong> Microsoft’s generative model for materials design could propose new materials with specific properties — a certain conductivity, a specific bandgap, a target tensile strength. By 2026, MatterGen had discovered a new battery cathode material that increased energy density by 27%.</p>
+<p><strong>The carbon capture breakthrough:</strong> In 2025, MIT researchers used AI to screen 10 million potential materials for carbon capture. The top candidate, a porous covalent organic framework, absorbed CO2 at 3× the rate of current best-in-class materials. The AI had discovered it in three weeks. Traditional methods would have taken 15 years.</p>
+<h2 id="95-the-automated-scientist"><a class="header" href="#95-the-automated-scientist">9.5 The Automated Scientist</a></h2>
+<p>In August 2024, Sakana AI (founded by <strong>Llion Jones</strong> — a coauthor of “Attention Is All You Need”) published a paper that made the research community uncomfortable.</p>
+<p><strong>The AI Scientist</strong> was a fully automated research system. It generated a research idea, wrote the code, ran the experiments, produced the figures, and wrote a paper with citations. The system cost $15 per paper — about 10,000× cheaper than the average academic paper.</p>
+<p>The papers it produced were not Nobel-worthy. They were incremental improvements, minor findings — the kind that junior researchers and PhD students produce. But that was exactly the point. The AI Scientist was doing the <em>grunt work</em> of science.</p>
+<p>The reaction was polarized:</p>
 <ul>
-<li>More efficient data center power management</li>
-<li>Optimized TPU chip scheduling</li>
+<li><strong>Yoshua Bengio</strong> warned: “Science is a human endeavor. Automating the creative process could cheapen discovery.”</li>
+<li><strong>Andrew Ng</strong> replied: “Science has always been about building tools that accelerate understanding. The AI Scientist is just the latest tool.”</li>
+<li><strong>Llion Jones</strong> responded: “We’re not replacing scientists. We’re giving them a research assistant that works 24/7, costs nothing, and never sleeps.”</li>
 </ul>
-<p>This was the first demonstration of an LLM making a genuinely novel discovery.</p>
-<h2 id="92-the-ecosystem-grows"><a class="header" href="#92-the-ecosystem-grows">9.2 The Ecosystem Grows</a></h2>
-<p>Within weeks, the community replicated and extended AlphaEvolve:</p>
-<ul>
-<li><strong>OpenEvolve</strong> (Asankhaya Sharma): open-source reproduction</li>
-<li><strong>SinkaEvolve</strong> (Sakana AI): Japanese variant with different search strategies</li>
-<li><strong>AlphaResearch</strong> (US/China collaboration): claimed improvements on AlphaEvolve’s math solutions</li>
-</ul>
-<h2 id="93-domains-of-ai-discovery"><a class="header" href="#93-domains-of-ai-discovery">9.3 Domains of AI Discovery</a></h2>
-<ul>
-<li><strong>Biology:</strong> AlphaFold (protein folding), RFdiffusion (protein design), drug candidate discovery</li>
-<li><strong>Mathematics:</strong> conjectures, proofs, novel algorithms</li>
-<li><strong>Engineering:</strong> chip design, materials discovery, circuit optimization</li>
-<li><strong>Climate:</strong> carbon capture materials, battery chemistry, energy grid optimization</li>
-</ul>
-<h2 id="94-how-it-works"><a class="header" href="#94-how-it-works">9.4 How It Works</a></h2>
-<p>The general pattern:</p>
+<h2 id="96-mathematics-the-proof-machine"><a class="header" href="#96-mathematics-the-proof-machine">9.6 Mathematics: The Proof Machine</a></h2>
+<p>Mathematics proved to be a uniquely fertile ground for AI discovery.</p>
+<p><strong>FunSearch (DeepMind, 2023):</strong> An LLM combined with an automated evaluator discovered new solutions to the cap set problem — a combinatorial mathematics problem that had resisted progress for decades. The LLM proposed candidate mathematical constructions; the evaluator tested them; the best ones were fed back. The discovered construction was genuinely novel — no human mathematician had thought of it.</p>
+<p><strong>AlphaProof (DeepMind, 2024):</strong> A system that could generate and verify mathematical proofs. At the 2024 International Mathematical Olympiad, AlphaProof solved four out of six problems — earning a silver medal. It did not just solve the problems — it generated formal proofs that could be checked by a theorem prover.</p>
+<p><strong>The implication:</strong> Mathematics, long considered the most purely human intellectual activity, was no longer the exclusive domain of human creativity. AI was not just solving known problems — it was discovering new conjectures that no human had posed.</p>
+<h2 id="97-the-discovery-stack"><a class="header" href="#97-the-discovery-stack">9.7 The Discovery Stack</a></h2>
+<p>By 2026, the pattern for AI-driven scientific discovery had converged on a common workflow:</p>
 <ol>
-<li><strong>Generate</strong> candidate solutions (LLM proposes)</li>
-<li><strong>Evaluate</strong> against a ground-truth metric (simulation, formal verification)</li>
-<li><strong>Iterate</strong> — evolution or reinforcement learning over candidate space</li>
-<li><strong>Verify</strong> — human experts check the most promising candidates</li>
+<li><strong>Hypothesis generation</strong> — LLM proposes candidate solutions (molecules, algorithms, materials, mathematical constructions).</li>
+<li><strong>Simulation</strong> — The candidates are evaluated in silico (physics simulation, formal verification, protein folding prediction).</li>
+<li><strong>Evolution</strong> — An evolutionary algorithm or reinforcement learning loop iterates on the best candidates.</li>
+<li><strong>Physical validation</strong> — The most promising candidates are synthesized or tested in the real world (wet lab, prototype, deployment).</li>
+<li><strong>Human interpretation</strong> — Scientists analyze the AI’s discoveries, extract principles, and design the next round of hypotheses.</li>
 </ol>
-<h2 id="95-the-frontier"><a class="header" href="#95-the-frontier">9.5 The Frontier</a></h2>
-<p>The holy grail: AI autonomously discovers fundamental science — new physics, new mathematics, new biology. We are not there yet, but the trajectory is clear. 2026 will see significant acceleration in this area.</p>
+<p>The rate-limiting step had shifted. It used to be hypothesis generation — humans could only think of so many ideas. Now it was physical validation — there were only so many experiments a wet lab could run. The gap between <em>what AI could imagine</em> and <em>what science could test</em> was the new bottleneck.</p>
+<h2 id="98-the-frontier-autonomous-discovery"><a class="header" href="#98-the-frontier-autonomous-discovery">9.8 The Frontier: Autonomous Discovery</a></h2>
+<p>The holy grail is a fully autonomous discovery machine — an AI that poses hypotheses, designs experiments, runs them, interprets results, and revises its theories.</p>
+<p>We are not there yet. AlphaEvolve made a novel discovery — but within a well-defined search space. The AI Scientist produced papers — but on pre-selected problems. AlphaFold transformed biology — but protein structure prediction was a well-defined task.</p>
+<p>The trillion-dollar question: <strong>Can AI discover something truly fundamental — a new law of physics, a new mathematical foundation, a new principle of biology?</strong></p>
+<p><strong>Demis Hassabis</strong> believes the answer is yes: “We are at the beginning of the ‘Century of Biology’ and the ‘Century of AI’ simultaneously. The intersection is where the most important discoveries of the 21st century will come from.”</p>
+<p><strong>Yann LeCun</strong> is more cautious: “Discovery requires understanding. Current AI systems don’t understand anything. They are powerful pattern matchers, not scientists.”</p>
+<p>The trajectory favors Hassabis. Each year, AI discovery systems become more autonomous, more reliable, and more creative. The question is not <em>if</em> AI will make fundamental discoveries — it is <em>when</em>, and whether human science will be ready to accept them.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-10-open-source-vs-closed-source"><a class="header" href="#chapter-10-open-source-vs-closed-source">Chapter 10: Open-Source vs. Closed-Source</a></h1>
 <h2 id="101-the-two-camps"><a class="header" href="#101-the-two-camps">10.1 The Two Camps</a></h2>
