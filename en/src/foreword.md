@@ -2,7 +2,7 @@
 
 *Why this book exists, and why now.*
 
-I started tracking AI seriously in [year]. Back then, [personal anecdote about early encounter with AI]. What I didn't realize was that I was watching the early tremors of a tectonic shift.
+I started tracking AI seriously in 2022. Back then, GPT-3 had just demonstrated that scaling language models produced capabilities no one had predicted — and the field was still debating whether it was a breakthrough or a curiosity. What I didn't realize was that I was watching the early tremors of a tectonic shift.
 
 This book is anchored by a single conviction — **Human Wisdom**: humanity at the center, intelligence as the instrument.
 

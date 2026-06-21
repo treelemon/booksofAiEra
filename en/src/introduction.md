@@ -18,12 +18,13 @@ This is the "jagged frontier" — AI is simultaneously superhuman and subhuman, 
 
 This book is built on the conviction that **the most intelligent system is not AI alone, nor humanity alone — it is the two thinking together.** The chapters that follow are not just about understanding AI. They are about understanding yourself in relation to AI — your judgment, your values, your irreplaceable humanity.
 
-This book is organized in six parts:
+This book is organized in seven parts:
 1. **Foundations** — the technical and historical bedrock
 2. **The 2026 Landscape** — where we stand today
 3. **Key Trends** — the forces shaping tomorrow
 4. **Impacts** — how AI reshapes work, science, creativity, and society
 5. **The Frontier** — AGI, risk, and human identity
 6. **Becoming an AI Specialist** — how to develop rare, durable judgment
+7. **Voices of the AI Era** — profiles of the key figures shaping the AI revolution
 
 Let's begin.

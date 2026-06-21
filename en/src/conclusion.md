@@ -38,5 +38,5 @@ You already have what matters most — your judgment, your values, your lived ex
 
 *The Intelligence Age is a living document. Every chapter will be updated as the landscape shifts. The version you're reading reflects the state of AI as of mid-2026. The next update is already in progress.*
 
-*[Your Name]*
-*[Date]*
+*— The Author*
+*June 2026*
