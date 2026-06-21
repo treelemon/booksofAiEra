@@ -138,4 +138,14 @@ The final story of AI in medicine was a story of limits.
 
 **The empathy gap:** A 2025 study compared patient satisfaction between AI-only triage, AI-assisted human triage, and human-only triage. The highest satisfaction scores went to "human-only" — not because the diagnosis was better (AI-assisted was the most accurate), but because patients wanted a human to hear their story. The empathy gap was real and measurable.
 
-**The final verdict:** AI in medicine was not going to replace doctors. It was going to change what it meant to be a doctor — eliminating the parts the profession disliked (documentation, data entry, routine screening) and amplifying the parts that mattered most (diagnosis, treatment planning, patient relationship). The best doctors of 2026 were not competing with AI. They were collaborating with it.
+**The final verdict:** ## 14.13 The Economic Impact
+
+The financial implications of AI in medicine were as transformative as the clinical ones.
+
+**The cost-saving numbers:** A 2025 analysis by the Brookings Institution estimated that AI could reduce US healthcare spending by $200-400 billion per year — 8-12% of total spending. The largest savings came from administrative automation (documentation, coding, billing), diagnostic efficiency (fewer unnecessary tests, earlier detection), and personalized treatment (fewer adverse drug events, reduced hospital readmissions).
+
+**The investment wave:** Venture capital investment in AI healthcare startups reached $45 billion in 2025 — up from $12 billion in 2023. The biggest categories: AI diagnostics ($12B), AI drug discovery ($14B), and AI clinical workflow ($9B). The bets were large, and the expectations were higher.
+
+**The inequality risk:** The benefits of AI in medicine were not evenly distributed. The highest-income US hospitals deployed AI diagnostics first. The best AI drug discovery teams were hired by the largest pharmaceutical companies. The global south — with the greatest need — was last in line for every AI advance. The risk was not that AI would fail in medicine. It was that AI would succeed — and that success would widen the gap between rich and poor patients.
+
+AI in medicine was not going to replace doctors. It was going to change what it meant to be a doctor — eliminating the parts the profession disliked (documentation, data entry, routine screening) and amplifying the parts that mattered most (diagnosis, treatment planning, patient relationship). The best doctors of 2026 were not competing with AI. They were collaborating with it.
