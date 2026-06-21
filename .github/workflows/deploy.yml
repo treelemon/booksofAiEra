@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install mdBook
         run: |
@@ -21,7 +21,7 @@ jobs:
         run: mdbook build . -d book/en
 
       - name: Build Chinese version
-        run: mdbook build zh -d ../book/zh
+        run: mdbook build . -d ../book/zh
         working-directory: zh
 
       - name: Create root index.html
