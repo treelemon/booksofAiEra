@@ -1,7 +1,6 @@
 [book]
 authors = ["Your Name"]
 language = "zh"
-multilingual = false
 src = "src"
 title = "智能时代：AI 时代的人本智慧"
 description = "一本持续更新的 AI 时代实地指南——立足于「人本智用」：以人为本，智能为用。"
