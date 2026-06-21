@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-4cf576ad.js";
+            window.path_to_searchindex_js = "../searchindex-4e26e0dc.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-1d9df444.js"></script>
@@ -182,178 +182,170 @@
                     <main>
                         <h1 id="第十八章通往-agi-之路"><a class="header" href="#第十八章通往-agi-之路">第十八章：通往 AGI 之路</a></h1>
 <h2 id="181-agi-定义矩阵"><a class="header" href="#181-agi-定义矩阵">18.1 AGI 定义矩阵</a></h2>
-<p>在关于 AGI <em>何时</em>到达的辩论之前，有一个更根本的问题：<em>什么</em>算作 AGI？该领域没有共识定义——而你所选的定义决定了你的时间线、风险评估和部署策略。</p>
+<p>2024 年 12 月，François Chollet 发了一个基准分数的截图。他的 ARC-AGI 基准——旨在衡量 AI 系统通用智能——多年来人类基线为 85%。最好的 AI 得了 30%。然后 o3 得了 87.5%。推文病毒式传播。“AGI 已经实现了，“一些人宣称。“不，还没有，“其他人回应。“基准饱和了。”</p>
+<p>双方都是对的——根据他们自己的定义。</p>
+<p>在关于 AGI <em>何时</em>到来之前，有一个更根本的问题：<em>什么</em>算 AGI？该领域没有共识定义——而你所选的定义决定了你的时间线、风险评估和部署策略。</p>
 <p><strong>专业 AGI 定义分类：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>定义类型</th><th>定义</th><th>隐含时间线</th><th>风险画像</th><th>支持者</th></tr>
+<tr><th>定义类型</th><th>定义</th><th>暗示时间线</th><th>风险概况</th><th>倡导者</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>经济定义</strong></td><td>能以人类水平执行任何有经济价值工作的 AI</td><td>已部分实现（有人认为 GPT-4 在窄领域已通过）</td><td>部署风险（匆忙部署而无安全措施）</td><td>Sam Altman、科技高管</td></tr>
-<tr><td><strong>认知定义</strong></td><td>在所有认知任务上匹配或超越人类表现的 AI——推理、规划、学习、适应</td><td>5-15 年</td><td>对齐风险（能力超越安全）</td><td>AI 研究者、安全研究者</td></tr>
-<tr><td><strong>通用性定义</strong></td><td>能从头学习任何新任务，无需预训练、微调和特殊架构的 AI</td><td>15-30+ 年</td><td>稳健性风险（在不熟悉环境中脆弱）</td><td>认知科学家、François Chollet</td></tr>
-<tr><td><strong>递归自我改进</strong></td><td>能改进自身架构和训练的 AI——触发“硬起飞“</td><td>在任何定义满足后的 3-8 年</td><td>存在性风险（不可审计的加速）</td><td>Eliezer Yudkowsky、安全社区</td></tr>
-<tr><td><strong>操作性定义</strong></td><td>“你最后需要构建的工具”（Sriram Krishnan）——一旦 AI 能设计更好的 AI</td><td>取决于其他定义</td><td>失控风险</td><td>硅谷投资者</td></tr>
+<tr><td><strong>经济型</strong></td><td>任何经济上有价值的工作达到或超过人类水平</td><td>已部分实现</td><td>部署风险（急于部署而忽视安全）</td><td>Sam Altman、科技高管</td></tr>
+<tr><td><strong>认知型</strong></td><td>在所有认知任务上匹配或超过人类表现</td><td>5-15 年</td><td>对齐风险（能力超出安全）</td><td>AI 研究员、安全研究员</td></tr>
+<tr><td><strong>通用型</strong></td><td>无需预训练即可从头学习任何新任务</td><td>15-30+ 年</td><td>鲁棒性风险（在不熟悉环境中脆弱）</td><td>François Chollet、认知科学家</td></tr>
+<tr><td><strong>递归自我改进</strong></td><td>AI 改进自身架构和训练</td><td>满足任何定义后 3-8 年</td><td>存在风险（不可审计的加速）</td><td>Eliezer Yudkowsky、安全社区</td></tr>
+<tr><td><strong>操作型</strong></td><td>“你永远需要构建的最后一个工具”</td><td>取决于其他定义</td><td>失控风险</td><td>硅谷投资者</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>选择标准：</strong> 没有单一定义是正确的。专业方法是分别跟踪所有五个定义。当有人说“AGI 还有 N 年时“，第一个问题应该是：“你用的是哪个定义？“一个通过经济定义的模型可能仍距通用性定义数十年。将它们混为一谈会产生规划和风险评估中的系统性错误。</p>
+<p>没有单一定义是正确的。专业方法是分别追踪所有五种定义。当有人说“AGI 还有 N 年“时，第一个问题应该是：你用的是哪个定义？通过经济定义的模型可能距离通用定义还有数十年。</p>
 <h2 id="182-能力评估框架"><a class="header" href="#182-能力评估框架">18.2 能力评估框架</a></h2>
-<p>为了评估 AGI 进展而不依赖模糊印象，专业人士使用跨标准化维度的结构化能力评估。</p>
-<p><strong>AGI 能力记分卡：</strong></p>
+<p>2023 年，GPT-4 在律师资格考试中位列第 90 百分位。2024 年，o3 以 87.4% 通过了 GPQA Diamond——一个博士级科学测试——超过了人类专家。2025 年，推理模型在 AIME 数学竞赛中匹配了顶级参赛者。</p>
+<p>每一个里程碑都引发了一波“AGI 来了“的宣布。每一个都随后展示了失败：一个简单的推理问题模型无法解决、一个基本信息它答错、一个逻辑矛盾它未注意到。</p>
+<p>这个模式揭示了一个关于能力评估的真相：基准显示 AI <em>能</em>做什么，而非它<em>理解</em>什么。</p>
+<p><strong>AGI 能力评分卡（2026）：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>能力</th><th>当前状态（2026）</th><th>测量方法</th><th>AGI 阈值</th><th>差距</th></tr>
+<tr><th>能力</th><th>当前状态</th><th>AGI 阈值</th><th>差距</th></tr>
 </thead>
 <tbody>
-<tr><td>数学推理</td><td>o3: 83% AIME，o1: 12% 基线</td><td>AIME、MATH、GSM8K</td><td>90%+（人类专家）</td><td>最难基准差 7 点</td></tr>
-<tr><td>科学推理</td><td>o3: 87.4% GPQA Diamond</td><td>GPQA、MMLU-Pro</td><td>80%+（博士级）</td><td>已通过（o3 超过专家）</td></tr>
-<tr><td>通用智能</td><td>o3: 87.5% ARC-AGI</td><td>ARC-AGI、ConceptARC</td><td>85%+（人类上限）</td><td>已通过（需要新版更难测试）</td></tr>
-<tr><td>代码生成</td><td>模型解决 SWE-bench 验证集的 25-50%</td><td>SWE-bench、HumanEval、Codeforces</td><td>80%+（高级工程师）</td><td>30-55 点差距</td></tr>
-<tr><td>视觉理解</td><td>GPT-4o: 87% MMMU，某些领域接近专家</td><td>MMMU、VQAv2、ChartQA</td><td>90%+（专家级）</td><td>3-10 点差距</td></tr>
-<tr><td>长上下文推理</td><td>Gemini: 100 万+ token，10 万 needle-in-haystack &gt;95%</td><td>RULER、Needle-in-haystack、LV-Eval</td><td>99.9%（100 万+ token）</td><td>小但显著</td></tr>
-<tr><td>规划与执行</td><td>智能体在 OSWorld 上达 12-40%</td><td>OSWorld、WebArena、AgentBench</td><td>80%+（人类办公室职员）</td><td>40-68 点差距</td></tr>
-<tr><td>持续学习</td><td>无模型能从头学习；需要微调</td><td>METAL、few-shot 评估</td><td>以人类水平从 0 示例学习新任务</td><td>根本性差距</td></tr>
-<tr><td>元认知</td><td>GPT-4/o 系列能阐述推理过程、识别差距</td><td>自我评估准确率、校准</td><td>准确自我评估能力边界</td><td>部分完成（o 系列在改善）</td></tr>
-<tr><td>心智理论</td><td>模型通过基础 ToM 测试，但结构新颖的测试失败</td><td>ToM 基准、对抗性社会推理</td><td>人类级社会推理</td><td>显著差距</td></tr>
+<tr><td><strong>数学推理</strong></td><td>o3：83% AIME</td><td>90%+（人类专家）</td><td>7 分</td></tr>
+<tr><td><strong>科学推理</strong></td><td>o3：87.4% GPQA Diamond</td><td>80%+（博士级）</td><td>已通过</td></tr>
+<tr><td><strong>通用智能</strong></td><td>o3：87.5% ARC-AGI</td><td>85%+（人类上限）</td><td>已通过（需新基准）</td></tr>
+<tr><td><strong>代码生成</strong></td><td>SWE-bench 25-50%</td><td>80%+（资深工程师）</td><td>30-55 分差距</td></tr>
+<tr><td><strong>视觉理解</strong></td><td>GPT-4o：87% MMMU</td><td>90%+（专家级）</td><td>3-10 分</td></tr>
+<tr><td><strong>长上下文推理</strong></td><td>10 万 token 95%+</td><td>100 万 token 99.9%+</td><td>显著差距</td></tr>
+<tr><td><strong>规划与执行</strong></td><td>OSWorld 12-40%</td><td>80%+</td><td>40-68 分差距</td></tr>
+<tr><td><strong>持续学习</strong></td><td>需要微调</td><td>0 样本学习</td><td>根本性差距</td></tr>
+<tr><td><strong>元认知</strong></td><td>部分自我评估</td><td>准确自我评估</td><td>改善中</td></tr>
+<tr><td><strong>心智理论</strong></td><td>通过基本测试</td><td>人类级社会推理</td><td>显著差距</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>评分方法：</strong> 每项能力在 0-100 量表上归一化到人类专家表现。AGI 准备就绪总分（所有维度的加权平均）提供汇总指标。截至 2026 年，所有维度的总分约为 45-55/100——表明取得了实质性进展，但距离全面 AGI 仍有显著距离。</p>
-<p><strong>天花板效应：</strong> 基准测试的寿命有限。GPT-4 发布时，在大多数 NLP 基准上得分在 90 百分位。18 个月内，开源模型就匹配了它。模式重复：基准饱和并不意味着 AGI 临近——意味着基准不再具有区分度。专业评估者不仅跟踪基准是否被通过，还跟踪<em>新的</em>基准是否揭示结构性弱点。</p>
-<h2 id="183-扩展评估方法论"><a class="header" href="#183-扩展评估方法论">18.3 扩展评估方法论</a></h2>
-<p>扩展假说——增加算力、数据和参数能产生 AGI——一直是该领域的主导框架。2024-2025 年，它面临了最严格的测试。</p>
-<p><strong>扩展评估框架：</strong></p>
+<p>所有维度的 AGI 就绪总分约为 45-55/100。天花板效应意味着即使真正的能力差距仍然存在，基准分数也会趋于平稳。专业评估人员不仅关注基准是否通过，还关注新基准是否揭示了结构性弱点——它们总是会的。</p>
+<h2 id="183-规模扩展评估"><a class="header" href="#183-规模扩展评估">18.3 规模扩展评估</a></h2>
+<p>规模扩展假说——增加算力、数据和参数就能产生 AGI——一直是该领域的主导框架。2024 年 12 月，它面临了最严格的测试。DeepSeek 发布了 V3：训练成本 560 万美元，性能匹配 GPT-4。GPT-4 的训练成本估计为 2 亿美元。DeepSeek 以 1/35 的成本实现了同等性能。</p>
+<p>“我不知道规模扩展是否通向 AGI，“一位研究人员说。“但我知道探索的成本正在迅速下降——这意味着更多人会去尝试。”</p>
+<p><strong>规模扩展评估框架：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>变量</th><th>GPT 系列（2018-2023）</th><th>后奇奇利亚（2024-2025）</th><th>DeepSeek 颠覆（2024 年 12 月）</th></tr>
+<tr><th>变量</th><th>GPT 系列（2018-2023）</th><th>DeepSeek（2024.12）</th></tr>
 </thead>
 <tbody>
-<tr><td>参数</td><td>1.17 亿 → 1.8 万亿（15,000×）</td><td>聚焦数据而非参数</td><td>2.3 万亿（专家集成，非稠密）</td></tr>
-<tr><td>训练算力</td><td>0.5 petaflop-days → ~25,000 petaflop-days</td><td>针对效率优化</td><td>2,788 petaflop-days（1/10 的 GPT-4）</td></tr>
-<tr><td>训练成本</td><td>~$4.6M（GPT-3）→ ~$200M（GPT-4 估）</td><td>~$100M（Claude 3 Opus）</td><td>$5.6M（V3）、$6.8M（V4）</td></tr>
-<tr><td>数据规模</td><td>WebText → 整个互联网</td><td>精选更小数据集</td><td>14.8T token（专业化）</td></tr>
-<tr><td>性能翻倍</td><td>每 2-3 年（GPT 代际）</td><td>每 12 个月（Claude Opus、Gemini）</td><td>以 97% 更少成本匹配</td></tr>
+<tr><td>参数</td><td>1.17 亿→1.8 万亿（15,000×）</td><td>2.3 万亿（专家集成）</td></tr>
+<tr><td>训练成本</td><td>~460 万（GPT-3）→~2 亿美元（GPT-4）</td><td>560 万美元</td></tr>
+<tr><td>性能</td><td>每代基准领先</td><td>成本低 97% 实现同等性能</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>三个观察：</strong></p>
-<p><strong>1. 扩展曲线并不平滑。</strong> 算力与能力之间的关系显示出清晰的阶跃函数。从 GPT-3 到 GPT-4 的跃升是巨大的（~20× 算力）。从 GPT-4 到 GPT-4o 的跃升适中（&lt;2× 算力），但推理方面的跃升（GPT-4o → o1）来自算法创新，而非规模。这表明曲线的形状既由原始算力决定，也同样由算法突破决定。</p>
-<p><strong>2. 效率提升是真实的。</strong> DeepSeek 的成就不是构建了一个与 GPT-4 能力相当的模型。是在 1/20 的成本下构建了一个。这种效率有一个反直觉的含义：如果智能可以用更少的资源实现，那么<em>更多</em>参与者可以构建有能力的系统，而不是更少。AGI 相关能力的算力阈值正在下降，而不是上升——这同时增加了部署风险，尽管它民主化了访问。</p>
-<p><strong>3. 边际回报存在争议。</strong> 从 GPT-1 到 GPT-4，训练算力增加 25,000 倍产生了巨大的收益。再增加 100 倍将花费 200 亿+美元。关键未知是，下一个 10 倍算力能否产生另一个变革性飞跃——还是收益递减。DeepSeek 的反例表明算法收益可能超越扩展收益。</p>
-<p><strong>评估扩展主张的方法：</strong> 当一个实验室声称“更多规模 = 更多 AGI“时，根据三个标准评估：(a) 最后算力增量的<em>边际收益</em>（而非总量），(b) 收益来自架构还是规模，(c) 能力是否从基准泛化到失败成本高的真实世界任务。</p>
-<h2 id="184-推理突破评估"><a class="header" href="#184-推理突破评估">18.4 推理突破评估</a></h2>
-<p>从“预测下一个 token“到“先思考再回答“的转变是自 transformer 以来最重要的算法进步。结构化评估揭示了它实现了什么——以及它的局限。</p>
-<p><strong>推理模型表现矩阵（2025-2026）：</strong></p>
+<ol>
+<li>
+<p><strong>规模扩展曲线不平滑。</strong> GPT-3 到 GPT-4 的跃升是戏剧性的（~20× 算力）。GPT-4 到 GPT-4o 的跃升是适度的（&lt;2×）。推理能力的跃升（GPT-4o→o1）来自算法创新，而非规模。</p>
+</li>
+<li>
+<p><strong>效率提升是真实且有后果的。</strong> DeepSeek 的成就意味着 AGI 相关能力的算力阈值在下降，而非上升。这既民主化了访问，也增加了部署风险。</p>
+</li>
+<li>
+<p><strong>边际收益存在争议。</strong> GPT-1 到 GPT-4 的 25,000× 增长带来了戏剧性收益。再增加 100× 需要 200 亿美元+。关键未知是下一个飞跃是又一次变革还是收益递减。</p>
+</li>
+</ol>
+<h2 id="184-推理突破"><a class="header" href="#184-推理突破">18.4 推理突破</a></h2>
+<p>2024 年 9 月。OpenAI 发布了 o1——不只是一个新模型，而是一个新范式。模型不再预测下一个 token，而是在回答前“思考“。它生成推理链，探索替代方案，并检查自己的工作。结果令人震惊：AIME 数学分数从 12% 跃升至 83%——一次发布中提升了 7 倍。</p>
+<p>“这不是渐进式改进，“Ilya Sutskever 早些时候曾说。“这是一个新能力。”</p>
+<p><strong>推理模型性能矩阵（2025-2026）：</strong></p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>基准</th><th>GPT-4o</th><th>o1</th><th>o3</th><th>DeepSeek R1</th><th>Gemini Thinking</th></tr>
 </thead>
 <tbody>
-<tr><td>AIME（数学竞赛）</td><td>12%</td><td>83%</td><td>94%</td><td>80%</td><td>82%</td></tr>
-<tr><td>GPQA Diamond（博士级科学）</td><td>56%</td><td>78%</td><td>87%</td><td>71%</td><td>75%</td></tr>
-<tr><td>ARC-AGI（通用智能）</td><td>30%</td><td>~50%</td><td>87.5%</td><td>~45%</td><td>~48%</td></tr>
-<tr><td>Codeforces（竞赛编程）</td><td>~10th 百分位</td><td>前 500</td><td>前 200</td><td>前 400</td><td>前 300</td></tr>
-<tr><td>MMLU-Pro（广博知识）</td><td>72%</td><td>80%</td><td>84%</td><td>78%</td><td>81%</td></tr>
-<tr><td>SWE-bench（真实编码任务）</td><td>~15%</td><td>~25%</td><td>~40%</td><td>~30%</td><td>~35%</td></tr>
+<tr><td>AIME（数学）</td><td>12%</td><td>83%</td><td>94%</td><td>80%</td><td>82%</td></tr>
+<tr><td>GPQA Diamond（博士科学）</td><td>56%</td><td>78%</td><td>87%</td><td>71%</td><td>75%</td></tr>
+<tr><td>ARC-AGI（通用）</td><td>30%</td><td>~50%</td><td>87.5%</td><td>~45%</td><td>~48%</td></tr>
+<tr><td>Codeforces（竞赛）</td><td>~10th pct</td><td>前 500</td><td>前 200</td><td>前 400</td><td>前 300</td></tr>
+<tr><td>SWE-bench（代码）</td><td>~15%</td><td>~25%</td><td>~40%</td><td>~30%</td><td>~35%</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>四个关键发现：</strong></p>
-<p><strong>1. 推理是可量化的。</strong> AIME 从 12% 到 83%（o1）的提升不是炒作——是在验证基准上 7 倍的改进。o3 的 ARC-AGI 87.5% 是此前最高水平的三倍。这些是真实的、可测量的收益。</p>
-<p><strong>2. 测试时算力权衡存在。</strong> o1 和 o3 需要比 GPT-4o 多 10-100 倍的推理算力才能达到最佳表现。o3 在最高推理设置下每次查询的成本可能超过 $10。这是一个真正的限制：模型不是免费地“思考得更好“；它想得更贵。专业评估必须权衡能力提升与推理成本。</p>
-<p><strong>3. 开源平权在 4 个月内实现。</strong> DeepSeek R1 在 2025 年 1 月匹配了 o1 的推理——仅在 2024 年 9 月 o1 发布后的 4 个月。这表明推理技术不是专有护城河，而是传播迅速的算法洞见。专业含义：不要构建依赖推理模型独家访问的产品；该能力将在一年内商品化。</p>
-<p><strong>4. “推理=理解“谬误。</strong> 思维链推理产生更好的答案。它不一定产生理解。一个在 GPQA 上得分 87% 的模型可以生成对博士级物理问题的正确答案，而不理解物理学——它学会了生成在正确答案训练数据中出现的 token 序列。专业验证方法论（第 22 章）应适用于每个推理模型输出，无论基准分数如何。</p>
-<h2 id="185-六条路径决策矩阵"><a class="header" href="#185-六条路径决策矩阵">18.5 六条路径决策矩阵</a></h2>
-<p>存在六种通往 AGI 的竞争性愿景。专业评估框架支持结构化比较。</p>
-<p><strong>路径评估标准：</strong></p>
+<ol>
+<li>
+<p><strong>推理是可量化的。</strong> AIME 从 12% 到 83% 的跃升不是炒作。这是真实、可测量的收益。</p>
+</li>
+<li>
+<p><strong>测试时计算的权衡存在。</strong> o3 在最该推理设置下每次查询可花费 $10+。模型并非免费“更好地思考“；它更昂贵地思考。</p>
+</li>
+<li>
+<p><strong>开源对等在 4 个月内实现。</strong> DeepSeek R1 在 2025 年 1 月匹配了 o1 的推理能力。推理技术不是专有护城河——它们迅速扩散。</p>
+</li>
+<li>
+<p><strong>“推理=理解“的谬误。</strong> 在 GPQA 上得分 87% 的模型可以生成博士级问题的正确答案而不理解物理学——它学会了生成训练数据中正确答案出现的 token 序列。专业验证方法适用于每个推理模型输出，无论基准分数如何。</p>
+</li>
+</ol>
+<h2 id="185-六路径决策矩阵"><a class="header" href="#185-六路径决策矩阵">18.5 六路径决策矩阵</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>标准</th><th>规模扩展</th><th>推理</th><th>智能体</th><th>新架构</th><th>具身</th><th>神经符号</th></tr>
 </thead>
 <tbody>
-<tr><td>证据强度</td><td>强（7 年数据）</td><td>强（18 个月数据）</td><td>中（智能体在受限域有效）</td><td>弱（新兴概念验证）</td><td>中（机器人进展）</td><td>弱（工作系统少）</td></tr>
-<tr><td>所需算力</td><td>很高（下一跳需 $100B+）</td><td>高（10-100× 推理成本）</td><td>中（较小模型 + 脚手架）</td><td>低（如找到高效架构）</td><td>高（真实世界硬件）</td><td>中（符号计算便宜）</td></tr>
-<tr><td>通往 AGI 的路径清晰度</td><td>轨迹清晰，终点不清晰</td><td>指标清晰，是否足够不确定</td><td>实际领域，通用性不确定</td><td>理论潜力，推测性</td><td>直觉吸引力，进展缓慢</td><td>概念优雅，结果有限</td></tr>
-<tr><td>安全影响</td><td>集中化（少数参与者）</td><td>集中化到分布化</td><td>分布化（许多智能体系统）</td><td>未知</td><td>中（具身=更慢）</td><td>有利（设计上可解释）</td></tr>
-<tr><td>主要支持者</td><td>Altman、Amodei</td><td>Sutskever、DeepSeek</td><td>Adept、Cognition</td><td>MIT、斯坦福、清华</td><td>LeCun、Malik</td><td>Tenenbaum、Marcus</td></tr>
-<tr><td>年份估计</td><td>2028-2032</td><td>2027-2030</td><td>2028-2035</td><td>2030-2040</td><td>2035-2050</td><td>2030-2045</td></tr>
+<tr><td><strong>证据强度</strong></td><td>强</td><td>强</td><td>中</td><td>弱</td><td>中</td><td>弱</td></tr>
+<tr><td><strong>所需算力</strong></td><td>极高</td><td>高</td><td>中</td><td>低</td><td>高</td><td>中</td></tr>
+<tr><td><strong>路径清晰度</strong></td><td>清楚轨迹</td><td>清楚指标</td><td>实用</td><td>理论</td><td>直觉</td><td>概念</td></tr>
+<tr><td><strong>安全性</strong></td><td>集中</td><td>集中→分布</td><td>分布</td><td>未知</td><td>中</td><td>有利</td></tr>
+<tr><td><strong>领先者</strong></td><td>Altman, Amodei</td><td>Sutskever, DeepSeek</td><td>Adept, Cognition</td><td>MIT, Stanford</td><td>LeCun, Malik</td><td>Tenenbaum, Marcus</td></tr>
+<tr><td><strong>年份估计</strong></td><td>2028-2032</td><td>2027-2030</td><td>2028-2035</td><td>2030-2040</td><td>2035-2050</td><td>2030-2045</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>整合洞见：</strong> 六条路径并非互斥。最可能的结果是混合体：规模提供基础能力，推理提供准确性，智能体提供实用性，剩余路径的某种组合提供稳健性。专业策略师不应押注单一路径，而应跨多条路径建设能力——理解胜出的方法可能结合所有六条路径的要素。</p>
-<h2 id="186-时间线聚合方法论"><a class="header" href="#186-时间线聚合方法论">18.6 时间线聚合方法论</a></h2>
-<p>AGI 时间线估计差异巨大。专业方法是将其视为一个分布，而非点估计。</p>
-<p><strong>聚合专家预测的方法论：</strong></p>
-<p><strong>第 1 步：收集多个调查来源。</strong></p>
-<ul>
-<li>AI Impacts（2023）：中位数 2059 年，第 10 百分位 2028 年</li>
-<li>Dynabench（2024）：中位数 2047 年，第 10 百分位 2027 年</li>
-<li>专家调查（2025）：中位数 2039 年，第 10 百分位 2026 年</li>
-<li>超级预测者（2025）：中位数 2042 年，方差显著更小</li>
-</ul>
-<p><strong>第 2 步：调整已知偏差。</strong></p>
-<ul>
-<li><em>专业偏差：</em> AI 研究者根据自身工作估计。研究规模扩展的估计更早。研究神经科学的估计更晚。根据受访者的研究重点调整 ±5 年。</li>
-<li><em>激励偏差：</em> AI 公司的 CEO 有动机声称 AGI 即将到来（投资、人才、叙事）。学术研究者的偏差较小。学术受访者权重 2 倍。</li>
-<li><em>可得性偏差：</em> 最近的突破（o1、DeepSeek）使近期 AGI 似乎更可能。通过跨多年平均估计进行调整。</li>
-</ul>
-<p><strong>第 3 步：计算隐含分布。</strong>
-调整后，分布显示：</p>
-<ul>
-<li>第 10 百分位：2028-2030 年（快速进展，推理 + 智能体的突破）</li>
-<li>第 25 百分位：2032-2035 年</li>
-<li>第 50 百分位：2039-2042 年（中位数预测）</li>
-<li>第 75 百分位：2047-2055 年</li>
-<li>第 90 百分位：2065 年+（缓慢进展，结构性障碍）</li>
-</ul>
-<p><strong>第 4 步：应用不对称原则。</strong>
-低估 AGI 时间线的成本（AGI 比预期更早到来，我们毫无准备）远高于高估的成本（我们为更晚到来的 AGI 做准备）。审慎规划使用第 25 百分位时间线（2032-2035）作为安全投资和治理准备的基础——而非中位数。</p>
-<p><strong>Hinton 观察：</strong> Geoffrey Hinton 的评论“时间线问题无法回答——而我们无法回答这一事实本身就是答案“捕捉了一个关键洞见：关于 AGI 的不确定性是结构性的，而非认知性的。我们无法通过收集更多数据来解决它。正确的回应不是单一的预测，而是对广泛到来日期都稳健的策略。</p>
-<h2 id="187-agi-准备就绪框架"><a class="header" href="#187-agi-准备就绪框架">18.7 AGI 准备就绪框架</a></h2>
-<p>对于组织和专业人士，问题不仅是“AGI 何时到来？“还有“我们应如何准备？”</p>
-<p><strong>AGI 准备就绪评估：</strong></p>
+<p>六个路径并非互斥。最可能的结果是混合：规模提供基础能力，推理提供准确性，智能体提供实用性，某种组合提供鲁棒性。专业策略师不应押注单一路径，而是跨多个路径建立能力。</p>
+<h2 id="186-时间线聚合"><a class="header" href="#186-时间线聚合">18.6 时间线聚合</a></h2>
+<p>Geoffrey Hinton 的观察捕捉了不确定性：“时间线问题无法回答——而我们无法回答这一事实本身就是答案。”</p>
+<p>关于 AGI 的不确定性是结构性的，而非认知性的。我们无法通过收集更多数据来解决它。正确的回应不是单一预测，而是对广泛到达日期具有鲁棒性的策略。</p>
+<p><strong>聚合专家预测的方法：</strong></p>
+<ol>
+<li>收集多个调查来源（AI Impacts 2023：中位数 2059；Dynabench 2024：中位数 2047；专家调查 2025：中位数 2039；超级预测者 2025：中位数 2042）</li>
+<li>调整已知偏见：专业偏见（学术权重 2×）、激励偏见（CEO 声称近期）、可用性偏见（近期突破扭曲感知）</li>
+<li>计算隐含分布：第 10 百分位 2028-2030，第 25 百分位 2032-2035，第 50 百分位 2039-2042，第 75 百分位 2047-2055，第 90 百分位 2065+</li>
+<li>应用不对称原则：低估的成本（AGI 早到，未准备好）远高于高估。审慎规划使用第 25 百分位时间线，而非中位数。</li>
+</ol>
+<h2 id="187-agi-就绪框架"><a class="header" href="#187-agi-就绪框架">18.7 AGI 就绪框架</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>维度</th><th>当前状态（2026）</th><th>准备就绪目标</th><th>差距</th></tr>
+<tr><th>维度</th><th>当前状态（2026）</th><th>目标</th><th>差距</th></tr>
 </thead>
 <tbody>
-<tr><td>安全研究投资</td><td>全球约 $500M/年</td><td>$5-10B/年</td><td>10-20 倍</td></tr>
-<tr><td>对齐技术</td><td>RLHF、宪政 AI、过程监督</td><td>稳健、可验证、可扩展的对齐</td><td>超人级未解决</td></tr>
-<tr><td>治理基础设施</td><td>EU AI 法案、布莱切利宣言（自愿）</td><td>有约束力的国际条约及执行</td><td>早期阶段</td></tr>
-<tr><td>AI 特定监管能力</td><td>全球约 200 名监管者</td><td>5,000+ 技术专家</td><td>25 倍</td></tr>
-<tr><td>AI 风险评估标准</td><td>各公司自定</td><td>行业广泛接受的标准</td><td>碎片化</td></tr>
-<tr><td>可解释性研究</td><td>神经元级映射（金门大桥，2024）</td><td>完整电路级理解</td><td>落后能力数十年</td></tr>
-<tr><td>红队测试能力</td><td>数千人类</td><td>数百万自动化 + 人类</td><td>供应受限</td></tr>
-<tr><td>公众 AI 素养</td><td>38% 能可靠检测深度伪造（Pew 2024）</td><td>90%+</td><td>巨大差距</td></tr>
-<tr><td>经济转型支持</td><td>临时性（一些再培训项目）</td><td>全民基本适应基础设施</td><td>未开始</td></tr>
+<tr><td>安全研究投入</td><td>~5 亿美元/年</td><td>50-100 亿美元/年</td><td>10-20×</td></tr>
+<tr><td>对齐技术</td><td>RLHF、宪法 AI</td><td>稳健、可验证、可扩展的对齐</td><td>超人类水平未解决</td></tr>
+<tr><td>治理基础设施</td><td>EU AI Act、自愿宣言</td><td>有约束力的国际条约</td><td>早期阶段</td></tr>
+<tr><td>监管能力</td><td>~200 名监管者</td><td>5,000+ 技术专家</td><td>25×</td></tr>
+<tr><td>可解释性研究</td><td>神经元级映射</td><td>电路级理解</td><td>落后数十年</td></tr>
+<tr><td>红队能力</td><td>数千人</td><td>数百万+</td><td>供给受限</td></tr>
+<tr><td>公众 AI 素养</td><td>38% 能可靠检测 deepfake</td><td>90%+</td><td>巨大差距</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>专业行动框架：</strong> 针对每个差距，定义具体投资：</p>
-<ul>
-<li><em>短期（1-2 年）：</em> 支持对齐研究（捐赠、投资、开展）；在组织中采用 AI 风险评估标准；在你的网络中建立 AI 素养</li>
-<li><em>中期（3-5 年）：</em> 发展可解释性或对齐评估方面的专长；参与治理标准制定；构建将 AGI 级能力纳入规划周期的系统</li>
-<li><em>长期（5-10 年）：</em> 为管理变革性 AI 的机构基础设施做出贡献；发展在多个 AGI 到来情景下都稳健的职业框架</li>
-</ul>
+<p><strong>专业行动框架：</strong> 短期（1-2 年）：支持对齐研究；采用 AI 风险评估标准；建立 AI 素养。中期（3-5 年）：发展可解释性或对齐评估专长；参与治理标准制定。长期（5-10 年）：为管理变革性 AI 的制度基础设施做出贡献。</p>
 <h2 id="188-已经存在的-agi"><a class="header" href="#188-已经存在的-agi">18.8 已经存在的 AGI</a></h2>
-<p>开启本章的定义问题在其结尾处回归。如果 AGI 是一个经济阈值——以人类水平执行任何有经济价值的工作——那么它可以说已经在数千个任务上到来了。如果 AGI 是一个认知阈值——像人类一样思考、感受和理解——那么它仍然遥远。</p>
+<p>1976 年，ELIZA 聊天机器人的创造者 Joseph Weizenbaum 写道：“问题不在于机器是否能思考。问题在于人类能否清晰地思考机器。”</p>
+<p>五十年后，问题没有改变。如果 AGI 是一个经济阈值——以人类水平执行任何经济上有价值的工作——那么它已经在数千个任务上实现了。如果 AGI 是一个认知阈值——像人类一样思考、感受、理解——那么它仍然遥远。</p>
 <p>专业视角同时持有两个真相：</p>
 <ul>
-<li><strong>事实上的 AGI：</strong> 出于实际目的，AI 系统现在在特定领域超过人类能力（医学图像诊断、法律文档分析、代码生成、已知问题类型上的数学推理）。称之为“AGI“的决定是语义性的。操作现实是，这些系统在其领域内取代人类判断。</li>
-<li><strong>法律上的 AGI：</strong> 没有系统展现出人类的通用性、灵活性、稳健性或理解力。每个当前的 AI 在实践中都是狭窄的——在其训练分布中表现出色，在其之外失败。我们称之为“通用“的系统，只是相对于更狭窄的前身而言。</li>
+<li>
+<p><strong>事实上的 AGI：</strong> AI 系统在特定领域已超过人类能力（医学图像诊断、法律文件分析、代码生成、数学推理）。称之为“AGI“的决定是语义性的。操作现实是这些系统在其领域内取代人类判断。</p>
+</li>
+<li>
+<p><strong>法律上的 AGI：</strong> 没有系统表现出人类的通用性、灵活性、鲁棒性或理解力。每个当前的 AI 在实践中都是狭窄的——在其训练分布中卓越，在其之外失败。</p>
+</li>
 </ul>
-<p><strong>以人驭智的结论：</strong> 最危险的错误是将这两个 AGI 含义混为一谈。如果我们认为 AGI 已经到来（经济含义），我们可能会在系统缺乏真正理解的领域鲁莽部署。如果我们认为 AGI 尚未到来（认知含义），我们可能无法为已经做出高风险决策的系统做准备。<strong>以人驭智</strong>的道路是承认两个真相：充分意识到当前 AI 能力的局限来使用它，同时为一个这些局限可能——可能突然——扩展的未来做准备。</p>
-<blockquote>
-<p><em>“问题不在于机器能否思考。问题在于人类能否清晰地思考机器。”</em> —— Joseph Weizenbaum，1976</p>
-</blockquote>
-<p>通往 AGI 的道路不是技术必然性。它是人类的选择——通过每一个部署决策、每一项安全投资、每一个治理框架、以及我们在构建之前问的每一个问题来实现。那个选择，而不是算法，将决定 AGI 成为什么。</p>
+<p>最危险的错误是混淆这两种 AGI 感。如果我们认为 AGI 已到来（经济意义），我们可能在系统缺乏真正理解的领域鲁莽部署。如果我们认为 AGI 未到来（认知意义），我们可能未能为已经做出高风险决策的系统做准备。</p>
+<p><strong>以人驭智</strong>之路是承认两个真相：在使用 AI 当前能力时充分意识到其局限，同时为一个这些局限可能突然扩展的未来做准备。通往 AGI 之路不是一个技术必然。它是一个人类选择——通过每个部署决策、每个安全投入、每个治理框架做出。那个选择，而非算法，将决定 AGI 成为什么。</p>
 
                     </main>
 
