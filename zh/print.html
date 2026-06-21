@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-97cf33ac.js";
+            window.path_to_searchindex_js = "searchindex-1519269b.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-0d735100.js"></script>
@@ -361,55 +361,52 @@
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第三章从-gpt-到推理模型"><a class="header" href="#第三章从-gpt-到推理模型">第三章：从 GPT 到推理模型</a></h1>
 <h2 id="31-gpt-系列"><a class="header" href="#31-gpt-系列">3.1 GPT 系列</a></h2>
+<p>GPT 家族不仅仅是产品线——它是 AI 领域最接近家谱的事物。每一代都揭示了缩放仅解码器 Transformer 时发生的意外。</p>
+<p><strong>GPT-1（2018 年 6 月，1.17 亿参数）：</strong> 概念验证。OpenAI 证明，生成式预训练加微调可以超越特定任务的架构。没人在意。</p>
+<p><strong>GPT-2（2019 年 2 月，15 亿参数）：</strong> 唤醒世界的争议。生成的文本流畅到 OpenAI 最初拒绝发布完整模型，理由是担心滥用。这个决定引发了关于负责任披露的激烈辩论。当完整模型数月后最终面世时，社区第一次明白：规模不仅仅是工程——它是能力。</p>
+<p><strong>GPT-3（2020 年 5 月，1750 亿参数，460 万美元训练成本）：</strong> 地震。1750 亿参数，在约 570GB 文本上训练。成本惊人：单次训练估计花费 460 万美元。但结果无人预料——<strong>上下文学习</strong>。无需任何梯度更新，GPT-3 只需在提示中看到示例就能执行任务。翻译英法。从注释写 Python。回答冷知识。作者在论文中写道：“我们对这种能力感到惊讶。“这是该领域第一次认识到仅靠规模就能催生涌现能力。</p>
+<p><strong>InstructGPT / ChatGPT（2022 年，13 亿基础 + RLHF）：</strong> GPT-3 强大但不合作。它生成有害文本，编造事实，忽略指令。解决方案是<strong>基于人类反馈的强化学习（RLHF）</strong>——人类对模型输出进行排序，这些排序训练一个奖励模型来微调基础模型。InstructGPT 论文（Ouyang 等，2022）表明，13 亿参数加 RLHF 可以超越 1750 亿参数的未微调版本。当 OpenAI 在 2022 年 11 月将其产品化为 ChatGPT 时，两个月内达到 1 亿用户——互联网史上最快的普及速度。</p>
+<p><strong>GPT-4（2023 年 3 月）：</strong> 从零开始就是多模态。GPT-4 可以接收图像和文本并跨模态推理。它在律师资格考试中排在前 10%，LSAT 前 1%，15 门 AP 考试中拿到 5 分。OpenAI 几乎没有透露技术细节，但泄露的传闻表明它使用了混合专家架构，约 1.8 万亿参数和 16 个专家。</p>
+<h2 id="32-伟大分叉竞争对手及其故事"><a class="header" href="#32-伟大分叉竞争对手及其故事">3.2 伟大分叉：竞争对手及其故事</a></h2>
+<p>GPT 系列在各个方向引发了分叉。每个竞争对手代表了对 AI 构建方式的不同赌注：</p>
+<p><strong>Claude（Anthropic，2023–）：</strong> 生于分裂。2021 年，资深 OpenAI 研究员——Dario 和 Daniela Amodei 等八人——离开创立 Anthropic，坚信安全问题被忽视。他们开发了<strong>宪法 AI（CAI）</strong>，作为 RLHF 的替代方案：不依赖数千名人类评分者，而是用一套书面原则来指导模型行为。Claude 3 Opus（2024）用更少的参数在基准测试上匹敌 GPT-4。Claude 3.5 Sonnet 成为开发者最爱的编程模型。到 2025 年，Anthropic 将上下文窗口推至 20 万 token——一部小说塞进一条提示——并引入了“电脑使用“能力，让 Claude 可以直接控制桌面界面。</p>
+<p><strong>Gemini（Google DeepMind，2023–）：</strong> 谷歌的反击。在多年的内部谨慎和在 AI 公众领导力上输给 OpenAI 的震惊之后，谷歌将 DeepMind 和 Google Brain 合并为一个部门。Gemini Ultra（2023 年 12 月）是第一个在 MMLU 上超越 GPT-4 的模型（90.0% 对 86.4%）。Gemini 2.5 Pro（2025）原生引入了“思考模式“和 100 万 token 的上下文窗口。DeepMind 的血统——AlphaGo、AlphaFold——赋予 Gemini 在科学推理上的优势。</p>
+<p><strong>Llama（Meta，2023–）：</strong> 民主化炸弹。Meta 于 2023 年 2 月以非商业许可向研究人员发布了 LLaMA（650 亿参数）。数周内，它在 4chan 上被泄露到公众。闸门打开了：微调变体（Alpaca、Vicuna、WizardLM）成倍增长。Meta 顺势而为，发布了带商业许可的 LLaMA 2（2023 年 7 月）和匹敌 GPT-4 的 LLaMA 3（2024 年，4050 亿参数）。基于 LLaMA 的开源生态系统成为了一个并行的 AI 宇宙。</p>
+<p><strong>DeepSeek（中国，2024–2025）：</strong> 成本效率革命。一家低调的中国量化交易公司的 AI 实验室发布了一系列震撼行业的模型。DeepSeek-V2（2024）的训练成本为 278 万美元——大约是 GPT-4 估计成本的 1/70。DeepSeek-V3（2025 年，671B 总参数，每个 token 激活 37B）使用的 MoE 架构极其高效，仅用 2000 多块 GPU 就完成了训练。然后 DeepSeek-R1（2025 年 1 月）在推理上匹敌 OpenAI 的 o1——并发布了描述方法的论文。行业倒吸一口凉气。美国股市单日蒸发 5000 亿美元。地缘政治叙事改变了：中国不是在追赶——它在创新。</p>
+<h2 id="33-推理模型的突破"><a class="header" href="#33-推理模型的突破">3.3 推理模型的突破</a></h2>
+<p>2024 年 9 月，OpenAI 发布了 o1——第一个在回答前会“思考“的模型。传闻中它被称为“Strawberry“或“Q*“。现实比传闻更奇特、更重要。</p>
+<p><strong>推理模型的工作原理：</strong></p>
+<p>标准模型在处理提示后立即生成第一个 token。o1 引入了<strong>测试时计算缩放</strong>：模型生成内部思维链，探索多个推理分支，遇到死胡同时回溯，并在输出可见答案前验证自己的结论。分配给这种内部思考的计算越多，结果越好——在一定限度内。</p>
+<p>这是一个范式转变。此前，所有缩放都发生在训练时。推理模型引入了第二个缩放轴：你可以动态地用延迟和计算成本换取答案质量。一个困难的数学问题可能接受 30 秒的内部思考；一个简单问题，一秒。</p>
+<p><strong>推理模型时间线：</strong></p>
+<ul>
+<li><strong>OpenAI o1-preview（2024 年 9 月）：</strong> 在 AIME 数学竞赛中获得 83%（GPT-4 为 12%）。在物理、生物和化学问题上达到博士级科学家水平。</li>
+<li><strong>OpenAI o1 完整版（2024 年 12 月）：</strong> 编程和工具使用显著提升。</li>
+<li><strong>DeepSeek R1（2025 年 1 月）：</strong> 开源。在数学和编程上匹敌 o1。发布了完整的训练方法——包括模型在推理中途学会重新评估自身方法的“顿悟时刻“。任何人都可以下载和研究。</li>
+<li><strong>o3（2025 年 2 月）：</strong> OpenAI 的下一步飞跃。在 ARC-AGI 视觉推理基准上达到 87.5%——接近人类基线。高盛估计其编程生产力提升较前代模型达 25-30%。</li>
+<li><strong>Claude Sonnet 4 推理（2025 年 4 月）：</strong> Anthropic 的回应。在长上下文推理和工具编排上更强。</li>
+<li><strong>Gemini 2.5 Pro 思考（2025）：</strong> DeepMind 的原生思考模型，支持 100 万 token 上下文。</li>
+</ul>
+<p><strong>为什么重要：</strong> 我们不再仅仅扩展训练算力。推理模型引入了<strong>测试时计算</strong>作为新维度。模型现在可以“花费“更多算力来更深入地思考难题。这改变了一切——成本曲线、延迟权衡，以及我们认为可能的事情。</p>
+<h2 id="34-能力发展轨迹"><a class="header" href="#34-能力发展轨迹">3.4 能力发展轨迹</a></h2>
+<p>2024 到 2025 年间，改进速度在技术史上前所未有：</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>模型</th><th>年份</th><th>关键创新</th></tr>
+<tr><th>能力</th><th>2024</th><th>2025</th><th>变化</th></tr>
 </thead>
 <tbody>
-<tr><td>GPT-1</td><td>2018</td><td>生成式预训练 + 微调</td></tr>
-<tr><td>GPT-2</td><td>2019</td><td>规模揭示零样本迁移能力</td></tr>
-<tr><td>GPT-3</td><td>2020</td><td>1750 亿参数下的上下文学习</td></tr>
-<tr><td>InstructGPT</td><td>2022</td><td>RLHF 使模型对齐用户意图</td></tr>
-<tr><td>GPT-4</td><td>2023</td><td>多模态，推理能力提升</td></tr>
-<tr><td>GPT-4o</td><td>2024</td><td>原生多模态，实时交互</td></tr>
+<tr><td>SWE-bench Verified（编程）</td><td>60%</td><td>~100%</td><td>饱和</td></tr>
+<tr><td>AIME（竞赛数学）</td><td>12%（GPT-4）</td><td>93%（o3）</td><td>7.8×</td></tr>
+<tr><td>ARC-AGI（视觉推理）</td><td>32%（GPT-4）</td><td>87.5%（o3）</td><td>2.7×</td></tr>
+<tr><td>OSWorld（智能体任务）</td><td>12%</td><td>66%</td><td>5.5×</td></tr>
+<tr><td>博士级科学（GPQA）</td><td>65%（GPT-4）</td><td>87%（o3）</td><td>1.3×</td></tr>
+<tr><td>IMO（奥数）</td><td>铜牌</td><td>金牌</td><td>奖牌升级</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="32-竞争对手"><a class="header" href="#32-竞争对手">3.2 竞争对手</a></h2>
-<ul>
-<li><strong>Claude（Anthropic）：</strong> 宪法 AI，安全优先，超长上下文</li>
-<li><strong>Gemini（Google DeepMind）：</strong> 从第一天起就是多模态，深度集成</li>
-<li><strong>Llama（Meta）：</strong> 开源权重催化剂，催生开源生态系统</li>
-<li><strong>DeepSeek（中国）：</strong> MoE 架构，R1 推理模型，成本效率震撼</li>
-<li><strong>Grok（xAI）：</strong> 实时知识，较少安全约束</li>
-</ul>
-<h2 id="33-推理模型的突破"><a class="header" href="#33-推理模型的突破">3.3 推理模型的突破</a></h2>
-<p>2024–2025 年出现了一个范式转变：模型在回答之前会“思考“。</p>
-<p><strong>推理模型的工作原理：</strong></p>
-<ul>
-<li>在推理时，模型生成内部思维链</li>
-<li>它探索多个分支，回溯，验证</li>
-<li>这种“测试时计算“可以扩展——更多的思考 = 更好的答案（在一定限度内）</li>
-</ul>
-<p><strong>关键模型：</strong></p>
-<ul>
-<li>OpenAI o1（2024）——第一个推理模型</li>
-<li>o3（2025）——显著改进</li>
-<li>DeepSeek R1（2025）——开源推理，匹敌 o1</li>
-<li>Claude Sonnet 4 推理（2025）</li>
-<li>Gemini 2.5 Pro 思考（2025）</li>
-</ul>
-<p><strong>影响：</strong> 我们不再仅仅扩展训练算力。测试时算力是一个新的扩展维度。模型现在可以“花费“算力来更深入地思考难题。</p>
-<h2 id="34-能力发展轨迹"><a class="header" href="#34-能力发展轨迹">3.4 能力发展轨迹</a></h2>
-<p>一年之内（2024→2025）：</p>
-<ul>
-<li>SWE-bench Verified：60% → ~100%</li>
-<li>博士级科学问题：接近专家基线</li>
-<li>竞赛数学：IMO 金牌</li>
-<li>工具使用和智能体任务：12% → 66%</li>
-</ul>
-<p>改进速度在 2026 年没有显示出放缓的迹象。</p>
+<p>关键信息：<strong>一年压缩了十年的预期进步。</strong> 2024 年，编程智能体可以解解决一半的真实 GitHub 问题。到 2025 年，它们几乎能解决所有问题。2024 年，AI 无法通过 AIME 数学竞赛。到 2025 年，它的分数接近顶尖人类选手。</p>
+<p>这一轨迹没有显示出放缓迹象。每次推理模型的发布都进一步推动边界。问题不再是 AI 是否会在大多数认知领域达到专家级能力——而是<em>何时</em>，以及我们用它能构建什么。</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="第四章前沿模型现状"><a class="header" href="#第四章前沿模型现状">第四章：前沿模型现状</a></h1>
 <h2 id="41-基准测试快照2026-年中"><a class="header" href="#41-基准测试快照2026-年中">4.1 基准测试快照（2026 年中）</a></h2>

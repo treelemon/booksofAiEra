@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-5c2a4155.js";
+            window.path_to_searchindex_js = "searchindex-499bc2ef.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-73d70b89.js"></script>
@@ -361,55 +361,52 @@
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-3-from-gpt-to-reasoning-models"><a class="header" href="#chapter-3-from-gpt-to-reasoning-models">Chapter 3: From GPT to Reasoning Models</a></h1>
 <h2 id="31-the-gpt-lineage"><a class="header" href="#31-the-gpt-lineage">3.1 The GPT Lineage</a></h2>
+<p>The GPT family is not just a product line — it is the closest thing AI has to a family tree. Each generation revealed something unexpected about what happens when you scale a decoder-only transformer.</p>
+<p><strong>GPT-1 (June 2018, 117M parameters):</strong> A proof of concept. OpenAI showed that generative pre-training followed by fine-tuning could outperform task-specific architectures. Few noticed.</p>
+<p><strong>GPT-2 (February 2019, 1.5B parameters):</strong> The controversy that woke the world. The generated text was coherent enough that OpenAI, fearing misuse, initially refused to release the full model. The decision sparked a furious debate about responsible disclosure. When the full model finally emerged months later, the community understood for the first time: scale was not just engineering — it was capability.</p>
+<p><strong>GPT-3 (May 2020, 175B parameters, $4.6M training cost):</strong> The earthquake. 175 billion parameters trained on ~570GB of text. The cost was staggering: an estimated $4.6 million for a single training run. But the result was something nobody predicted — <strong>in-context learning</strong>. Without any gradient updates, GPT-3 could perform tasks simply by seeing examples in the prompt. Translate English to French. Write Python from a comment. Answer trivia questions. The authors wrote in the paper: “We were surprised by this capability.” It was the first time the field realized that scaling alone could produce emergent abilities.</p>
+<p><strong>InstructGPT / ChatGPT (2022, 1.3B base + RLHF):</strong> GPT-3 was powerful but uncooperative. It generated toxic text, made up facts, and ignored instructions. The fix was <strong>Reinforcement Learning from Human Feedback (RLHF)</strong> — a technique where humans rank model outputs, and those rankings train a reward model that fine-tunes the base model. The InstructGPT paper (Ouyang et al., 2022) showed that 1.3B parameters with RLHF could outperform 175B without. When OpenAI productized this as ChatGPT in November 2022, it reached 100 million users in two months — the fastest adoption in internet history.</p>
+<p><strong>GPT-4 (March 2023):</strong> Multimodal from the ground up. GPT-4 could accept images and text and reason across them. It scored in the 90th percentile on the bar exam, the 99th percentile on the LSAT, and 5 on 15 AP exams. OpenAI revealed almost no technical details, but leaked rumors suggested it used a mixture-of-experts architecture with ~1.8 trillion parameters and 16 experts.</p>
+<h2 id="32-the-great-forks-competitors-and-their-stories"><a class="header" href="#32-the-great-forks-competitors-and-their-stories">3.2 The Great Forks: Competitors and Their Stories</a></h2>
+<p>The GPT lineage sparked forks in every direction. Each competitor represents a different bet on how AI should be built:</p>
+<p><strong>Claude (Anthropic, 2023–):</strong> Born from a schism. In 2021, senior OpenAI researchers — Dario and Daniela Amodei, along with seven others — left to form Anthropic, convinced that safety was being deprioritized. They developed <strong>Constitutional AI (CAI)</strong>, an alternative to RLHF: instead of relying on thousands of human raters, CAI uses a set of written principles to guide model behavior. Claude 3 Opus (2024) matched GPT-4 on benchmarks while using fewer parameters. Claude 3.5 Sonnet became the developer favorite for coding. By 2025, Anthropic had pushed context windows to 200K tokens — a full novel in a single prompt — and introduced “computer use” capabilities where Claude could control a desktop interface directly.</p>
+<p><strong>Gemini (Google DeepMind, 2023–):</strong> Google’s counter-strike. After years of internal caution and the shocking loss of public AI leadership to OpenAI, Google merged DeepMind and Google Brain into a single unit. Gemini Ultra (December 2023) was the first model to outperform GPT-4 on MMLU (90.0% vs 86.4%). Gemini 2.5 Pro (2025) introduced “thinking mode” natively and a 1M-token context window. DeepMind’s heritage — AlphaGo, AlphaFold — gave Gemini an edge in scientific reasoning.</p>
+<p><strong>Llama (Meta, 2023–):</strong> The democratization bomb. Meta released LLaMA (65B parameters) to researchers under a non-commercial license in February 2023. Within weeks, it was leaked to the public on 4chan. The floodgates opened: fine-tuned variants (Alpaca, Vicuna, WizardLM) multiplied. Meta leaned in, releasing LLaMA 2 (July 2023) with a commercial license, and LLaMA 3 (2024) at 405B parameters matching GPT-4. The open-source ecosystem — built on LLaMA’s foundation — became a parallel AI universe.</p>
+<p><strong>DeepSeek (China, 2024–2025):</strong> The cost-efficiency revolution. A quiet Chinese quant-trading firm’s AI lab dropped a series of models that shocked the industry. DeepSeek-V2 (2024) trained for $2.78M — roughly 1/70th of GPT-4’s estimated cost. DeepSeek-V3 (2025, 671B total, 37B active per token) used an MoE architecture so efficient it trained on just over 2,000 GPUs. Then DeepSeek-R1 (January 2025) matched OpenAI’s o1 at reasoning — and released the paper describing how they did it. The industry gasped. The US stock market lost $500 billion in a single day. The geopolitical narrative shifted: China was not following — it was innovating.</p>
+<h2 id="33-the-reasoning-model-breakthrough"><a class="header" href="#33-the-reasoning-model-breakthrough">3.3 The Reasoning Model Breakthrough</a></h2>
+<p>In September 2024, OpenAI released o1 — the first model that “thinks” before answering. The rumors had called it “Strawberry” or “Q*.” The reality was stranger and more important.</p>
+<p><strong>How reasoning models work:</strong></p>
+<p>Standard models generate the first token immediately after processing the prompt. o1 introduced <strong>test-time compute scaling</strong>: the model generates an internal chain-of-thought, explores multiple reasoning branches, backtracks when it hits dead ends, and verifies its own conclusions before producing a visible answer. The more compute allocated to this internal thinking, the better the results — up to a point.</p>
+<p>This was a paradigm shift. Previously, all scaling happened at training time. Reasoning models introduced a second axis of scaling: you could dynamically trade latency and compute cost for answer quality. A hard math problem might receive 30 seconds of internal thinking; an easy question, one second.</p>
+<p><strong>The reasoning model timeline:</strong></p>
+<ul>
+<li><strong>OpenAI o1-preview (September 2024):</strong> Scored 83% on the AIME math competition (vs GPT-4’s 12%). Rivaled PhD-level scientists on physics, biology, and chemistry questions.</li>
+<li><strong>OpenAI o1 full (December 2024):</strong> Significantly better at coding and tool use.</li>
+<li><strong>DeepSeek R1 (January 2025):</strong> Open-source. Matched o1 on math and coding. Published the full training methodology — including the “aha moment” where the model learned to re-evaluate its own approach mid-reasoning. Available for anyone to download and study.</li>
+<li><strong>o3 (February 2025):</strong> OpenAI’s next jump. Achieved 87.5% on the ARC-AGI visual reasoning benchmark — approaching human baseline. Goldman Sachs estimated its coding productivity gain at 25-30% over previous models.</li>
+<li><strong>Claude Sonnet 4 reasoning (April 2025):</strong> Anthropic’s answer. Stronger on long-context reasoning and tool orchestration.</li>
+<li><strong>Gemini 2.5 Pro “thinking” (2025):</strong> DeepMind’s natively thinking model with 1M token context.</li>
+</ul>
+<p><strong>Why it matters:</strong> We are no longer just scaling training compute. Reasoning models introduced <strong>test-time compute</strong> as a new dimension. A model can now “spend” more compute to think harder about hard problems. This changes everything — cost curves, latency trade-offs, and what we consider possible.</p>
+<h2 id="34-the-capability-trajectory"><a class="header" href="#34-the-capability-trajectory">3.4 The Capability Trajectory</a></h2>
+<p>The pace of improvement between 2024 and 2025 was unlike anything in the history of technology:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Model</th><th>Year</th><th>Key Innovation</th></tr>
+<tr><th>Capability</th><th>2024</th><th>2025</th><th>Change</th></tr>
 </thead>
 <tbody>
-<tr><td>GPT-1</td><td>2018</td><td>Generative pre-training + fine-tuning</td></tr>
-<tr><td>GPT-2</td><td>2019</td><td>Scale reveals zero-shot transfer</td></tr>
-<tr><td>GPT-3</td><td>2020</td><td>In-context learning at 175B parameters</td></tr>
-<tr><td>InstructGPT</td><td>2022</td><td>RLHF aligns model with user intent</td></tr>
-<tr><td>GPT-4</td><td>2023</td><td>Multimodal, improved reasoning</td></tr>
-<tr><td>GPT-4o</td><td>2024</td><td>Native multimodality, real-time</td></tr>
+<tr><td>SWE-bench Verified (coding)</td><td>60%</td><td>~100%</td><td>Saturated</td></tr>
+<tr><td>AIME (competition math)</td><td>12% (GPT-4)</td><td>93% (o3)</td><td>7.8×</td></tr>
+<tr><td>ARC-AGI (visual reasoning)</td><td>32% (GPT-4)</td><td>87.5% (o3)</td><td>2.7×</td></tr>
+<tr><td>OSWorld (agentic tasks)</td><td>12%</td><td>66%</td><td>5.5×</td></tr>
+<tr><td>PhD-level science (GPQA)</td><td>65% (GPT-4)</td><td>87% (o3)</td><td>1.3×</td></tr>
+<tr><td>IMO (olympiad math)</td><td>Bronze</td><td>Gold</td><td>Medal upgrade</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="32-the-competitors"><a class="header" href="#32-the-competitors">3.2 The Competitors</a></h2>
-<ul>
-<li><strong>Claude (Anthropic):</strong> Constitutional AI, safety-first design, long context</li>
-<li><strong>Gemini (Google DeepMind):</strong> Multimodal from day one, deeply integrated</li>
-<li><strong>Llama (Meta):</strong> Open-weight catalyst, spawned the open-source ecosystem</li>
-<li><strong>DeepSeek (China):</strong> MoE architecture, R1 reasoning model, cost efficiency shock</li>
-<li><strong>Grok (xAI):</strong> Real-time knowledge, less safety constraints</li>
-</ul>
-<h2 id="33-the-reasoning-model-breakthrough"><a class="header" href="#33-the-reasoning-model-breakthrough">3.3 The Reasoning Model Breakthrough</a></h2>
-<p>2024–2025 saw a paradigm shift: models that “think” before they answer.</p>
-<p><strong>How reasoning models work:</strong></p>
-<ul>
-<li>At inference time, the model generates an internal chain-of-thought</li>
-<li>It explores multiple branches, backtracks, verifies</li>
-<li>This “test-time compute” scales — more thinking = better answers (up to a point)</li>
-</ul>
-<p><strong>Key models:</strong></p>
-<ul>
-<li>OpenAI o1 (2024) — first reasoning model</li>
-<li>o3 (2025) — significant improvement</li>
-<li>DeepSeek R1 (2025) — open-source reasoning, matched o1</li>
-<li>Claude Sonnet 4 reasoning (2025)</li>
-<li>Gemini 2.5 Pro thinking (2025)</li>
-</ul>
-<p><strong>Implication:</strong> We’re no longer just scaling training compute. Test-time compute is a new axis of scaling. Models can now “spend” compute to think harder about hard problems.</p>
-<h2 id="34-the-capability-trajectory"><a class="header" href="#34-the-capability-trajectory">3.4 The Capability Trajectory</a></h2>
-<p>In one year (2024→2025):</p>
-<ul>
-<li>SWE-bench Verified: 60% → ~100%</li>
-<li>PhD-level science questions: near-expert baselines</li>
-<li>Competition math: gold medal at IMO</li>
-<li>Tool use and agentic tasks: 12% → 66% success</li>
-</ul>
-<p>The rate of improvement shows no signs of plateauing in 2026.</p>
+<p>The headline: <strong>one year compressed a decade of expected progress.</strong> In 2024, coding agents could solve about half of real-world GitHub issues. By 2025, they solved nearly all of them. In 2024, AI could not pass the AIME math competition. By 2025, it was scoring near the top human participants.</p>
+<p>This trajectory shows no sign of plateauing. Each reasoning model release pushes the boundary further. The question is no longer <em>whether</em> AI will reach expert-level capability in most cognitive domains — it is <em>when</em>, and what we build with it.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="chapter-4-the-state-of-frontier-models"><a class="header" href="#chapter-4-the-state-of-frontier-models">Chapter 4: The State of Frontier Models</a></h1>
 <h2 id="41-benchmark-snapshot-mid-2026"><a class="header" href="#41-benchmark-snapshot-mid-2026">4.1 Benchmark Snapshot (Mid-2026)</a></h2>
