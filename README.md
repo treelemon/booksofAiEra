@@ -1,20 +1,20 @@
-# The Intelligence Age · 智能时代
+# Books of AI Era
 
 > **宗：Human Wisdom · 以人驭智**
 > *Humanity at the center, intelligence as the instrument.*
 > *以人为本，智能为用。*
 
-A living field guide to the AI era — continuously updated in English and Chinese.
+A collection of living field guides to the AI era — continuously updated in English and Chinese.
 
-一份持续更新的 AI 时代实地指南——中英双语同步更新。
+一系列持续更新的 AI 时代实地指南——中英双语同步更新。
 
 ---
 
 ## Read / 阅读
 
-| 🇬🇧 English | https://treelemon.github.io/booksofAiEra/en/ |
-|-------------|----------------------------------------------|
-| 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/zh/ |
+| The Intelligence Age | 🇬🇧 English | https://treelemon.github.io/booksofAiEra/intelligence-age/en/ |
+|----------------------|-------------|--------------------------------------------------------------|
+| 智能时代 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/intelligence-age/zh/ |
 
 ---
 
@@ -22,20 +22,29 @@ A living field guide to the AI era — continuously updated in English and Chine
 
 ```
 booksofAiEra/
-├── en/            # English edition (mdBook project)
-│   ├── book.toml
-│   └── src/
-├── zh/            # Chinese edition (mdBook project)
-│   ├── book.toml
-│   └── src/
+├── books/
+│   └── intelligence-age/     # Book: The Intelligence Age
+│       ├── en/               # English edition (mdBook project)
+│       │   ├── book.toml
+│       │   └── src/
+│       └── zh/               # Chinese edition (mdBook project)
+│           ├── book.toml
+│           └── src/
 ├── .github/workflows/deploy.yml
 ├── README.md
 └── CHANGELOG.md
 ```
 
-Each language is a standalone mdBook project with identical structure.
+Each book under `books/` contains language-specific mdBook projects with identical structure.
 
-中英文各为独立 mdBook 项目，结构完全一致。
+每本书位于 `books/` 目录下，包含各语言的独立 mdBook 项目，结构完全一致。
+
+To add a new book:
+```
+mkdir -p books/<book-name>/en/src books/<book-name>/zh/src
+# ... create book.toml and content for each language
+# Then add links to .github/workflows/deploy.yml
+```
 
 ---
 

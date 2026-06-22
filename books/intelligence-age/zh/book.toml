@@ -10,6 +10,6 @@ build-dir = "book"
 
 [output.html]
 git-repository-url = "https://github.com/treelemon/booksofAiEra"
-edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/zh/{path}"
-site-url = "/booksofAiEra/zh/"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/intelligence-age/zh/{path}"
+site-url = "/booksofAiEra/books/intelligence-age/zh/"
 copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"
