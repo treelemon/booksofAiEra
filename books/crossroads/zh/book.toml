@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "十字路口：AI时代的教育与选择"
+description = "写给青少年和父母的 AI 时代生存指南——理解变革，做出关键选择。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/crossroads/zh/{path}"
+site-url = "/booksofAiEra/crossroads/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"

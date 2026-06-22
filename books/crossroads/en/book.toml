@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "en"
+src = "src"
+title = "The Crossroads: AI, Education, and the Next Generation"
+description = "A guide for students and parents navigating the AI revolution — understanding the change, making the choices that matter."
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/crossroads/en/{path}"
+site-url = "/booksofAiEra/crossroads/en/"
+copyright = "© 2026 treelemon. All rights reserved. Commercial use requires authorization."
