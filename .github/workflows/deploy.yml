@@ -29,12 +29,13 @@ jobs:
             for lang in "$book"*/; do
               lang_name=$(basename "$lang")
               echo "  Language: $lang_name"
-              mdbook build "$lang" -d "../../../book/$book_name/$lang_name"
+              mdbook build "$lang" -d "$GITHUB_WORKSPACE/book/$book_name/$lang_name"
             done
           done
 
       - name: Create root index.html
         run: |
+          mkdir -p book
           cat > book/index.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
