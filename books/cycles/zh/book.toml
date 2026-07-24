@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "周期之轮：经济波动的底层逻辑、实证测度与决策框架"
+description = "构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/cycles/zh/{path}"
+site-url = "/booksofAiEra/books/cycles/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"
