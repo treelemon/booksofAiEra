@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第十八章 经济周期对大类资产配置的影响 - 周期之轮：经济波动的底层逻辑、实证测度与决策框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-dfbc294f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-f431dfd6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之轮：经济波动的底层逻辑、实证测度与决策框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第十八章-经济周期对大类资产配置的影响"><a class="header" href="#第十八章-经济周期对大类资产配置的影响">第十八章 经济周期对大类资产配置的影响</a></h1>
+<blockquote>
+<p><strong>配：周期节奏中的资产轮动</strong>
+<em>大类资产的收益特征不是随机的，它们遵循周期节奏的驱动。在周期的不同阶段，债券、股票、大宗商品和现金的收益表现呈现规律性的轮动。理解这种轮动，就是从“赌方向“升级为“配节奏“。</em></p>
+</blockquote>
+<h2 id="181-周期与资产价格的核心传导机制"><a class="header" href="#181-周期与资产价格的核心传导机制">18.1 周期与资产价格的核心传导机制</a></h2>
+<p>经济周期影响大类资产价格的核心传导链条环环相扣：</p>
+<p><strong>经济增长影响企业盈利。</strong> 当经济扩张时，企业营收增长、利润率改善、盈利预期上调——这是股票价格上行的基本面基础。当经济收缩时，企业盈利恶化——股票价格承压。</p>
+<p><strong>通胀影响实际收益率。</strong> 通胀上升侵蚀固定收益资产的实际购买力——债券价格下跌、收益率上升。通胀下降提升债券的实际吸引力——债券价格上涨、收益率下降。</p>
+<p><strong>货币政策影响贴现率。</strong> 央行在周期的不同阶段通过政策利率调整来影响资产定价中的贴现率。降息降低贴现率——推高所有资产的估值（尤其是长久期资产）。加息提高贴现率——压缩所有资产的估值。</p>
+<p><strong>风险偏好影响资产溢价。</strong> 周期的不同阶段显著改变市场参与者的风险偏好。繁荣期风险偏好高涨——股权风险溢价压缩、资金从债券流向股票。衰退期风险偏好极度低迷——股权风险溢价走阔、资金从股票流向债券和现金。</p>
+<p>这四个传导渠道并非独立运行，它们互相强化或对冲，共同决定了大类资产在周期不同阶段的相对收益表现。</p>
+<h2 id="182-美林投资时钟经典框架"><a class="header" href="#182-美林投资时钟经典框架">18.2 美林投资时钟：经典框架</a></h2>
+<p>2004 年，美林证券发表了题为《The Investment Clock》的研究报告。这份报告基于美国 1973-2003 年的宏观经济和资产收益数据，提出了一个简洁且有效的周期资产配置框架——“美林投资时钟”。</p>
+<h3 id="时钟的四象限"><a class="header" href="#时钟的四象限">时钟的四象限</a></h3>
+<p>投资时钟将经济周期划分为四个阶段——基于两个维度的交叉：<strong>经济增长方向</strong>（上行 vs 下行）和<strong>通胀方向</strong>（上升 vs 下降）。</p>
+<p><strong>象限一：复苏（经济增长上行 + 通胀下行）。</strong> 在这一阶段，经济增速从谷底回升，宽松货币政策仍在发挥作用，通胀仍然在低位。企业盈利开始改善但尚未被充分定价。债券收益率下行到低位后开始企稳。<strong>股票</strong>在这一阶段的表现通常最好——盈利改善和低利率环境的双重利好。债券的收益率已经被充分定价，大宗商品需求尚未恢复，现金的收益最低。</p>
+<p><strong>象限二：繁荣（经济增长上行 + 通胀上行）。</strong> 在这一阶段，经济增速达到或超越潜在增长率，繁荣导致需求推高了通胀。央行开始加息对抗通胀压力。企业盈利仍在增长，但利率上升开始压制估值。<strong>大宗商品</strong>在这一阶段的表现最好——需求旺盛叠加通胀上行推高商品价格。股票的表现开始分化——周期型行业（能源、材料）受益于通胀而表现好，成长型行业受利率压制而表现走弱。债券受加息压制，表现差。现金因利率上升而变得有吸引力。</p>
+<p><strong>象限三：衰退（经济增长下行 + 通胀上行）。</strong> 在这一阶段，经济增速已经开始下滑，但由于滞后效应和供给冲击，通胀仍然在高位——这就是“滞胀“阶段。企业盈利快速恶化，利率仍然在较高水平。<strong>现金</strong>在这一阶段的表现最好——高利率提供了可观的收益，同时规避了股票和债券的双杀风险。大宗商品仍然在高位（通胀支撑）但面临需求下行的压力。股票和债券表现都较差——“股债双杀”。</p>
+<p><strong>象限四：萧条（经济增长下行 + 通胀下行）。</strong> 在这一阶段，经济增速和通胀同时显著下行。央行通过大幅降息来刺激经济。企业盈利已经大幅恶化，但利率下降推动债券价格大幅上涨。<strong>债券</strong>在这一阶段的表现最好——降息推动债券价格快速上涨，长久期国债的资本利得尤为可观。股票在萧条末期开始筑底，大宗商品大幅下跌，现金收益因降息而下降。</p>
+<h3 id="时钟的实际业绩"><a class="header" href="#时钟的实际业绩">时钟的实际业绩</a></h3>
+<p>美林证券的研究显示，在 1973-2003 年间，使用投资时钟进行资产配置——在每个阶段配置该阶段表现最好的资产——的年化收益率约为 13%。而同期买入并持有策略的年化收益率约为 9%。投资时钟策略的超额年化收益率约为 4 个百分点——得益于它在“资产轮动“中的时机把握。</p>
+<h2 id="183-美林时钟的局限与迭代"><a class="header" href="#183-美林时钟的局限与迭代">18.3 美林时钟的局限与迭代</a></h2>
+<p>美林投资时钟是一个经典框架，但它也有两个显著的局限。</p>
+<h3 id="局限一单周期假设"><a class="header" href="#局限一单周期假设">局限一：单周期假设</a></h3>
+<p>经典投资时钟基于“单一周期“的假设——它假定所有宏观经济变量按同一周期节奏运动。但在多周期世界中，不同周期的方向可能相反——经济增长由短周期驱动向上，但同时长周期中的通缩压力可能使通胀持续处于低位。在这样的对冲状态下，时钟的两个维度（经济增长方向和通胀方向）可能由不同周期的力量分别主导，二维交叉产生“类衰退/类复苏“的模糊地标。</p>
+<h3 id="局限二政策干预改变周期形态"><a class="header" href="#局限二政策干预改变周期形态">局限二：政策干预改变周期形态</a></h3>
+<p>经典时钟构建于 1973-2003 年的美国数据。2008 年金融危机后，全球央行将“非常规货币政策“正常化——量化宽松和零利率政策极大地改变了资产价格与实体周期的联动关系。在此后的市场中，债券价格的上涨不只是由“衰退/降息“推动，还受到中央银行直接买入的支撑。经典时钟的“衰退→债券牛“的映射关系依然成立，但幅度和节奏可能被非传统因素改变。</p>
+<h3 id="迭代方向多周期投资时钟"><a class="header" href="#迭代方向多周期投资时钟">迭代方向：多周期投资时钟</a></h3>
+<p>为弥补经典时钟的局限，可以将多周期框架嵌入其中。修正后的核心逻辑仍然是“经济增长×通胀“的二维交叉——但对“经济增长“的判定，不再依赖单一维度判断，而是基于“多周期叠加后的综合方向“。</p>
+<p><strong>识别“真复苏“与“假复苏“。</strong> 当短周期（基钦）向上、但中周期（朱格拉）向下、长周期（康波）也向下时，经济增长的复苏是脆弱且不可持续的——此时资产配置应更偏保守，等待更多确认信号。</p>
+<p><strong>识别“真通胀“与“假通胀“。</strong> 当通胀上行由供给驱动（大宗商品供给冲击）而非需求驱动（经济过热）时，周期阶段更接近“滞胀“而非“繁荣“——此时应优先配置现金，而非大宗商品。</p>
+<h2 id="184-多周期视角下的资产配置框架"><a class="header" href="#184-多周期视角下的资产配置框架">18.4 多周期视角下的资产配置框架</a></h2>
+<p>基于多周期叠加框架，可以将资产配置的决策分解为两个层次。</p>
+<h3 id="战略层中长周期决定配置方向"><a class="header" href="#战略层中长周期决定配置方向">战略层：中长周期决定配置方向</a></h3>
+<p>由康波和库兹涅茨周期的叠加方向决定“长期战略配置方向“：</p>
+<ul>
+<li>康波上行 + 库兹涅茨上行：全球共振上升——战略性增配权益资产（股票），减配债券；</li>
+<li>康波上行 + 库兹涅茨下行：结构分化——权益资产内部需要精选赛道（科技/成长 vs 周期/价值）；</li>
+<li>康波下行 + 库兹涅茨下行：全球共振下行——战略性减配权益、增配债券和现金。</li>
+</ul>
+<h3 id="战术层短周期决定调整节奏"><a class="header" href="#战术层短周期决定调整节奏">战术层：短周期决定调整节奏</a></h3>
+<p>在战略层次的框架内，由基钦周期和朱格拉周期的运行状态来设定战术性调整的时机。</p>
+<p>基钦周期上行（主动补库）+ 朱格拉周期上行：适合“超配权益、低配债券、超配大宗商品“。</p>
+<p>基钦周期下行（主动去库）+ 朱格拉周期下行：适合“低配权益、超配债券和现金、低配大宗商品“。</p>
+<h2 id="185-主要经济体周期阶段与资产配置映射"><a class="header" href="#185-主要经济体周期阶段与资产配置映射">18.5 主要经济体周期阶段与资产配置映射</a></h2>
+<p>基于第十六章中对四大经济体截至 2026 年的多周期叠加研判，资产配置的参考方向如下：</p>
+<p><strong>美国：共振偏上。</strong> 康波上行、朱格拉上行（AI 基础设施投资）、基钦温和补库——经济增长有结构性支撑。配置方向：超配美国权益（科技+AI 相关），标配债券（利率在高位震荡），大宗商品标配（AI 算力拉动电力/铜等需求）。</p>
+<p><strong>中国：对冲。</strong> 康波上行（数字经济/AI），但库兹涅茨和朱格拉偏下。配置方向：权益结构性配置（科技成长 vs 价值周期），债券偏多（地产下行压制增长、利率低位），大宗商品偏空（地产相关需求低迷）。</p>
+<p><strong>日本：中性偏下。</strong> 配置方向：权益标配（出口和制造有支撑但缺乏内生增长动力），债券标配（YCC 退出后利率正常化压力），大宗商品低配。</p>
+<p><strong>欧元区：偏下。</strong> 配置方向：权益低配（制造业竞争力下行），债券标配（核心国利率温和下行），大宗商品低配（能源危机后工业需求疲弱）。</p>
+<hr>
+<h3 id="关键要点"><a class="header" href="#关键要点">关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时钟象限</th><th>增长</th><th>通胀</th><th>最优资产</th><th>次优资产</th></tr>
+</thead>
+<tbody>
+<tr><td>复苏</td><td>↑</td><td>↓</td><td>股票</td><td>债券</td></tr>
+<tr><td>繁荣</td><td>↑</td><td>↑</td><td>大宗商品</td><td>股票/现金</td></tr>
+<tr><td>衰退（滞胀）</td><td>↓</td><td>↑</td><td>现金</td><td>大宗商品</td></tr>
+<tr><td>萧条</td><td>↓</td><td>↓</td><td>债券</td><td>股票（末期）</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>Merrill Lynch (2004). <em>The Investment Clock</em>. Merrill Lynch Research Report.</li>
+<li>Greetham, T. &amp; Hartnett, M. (2004). <em>The Investment Clock</em>. Merrill Lynch.</li>
+<li>Bridgewater Associates (2012). <em>The All Weather Strategy</em>.</li>
+<li>Dalio, R. (2018). <em>Principles for Navigating Big Debt Crises</em>. Bridgewater.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-5/chapter-17.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-5/chapter-19.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-5/chapter-17.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-5/chapter-19.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

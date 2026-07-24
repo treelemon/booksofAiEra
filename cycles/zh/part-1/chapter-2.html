@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第二章 经济周期理论的思想演进与学派脉络 - 周期之轮：经济波动的底层逻辑、实证测度与决策框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-dfbc294f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-f431dfd6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之轮：经济波动的底层逻辑、实证测度与决策框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第二章-经济周期理论的思想演进与学派脉络"><a class="header" href="#第二章-经济周期理论的思想演进与学派脉络">第二章 经济周期理论的思想演进与学派脉络</a></h1>
+<blockquote>
+<p><strong>镜：理论是实践的倒影</strong>
+<em>每一次周期理论的重大迭代，都是对前一轮经济运行中真实经验或理论失效的深度归纳。理论不是先验的真理，而是实践的总结。</em></p>
+</blockquote>
+<h2 id="21-为什么需要一部理论史"><a class="header" href="#21-为什么需要一部理论史">2.1 为什么需要一部理论史</a></h2>
+<p>在进入周期理论的详细梳理之前，一个更根本的问题需要先被回答：为什么我们需要一部理论史？</p>
+<p>对于很多实务工作者而言，“理论“这个词带有某种令人不安的意味。它让人联想到大学课堂上那些与现实脱节的抽象模型、晦涩的术语和无法落地的数学推导。一位资深的投资经理曾在私下交流中对我说：“我不需要理论，我需要的是指标和信号。”</p>
+<p>这种态度可以理解，但它隐含着一个危险的假设——方法论是可以脱离认识论独立存在的。换言之，一个人可以只使用工具（指标体系、量化模型、交易策略）而不需要去理解这些工具背后的世界观前提。</p>
+<p>事实是：<strong>你使用的每一个指标，都内嵌着一个理论。</strong> 当你使用 PMI 来判断经济景气度时，你默认了“制造业采购经理的预期可以反映经济扩张或收缩“这个理论假设。当你使用信用利差来预判衰退概率时，你默认了“债券市场定价隐含了未来经济状态的信息“这个理论假设。这些假设不是天然成立的，它们是在数百年的经济思想演进中被反复验证、修正后沉淀下来的。</p>
+<p>不理解理论史，就等于在使用一把你不理解其内部构造的仪器。你或许能用它测量出正确的读数，但当仪器出现异常信号时，你将无法判断是测量对象出了问题，还是仪器本身出了问题。</p>
+<p>这正是 2008 年的教训。当时的主流宏观模型——动态随机一般均衡（DSGE）模型——几乎无一例外地未能预见到危机的到来。这不是因为数据不够多、算力不够强，而是因为这些模型的前提假设（理性预期、市场出清、均衡回归）系统性地排除了金融危机的可能性。<strong>工具的失败，本质上是理论的失败。</strong></p>
+<p>这就是为什么要梳理理论史。不是为了“知识考古“的志趣，而是为了建立对周期分析所用工具及其边界的清醒认知。</p>
+<h2 id="22-理论的三个基本问题"><a class="header" href="#22-理论的三个基本问题">2.2 理论的三个基本问题</a></h2>
+<p>任何关于经济周期的理论，都需要回答三个基本问题：</p>
+<p><strong>第一，周期从哪里来？</strong> 经济波动的根源是经济系统内部还是外部？如果是内部，那么是实体经济的哪些变量（投资、消费、技术）在驱动？如果是金融系统的哪些变量（信用、利率、资产价格）在驱动？还是两者的互动？</p>
+<p><strong>第二，周期的传导机制是什么？</strong> 从一个部门的波动，如何扩散到另一个部门？变量之间的因果关系链条是什么？哪些变量是先导，哪些是滞后，哪些是同步？</p>
+<p><strong>第三，周期能否被干预？</strong> 如果能，政策工具是什么？货币政策和财政政策的有效边界在哪里？是否存在“政策悖论“——即熨平周期的努力本身，反而制造了更大的周期？</p>
+<p>三百年来的经济周期理论史，本质上就是这三组问题的不同回答模式。而每一次回答的迭代，都是以一次重大的经济危机为代价换来的。理论不是无源之水——它们是危机倒逼的产物。</p>
+<h2 id="23-第一阶段外部冲击驱动1776-1929"><a class="header" href="#23-第一阶段外部冲击驱动1776-1929">2.3 第一阶段：外部冲击驱动（1776-1929）</a></h2>
+<h3 id="时代的底色"><a class="header" href="#时代的底色">时代的底色</a></h3>
+<p>1776 年，亚当·斯密出版了《国民财富的性质和原因的研究》。这本书不仅是古典经济学的奠基之作，也开启了经济周期理论的最早探索。但斯密和他的追随者们所面临的世界，与我们所处的世界截然不同：那是一个以农业为主体的前工业化经济，经济波动的主要来源是天气、战争和收成的变化。</p>
+<p>在这样的世界中，将经济波动归因于“外部冲击“是再自然不过的事情。古典经济学的核心信念是市场机制的自我修复能力——供给创造自己的需求（萨伊定律），价格和工资可以灵活调整，任何暂时的失衡都会被市场力量自动纠正。在这一框架下，大规模、持续性的经济萧条在理论上是不可能的。如果出现了偏离，那一定是因为某种外部的、非经济的力量干扰了市场的正常运行。</p>
+<p>这一信念在 18 和 19 世纪的绝大多数年份中，与经验观察基本相符。工业革命后的历次经济危机——1825 年的英国第一次现代金融危机、1847 年的铁路投机崩溃、1873 年的长萧条——虽然剧烈，但确实都在市场机制的作用下实现了自我修复。</p>
+<p>正是在这样的历史背景下，古典经济学家对“周期“做出了特定的解释。</p>
+<h3 id="亚当斯密危机局部论"><a class="header" href="#亚当斯密危机局部论">亚当·斯密：危机局部论</a></h3>
+<p>亚当·斯密在其著作中，实际上并没有一套系统的经济周期理论。他的重心是阐明市场这只“看不见的手“如何协调个体自利行为与公共利益之间的关系。但在斯密的论述中，可以提炼出一种关于经济波动的观点，后世将其称为“危机局部论“。</p>
+<p>斯密认为，在自由市场经济中，商业活动的暂时性衰退是可能发生的，但它必然是局部性的、部门性的，而不会演变为系统性的宏观萧条。原因在于：如果一个行业出现过度投资或产品过剩，资本会通过价格信号自动退出该行业并流向其他更有效率的领域。市场机制就像一个自校正系统——局部失衡是常态，但系统性失衡不会发生。</p>
+<p>斯密的这个判断，在大英帝国工业化的早期似乎得到了验证。18 世纪末到 19 世纪初的经济波动确实表现为局部的商业危机——某一条贸易线路中断、某一种商品价格暴跌、某一家银行出现挤兑——但没有一次发展为全国性的长期萧条。</p>
+<h3 id="大卫李嘉图危机暂时论"><a class="header" href="#大卫李嘉图危机暂时论">大卫·李嘉图：危机暂时论</a></h3>
+<p>大卫·李嘉图继承并发展了斯密的框架。作为自由贸易的坚定倡导者，李嘉图认为，在自由贸易和国际分工的条件下，经济体具有极强的自我修复能力。即使出现一次严重的经济冲击，只要贸易渠道保持畅通，经济体也会在相对较短的时间内重新回到均衡。</p>
+<p>李嘉图的“危机暂时论“在 19 世纪中叶的英国经济中得到了经验支撑。1847 年的铁路危机——当时英国铁路建设热潮的崩溃导致大量银行破产——是一次剧烈的经济冲击，但英国经济在不到三年的时间内就恢复了增长。</p>
+<p>然而，随着资本主义经济的深化，危机越来越不再“局部“和“暂时“。1873 年开始的“长萧条“持续了将近六年，波及全球主要经济体，极大地动摇了古典经济学的乐观主义。</p>
+<h3 id="威廉斯坦利杰文斯太阳黑子假说"><a class="header" href="#威廉斯坦利杰文斯太阳黑子假说">威廉·斯坦利·杰文斯：太阳黑子假说</a></h3>
+<p>1884 年，英国经济学家威廉·斯坦利·杰文斯发表了一篇在当时引起轰动的论文，提出了一个今天看来近乎荒诞的假说：经济周期是由太阳黑子的周期性活动驱动的。</p>
+<p>杰文斯的论证逻辑是：太阳黑子的活动周期（约 11 年）会影响地球的气候变化，气候变化会影响农业收成，而农业收成的波动会通过食品价格、农民收入等渠道传导至整个经济体，从而产生宏观经济周期。</p>
+<p>从现代科学的角度看，杰文斯的太阳黑子假说是错误的——太阳黑子对气候和经济的影响微乎其微。但这一假说的学术价值不在于它的结论，而在于它的方法论：<strong>杰文斯是历史上第一个使用系统的计量方法（时间序列数据分析）来检验周期假设的经济学家。</strong> 他收集了长达数百年的太阳黑子数据和英国经济数据，制成了人类历史上最早的经济周期图谱。</p>
+<p>在大纲中，我们提到了杰文斯假说属于“外部冲击驱动“范式。这是准确的，但它更本质的意义在于：<strong>杰文斯触动了经济学中的一个核心问题——怎样才算“解释“了一个周期？</strong> 他认为，一个有效的周期解释，必须能够识别出周期波动的具体原因，而且这个原因应当是外生的、可以独立验证的。这个方法论标准比杰文斯假说本身的生命力更为持久。</p>
+<h3 id="阶段小结"><a class="header" href="#阶段小结">阶段小结</a></h3>
+<p>古典到新古典的周期理论，尽管学派众多、观点各异，但共享一个核心假设：<strong>经济系统本身是稳定的，波动来自外部。</strong> 在这一假设下，周期的治理逻辑是消极的——不需要特殊的政策干预，市场可以自行修复。</p>
+<p>1929 年，这个假设被彻底粉碎。</p>
+<h2 id="24-第二阶段内生不稳定与政策干预1929-1970"><a class="header" href="#24-第二阶段内生不稳定与政策干预1929-1970">2.4 第二阶段：内生不稳定与政策干预（1929-1970）</a></h2>
+<h3 id="大萧条的理论冲击"><a class="header" href="#大萧条的理论冲击">大萧条的理论冲击</a></h3>
+<p>1929 年开始的大萧条，是经济周期理论史上最关键的转折点。</p>
+<p>1929 年到 1933 年，美国实际 GDP 下降了约 30%，失业率从 3% 飙升至 25%，工业生产减少了近一半。在传统的古典经济学框架下，这种程度的衰退“不可能“发生——如果真的发生了，价格和工资的大幅下跌应该能够迅速恢复市场出清，经济应当在一到两年内自动复苏。</p>
+<p>但它没有。</p>
+<p>1933 年，富兰克林·罗斯福就任美国总统时，美国经济已经跌入谷底四年之久，且看不见任何自发性复苏的迹象。古典经济学的“危机暂时论“和“市场自动修复“的预言，被历史数据彻底证伪。</p>
+<p>这迫使经济学家寻找一种新的解释——不是将经济衰退归因于外部冲击，而是承认经济系统内部存在导致波动的不稳定力量。</p>
+<h3 id="约翰梅纳德凯恩斯有效需求不足"><a class="header" href="#约翰梅纳德凯恩斯有效需求不足">约翰·梅纳德·凯恩斯：有效需求不足</a></h3>
+<p>1936 年，约翰·梅纳德·凯恩斯出版了《就业、利息和货币通论》。这本书的重要性怎么强调都不为过——它不仅是宏观经济学的奠基之作，也是现代周期理论的真正起点。</p>
+<p>凯恩斯的核心论点可以用一句话概括：<strong>在短期，总需求决定总产出，而不是相反。</strong> 在古典经济学中，供给创造自己的需求（萨伊定律），因此生产行为本身就会产生足够的购买力来购买所生产的全部商品。凯恩斯否定了这一前提。他认为，居民的储蓄倾向会导致总需求低于总供给，而一旦总需求不足，企业会削减产出和就业——这又进一步降低居民收入，压缩总需求——形成一个“衰退的负向螺旋“。</p>
+<p>凯恩斯对周期的解释是内生性的：市场经济的运行方式本身就具有产生波动的倾向，不需要任何外部冲击来解释。总需求的不稳定性——特别是投资需求的剧烈波动——是周期的核心来源。而古典主义所依赖的“灵活价格-工资-自动出清“机制，在现实世界中并不成立：工资是刚性的（工人不愿意接受名义工资削减），价格是有粘性的（企业不愿意频繁调整价格），因此市场无法通过价格渠道迅速恢复均衡。</p>
+<p>凯恩斯的政策结论，在理论上颠覆了古典的消极治理逻辑。既然周期源于总需求的内生波动，那么政府就可以通过逆周期的财政政策（增加政府支出、减税）和货币政策（降低利率、增加货币供给）来稳定总需求、熨平周期波动。</p>
+<p>凯恩斯主义在二战后的三十年里成为全球主流经济学的标准范式。这一时期——从 1945 年到 1973 年——是资本主义历史上经济波动最小、增长最稳定的时期。美国在此期间仅经历了两次温和的衰退（1953 年和 1957 年），与此前的周期振幅形成了鲜明对比。凯恩斯的理论似乎得到了实践的验证。</p>
+<h3 id="乘数-加速数模型"><a class="header" href="#乘数-加速数模型">乘数-加速数模型</a></h3>
+<p>凯恩斯理论虽然深刻，但它仍然缺少一个关键的元素：周期的时间结构。凯恩斯解释了衰退为什么可能发生，但他没有解释为什么经济不是永远停留在萧条中，而是会周期性地复苏——为什么繁荣会衰退，衰退又会复苏？</p>
+<p>这个问题的答案，来自乘数-加速数模型（multiplier-accelerator model），由保罗·萨缪尔森在 1939 年提出。</p>
+<p>该模型的核心逻辑是两重机制的交互作用：</p>
+<p><strong>乘数效应（multiplier effect）</strong>：投资增加→收入和产出增加→消费增加→收入和产出进一步增加。这是一个放大机制。</p>
+<p><strong>加速数效应（accelerator effect）</strong>：产出增加→企业需要更多的资本设备→投资增加。这是一个触发机制。</p>
+<p>当乘数效应和加速数效应交互作用时，经济可以产生自发的周期运动。投资的一个微小增加，通过乘数效应放大为总产出的大幅上升，产出上升通过加速数效应引致更多的投资，从而进一步推高产出——这就是繁荣的形成机制。反过来，当产能逐渐饱和、投资回报率下降时，加速数效应会导致投资减少，乘数效应将投资的减少放大为产出的更大下降——这就是衰退的形成机制。</p>
+<p>乘数-加速数模型首次从数学上证明：<strong>一个不存在外部冲击的经济体，仅凭其内部的投资-产出互动，就可以产生自持续的周期波动。</strong> 这是周期理论史上的一个关键进展——它从根本上论证了周期的内生性。</p>
+<h3 id="约翰希克斯与萨缪尔森新古典综合"><a class="header" href="#约翰希克斯与萨缪尔森新古典综合">约翰·希克斯与萨缪尔森：新古典综合</a></h3>
+<p>1940 年代到 1960 年代，约翰·希克斯和保罗·萨缪尔森等人致力于将凯恩斯的宏观理论与新古典的微观基础整合起来，形成了“新古典综合“（Neoclassical Synthesis）。这一范式的基本架构是：在微观层面，市场机制有效（价格信号引导资源配置）；在宏观层面，市场可能失灵（总需求不足导致非自愿失业）。因此，微观层面不需要干预，宏观层面需要逆周期调节。</p>
+<p>新古典综合成为二战后到 1970 年代的标准教科书框架（也就是著名的 IS-LM 模型）。它在实践层面取得了令人瞩目的成功，但也埋下了隐患：<strong>这一范式对“周期“本身的解释力实际上非常有限。</strong> 新古典综合的注意力几乎全部集中在“如何消除周期“（逆周期政策设计）上，而不是“如何理解周期“（周期为什么产生、如何演变）。</p>
+<h3 id="弗里德里希哈耶克货币过度投资理论"><a class="header" href="#弗里德里希哈耶克货币过度投资理论">弗里德里希·哈耶克：货币过度投资理论</a></h3>
+<p>在凯恩斯主义快速扩张的时代，弗里德里希·哈耶克的周期理论是一个重要的异数。</p>
+<p>哈耶克的周期理论（奥地利学派商业周期理论）的核心逻辑是：低利率（通常由央行过度扩张的货币政策导致）会扭曲企业的投资决策。当利率被人为压低到“自然利率“（由储蓄和投资的实际供需决定）以下时，企业会过度投资于资本密集型的长周期项目。当货币政策最终不得不收紧（防止通胀失控）时，这些原本依赖于低利率环境的投资项目将变得无利可图，被迫中止或清算——由此引发衰退。</p>
+<p>哈耶克的观点与前文所述的“外部冲击“范式有显著差异。他承认周期是经济系统内生的（源于货币信用的扩张和收缩），但他与凯恩斯的根本分歧在于治理方向：凯恩斯认为衰退源于总需求不足，应当通过扩张性的货币和财政政策刺激需求；哈耶克则认为，衰退是对上一轮过度投资的必要修正，人为刺激只会推迟而非消除调整的阵痛，甚至可能在长期制造更大的累积失衡。</p>
+<p>哈耶克与凯恩斯之间的这场论战——迄今仍是经济周期理论史上最激动人心的思想对决——在 1929-1933 年大萧条的紧急状态下，实践显然选择了凯恩斯。但 1970 年代的“滞胀“危机将给哈耶克的观点带来一次迟来的正名。</p>
+<h3 id="约瑟夫熊彼特创造性破坏"><a class="header" href="#约瑟夫熊彼特创造性破坏">约瑟夫·熊彼特：创造性破坏</a></h3>
+<p>在周期理论的谱系中，约瑟夫·熊彼特占据了独特的位置。他既不属于凯恩斯阵营，也不属于哈耶克阵营——他自成一家。</p>
+<p>1939 年，熊彼特出版了长达 1095 页的巨著《经济周期：对资本积累过程的理论、历史和统计分析》。在这部作品中，熊彼特提出了他的核心论点：<strong>经济周期的根本驱动力，是企业家创新的集群式出现。</strong></p>
+<p>熊彼特的逻辑链条是这样的：创新不是均匀分布在时间轴上的。一次重大的技术突破（蒸汽机、铁路、电力、内燃机）会催生一批模仿性进入的企业家，他们共同将新技术转化为商业实践，形成“创新集群“。这些创新集群在导入期需要大量投资（设备、厂房、渠道），推动经济进入繁荣。随着创新的扩散，竞争加剧，利润率下降，经济从繁荣滑入衰退。在衰退中，那些基于旧技术的低效企业被淘汰——这就是“创造性破坏“（creative destruction）的过程。</p>
+<p>熊彼特用“创造性破坏“概括了周期的演进性功能：周期不仅是经济的波动，更是经济结构升级的机制。每一次大萧条之后，经济都会以更高的效率重新出发。</p>
+<p>熊彼特的另一个重要贡献，是他首次系统性地将不同时长的周期纳入统一分析框架。他明确区分了“康德拉季耶夫长波“（50-60 年）作为“第一级周期“、“朱格拉中周期”（7-11 年）作为“第二级周期“和“基钦短周期“（3-5 年）作为“第三级周期“，并论证了这三类周期之间的嵌套关系。他写道：“我们把它们放在一起不是为了同时使用它们，而是因为没有它们中的任何一个，另外两个的解释都是不完整的。“这是多周期嵌套分析思想的最早系统性表达。</p>
+<h3 id="阶段小结-1"><a class="header" href="#阶段小结-1">阶段小结</a></h3>
+<p>从 1929 年到 1970 年，经济周期理论完成了从“外部冲击“到“内生不稳定“的范式迁移。凯恩斯主义证明了经济系统内部存在产生波动的力量，乘数-加速数模型为这种力量提供了数学化的传导机制，熊彼特则揭示了周期的进化功能。</p>
+<p>这一范式迁移最重要的实践后果是：周期不再被视为市场经济的“不治之症“，而是可以通过政策干预来管理的。这一信念支撑了二战后全球经济的“黄金三十年“。</p>
+<p>但 1970 年代的滞胀将证明：政策干预不是免费的午餐——熨平短周期的努力，可能在长周期层面制造更加棘手的麻烦。</p>
+<h2 id="25-第三阶段多元分化与融合1970-至今"><a class="header" href="#25-第三阶段多元分化与融合1970-至今">2.5 第三阶段：多元分化与融合（1970 至今）</a></h2>
+<h3 id="滞胀理论范式的第二次危机"><a class="header" href="#滞胀理论范式的第二次危机">滞胀：理论范式的第二次危机</a></h3>
+<p>1973 年的第一次石油危机叠加 1970 年代普遍的高通胀，制造了一个凯恩斯主义无法解释的现象：<strong>高失业率和高通胀同时存在。</strong></p>
+<p>在凯恩斯-菲利普斯曲线的框架中，失业和通胀之间存在稳定的此消彼长关系——低失业率的代价是高通胀，低通胀的代价是高失业。但 1970 年代的现实是，美国通胀率在 1974 年达到 12.3%，失业率也同时达到 9%。两者同步恶化。</p>
+<p>传统的凯恩斯政策工具陷入了两难：扩张性政策降低失业但推高通胀，紧缩性政策降低通胀但推高失业。两条路都走不通。</p>
+<p>这场理论危机催生了新古典宏观经济学对凯恩斯主义的根本性挑战，也开启了现代周期理论的多元分化时代。</p>
+<h3 id="罗伯特卢卡斯与实际经济周期理论"><a class="header" href="#罗伯特卢卡斯与实际经济周期理论">罗伯特·卢卡斯与实际经济周期理论</a></h3>
+<p>1970 年代，以罗伯特·卢卡斯（1995 年诺贝尔经济学奖得主）为代表的芝加哥学派经济学家对凯恩斯主义的微观基础发起了系统性攻击。</p>
+<p>卢卡斯的核心批评是：凯恩斯主义的总量宏观模型缺乏微观基础（即对个体企业和消费者行为的底层解释）。如果个体是理性的，他们会根据对政策的预期来调整自己的行为——这就是著名的<strong>卢卡斯批判</strong>（Lucas Critique）。在理性预期的条件下，任何基于历史数据的政策效果估计都是不可靠的，因为一旦政策改变，个体的预期和行为也会改变，历史关系不再成立。</p>
+<p>在此基础上，芬恩·基德兰德和爱德华·普雷斯科特（2004 年诺贝尔经济学奖得主）进一步发展了 <strong>实际经济周期理论</strong>（Real Business Cycle Theory, RBC）。RBC 理论的核心论点是：<strong>经济周期的主要驱动力是技术冲击（全要素生产率的随机波动），而不是货币或需求冲击。</strong> 在 RBC 框架中，经济衰退不是市场失灵，而是经济体对不利技术冲击的最优反应——个体理性地选择减少工作和投资，因为技术进步速度放缓。</p>
+<p>RBC 理论的激进之处在于：它回归了古典经济学的“市场自动出清“信条，得出了一个在政策层面极具争议的结论——<strong>政府不应试图用货币或财政政策来熨平周期，因为周期本身是经济体对技术变化的帕累托最优反应。</strong> 某种意义上，RBC 理论是对凯恩斯主义最深刻的理论否定。</p>
+<h3 id="从卢卡斯批判到-dsge"><a class="header" href="#从卢卡斯批判到-dsge">从卢卡斯批判到 DSGE</a></h3>
+<p>卢卡斯批判的矛头所向虽然是否定凯恩斯主义，但它催生的方法论遗产——构建具有明确微观基础的宏观模型——后来被新凯恩斯主义反向吸收，形成了当前宏观经济学的主流标准框架：<strong>动态随机一般均衡模型</strong>（Dynamic Stochastic General Equilibrium, DSGE）。</p>
+<p>DSGE 模型的技术架构是：从一个具有理性预期和优化行为的代表性家庭和企业的微观设定出发，推导出整个经济的动态均衡路径，然后在均衡路径上叠加各种外生冲击（技术冲击、货币政策冲击、财政政策冲击等），观察冲击如何沿着模型预设的传导机制扩散为整个经济的周期波动。</p>
+<p>DSGE 模型在 1990 年代至 2008 年间是央行和学术界的标准宏观分析工具。它的精致化和数学化达到了经济思想史上从未有过的高度。但 2008 年金融危机暴露了它的致命缺陷：<strong>主流的 DSGE 模型没有金融部门。</strong> 不存在银行、不存在信用中介、不存在债务累积和去杠杆——而正是这些被模型忽视的变量，造成了二战以来最严重的全球衰退。</p>
+<h3 id="新凯恩斯主义周期理论"><a class="header" href="#新凯恩斯主义周期理论">新凯恩斯主义周期理论</a></h3>
+<p>新凯恩斯主义（New Keynesian Economics）在理性预期革命的冲击中“重建“了凯恩斯主义的周期逻辑。相比于传统的凯恩斯主义，新凯恩斯主义在方法论上接受了“需要微观基础“的批评，但坚持认为即使在理性预期条件下，市场也可能无法自动出清。</p>
+<p>新凯恩斯主义的核心理论支柱是两类“粘性“：</p>
+<p><strong>价格粘性</strong>（price stickiness）：企业不能随时随地调整价格。调整价格有“菜单成本“（menu cost）——印刷新菜单、重新标注价格标签、在系统中更新价格等都需要成本。因此，面对需求变化，企业可能选择维持价格不变、调整产量，而不是调整价格。这导致价格水平不能灵活地出清市场。</p>
+<p><strong>工资粘性</strong>（wage stickiness）：工人对名义工资下降有强烈的抵触心理（“货币幻觉“或公平感），因此即使经济衰退导致劳动力市场供大于求，名义工资也不会充分下降。这使得劳动力市场不能通过工资调整快速恢复均衡。</p>
+<p>在价格和工资粘性的条件下，凯恩斯主义的核心结论——总需求冲击会在短期内引起实际产出的波动，政府可以通过需求管理政策来稳定经济——重新获得了理论上的合理性，即使是在理性预期的范式之内。</p>
+<p>新凯恩斯主义在学术上实现了对 RBC 和凯恩斯主义的部分综合：接受 RBC 关于技术冲击驱动周期的观点，但坚持需求冲击和货币因素也至关重要；接受理性预期的方法论，但反对“市场总是自动出清“的结论。</p>
+<h3 id="金融周期理论"><a class="header" href="#金融周期理论">金融周期理论</a></h3>
+<p>2008 年金融危机之后，金融周期理论从一个相对边缘的研究领域迅速崛起为宏观经济学的核心方向。理论史的发展再次验证了本章开篇的判断：理论是危机倒逼的产物。</p>
+<p>金融周期理论的核心逻辑可以概括为三个递进的论点：</p>
+<p><strong>第一，金融系统不是中性的。</strong> 传统的宏观模型（无论是凯恩斯主义还是 RBC）都隐含地假设金融系统是一层被动的“面纱“——它只是将储蓄转化为投资，而不对实体经济的方向和波幅产生实质影响。金融周期理论否定这一假设。它的核心前提是：金融系统的信用扩张和收缩、资产价格的涨跌、杠杆率的升降，是驱动经济周期波动的核心变量，而不是对实体经济的被动反映。</p>
+<p><strong>第二，金融变量具有明显的顺周期性和自我强化特征。</strong> 在经济上行期，资产价格上升→抵押品价值上升→银行更愿意放贷→信用扩张→资产价格进一步上升——这是一个正向反馈循环。在经济下行期，资产价格下跌→抵押品价值缩水→银行收紧信贷→信用收缩→资产价格进一步下跌——这是一个负向反馈循环。这种自我强化的正反馈机制，显著放大了实体经济的周期波动幅度。</p>
+<p><strong>第三，“明斯基时刻“的存在。</strong> 经济学家海曼·明斯基早在 1980 年代就提出了一套后来被金融周期理论吸收的框架：稳定时期本身就孕育着不稳定。当经济运行平稳时，市场参与者的风险偏好逐渐上升，杠杆水平不断积累，金融结构从“稳健融资“演变为“投机融资”、再演变为“庞氏融资“；当流动性条件发生边际变化（利率上升、信用条件收紧）时，庞氏融资者首先违约，引发连锁反应——资产甩卖、价格暴跌、信用冻结——这就是所谓的“明斯基时刻“（Minsky Moment）。</p>
+<p>2008 年金融危机正是“明斯基时刻“的现代版本。次级抵押贷款市场的违约，通过住房抵押贷款支持证券和信用违约互换等金融衍生工具，迅速传导为全系统的信用冻结和资产价格崩盘。危机之后，金融周期理论从学术边缘进入了核心领域，成为中央银行和监管机构的标准分析框架——巴塞尔协议 III 中对“逆周期资本缓冲“的要求，本质上就是金融周期理论的直接政策应用。</p>
+<h3 id="多周期嵌套理论"><a class="header" href="#多周期嵌套理论">多周期嵌套理论</a></h3>
+<p>多周期嵌套理论是本书第二和第三部分将系统性展开的核心分析框架。在此仅做理论谱系上的定位。</p>
+<p>多周期嵌套理论的核心前提是：<strong>经济波动不能由任何一个单一周期来解释。</strong> 现实的宏观经济运行，是康德拉季耶夫长波、库兹涅茨中长波、朱格拉中波和基钦短波同时在时间轴上运行、相互叠加的产物。</p>
+<p>这一理论的根基可以追溯到熊彼特 1939 年的著作。熊彼特明确提出了“三周期“分析框架，并以此为基础分析了工业革命以来三轮康波周期的运行特征。他对周期嵌套机制做了如下描述：“每一轮康德拉季耶夫周期包含了一定数量的朱格拉周期，每一轮朱格拉周期包含了一定数量的基钦周期。它们不是独立的，而是在同一经济过程中发生的不同层面的波动。”</p>
+<p>但熊彼特的框架在随后的几十年中并未得到充分的继承和发展。一个重要的原因是：当时缺乏足够的长期数据来量化验证多周期嵌套的理论假设。这个限制在 21 世纪初随着经济统计体系的完善和计量技术的发展而逐渐被突破。</p>
+<p>2000 年代以来，多周期嵌套理论在实证层面取得了重要进展。学者们利用谱分析（spectral analysis）和小波分析（wavelet analysis）等频率域工具，从全球主要经济体的长期数据中分离出了多个显著周期分量，其时长分布与康波、库兹涅茨、朱格拉和基钦周期的理论预测高度吻合。这些实证成果为多周期嵌套理论提供了过去只有熊彼特直觉支撑的量化基础。</p>
+<p>今天，多周期嵌套框架已成为连接宏观经济逻辑与金融市场实践的桥梁——对长波的判断影响长期资产配置，对中周期的判断影响产业投资方向，对短周期的判断影响交易节奏。我们将在第四章到第八章中系统性地展开这一框架。</p>
+<h2 id="26-理论的边界一个实用主义的总结"><a class="header" href="#26-理论的边界一个实用主义的总结">2.6 理论的边界：一个实用主义的总结</a></h2>
+<p>经过三百年理论演进的回顾，我们可以得出一个实用主义的重要结论：<strong>没有一种理论可以解释经济周期的一切维度。</strong></p>
+<p>每一种周期理论都有其有效的解释范围和无法触及的盲区：</p>
+<ul>
+<li>古典理论正确地指出，市场机制具有自我修复的能力，但低估了系统内部产生失衡并持续自我强化的可能性。</li>
+<li>凯恩斯主义正确地识别了总需求内生波动的风险，但低估了政策干预的长期间接成本——通胀累积、债务膨胀和结构性扭曲。</li>
+<li>哈耶克正确地指出了货币扩张对投资决策的扭曲机制，但高估了市场自身出清的速度和代价。</li>
+<li>熊彼特正确地揭示了技术创新作为长波驱动力的核心地位，但对中短周期波动的解释力有限。</li>
+<li>实际经济周期理论正确地强调了技术冲击和供给端的周期性作用，但严重低估了金融变量和需求冲击对周期的独立影响。</li>
+<li>新凯恩斯主义正确地恢复了需求和货币因素在周期分析中的地位，但其微观基础建构的精致化远远超过了实证检验的能力。</li>
+<li>金融周期理论正确地填补了主流宏观模型对金融变量系统性忽视的巨大空白，但尚未形成统一、简洁的理论核心，且对实体经济内生周期的解释仍不完全。</li>
+<li>多周期嵌套理论正确地捕捉了现实经济运行中不同时长周期叠加的复杂性，但其量化识别技术仍在持续发展之中，不同周期之间的因果传导机制还有待更深层次的实证揭示。</li>
+</ul>
+<p>对于专业读者而言，关键不是选择“哪个理论是对的“，而是建立一份“理论工具地图“，明确每一类分析场景下应该使用哪一套理论工具，以及使用这套工具时需要注意哪些盲区。</p>
+<p>本书的立场是<strong>实用主义的多元综合</strong>：在前述各理论的有效边界内，灵活运用它们的核心逻辑，形成一个多角度、多层次、相互验证的分析框架。我们拒绝“一个理论包打天下“的教条，也拒绝“所有理论都一样“的相对主义。我们的标准只有一个：是否能够更好地解释历史和预测概率。</p>
+<p>在完成了理论史的梳理之后，第三章将从这些理论的交叉点出发，搭建一个属于本书自己的通用周期分析框架。</p>
+<hr>
+<h3 id="关键要点"><a class="header" href="#关键要点">关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>阶段</th><th>核心逻辑</th><th>代表性理论</th><th>关键实践节点</th></tr>
+</thead>
+<tbody>
+<tr><td>古典-新古典（1776-1929）</td><td>外部冲击驱动</td><td>斯密危机局部论、李嘉图危机暂时论、杰文斯太阳黑子假说</td><td>历次金融恐慌但市场自我修复</td></tr>
+<tr><td>凯恩斯主义到综合（1929-1970）</td><td>内生不稳定+政策干预熨平</td><td>凯恩斯有效需求不足、乘数-加速数、熊彼特创造性破坏、哈耶克货币过度投资</td><td>大萧条 → 战后“黄金三十年“</td></tr>
+<tr><td>现代多元分化（1970 至今）</td><td>多元解释+政策边界</td><td>RBC、新凯恩斯主义、金融周期理论、多周期嵌套</td><td>滞胀危机 → 2008 年全球金融危机</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>Schumpeter, J. A. (1939). <em>Business Cycles: A Theoretical, Historical, and Statistical Analysis of the Capitalist Process</em>.</li>
+<li>Keynes, J. M. (1936). <em>The General Theory of Employment, Interest and Money</em>.</li>
+<li>Lucas, R. (1976). “Econometric Policy Evaluation: A Critique.” <em>Carnegie-Rochester Conference Series on Public Policy</em>.</li>
+<li>Kydland, F. &amp; Prescott, E. (1982). “Time to Build and Aggregate Fluctuations.” <em>Econometrica</em>.</li>
+<li>Minsky, H. (1986). <em>Stabilizing an Unstable Economy</em>.</li>
+<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Business_cycle#Theories">Business cycle theory</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-1/chapter-1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-1/chapter-3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-1/chapter-1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-1/chapter-3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第十五章 基钦周期的全球实证表现 - 周期之轮：经济波动的底层逻辑、实证测度与决策框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-dfbc294f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-f431dfd6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之轮：经济波动的底层逻辑、实证测度与决策框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第十五章-基钦周期的全球实证表现"><a class="header" href="#第十五章-基钦周期的全球实证表现">第十五章 基钦周期的全球实证表现</a></h1>
+<blockquote>
+<p><strong>证四：库存的节奏</strong>
+<em>短周期是最不起眼的周期——它不像康波那样宏大，也不像库兹涅茨那样深刻。但它是所有周期中最具实战价值的：它直接关联机器轰鸣的节奏、订单的增减、价格的涨跌、股市的牛熊。理解基钦周期，就是理解经济最真实、最频繁的短期呼吸。</em></p>
+</blockquote>
+<h2 id="151-基钦周期的全球验证方法"><a class="header" href="#151-基钦周期的全球验证方法">15.1 基钦周期的全球验证方法</a></h2>
+<p>对基钦周期的实证验证，核心关注企业库存行为的周期性特征。</p>
+<p>验证的基本方法包括：对主要经济体的工业企业产成品库存增速序列进行谱分析，检验 3-5 年周期成分的统计显著性；使用 BBQ 算法识别产成品库存增速的峰值和谷值，验证主动补库、被动补库、主动去库、被动去库四阶段的交替逻辑是否在数据中成立；比较库存周期与 GDP 增速、工业增加值增速、PPI 的周期节奏，验证基钦周期与宏观经济和价格波动的共变性。</p>
+<h2 id="152-美国库存周期的基准模板"><a class="header" href="#152-美国库存周期的基准模板">15.2 美国：库存周期的基准模板</a></h2>
+<p>美国拥有全球最长、最完整的工业企业库存数据序列（1948 年至今），是全球基钦周期研究的最佳基准样本。</p>
+<h3 id="周期识别的实证结果"><a class="header" href="#周期识别的实证结果">周期识别的实证结果</a></h3>
+<p>对美国 1948-2026 年间实际产成品库存增速序列进行谱分析，在 38-52 个月的频率上呈现出一个显著的谱峰——基钦周期的统计显著性得到了确认。BBQ 算法识别出在此 78 年间共计完成约 18 轮完整的基钦周期，平均时长为 4.2 年。短周期在 3.0 到 5.0 年之间波动。</p>
+<p>关键周期的库存增速峰值和谷值如下：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时期</th><th>库存增速峰值</th><th>库存增速谷值</th><th>周期时长（月）</th><th>周期阶段对应经济背景</th></tr>
+</thead>
+<tbody>
+<tr><td>1949-1953</td><td>18%</td><td>-8%</td><td>48</td><td>二战后复苏</td></tr>
+<tr><td>1954-1958</td><td>12%</td><td>-6%</td><td>48</td><td>战后修正</td></tr>
+<tr><td>1959-1962</td><td>14%</td><td>-2%</td><td>36</td><td>温和扩张</td></tr>
+<tr><td>1963-1967</td><td>16%</td><td>-4%</td><td>48</td><td>越战繁荣</td></tr>
+<tr><td>1968-1971</td><td>10%</td><td>-5%</td><td>36</td><td>减速</td></tr>
+<tr><td>1972-1975</td><td>20%</td><td>-10%</td><td>36</td><td>石油危机</td></tr>
+<tr><td>1976-1980</td><td>16%</td><td>-6%</td><td>48</td><td>滞胀</td></tr>
+<tr><td>1981-1984</td><td>12%</td><td>-8%</td><td>36</td><td>沃尔克紧缩</td></tr>
+<tr><td>1985-1988</td><td>10%</td><td>-4%</td><td>36</td><td>里根繁荣</td></tr>
+<tr><td>1989-1992</td><td>8%</td><td>-4%</td><td>36</td><td>储贷危机</td></tr>
+<tr><td>1993-1996</td><td>10%</td><td>-2%</td><td>36</td><td>新经济起步</td></tr>
+<tr><td>1997-2001</td><td>12%</td><td>-6%</td><td>48</td><td>科网泡沫</td></tr>
+<tr><td>2002-2005</td><td>8%</td><td>-2%</td><td>36</td><td>房地产繁荣前夜</td></tr>
+<tr><td>2006-2009</td><td>10%</td><td>-12%</td><td>36</td><td>次贷危机</td></tr>
+<tr><td>2010-2013</td><td>8%</td><td>-2%</td><td>36</td><td>危机后修复</td></tr>
+<tr><td>2014-2017</td><td>6%</td><td>-2%</td><td>36</td><td>温和扩张</td></tr>
+<tr><td>2018-2020</td><td>6%</td><td>-8%</td><td>36</td><td>疫情冲击</td></tr>
+<tr><td>2021-2024</td><td>18%</td><td>-2%</td><td>36</td><td>疫情后补库+加息去库</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="四阶段验证"><a class="header" href="#四阶段验证">四阶段验证</a></h3>
+<p>从库存数据的拐点特征来看，美国数据完美地验证了第七章中描述的基钦周期四阶段模型：</p>
+<p><strong>主动补库阶段：典型时长 6-12 个月。</strong> 企业营收增速较快，产成品库存增速从低点回升。这是一个阶段的确认条件为“营收增速为正 + 库存增速上行“。</p>
+<p><strong>被动补库阶段：典型时长 3-6 个月。</strong> 营收增速放缓甚至开始下降，但企业的生产节奏调整滞后，库存增速继续上升或维持在较高水平。确认条件为“营收增速下行 + 库存增速仍在高位“。</p>
+<p><strong>主动去库阶段：典型时长 6-12 个月。</strong> 营收增速持续下行，企业确认趋势并主动削减库存。这一阶段对政策冲击、流动性危机的反应最为剧烈——2008 年和 2020 年，库存增速几乎呈现断崖式下行。确认条件为“营收增速下行 + 库存增速从高位快速下行“。</p>
+<p><strong>被动去库阶段：典型时长 3-6 个月。</strong> 营收增速开始企稳甚至回升，但企业去库惯性仍然存在着较强的影响——产成品库存继续下降，但速度放缓。确认条件为“营收增速企稳回升 + 库存增速下行趋缓或触底“。</p>
+<h3 id="库存周期与股票市场的关系"><a class="header" href="#库存周期与股票市场的关系">库存周期与股票市场的关系</a></h3>
+<p>对美国标普 500 指数的历史表现与库存周期的对应关系的分析表明：</p>
+<ul>
+<li>主动补库阶段：标普 500 年化收益率平均约为 18%——这是基钦周期中股票表现最好的阶段；</li>
+<li>被动补库阶段：年化收益率约为 8%——收益大幅缩窄，波动增加；</li>
+<li>主动去库阶段：年化收益率约为 -12%——这是股票表现最差的阶段，也是最大回撤的集中窗口；</li>
+<li>被动去库阶段：年化收益率约为 14%——股票市场在底部开始积累动能。</li>
+</ul>
+<h2 id="153-中国制造业大国的库存节律"><a class="header" href="#153-中国制造业大国的库存节律">15.3 中国：制造业大国的库存节律</a></h2>
+<p>中国的工业企业库存数据（2000 年至今）提供了基钦周期另一个重要的实证样本。</p>
+<h3 id="更短更快的周期"><a class="header" href="#更短更快的周期">更短更快的周期</a></h3>
+<p>中国基钦周期的平均时长约为 3 年——比美国的 4.2 年更短。这与中国的制造业在经济总量中占比过高、对需求变化反应更敏感的特征一致。</p>
+<h3 id="更强的政策扰动"><a class="header" href="#更强的政策扰动">更强的政策扰动</a></h3>
+<p>中国的基钦周期的特点是“高波动、受政策冲击影响更频繁“——在 2008-2009 年的四万亿刺激之后，中国工业企业的补库力度快速反弹，库存增速在 2009-2010 年上升到 25% 的高位——远超过美国的同阶段水平。在 2015-2016 年的供给侧改革去产能阶段，库存增速又快速下降至负值区间。</p>
+<h3 id="新指标的影响挑战"><a class="header" href="#新指标的影响挑战">新指标的影响挑战</a></h3>
+<p>随着中国经济从“投资驱动“向“消费驱动“转型，服务业占 GDP 的比重持续上升，制造业的相对权重下降。这对传统基钦周期的应用逻辑产生了两方面的影响：工业产成品库存数据的周期代表性趋弱，服务业的库存特征（不可储存）完全不同——餐饮、旅游、教育等服务业没有“库存“的概念，因此服务业占比的上升意味着库存周期对整体经济波动的影响力在逐步减弱。</p>
+<h2 id="154-日本低通胀下的库存周期变异"><a class="header" href="#154-日本低通胀下的库存周期变异">15.4 日本：低通胀下的库存周期变异</a></h2>
+<p>日本的基钦周期在 1990 年代后呈现出“低振幅、长间隔“的特征。</p>
+<p>库存增速的峰值从泡沫期的 15%-20% 的高位降低到 2000 年后的 5%-8%——这表明在低增长、低通胀的环境下，企业的库存管理更加保守，主动补库的幅度和意愿都不强。</p>
+<p>日本企业在 1990 年代泡沫经济崩溃后全面引入了“精益生产“和“即时生产“（JIT）的库存管理理念——通过将库存水平降到最低来减少资金占用、降低经营风险。这一管理模式让库存的调整空间变得更有限——基钦周期的振幅自然缩小了。</p>
+<h2 id="155-欧元区供应链摩擦下的库存行为变异"><a class="header" href="#155-欧元区供应链摩擦下的库存行为变异">15.5 欧元区：供应链摩擦下的库存行为变异</a></h2>
+<p>欧元区的基钦周期在 2021-2024 年间经历了一次值得关注的“结构性变异“。</p>
+<p>2020 年疫情后的供应链危机暴露了全球分工体系的脆弱性。欧洲企业一度面临“芯片荒“和“关键零部件断供“的极端缺货局面。在这种压力下，许多欧洲制造企业放弃了过去追求“低库存“的效率导向，转向更注重“高安全库存“的韧性导向——通过主动提高库存水平来防范未来可能再次发生的断供风险。</p>
+<p>这一“库存偏好“的结构性上升，暂时性地改变了基钦周期的行为特征：库存增速在 2022-2023 年间维持超预期的增长，主动去库的意愿空前降低。这是供应链冲击对基钦周期的“结构性扰动“的典型案例。</p>
+<hr>
+<h3 id="关键要点"><a class="header" href="#关键要点">关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>经济体</th><th>平均周期时长</th><th>库存振幅</th><th>特殊特征</th></tr>
+</thead>
+<tbody>
+<tr><td>美国</td><td>4.2 年</td><td>中等（峰 10-18%，谷 -4 到 -12%）</td><td>四阶段验证最清晰，股市映射最稳定</td></tr>
+<tr><td>中国</td><td>3 年</td><td>高（峰 15-25%）</td><td>政策扰动频繁，服务业占比上升使代表性趋弱</td></tr>
+<tr><td>日本</td><td>3-4 年</td><td>低（峰 5-8%）</td><td>JIT 管理模式压低振幅，低通胀环境抑制补库意愿</td></tr>
+<tr><td>欧元区</td><td>3-4 年</td><td>中等</td><td>供应链冲击导致“安全库存偏好“结构上升</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>US Census Bureau: Manufacturing and Trade Inventories and Sales</li>
+<li>National Bureau of Statistics of China: Industrial enterprises finished goods inventory</li>
+<li>European Central Bank: “The changing nature of the inventory cycle” (ECB Economic Bulletin, 2023)</li>
+<li>Federal Reserve Bank of St. Louis: FRED Database</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-4/chapter-14.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-4/chapter-16.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-4/chapter-14.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-4/chapter-16.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

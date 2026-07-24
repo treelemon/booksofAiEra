@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第一章 经济周期的本质定义与核心概念 - 周期之轮：经济波动的底层逻辑、实证测度与决策框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-dfbc294f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-f431dfd6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之轮：经济波动的底层逻辑、实证测度与决策框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第一章-经济周期的本质定义与核心概念"><a class="header" href="#第一章-经济周期的本质定义与核心概念">第一章 经济周期的本质定义与核心概念</a></h1>
+<blockquote>
+<p><strong>波：常态即波动</strong>
+<em>经济不波动，才是异常。周期不是经济运行的病态，而是市场经济的内置操作系统。</em></p>
+</blockquote>
+<h2 id="11-一个困扰了三百年的问题"><a class="header" href="#11-一个困扰了三百年的问题">1.1 一个困扰了三百年的问题</a></h2>
+<p>什么是经济周期？</p>
+<p>这个问题看似简单，但人类花了将近两百年才达成初步共识。直到今天，关于经济周期的本质，学术界和实务界仍然存在大量误解。最常见的误解有两种：</p>
+<p>第一种，将经济周期等同于经济危机。在许多人的日常语言中，“周期“几乎就是“衰退“的代名词：当经济繁荣时，没有人谈论周期；当经济下行时，周期变成了高频词汇。这种认知片面到了危险的程度——如果把周期理解为衰退，就无法理解为什么繁荣本身就是周期的一部分，为什么每一次繁荣中都埋着下一次衰退的种子。</p>
+<p>第二种，将经济周期视为外部随机冲击的结果。持有这种观点的人认为，经济本来应该是一条平稳向上的增长线，只是因为战争、自然灾害、政策失误等外部因素的干扰，才出现了波动。这种观点的潜台词是：如果没有“意外“，经济就不会波动。</p>
+<p>两种误解的共同问题在于：它们都把波动视为一种<strong>异常状态</strong>，而不是经济的<strong>正常状态</strong>。</p>
+<p>本书的观点恰恰相反：<strong>波动才是常态，稳定才是例外。</strong></p>
+<p>让我们用数据说话。美国国家经济研究局（NBER）是美国官方指定经济周期峰谷日期的权威机构。根据 NBER 的周期划分，从 1854 年到 2020 年的 166 年间，美国经济共经历了 34 轮完整的经济周期。在这 166 年中，美国经济处于扩张期的时间总计约 136 年，处于收缩期的时间约 30 年。但关键数据不是扩张与收缩的比例，而是：<strong>没有任何一个十年是没有经历过至少一次衰退的。</strong></p>
+<p>十年，对于一个国家的经济运行来说，只是弹指一挥间。但美国在过去一个半世纪中，从未有过连续的十年免于衰退。这意味着，波动——有时温和，有时剧烈——是经济运行的必然伴侣，而不是可以去“治愈“的疾病。</p>
+<p>不仅美国如此。英国、德国、日本、中国——所有实行市场经济的国家，都呈现出同样的模式。经济周期不是特定制度、特定国家、特定时代的产物。它是市场经济本身的“出厂设置“。</p>
+<h2 id="12-重新定义经济周期"><a class="header" href="#12-重新定义经济周期">1.2 重新定义经济周期</a></h2>
+<p>要讨论经济周期，首先必须有一个精确的定义，能够将周期性的波动与随机的经济波动区分开来。</p>
+<p>本书采用以下定义：</p>
+<p><strong>经济周期是市场经济运行中，以总产出为核心指标的经济活动水平，围绕其长期趋势所呈现出的、在方向上具有交替性、在时间上具有重复性、在传导上具有系统性的扩张与收缩循环波动。</strong></p>
+<p>这个定义包含四个关键要素。</p>
+<h3 id="第一方向上的交替性"><a class="header" href="#第一方向上的交替性">第一，方向上的交替性</a></h3>
+<p>这是周期的最基本特征：经济的运行方向不会永久性地保持单一方向。扩张之后必然有收缩，收缩之后必然有扩张。方向交替不是偶然的，不是“这次不一样“就能回避的。一次扩张的结束，从来不是因为运气不好撞上了外部冲击，而是因为扩张本身制造了结构性的失衡——产能过剩、债务堆积、成本上升——这些失衡最终迫使方向逆转。</p>
+<p>方向交替是周期之所以为“周期“的根本标识。如果经济的下行只是一次性的偏离，事后回归到原增长路径，那叫“冲击-回复“（shock-reversion），不是周期。周期的本质在于：每一次扩张都为下一次收缩创造条件，每一次收缩也都为下一次扩张积蓄力量。</p>
+<h3 id="第二时间上的重复性"><a class="header" href="#第二时间上的重复性">第二，时间上的重复性</a></h3>
+<p>这并不意味着周期以完全固定的时长重复出现。不，周期的时滞具有显著的变异性。康德拉季耶夫长波的时长为 40 到 65 年不等；朱格拉中周期最短记录为 5 年，最长为 13 年；基钦短周期的最大差距可以达到两倍以上。但尽管每轮周期的时长不固定，其分布范围始终是稳定的——周期的类型决定了它在大概率上持续的时间窗口。</p>
+<p>时间上的重复性，意味着周期的运行具有统计意义上的可识别性。如果经济的波动是完全随机的，那么波峰和波谷之间应该没有稳定的统计关系。但全球数百年的经济数据反复验证：一旦你知道了上一轮周期结束的时间，你就可以在大概率上预测下一轮周期的高峰窗口期。这在投资和宏观决策中的含义不言而喻。</p>
+<h3 id="第三传导上的系统性"><a class="header" href="#第三传导上的系统性">第三，传导上的系统性</a></h3>
+<p>周期不是单一部门的孤立现象。当一轮周期启动时，其影响会沿着产业链、金融链和预期链，系统性地扩散至整个经济系统。一次库存调整可能始于汽车行业，但会传导至钢铁、橡胶、玻璃、运输，然后通过就业和收入传导至消费，再通过企业利润传导至投资，最终形成全经济范围的波动。</p>
+<p>系统性的传导，是周期区别于微观层面的局部供需波动的关键特征。一家餐厅因为换了老板而关门歇业，这不是周期。当同一座城市里大量餐厅、零售店、工厂同时缩减投资和库存时，周期才真正出现。</p>
+<h3 id="第四围绕长期趋势波动"><a class="header" href="#第四围绕长期趋势波动">第四，围绕长期趋势波动</a></h3>
+<p>周期的波动不是散乱无章的。它始终围绕着一个长期增长趋势线运行。这条趋势线由人口增长、技术进步、资本积累、制度演进等超长期变量决定。周期的收缩是围绕着趋势线的向下偏离，扩张是向上偏离，而不是趋势本身的改变。</p>
+<p>这意味着一个重要的分析原则：<strong>区分趋势与周期，是周期分析的起点。</strong> 如果你把长期趋势的变化（比如人口老龄化导致潜在增速系统性下降）误认为周期性波动，就会得出错误的政策结论——你会在应该调整结构的时候，选择逆周期刺激；或者反过来，在应该逆周期刺激的时候，选择等待结构自然修复。</p>
+<h3 id="定义的意义"><a class="header" href="#定义的意义">定义的意义</a></h3>
+<p>这个定义的目的，是把“经济周期“从一个模糊的日常概念，变成一个可以操作的分析对象。有了定义，我们就可以回答：什么样的波动算周期，什么样的波动不算；周期什么时候开始，什么时候结束；扩张和收缩的边界在哪里。</p>
+<p>在本书后续的所有分析中，这一定义都将是我们判断周期的基准坐标。</p>
+<h2 id="13-周期的四个标准阶段"><a class="header" href="#13-周期的四个标准阶段">1.3 周期的四个标准阶段</a></h2>
+<p>经济学家通常将一轮完整的经济周期划分为四个阶段：复苏、繁荣、衰退、萧条。这里需要指出的是，这四种阶段的划分方式并非唯一标准，NBER 和一些研究机构采用“峰-谷“二分法（扩张期和收缩期），但在实战分析中，四阶段划分法更加精细、更有操作性。</p>
+<h3 id="第一阶段复苏"><a class="header" href="#第一阶段复苏">第一阶段：复苏</a></h3>
+<p>复苏是经济从萧条底部逐步回升的阶段。它的典型特征是：</p>
+<ul>
+<li><strong>经济增长由负转正</strong>：GDP 增速从收缩区间重新回到正值，但绝对水平仍然低于潜在增长率；</li>
+<li><strong>产能利用率从谷底回升</strong>：大量闲置产能被重新启用，但尚未触及产能瓶颈；</li>
+<li><strong>失业率从峰值缓慢下降</strong>：企业重新开始招聘，但劳动力市场还存在充裕的冗余；</li>
+<li><strong>企业利润边际改善</strong>：营收增长开始超过成本增速，利润率从底部回升；</li>
+<li><strong>库存周期处于被动去库向主动补库过渡的临界点</strong>：市场需求率先回暖，企业尚未充分调整预期，库存被动消耗；</li>
+<li><strong>货币政策和财政政策通常仍处于宽松状态</strong>：政策对经济复苏仍保持支持，尚未收紧。</li>
+</ul>
+<p>复苏阶段的独特之处在于，它处于周期中最“脆弱“的时刻——经济刚从底部爬出，增速尚在潜在水平之下，市场信心仍然脆弱，任何外部冲击都可能将经济重新推回衰退。但与此同时，复苏也是最具“弹性“的阶段——大量闲置资源可以被重新激活，企业利润改善的空间最大，资产价格往往会在复苏阶段实现最好的累计回报。</p>
+<h3 id="第二阶段繁荣"><a class="header" href="#第二阶段繁荣">第二阶段：繁荣</a></h3>
+<p>繁荣是经济活动持续扩张并达到顶峰的阶段。它的典型特征包括：</p>
+<ul>
+<li><strong>GDP 增速超过潜在增长率</strong>：经济产出达到或超过其长期产能水平，需求扩张开始消耗冗余产能；</li>
+<li><strong>产能利用率接近或触及瓶颈</strong>：企业开始面对劳动力短缺、设备满负荷运转、原材料供应紧张等问题；</li>
+<li><strong>失业率降至历史低位</strong>：劳动力市场紧张，工资开始加速上涨；</li>
+<li><strong>企业利润达到周期峰值</strong>：营收增速强劲，定价能力增强，利润率和盈利水平均达到周期高点；</li>
+<li><strong>固定资产投资加速</strong>：在强劲需求的驱动下，企业开始大规模扩张产能，启动新的资本开支计划；</li>
+<li><strong>信贷总量快速扩张</strong>：银行放贷意愿强烈，企业和居民杠杆率攀升；</li>
+<li><strong>资产价格估值溢价上升</strong>：股票市场、房地产市场等典型资产价格持续走高，市场情绪从乐观走向狂热；</li>
+<li><strong>通胀压力积累但尚未充分释放</strong>：尽管总需求持续超过总供给，但由于产能扩张的时滞、全球供应链的缓冲，CPI 的全面上行往往滞后于经济周期的峰值。</li>
+</ul>
+<p>繁荣阶段是经济最“美好“的阶段——就业充分、收入增长、资产升值。但繁荣也是最危险的阶段，因为它会系统性地自我蚕食：产能过度扩张、债务过度积累、资产价格泡沫化、成本全面上升——这些趋势最终会削弱扩张本身的可持续性。繁荣的顶点，往往不是哪一个外部冲击“打下来“的，而是繁荣自身的内部力量开始衰竭的结果。</p>
+<h3 id="第三阶段衰退"><a class="header" href="#第三阶段衰退">第三阶段：衰退</a></h3>
+<p>衰退是经济从繁荣顶点逐步回落的阶段。衰退的技术性定义通常为：连续两个季度或更长时间的 GDP 环比负增长。但实战中，NBER 对衰退的认定标准更为综合，不仅看 GDP，还参考实际收入、就业、工业产出和批发零售等同步指标。</p>
+<p>衰退阶段的典型特征：</p>
+<ul>
+<li><strong>GDP 增速从峰值持续下滑</strong>：经济增速逐季走低，从正增长区间滑入负增长区间；</li>
+<li><strong>产能利用率从高点回落</strong>：企业开始闲置生产线，产能扩张计划被搁置或取消；</li>
+<li><strong>失业率从低位快速上升</strong>：企业减少招聘→冻结人力→裁员的链条依次启动；</li>
+<li><strong>企业利润从峰值收缩</strong>：营收下滑，但固定成本无法快速调整，利润率快速恶化；</li>
+<li><strong>信贷条件急剧收紧</strong>：银行提高放贷标准，惜贷情绪蔓延，企业融资成本上升；</li>
+<li><strong>资产价格全面下行</strong>：股票市场领跌，房地产价格松动，大宗商品价格随需求萎缩而下跌；</li>
+<li><strong>企业库存从被动补库进入主动去库</strong>：需求回落速度远超企业预期，产品积压，企业开始主动削减产出和库存。</li>
+</ul>
+<p>衰退阶段最令人痛苦的特征是它的“自我强化“机制——需求下滑导致企业裁员，裁员导致居民收入下降，收入下降导致消费收缩，消费收缩导致需求进一步下滑。这个“负向螺旋“一旦启动，如果缺少外力介入（政策刺激），往往要持续到价格和成本调整到足够低的水平，才能重新积聚下一轮扩张的动力。</p>
+<h3 id="第四阶段萧条"><a class="header" href="#第四阶段萧条">第四阶段：萧条</a></h3>
+<p>萧条是衰退之后、复苏之前的经济停滞期，也是周期中经济产出最低、市场信心最差的阶段。在现代宏观政策干预之下，纯粹的“萧条“已经比大萧条时代罕见得多，但深度衰退之后的经济底部徘徊阶段仍然存在。</p>
+<p>萧条阶段的典型特征：</p>
+<ul>
+<li><strong>GDP 增速触底并开始在低位企稳</strong>：经济不再加速下滑，但也没有出现明显的回升迹象，增速处于或低于零增长区间；</li>
+<li><strong>产能利用率达到周期谷底</strong>：大量产能完全闲置，部分企业彻底退出市场；</li>
+<li><strong>失业率达到周期峰值</strong>：劳动力市场的调整可能仍然滞后于经济底部——企业在经济触底后仍会继续裁员（即“无就业复苏“现象）；</li>
+<li><strong>企业利润普遍亏损</strong>：全行业利润位于周期谷底，大量企业面临债务违约风险；</li>
+<li><strong>信贷市场极度紧缩</strong>：银行资产负债表恶化，惜贷情绪达到峰值，信用创造几乎停滞；</li>
+<li><strong>资产价格持续承压，部分资产出现超跌</strong>：恐慌性抛售之后，市场开始进入漫长的筑底过程；</li>
+<li><strong>企业库存处于主动去库末期或被动去库初期</strong>：库存已经被大幅削减，部分行业库存降至极低水平，市场开始酝酿新一轮补库需求。</li>
+</ul>
+<p>萧条阶段最容易被低估的特征是：它是下一轮周期的“孕育期“。大量低效产能和企业被淘汰，资产价格被压到极低水平，信贷市场极度紧缩后孕育着下一轮宽松的空间——这些看似痛苦的过程，恰恰是下一轮复苏和繁荣的起点。</p>
+<p>周期的四个阶段之间不存在清晰的“闸门“。从复苏到繁荣的切换是渐进式的，从繁荣到衰退的切换可能突然加速。但无论过渡形态如何，这四个阶段的逻辑次序是固定的：复苏→繁荣→衰退→萧条→复苏。这就是周期的基本节律。</p>
+<h2 id="14-周期的四大核心典型化事实"><a class="header" href="#14-周期的四大核心典型化事实">1.4 周期的四大核心典型化事实</a></h2>
+<p>前面确定了周期的定义和阶段划分。接下来，我们要进入一个更深的层次：经济周期在实证数据中表现出哪些稳定的统计规律？</p>
+<p>基于全球主要经济体过去两个世纪的经济数据，本书提炼出四类具有充分证据支撑的典型化事实。它们之所以被称为“典型化事实“（stylized facts），是因为它们在统计学上高度显著，在不同国家、不同时期、不同制度环境下反复出现，构成了周期研究不可回避的实证门槛。任何有效的周期理论，都必须能够解释这四类事实背后的因果机制。</p>
+<h3 id="第一联动性"><a class="header" href="#第一联动性">第一，联动性</a></h3>
+<p>经济周期不是某一个变量的孤立波动。在周期运行的过程中，几乎所有宏观经济总量指标都会呈现出同步的扩张或收缩：</p>
+<ul>
+<li><strong>实际 GDP 与总产出</strong>：作为衡量经济总规模的核心指标，GDP 增速本身定义了周期的基本节律；</li>
+<li><strong>工业增加值</strong>：制造业总产出对周期高度敏感，波动幅度通常数倍于 GDP；</li>
+<li><strong>固定资产投资（尤其是设备投资）</strong>：在周期中表现出最高的波动弹性，是周期振幅的主要放大器；</li>
+<li><strong>社会消费品零售总额</strong>：消费通常是四类核心需求中最稳定的，但在深度衰退中也会明显收缩；</li>
+<li><strong>进出口总额</strong>：贸易流量对全球经济的周期共振极为敏感，经常将国内小周期放大为全球大周期；</li>
+<li><strong>就业与失业</strong>：劳动力市场指标的波动通常滞后于 GDP 增速的变化，是周期识别最重要的滞后验证指标之一。</li>
+</ul>
+<p>联动性的实证显著性，意味着一件事：你不能只盯着 GDP 增速，就说你已经“读懂“了周期的运行。完整的周期识别，必须建立在多指标同步验证的基础上——当 GDP 增速上行而工业增加值、投资、就业都在下行时，这种“不一致“本身就是重要的分析信号。</p>
+<h3 id="第二共变性"><a class="header" href="#第二共变性">第二，共变性</a></h3>
+<p>经济总量的联动性不仅限于实体经济内部，还延伸到金融市场。实体经济周期与金融资产价格之间，存在显著的统计关联：</p>
+<ul>
+<li><strong>股票市场</strong>：通常在周期复苏阶段最早启动上涨，在繁荣阶段后期出现筑顶迹象，在衰退阶段领先下跌，在萧条阶段底部开始筑底——股市常被称为“经济先导指标中的先导指标“；</li>
+<li><strong>债券市场</strong>：长端利率跟随经济增速和通胀预期变动，短端利率受央行货币政策主导；收益率曲线的形态变化（尤其是期限利差收窄乃至倒挂），是预测衰退最有力的金融信号之一；</li>
+<li><strong>大宗商品</strong>：对实体经济景气度最为敏感，在复苏和繁荣阶段价格上扬，在衰退阶段大幅下挫；</li>
+<li><strong>汇率</strong>：在开放经济体中，汇率将国内经济周期与国际资本流动、贸易条件的变化连接起来，周期上行通常支持本币走强；</li>
+<li><strong>信贷利差</strong>：企业债券与同期限国债的收益率利差，是衡量实体经济违约风险和信贷周期状态的核心指标——利差在经济下行期急剧走阔，在经济复苏期持续收窄。</li>
+</ul>
+<p>金融变量与实体经济的共变性，构成了周期分析的“双轮驱动“逻辑。金融周期不完全等同于实体周期——金融变量有自身的运行节奏和放大机制——但两者之间的双向互动是理解周期完整图景不可或缺的维度。</p>
+<h3 id="第三非线性"><a class="header" href="#第三非线性">第三，非线性</a></h3>
+<p>周期不是对称波动。扩张与收缩在时长、速度和路径上都存在显著的非对称性：</p>
+<ul>
+<li><strong>时长不对称</strong>：扩张期显著长于收缩期。以美国战后的周期数据为例，平均扩张时长为 58 个月，平均收缩时长为 11 个月，扩张期是收缩期的 5 倍以上；</li>
+<li><strong>速度不对称</strong>：收缩的速度通常远快于扩张的速度。经济繁荣需要多年累积，但衰退可以在几个季度内摧毁积累多年的成果——“上楼梯用了十年，下楼梯只要三年“是对这一特征最形象的描述；</li>
+<li><strong>形态不对称</strong>：扩张阶段的路径更具波动性——增速可能放缓、可能加速、可能出现“假突破“——而收缩阶段的路径更具同步性——一旦方向确定，几乎所有部门几乎同时下行。</li>
+</ul>
+<p>非线性最直接的实战含义是：<strong>不要用对称思维来交易周期。</strong> 繁荣阶段的投资者总是在等待“一次像样的调整“来加仓，但每次调整都被快速买回——直到那一次不会买回的调整到来。而一旦收缩开始，速度之快往往超出所有预测模型的范围。</p>
+<h3 id="第四复杂性"><a class="header" href="#第四复杂性">第四，复杂性</a></h3>
+<p>周期的复杂性来源于一个无法回避的实证事实：<strong>经济从来不是在一个单一周期上运行的。</strong></p>
+<p>现实经济运行中，长期技术长波（50-60 年）、中长周期地产基建周期（15-25 年）、中周期资本开支周期（7-11 年）、短周期库存周期（3-5 年）同时运行，相互叠加。它们不是平行独立的，而是像大小不一的齿轮一样相互咬合：</p>
+<ul>
+<li>长周期设定中短周期的运行空间和上限；</li>
+<li>中周期在长周期提供的框架内运行，同时为其注入产业层面的驱动力；</li>
+<li>短周期在最底层运行，以最高的频率调整方向，同时为上层周期提供“引信“式的启动信号。</li>
+</ul>
+<p>这意味着：在任何时点上，经济运行的实际方向，都不是某单一周期的决定结果，而是多个周期叠加后的合力方向。当不同周期的运行方向一致时，经济会呈现出大幅度的单边趋势（共振）；当不同周期的运行方向相反时，经济会呈现出方向不明的震荡特征（对冲）。</p>
+<p>复杂性是对周期分析最大的挑战。因为它意味着，任何一个单一模型——无论是基于存货的基钦模型还是基于创新的康波模型——都只能解释周期运行的一部分。完整的多周期嵌套分析，不是多个模型的简单并排罗列，而是一个整合性的系统框架。</p>
+<p>我们将在第八章中系统性地处理这个问题。在此之前，请记住“复杂性“是周期分析者的宿命——你永远无法用一个简单的逻辑来概括经济运行的底层全貌，但你也可以用系统性的框架来管理这份复杂。</p>
+<h2 id="15-周期与随机波动如何区分"><a class="header" href="#15-周期与随机波动如何区分">1.5 周期与随机波动：如何区分</a></h2>
+<p>确定了周期的定义、阶段和典型化事实之后，还有一个关键问题需要解决：如何将周期性的波动与纯粹的随机波动区分开来？</p>
+<p>这是一个实操层面的核心挑战。任何发送到宏观研究员面前的月度数据，都同时包含三类信号：</p>
+<ol>
+<li><strong>趋势信号（trend）</strong>：由人口、技术、资本积累等长期因素决定的增长路径；</li>
+<li><strong>周期信号（cycle）</strong>：围绕趋势线进行的扩张-收缩循环运动；</li>
+<li><strong>噪声信号（noise）</strong>：由统计误差、季节性因素、偶发事件（如罢工、极端天气等）造成的短期随机波动。</li>
+</ol>
+<p>周期分析的核心任务，就是从这三类混合信号中，将周期信号识别出来。</p>
+<p>本书推荐的区分原则包括以下五点：</p>
+<p><strong>第一，持续性检验。</strong> 周期波动的典型时长至少在 3 年以上（最短的基钦周期）。如果一个波动在几个季度内就完成了反转，它大概率属于噪声而非周期。但在实际中，这一原则的应用并非机械的——一个只有 2 个季度的“波动“，如果深度足够深、涉及面足够广，仍然可能被视为衰退。</p>
+<p><strong>第二，广度检验。</strong> 周期性的扩张或收缩几乎总是同时影响绝大多数经济部门。如果一个波动仅局限于某个单一行业或地区，它更可能是该部门特有的微观冲击，而非宏观周期。NBER 在进行衰退认定时，一个重要的参考标准是“经济活动在多个领域的广泛收缩“——不是看某一个指标，而是看工业产出、实际收入、就业、批发零售等多个维度的同步变化。</p>
+<p><strong>第三，共变性检验。</strong> 如果实体经济指标和金融指标同时发生方向性变化，那么这一波动的周期属性比只有单一类指标发生变化时更强。例如，GDP 增速下滑时，如果股票市场下跌、信用利差走阔、大宗商品价格下挫，那么几乎可以确认这是一次周期性的收缩。</p>
+<p><strong>第四，历史类比检验。</strong> 当前波动的形态（时长、幅度、速度、行业分布）与历史上同类型周期的典型特征是否存在可比性？如果是，那么周期属性更强。如果当前波动的形态在历史上找不到任何近似案例，则应当审慎对待“周期“这一判断——它可能是结构性转变，也可能是偶发事件，而非可重复的周期模式。</p>
+<p><strong>第五，因果机制检验。</strong> 最终也是最根本的区分标准：是否存在可识别且合理的周期传导机制来解释当前波动？“企业库存积累→需求回落→主动去库“是基钦周期的标准机制。“产能过度扩张→利润压缩→减少投资“是朱格拉周期的标准机制。如果你能识别出当前波动背后的传导链条，那么这一波动的周期属性就得到了确认。</p>
+<p>这五重检验，构成了识别周期、排除噪音的系统性方法论。在后续第三部分中，我们将讨论如何将这些定性原则转化为量化指标和计量模型。</p>
+<h2 id="16-周期的四个核心维度"><a class="header" href="#16-周期的四个核心维度">1.6 周期的四个核心维度</a></h2>
+<p>作为本章的收尾，我们来看一个问题：当一个研究者说“我正在分析经济周期“时，他到底在分析什么？</p>
+<p>本书认为，任何完整的周期分析，都必须覆盖以下四个核心维度。</p>
+<h3 id="维度一运行阶段"><a class="header" href="#维度一运行阶段">维度一：运行阶段</a></h3>
+<p>周期的运行阶段，解决的是“我们现在在哪里“的问题——当前经济处于复苏、繁荣、衰退还是萧条阶段？</p>
+<p>阶段判断是周期分析的基础：不同阶段的政策选择、资产配置、产业策略差异巨大。在繁荣阶段收紧信贷的错误，放在萧条阶段就成了致命的误导。</p>
+<p>阶段判断的难点在于，经济的阶段切换从来不是瞬间完成的，过渡期往往伴随大量“假信号“。我们在第九章和第十章将详细讨论如何通过指标体系和经济计量模型来确定周期阶段。</p>
+<h3 id="维度二持续时长"><a class="header" href="#维度二持续时长">维度二：持续时长</a></h3>
+<p>周期的持续时长，解决的是“一个完整周期需要多长时间“的问题——也包括“当前阶段已经持续了多长时间，还有多少时间窗口“。</p>
+<p>时长的分析价值在于建立预期。如果你能确定当前处于一轮基钦周期的繁荣后期，那么你就能在大概率上预期库存拐点将在未来 2-4 个季度内出现。如果你能确定当前处于一轮朱格拉周期的扩张早期，那么你可以预期中期的产业资本开支仍将持续 3-5 年。</p>
+<h3 id="维度三波动幅度"><a class="header" href="#维度三波动幅度">维度三：波动幅度</a></h3>
+<p>周期的波动幅度，解决的是“这一轮周期的波峰和波谷有多深“的问题——包括扩张期的峰值和收缩期的谷底，以及从谷底到峰值、从峰值到谷底的变化幅度。</p>
+<p>幅度的实战意义在于风险管理。高振幅周期的资产价格波动率高，意味着更大的潜在收益和更大的潜在亏损。在分析不同周期类型的叠加时，幅度的测算尤其关键——共振状态下的叠加幅度远大于单一周期，对冲状态下的叠加幅度则显著收窄。</p>
+<h3 id="维度四传导顺序"><a class="header" href="#维度四传导顺序">维度四：传导顺序</a></h3>
+<p>周期的传导顺序，解决的是“周期如何从一个部门扩散到另一个部门“的问题——包括实体经济内部的产业链传导、从实体到金融的传导，以及从国内到全球的传导。</p>
+<p>传导顺序的价值是资产配置和产业配置的时间锚点。如果你知道经济复苏在产业链上的传导顺序是下游→中游→上游，你就知道在不同阶段应该配置哪一类行业。如果你知道信用收缩从银行间市场的传导到实体经济信贷条件收紧需要 6-12 个月，你就建立了判断金融冲击和实体经济冲击之间时间差的分析坐标。</p>
+<hr>
+<p>周期的四个核心维度——<strong>阶段、时长、幅度、顺序</strong>——构成了周期分析的“地基“。</p>
+<p>在后续章节中，从第二章的理论演进，到第四章到第七章的四大周期类型，再到第八章的多周期嵌套，再到第九章到第十一章的实证测度，最后到第十二章到第二十三章的数据验证和决策落地——全书的每一章，都是对这四大维度的展开、深化和交叉验证。</p>
+<p>但地基已经打好了。我们现在可以进入周期理论的思想史了。</p>
+<hr>
+<h3 id="关键要点"><a class="header" href="#关键要点">关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>周期的本质定义</td><td>围绕长期趋势线的方向交替、时间重复、传导系统性的扩张-收缩循环</td></tr>
+<tr><td>四个标准阶段</td><td>复苏（增速转正，资源闲置）、繁荣（增速超潜在，边际承压）、衰退（增速转负，螺旋下探）、萧条（底部企稳，孕育复苏）</td></tr>
+<tr><td>四个典型化事实</td><td>联动性（多指标同步）、共变性（实体与金融联动）、非线性（扩张慢收缩快）、复杂性（多周期叠加）</td></tr>
+<tr><td>周期 vs 随机波动</td><td>五重检验：持续性、广度、共变性、历史类比、因果机制</td></tr>
+<tr><td>四个核心维度</td><td>阶段（定位）、时长（预期）、幅度（风险管理）、顺序（时间锚点）</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>Burns, A. F. &amp; Mitchell, W. C. (1946). <em>Measuring Business Cycles</em>. NBER.</li>
+<li>Zarnowitz, V. (1992). <em>Business Cycles: Theory, History, Indicators, and Forecasting</em>. University of Chicago Press.</li>
+<li>NBER: <a href="https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions">US Business Cycle Expansions and Contractions</a></li>
+<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Business_cycle">Business cycle</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-1/chapter-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-1/chapter-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

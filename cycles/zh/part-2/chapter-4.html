@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第四章 长期趋势：康德拉季耶夫周期 - 周期之轮：经济波动的底层逻辑、实证测度与决策框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-dfbc294f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-f431dfd6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之轮：经济波动的底层逻辑、实证测度与决策框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第四章-长期趋势康德拉季耶夫周期"><a class="header" href="#第四章-长期趋势康德拉季耶夫周期">第四章 长期趋势：康德拉季耶夫周期</a></h1>
+<blockquote>
+<p><strong>塔：俯视百年的高度</strong>
+<em>在周期诸模型中，康波是最高的那一座塔。站在这座塔上，过去两百年的全球经济史不再是散乱的事件堆叠，而是一幅有节律、有逻辑、有方向的完整画卷。</em></p>
+</blockquote>
+<h2 id="41-康德拉季耶夫其人"><a class="header" href="#41-康德拉季耶夫其人">4.1 康德拉季耶夫其人</a></h2>
+<p>1919 年，十月革命后的俄国正处于内战和内战的极端混乱之中。在莫斯科的一间办公室里，一位 27 岁的年轻经济学家开始了一项规模惊人的研究工作：他收集了英国、法国、德国和美国从 18 世纪末以来的几乎所有可获取的经济时间序列数据——批发价格指数、利率、工资水平、对外贸易额、煤炭和生铁产量——然后逐一绘制成时间序列图，试图寻找这些数据中隐藏的长期节奏。</p>
+<p>这个年轻人叫尼古拉·康德拉季耶夫（Nikolai Kondratiev），当时是莫斯科农业研究所的一名研究人员。他的研究条件极其简陋——内战导致的物资短缺意味着他甚至连足够的纸和笔都难以获得。但就是在这样的条件下，他完成了一项即将载入经济学史册的发现。</p>
+<p>1925 年，康德拉季耶夫用德文发表了他的核心论文《长波周期》（Die Langen Wellen der Konjunktur），在其中他提出了一个在当时引起轰动、在此后影响深远的论点：<strong>资本主义经济体系中存在一种时长约 50 到 60 年的超长周期波动。</strong></p>
+<p>康德拉季耶夫用大量数据论证了这一周期的存在。他绘制了英国从 1790 年到 1920 年的价格指数曲线，清晰地显示了三个完整的长波：第一个长波的上升期从 1790 年到 1810-1817 年，下降期持续到 1844-1851 年；第二个长波的上升期持续到 1870-1875 年，下降期持续到 1890-1896 年；第三个长波的上升期到 1914-1920 年达到峰值，随后转入下降期。同样的模式在法国、德国和美国的数据中也得到了验证。</p>
+<p>康德拉季耶夫的论文在国际上引起了广泛关注，但在苏联国内却遭到了政治上的严厉批判。他关于资本主义经济存在周期性规律（而非“终将崩溃“）的结论，与当时苏联官方的政治立场发生了尖锐冲突。1930 年，康德拉季耶夫因“领导秘密反苏组织“等捏造的罪名被捕。1938 年，他在斯大林的大清洗中被处决，年仅 46 岁。</p>
+<p>康德拉季耶夫没有看到自己的理论在战后获得广泛认可的那一天。今天，他的名字已经成为经济学中最著名的周期标识之一——“康德拉季耶夫长波”（简称康波）是经济周期研究者的必修课。对他的发现，他自己做出了最准确的评价：“我们不是在预测未来，我们只是在记录过去。但记录过去的目的是帮助那些必须面对未来的人。”</p>
+<h2 id="42-康波的核心驱动逻辑"><a class="header" href="#42-康波的核心驱动逻辑">4.2 康波的核心驱动逻辑</a></h2>
+<p>康德拉季耶夫本人对其长波周期驱动力的解释是多元的——他认为价格波动、战争、技术变革、农业收成、基础设施投资等多个因素共同推动了长波。但后世的学者——特别是熊彼特和佩蕾丝——将技术创新的集群式出现提炼为康波的核心驱动力。</p>
+<h3 id="技术生命周期的三阶段模型"><a class="header" href="#技术生命周期的三阶段模型">技术生命周期的三阶段模型</a></h3>
+<p>康波的运行，本质上是由颠覆性技术从诞生到红利耗尽的生命周期决定的。这一周期可以分为三个清晰的阶段：</p>
+<p><strong>第一阶段：导入期（约 15-20 年）</strong></p>
+<p>颠覆性技术突破实验室阶段，开始向商业应用转化。在这一阶段，技术本身仍然不稳定、成本高、市场应用场景有限。但少数先驱企业家——熊彼特所说的“创新者“——开始进行大规模投资，创建全新的产业。</p>
+<p>导入期的典型特征是：高研发投入、高不确定性、高风险偏好的金融资本（风险投资）大量涌入。产业格局尚未成形，大量企业进入市场尝试不同的技术路线，最终只有少数路线胜出。</p>
+<p><strong>第二阶段：展开期（约 15-20 年）</strong></p>
+<p>胜出的技术路线开始大规模扩散。生产的标准化降低了成本，基础设施的大规模建设（如铁路网、电网、光纤网）拓宽了市场应用的边界。技术创新从少数先锋行业渗透到传统行业，推动经济整体进入长期的结构性繁荣。</p>
+<p>展开期的典型特征是：技术渗透率快速上升，劳动生产率显著提升，产业投资回报率高企，资本市场进入长期牛市。这是康波周期中最令人向往的阶段——也是熊彼特所说的“创造性破坏“的创造性阶段。</p>
+<p><strong>第三阶段：成熟期/衰减期（约 15-20 年）</strong></p>
+<p>技术的渗透率接近饱和。新增用户带来的边际收益递减，技术改进的空间收窄。产业投资回报率下降，资本开始过剩——过剩的资本追逐有限的投资机会，推高资产价格，导致金融化倾向加剧。</p>
+<p>衰减期的典型特征是：技术创新进入“精益改进“阶段（而非颠覆性突破），经济增长放缓，资本市场泡沫化倾向显著上升。正是在这一阶段，暴力和冲突的可能性也趋于上升——这是康德拉季耶夫本人在研究数据中注意到的规律。</p>
+<h3 id="技术的四重周期约束条件"><a class="header" href="#技术的四重周期约束条件">技术的四重周期约束条件</a></h3>
+<p>康波驱动的技术，必须同时满足以下条件：</p>
+<p><strong>第一，普遍适用性。</strong> 技术必须能够渗透到经济体中绝大多数行业和部门，而不仅仅是单一行业。蒸汽机是满足这一条件的——它可以应用于纺织、采矿、运输、制造等几乎所有工业部门。电力也是如此。半导体更是如此。相比之下，一项只适用于单一行业的技术创新（如某种新型纺织机械）有行业影响，但不足以驱动康波。</p>
+<p><strong>第二，基础设施依赖性。</strong> 技术的普及需要大规模的基础设施建设作为支撑。蒸汽机时代需要铁路网和港口，电力时代需要电网，信息时代需要光纤网和基站。这些基础设施的投资本身就是康波上升期经济扩张的重要组成部分。</p>
+<p><strong>第三，治理架构变迁性。</strong> 技术不仅改变了生产方式，还要求社会、法律和监管架构做出相应的调整。股份制公司的普及（铁路时代）、反垄断法的制定（电力时代）、数据隐私和网络中立性规则的建立（信息时代）——治理架构的变迁往往是康波从展开期进入成熟期的标志性事件，也是卡洛塔·佩蕾丝“技术-经济范式“理论的核心内容。</p>
+<p><strong>第四，就业结构改造性。</strong> 每一轮康波都会系统性消灭旧岗位并创造新岗位。农业人口转向工厂（工业革命），工厂工人转向办公室（电气化和服务业革命），办公室职员转向创意和知识工作（信息革命）。这种就业结构的系统性重组不是一个平稳的过程，而是伴随着大规模失业（旧岗位消失）和人才短缺（新岗位供不应求）的交替阵痛。</p>
+<h2 id="43-康波的四个运行阶段"><a class="header" href="#43-康波的四个运行阶段">4.3 康波的四个运行阶段</a></h2>
+<p>在技术生命周期三个阶段的框架下，康波被进一步细分为四个连续的经济运行阶段：回升、繁荣、衰退、萧条。</p>
+<h3 id="回升阶段"><a class="header" href="#回升阶段">回升阶段</a></h3>
+<p>回升阶段对应的是康波周期的最低点——上一轮技术的红利已经完全耗尽，经济处于长期萧条的谷底。但正是在这个最暗淡的时刻，新技术已经开始萌芽。</p>
+<p>回升阶段的特征：</p>
+<ul>
+<li><strong>经济增速低位企稳</strong>：长波下行趋势接近尾声，经济不再加速恶化，但增长动力仍然微弱；</li>
+<li><strong>旧产业仍在调整</strong>：上一轮康波的核心产业继续收缩，失业率仍然高企；</li>
+<li><strong>新技术初现端倪</strong>：关键性突破已经在实验室或早期商业化阶段实现，但尚未进入主流视野；</li>
+<li><strong>投资信心极度脆弱</strong>：金融资本对实体经济的长期前景缺乏信心，大量资本处于观望状态；</li>
+<li><strong>前期资产价格极度低迷</strong>：股票市场、房地产市场已经经历了一轮深度的估值压缩，估值分位数处于历史低位。</li>
+</ul>
+<p>回升阶段在经济指标上的表现可能很微弱——GDP 增速可能只是从负值回到 1%-2%。但从长周期的视角看，它是新一轮 50-60 年周期的起点。</p>
+<h3 id="繁荣阶段"><a class="header" href="#繁荣阶段">繁荣阶段</a></h3>
+<p>繁荣阶段是康波周期中最振奋人心的时期。技术跨越了导入期的门槛，开始大规模扩散，全要素生产率快速提升，产业投资回报率处于高位。</p>
+<p>繁荣阶段的特征：</p>
+<ul>
+<li><strong>经济增速显著高于潜在增长率</strong>：新兴产业发展形成强大拉力，整体经济进入高增长通道；</li>
+<li><strong>固定资产投资进入高峰期</strong>：与新技术的扩散配套的大规模基础设施建设和产业投资全面展开；</li>
+<li><strong>就业结构快速变化</strong>：新产业大量吸纳劳动力，旧产业则加速收缩；</li>
+<li><strong>资产价格持续上涨</strong>：股市进入中长期牛市，尤其是新兴行业的龙头公司获得极高的估值溢价；</li>
+<li><strong>乐观情绪弥漫全社会</strong>：对未来的愿景高度乐观，风险偏好持续上升。</li>
+</ul>
+<p>繁荣阶段通常持续 20 年左右。但繁荣阶段也是康波运行中最易产生危险误判的阶段——因为“这次不一样“的乐观主义正是在繁荣阶段最盛行，市场参与者容易将康波繁荣期的高速增长视为永久性状态。</p>
+<h3 id="衰退阶段"><a class="header" href="#衰退阶段">衰退阶段</a></h3>
+<p>衰退阶段是康波周期的转折点。技术的渗透率接近饱和、边际收益率递减、资本过剩——这些趋势累积到一定程度后开始反转。</p>
+<p>衰退阶段的特征：</p>
+<ul>
+<li><strong>经济增长放缓</strong>：全要素生产率增速从高位持续回落，GDP 增速逐级下滑；</li>
+<li><strong>产业投资回报率下降</strong>：资本开支规模维持在高位，但新增投资的边际回报率快速恶化；</li>
+<li><strong>资产价格异常波动</strong>：金融市场出现明显的泡沫化和剧烈波动特征——资本从实体经济“溢出“流入金融领域，推高资产估值；</li>
+<li><strong>过度金融化</strong>：企业和个人杠杆率达到周期峰值；</li>
+<li><strong>结构性矛盾激化</strong>：贫富差距扩大，社会矛盾上升；地缘政治紧张加剧。</li>
+</ul>
+<p>康波衰退阶段的标志性事件通常是：一次重大的金融危机或经济危机。1873 年的铁路投资泡沫破裂、1929 年的华尔街崩盘、2008 年的全球金融危机——都发生在康波周期的衰退阶段。</p>
+<h3 id="萧条阶段"><a class="header" href="#萧条阶段">萧条阶段</a></h3>
+<p>萧条阶段是康波周期中经济调整最痛苦的时期，也是不可避免的“创造性破坏“的破坏性阶段。旧有技术和产业的泡沫被挤出，资产价格压缩到极低水平，为下一轮康波的导入创造条件。</p>
+<p>萧条阶段的特征：</p>
+<ul>
+<li><strong>经济增速低位徘徊甚至负增长</strong>：GDP 增速在低位长期运行；</li>
+<li><strong>大规模去杠杆</strong>：信贷紧缩和债务违约形成资产价格下跌的负向螺旋；</li>
+<li><strong>资产价格大幅缩水</strong>：债券收益率处于历史低位，股票市场估值压缩到极端水平；</li>
+<li><strong>失业率上升</strong>：旧产业大规模裁员，但新产业尚未达到能够充分吸收劳动力的规模；</li>
+<li><strong>通缩压力显著</strong>：总需求不足导致价格水平普遍下行；</li>
+<li><strong>政策利率降至零下限</strong>：传统货币政策工具失效，非常规政策的采用成为常态。</li>
+</ul>
+<p>萧条阶段最艰难但也最关键的特征是：它为下一轮康波的导入清除了障碍。在萧条阶段，大量低效企业和产能被淘汰出清，资产价格被压到极度便宜的水平，信贷市场经历彻底的洗牌——而这些恰恰是下一轮技术革命启动的必要条件。</p>
+<h2 id="44-佩蕾丝与技术-经济范式"><a class="header" href="#44-佩蕾丝与技术-经济范式">4.4 佩蕾丝与“技术-经济范式“</a></h2>
+<p>瑞典裔经济学家卡洛塔·佩蕾丝（Carlota Perez）在 2002 年出版的《技术革命与金融资本》中，对康波理论做出了自熊彼特以来最重要的补充。她的核心贡献在于，从<strong>金融资本与产业资本的分工和互动</strong>的角度，重新刻画了康波的完整运行机制。</p>
+<p>佩蕾丝的框架包含两个核心创新：</p>
+<p><strong>第一个创新：区分了两个资本角色。</strong></p>
+<p>在康波周期中，金融资本（银行、投资机构、风险资本）扮演了“先锋“和“催化剂“的角色。在新技术的导入期，金融资本以极低的风险厌恶水平和极高的期望回报率涌入新技术领域——它们在技术上可能是外行的，但在资本配置上是最敏捷的。金融资本的大量涌入推高了新技术领域的资产估值，是康波繁荣阶段前期的核心推动力。</p>
+<p>产业资本（企业经营者、实业投资者）则扮演了“主力“和“稳定器“的角色。在新技术的展开期，产业资本大规模投资于实际产能的建设和市场的开拓——它们创造了真实的就业和产出。产业资本的深度介入，是康波繁荣阶段持续展开的坚实基础。</p>
+<p><strong>第二个创新：识别了泡沫破裂的转折性功能。</strong></p>
+<p>在佩蕾丝的框架中，康波周期不是一个平滑的周期性运动，而是包含一次剧烈的“断裂“——即新技术领域的资产价格泡沫破裂。这一破裂发生在康波从导入期向展开期过渡的时刻。泡沫破裂本身造成了巨大的财富损失，但它的功能是至关重要的：它将资本配置的主导权从投机性的金融资本转交给务实性的产业资本，从而为技术革命的真正展开铺平道路。</p>
+<p>佩蕾丝的这一修正，使康波模型能够更好地解释历史事实：1830 年代的铁路狂热和 1847 年的铁路危机、1920 年代的电气化狂热和 1929 年的华尔街崩盘、1990 年代的互联网狂热和 2000 年的科网泡沫破裂——这些泡沫-破裂-稳定-扩散的模式几乎完全吻合佩蕾丝的预测。</p>
+<h2 id="45-前五轮康波的历史"><a class="header" href="#45-前五轮康波的历史">4.5 前五轮康波的历史</a></h2>
+<p>基于康德拉季耶夫、熊彼特、佩蕾丝和后世学者的研究，全球经济发展史可以清晰地划分为五轮完整的康波周期。</p>
+<h3 id="第一轮康波约-1780-1849蒸汽机与棉纺织"><a class="header" href="#第一轮康波约-1780-1849蒸汽机与棉纺织">第一轮康波（约 1780-1849）：蒸汽机与棉纺织</a></h3>
+<p>核心技术：詹姆斯·瓦特改进的蒸汽机（1765 年获得专利）、阿克赖特的水力纺纱机和克朗普顿的走锭纺纱机。</p>
+<p>上升期（约 1780-1810）：蒸汽机从抽水设备发展为一台通用的动力源，棉纺织业率先实现机械化。英国成为“世界工厂“。运河网络大规模建设。</p>
+<p>转折点：1810-1817 年左右达到顶峰，拿破仑战争结束后需求收缩。</p>
+<p>下降期（约 1810-1849）：战后经济调整，1825 年和 1847 年的金融危机冲击了英国经济。但正是在下降期，铁路技术完成了其商业化验证。</p>
+<p>这一轮康波的核心特征：英国是绝对主导者，工业革命从英国逐步扩散到西欧和美国。制造业首次取代农业成为经济增长的主要动力。</p>
+<h3 id="第二轮康波约-1850-1896铁路与钢铁"><a class="header" href="#第二轮康波约-1850-1896铁路与钢铁">第二轮康波（约 1850-1896）：铁路与钢铁</a></h3>
+<p>核心技术：铁路技术的成熟和贝塞麦炼钢法（1856 年发明专利）的推广，使钢铁从奢侈品变成工业基础材料。</p>
+<p>上升期（约 1850-1873）：铁路建设在全球范围内大规模展开。铁路不仅大幅降低了运输成本，还催生了现代股份制公司、现代金融市场的雏形。钢铁产量爆炸式增长。</p>
+<p>转折点：1873 年的铁路投资泡沫破裂引发了“长萧条“（Long Depression），持续近六年。</p>
+<p>下降期（约 1874-1896）：全球经济增长放缓，但电力技术的突破和内燃机的发明在这段萧条时期中悄然完成。</p>
+<p>这一轮康波的核心特征：美国和德国快速追赶英国，全球经济多中心化的格局开始形成。钢铁行业成为经济的基座产业。</p>
+<h3 id="第三轮康波约-1897-1949电力与化学"><a class="header" href="#第三轮康波约-1897-1949电力与化学">第三轮康波（约 1897-1949）：电力与化学</a></h3>
+<p>核心技术：爱迪生的直流电系统和特斯拉-威斯汀豪斯的交流电系统的推广完善，内燃机和汽车的商业普及，石油化工技术的突破。</p>
+<p>上升期（约 1897-1929）：电力从城市照明发展为工业生产的通用动力源。流水线生产模式（福特主义）将劳动生产率提升到前所未有的水平。汽车工业成为经济核心增长极。合成化学工业（化肥、塑料、药品）全面崛起。</p>
+<p>转折点：1929 年华尔街崩盘——人类经济史上最严重的崩溃。</p>
+<p>下降期（约 1930-1949）：大萧条和第二次世界大战。大量企业破产，失业率在主要经济体达到 20% 以上。但也是在战争期间，半导体、计算机、喷气发动机等下一轮康波的核心技术完成了最初的突破。</p>
+<p>这一轮康波的核心特征：美国取代英国成为全球经济和技术中心。福特制大规模生产模式普及到几乎所有制造业领域。</p>
+<h3 id="第四轮康波约-1950-2008半导体与信息"><a class="header" href="#第四轮康波约-1950-2008半导体与信息">第四轮康波（约 1950-2008）：半导体与信息</a></h3>
+<p>核心技术：晶体管的发明（1947 年，贝尔实验室）、集成电路（1958 年）、微处理器（1971 年，英特尔）、个人计算机（1970 年代末至 1980 年代初）。</p>
+<p>上升期（约 1950-1973）：半导体技术从军事应用扩散到商业和民用领域。电视、电话、通信系统普及。大型计算机进入企业和政府。二战后的重建需求推动了全球经济的强劲增长——这也是凯恩斯主义主导的“黄金三十年“。</p>
+<p>转折点：1973 年的第一次石油危机叠加 1970 年代的“滞胀“，标志着繁荣期的结束。</p>
+<p>扩散期（约 1974-2000）：半导体制造业快速向东亚扩展。个人计算机在 1980 年代普及，互联网在 1990 年代进入商业应用。信息技术革命全面展开，催生了全球化的供应链和金融服务体系。1990 年代的美国出现了一轮科技驱动的长期繁荣——“新经济”。</p>
+<p>泡沫破裂：2000 年科网泡沫破裂。信息技术基础设施的过度投资经历了大规模出清。</p>
+<p>延伸冲击：2008 年全球金融危机——信息技术革命的金融化产物（过度衍生、过度杠杆）引发了自大萧条以来最严重的全球衰退。</p>
+<p>这一轮康波的核心特征：信息技术革命改变了人类的工作、生活和社交方式。全球化的深度和广度达到历史最高水平。中国经济在此过程中实现了从农业经济向工业经济的跨越式发展。</p>
+<h3 id="第五轮康波约-2009-至今人工智能与数字智能技术"><a class="header" href="#第五轮康波约-2009-至今人工智能与数字智能技术">第五轮康波（约 2009 至今）：人工智能与数字智能技术</a></h3>
+<p>核心技术：深度学习算法（2006-2012 年的突破）、移动互联网、云计算、大数据、人工智能。</p>
+<p>抬头期（约 2009-2025）：全球金融危机后，以智能手机为代表的移动互联网快速普及，云计算平台建立了数字化基础设施。大语言模型（2017 年 Transformer 架构诞生，2022 年 ChatGPT 引爆公众关注）标志着人工智能进入实用化阶段。</p>
+<p>本轮康波尚在早期阶段。根据康波的历史规律，我们预计：</p>
+<ul>
+<li>未来 10-20 年将见证 AI 技术在大多数行业中的大规模渗透；</li>
+<li>这一渗透将推动全要素生产率的新一轮跃升；</li>
+<li>同时，大量传统岗位将面临替代和转型压力，就业结构的转型将带来新的社会挑战。</li>
+</ul>
+<p>这一轮康波的核心特征：中国和美国成为两个核心竞争极——在半导体、AI、新能源等关键领域展开全面竞争，全球供应链正在经历新一轮重构。</p>
+<h2 id="46-当前康波阶段的研判"><a class="header" href="#46-当前康波阶段的研判">4.6 当前康波阶段的研判</a></h2>
+<p>根据康波周期的一般规律和当前全球经济的实际表现，对第五轮康波的当前阶段可以做出以下研判：</p>
+<p>当前（2020 年代中期）全球经济正处于康波周期的什么位置？笔者认为，我们正站在<strong>第五轮康波的导入期尾部，即将进入展开期</strong>的临界点上。</p>
+<p>支持这一判断的论据包括：</p>
+<p><strong>第一，人工智能技术的经济渗透率远未达到饱和。</strong> 截至 2025 年左右，AI 技术的主流商业化应用主要集中在内容生成、代码辅助、智能客服等领域。在制造业、物流业、医疗业、教育业等关键行业，AI 的大规模渗透才刚刚开始。这意味着技术红利仍未充分释放，康波上升周期的深层能量尚未耗尽。</p>
+<p><strong>第二，与之配套的基础设施尚未建成。</strong> 类似于铁路、电网、互联网等前几轮康波的基础设施，当前的 AI 生态仍然缺乏能够支撑技术大规模渗透的基础层（充足的高质量数据、足够的算力基础设施、成熟的行业级应用标准等）。这些基础设施的大规模投资建设，正是康波展开期的核心特征之一。</p>
+<p><strong>第三，冲击当前的各类短期负面因素——通胀压力、地缘政治冲突、贸易摩擦、债务高企——都更可能是康波导入期向展开期过渡期间的阵痛，而不是康波周期大趋势的逆转。</strong></p>
+<p>当然，任何对康波阶段的精确判断都需要保持谦逊。康波周期的时滞变异性本身就很大——前五轮康波的时长在 40 到 65 年之间不等。当前对第五轮康波的阶段判断，只能是一种基于历史类比和当前数据的概率性研判，而非确定性的预测。但这一判断有一个重要的实践意义：如果判定当前处于康波展开期的前夜，那么 10-20 年的长期投资视角中，权益类资产的配置权重应当高于债券类资产——因为康波展开期的标志性特征之一，就是股权风险溢价的系统性压缩和长期牛市的出现。</p>
+<hr>
+<h3 id="关键要点"><a class="header" href="#关键要点">关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>概念</th><th>核心内容</th></tr>
+</thead>
+<tbody>
+<tr><td>康波周期</td><td>时长 50-60 年，由技术创新的集群式出现驱动</td></tr>
+<tr><td>技术生命周期三阶段</td><td>导入期（15-20 年）→ 展开期（15-20 年）→ 衰减期（15-20 年）</td></tr>
+<tr><td>康波四阶段</td><td>回升（谷底）→ 繁荣（扩散）→ 衰退（泡沫破裂）→ 萧条（出清）</td></tr>
+<tr><td>佩蕾丝贡献</td><td>区分金融资本与产业资本角色，识别泡沫破裂的转折功能</td></tr>
+<tr><td>前五轮康波</td><td>蒸汽机→铁路与钢铁→电力与化工→半导体与信息→人工智能与数字化</td></tr>
+<tr><td>当前阶段研判</td><td>第五轮康波从导入期尾部向展开期过渡</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>Kondratiev, N. (1925). “The Long Waves in Economic Life.” (English translation: <em>Review of Economics and Statistics</em>, 1935)</li>
+<li>Schumpeter, J. A. (1939). <em>Business Cycles</em>.</li>
+<li>Perez, C. (2002). <em>Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages</em>. Edward Elgar.</li>
+<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Kondratiev_wave">Kondratiev wave</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-1/chapter-3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-1/chapter-3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

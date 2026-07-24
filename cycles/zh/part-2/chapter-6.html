@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第六章 中周期：朱格拉周期 - 周期之轮：经济波动的底层逻辑、实证测度与决策框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="构建多周期嵌套的统一分析框架——从康波到基钦，从理论溯源到全球实证，从量化测度到决策落地。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-dfbc294f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-f431dfd6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之轮：经济波动的底层逻辑、实证测度与决策框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第六章-中周期朱格拉周期"><a class="header" href="#第六章-中周期朱格拉周期">第六章 中周期：朱格拉周期</a></h1>
+<blockquote>
+<p><strong>轴：承上启下的枢纽</strong>
+<em>在周期体系中，中周期是最具“杠杆效应“的一环：它向上承接技术长波的产业红利，向下约束库存短波的运行空间。理解中周期，就是掌握了周期分析的“轴心“。</em></p>
+</blockquote>
+<h2 id="61-朱格拉从医生到经济学家"><a class="header" href="#61-朱格拉从医生到经济学家">6.1 朱格拉：从医生到经济学家</a></h2>
+<p>1862 年，一位名叫克莱芒·朱格拉（Clément Juglar）的法国医生出版了一本题为《商业危机及其在法国的周期性重现》的著作。朱格拉在此之前从未被看作“经济学家“，他是一名医生、一名统计爱好者。正是这个非主流背景，使他对经济数据的观察没有被任何现成理论所束缚。</p>
+<p>朱格拉收集并整理了法国、英国和美国长达数十年的商业、信贷和价格数据。他将这些数据绘制成时间序列图，然后寻找其中的规律。他发现了一个令他震惊的事实——在他的数据中，每一次经济繁荣之后都紧跟着一次衰退甚至危机，而且这两者之间的时间间隔大致为 7 到 11 年。</p>
+<p>繁荣的唯一原因，就是上一次萧条。</p>
+<p>这句话成为朱格拉周期最经典的总结。它表达了一个深刻的思想：衰退不是经济运行的“故障“，而是经济周期的有机组成部分；在每一次繁荣的运行过程中，已经内在地孕育了衰退的种子——产能的过度扩张、债务的过度累积、成本的系统性上升。</p>
+<p>朱格拉的发现直接挑战了古典经济学的市场自动出清假设。如果市场总是能自动回到均衡，为什么繁荣的顶点之后总是跟随着衰退？朱格拉认为，答案在于时间的不一致性：企业的投资决策基于当前的乐观预期，但产能的建设需要时间——当大量企业的投资几乎同时投产时，市场的需求可能已经发生了变化。这个“时滞“是周期形成的核心机制之一。</p>
+<p>朱格拉在著作中写道：“这是由时间因素引起的必然。人们无法在使用投资的同时便知道其结果，只能在事后才能看到。”</p>
+<h2 id="62-朱格拉周期的核心驱动逻辑"><a class="header" href="#62-朱格拉周期的核心驱动逻辑">6.2 朱格拉周期的核心驱动逻辑</a></h2>
+<p>朱格拉周期的核心驱动力是企业设备更新和资本开支的周期性扩张与收缩。这一过程可以概括为一连串紧密关联的逻辑链条：</p>
+<p><strong>第一步：需求回升触发产能瓶颈。</strong> 经济从上一轮衰退中恢复，市场需求逐渐走强。企业面临越来越大的产出压力——产能利用率从低谷回升，接近或达到 80% 以上的水平，闲置产能被快速消耗。</p>
+<p><strong>第二步：产能瓶颈催生资本开支。</strong> 当产能利用率达到较高水平时，企业面临两种选择：要么拒绝增量订单（损失收入和市场份额），要么投资新产能。绝大多数企业会选后者——因为在上行期，市场和资本都对“扩张“赋予正面的估值。于是，一轮资本开支周期被触发。</p>
+<p><strong>第三步：设备投资本身成为需求的来源。</strong> 这是朱格拉周期的自我放大机制。资本开支本身就是 GDP 中最重要的需求组成部分之一。当一家企业投资建设新工厂时，它对钢铁、设备、建材、劳动力的需求拉动着其他行业——这些行业的产出扩张进一步推高经济增速，创造更多投资需求，放大初始的复苏信号。乘数-加速数模型描述的正是这一机制。</p>
+<p><strong>第四步：产能完工，供需逆转。</strong> 从资本开支决策到新产能投产，通常存在 2 到 4 年的时间差——这是采购设备、建设厂房、安装调试所需的时间。当大量企业的投资几乎同时完工时，市场的总体供给能力大幅提升。而此时，最初触发投资的旺盛需求可能已经发生了微妙的变化——增速放缓，甚至开始回落。供需的天平开始倾斜。</p>
+<p><strong>第五步：产能过剩压缩利润。</strong> 新产能投产后，市场供给超过需求，价格承压、利润率下降、订单减少。企业发现扩张产能的决策已经造成了行业性的产能过剩——这是每一轮朱格拉周期到达顶部后的必然结果。利润是驱动资本开支的最核心变量。利润恶化直接导致企业暂停甚至取消下一轮的投资计划。</p>
+<p><strong>第六步：投资收缩引发经济下行。</strong> 资本开支大幅缩减，从总量上看这是 GDP 的重要组成部分，因此投资的减少本身就拖累了经济增速。同时，设备制造商、建材供应商、工程承包商等依赖投资端需求的行业收缩，进一步放大经济的下行压力。企业从“乐观扩张“切换到“悲观收缩“模式，朱格拉周期的下行阶段至此确认。</p>
+<p><strong>第七步：产能出清与下一轮周期的萌芽。</strong> 当期过剩的产能逐渐被淘汰——一些效率低的企业破产退出市场，行业供给端逐渐出清。同时，随着经济下行，新的技术或新模式逐渐被开发出来，为下一轮朱格拉周期的启动准备底层条件。</p>
+<h2 id="63-朱格拉周期的指标识别体系"><a class="header" href="#63-朱格拉周期的指标识别体系">6.3 朱格拉周期的指标识别体系</a></h2>
+<p>在实战层面，识别朱格拉周期的运行阶段需要重点关注以下核心指标。</p>
+<h3 id="产能利用率"><a class="header" href="#产能利用率">产能利用率</a></h3>
+<p>产能利用率是最核心的领先指标。它衡量的是现有产能被实际利用的程度。</p>
+<p>当产能利用率从低位（通常低于 75%）开始回升并持续走高时，企业的投资动力在增强。当产能利用率接近或达到 85%-90% 时（不同行业的阈值不同），资本开支被“倒逼“启动的时间窗口已经打开。当产能利用率从高位持续回落时，意味着市场需求正在冷却，新产能的投产开始挤压利用率——这是周期拐点的早期预警信号。</p>
+<h3 id="制造业设备投资增速"><a class="header" href="#制造业设备投资增速">制造业设备投资增速</a></h3>
+<p>这是衡量资本开支方向最直接的指标。设备投资增速的加速上行是朱格拉周期启动的确认信号；设备投资增速从高位回落，则反映了企业扩张意愿的降温。这一指标可以通过固定资产投资中“设备工器具购置“的增速来跟踪。</p>
+<h3 id="行业资本开支增速"><a class="header" href="#行业资本开支增速">行业资本开支增速</a></h3>
+<p>上市公司和大型企业的资本开支计划公开披露，合计起来可以作为行业整体的资本开支趋势的代理变量。当龙头公司密集发布大规模扩产计划时，通常是朱格拉周期繁荣期的高峰；当公司开始宣布推迟或取消投资项目时，周期向下的信号已经出现。</p>
+<h3 id="中长期制造业贷款增速"><a class="header" href="#中长期制造业贷款增速">中长期制造业贷款增速</a></h3>
+<p>企业进行资本开支需要大量融资——中长期贷款是最主要的来源。当银行体系对制造业的中长期贷款投放加速时，产业投资的扩张得到了信用支持，有利于朱格拉周期的持续展开。反之，当银行收紧对制造业的信贷条件时——无论是出于信用风险防范还是宏观审慎调控的需要——企业的投资能力都会受到实质性约束。</p>
+<h3 id="工业机器人进口安装量"><a class="header" href="#工业机器人进口安装量">工业机器人进口/安装量</a></h3>
+<p>在制造业自动化和智能化程度持续提升的时代，工业机器人的进口和安装量是衡量设备更新换代节奏的另一个重要信号。全球工业机器人的安装周期与主要经济体的朱格拉周期高度吻合。</p>
+<h3 id="设备更新换代周期"><a class="header" href="#设备更新换代周期">设备更新换代周期</a></h3>
+<p>设备本身也有市场寿命。大多数工业设备的设计使用寿命在 7 到 15 年之间，企业的设备更新需求本身就会产生一个“折旧-更新“周期。这一周期完全可以被看作朱格拉周期的一个微观基础——当一大群设备几乎同时达到报废点（通常是在一个朱格拉周期启动之时），更新需求就会集中释放。</p>
+<h2 id="64-朱格拉周期的四个运行阶段"><a class="header" href="#64-朱格拉周期的四个运行阶段">6.4 朱格拉周期的四个运行阶段</a></h2>
+<h3 id="第一阶段复苏与启动持续约-2-3-年"><a class="header" href="#第一阶段复苏与启动持续约-2-3-年">第一阶段：复苏与启动（持续约 2-3 年）</a></h3>
+<p>经济的衰退已经结束，市场需求开始回暖。产能利用率从底部开始回升，但企业的扩张预期仍然非常谨慎——它们还在观望，不确定复苏能否持续。</p>
+<p>在这一阶段的早期，几乎看不到明显的投资信号——企业更倾向于通过提高现有产能的利用程度来满足新增需求。但当产能利用率连续 2-3 个季度上升且超过历史中位水平时，有前瞻性的一批企业开始重新启动“搁置“状态的产能扩张项目。资本开支增速转正——朱格拉周期的种子已经发芽。</p>
+<h3 id="第二阶段繁荣与扩张持续约-3-5-年"><a class="header" href="#第二阶段繁荣与扩张持续约-3-5-年">第二阶段：繁荣与扩张（持续约 3-5 年）</a></h3>
+<p>越来越多的企业确认经济复苏的可持续性，资本开支计划从恢复性启动转向积极扩张。产能利用率接近或达到瓶颈，企业订单积压，利润处于周期的高位区间，融资环境宽松——这些条件同时存在于这一阶段。</p>
+<p>扩张是朱格拉繁荣期的核心特征。新工厂建设、新设备采购、新技术应用的投资规模不断扩大，带动机械、设备、工程、钢铁等上游产业的高度景气。就业和工资水平持续改善，居民消费信心随之走高。</p>
+<p>但繁荣期也是“乐观主义陷阱“最容易发生的阶段。在行业整体快速扩张的背景下，单家企业很难做出“谨慎“的投资决策——因为如果竞争对手都在扩张而自己不跟进，会损失市场地位。这种囚徒困境式的博弈，导致繁荣后期的资本开支往往超过合理扩张范围，为下一阶段的产能过剩埋下伏笔。</p>
+<h3 id="第三阶段筑顶与减速持续约-1-2-年"><a class="header" href="#第三阶段筑顶与减速持续约-1-2-年">第三阶段：筑顶与减速（持续约 1-2 年）</a></h3>
+<p>经济增长从峰值走弱，但资本开支惯性尚未完全消退——大量已经开工的产能扩张项目仍在继续推进。产能利用率的先行指标开始松动。</p>
+<p>筑顶期的标志性信号包括：</p>
+<ul>
+<li><strong>资本开支增速放缓但绝对水平仍然偏高：</strong> 新开工产能项目减少，但在建项目仍然在增加；</li>
+<li><strong>行业盈利从峰值回落：</strong> 利润率收窄的本质是“成本上升快于价格“——扩张期的成本效应（原材料、劳动力、资金成本）开始侵蚀利润；</li>
+<li><strong>订单增速连续下滑：</strong> 新增订单不复高增长，在手订单仍能支持一段时间的生产，但企业已经开始感受到“需求降温“的信号；</li>
+<li><strong>产能开始集中投产：</strong> 大量在前两年开工的产能如期完工。</li>
+</ul>
+<p>筑顶期是一个“平衡还在维持，但结构已在恶化“的过渡阶段。</p>
+<h3 id="第四阶段收缩与出清持续约-2-3-年"><a class="header" href="#第四阶段收缩与出清持续约-2-3-年">第四阶段：收缩与出清（持续约 2-3 年）</a></h3>
+<p>资本开支转为负增长——企业不仅不再启动新的产能投资，还开始推迟、压缩甚至取消原有的投资计划。产能利用率的直线下挫，大量新投产的产能被闲置，行业利润率加速恶化，企业破产和行业整合开始加速。</p>
+<p>收缩期是朱格拉周期的“创造性破坏“阶段。低效产能和企业被出清、过剩的供给逐渐消化、成本端得到重塑、幸存企业的盈利能力开始从底部回升。在这个阶段，资本市场最具吸引力的投资主题往往是“困境反转“——那些能在行业洗牌后活下来并重新获得定价权的龙头企业。</p>
+<h2 id="65-朱格拉周期与其他周期的嵌套"><a class="header" href="#65-朱格拉周期与其他周期的嵌套">6.5 朱格拉周期与其他周期的嵌套</a></h2>
+<p>朱格拉周期是周期嵌套体系中的核心枢纽。</p>
+<h3 id="向上承接康波"><a class="header" href="#向上承接康波">向上承接康波</a></h3>
+<p>技术长波对产业的影响只能以朱格拉周期为中介来完成落地——康波的技术红利在转换为实际产能的过程中，必须以企业大规模的设备投资为载体。每一轮康波展开期的标志性特征，就是对应的“朱格拉繁荣“——铁路康波对应了铁路投资的朱格拉周期，电力康波对应了电力设备投资的朱格拉周期，信息康波对应了 IT 基础设施投资的朱格拉周期。</p>
+<p>反之，当技术红利衰减时，第一个出现疲软信号的就是产业资本开支。企业对新产能的远期回报预期下降——投资减少——经济增速放缓——这就是康波衰退期在朱格拉周期层面的传导路径。</p>
+<h3 id="向下约束基钦"><a class="header" href="#向下约束基钦">向下约束基钦</a></h3>
+<p>基钦（库存）周期的扩张空间受到朱格拉周期产能投资规模的直接约束。朱格拉扩张期内，产能上限持续扩张，这意味着基钦周期的补库空间也在同步扩大；朱格拉收缩期内，企业在削减产能的同时也会主动降低库存目标水平，使得基钦周期的扩张幅度受到实质性压缩。</p>
+<h3 id="时间关系"><a class="header" href="#时间关系">时间关系</a></h3>
+<p>一轮朱格拉周期的运行时间（7-11 年）通常包含 2 到 3 轮基钦周期（每轮 3-5 年）。这个“包含“关系不是机械的，但在统计学上高度显著：从历史上看，一个朱格拉周期出口往往与一轮基钦周期的低谷“共振“，共同构成一轮朱格拉底部——这意味着严重的经济衰退往往是朱格拉周期和基钦周期同时进入各自的下行阶段，两者叠加的结果。</p>
+<hr>
+<h3 id="关键要点"><a class="header" href="#关键要点">关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>概念</th><th>核心内容</th></tr>
+</thead>
+<tbody>
+<tr><td>朱格拉周期</td><td>时长 7-11 年，由企业设备更新和资本开支的周期波动驱动</td></tr>
+<tr><td>核心传导链</td><td>需求回升→产能瓶颈→资本开支扩张→产能集中投产→供需逆转→利润下降→投资收缩→产能出清</td></tr>
+<tr><td>识别指标</td><td>产能利用率、制造业设备投资增速、中长期制造业贷款增速、工业机器人安装量</td></tr>
+<tr><td>四阶段</td><td>复苏与启动（2-3 年）→ 繁荣与扩张（3-5 年）→ 筑顶与减速（1-2 年）→ 收缩与出清（2-3 年）</td></tr>
+<tr><td>嵌套枢纽作用</td><td>向上承接康波技术红利，向下约束基钦库存空间</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>Juglar, C. (1862). <em>Des Crises commerciales et leur retour périodique en France, en Angleterre et aux États-Unis</em>.</li>
+<li>Samuelson, P. (1939). “Interactions Between the Multiplier Analysis and the Principle of Acceleration.” <em>Review of Economics and Statistics</em>.</li>
+<li>US Federal Reserve: <a href="https://www.federalreserve.gov/releases/g17/current/">Industrial Production and Capacity Utilization</a></li>
+<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Juglar_cycle">Juglar cycle</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-2/chapter-5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-2/chapter-5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
