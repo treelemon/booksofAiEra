@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第3章 银行周期特征与景气波动的规律性认识 - 穿越周期：商业银行的命运、逻辑与生存法则</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从金融周期理论出发，以跨世纪的历史纵深感，系统探讨商业银行经营发展与经济周期的内在关联，提供理论框架、实证证据、传导机制、监管工具与穿越周期的核心法则。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-44f3d535.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-d3bea2a5.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">穿越周期：商业银行的命运、逻辑与生存法则</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第3章-银行周期特征与景气波动的规律性认识"><a class="header" href="#第3章-银行周期特征与景气波动的规律性认识">第3章 银行周期特征与景气波动的规律性认识</a></h1>
+<blockquote>
+<p><em>如果你只看一家银行一年的报表，你看到的是经营；如果你看一家银行二十年的报表，你看到的是命运。</em></p>
+</blockquote>
+<h2 id="31-一张图里的二十年"><a class="header" href="#31-一张图里的二十年">3.1 一张图里的二十年</a></h2>
+<p>2024年初，一位资深的银行分析师在梳理中国银行业数据时，把六家全国性股份制银行的ROE放在同一张图上，时间跨度二十年。</p>
+<p>这张图上出现了三条清晰的弧线。</p>
+<p>第一条弧线：2003年到2007年，所有银行的ROE都在爬升——从个位数升到15%以上。</p>
+<p>第二条弧线：2009年到2012年，又是一轮冲高——这一次，几家银行的ROE短暂突破了20%。</p>
+<p>第三条弧线：从2015年前后开始，ROE集体掉头向下。到了2023年，这六家银行中已经没有一家的ROE超过13%。</p>
+<p>这位分析师放下笔，说了一句：“这不是经营问题。这是<strong>潮水退去后，水位的真相</strong>。”</p>
+<p>三个弧形，对应的是中国银行业的三轮周期。而每一轮周期的形状、幅度和驱动因素，都不是随机出现的。它们遵循着银行景气周期的深层规律。</p>
+<p>本章的任务，是把这些规律从历史中提炼出来。</p>
+<h2 id="32-三个核心特征"><a class="header" href="#32-三个核心特征">3.2 三个核心特征</a></h2>
+<p>基于对中国银行业二十余年、美国银行业六十年的历史数据观察，银行景气周期呈现出三个高度稳定的核心特征。</p>
+<p><strong>第一个特征：经济后周期性。</strong></p>
+<p>银行不是经济周期的“并行者“，而是经济周期的“追随者“。实体经济的债务周期先形成，经济周期随后波动，银行业绩——盈利、不良、信贷增速——最后才开始反应。</p>
+<p>这个滞后结构有多大？典型的经验规律是：实体债务周期领先经济周期约2到4个季度，经济周期领先银行景气周期约2到3个季度。加总起来，从实体经济的贷款需求开始变化，到银行的财务报表上反映出这一变化，中间的时滞可以长达一年半。</p>
+<p>这种滞后创造了一个致命的认知陷阱。当经济数据已经触底反弹，市场开始欢呼复苏时，银行的资产质量可能仍在恶化——因为不良贷款的确认识有滞后。当经济数据刚开始恶化，市场还在讨论“软着陆“还是“硬着陆“时，银行的净息差可能仍在改善——因为存量贷款的利率重定价同样有滞后。</p>
+<p>换句更直白的话：<strong>银行的报表是在回顾历史，而你用历史的报表做未来的决策。</strong></p>
+<p><strong>第二个特征：规模为趋势项，息差为波动项。</strong></p>
+<p>银行的收入可以分解为两部分：规模（资产总量）乘以利差（净息差）。两者对银行总营收的贡献方式截然不同。</p>
+<p>资产规模是一个趋势项。它跟着GDP增长、信贷需求、货币供应这些慢变量走。只要经济在增长、货币在扩张，银行的资产负债表就天然地在膨胀。这个趋势是稳定的、方向性的、不容易短期内逆转。以中国银行业为例，在2003年到2023年的二十年间，仅有2018年（去杠杆最严厉的一年）出现过短暂的规模增速降至个位数以下的情况。其余年份，资产规模增速基本保持在8%到20%之间。</p>
+<p>净息差是一个波动项。它跟着利率周期、货币政策、竞争格局这些快变量走。它的波动幅度大、方向不确定、可以在两三年内完成一个完整的涨落周期。中国银行业的净息差在2003年至2008年期间从2.5%左右逐步攀升至3%以上；2009年四万亿之后，随着利率下调和竞争加剧，逐年走低至2012年的2.6%左右；2013年至2015年因利率市场化冲刺阶段继续下行；2017年至2019年在去杠杆背景下短暂企稳；2020年疫情后则进入了迄今仍在延续的持续下行通道。</p>
+<p>这两条线叠加在一起，就是银行的营收曲线。你可以想象两条线在纸上的运动——一条线缓慢而坚定地向右上方爬升（规模），另一条线以短得多的周期上下波动（息差）。当两者同向时，营收曲线一飞冲天。当两者反向时，营收曲线进入钝化区域——规模上去了一点，但息差下来了一块，两者彼此抵消。</p>
+<p>中国银行业正在经历的，正是后一种情况。净息差从2021年的2.08%降至2025年末的1.42%，连续四年累计下行66个基点。同期，资产规模增速从两位数降至个位数。一个往下拽，一个往下压——这是银行营收增速从超过10%滑落到个位数甚至负增长的底层数学。</p>
+<p><strong>第三个特征：顺周期性。</strong></p>
+<p>银行经营的所有核心指标——盈利能力、资产质量、信贷增速、资本充足率——都与经济周期同向波动。这种同向性不是偶然的，它在第2章中从理论层面得到了完整解释：金融加速器、代理激励、资本监管制度——三股合力使得银行在经济上行期倾向于扩张、在经济下行期倾向于收缩。</p>
+<p>三个特征叠加在一起，构成了银行景气周期的完整面貌：它<strong>滞后于实体经济</strong>，由<strong>规模趋势和息差波动双引擎驱动</strong>，与外部环境<strong>同向共振</strong>。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>特征</th><th>核心含义</th><th>时滞/驱动结构</th><th>银行管理的关键含义</th></tr>
+</thead>
+<tbody>
+<tr><td>经济后周期性</td><td>银行景气滞后于经济周期</td><td>债务周期→经济周期（2—4Q）→银行景气（2—3Q）</td><td>报表是历史镜，决策需要前瞻调</td></tr>
+<tr><td>规模趋势+息差波动</td><td>营收 = 慢趋势 × 快波动</td><td>规模（10年趋势）+ 息差（2—3年周期）</td><td>战略管慢变量，战术管快变量</td></tr>
+<tr><td>顺周期性</td><td>指标与经济同向波动</td><td>金融加速器+代理+制度三力合一</td><td>逆周期不能靠意愿，必须靠制度</td></tr>
+</tbody>
+</table>
+</div>
+<p>但抽象的规律总是干涩的。让我们把这些规律放进中国银行业二十余年的真实历史中，看它们如何反复上演。</p>
+<h2 id="33-五次周期十余次惊涛"><a class="header" href="#33-五次周期十余次惊涛">3.3 五次周期，十余次惊涛</a></h2>
+<p>中国现代银行业的历史不算长。如果从1994年专业银行向商业银行转轨算起，只有三十年。如果从2003年国有银行股份制改革算起，刚过二十年。但就在这二十年间，中国银行业已经经历了五次完整的经济周期轮替和十余次重大风险事件。</p>
+<p><strong>第一次：亚洲金融危机的余震（1998—2002年）。</strong></p>
+<p>1997年，亚洲金融危机爆发。虽然中国因为资本账户管制避免了直接的货币冲击，但外需大幅下滑和国内国企改革的叠加效应，使四大国有商业银行在1998年末的不良贷款率飙升到了40%以上——按照当时的资产分类口径。如果按照国际标准五级分类，这一数字可能更高。严格来说，四大行在技术上已经破产。</p>
+<p>1999年，中国政府做出了一项后来被反复引用为“逆周期干预范本“的决定：成立信达、华融、东方、长城四家资产管理公司（AMC），对口接收工农中建四大行的不良资产。第一批剥离规模高达1.4万亿元。这个数字在今天看来或许不算巨大——现在一家大型国有银行一年的新增贷款就超过2万亿——但在当时，它相当于中国GDP的15%以上。</p>
+<p>AMC的成立和不良资产的剥离，为四大行随后的股改上市扫清了最大的障碍。但这次事件留给银行业的记忆是深刻的：当宏观周期逆转时，银行体系积累的风险可以大到足以摧毁整个金融系统的程度。这份记忆，深刻地影响了此后二十年监管者对“逆周期监管“的执念。</p>
+<p><strong>第二次：“四万亿“与信贷狂潮（2008—2012年）。</strong></p>
+<p>2008年9月，雷曼兄弟破产。两个月后，中国政府宣布了“四万亿“经济刺激计划。随后，货币政策急剧宽松，监管窗口指导放松。2009年全年，中国银行业新增人民币贷款9.6万亿元，是2008年全年新增量的两倍。</p>
+<p>这是一个历史性的拐点。</p>
+<p>在这次信贷大扩张中，银行体系的资产负债表规模在短短三年内近乎翻倍。大量的信贷通过地方融资平台流入了基础设施建设，通过开发贷和个人按揭流入了房地产。短期来看，四万亿成功地稳住了经济——2009年和2010年中国GDP增速分别达到9.4%和10.6%。但长期来看，它也在这两个领域——地方债务和房地产——埋下了此后十五年反复困扰中国银行业的风险种子。</p>
+<p>2012年，钢贸链断裂，成为后四万亿时代第一个集中暴露的风险事件。长三角地区多家银行卷入其中，某股份制银行单家就核销了近百亿的钢贸不良贷款。</p>
+<p><strong>第三次：影子银行膨胀与“钱荒“（2013—2015年）。</strong></p>
+<p>后四万亿时代，为控制信贷风险和降杠杆，监管部门开始收紧表内信贷。但需求并未消失。信贷从表内绕到表外——银信合作、银证合作、信托受益权、买入返售——影子银行体系急剧膨胀。到2013年中，银行表外融资规模已占社会融资总量的近30%。</p>
+<p>2013年6月，银行间市场爆发了著名的“钱荒“事件。隔夜Shibor利率一度飙升至13.44%，银行间流动性几乎冻结。钱荒的直接原因是银行过度依赖短期同业负债来支持长期同业资产——典型的期限错配——而央行采取了“不干预“的姿态来警示银行体系。</p>
+<p>钱荒之后，影子银行的清理整顿开始，但存量风险的释放并未停止。2015年，股市异常波动——从6月的5178点暴跌至8月的2850点，大量银行理财资金通过伞形信托、配资等渠道卷入其中。</p>
+<p><strong>第四次：去杠杆与民企信用危机（2016—2019年）。</strong></p>
+<p>2016年，中央经济工作会议提出“三去一降一补“——去产能、去库存、去杠杆、降成本、补短板。其中“去杠杆“成为此后数年的政策主线。</p>
+<p>2018年，去杠杆进入深水区。社会融资规模增速骤降，影子银行被强力压缩。以民营企业为主的弱资质借款人面临融资断流。当年，数百家上市公司大股东遭遇股权质押爆仓或逼近预警线，多地政府紧急设立纾困基金。银行的不良贷款率在经历了连续两年的下降后，于2018年下半年重新抬头，从1.74%逐步攀升至2019年末的1.86%。</p>
+<p>2019年5月，包商银行因严重信用风险被央行和银保监会接管——这是中国二十年来第一家被接管的中型银行。事件暴露了一个长期被低估的风险：部分中小银行的公司治理失灵和关联交易风险。</p>
+<p><strong>第五次：房地产调整与低利率冲击（2020年至今）。</strong></p>
+<p>2020年初，新冠疫情暴发。为对冲疫情冲击，货币政策再度大幅宽松，信贷投放再次加速。但这一次，房地产行业——中国银行体系最大的单一信贷敞口——已经走到了拐点。</p>
+<p>2020年8月，监管部门出台“三道红线“政策，对房企的负债率、净负债率和现金短债比设定上限。2021年，恒大集团爆雷，随后融创、碧桂园等头部房企也先后陷入流动性危机。房地产行业进入深度调整期。</p>
+<p>与此同时，为应对经济下行和通缩压力，LPR持续下调，带动银行贷款利率不断走低。2021年到2025年，商业银行净息差从2.08%降至1.42%，连续四年累计下行66个基点，ROE从10%以上滑落至7.78%。</p>
+<p><strong>五次周期叠加在一起，呈现出一个清晰的模式：每一次危机的应对都创造了下一轮周期的种子。</strong> 1999年的AMC剥离为2008年的信贷狂潮清空了资产负债表，四万亿刺激为2013年的影子银行膨胀和2018年的去杠杆埋下了伏笔，而去杠杆的阵痛又导致了2020年的宽松和随后的房地产风险全面暴露。</p>
+<p>这不是中国独有的问题。这是所有以银行信贷为核心的金融体系的宿命——我们用信贷来对抗下行周期，而信贷本身又在孕育着下一轮更大规模的周期。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期</th><th>时段</th><th>触发事件</th><th>银行体系核心冲击</th><th>政策应对</th><th>为下一轮埋下的种子</th></tr>
+</thead>
+<tbody>
+<tr><td>第一次</td><td>1998—2002</td><td>亚洲金融危机</td><td>四大行不良率&gt;40%</td><td>AMC剥离1.4万亿</td><td>清空资产负债表→扩张空间</td></tr>
+<tr><td>第二次</td><td>2008—2012</td><td>全球金融危机</td><td>信贷翻倍（2009年9.6万亿）</td><td>四万亿+宽松货币</td><td>地方债务+房地产泡沫</td></tr>
+<tr><td>第三次</td><td>2013—2015</td><td>影子银行膨胀</td><td>钱荒（Shibor 13.44%）</td><td>清理影子银行</td><td>表外转表内→去杠杆压力</td></tr>
+<tr><td>第四次</td><td>2016—2019</td><td>去杠杆深化</td><td>民企信用危机+包商银行</td><td>纾困基金+接管</td><td>宽松需求积累</td></tr>
+<tr><td>第五次</td><td>2020至今</td><td>疫情+房地产调整</td><td>恒大爆雷+息差降至1.42%</td><td>三道红线+降息</td><td>低利率时代的深度适应</td></tr>
+</tbody>
+</table>
+</div>
+<p>如果把五次周期放在一起横向比较，一个更深层的特征浮现出来：<strong>风险的形态在升级，但风险的逻辑从未改变。</strong></p>
+<p>1998年的风险是纯粹的不良贷款——企业还不上钱。2012年的钢贸风险是行业集中度风险——一个行业的链条断裂。2015年的股市风险是跨市场传染——银行理财资金通过复杂结构卷入了资本市场的波动。2018年的股权质押风险是抵押品危机——当股票价格下跌，以股票为抵押的贷款就成为坏账。2021年的恒大爆雷是系统性风险事件——一家企业的违约引发了整个行业的信用崩塌。</p>
+<p>风险的形式越来越复杂，传染的路径越来越隐蔽。但每一次风险的底层逻辑都可以回溯到第2章中剖析的三股力量之一：信息不对称导致的信贷标准下降、代理激励驱动的“别人都在做“、或者资本约束下的抽贷加信贷紧缩。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时期</th><th>风险事件</th><th>风险形态</th><th>传导机制</th><th>对应的理论力量</th></tr>
+</thead>
+<tbody>
+<tr><td>1998</td><td>四大行不良</td><td>纯粹信用风险</td><td>企业→银行（直接）</td><td>信息不对称</td></tr>
+<tr><td>2012</td><td>钢贸链断裂</td><td>行业集中度风险</td><td>行业链条→多家银行</td><td>羊群效应</td></tr>
+<tr><td>2015</td><td>股市异常波动</td><td>跨市场传染</td><td>理财→伞形信托→股市</td><td>制度套利</td></tr>
+<tr><td>2018</td><td>股权质押危机</td><td>抵押品螺旋</td><td>股价→质押→银行</td><td>金融加速器</td></tr>
+<tr><td>2021</td><td>恒大爆雷</td><td>系统性风险</td><td>单一企业→全行业</td><td>三重力量叠加</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="34-双重叠加扩表周期与息差周期"><a class="header" href="#34-双重叠加扩表周期与息差周期">3.4 双重叠加：扩表周期与息差周期</a></h2>
+<p>在梳理了二十余年的历史之后，一个更深层的结构性问题浮现出来：中国银行业的景气波动，本质上是两个周期的叠加——<strong>扩表周期和息差周期</strong>。</p>
+<p>扩表周期，是指银行资产负债表的扩张和收缩节奏。它本质上是一个债务周期——实体经济在加杠杆还是去杠杆，决定了银行的贷款能否找到既安全又有收益的投放方向。当经济处于“加杠杆“阶段时——如2009—2011年、2020年上半年——银行的资产规模增速可以轻松达到15%甚至20%。当经济处于“去杠杆“阶段时——如2013年、2018年——银行的信贷投放就变成了一场在风险和收益之间的走钢丝。</p>
+<p>息差周期，是指净息差的周期性波动。我们在第1章讨论过，金融周期的长度（8—20年）远长于经济周期。而息差周期又嵌套在金融周期之中——在金融周期的扩张阶段，货币宽松压低短期利率，但长期资产收益率尚未充分调整，银行可以享受较宽的利差；在金融周期的收缩阶段，短期利率上升而贷款收益率调整滞后，银行的息差被压缩。</p>
+<p>这两个周期并不是同步的。有时候它们同向运动——比如2009年，规模扩张和息差尚可叠加，创造了银行盈利的“黄金时代“。有时候它们反向运动——比如2020年到2023年，规模仍在增长，但息差已被持续压缩，银行的营收是“量的增长勉强抵消息差的下行“。</p>
+<p>理解这种双重叠加效应，是理解一家银行真实盈利状况的关键。只看ROE的数值，你不知道这18%的ROE中，有多少来自规模的红利（不可持续），有多少来自息差的周期（不可持续），又有多少来自真正的效率改善（可持续）。这正是我们接下来要在第二、第三篇中用数据来拆解的问题。</p>
+<p>两个周期的叠加还有一个实践层面的含义：<strong>银行的战略窗口期与周期相位密切相关。</strong> 当扩表周期处于扩张段而息差周期处于上升段时（如2009年），银行应该全力扩大规模——利差厚、需求旺，规模就是利润。当扩表周期处于收缩段而息差周期处于下降段时（如2023—2025年），规模扩张已经无法弥补息差的损失，战略重心必须从“量的增长“转向“质的优化“——提高非息收入占比、优化负债成本结构、淘汰低效资产。而最大的战略失误，就是在错误的周期相位中做了正确的策略。比如在即将进入息差下行周期时疯狂扩大规模——那些新放出去的贷款会用越来越薄的利差持续拖累未来数年的营收。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期相位</th><th>扩表周期</th><th>息差周期</th><th>典型年份</th><th>最优策略</th><th>最大战略风险</th></tr>
+</thead>
+<tbody>
+<tr><td>黄金期</td><td>扩张</td><td>上升</td><td>2009</td><td>全力扩规模</td><td>忽视风险积累</td></tr>
+<tr><td>钝化期</td><td>扩张</td><td>下降</td><td>2020—2023</td><td>以量补价+调结构</td><td>用规模掩盖息差恶化</td></tr>
+<tr><td>煎熬期</td><td>收缩</td><td>下降</td><td>2023—2025</td><td>提质增效+保资本</td><td>双重挤压下盈利骤降</td></tr>
+<tr><td>布局期</td><td>收缩</td><td>上升</td><td>—（尚未出现）</td><td>蓄力+布局下一轮</td><td>储备不足错失拐点</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="35-正面案例富国银行弱周期性的社区银行模式"><a class="header" href="#35-正面案例富国银行弱周期性的社区银行模式">3.5 正面案例：富国银行——弱周期性的社区银行模式</a></h2>
+<p>在结束本章之前，让我们看一个跳出上述周期性规律的银行。它的存在证明了一个重要的命题：<strong>周期是银行业的铁律，但不是每一家银行的宿命。</strong></p>
+<p>富国银行是美国最大的零售银行之一。2006年，全球金融危机前夕，富国银行的税前利润是115亿美元，不到花旗银行和美国银行的一半。但到2011年末，它的净利润已经跃升至美国银行业第二位，约是花旗银行和美国银行的净利润之和的两倍。2013年7月，富国银行的市值超越中国工商银行，登顶全球市值第一银行。</p>
+<p>在2008年那场几乎摧毁了整个华尔街的金融危机中，富国银行不仅活下来了，而且实现了一次跨越式发展。</p>
+<p>它是怎么做到的？三个结构性原因。</p>
+<p><strong>第一，社区银行的基因。</strong> 富国银行始终以社区银行业务为主营，这项业务的收入占比长期保持在50%以上。社区银行意味着什么？意味着它的客户不是华尔街的对冲基金，不是大型跨国公司，而是美国的普通个人和中小企业。这些客户的金融需求——存款、支付、房贷、小企业贷款——是低波动的。经济好不好，普通人的工资还是要存进银行，房贷还是要还。这使得富国银行的收入不像投行那样跟随市场剧烈起伏。</p>
+<p><strong>第二，交叉销售创造的客户粘性。</strong> 富国银行长期推行“交叉销售“战略——向同一个客户销售尽可能多的产品。每个零售客户平均持有6.11个富国产品，这个数字在银行业是一个传奇。交叉销售的意义不仅在于增加了收入，更在于它使得客户转换银行的成本极高——如果一个客户只在富国银行有一个支票账户，他可以随时离开；但如果他有支票、储蓄、信用卡、房贷、保险五个产品，离开的成本就大了百倍。这种粘性使得富国银行的存款占比长期稳定在70%左右——这是银行最便宜、最稳定的资金来源。</p>
+<p><strong>第三，逆势并购的胆识。</strong> 2008年10月，当全世界的银行都在拼命囤积现金的时候，富国银行以151亿美元的价格收购了美联银行（Wachovia）。美联银行是美国第四大银行，但在这场危机中因为房贷相关损失而濒临破产。富国银行在危机最低点出手，用极低的价格获得了美联银行的存款基础和分支机构网络。这不是运气，这是战略定力——当别人在恐惧中收缩时，它因为自己的资产负债表足够健康，所以有资本出手。</p>
+<p>富国银行的案例说明了什么？说明了顺周期性的强弱，关键是<strong>银行的经营模式</strong>。以零售客户为基础的稳定负债、以交叉销售为核心的多元收入、以充足资本为底气的逆势并购——这三者的组合，使得富国银行的收入波动幅度远低于同业的平均水平。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>富国银行（2006）</th><th>花旗/美银（2006）</th><th>富国银行（2011）</th><th>花旗/美银（2011）</th></tr>
+</thead>
+<tbody>
+<tr><td>税前利润（亿美元）</td><td>115</td><td>~250（花旗）/~230（美银）</td><td>~200</td><td>~110（花旗+美银）</td></tr>
+<tr><td>存款占比</td><td>~70%</td><td>~40%—50%</td><td>~70%</td><td>~50%—60%</td></tr>
+<tr><td>零售客户产品持有数</td><td>6.11个</td><td>—</td><td>6.11个</td><td>—</td></tr>
+<tr><td>社区银行收入占比</td><td>&gt;50%</td><td>&lt;30%</td><td>&gt;50%</td><td>&lt;30%</td></tr>
+<tr><td>并购</td><td>—</td><td>—</td><td>151亿美元收购美联银行</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<p>它的故事也在提醒我们：第三章归纳的所有规律——后周期性、规模趋势与息差波动、顺周期性——描述的是银行业的“平均状态“。个案可以在一定范围内偏离均值。而偏离的幅度，正是一家银行的战略和管理能力最直观的体现。</p>
+<p>事实上，在中国银行业内部，不同类型银行对周期的敏感度也存在显著的结构性差异。</p>
+<p>国有大行——如工商银行、建设银行、邮储银行——凭借庞大的零售存款基础、广泛的网点覆盖和政府的隐性信用背书，在经济下行期具有更强的抗压能力。它们的存款成本通常低于中小银行50到100个基点，这为它们在经济下行期提供了宝贵的息差缓冲。当城商行因为存款流失不得不收缩信贷时，国有大行仍然可以保持相对平稳的信贷投放。</p>
+<p>股份制银行——如招商银行、兴业银行——的优势在于战略灵活性和管理精细化。它们比大行更敢于在特定领域建立深度护城河（如招商银行的零售财富管理、兴业银行的绿色金融），也比城商行拥有更宽裕的资本和人才储备。它们对周期的敏感度介于国有大行和城商行之间——比大行更敏感（因为它们缺少大行的存款优势），但比城商行更有回旋余地（因为它们拥有更强的管理能力和业务多元化）。</p>
+<p>城商行和农商行——如宁波银行是一个少见的例外——通常对区域经济和特定行业的集中度依赖最高。一家深耕某省的城商行，其资产质量的波动与该省的经济周期高度同步。当该省的经济下行时——无论是由于产业结构调整还是房地产调整——城商行的不良率往往出现倍数级的上升。第2章中提到的实证发现——城商行和农商行的不良率对GDP增速变化的弹性约为国有大行的2到3倍——就是这个结构性差异在数据上的反映。</p>
+<p>这三类银行在同一轮周期中的表现分野，构成了中国银行业最独特的周期景观之一。在第二篇的实证分析中，我们将用数据对这些问题给出更精确的量化答案。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>银行类型</th><th>代表银行</th><th>核心优势</th><th>核心劣势</th><th>周期敏感度</th><th>下行期缓冲能力</th></tr>
+</thead>
+<tbody>
+<tr><td>国有大行</td><td>工行、建行、邮储</td><td>零售存款基础（成本低50—100bp）</td><td>体量大、转身慢</td><td>较低</td><td>强（存款不流失+政府信用）</td></tr>
+<tr><td>股份制银行</td><td>招行、兴业</td><td>管理精细、战略灵活</td><td>负债成本高于大行</td><td>中等</td><td>中等（效率对冲负债劣势）</td></tr>
+<tr><td>城商行/农商行</td><td>宁波银行为例外</td><td>区域深耕、决策快</td><td>区域集中度极高</td><td>高（大行2—3倍）</td><td>弱（区域经济同步下行）</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="36-从规律到策略三重特征的战略含义"><a class="header" href="#36-从规律到策略三重特征的战略含义">3.6 从规律到策略：三重特征的战略含义</a></h2>
+<p>三个核心特征——后周期性、规模趋势与息差波动、顺周期性——如果只能记住一句话，应该是：<strong>银行的经营节奏与外部环境的节奏之间存在系统性的错位。</strong></p>
+<p>后周期性告诉你，数据永远在讲过去的故事。一个简单的经验法则：当所有宏观指标都在上扬时，至少应该把风险预期往前提两个季度。当所有宏观指标都在恶化时，存量资产质量很可能在继续恶化四到六个季度之后才会触底。</p>
+<p>规模为趋势项与息差为波动项告诉你，<strong>银行的盈利是一个“慢变量驱动+快变量扰动“的结构。</strong> 战略的要点是管理慢变量——客户结构、负债结构、收入结构、科技能力——需要五到十年见效，但一旦建成就是穿越周期的稳定器。战术的要点是管理快变量——定价、久期、信贷节奏——以季度为单位波动。战略和战术的混淆是最常见的管理失误：用管理快变量的方式去管慢变量（要求零售转型三年见效），或用管理慢变量的节奏去管快变量（每年只开一次定价策略会）。</p>
+<p>顺周期性告诉你最深刻的结论：<strong>你不是孤立的。</strong> 每一个理性决策与其他银行相同的理性决策汇聚在一起，最终形成系统的非理性。繁荣期的“理性放贷“汇集成了泡沫，衰退期的“理性惜贷“汇集成了信贷紧缩。正因为此，逆周期不能靠意愿，必须靠制度——只有考核机制不奖励顺周期行为、资本要求不纵容顺周期扩张、治理结构允许“因为保守而被责备“，逆周期才可能从理想变成现实。这正是第四篇要深入讨论的主题。</p>
+<h2 id="37-本章核心发现"><a class="header" href="#37-本章核心发现">3.7 本章核心发现</a></h2>
+<ol>
+<li>
+<p><strong>银行景气周期具有三大核心特征：经济后周期性、规模为趋势项与息差为波动项、顺周期性。</strong> 这三个特征决定了银行的经营节奏——景气滞后于实体经济，营收由规模趋势和息差波动双引擎驱动，所有指标与外部环境同向波动。</p>
+</li>
+<li>
+<p><strong>中国银行业二十余年经历了五次完整的经济周期轮替和十余次重大风险事件。</strong> 一个贯穿始终的模式是：每一次危机的应对（AMC剥离、四万亿刺激、疫情宽松）都在为下一轮周期埋下伏笔。这不是政策的失败，而是信贷驱动型金融体系的深层特征。</p>
+</li>
+<li>
+<p><strong>扩表周期与息差周期的双重叠加，构成了中国银行业盈利波动的底层结构。</strong> 当规模和息差同向运动时（如2009年），盈利迎来“黄金时代“；当规模和息差反向运动时，“以量补价“成为勉强的应对策略。</p>
+</li>
+<li>
+<p><strong>银行可以在一定程度上偏离周期平均规律。</strong> 富国银行的案例证明了：以零售存款为基础的稳定负债结构、以交叉销售为核心的客户粘性、以充足资本为底气的逆势扩张能力——这三者的组合可以显著降低一家银行的周期敏感性。</p>
+</li>
+</ol>
+<h2 id="38-银行管理启示"><a class="header" href="#38-银行管理启示">3.8 银行管理启示</a></h2>
+<ul>
+<li>
+<p><strong>用“后周期性“的视角重新校准你的经营节奏。</strong> 当经济数据开始好转时，不要急于判断资产质量已经见底——坏账的暴露需要时间。当经济数据开始恶化时，不要低估息差改善的滞后效应——存量贷款的利率重定价会给你一个缓冲期。理解滞后结构，就不会在“应该恐惧时贪婪“，也不会在“应该贪婪时恐惧“。</p>
+</li>
+<li>
+<p><strong>区分“规模的红利“和“效率的红利“。</strong> 当你的ROE表现出色时，问问自己：多少来自资产负债表的高速扩张？多少来自当前的利率环境？又有多少是真正来自你比同业更好的风险管理、更低的运营成本、更强的客户粘性？前两者是周期性的，会随着周期的逆转而消失。第三者才是你穿越周期所真正依赖的东西。</p>
+</li>
+<li>
+<p><strong>富国银行的启示不是“做社区银行“，而是“找到你自己的稳定锚“。</strong> 不是每一家银行都能复制富国银行的模式。但每一家银行都可以问自己一个问题：我们的业务结构中，哪一部分是在经济下行期也不会消失的？哪一批客户是在所有周期阶段都会留在我们这里的？这个答案，就是你穿越周期的根基。</p>
+</li>
+</ul>
+<h2 id="39-第一篇的尾声"><a class="header" href="#39-第一篇的尾声">3.9 第一篇的尾声</a></h2>
+<p>第一篇的三章，完成了一个认知的奠基。</p>
+<p>第1章给出了理论地图——从Bagehot到BIS，人类花了150年才把金融周期嵌入经济分析。</p>
+<p>第2章拆解了顺周期性的三重结构性力量——金融加速器的内生逻辑、代理行为的激励短路、资本监管的制度放大效应。结论是明确的：顺周期不是道德的缺陷，而是结构的必然。</p>
+<p>第3章把镜头从理论拉到现实——中国银行业二十余年的周期史上，一个不变的模式是“每一次救市都在孕育下一次危机“。但案例也告诉我们，银行不是周期的囚徒。经营模式的选择，可以改变一家银行与周期的相处方式。</p>
+<p>现在，我们需要数据。理论说“应该如此“，但我们需要知道**“确实如何”**——中国经济周期波动对银行盈利、资产质量和资本管理的影响，究竟有多大？</p>
+<p>这是第二篇的战场。</p>
+<hr>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>中国银保监会（现金融监管总局）：商业银行主要监管指标数据（各年度）</li>
+<li>中国人民银行：《中国金融稳定报告》（多期）</li>
+<li>《中国银行业改革历程》（2003—2013），多作者，中国金融出版社</li>
+<li>富国银行：各年度年报及投资者关系材料（2006—2015）</li>
+<li>“A Model of the Financial Cycle”（相关BIS工作论文）, Claudio Borio et al.</li>
+<li>《八次危机：中国的真实经验》（2013）, 温铁军 等</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-1/chapter-2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-1/chapter-2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

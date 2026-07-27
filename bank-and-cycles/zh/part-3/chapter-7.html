@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第7章 信贷渠道：信贷周期与经济周期的互动机制 - 穿越周期：商业银行的命运、逻辑与生存法则</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从金融周期理论出发，以跨世纪的历史纵深感，系统探讨商业银行经营发展与经济周期的内在关联，提供理论框架、实证证据、传导机制、监管工具与穿越周期的核心法则。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-44f3d535.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-d3bea2a5.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">穿越周期：商业银行的命运、逻辑与生存法则</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第7章-信贷渠道信贷周期与经济周期的互动机制"><a class="header" href="#第7章-信贷渠道信贷周期与经济周期的互动机制">第7章 信贷渠道：信贷周期与经济周期的互动机制</a></h1>
+<blockquote>
+<p><em>第一篇给了你理论，第二篇给了你数据。第三篇要做的，是打开银行内部的“黑箱“——周期不是在外面发生然后“影响“银行的。周期的一部分，就是在银行内部被制造出来的。</em></p>
+</blockquote>
+<h2 id="71-从数据到机制第三篇的开场"><a class="header" href="#71-从数据到机制第三篇的开场">7.1 从数据到机制：第三篇的开场</a></h2>
+<p>第4、5、6章用大量的数据证明了一件事：银行盈利、资产质量和资本管理都随着经济周期同向波动。但我们只看到了“结果“——知道当GDP下降1个百分点时，ROE会降0.8到1.2个百分点，不良率会升0.15到0.8个百分点（取决于银行类型）。</p>
+<p>我们还没有追问：<strong>这些影响是怎么发生的？</strong> GDP下降不是一个可以直接作用于银行资产负债表的物理力量。它必须通过某种渠道、某种机制、某种传导路径，才能转化为银行报表上的变化。</p>
+<p>第三篇的任务，就是打开三个“黑箱“——信贷渠道（本章）、资产价格渠道（第8章）、制度渠道（第9章）。其中，信贷渠道是最古老、最核心、量级最大的一条。它回答了银行与周期关系中最基础的问题：<strong>银行自身的信贷行为，是如何反过来制造和放大周期的？</strong></p>
+<h2 id="72-信贷的钟摆一个跨越两百年的模式"><a class="header" href="#72-信贷的钟摆一个跨越两百年的模式">7.2 信贷的钟摆：一个跨越两百年的模式</a></h2>
+<p>在伦敦金融城的档案里，保存着一个惊人的规律。从1825年英国第一次现代银行业危机开始，每一次大危机之前，都有一段信贷高速扩张期。1825年之前是对南美债券的狂热，1873年之前是对铁路股票的投机，1929年之前是对保证金贷款的无度扩张，2008年之前是对次级抵押贷款的疯狂发放。</p>
+<p>繁荣期的集体放贷，衰退期的集体惜贷。这个模式重复了两百年。</p>
+<p>从统计数据来看，这个钟摆的幅度是惊人的。我们在第1章中讨论过，经济周期的长度是1到8年，金融周期的长度是8到20年。但还有一个维度我们尚未讨论：<strong>信贷周期比GDP周期的波动幅度更大。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期类型</th><th>平均长度</th><th>峰谷振幅（高峰到低谷的波动幅度）</th><th>领先/滞后关系</th></tr>
+</thead>
+<tbody>
+<tr><td>经济周期（GDP）</td><td>5—6年</td><td>3%—5%</td><td>基准</td></tr>
+<tr><td>信贷周期</td><td>8—20年</td><td>10%—20%（信贷增速从+20%到-5%）</td><td>领先经济周期1—2Q</td></tr>
+<tr><td>资产价格周期</td><td>8—20年</td><td>30%—60%（房价从顶到底）</td><td>与信贷周期同步</td></tr>
+</tbody>
+</table>
+</div>
+<p>信贷增速的波动幅度是GDP增速的3到5倍。在中国，2009年新增人民币贷款同比增长超过100%（从4.9万亿到9.6万亿），而GDP增速只从9.7%降到9.4%。2018年，社会融资规模增速从14%以上骤降至10%以下，而GDP增速的降幅不到1个百分点。</p>
+<p><strong>银行不是在平稳地调整信贷供给以适应经济的变化。银行的信贷行为更像一个被反复踩下和松开的油门——加速的时候比经济快三倍，刹车的时候也比经济猛三倍。</strong></p>
+<h2 id="73-油门与刹车信贷顺周期的微观行为解剖"><a class="header" href="#73-油门与刹车信贷顺周期的微观行为解剖">7.3 “油门“与“刹车”：信贷顺周期的微观行为解剖</a></h2>
+<p>为什么银行总是在繁荣期过度放贷、在衰退期过度惜贷？这不是一个抽象的理论问题，它有非常具体的微观行为基础。让我们解剖信贷扩张和信贷收缩两个阶段的银行内部决策过程。</p>
+<p><strong>扩张期（踩油门）：一套自我强化的决策逻辑。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>决策环节</th><th>繁荣期的典型行为</th><th>背后的驱动力</th></tr>
+</thead>
+<tbody>
+<tr><td>客户准入</td><td>降低准入门槛，对“边缘借款人“开放</td><td>抵押品价值↑→风险模型显示违约概率↓</td></tr>
+<tr><td>信贷审批</td><td>简化流程、缩短审批周期</td><td>竞争压力→“做得慢就会被抢走客户”</td></tr>
+<tr><td>风险定价</td><td>压缩信用利差，甚至低于合理水平</td><td>短期利润考核→量比价重要</td></tr>
+<tr><td>贷后管理</td><td>放松监控频率，降低预警阈值</td><td>“迄今从未逾期”→侥幸心理</td></tr>
+<tr><td>行业策略</td><td>集中押注景气行业</td><td>跟随同业→“他们都在做，我们为什么不做？”</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>收缩期（踩刹车）：同样逻辑的反向操作。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>决策环节</th><th>衰退期的典型行为</th><th>背后的驱动力</th></tr>
+</thead>
+<tbody>
+<tr><td>客户准入</td><td>大幅收紧甚至停止新客准入</td><td>抵押品↓→模型显示所有人风险都上升</td></tr>
+<tr><td>存量客户</td><td>对弱资质客户抽贷、断贷</td><td>保全自身→“别人的死活我管不了”</td></tr>
+<tr><td>风险定价</td><td>大幅提高利率要求</td><td>补偿预期损失</td></tr>
+<tr><td>贷后管理</td><td>密集排查、强制追加抵押</td><td>恐慌→“把能收回的都收回”</td></tr>
+<tr><td>行业策略</td><td>全面退出高风险行业</td><td>从“全速前进“突然变为“全面撤退“</td></tr>
+</tbody>
+</table>
+</div>
+<p>注意，这两个阶段的决策逻辑，在微观层面都是<strong>理性的</strong>。繁荣期降低信贷标准的每一个理由——抵押品充足、历史还款记录好、竞争对手都在做——都是真实存在的。衰退期收紧信贷的每一个理由——风险上升、保全资本、监管压力——也都是真实存在的。</p>
+<p>但将所有银行的这些微观理性行为加总在一起，结果是宏观层面的剧烈失衡：<strong>繁荣期数十家银行同时涌入同一个行业，为该行业的过度投资和资产泡沫提供了充裕的资金——当周期逆转时，同一批银行在同一时间从同一个行业撤退，造成该行业的资金断崖。</strong></p>
+<p>这就是信贷渠道的核心悖论：<strong>微观理性的集体行动，制造了宏观的非理性。</strong></p>
+<h2 id="74-闭环传导一个完整的周期故事"><a class="header" href="#74-闭环传导一个完整的周期故事">7.4 闭环传导：一个完整的周期故事</a></h2>
+<p>现在我们可以把这些微观行为嵌入一个完整的宏观传导链条了。</p>
+<p>这个闭环包含五个环节，形成一个自我增强的循环：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>环节</th><th>方向</th><th>上行期</th><th>下行期</th></tr>
+</thead>
+<tbody>
+<tr><td>① 经济→企业</td><td>经济决定企业景气</td><td>企业盈利↑、投资需求↑</td><td>企业盈利↓、资金链紧张</td></tr>
+<tr><td>② 企业→信贷需求</td><td>企业景气决定贷款需求</td><td>扩大生产→贷款需求↑</td><td>缩减开支→贷款需求↓（但续贷需求↑）</td></tr>
+<tr><td>③ 信贷需求+银行判断→信贷供给</td><td>银行评估风险并决定放多少</td><td>风险↓+竞争→大量放贷</td><td>风险↑+自保→收缩信贷</td></tr>
+<tr><td>④ 信贷供给→企业行为</td><td>企业拿到（或拿不到）钱后的反应</td><td>拿到钱→扩大投资→更多盈利</td><td>拿不到钱→缩减投资→更多亏损</td></tr>
+<tr><td>⑤ 企业行为→经济</td><td>企业投资和雇佣决策影响宏观经济</td><td>投资↑+雇佣↑→GDP↑</td><td>投资↓+裁员→GDP↓</td></tr>
+<tr><td>→ 回到①</td><td>闭环完成</td><td>经济进一步上行→更多乐观→更多放贷</td><td>经济进一步下行→更多恐慌→更多惜贷</td></tr>
+</tbody>
+</table>
+</div>
+<p>用两个历史场景来让这个闭环更具体。</p>
+<p><strong>上行期的闭环（2009—2010年中国）。</strong> 四万亿刺激→经济增速跃升至10%以上（①）→企业订单爆满、急需扩大产能（②）→银行看到抵押品价值上升、企业盈利改善，竞相放贷，全年新增贷款9.6万亿（③）→企业拿到天量廉价资金，大举投资基建和房地产（④）→投资拉动GDP进一步冲高（⑤）→银行看到GDP数据更漂亮了，更愿意放贷（回到①）。</p>
+<p><strong>下行期的闭环（2018年中国）。</strong> 去杠杆政策启动→经济增速放缓，民营企业最先感受到融资收紧（①）→企业资金链紧张、股权质押预警（②）→银行看到风险暴露，收紧对民企的信贷投放（③）→民企拿不到续贷和新增贷款，出现流动性危机甚至债券违约（④）→企业经营困难拖累就业和地方经济（⑤）→经济下行压力加大，银行更加谨慎（回到①）。</p>
+<p>闭环的关键特征，是它<strong>不依赖于外部冲击就可以自我维持</strong>。一旦进入下行螺旋，即使最初的触发因素（如政策收紧）已经消失，信贷收缩—企业困难—更多信贷收缩的惯性仍然会持续数个季度。这正是为什么银行的不良暴露往往在GDP增速触底之后仍然继续上升——不是因为GDP还没有反弹，而是因为信贷收缩的惯性还没有释放完。</p>
+<h2 id="75-信贷周期的三个加速器"><a class="header" href="#75-信贷周期的三个加速器">7.5 信贷周期的三个加速器</a></h2>
+<p>闭环模型解释了信贷顺周期的基本结构。但什么力量让这个闭环转得比理论预期更快、更猛？三个“加速器“在起作用。</p>
+<p><strong>第一加速器：抵押品的正反馈。</strong> 这是金融加速器原理在信贷行为中的直接体现。上行期，资产价格上升→抵押品价值上升→银行更愿意放贷→更多资金流入→资产价格进一步上升。下行期，完全反向。抵押品的正反馈使得信贷周期的振幅比没有抵押品的情况下大出30%到50%。</p>
+<p><strong>第二加速器：竞争扭曲。</strong> 银行业不是垄断行业。当一家银行看到竞争对手在某个领域大幅扩张时，它面临着两种选择：跟进（可能一起犯错）或不跟进（可能独自错失机会）。第2章讨论的羊群效应在这里再次发挥作用——但这一章我们要强调的是，竞争扭曲不仅仅是一种心理现象，它还有实实在在的财务后果：如果竞争对手在用低利率抢走你的优质客户，你不跟进的代价是当下的利润和市场份额；你跟进的风险是未来的不良。两个选择都有代价，但前者的代价是<strong>确定的和立即的</strong>（丢客户、丢利润），后者的代价是<strong>不确定的和延迟的</strong>（可能变成坏账、也可能不会）。在短期考核的激励体系下，人们几乎不可避免地选择前者。</p>
+<p><strong>第三加速器：制度杠杆。</strong> 银行的放贷能力受资本充足率的约束。上行期，高利润充实了资本，高估值降低了增发的难度——银行有更大的“放贷弹药“。下行期，低利润侵蚀了资本，低估值使得增发和引入战略投资者变得困难——银行的“放贷弹药“正在最需要的时候被抽走。用第2章的话来说：<strong>制度设计在不经意间充当了信贷周期的“氮气加速器“。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>加速器</th><th>作用机制</th><th>上行期的效果</th><th>下行期的效果</th><th>实证量级（振幅放大）</th></tr>
+</thead>
+<tbody>
+<tr><td>抵押品正反馈</td><td>资产价格↔信贷投放</td><td>抵押品↑→放贷↑→资产↑</td><td>抵押品↓→惜贷→资产↓</td><td>+30%—50%</td></tr>
+<tr><td>竞争扭曲</td><td>市场份额↔风险选择</td><td>跟风放贷→“一起错好过独自对”</td><td>集体撤退→“谁退得慢谁倒霉”</td><td>+20%—30%</td></tr>
+<tr><td>制度杠杆</td><td>资本→放贷能力</td><td>利润↑+估值↑→资本充裕→可多放</td><td>利润↓+融资关闭→资本紧张→必须少放</td><td>+15%—25%</td></tr>
+</tbody>
+</table>
+</div>
+<p>三个加速器不是彼此独立的——它们高度联动。在一个典型的信贷繁荣末期，三者同时达到峰值：抵押品价格处于历史高位（加速器一），所有银行都在市场上争夺同一批客户（加速器二），银行的利润创纪录使得资本充足率看起来极为安全（加速器三）。三者同时在说同一句话：“现在一切很好，继续放贷。”</p>
+<p>而在一个典型的信贷紧缩期，三者同时逆转：抵押品价格暴跌，所有银行都在逃离同一个市场，银行的资本在飞速消耗。三者同时在说另一句话：“现在一切很糟，停止放贷。”</p>
+<p><strong>顺周期不是一个单一的缺陷。它是一个由多重自我强化机制编织而成的网络。</strong> 这是为什么“逆周期“如此困难——你需要同时对抗三个彼此强化的力量，而不是只对付一个。</p>
+<h2 id="75-中美信贷周期的对比相同的逻辑不同的振幅"><a class="header" href="#75-中美信贷周期的对比相同的逻辑不同的振幅">7.5 中美信贷周期的对比：相同的逻辑，不同的振幅</a></h2>
+<p>把中国和美国的信贷周期放在一起比较，既能看到深层逻辑的统一性，也能看到制度环境带来的差异。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>美国信贷周期</th><th>中国信贷周期</th></tr>
+</thead>
+<tbody>
+<tr><td>核心驱动力</td><td>私人部门信贷需求+资产价格</td><td>政策窗口指导+地方融资需求</td></tr>
+<tr><td>扩张期的典型场景</td><td>房价上涨→抵押品增值→银行放贷冲动</td><td>政策宽松→监管窗口指导放松→信贷集中投放</td></tr>
+<tr><td>收缩期的典型场景</td><td>房价下跌→银行惜贷→经济下行</td><td>政策收紧→额度管控→信贷骤降</td></tr>
+<tr><td>周期的政策干预</td><td>联邦基金利率+QE/QT</td><td>LPR+MLF+窗口指导+MPA</td></tr>
+<tr><td>波动幅度（信贷增速峰谷差）</td><td>10—15pp</td><td>15—25pp</td></tr>
+<tr><td>对实体经济的影响</td><td>通过消费和投资传导</td><td>通过投资（基建+房地产）传导</td></tr>
+</tbody>
+</table>
+</div>
+<p>中国的信贷周期波动幅度大于美国。这主要是制度结构导致的——中国银行业以间接融资为主（银行贷款占社会融资总量的60%以上），企业融资高度依赖银行信贷，而银行的信贷行为又高度服从于政策信号。当政策释放宽松信号时，几乎所有的银行同时加大投放；当政策收紧时，几乎所有的银行同时收缩。美国的直接融资市场（公司债、商业票据、资产证券化）可以在一定程度上缓冲银行信贷的波动，但这种“缓冲“在2008年危机中也被证明是不完美的——影子银行体系的崩塌反而加剧了信贷紧缩。</p>
+<p>但两国的深层逻辑是一致的：<strong>信贷行为放大经济波动，而不是平滑它。</strong> 不管驱动信贷扩张的是市场的抵押品正反馈还是政策的窗口指导，当所有银行在同一时间朝同一个方向行动时，结果都是宏观经济的剧烈摆动。</p>
+<h2 id="76-案例重返硅谷银行的信贷顺周期逻辑"><a class="header" href="#76-案例重返硅谷银行的信贷顺周期逻辑">7.6 案例重返：硅谷银行的信贷顺周期逻辑</a></h2>
+<p>本书的序章讲了硅谷银行（SVB）在48小时内轰然倒塌的故事。在序章中，我们侧重于叙事——发生了什么。在这里，我们需要用本章建立的信贷渠道分析框架，重新审视SVB的案例。</p>
+<p>SVB的信贷顺周期不是在它倒闭的那48小时才发生的。它是在此前三年里一步一步积累的。</p>
+<p><strong>第一步（2020—2021年）：信贷需求的利率错配。</strong> 美联储零利率+量化宽松创造了科技行业的空前繁荣。SVB的客户——科技初创企业——获得了巨额的风险投资，它们把这些资金存入SVB，同时开始大规模扩张。SVB的存款在两年内从600亿飙升至2000亿。按照传统银行的逻辑，存款暴涨应该带动贷款扩张——但SVB的客户是科技企业，它们已经拿到了足够的股权融资，不需要贷款。于是SVB面临一个特殊的困境：大量“便宜“的存款找不到“安全“的贷款投向。</p>
+<p><strong>第二步（2021年）：资产配置的期限错配。</strong> 无法通过贷款消化大量流入的存款，SVB购买了大量的美国国债和机构MBS——其中很大一部分是10年期以上的长久期债券。在当时的利率环境下（10年期美债收益率不足2%），这些债券提供了比短期资产略高的收益，而且被认为是“无风险“的。但这里的核心问题不是信用风险——美国国债确实没有信用风险——而是<strong>利率风险</strong>。大量持有长久期固定利率债券，使得SVB的资产负债表对利率上升变得极度敏感。</p>
+<p><strong>第三步（2022—2023年）：三个顺周期力量的同步释放。</strong> 美联储开始四十年来最激进的加息。利率每升一次，SVB的债券组合就贬值一次。未实现的“隐形亏损“不断累积——超过250亿美元，相当于SVB全部资本的两倍以上。与此同时，加息导致科技行业降温——IPO窗口关闭、风投融资减少——SVB的客户开始更快地烧钱消耗存款（②企业→信贷需求，但方向相反→存款流失）。SVB不得不卖出债券来满足客户的提现需求。一旦卖出，“隐形亏损“变成了真实亏损——18亿美元（③信贷需求+银行判断→信贷供给，但这里是资产端被迫变现）。公告触发恐慌，恐慌触发挤兑，48小时内银行倒闭（④和⑤高速运转）。</p>
+<p>SVB的案例完美地展示了信贷渠道的三个加速器如何在同一个机构中同时发作。<strong>抵押品正反馈</strong>——SVB持有的债券作为“抵押品“（广义上）的价值随着利率上升而暴跌，迫使它抛售更多债券。<strong>竞争扭曲</strong>——SVB在科技金融领域的深度绑定（这曾经是它最大的竞争优势）意味着它的存款客户集中度极高，当这个特定群体开始同时取款时，没有其他客户群可以缓冲。<strong>制度杠杆</strong>——SVB的资本在利率冲击面前显得极其脆弱，因为它没有为大比例的未实现亏损预留足够的资本缓冲。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>SVB的失败环节</th><th>对应的信贷渠道机制</th><th>关键教训</th></tr>
+</thead>
+<tbody>
+<tr><td>存款集中涌入（2020—21）</td><td>①经济→企业：科技繁荣→存款暴涨</td><td>流入是好事，但流入的集中度和可逆性更重要</td></tr>
+<tr><td>长久期债券配置</td><td>③信贷供给：找不安全的“安全资产“</td><td>无信用风险≠无利率风险</td></tr>
+<tr><td>加息触发贬值</td><td>抵押品正反馈（反向）</td><td>利率周期是所有银行共同的敌人</td></tr>
+<tr><td>存款集中流失</td><td>②企业→信贷需求（反向）→集中度风险</td><td>客户分散度是下行期生存的关键</td></tr>
+<tr><td>被迫抛售→公告→挤兑</td><td>③→④→⑤加速运转</td><td>透明度有时会加速崩盘</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="77-本章核心发现"><a class="header" href="#77-本章核心发现">7.7 本章核心发现</a></h2>
+<ol>
+<li>
+<p><strong>信贷增速的波动幅度是GDP增速的3到5倍。</strong> 银行信贷不是一个平稳的调节阀，而是一个振幅极大的钟摆——繁荣期的扩张比经济本身猛烈得多，衰退期的收缩也比经济本身剧烈得多。</p>
+</li>
+<li>
+<p><strong>信贷的顺周期行为遵循一个自我维持的闭环：经济→企业→信贷需求→银行供给→企业行为→经济。</strong> 这个闭环一旦启动，可以在没有外部冲击的情况下持续运转数个季度——上行期自我强化繁荣，下行期自我强化衰退。</p>
+</li>
+<li>
+<p><strong>三个加速器——抵押品正反馈、竞争扭曲、制度杠杆——使得信贷周期的振幅远超理论预期。</strong> 硅谷银行的崩溃是三个加速器在同一个机构中同时释放的极端案例。</p>
+</li>
+</ol>
+<h2 id="78-银行管理启示"><a class="header" href="#78-银行管理启示">7.8 银行管理启示</a></h2>
+<ul>
+<li>
+<p><strong>在经济上行期，主动给自己设置“速度上限“。</strong> 当你的信贷增速超过GDP增速的两倍以上时，你不是在“抓住机遇“，你是在制造未来的不良。一个可操作的经验法则：信贷增速与名义GDP增速的差值不应持续超过5到8个百分点。如果超过了，你应该停下来问自己：我们是在满足真实的信贷需求，还是在跟风抢市场？</p>
+</li>
+<li>
+<p><strong>在繁荣期建立“反脆弱“的信贷组合。</strong> 不要只问“这个行业的贷款现在看起来安全吗“，要问“如果这个行业遇到20%以上的下行，我们的贷款还能收回多少“。繁荣期的信贷决策需要内置下行期的压力测试——不是监管要求的走形式，而是真正假设最坏情况会发生。</p>
+</li>
+<li>
+<p><strong>从硅谷银行学到的不是“不要买国债“，而是“理解你的集中度风险“。</strong> 集中度不只在贷款端——存款的集中度、债券的集中度、期限的集中度，任何维度的过度集中，在经济周期的逆转中都被放大为致命弱点。</p>
+</li>
+</ul>
+<h2 id="79-本章的下一个问题"><a class="header" href="#79-本章的下一个问题">7.9 本章的下一个问题</a></h2>
+<p>信贷渠道是银行与周期互动中最古老、最核心的通道。但它不是唯一的通道。</p>
+<p>当资产价格——房价、股价、大宗商品价格——上涨或下跌时，它们不仅通过改变企业的还款能力来影响银行的资产质量（第5章讨论的内容），还通过<strong>改变抵押品价值</strong>和<strong>改变公允价值计量</strong>来直接影响银行的放贷意愿和风险承担。</p>
+<p>资产价格渠道的传导有什么独特之处？公允价值会计是如何在经济繁荣期“美颜“银行的利润、在经济衰退期“毁容“银行的资本的？</p>
+<p>这是下一章要回答的问题。</p>
+<hr>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>《伦巴第街》（1873）, Walter Bagehot（第2章关于信贷周期的早期观察）</li>
+<li>“Credit Cycles”（1995）, Nobuhiro Kiyotaki &amp; John Moore, <em>Journal of Political Economy</em></li>
+<li>“The Financial Accelerator in a Quantitative Business Cycle Framework”（1999）, Bernanke, Gertler &amp; Gilchrist</li>
+<li>硅谷银行：各年度年报（2020—2022年）及FDIC接管公告（2023年3月10日）</li>
+<li>中国人民银行：社会融资规模增量统计数据（各年度）</li>
+<li>“Procyclicality of the Financial System”（2001）, Borio, Furfine &amp; Lowe, BIS Papers</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-2/chapter-6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-3/chapter-8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-2/chapter-6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-3/chapter-8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

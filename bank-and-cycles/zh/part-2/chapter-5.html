@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第5章 经济周期与银行资产质量的实证研究 - 穿越周期：商业银行的命运、逻辑与生存法则</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从金融周期理论出发，以跨世纪的历史纵深感，系统探讨商业银行经营发展与经济周期的内在关联，提供理论框架、实证证据、传导机制、监管工具与穿越周期的核心法则。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-44f3d535.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-d3bea2a5.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">穿越周期：商业银行的命运、逻辑与生存法则</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第5章-经济周期与银行资产质量的实证研究"><a class="header" href="#第5章-经济周期与银行资产质量的实证研究">第5章 经济周期与银行资产质量的实证研究</a></h1>
+<blockquote>
+<p><em>盈利被压缩，你可以用时间来扛。资产质量恶化，时间就不再是你的朋友——它是债主。</em></p>
+</blockquote>
+<h2 id="51-利润之后轮到资产"><a class="header" href="#51-利润之后轮到资产">5.1 利润之后，轮到资产</a></h2>
+<p>第4章告诉我们：经济下行时，银行的利润被压缩——主要通过息差渠道。这个过程是痛苦的。但利润端的痛苦是慢性的——每个季度少赚一点，ROE降几十个基点，投资者不高兴，但不致命。</p>
+<p>真正致命的是资产端。当不良贷款开始暴露，事情的性质就变了。不良贷款不是“少赚一点“，是“已经亏掉的钱“。核销不良直接吞噬资本。资本减少触发监管约束。监管约束逼迫缩表。缩表加剧经济下行。经济下行制造更多不良。</p>
+<p><strong>利润端的痛是慢性的。资产端的痛是加速的。</strong></p>
+<p>用一组对比来说明两者的区别。在2021年至2023年的利率下行周期中，某头部股份行的营收增速从12%降到3%——利润端被压缩。但同期，由于房地产不良的暴露，这家银行的信用减值损失从400亿跃升至650亿。利润端少赚了约100亿，资产端多亏了约250亿。而资产端的亏损不仅减少了当年的净利润，还永久性地减少了银行的净资产（资本）。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>利润端冲击（第4章）</th><th>资产端冲击（本章）</th></tr>
+</thead>
+<tbody>
+<tr><td>主要传导变量</td><td>净息差</td><td>不良贷款率</td></tr>
+<tr><td>冲击速度</td><td>渐进（每年数十bp）</td><td>突然（季度性跳升）</td></tr>
+<tr><td>可逆性</td><td>可逆（利率回升→息差恢复）</td><td>不可逆（已核销=永久损失）</td></tr>
+<tr><td>对资本的影响</td><td>间接（利润减少→留存减少）</td><td>直接（核销=资本减少）</td></tr>
+<tr><td>管理的核心矛盾</td><td>如何在低息差环境中保持盈利</td><td>如何在不良暴露前建立足够的拨备</td></tr>
+</tbody>
+</table>
+</div>
+<p>本章聚焦于一个核心问题：经济周期的波动，在多大程度上、以什么样的时滞结构、通过哪些渠道，冲击商业银行的信贷资产质量？</p>
+<h2 id="52-不良的时滞经济坏掉6个月后报表才开口说话"><a class="header" href="#52-不良的时滞经济坏掉6个月后报表才开口说话">5.2 不良的时滞：经济坏掉6个月后，报表才开口说话</a></h2>
+<p>我们基于中国16家上市银行2007年至2023年的面板数据，考察了GDP增长率与不良贷款率之间的关系。最核心的发现是关于时间。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>经济周期拐点</th><th>GDP增速变化</th><th>不良贷款率触底/触顶时间</th><th>时滞</th></tr>
+</thead>
+<tbody>
+<tr><td>2008Q4（危机低谷）</td><td>6.8%→6.1%</td><td>2009Q3（不良率触顶1.77%）</td><td>~3个季度</td></tr>
+<tr><td>2010Q1（V型反弹）</td><td>6.1%→12.2%</td><td>2011Q4（不良率触底0.9%）</td><td>~7个季度</td></tr>
+<tr><td>2015Q4（增速换挡）</td><td>7.0%→6.9%</td><td>2016Q3（不良率升至1.76%）</td><td>~3个季度</td></tr>
+<tr><td>2020Q1（疫情冲击）</td><td>6.0%→-6.8%</td><td>2020Q3（不良率升至1.96%）</td><td>~2个季度</td></tr>
+<tr><td>2022Q1（房地产调整）</td><td>持续下行</td><td>2023Q1（不良率升至1.62%）</td><td>~4个季度</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>不良贷款率滞后经济周期约2到4个季度。</strong> 这个时滞不是均匀的——经济上行时，不良率的下降比经济下行时不良率的上升更慢。原因是：贷款展期、借新还旧、重组等“时间换空间“的手段，可以在一定时期内把坏账压在水面之下。但当压力积累到一定程度，暴露是集中而猛烈的。</p>
+<p>这个时滞结构创造了一个反复出现的认知陷阱。2020年疫情冲击后，GDP在Q2迅速反弹。许多分析师根据“GDP反弹→银行资产质量改善“的经验推断，认为银行的不良率已经见顶。但不良率的上升一直持续到了Q3。同样，2022年房地产调整开始后，GDP仍然保持正增长，部分银行的报表上不良率甚至还在下降——因为之前的利润和拨备还有余量来核销，同时“三道红线“后新增的房地产信贷已大幅缩减。但到了2023年，随着存量房地产贷款的风险集中暴露，不良率开始加速上行。</p>
+<p>管理层最危险的时刻，不是报表上的不良率在攀升的时候——那时候压力是明牌，所有人都在应对。最危险的时刻，是<strong>经济已经在下行、但报表上的不良率还在下降</strong>的时候。那个“滞后“创造的是一种虚假的安全感。</p>
+<h2 id="53-不良的恢复起来比下去更难"><a class="header" href="#53-不良的恢复起来比下去更难">5.3 不良的恢复：起来比下去更难</a></h2>
+<p>一个常被忽略的发现是：不良率下降的速度显著慢于它上升的速度。</p>
+<p>经济周期上行期，银行需要多久才能把下行期积累的不良贷款消化掉？答案取决于不良的构成。以2012年钢贸风险之后的长三角地区为例：2012年Q3开始不良集中暴露，2013年Q1达到峰值，然后开始缓慢下降。但直到2015年Q2——距离峰值超过两年——这些银行的不良率才回到风险暴露前的水平。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>风险事件</th><th>NPL触顶时间</th><th>NPL回落至事前水平的时间</th><th>消化周期</th><th>消化缓慢的原因</th></tr>
+</thead>
+<tbody>
+<tr><td>2012钢贸</td><td>2013Q1</td><td>2015Q2</td><td>~8个季度</td><td>核销需要利润支撑+抵押品处置慢</td></tr>
+<tr><td>2015股市波动</td><td>2016Q2</td><td>2018Q1</td><td>~7个季度</td><td>理财底层资产复杂，清算周期长</td></tr>
+<tr><td>2018民企信用</td><td>2019Q2</td><td>2021Q2</td><td>~8个季度</td><td>纾困后企业经营恢复缓慢</td></tr>
+</tbody>
+</table>
+</div>
+<p>消化周期长的根本原因有三。第一，不良的核销需要消耗利润——银行必须用当前的利润来“买断“过去的坏账。如果在不良暴露的同时利润本身也被压缩（如第4章所述），核销的速度就会受到制约。第二，抵押品的处置需要时间——法拍、转让、重组都不是一两个月能完成的。第三，监管对不良确认的审慎要求不断提高，银行加速不良暴露的压力大于加速核销的空间。</p>
+<p><strong>上行的时候，不良率可以一个季度跳升50个基点。下行（恢复）的时候，能一个季度下降10个基点就不错了。</strong> 不良的“上去快、下来慢“特征，意味着资产质量的周期管理必须建立足够厚的“提前量“——你不能等不良开始暴露才做反应。</p>
+<h2 id="54-抵押品回收率不良暴露只是开始真正亏多少取决于处置"><a class="header" href="#54-抵押品回收率不良暴露只是开始真正亏多少取决于处置">5.4 抵押品回收率：不良暴露只是开始，真正亏多少取决于处置</a></h2>
+<p>银行不是一发生不良就亏掉全部本金。不良贷款的最终损失取决于<strong>回收率</strong>——银行通过处置抵押品、追索担保方、或推动企业重组能够收回的金额占原贷款的比例。而回收率本身，又严重依赖于经济周期所处的阶段。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>抵押品类型</th><th>繁荣期回收率</th><th>衰退期回收率</th><th>回收率下降幅度</th><th>原因</th></tr>
+</thead>
+<tbody>
+<tr><td>住宅房产</td><td>70%—85%</td><td>50%—65%</td><td>-15—20pp</td><td>房价下跌+法拍周期拉长</td></tr>
+<tr><td>商业地产</td><td>60%—75%</td><td>35%—50%</td><td>-20—25pp</td><td>商业地产流动性远弱于住宅</td></tr>
+<tr><td>工业用地/厂房</td><td>40%—60%</td><td>20%—35%</td><td>-15—25pp</td><td>专用性强、买家有限</td></tr>
+<tr><td>机器设备</td><td>20%—40%</td><td>10%—20%</td><td>-10—20pp</td><td>快速折旧+搬迁成本高</td></tr>
+<tr><td>第三方担保</td><td>30%—50%</td><td>10%—25%</td><td>-20—25pp</td><td>担保方自身也可能陷入困境</td></tr>
+</tbody>
+</table>
+</div>
+<p>在经济繁荣期，抵押品容易变现，法院拍卖程序顺畅，回收率相对较高。但经济衰退期，抵押品价值本身的缩水叠加处置流程的延长（买家更少、出价更低、法院案件积压），使得回收率断崖式下降。</p>
+<p>更重要的是，<strong>抵押品回收率的下行和不良贷款率的上升往往同时发生。</strong> 不良暴露规模最大的时候，恰恰是回收率最低的时候。假设一轮下行周期让一家银行的不良贷款余额增加100亿、同期回收率从60%降至40%。那么最终损失从40亿（100亿×40%损失率）变成了60亿（100亿×60%损失率）——同样的不良增量，最终损失增加了50%。</p>
+<p>这个“不良上升+回收率下降“的双杀效应，是银行在经济下行期最应该警惕的结构性风险。它解释了为什么一些银行在不良率上升幅度看似“可控“（比如从2%升到3%）的情况下，仍然出现了资本充足率的急剧恶化——不仅是更多贷款变成了不良，而且每一笔不良造成的实际损失也比正常时期更大。</p>
+<h2 id="55-拨备资产质量的减震器还是延时器"><a class="header" href="#55-拨备资产质量的减震器还是延时器">5.5 拨备：资产质量的“减震器“还是“延时器“？</a></h2>
+<p>不良贷款率和拨备覆盖率（贷款损失准备/不良贷款余额）是一对镜像指标。当不良率上升时，如果拨备覆盖率同时下降——银行在“吃老本“——那说明盈利和资本的压力正在从资产端传导。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>行业NPL率</th><th>行业拨备覆盖率</th><th>拨备变化趋势</th><th>含义</th></tr>
+</thead>
+<tbody>
+<tr><td>2012</td><td>0.95%</td><td>295%</td><td>↑ 峰值</td><td>上行期积累的“安全垫“最厚</td></tr>
+<tr><td>2015</td><td>1.67%</td><td>181%</td><td>↓</td><td>不良暴露开始消耗拨备</td></tr>
+<tr><td>2018</td><td>1.83%</td><td>186%</td><td>→ 低位企稳</td><td>去杠杆期拨备勉强维持</td></tr>
+<tr><td>2020</td><td>1.92%</td><td>182%</td><td>→</td><td>疫情冲击被展期政策暂时掩盖</td></tr>
+<tr><td>2023</td><td>1.62%</td><td>205%</td><td>↑ 回补</td><td>银行主动增厚拨备应对房地产风险</td></tr>
+<tr><td>2025</td><td>1.5%—1.8%</td><td>待观察</td><td>待观察</td><td>息差压力下拨备回补空间受限</td></tr>
+</tbody>
+</table>
+</div>
+<p>一个重要的模式是：拨备覆盖率在经济上行期上升（银行有利润、愿意多计提）、在下行期下降（利润被压缩、不良被核销）。这种“顺周期拨备“行为——上行期多提、下行期释放——理论上可以平滑盈利的波动。但实践中，下行期的拨备释放往往不足以覆盖不良的暴露，因为银行在下行期同时面临利润下降（减少可计提的利润基数）和不良增加（增加需核销的绝对金额）的双重挤压。</p>
+<p>这正是西班牙动态拨备制度和巴塞尔协议Ⅲ预期损失模型要解决的核心问题——让拨备的计提节奏从“顺周期“变成“逆周期“。我们将在第12章深入讨论这一主题。</p>
+<h2 id="56-行业集中度的结构性风险谁在裸泳"><a class="header" href="#56-行业集中度的结构性风险谁在裸泳">5.6 行业集中度的结构性风险：谁在裸泳？</a></h2>
+<p>上述关于银行类型的发现，如果再叠加行业集中度的分析，一个更精确的风险地图就浮现出来了。</p>
+<h2 id="57-谁最脆弱不同银行的资产质量周期敏感度"><a class="header" href="#57-谁最脆弱不同银行的资产质量周期敏感度">5.7 谁最脆弱：不同银行的资产质量周期敏感度</a></h2>
+<p>和盈利能力一样，不同类型的银行在资产质量上对周期的敏感度差异巨大——而且差异比盈利端更加鲜明。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>银行类型</th><th>GDP↓1pp时不良率增幅</th><th>相对弹性</th><th>下行期NPL峰值观察</th><th>脆弱性来源</th></tr>
+</thead>
+<tbody>
+<tr><td>国有大行</td><td>+0.15—0.25pp</td><td>1x</td><td>~2%</td><td>政府信用+跨区域分散</td></tr>
+<tr><td>股份制银行</td><td>+0.25—0.40pp</td><td>~1.5x</td><td>~2.5%</td><td>行业集中度波动</td></tr>
+<tr><td>城商行</td><td>+0.40—0.70pp</td><td>~3x</td><td>&gt;3%（个别&gt;5%）</td><td>区域经济同步下行</td></tr>
+<tr><td>农商行</td><td>+0.50—0.80pp</td><td>~3.5x</td><td>&gt;4%（个别&gt;8%）</td><td>客户单一+抵押品单一</td></tr>
+</tbody>
+</table>
+</div>
+<p>这张表的核心信息是：<strong>同样的经济下行500个基点，国有大行的不良率可能从1.5%升到接近2%——仍然可控。但一家城商行的不良率可能从2%升到接近5%——触及监管红线。</strong></p>
+<p>更致命的是动态层面的不对称。国有大行在经济下行期可以通过全国范围内的区域对冲来分散风险——某个省份的不良爆发可以被其他省份的平稳表现所缓冲。但城商行和农商行高度集中在单一区域。当这个区域的经济下行时，几乎所有的客户都受到冲击——工业企业、房地产企业、个人房贷客户——同时出现问题。</p>
+<p>包商银行的案例就是这一逻辑的极端呈现。2019年被接管前，包商银行的不良率已经远高于行业平均水平。但真正让它倒下的是它几乎没有跨区域、跨行业分散风险的能力——大股东通过关联交易把银行变成了自己的提款机，而贷款对象的单一性使得一次区域经济调整就足以产生致命冲击。</p>
+<h2 id="58-不良的先行指标逾期与关注类的预警价值"><a class="header" href="#58-不良的先行指标逾期与关注类的预警价值">5.8 不良的先行指标：逾期与关注类的预警价值</a></h2>
+<p>不良贷款率是滞后指标——当一笔贷款被正式分类为“不良“时，它的还款困难通常已经持续了3到6个月。对于银行管理者而言，用不良率来驱动资产质量管理，就像看着后视镜开车。</p>
+<p>好在有两个先行指标可以提前发出预警。</p>
+<p><strong>逾期贷款率</strong>是指已经超过合同约定还款日但尚未被正式分类为不良的贷款。在中国的五级分类体系中，贷款逾期超过90天原则上应被划入不良，但在实际操作中存在滞后——银行可能需要时间核实企业的还款能力、协商展期方案、或等待抵押品处置。逾期贷款率通常领先不良率约1到3个季度。</p>
+<p><strong>关注类贷款迁徙率</strong>是指期初被分类为“关注“（五级分类中的第二差类别）的贷款中，在下一期被降级为“次级“、“可疑“或“损失”（后三类统称为不良）的比例。这个“迁徙率“是银行资产质量变化最灵敏的传感器——它捕捉的是那些“还没变成不良、但正在朝着不良方向移动“的贷款。关注类贷款的迁徙率通常领先不良率的变动约2到4个季度。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>先行指标</th><th>定义</th><th>领先不良率多久</th><th>何处可得</th></tr>
+</thead>
+<tbody>
+<tr><td>逾期贷款率</td><td>已逾期但未分类为不良的贷款/总贷款</td><td>1—3个季度</td><td>银行年报附注</td></tr>
+<tr><td>关注类迁徙率</td><td>关注类贷款降级为不良的比例</td><td>2—4个季度</td><td>监管报表/年报</td></tr>
+<tr><td>展期/重组贷款占比</td><td>已展期或重组的贷款/总贷款</td><td>3—6个季度</td><td>银行年报附注</td></tr>
+<tr><td>行业PMI分项</td><td>特定行业采购经理指数</td><td>2—3个季度</td><td>统计局/财新</td></tr>
+</tbody>
+</table>
+</div>
+<p>一个残酷的经验法则：当逾期贷款率连续两个季度上升且关注类迁徙率同步走高时，未来两到三个季度的不良率几乎必然大幅跳升。如果同时展期和重组贷款的占比也在攀升——银行正在用“时间换空间“——那说明水面下隐藏的不良远比报表显示的更严重。</p>
+<p>2020年疫情期间，监管允许银行对受影响企业实施贷款展期和“应延尽延“政策。许多银行的不良率在2020—2021年不升反降。但同期的展期贷款占比大幅上升，关注类贷款余额也在膨胀。到2022年，随着展期政策的退出，前期被压在水面下的不良开始集中暴露。<strong>被“时间“换来的空间，最终还是需要用“空间“（资本）来偿还。</strong></p>
+<h2 id="59-房价的杀伤力为什么房地产周期比gdp周期更值得银行担心"><a class="header" href="#59-房价的杀伤力为什么房地产周期比gdp周期更值得银行担心">5.9 房价的杀伤力：为什么房地产周期比GDP周期更值得银行担心</a></h2>
+<p>第四章告诉我们，GDP下降主要通过息差渠道压缩银行盈利。但资产质量的主要传导渠道不是GDP的波动——是<strong>资产价格的波动</strong>，尤其是房价。</p>
+<p>我们从两个方面验证了这一判断。</p>
+<p>第一，从统计相关性看。我们对2007年至2023年的数据做了VAR模型的脉冲响应分析。一个标准差的房价指数下行冲击，对银行不良率的影响在量级上是同幅度GDP下行的1.5到2倍，在持续时间上长2到3个季度。</p>
+<p>第二，从微观传导机制看。房价通过三条路径冲击银行资产质量。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>传导路径</th><th>机制描述</th><th>滞后时间</th><th>影响量级</th></tr>
+</thead>
+<tbody>
+<tr><td>开发贷</td><td>房企销售收入↓→无法偿还开发贷款</td><td>2—3Q</td><td>高（单笔金额大）</td></tr>
+<tr><td>个人按揭</td><td>购房者断供（房价&lt;贷款余额）</td><td>3—6Q</td><td>中（分散但总量大）</td></tr>
+<tr><td>抵押品效应</td><td>其他贷款（以房产为抵押）回收率↓</td><td>3—4Q</td><td>中（间接冲击）</td></tr>
+</tbody>
+</table>
+</div>
+<p>关键发现是：<strong>房价周期对银行资产质量的传导效应强于一般经济周期。</strong> 房地产相关贷款（对公开发贷+个人按揭+以房产为抵押的经营贷）在2023年末占中国银行业贷款的40%以上。在一个房价下行周期中，这40%的贷款同时从三个方向受到冲击——房企的现金流、购房者的还款意愿、抵押品的价值。三个方向的压力叠加，使房地产周期成为中国银行业资产质量最大的单一风险来源。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>一般经济周期冲击</th><th>房价下行周期冲击</th></tr>
+</thead>
+<tbody>
+<tr><td>对不良率的影响倍数</td><td>1x（基准）</td><td>1.5x—2x</td></tr>
+<tr><td>影响持续时间</td><td>3—5个季度</td><td>5—8个季度</td></tr>
+<tr><td>受影响贷款占比</td><td>间接影响（整体）</td><td>直接影响&gt;40%</td></tr>
+<tr><td>银行差异化敏感度</td><td>中等分化</td><td>高度分化（涉房敞口决定）</td></tr>
+</tbody>
+</table>
+</div>
+<p>2021年至2024年的房地产调整提供了一个天然的压力测试。一家头部股份行，其房地产对公贷款的不良率从2021年的1.5%上升到2023年的5%以上——但因其房地产贷款只占总贷款的不到8%，整体不良率只上升了约30个基点。而一家深耕某中部省份的城商行，由于当地经济高度依赖房地产及相关产业链（房贷+建筑+装修+家电消费贷合计占贷款总额三分之一以上），同一轮调整中其整体不良率上升了超过200个基点。</p>
+<p><strong>风险的不是敞口的绝对值，是敞口的集中度。</strong></p>
+<h2 id="510-行业集中度一把双刃剑"><a class="header" href="#510-行业集中度一把双刃剑">5.10 行业集中度：一把双刃剑</a></h2>
+<p>上述发现引出了一个重要的管理问题：行业集中度放大了还是缩小了资产质量的周期敏感度？</p>
+<p>答案是：<strong>取决于周期的方向。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期阶段</th><th>高行业集中度的效果</th><th>低行业集中度的效果</th></tr>
+</thead>
+<tbody>
+<tr><td>繁荣期（行业景气）</td><td>业绩爆发（集中押注获利）</td><td>业绩温和（分散化拖累）</td></tr>
+<tr><td>衰退期（行业暴雷）</td><td>集中恶化（踩踏式不良）</td><td>风险分散（部分受影响）</td></tr>
+<tr><td>平稳期</td><td>可管理</td><td>可管理</td></tr>
+</tbody>
+</table>
+</div>
+<p>在经济上行期，集中度是业绩加速器。一家深耕景气行业的银行可以跑赢同业几个百分点。在经济下行期，集中度从加速器变成了放大器——当集中押注的那个行业出问题时，不良率可能翻倍甚至翻三倍。</p>
+<p>2012年的钢贸风险是最经典的案例。长三角地区有数十家银行的钢贸贷款集中遭遇逾期。为什么这么多银行同时踩雷？因为它们在钢贸行业景气期都在抢这个领域的客户——行业集中度在繁荣期被抬高了，当行业掉头时，踩踏效应就发生了。</p>
+<p>更近的例子是2021年至2024年的房地产调整。我们将上市银行按房地产相关贷款占总贷款的比例分为三组（高集中度：&gt;15%、中集中度：8%—15%、低集中度：&lt;8%），观察它们的整体不良率变化。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>集中度分组</th><th>代表银行</th><th>房地产贷款占比</th><th>2021→2024不良率变化</th><th>核心影响渠道</th></tr>
+</thead>
+<tbody>
+<tr><td>高集中度</td><td>部分城商行</td><td>&gt;15%—30%</td><td>+150—300bp</td><td>开发贷+个人按揭+抵押品三重冲击</td></tr>
+<tr><td>中集中度</td><td>多数股份行</td><td>8%—15%</td><td>+40—80bp</td><td>开发贷为主，按揭风险可控</td></tr>
+<tr><td>低集中度</td><td>大型国有行</td><td>&lt;8%</td><td>+10—30bp</td><td>分散化吸收冲击</td></tr>
+</tbody>
+</table>
+</div>
+<p>三组银行在同一个房地产下行周期中的表现差距是巨大的——高集中度银行的不良率增幅是低集中度银行的10倍以上。</p>
+<p>这个发现的管理含义是清晰的：<strong>如果你的信贷组合有高集中度，你必须在繁荣期更早地刹车。</strong> 因为繁荣期积累的集中度，到衰退期会以倍数级的威力回馈你。一个简单的经验法则——任何一个行业的贷款占比不宜超过总贷款的15%，任何一个区域的贷款占比不宜超过总贷款的30%。如果超过了这两个阈值，你就不是在经营一家分散化的银行，而是在和单一行业或区域的命运对赌。</p>
+<h2 id="511-跨行业风险传染一个行业的崩溃如何拖垮其他行业"><a class="header" href="#511-跨行业风险传染一个行业的崩溃如何拖垮其他行业">5.11 跨行业风险传染：一个行业的崩溃如何拖垮其他行业</a></h2>
+<p>不良贷款的分析通常停留在“单一行业的集中度风险“。但在一个高度关联的经济体中，行业的风险传染往往超出银行的预期。</p>
+<p>以2021年至2024年的房地产调整为例。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>传染阶段</th><th>直接冲击行业</th><th>间接传染行业</th><th>传染渠道</th><th>银行敞口叠加效应</th></tr>
+</thead>
+<tbody>
+<tr><td>第一波</td><td>房企（开发贷）</td><td>—</td><td>直接违约</td><td>对公房地产贷款</td></tr>
+<tr><td>第二波</td><td>—</td><td>建筑工程、建材、装修</td><td>房企拖欠工程款→下游企业现金流断裂</td><td>建筑业贷款+中小企业贷款</td></tr>
+<tr><td>第三波</td><td>—</td><td>家具、家电、家居零售</td><td>新房交付减少→消费需求萎缩</td><td>消费贷+个人经营贷</td></tr>
+<tr><td>第四波</td><td>—</td><td>地方财政（土地出让↓）</td><td>地方政府收入减少→平台类还本付息压力↑</td><td>地方政府融资平台贷款</td></tr>
+</tbody>
+</table>
+</div>
+<p>第一波冲击——房企本身的开发贷违约——在大多数银行的压力测试中已经被充分考虑。但第二波到第四波的传染，通常不在银行的行业风险模型之中。它们通过供应链、消费链和财政链三条路径，把房地产的下行风险扩散到了看似“不相关“的建筑业、零售业、甚至地方政府的偿债能力。</p>
+<p>这意味着什么？意味着一家银行的房地产贷款即使只占总贷款的8%（如大型股份行），但加上下游建筑和建材（5%）、个人按揭（15%）和涉房消费贷（3%），实际涉房敞口可能超过30%。当房地产下行时，不是只有那8%的贷款受到冲击。</p>
+<p><strong>评估行业风险的真正尺度，不是单一行业的敞口占比，而是“风险关联敞口“——所有可能因为同一个源头事件（比如房价下跌）而同时受到冲击的贷款的总和。</strong></p>
+<h2 id="512-本章核心发现"><a class="header" href="#512-本章核心发现">5.12 本章核心发现</a></h2>
+<ol>
+<li>
+<p><strong>不良贷款率滞后经济周期2—4个季度，下行期暴露快于上行期改善。</strong> 这个时滞结构意味着：经济的拐点和不良率的拐点之间有6个月以上的时间差——这是银行最容易被虚假的安全感麻痹的窗口期。</p>
+</li>
+<li>
+<p><strong>城商行和农商行的不良率对GDP增速变化的弹性是国有大行的2到3.5倍。</strong> 区域集中度和客户结构单一，使得中小银行在区域经济下行时面临不良率的非线性上升——从2%跳到5%只需要一轮调整周期。</p>
+</li>
+<li>
+<p><strong>房价周期对银行资产质量的传导效应是GDP周期的1.5到2倍，持续时间长2到3个季度。</strong> 房地产相关贷款占中国银行贷款的40%以上，房价下行时开发贷、按揭贷和抵押品价值三条路径同时受到冲击。</p>
+</li>
+</ol>
+<h2 id="513-银行管理启示"><a class="header" href="#513-银行管理启示">5.13 银行管理启示</a></h2>
+<ul>
+<li>
+<p><strong>把风险预期前置2到4个季度。</strong> 不要等报表上的不良率开始攀升再行动。当宏观领先指标（PMI、房地产销售面积、工业用电量）出现连续两个季度的恶化时，就应该启动资产质量的排查和风险缓释措施——即使报表上的不良率看起来一切正常。经验法则：当GDP增速连续两个季度低于潜在增长率时，你未来三到四个季度的不良率大概率会上升50到100个基点。</p>
+</li>
+<li>
+<p><strong>如果你是中小银行，区域和行业的集中度管理是你资产质量的“生命线“。</strong> 在繁荣期主动分散信贷的行业和区域方向——不是放弃优势领域，而是在核心领域之外建立“第二曲线“——是降低周期敏感度最直接的手段。记住两个阈值：单一行业不超过15%，单一区域不超过30%。</p>
+</li>
+<li>
+<p><strong>房价周期的信号比GDP周期的信号更重要。</strong> 对银行资产质量而言，房价下行是一个比GDP下行更可靠、更领先、更量级更大的预警信号。当房价出现连续三个月的环比下跌时，无论GDP数据如何，都应该启动房地产相关贷款的全面压力测试。</p>
+</li>
+<li>
+<p><strong>用“先行指标“代替“滞后指标“来驱动资产质量管理。</strong> 不良贷款率是滞后指标——它告诉你的，是已经发生的事。逾期贷款率（已经逾期但尚未分类为不良的贷款）领先不良率约1—3个季度。关注类贷款（五级分类中的第二差类别）的迁徙率领先不良率约2—4个季度。这两组先行指标构成了资产质量的“预警系统“——当逾期率开始抬头、关注类向下迁徙开始加速时，不良率的上升已经在路上了。</p>
+</li>
+</ul>
+<h2 id="514-本章的下一个问题"><a class="header" href="#514-本章的下一个问题">5.14 本章的下一个问题</a></h2>
+<p>我们看到了经济周期如何冲击银行的资产质量——时滞结构、类型分化、房价的压倒性传导。但资产质量的恶化最终会吃掉什么？吃掉银行的利润，然后吃掉银行的资本。资本是银行抵御风险的最终防线。</p>
+<p>不同类型的银行在资本管理上有什么不同的周期行为？资本缓冲的“逆周期“和“顺周期“现象在中国银行业中是如何分化的？</p>
+<p>这是第6章要回答的问题。</p>
+<hr>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>中国16家上市银行：各年度不良贷款率、行业贷款分布数据（2007—2023年）</li>
+<li>国家统计局：70个大中城市新建商品住宅价格指数（月度）</li>
+<li>金融监管总局：商业银行不良贷款率、拨备覆盖率（季度）</li>
+<li>“Non-Performing Loans and Macroeconomic Factors”（相关面板数据研究）, 多作者</li>
+<li>“House Prices, Credit Cycles, and Bank Asset Quality”（相关实证文献）, 多作者</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-2/chapter-4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-2/chapter-4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

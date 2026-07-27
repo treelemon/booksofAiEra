@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第8章 资产价格渠道：抵押品价值、公允价值与银行风险承担 - 穿越周期：商业银行的命运、逻辑与生存法则</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从金融周期理论出发，以跨世纪的历史纵深感，系统探讨商业银行经营发展与经济周期的内在关联，提供理论框架、实证证据、传导机制、监管工具与穿越周期的核心法则。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-44f3d535.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-d3bea2a5.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">穿越周期：商业银行的命运、逻辑与生存法则</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第8章-资产价格渠道抵押品价值公允价值与银行风险承担"><a class="header" href="#第8章-资产价格渠道抵押品价值公允价值与银行风险承担">第8章 资产价格渠道：抵押品价值、公允价值与银行风险承担</a></h1>
+<blockquote>
+<p><em>信贷渠道讲的是“银行放了多少贷款“。资产价格渠道讲的是“那笔贷款的抵押品值多少钱“。两者缺一不可——贷款额度和抵押品价值同时变化时，银行的风险敞口是两者变化的乘积。</em></p>
+</blockquote>
+<h2 id="81-资产价格的三种力量"><a class="header" href="#81-资产价格的三种力量">8.1 资产价格的三种力量</a></h2>
+<p>第7章我们分析了信贷渠道——银行如何通过“油门“和“刹车“来放大经济周期。但那只是故事的一半。</p>
+<p>信贷从来不是凭空发生的。每一笔贷款背后都有抵押品——房产、土地、设备、股票、债券。抵押品的价值不是固定的。它会随着资产价格的周期波动而变化。当房价涨了50%，一套原本价值200万的房产变成了300万——银行基于这100万的“增值“可以放出更多的贷款。当房价跌了30%，同样的房产变成了140万——银行不仅不能再基于增值放贷，还得担心已有贷款的安全。</p>
+<p>这就是资产价格渠道的核心：<strong>资产价格的波动，通过改变抵押品价值、改变公允价值计量、改变银行的风险承担意愿，三条路径同时作用于银行的资产负债表。</strong></p>
+<p>这三条路径的运行逻辑各不相同，但它们共享一个关键特征：<strong>都是顺周期的。</strong> 资产价格上涨时，三条路径都在鼓励银行扩张。资产价格下跌时，三条路径都在逼迫银行收缩。</p>
+<h2 id="82-抵押品渠道水龙头与阀门"><a class="header" href="#82-抵押品渠道水龙头与阀门">8.2 抵押品渠道：水龙头与阀门</a></h2>
+<p>抵押品是银行管理信用风险最古老、最核心的工具。当一家企业向银行申请贷款时，银行通常会要求它提供某种形式的抵押——房产、土地使用权、机器设备、存货、应收账款、或者第三方担保。</p>
+<p>抵押品的作用是双重的。第一，它提供了一种“安全网“——如果借款人违约，银行可以通过处置抵押品来部分或全部收回贷款本金。第二，它提供了一种“约束机制“——借款人知道违约会失去抵押的资产，因此有动力按时还款。</p>
+<p>但抵押品的价值不是一个固定数字。它随着资产价格的周期波动而波动。而银行基于抵押品价值做出的信贷决策，也随着资产价格的周期波动而波动。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期阶段</th><th>资产价格</th><th>抵押品价值</th><th>银行行为</th><th>对实体经济的影响</th></tr>
+</thead>
+<tbody>
+<tr><td>价格上升期</td><td>↑</td><td>↑</td><td>抵押品充足→风险感知↓→LTV不变时贷款额度↑→或提高LTV→释放更多信贷</td><td>企业和个人获得更多融资→进一步推高资产价格</td></tr>
+<tr><td>价格平稳期</td><td>→</td><td>→</td><td>基于基本面评估抵押品价值</td><td>信贷供给匹配真实需求</td></tr>
+<tr><td>价格下跌期</td><td>↓</td><td>↓</td><td>抵押品缩水→现有贷款的风险敞口↑→银行要求追加抵押品或提前还贷</td><td>借款人被迫抛售资产→进一步压低价格</td></tr>
+</tbody>
+</table>
+</div>
+<p>注意价格下跌期的那一栏——“银行要求追加抵押品或提前还贷”。这是抵押品渠道中最具杀伤力的一环。当资产价格下跌时，已经发放的贷款出现了抵押品不足的问题。银行为了保全自身，会要求借款人补充抵押品。如果借款人拿不出额外的抵押——在全面性价格下跌的环境中，它很可能拿不出——银行可以宣布贷款违约并开始处置抵押品。借款人的资产被低价拍卖，拍卖所得进一步压低了同类资产的市场价格。其他持有同类资产的借款人看到市场价格在下跌，不得不提前抛售。这引发了一连串“抛售→价格下跌→更多抛售“的螺旋。</p>
+<p>Fisher在1933年描述的“债务—通缩“闭环，在抵押品渠道中有最直观的体现：<strong>价格下跌→抵押品缩水→银行催贷→借款人抛售→价格进一步下跌。</strong></p>
+<h2 id="83-公允价值会计繁荣期的美颜衰退期的毁容"><a class="header" href="#83-公允价值会计繁荣期的美颜衰退期的毁容">8.3 公允价值会计：繁荣期的“美颜“，衰退期的“毁容“</a></h2>
+<p>如果说抵押品渠道是“物理层面“的——资产价格通过改变抵押品的真实变现价值来影响信贷行为——那么公允价值会计就是“账面层面“的。它不改变资产的真实价值，但通过改变银行<strong>报表上记录的资产价值</strong>，来改变市场对银行的信心、银行的资本充足率、以及监管者对银行健康状况的判断。</p>
+<p>公允价值会计的核心原则很简单：银行持有的金融资产（交易性债券、可供出售债券、衍生品等）应该按照当前的<strong>市场价格</strong>而非历史成本来记账。这个原则的初衷是好的——让投资者看到银行资产的真实市场价值，而不是一笔基于历史的、可能已严重偏离现实的账面数字。</p>
+<p>但它在周期中制造了两级放大。</p>
+<p><strong>繁荣期的放大。</strong> 资产价格上涨→银行持有的交易性金融资产公允价值上升→银行的利润表和资产负债表同时改善→利润增加、资本增加→银行的股价上涨、融资成本下降→银行有更多的资本和更低的融资成本→可以放出更多的贷款、持有更多的资产→更多的资金进入市场→资产价格进一步上涨。</p>
+<p><strong>衰退期的放大。</strong> 资产价格下跌→银行持有的交易性金融资产公允价值下降→银行的利润表和资产负债表同时恶化→利润减少、资本减少（甚至触及监管红线）→银行股价暴跌、融资渠道关闭→银行被迫卖出资产来满足资本要求或流动性需求→抛售行为进一步压低资产价格→公允价值进一步下降。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期阶段</th><th>公允价值变动</th><th>对利润的影响</th><th>对资本的影响</th><th>对信贷行为的影响</th></tr>
+</thead>
+<tbody>
+<tr><td>资产价格↑</td><td>交易性资产浮盈↑</td><td>投资收益↑→净利润↑</td><td>留存收益↑→CET1↑</td><td>资本充裕→放贷能力↑</td></tr>
+<tr><td>资产价格↓</td><td>交易性资产浮亏↑</td><td>投资收益↓（或亏损）→净利润↓</td><td>留存收益↓→CET1↓</td><td>资本收缩→放贷能力↓</td></tr>
+</tbody>
+</table>
+</div>
+<p>注意一个关键的区别：公允价值变动对于交易性资产是<strong>立即影响利润和资本</strong>的。即使银行没有真正卖出这些资产——只是市场报价发生了变化——银行的利润表和资本充足率就已经被改变了。这个特征在繁荣期让银行看起来比实际更健康（因为浮盈被计入了利润），在衰退期让银行看起来比实际更危险（因为浮亏可以直接吞噬资本）。</p>
+<p>硅谷银行在2022—2023年的困境是公允价值会计顺周期性的完美例证。SVB将大量国债分类为“可供出售“（AFS），其公允价值的变动被直接计入其他综合收益（OCI），进而影响了资本充足率。到2022年末，SVB的AFS组合上累积了超过150亿美元的未实现亏损。即使这些国债如果持有至到期一分钱不会违约，公允价值会计已经在银行的资本充足率上凿出了一个巨大的洞。</p>
+<h2 id="84-风险承担渠道当资产价格上涨改变了银行的胃口"><a class="header" href="#84-风险承担渠道当资产价格上涨改变了银行的胃口">8.4 风险承担渠道：当资产价格上涨改变了银行的“胃口“</a></h2>
+<p>抵押品渠道影响的是银行的<strong>贷款能力</strong>（能不能放）。公允价值渠道影响的是银行的<strong>报表健康度</strong>（看起来好不好）。但还有第三条渠道——风险承担渠道——它影响的是银行的<strong>放贷意愿</strong>（想不想放）。</p>
+<p>风险承担渠道的逻辑来自行为金融学。研究发现，资产价格的持续上涨会降低银行对风险的感知。当房价连续多年上涨、从未出现过大幅回调时，银行的风险模型会逐渐将“房价下跌“的概率调低——不是因为基本面变了，而是因为模型基于历史数据进行校准，而过去几年的历史恰好是房价持续上涨的。同样，当银行持有的交易资产连续产生正收益时，风险管理部门对“市场风险“的容忍度会不自觉地上移。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>资产价格走势</th><th>银行的风险感知</th><th>银行的放贷行为</th><th>典型的认知偏差</th></tr>
+</thead>
+<tbody>
+<tr><td>持续上涨（3年以上）</td><td>“这个市场很安全”</td><td>扩大敞口、降低利差</td><td>近因偏差（最近的经验被过度赋权）</td></tr>
+<tr><td>突然下跌</td><td>“这个市场不可预测”</td><td>迅速收缩、大幅提高利差</td><td>可得性偏差（刚刚发生的损失被高估）</td></tr>
+<tr><td>长期低迷</td><td>“这个市场没有机会”</td><td>彻底退出</td><td>锚定效应（被过去的峰值困住）</td></tr>
+</tbody>
+</table>
+</div>
+<p>风险承担渠道最危险的特征是它的<strong>非对称性</strong>。从“愿意承担风险“到“不愿意承担风险“的转变，往往发生得极快——几个月的价格下跌就足以消除几年的乐观情绪。但从“不愿意承担风险“到“愿意承担风险“的恢复，往往是缓慢的——需要数年价格持续上涨，银行才敢重新扩大风险敞口。</p>
+<p>这就是为什么信贷市场的复苏总是滞后于资产价格的复苏。房价可能已经触底反弹了，但银行的对公房地产贷款政策可能仍然处在“只收不贷“状态——不是因为当前的房价不够高，而是因为上一次的创伤还没有愈合。</p>
+<h2 id="85-房价银行资产端最大的单一变量"><a class="header" href="#85-房价银行资产端最大的单一变量">8.5 房价：银行资产端最大的“单一变量“</a></h2>
+<p>在三类资产中——房地产、股票、债券——房地产对银行的影响是最全面、量级最大的。原因很简单：超过40%的中国银行贷款以房地产为直接或间接的抵押品。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>贷款类型</th><th>估占总贷款比例</th><th>与房价的关联</th><th>房价↓的影响传导</th></tr>
+</thead>
+<tbody>
+<tr><td>房地产开发贷</td><td>~7%</td><td>直接（房企销售收入=还款来源）</td><td>房价↓→销售↓→回款↓→违约</td></tr>
+<tr><td>个人住房按揭贷</td><td>~20%</td><td>直接（房产=抵押品）</td><td>房价↓&lt;贷款余额→断供风险↑</td></tr>
+<tr><td>以房产为抵押的经营贷</td><td>~15%</td><td>间接（抵押品=房产）</td><td>房价↓→抵押品不足→银行催贷</td></tr>
+<tr><td>地方政府平台贷款</td><td>~15%</td><td>间接（还款来源=土地出让）</td><td>房价↓→土地出让收入↓→还款压力↑</td></tr>
+</tbody>
+</table>
+</div>
+<p>| 合计涉房敞口 | ~55%—60% | — | 房价下行是全方位的资产质量冲击 |</p>
+<p>这个数字——50%以上——意味着什么？意味着房价的变动，不是银行可以“分散“掉的风险。它是系统性的。当房价开始下行时，不是某几家银行、某几笔贷款受到影响，而是整个银行体系的资产端同时承压。</p>
+<p>第5章已经分析了房价周期对不良贷款率的量化影响（1.5到2倍于GDP冲击）。在这里，我们要补充一个更宏观的视角：<strong>房价下行时，三条渠道同时启动。</strong> 抵押品渠道使得贷款的风险敞口扩大（LTV从70%变90%甚至超过100%），公允价值渠道使得银行持有的房地产相关证券和投资性房地产的账面价值缩水，风险承担渠道使得银行从“愿意做房贷“急剧转向“不愿意做房贷“。三个渠道同时向同一个方向施加压力，使得房地产下行周期对银行的冲击远远超过其他任何单一资产类别的下行。</p>
+<h2 id="86-股价的下行螺旋2018年股权质押危机的解剖"><a class="header" href="#86-股价的下行螺旋2018年股权质押危机的解剖">8.6 股价的下行螺旋：2018年股权质押危机的解剖</a></h2>
+<p>2018年，中国A股市场从3587点跌至2449点。这次下跌触发了中国银行业史上一次独特的资产价格传导事件：<strong>股权质押危机。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>传导步骤</th><th>事件</th><th>银行端的冲击</th></tr>
+</thead>
+<tbody>
+<tr><td>① 股价下跌</td><td>大量上市公司大股东以股票为质押从银行/券商获得贷款</td><td>质押物（股票市值）持续缩水</td></tr>
+<tr><td>② 逼近预警线</td><td>质押股票市值跌至贷款金额的130%—150%</td><td>银行发出追加质押通知</td></tr>
+<tr><td>③ 逼近平仓线</td><td>质押股票市值跌至贷款金额的110%—120%</td><td>银行有权强制平仓</td></tr>
+<tr><td>④ 强制平仓</td><td>银行/券商在二级市场抛售质押股票</td><td>抛售行为进一步压低股价→更多质押逼近预警/平仓</td></tr>
+<tr><td>⑤ 危机蔓延</td><td>大股东失去公司控制权、企业融资渠道全面冻结</td><td>原本正常经营的企业因为股东层面的流动性危机而濒临崩溃</td></tr>
+<tr><td>⑥ 信贷紧缩</td><td>银行从股票质押贷款领域全面撤退</td><td>民营企业融资渠道进一步收窄</td></tr>
+</tbody>
+</table>
+</div>
+<p>数百家上市公司的大股东质押逼近或突破预警线。地方政府紧急设立纾困基金，以“国资入市“的方式稳定市场。券商和银行暂停强制平仓。</p>
+<p>2018年股权质押危机的每一个环节，都完美地展示了资产价格渠道的三条路径。<strong>抵押品路径</strong>——股票作为质押品，其价值随着股价下跌而蒸发，触发了银行追加抵押和强制平仓的连锁反应。<strong>公允价值路径</strong>——银行持有的股票和股权类资产的账面价值缩水，影响了银行自身的利润和资本。<strong>风险承担路径</strong>——危机过后，银行对股票质押贷款的风险偏好骤降为零，至今未完全恢复。</p>
+<h2 id="87-本章核心发现"><a class="header" href="#87-本章核心发现">8.7 本章核心发现</a></h2>
+<ol>
+<li>
+<p><strong>资产价格通过三条渠道同时作用于银行：抵押品渠道改变贷款能力，公允价值渠道改变报表健康度，风险承担渠道改变放贷意愿。</strong> 三条渠道都是顺周期的，在经济上行期共同鼓励扩张，在经济下行期共同逼迫收缩。</p>
+</li>
+<li>
+<p><strong>公允价值会计在繁荣期“美颜“银行的财务报表，在衰退期“毁容“银行的资本充足率。</strong> 即使银行持有的资产没有信用风险（如美国国债），利率周期驱动的公允价值变动就足以造成利润和资本的剧烈波动。</p>
+</li>
+<li>
+<p><strong>中国银行业超过50%的贷款以房地产为直接或间接抵押品，房价下行是资产质量最大的系统性风险来源。</strong> 房价下行的冲击通过抵押品缩水、公允价值减记和风险偏好骤降三条路径同时传导，量级和持续时间都远超一般资产类别的波动。</p>
+</li>
+</ol>
+<h2 id="88-银行管理启示"><a class="header" href="#88-银行管理启示">8.8 银行管理启示</a></h2>
+<ul>
+<li>
+<p><strong>用“穿透式抵押品管理“替代“单一LTV管理“。</strong> 不要只看贷款的贷款价值比（LTV）——这个数字只在抵押品能按当前市价变现的情况下有意义。在全面性价格下跌中，抵押品不仅会贬值，而且会丧失流动性——买家消失、法拍积压、处置周期无限延长。LTV应该内置一个“下行期流动性折扣“——住宅打7折、商业地产打5折、机器设备打3折——来计算真实的风险敞口。</p>
+</li>
+<li>
+<p><strong>区分“信用风险“和“利率风险“对你的资产组合的影响。</strong> 硅谷银行持有的美国国债在信用上没有风险，但在利率上有致命的敞口。你的银行有没有类似的资产——信用上安全、利率上裸露——如果利率突然上升300个基点，它们的公允价值变动会影响你的资本充足率多少？这个数字，应该成为你的资产负债管理委员会每月复盘的核心指标。</p>
+</li>
+<li>
+<p><strong>在资产价格高位时，主动计提“隐形亏损准备金“。</strong> 公允价值会计告诉你的是——当前市场价格下你的资产值多少钱。但当前市场价格可能是被繁荣期过度推高的。如果价格回归历史均值，你的资本会损失多少？把这个数字作为“预警资本缓冲“——在繁荣期多留一些利润作为拨备，而不是全部计入当期利润和可分配收益。</p>
+</li>
+</ul>
+<h2 id="89-本章的下一个问题"><a class="header" href="#89-本章的下一个问题">8.9 本章的下一个问题</a></h2>
+<p>我们剖析了信贷渠道和资产价格渠道——两条银行为什么顺周期的高量级通道。但还有一个更深层的渠道我们没有讨论：<strong>制度本身。</strong></p>
+<p>资本充足率要求、贷款损失拨备规则、杠杆率限制——这些旨在保障银行安全的制度设计，在不经意间充当了周期的放大器。它们让银行在经济上行期可以放更多贷款，在经济下行期被迫放更少贷款。不是银行选择了顺周期，而是制度要求它们顺周期。</p>
+<p>制度如何成为周期的“第三只手“？这是第9章要回答的问题。</p>
+<hr>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>“House Prices, Borrowing Constraints, and Monetary Policy in the Business Cycle”（2005）, Matteo Iacoviello, <em>American Economic Review</em></li>
+<li>《国际财务报告准则第9号——金融工具》（IFRS 9）（2014）, IASB</li>
+<li>中国人民银行：《中国金融稳定报告》（2018—2019年）——股权质押风险专题</li>
+<li>国家统计局：70个大中城市新建商品住宅价格指数（月度）</li>
+<li>硅谷银行：2022年年报——AFS组合未实现亏损披露</li>
+<li>“Fair Value Accounting and Financial Stability”（相关研究）, BIS Working Papers</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-3/chapter-7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-3/chapter-9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-3/chapter-7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-3/chapter-9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

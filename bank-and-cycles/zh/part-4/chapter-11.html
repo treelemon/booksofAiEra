@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第11章 中国逆周期监管的实践与挑战 - 穿越周期：商业银行的命运、逻辑与生存法则</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从金融周期理论出发，以跨世纪的历史纵深感，系统探讨商业银行经营发展与经济周期的内在关联，提供理论框架、实证证据、传导机制、监管工具与穿越周期的核心法则。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-44f3d535.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-d3bea2a5.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">穿越周期：商业银行的命运、逻辑与生存法则</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第11章-中国逆周期监管的实践与挑战"><a class="header" href="#第11章-中国逆周期监管的实践与挑战">第11章 中国逆周期监管的实践与挑战</a></h1>
+<blockquote>
+<p><em>第10章讲的是“全球标准“——巴塞尔Ⅲ为逆周期监管搭建的理想框架。这一章要讲的是“中国现实“——当这套框架落到中国的制度土壤上，发生了什么。</em></p>
+</blockquote>
+<h2 id="111-一个尚未激活的工具箱"><a class="header" href="#111-一个尚未激活的工具箱">11.1 一个尚未激活的工具箱</a></h2>
+<p>第10章提到一个令人困惑的事实：全球最大的两个经济体——美国和中国——的逆周期资本缓冲（CCyB）至今为零。美国的理由是压力测试（CCAR）已经起到了类似效果。中国的情况则更为复杂：<strong>框架已经搭好了，但工具从未被拿起。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>事件</th><th>意义</th></tr>
+</thead>
+<tbody>
+<tr><td>2013年</td><td>《商业银行资本管理办法（试行）》实施</td><td>首次引入巴塞尔Ⅲ框架，但CCyB条款留白</td></tr>
+<tr><td>2016年</td><td>宏观审慎评估体系（MPA）取代合意贷款管理</td><td>中国最超前的逆周期制度创新</td></tr>
+<tr><td>2020年</td><td>央行和银保监会发布CCyB制度框架</td><td>规章层面完成了CCyB的制度准备</td></tr>
+<tr><td>2021—2025年</td><td>CCyB持续为零</td><td>从未触发计提，即使经历了房地产深度调整</td></tr>
+</tbody>
+</table>
+</div>
+<p>为什么一个全球最早启用的宏观审慎框架之一（MPA）的国家，在核心的逆周期资本工具（CCyB）上却迟迟不动手？</p>
+<p>答案藏在中国逆周期监管的独特路径中。</p>
+<p>以2021—2024年的房地产调整为例。如果中国当时有活跃的CCyB——哪怕只有1%——一家中型股份行在2020年之前就会多存约200—300亿的额外资本（按5万亿RWA计）。这200—300亿在2022—2023年房地产不良集中暴露时，可以充当利润和拨备之外的“第三层缓冲“。但因为没有CCyB，这些银行只能靠自己的留存利润和现有拨备来硬扛——而当利润因为息差下行被压缩时，可扛的空间比有CCyB保护的情况下小了一个量级。</p>
+<h2 id="112-从资本办法到mpa一条与巴塞尔并行的路"><a class="header" href="#112-从资本办法到mpa一条与巴塞尔并行的路">11.2 从资本办法到MPA：一条与巴塞尔并行的路</a></h2>
+<p>2013年《商业银行资本管理办法》是中国版巴塞尔Ⅲ的基石。它完整引入了资本留存缓冲（2.5%）和系统重要性银行附加资本，但对CCyB的处理非常谨慎——留出了制度空间，但没有设定具体的触发规则。</p>
+<p>2016年，中国做了一件全球监管界瞩目的事：推出了宏观审慎评估体系（MPA）。MPA不是一个“资本工具“，它是一个“打分卡“。它从资本与杠杆、资产负债、流动性、定价行为、资产质量、跨境业务、信贷政策执行七个维度给银行打分。其中最核心的逆周期设计是“广义信贷增速“指标：银行信贷增速偏离名义GDP增速过多，评分降级→限制业务资格（如MLF利率优惠、发债审批等）。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>巴塞尔Ⅲ的CCyB</th><th>中国的MPA</th></tr>
+</thead>
+<tbody>
+<tr><td>工具类型</td><td>资本冻结/释放</td><td>打分降级/业务资格限制</td></tr>
+<tr><td>核心指标</td><td>信贷/GDP缺口</td><td>广义信贷增速 vs 名义GDP增速</td></tr>
+<tr><td>逆周期力度</td><td>强（额外资本要求直接约束放贷）</td><td>中（降级后果间接约束行为）</td></tr>
+<tr><td>覆盖机构</td><td>所有银行</td><td>存款类金融机构（不含信托等）</td></tr>
+<tr><td>触发方式</td><td>基于规则的半自动</td><td>基于评估的季度打分</td></tr>
+<tr><td>附加功能</td><td>仅逆周期</td><td>多重功能（结构性调控+周期调控+定价管理）</td></tr>
+</tbody>
+</table>
+</div>
+<p>MPA的设计意图是超前的。它试图在一个框架里同时解决周期调控（逆周期）和结构调整（压降房地产、支持制造业）两个问题。但正是这种“多功能合一“的设计，在实际运行中产生了张力。</p>
+<p>以某全国性股份行在2017—2018年的经历为例。该行在2017年Q1的MPA评估中，因为广义信贷增速超过了名义GDP增速加目标M2增速之和的上限，被评为了B档。降档意味着它失去了以优惠利率获得MLF资金的资格——融资成本直接上升。为了在下一季度重回A档，该行不得不将当月的新增信贷压缩了近30%。这个“踩刹车“的效果正是MPA设计所期望的——但问题在于，该行的广义信贷增速“超标“并非因为它在盲目扩张，而是因为它在2016年底承接了几笔政策性贷款（棚改和扶贫）。</p>
+<p><strong>MPA不区分信贷的“意图“——它只看总量。</strong></p>
+<h2 id="113-当逆周期遭遇结构性调控"><a class="header" href="#113-当逆周期遭遇结构性调控">11.3 当逆周期遭遇结构性调控</a></h2>
+<p>MPA实施近十年后，一个清晰的问题浮现：<strong>当逆周期目标与结构性目标冲突时，后者往往优先。</strong></p>
+<p>2020年疫情期间，经济需要信贷扩张来支撑复苏（逆周期需求）。但MPA同时考核房地产贷款集中度——2020年底出台的“房地产贷款集中度管理制度“将银行按规模分为五档，设定了房地产贷款和个人住房贷款占比上限。两家目标在同一年被同时追求：银行需要多放贷（逆周期），但不能放给房地产（结构调整）。</p>
+<p>结果是什么？银行在总量上“想放但放不出去“——因为符合结构性要求的、大容量的信贷投向（如绿色贷款和普惠小微的接续增长需要时间），短期内无法替代房地产和平台贷款的体量。2021—2022年，社会融资规模增速的波动幅度远小于政策的宽松意图——不是银行不想放贷，是被结构性约束捆住了能放贷的方向。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>政策信号</th><th>方向</th><th>银行的执行困境</th></tr>
+</thead>
+<tbody>
+<tr><td>降准降息+LPR下调</td><td>鼓励放贷</td><td>“有弹药但缺靶子”</td></tr>
+<tr><td>MPA广义信贷增速考核</td><td>总量不能超GDP太多</td><td>限制总闸门</td></tr>
+<tr><td>房地产集中度管理</td><td>房贷不能超上限</td><td>最大靶子被封堵</td></tr>
+<tr><td>制造业中长期+绿色+普惠</td><td>要求增长</td><td>容量有限+回报周期长</td></tr>
+<tr><td>地方融资平台严控</td><td>压降存量</td><td>另一大靶子被封堵</td></tr>
+</tbody>
+</table>
+</div>
+<p>五个信号同时作用在银行身上，结果不是“逆周期扩张“，而是“结构性踌躇“——银行在等政策给出更清晰、更大体量的投放方向。</p>
+<p>某头部城商行2021年的内部会议记录揭示了这个困境的微观版本。信贷部提出：当年总行给的信贷增长目标是12%，但房地产贷款已经触及集中度上限（不能新增），平台类贷款被窗口指导要求“只减不增“，制造业和绿色贷款虽然有增长空间，但该行的绿色项目储备只能支撑约5%的增长——剩下的7%没有合格投向。最终该行选择了“不完成目标“——全年信贷增速仅6%。</p>
+<p>这种“结构性踌躇“在数据上留下了清晰的痕迹。2016年MPA启动时，广义信贷增速从2015年的15%以上逐步降至2017年的12%左右——符合“逆周期降温“的意图，效果显著。但到了2020年和2022年两次需要逆周期扩张的窗口期，广义信贷增速的反弹远不及政策宽松的力度——2022年社融增速仅从10.1%回升至10.5%，即便当年央行两次降准、LPR多次下调。</p>
+<p><strong>MPA在“踩刹车“时有效，在“加油门“时乏力。</strong> 这是中国逆周期监管不对称性的直接体现。</p>
+<h2 id="114-为什么ccyb为零"><a class="header" href="#114-为什么ccyb为零">11.4 为什么CCyB为零</a></h2>
+<p>问题回到了CCyB：为什么中国不激活它？</p>
+<p>不能简单归结为“制度惰性“。有两个更深层的解释。</p>
+<p><strong>第一，中国有替代工具。</strong> MPA的广义信贷增速指标在理念上与CCyB高度相似——都在衡量“信贷是不是过度扩张了“。MPA通过打分降级来约束银行行为，CCyB通过额外资本要求来约束银行行为。两者的传导路径不同，但目标一致。如果MPA已经起到了约束信贷过度扩张的作用（至少在意图上），监管层会觉得激活CCyB的“边际收益“有限。</p>
+<p><strong>第二，也是更微妙的——CCyB在经济下行期的“释放“，在中国的制度环境下是一个政治上敏感的操作。</strong> CCyB的释放意味着银行可以用之前被“冻结“的资本来核销不良或继续放贷。但在中国，信贷的节奏和方向在很大程度上是由政策窗口指导来调控的。监管层更倾向于用“定向降准“、“再贷款”、“窗口指导“等工具来引导信贷投放——这些工具的灵活性和方向性远强于“一刀切式“的CCyB释放。如果释放CCyB的资本后，银行选择把这些钱用来买国债或同业存单（“资金空转”），而不是放给制造业和普惠小微，释放的意义就大打折扣。</p>
+<p>简单说：<strong>CCyB是一个“总量工具“，而中国的信贷调控高度依赖“结构性工具“。在结构性调控占主导的体制下，总量工具的优先级自然被排在了后面。</strong></p>
+<h2 id="115-窗口指导一把无法被制度化的利剑"><a class="header" href="#115-窗口指导一把无法被制度化的利剑">11.5 窗口指导：一把无法被制度化的利剑</a></h2>
+<p>任何关于中国逆周期监管的讨论，都绕不开一个最“非巴塞尔“但最“中国“的工具——<strong>窗口指导</strong>。</p>
+<p>窗口指导是监管机构通过非正式渠道（会议、电话、书面通知）向银行传达信贷投放的节奏、方向和规模预期。它不是法律规定，没有成文的触发规则，但具有极高的执行效力——不遵从一个明确的窗口指导要求，可能在未来被“秋后算账“。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>特征</th><th>巴塞尔Ⅲ工具（如CCyB）</th><th>中国的窗口指导</th></tr>
+</thead>
+<tbody>
+<tr><td>形式</td><td>国际规则，国内法规化</td><td>非正式通知</td></tr>
+<tr><td>透明度</td><td>规则公开，可预期</td><td>不公开，不可预期</td></tr>
+<tr><td>灵活性</td><td>低（修改需要走流程）</td><td>极高（可随时调整）</td></tr>
+<tr><td>精确性</td><td>总量约束</td><td>总量+方向+行业+节奏</td></tr>
+<tr><td>逆周期效果</td><td>好（如果被激活）</td><td>不确定（取决于指导方向）</td></tr>
+<tr><td>被制度化的可能</td><td>已制度化</td><td>难以制度化（本质是行政权力）</td></tr>
+</tbody>
+</table>
+</div>
+<p>窗口指导的逆周期效果高度不确定——<strong>取决于指导它的人，在那一刻的判断。</strong> 如果指导的方向是“收紧“，它就是逆周期工具（在经济过热时降温）。如果指导的方向是“扩张“，它就是顺周期工具（可能是响应政策需要，而非周期判断）。窗口指导本身没有“内置“的逆周期逻辑，它的方向完全取决于使用它的人。</p>
+<p>2018年去杠杆期间的窗口指导是一个典型例子。当年Q2，监管层通过窗口指导要求商业银行加快信贷投放以对冲经济下行——但同一时间，资管新规正在强力压缩影子银行，部分通过非标渠道放出去的贷款在表外被“截断“后，无法在表内找到替代通道（因为表内同样受到资本和额度的约束）。窗口指导要求“多放“，但制度框架要求“少放“。两股力量相向而行，最终在银行的信贷决策中相互抵消了一部分——2018年社融增速从年初的13%以上降至年末的10%以下。</p>
+<p>中国监管体系对窗口指导的依赖，在一定程度上削弱了建立制度化、规则化的逆周期工具的紧迫性。既然可以通过一个电话解决的事情，为什么要费劲建立一套复杂的CCyB触发和释放机制？</p>
+<p>答案是：<strong>制度化的工具提供了可预期性和一致性。</strong> 窗口指导取决于人——而人会换。第12章将讨论的动态拨备制度，恰恰是试图把逆周期的“判断“从人转移到规则上的努力。</p>
+<h2 id="116-本章核心发现"><a class="header" href="#116-本章核心发现">11.6 本章核心发现</a></h2>
+<ol>
+<li>
+<p><strong>中国建立了全球最超前的宏观审慎框架之一（MPA），但核心的逆周期资本工具（CCyB）至今未被激活。</strong> 制度框架已备，执行落地滞后——根本原因在于中国更依赖结构性调控工具（窗口指导、再贷款等），总量性逆周期工具在优先级上被排在了后面。</p>
+</li>
+<li>
+<p><strong>MPA的“多目标合一“设计在执行中遭遇了目标冲突。</strong> 当逆周期扩张与结构性压降同时作用于银行时，后者往往优先——结果是信贷扩张的逆周期力度被系统性削弱。</p>
+</li>
+<li>
+<p><strong>窗口指导的灵活性是一把双刃剑。</strong> 它让监管者可以在危机中快速行动，但也削弱了建立制度化逆周期工具的紧迫性。制度化的工具提供可预期性和一致性——这是窗口指导永远做不到的。</p>
+</li>
+</ol>
+<h2 id="117-银行管理启示"><a class="header" href="#117-银行管理启示">11.7 银行管理启示</a></h2>
+<ul>
+<li>
+<p><strong>不要等监管来告诉你经济已经过热了。</strong> CCyB为零意味着中国的监管框架在“什么时候限制信贷过度扩张“这个判断上，没有给你提供任何制度化的信号。你需要建立自己的“内部CCyB“——基于一套简单的规则（如信贷增速超过名义GDP增速5个百分点以上，或房价连续四个季度上涨超过10%），来主动判断“我们的资本是不是应该更厚一点“。</p>
+</li>
+<li>
+<p><strong>理解窗口指导的方向，但不要被它定义你的战略。</strong> 窗口指导告诉你的是监管者今天想要什么。但监管者的优先事项会变——今天是“支持制造业“，明天可能是“稳住房地产“。你的战略不能被窗口指导的短期方向牵着走。逆周期能力来自于你自己对周期的判断和准备，而不是来自于监管者什么时候打来电话。</p>
+</li>
+</ul>
+<h2 id="118-本章的下一个问题"><a class="header" href="#118-本章的下一个问题">11.8 本章的下一个问题</a></h2>
+<p>我们讨论的都是“资本端“的逆周期工具——不管是中国未激活的CCyB，还是已经运转近十年的MPA，核心逻辑都是“让银行在经济上行期多存一些资本“。但资产质量的顺周期问题还有一个更直接的制度入口：<strong>拨备。</strong></p>
+<p>如果银行在经济上行期多提拨备、在下行期释放拨备来平滑利润——这比资本端的操作更灵活、更直接、更不受复杂的宏观判断制约。这正是西班牙等国的动态拨备制度试图解决的问题。</p>
+<p>动态拨备如何运作？它能在中国落地吗？</p>
+<p>这是第12章要回答的问题。</p>
+<hr>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>《商业银行资本管理办法（试行）》（2013）及后续修订</li>
+<li>中国人民银行：《宏观审慎评估体系（MPA）考核细则》（2016年起）</li>
+<li>中国人民银行、银保监会：《关于建立逆周期资本缓冲机制的通知》（2020年）</li>
+<li>人民银行、银保监会：《房地产贷款集中度管理制度》（2020年12月）</li>
+<li>“Macroprudential Policy in China”（相关IMF/BIS研究报告）</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-4/chapter-10.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-4/chapter-12.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-4/chapter-10.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-4/chapter-12.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
