@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "穿越周期：商业银行的命运、逻辑与生存法则"
+description = "从金融周期理论出发，以跨世纪的历史纵深感，系统探讨商业银行经营发展与经济周期的内在关联，提供理论框架、实证证据、传导机制、监管工具与穿越周期的核心法则。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/bank-and-cycles/zh/{path}"
+site-url = "/booksofAiEra/books/bank-and-cycles/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"
