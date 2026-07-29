@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "三驾马车：财富管理、科技金融与跨境金融——银行业未来确定性机会"
+description = "以周期视角和国际比较视角为双主线，系统论证财富管理、科技金融与跨境金融是未来十年中国银行业发展的三大确定性机会，为银行业从业者提供穿越周期的战略罗盘。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/three-carriages/zh/{path}"
+site-url = "/booksofAiEra/books/three-carriages/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"
