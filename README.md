@@ -18,6 +18,8 @@ A collection of living field guides to the AI era — continuously updated in En
 | The Crossroads: AI, Education, and the Next Generation | 🇬🇧 English | https://treelemon.github.io/booksofAiEra/crossroads/en/ |
 | 十字路口：AI时代的教育与选择 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/crossroads/zh/ |
 | 周期之轮：经济波动的底层逻辑、实证测度与决策框架 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/cycles/zh/ |
+| 穿越周期：商业银行的命运、逻辑与生存法则 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/bank-and-cycles/zh/ |
+| 三驾马车：财富管理、科技金融与跨境金融——银行业未来确定性机会 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/three-carriages/zh/ |
 
 ---
 
@@ -28,7 +30,9 @@ booksofAiEra/
 ├── books/
 │   ├── intelligence-age/     # Book: The Intelligence Age
 │   ├── crossroads/           # Book: The Crossroads
-│   └── cycles/               # Book: 周期之轮
+│   ├── cycles/               # Book: 周期之轮
+│   ├── bank-and-cycles/      # Book: 穿越周期（商业银行与经济周期）
+│   └── three-carriages/      # Book: 三驾马车（财富管理、科技金融、跨境金融）
 │       ├── en/               # English edition (mdBook project)
 │       │   ├── book.toml
 │       │   └── src/
