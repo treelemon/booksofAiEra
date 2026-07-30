@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "周期之眼：信息产业与AI的演进逻辑与投资框架"
+description = "以"周期"为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波/佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/cycles-of-ai-era/zh/{path}"
+site-url = "/booksofAiEra/books/cycles-of-ai-era/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"

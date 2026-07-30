@@ -20,6 +20,7 @@ A collection of living field guides to the AI era — continuously updated in En
 | 周期之轮：经济波动的底层逻辑、实证测度与决策框架 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/cycles/zh/ |
 | 穿越周期：商业银行的命运、逻辑与生存法则 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/bank-and-cycles/zh/ |
 | 三驾马车：财富管理、科技金融与跨境金融——银行业未来确定性机会 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/three-carriages/zh/ |
+| 周期之眼：信息产业与AI的演进逻辑与投资框架 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/cycles-of-ai-era/zh/ |
 
 ---
 
@@ -33,12 +34,13 @@ booksofAiEra/
 │   ├── cycles/               # Book: 周期之轮
 │   ├── bank-and-cycles/      # Book: 穿越周期（商业银行与经济周期）
 │   └── three-carriages/      # Book: 三驾马车（财富管理、科技金融、跨境金融）
-│       ├── en/               # English edition (mdBook project)
-│       │   ├── book.toml
-│       │   └── src/
-│       └── zh/               # Chinese edition (mdBook project)
+│       └── zh/               # Chinese edition
 │           ├── book.toml
 │           └── src/
+├── cycles-of-ai-era/         # Book: 周期之眼（信息产业与AI的演进逻辑与投资框架）
+│   └── zh/
+│       ├── book.toml
+│       └── src/
 ├── .github/workflows/deploy.yml
 ├── README.md
 └── CHANGELOG.md
