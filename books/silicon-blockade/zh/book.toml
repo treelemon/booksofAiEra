@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "封锁与突围：中国芯片产业的血色长征"
+description = "一部关于制裁、生存与逆袭的产业史诗。从第一块集成电路到7nm突破，从张汝京三起三落到华为海思备胎转正，三条线索交织讲述中国芯片产业六十年的技术长征。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/silicon-blockade/zh/{path}"
+site-url = "/booksofAiEra/books/silicon-blockade/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"

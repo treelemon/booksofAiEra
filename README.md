@@ -21,6 +21,7 @@ A collection of living field guides to the AI era — continuously updated in En
 | 穿越周期：商业银行的命运、逻辑与生存法则 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/bank-and-cycles/zh/ |
 | 三驾马车：财富管理、科技金融与跨境金融——银行业未来确定性机会 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/three-carriages/zh/ |
 | 周期之眼：信息产业与AI的演进逻辑与投资框架 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/cycles-of-ai-era/zh/ |
+| 封锁与突围：中国芯片产业的血色长征 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/silicon-blockade/zh/ |
 
 ---
 
@@ -38,6 +39,10 @@ booksofAiEra/
 │           ├── book.toml
 │           └── src/
 ├── cycles-of-ai-era/         # Book: 周期之眼（信息产业与AI的演进逻辑与投资框架）
+│   └── zh/
+│       ├── book.toml
+│       └── src/
+├── silicon-blockade/         # Book: 封锁与突围（中国芯片产业的血色长征）
 │   └── zh/
 │       ├── book.toml
 │       └── src/
