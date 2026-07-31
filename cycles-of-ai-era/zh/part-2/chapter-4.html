@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第四章 计算的十年（1970s-1980s）——大型机与PC的诞生 - 周期之眼：信息产业与AI的演进逻辑与投资框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="以周期为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波与佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-b35aae95.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cdc60685.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之眼：信息产业与AI的演进逻辑与投资框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第四章-计算的十年1970s-1980s大型机与pc的诞生"><a class="header" href="#第四章-计算的十年1970s-1980s大型机与pc的诞生">第四章 计算的十年（1970s-1980s）——大型机与PC的诞生</a></h1>
+<blockquote>
+<p><strong>周期第一幕：硬件先行</strong>
+<em>从晶体管到大型机，从小型机到个人电脑——信息产业的第一个十年，确立了“硬件先行、软件跟进“的铁律。</em></p>
+</blockquote>
+<h2 id="41-晶体管穿孔卡片与大型机的黎明"><a class="header" href="#41-晶体管穿孔卡片与大型机的黎明">4.1 晶体管、穿孔卡片与大型机的黎明</a></h2>
+<h3 id="411-硬件的寒武纪大爆发"><a class="header" href="#411-硬件的寒武纪大爆发">4.1.1 硬件的“寒武纪大爆发“</a></h3>
+<p>1947年12月16日，新泽西州默里山。贝尔实验室的三位物理学家——约翰·巴丁、沃尔特·布拉顿和威廉·肖克利——成功演示了世界上第一个晶体管。这个指甲盖大小的锗晶体装置，能像真空管一样放大电子信号，但体积是真空管的五十分之一，功耗是百分之一，寿命翻了几十倍。</p>
+<p>后来的历史书告诉我们：这是信息时代的“大爆炸“。</p>
+<p>但回到1947年，没有人知道这一切会发生。晶体管诞生后的第一个十年，它只是真空管的“替代品“——一个更好用、更省电的放大器。直到1958年，德州仪器的杰克·基尔比（Jack Kilby）把多个晶体管集成在同一块硅片上，发明了集成电路（Integrated Circuit），半导体的真正革命力才被释放出来。</p>
+<p>从此，硬件的进化以指数速度展开：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>突破</th><th>晶体管数量（单芯片）</th><th>历史意义</th></tr>
+</thead>
+<tbody>
+<tr><td>1947</td><td>贝尔实验室发明点接触晶体管</td><td>1</td><td>半导体时代的原点</td></tr>
+<tr><td>1954</td><td>德州仪器推出硅晶体管</td><td>1</td><td>硅取代锗成为主流材料</td></tr>
+<tr><td>1958</td><td>杰克·基尔比发明集成电路</td><td>约5</td><td>“一片硅上做多个晶体管“的想法</td></tr>
+<tr><td>1964</td><td>IBM发布System/360</td><td>数万（多个芯片组成）</td><td>第一次定义“计算机系统“概念</td></tr>
+<tr><td>1971</td><td>Intel推出4004微处理器</td><td>2,300</td><td>第一颗商用的“芯片上的计算机“</td></tr>
+<tr><td>1974</td><td>Intel推出8080微处理器</td><td>4,500</td><td>真正开启了个人计算机时代</td></tr>
+<tr><td>1978</td><td>Intel推出8086（x86架构始祖）</td><td>29,000</td><td>定义了PC时代的处理器的“语言“</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Intel、计算机历史博物馆。</p>
+<h3 id="412-ibm-system360第一次定义什么是计算机"><a class="header" href="#412-ibm-system360第一次定义什么是计算机">4.1.2 IBM System/360：第一次定义“什么是计算机“</a></h3>
+<p>1964年4月7日，IBM向全世界发布了System/360。</p>
+<p>这不是一台计算机——这是一个“计算机家族“。在此之前，每台计算机都是独立的——不同型号之间，软件不能互通、外设不能共用、甚至连打印格式都不一样。如果一家公司从IBM 1401升级到IBM 7000系列，它不仅要换机器，还要重写所有的程序、更换所有的培训。</p>
+<p>System/360改变了这一切。IBM承诺：360系列中的所有型号（从小型到超大型），都运行相同的指令集，支持相同的外设，能够运行相同的软件。这是计算机历史上第一次有人定义了“兼容性“——你不必因为机器升级而放弃已有的软件投资。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>System/360之前的计算机</th><th>System/360</th></tr>
+</thead>
+<tbody>
+<tr><td>软件兼容性</td><td>每个型号独立，不可互通</td><td>全系列共享相同指令集，软件一次编写全系列运行</td></tr>
+<tr><td>外设兼容性</td><td>每个型号专属外设</td><td>全系列标准化外设接口</td></tr>
+<tr><td>用户迁移成本</td><td>升级机器=重写所有软件</td><td>升级机器=数据迁移+程序照常运行</td></tr>
+<tr><td>市场影响</td><td>计算机是高风险的“一次性投资“</td><td>计算机是“可渐进投资“的平台</td></tr>
+</tbody>
+</table>
+</div>
+<p>System/360的研发费用是50亿美元（换算至今天的购买力），相当于IBM当时年营收的2.5倍。这是人类历史上最大的一场赌博——赌的就是“标准化的计算机系统“会成为行业的未来。IBM赌赢了。到1970年，IBM在大型机市场的份额超过70%，《财富》杂志称之为“IBM and the Seven Dwarfs“（IBM与七个小矮人）。</p>
+<h3 id="413-计算从军事走向商业"><a class="header" href="#413-计算从军事走向商业">4.1.3 计算从军事走向商业</a></h3>
+<p>1950年代，计算机唯一的买家是美国军方和原子能委员会。一台UNIVAC I计算机的租金是每月$15,000（相当于今天$150,000），除了政府，没有人买得起——也没有人知道买来能干什么。</p>
+<p>到了1970年代，情况完全变了。航空公司的订票系统、银行的账户管理系统、保险公司的精算系统、零售商的库存管理系统——各行各业都发现，计算机是管理大规模重复数据的“终极工具“。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>行业</th><th>计算机的早期应用</th><th>代表案例</th></tr>
+</thead>
+<tbody>
+<tr><td>航空</td><td>实时订票系统</td><td>美国航空SABRE系统（1960年上线）</td></tr>
+<tr><td>银行</td><td>账户自动化管理</td><td>美国银行ERMA系统（1959年上线）</td></tr>
+<tr><td>制造</td><td>物料需求计划（MRP）</td><td>IBM开发的MRP系统（1960s）</td></tr>
+<tr><td>保险</td><td>精算自动化</td><td>—</td></tr>
+<tr><td>零售</td><td>库存与收银管理</td><td>Kmart等连锁店（1970s）</td></tr>
+</tbody>
+</table>
+</div>
+<p>计算从军工走向商业，意味着需求的基础变了——不再是“为了打赢冷战“，而是“为了赚钱“。当计算机的用户从100个政府部门变成10万家企业时，产业链的结构也必须跟着变化。这就是接下来三节的故事。</p>
+<h2 id="42-ibm从硬件王者到pc革命的被颠覆者"><a class="header" href="#42-ibm从硬件王者到pc革命的被颠覆者">4.2 IBM：从硬件王者到PC革命的被颠覆者</a></h2>
+<h3 id="421-垂直整合帝国的全盛期"><a class="header" href="#421-垂直整合帝国的全盛期">4.2.1 垂直整合帝国的全盛期</a></h3>
+<p>1970年代的IBM，是科技史上最接近“垄断“的公司。它的业务模式是经典的<strong>垂直整合</strong>——从最底层的芯片到最上层的应用软件，一切自己造。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>产业链层级</th><th>IBM的做法</th><th>外部替代选择</th></tr>
+</thead>
+<tbody>
+<tr><td>芯片</td><td>IBM自己设计和制造</td><td>无——IBM拥有自己的晶圆厂</td></tr>
+<tr><td>硬件系统</td><td>IBM设计整机架构</td><td>无——大型机只有IBM和其他“七个小矮人“</td></tr>
+<tr><td>操作系统</td><td>IBM开发OS/360</td><td>无——每台大型机运行专属操作系统</td></tr>
+<tr><td>数据库/中间件</td><td>IBM的IMS数据库</td><td>无——当时还没有Oracle（1977年成立）</td></tr>
+<tr><td>应用软件</td><td>IBM为客户定制开发</td><td>无——客户没有能力自己开发</td></tr>
+<tr><td>销售与服务</td><td>IBM直销团队+全球服务网络</td><td>无——“没有人因为买了IBM而被开除”</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>“没有人因为买了IBM而被开除”</strong>——这是那个时代企业IT采购的潜规则。选择了IBM，意味着选择了最安全、最稳妥、出了问题也有人兜底的选项。这个“安全溢价“让IBM获得了极高的定价权。</p>
+<p>垂直整合的优势是“掌控一切“，劣势是“成本极高“。IBM臃肿的官僚体系和极高的运营成本，意味着它无法快速应对低端市场的颠覆——而这恰恰是接下来要发生的。</p>
+<h3 id="422-ibm-pc亲手为自己埋下颠覆的种子"><a class="header" href="#422-ibm-pc亲手为自己埋下颠覆的种子">4.2.2 IBM PC：亲手为自己埋下颠覆的种子</a></h3>
+<p>1980年，苹果已经卖出了数十万台Apple II，小型机市场的增长正在蚕食IBM大型机的地盘。IBM决定进入个人电脑市场——但它选择了一条截然不同的路。</p>
+<p>为了快速进入市场，IBM放弃了垂直整合。它从Intel采购CPU（8088处理器），从Microsoft采购操作系统（MS-DOS），把整机组装外包出去。IBM PC于1981年8月12日发布，定价$1,565，第一年卖出超过20万台——远超IBM内部的预期。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>决策</th><th>IBM做对了什么？</th><th>代价是什么？</th></tr>
+</thead>
+<tbody>
+<tr><td>使用Intel 8088 CPU</td><td>获得了当时最先进的16位处理器</td><td>Intel可以把同样的CPU卖给任何想做PC兼容机的公司</td></tr>
+<tr><td>使用Microsoft MS-DOS</td><td>快速获得了可用的操作系统</td><td>Microsoft保留了向其他厂商授权MS-DOS的权利</td></tr>
+<tr><td>公开硬件规格（除BIOS）</td><td>催生了整个“PC兼容机“产业</td><td>IBM失去了对PC硬件生态的控制</td></tr>
+<tr><td>允许第三方开发软件</td><td>快速建立了PC软件生态</td><td>软件不再只属于IBM</td></tr>
+</tbody>
+</table>
+</div>
+<p>IBM PC在商业上是巨大的成功。但在战略上，它亲手解构了垂直整合的帝国——Intel和Microsoft成了PC时代的真正赢家，而IBM自己则在1990年代逐渐退出了个人电脑市场。2005年，IBM将PC业务出售给联想。</p>
+<p><strong>被颠覆者往往不是“看不见未来“，而是“看见了但选择了错误的路径“。</strong> IBM看到了PC的未来，但选择了用“快速上市“替代“垂直整合“——这个选择在短期赚了钱，在长期丢了整个生态系统的主导权。</p>
+<h3 id="423-克里斯滕森颠覆式创新的经典预演"><a class="header" href="#423-克里斯滕森颠覆式创新的经典预演">4.2.3 克里斯滕森“颠覆式创新“的经典预演</a></h3>
+<p>虽然克莱顿·克里斯滕森的《创新者的窘境》是在1997年才出版的，但IBM的故事是书中“颠覆式创新“理论的完美预演。</p>
+<p>大型机是“延续性创新“的典范——越做越强、越做越贵、只为最有钱的客户服务。而小型机和PC是“颠覆式创新“——起初性能很差、只能满足“不那么重要的客户“、被主流厂商嗤之以鼻。</p>
+<p>当IBM还在用贵得离谱的大型机服务财富500强企业时，小型机和PC已经在“不那么重要的“小企业、学校和家庭中找到了自己的根据地。然后，随着摩尔定律的推进，PC的性能快速增长，开始从低端向上侵蚀大型机的市场。当IBM意识到威胁时，它的根基已经被掏空了。</p>
+<p><strong>对AI时代的启示</strong>：今天的大模型厂商是否会犯和IBM同样的错误？当它们专注于越来越大的万亿参数模型、服务于越来越有钱的企业客户时，是否有一批“性能稍差但成本低100倍“的小模型，正在AI时代的“小企业和家庭“中找到自己的阵地？这个问题，我们会在第十一章讨论。</p>
+<h2 id="43-小型机的崛起dec的黄金时代"><a class="header" href="#43-小型机的崛起dec的黄金时代">4.3 小型机的崛起——DEC的黄金时代</a></h2>
+<h3 id="431-让计算下楼"><a class="header" href="#431-让计算下楼">4.3.1 让计算“下楼“</a></h3>
+<p>在IBM大型机时代，计算机住在企业总部大楼顶层的“玻璃房子“里——恒温、恒湿、地板可以掀开放电缆。用户不能直接接触计算机，他们拿着穿孔卡片，到计算机房的窗口提交“作业“，然后几个小时后来取结果。</p>
+<p>DEC（数字设备公司）改变了这一切。</p>
+<p>DEC的创始人肯·奥尔森（Ken Olsen）看到了一个IBM忽略的市场：那些买不起大型机的科学实验室、大学院系、工厂车间——他们也需要计算能力，但他们不需要几百万美元的大型机。</p>
+<p>1965年，DEC发布PDP-8，定价仅$18,000——大约是IBM低端大型机的二十分之一。它被公认为世界上第一台成功的“小型机“（minicomputer）。1970年，DEC发布PDP-11，成为历史上最畅销的16位计算机。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对比维度</th><th>IBM大型机（System/370）</th><th>DEC小型机（PDP-11）</th></tr>
+</thead>
+<tbody>
+<tr><td>价格</td><td>$500,000-$5,000,000</td><td>$10,000-$100,000</td></tr>
+<tr><td>物理位置</td><td>专门的玻璃机房</td><td>可以放在实验室或办公室</td></tr>
+<tr><td>用户交互</td><td>穿孔卡片→批处理</td><td>键盘+终端→交互式编程</td></tr>
+<tr><td>目标客户</td><td>世界500强总部</td><td>大学院系、研究机构、工厂车间</td></tr>
+<tr><td>起到的历史作用</td><td>定义了“计算“</td><td>让计算“下楼“——走出了玻璃房子</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="432-dec的兴与衰"><a class="header" href="#432-dec的兴与衰">4.3.2 DEC的兴与衰</a></h3>
+<p>1977年，DEC的VAX-11/780发布。VAX系列成为1980年代最成功的小型机，DEC的营收在1987年达到140亿美元，成为全球第二大计算机公司（仅次于IBM）。</p>
+<p>但1987年也是DEC的转折点。就在这一年，Sun Microsystems的工作站开始蚕食VAX的低端市场，而PC的性能已经强大到可以做许多原先只有VAX能做的事。</p>
+<p>肯·奥尔森在1977年说过一句著名的话：“There is no reason anyone would want a computer in their home.”（没有任何理由有人会想要一台家用电脑）。当PC革命来临时，DEC没有及时转身——就像IBM没有及时看见小型机一样。</p>
+<p>1998年，DEC被康柏（Compaq）以96亿美元收购。而康柏本身，也在2002年被惠普收购。一代巨头，在两个十年内被两度吞并。</p>
+<p>DEC的兴衰留下的教训是：<strong>上一个周期的成功模式，恰恰是下一个周期的最大障碍。</strong> 当你在一个领域做到最好时，你的一切——你的组织架构、你的成本结构、你的思维模式——都是为了那个领域的成功而优化的。当范式转换到来时，你的“优化“变成了你的“僵化“。</p>
+<h2 id="44-苹果与个人电脑革命"><a class="header" href="#44-苹果与个人电脑革命">4.4 苹果与个人电脑革命</a></h2>
+<h3 id="441-apple-ii车库里的颠覆者"><a class="header" href="#441-apple-ii车库里的颠覆者">4.4.1 Apple II：车库里的颠覆者</a></h3>
+<p>1976年，史蒂夫·乔布斯和史蒂夫·沃兹尼亚克在乔布斯家的车库里组装了第一台Apple I——一块裸露的电路板，没有外壳、没有键盘、没有显示器。售价$666.66，总共卖出了大约200台。</p>
+<p>但接下来的Apple II是历史性的。1977年发布的Apple II是第一台“为普通人设计“的电脑——它有一个漂亮的塑料外壳、内置键盘、彩色图形显示能力，插上电视就能用。定价$1,298（相当于今天约$6,500）。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对比维度</th><th>大型机/小型机</th><th>Apple II</th></tr>
+</thead>
+<tbody>
+<tr><td>目标用户</td><td>企业、机构</td><td>个人、家庭、学校</td></tr>
+<tr><td>使用场景</td><td>批处理、数据管理</td><td>游戏、教育、个人生产力</td></tr>
+<tr><td>购买决策者</td><td>CIO/IT部门</td><td>普通消费者</td></tr>
+<tr><td>价格</td><td>$10,000-$5,000,000</td><td>$1,298起</td></tr>
+<tr><td>渠道</td><td>直销团队</td><td>计算机零售店</td></tr>
+<tr><td>“计算机“的定义</td><td>机构的生产工具</td><td>个人的工具+玩具</td></tr>
+</tbody>
+</table>
+</div>
+<p>Apple II是信息产业史上第一台“现象级“消费电子产品。从1977年到1993年停产，它卖出超过500万台——对于当时还没有“个人电脑市场“这个概念的世界来说，这是一个奇迹。</p>
+<h3 id="442-macintosh图形界面的启蒙"><a class="header" href="#442-macintosh图形界面的启蒙">4.4.2 Macintosh：图形界面的启蒙</a></h3>
+<p>1984年1月22日，第十八届超级碗。苹果播放了一支60秒的广告——一个女运动员冲进灰色的礼堂，用力将铁锤投向屏幕上正在说教的老大哥。屏幕碎裂，字幕浮现：“On January 24th, Apple Computer will introduce Macintosh. And you’ll see why 1984 won’t be like ‘1984’.”</p>
+<p>这支广告花了90万美元制作，只播出了一次。但它被公认为历史上最伟大的广告——“1984“既是乔治·奥威尔的反乌托邦隐喻，也是“IBM统治的时代即将终结“的宣告。</p>
+<p>Macintosh不是第一台有图形界面的电脑——施乐PARC研究中心在1970年代就已经做出了图形界面原型。但Macintosh是第一台把图形界面做成“可以买得到、用得起“的消费产品的电脑。价格$2,495，第一百万台在不到100天内卖完。</p>
+<p>更重要的是，Macintosh验证了一条规律：<strong>硬件的创新（鼠标、图形芯片、高分辨率显示器）是软件创新（图形界面、桌面排版、图像处理软件）的前提。</strong> 没有能够驱动位图显示的硬件，Macintosh的图形界面就只能存在于施乐实验室的演示中。</p>
+<p>这就是“硬件先行“规律的第一次完整验证。</p>
+<h3 id="443-硬件先行软件跟进的确立"><a class="header" href="#443-硬件先行软件跟进的确立">4.4.3 “硬件先行、软件跟进“的确立</a></h3>
+<p>让我们把这个规律提炼清楚：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>硬件先行</th><th>软件跟进</th><th>复合效果</th></tr>
+</thead>
+<tbody>
+<tr><td>1977</td><td>Apple II（硬件：彩色图形、扩展插槽）</td><td>VisiCalc（1979：第一张电子表格）</td><td>商业用户发现“Apple II+VisiCalc“比会计+计算器好用100倍</td></tr>
+<tr><td>1984</td><td>Macintosh（硬件：鼠标、高分辨率位图显示、图形处理器）</td><td>PageMaker（1985：桌面排版软件）、Photoshop（1990）</td><td>传统排版行业被彻底颠覆——一个人+一台Mac+PageMaker顶过去一个排版车间</td></tr>
+<tr><td>1981</td><td>IBM PC（开放架构、Intel 8088）</td><td>Lotus 1-2-3（1983）、Microsoft Word（1983）</td><td>IBM PC从“能玩游戏的玩具“变成“能做正事的工具“</td></tr>
+</tbody>
+</table>
+</div>
+<p>注意时滞：硬件先行大约1-3年，然后关键软件出现，然后“硬件+软件“的组合才真正创造了价值。这个1-3年的时滞，是周期节奏的关键参数——我们将在第九章中作为五条铁律之一进行系统论述。</p>
+<h2 id="45-1970s-80s的金融生态"><a class="header" href="#45-1970s-80s的金融生态">4.5 1970s-80s的金融生态</a></h2>
+<h3 id="451-计算机产业早期的非华尔街融资模式"><a class="header" href="#451-计算机产业早期的非华尔街融资模式">4.5.1 计算机产业早期的“非华尔街“融资模式</a></h3>
+<p>1970年代的计算机产业，和今天的科技创业生态完全不同。那时候没有“风险投资支持的创业公司“这个模式——至少不是主流。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>融资来源</th><th>代表企业</th><th>特点</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>政府订单</strong></td><td>IBM、Sperry Rand、Burroughs</td><td>国防和航天项目是计算机产业最早也是最大的客户；帮助企业建立技术能力</td></tr>
+<tr><td><strong>大型企业自研</strong></td><td>IBM、AT&amp;T（贝尔实验室）、Xerox PARC</td><td>内部研发，无需外部融资；AT&amp;T一家公司的研发预算超过全美所有VC基金之和</td></tr>
+<tr><td><strong>银行贷款</strong></td><td>DEC、Data General</td><td>早期小型机公司依赖银行信贷和利润再投资；DEC在1966年IPO前几乎没有外部股权融资</td></tr>
+<tr><td><strong>早期风险投资</strong></td><td>Intel（1968）、Apple（1976）</td><td>Intel由阿瑟·洛克（Arthur Rock）投资$250万——当时创下VC单笔投资额纪录；Apple由迈克·马库拉投资$25万</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>关键对比</strong>：1970年代全美风险投资基金的总规模不到30亿美元。2023年，仅OpenAI一家公司就融资超过100亿美元。这个数量级的差异，说明了信息产业金融生态的巨大变迁——我们将在第八章系统讨论这种变迁的周期含义。</p>
+<h3 id="452-1971年纳斯达克创立科技上市通道的打开"><a class="header" href="#452-1971年纳斯达克创立科技上市通道的打开">4.5.2 1971年：纳斯达克创立——科技上市通道的打开</a></h3>
+<p>在纳斯达克创立之前，美国只有纽约证券交易所（NYSE）和美国证券交易所（AMEX）两个主要股票市场。两家都对企业上市有严格的要求——必须有足够长的盈利记录、足够大的市值、足够多的公众股东。</p>
+<p>对于早期的科技公司来说，这些门槛高不可攀。一家刚成立几年、还在烧钱搞研发、营收可能为零的半导体公司，根本不可能在NYSE上市。</p>
+<p>1971年2月8日，纳斯达克（NASDAQ——全国证券交易商协会自动报价系统）开始运行。它是世界上第一个电子化股票市场——没有交易大厅，所有的报价和交易都通过计算机网络完成。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对比维度</th><th>NYSE</th><th>NASDAQ（1971年）</th></tr>
+</thead>
+<tbody>
+<tr><td>上市门槛</td><td>盈利记录+市值+公众股东数</td><td>显著较低</td></tr>
+<tr><td>交易方式</td><td>交易大厅+场内经纪商</td><td>全电子化自动报价</td></tr>
+<tr><td>科技股友好度</td><td>低——“盈利不稳定“的科技公司很难满足要求</td><td>高——专门为成长型公司设计</td></tr>
+<tr><td>历史意义</td><td>传统蓝筹股的市场</td><td>科技企业的“上市主场“</td></tr>
+</tbody>
+</table>
+</div>
+<p>纳斯达克的意义怎么强调都不为过。它为科技企业打开了一条从“私募投资“到“公开市场“的退出通道——这对风险投资行业的发展至关重要。没有纳斯达克，VC就没有退出渠道；没有退出渠道，VC就不会大举投资早期科技公司；没有VC的早期投资，就没有后来的苹果、Intel、Microsoft。这是一个连锁反应。</p>
+<h3 id="453-1980年苹果ipo第一声号角"><a class="header" href="#453-1980年苹果ipo第一声号角">4.5.3 1980年苹果IPO：第一声号角</a></h3>
+<p>1980年12月12日，苹果公司以每股$22的价格在纳斯达克上市。IPO发行了460万股，募资约$1.01亿。这是自1956年福特汽车上市以来规模最大的一次IPO。</p>
+<p>苹果IPO创造了一系列纪录：</p>
+<ul>
+<li>上市当日市值达到$17.8亿</li>
+<li>25岁的乔布斯身家$2.56亿（相当于今天约$10亿）</li>
+<li>约40名苹果员工一夜之间成为百万富翁</li>
+<li>早期投资者回报惊人：迈克·马库拉1977年投资的$25万，IPO时价值$2.03亿——3年，8,100倍</li>
+</ul>
+<p>更重要的是，苹果IPO证明了“风险投资支持科技创业→纳斯达克上市→早期投资者退出并获得回报“这条路径是可行的。它是信息产业“VC→IPO“这个金融周期的原点。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>代表性科技IPO</th><th>募资金额</th><th>周期信号意义</th></tr>
+</thead>
+<tbody>
+<tr><td>1980</td><td>苹果</td><td>$1.01亿</td><td>个人电脑产业获得资本市场的认可</td></tr>
+<tr><td>1986</td><td>Microsoft</td><td>$6100万</td><td>软件公司证明了资本市场的价值</td></tr>
+<tr><td>1986</td><td>Oracle</td><td>$3150万</td><td>数据库软件成为独立赛道</td></tr>
+<tr><td>1990</td><td>Cisco</td><td>$6900万</td><td>网络设备成为信息产业的基础设施</td></tr>
+<tr><td>1995</td><td>Netscape</td><td>$1.4亿</td><td>互联网时代的IPO里程碑</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：各公司招股说明书、纳斯达克历史数据。</p>
+<p>从苹果到网景，这十五年间信息产业的金融轨道越铺越宽。但真正的“洪水“要到1995年之后才来临——那就是第五章要讲的互联网泡沫。</p>
+<h2 id="46-本章小结周期第一幕的启示"><a class="header" href="#46-本章小结周期第一幕的启示">4.6 本章小结：周期第一幕的启示</a></h2>
+<h3 id="461-大型机小型机pc硬件先行的三次验证"><a class="header" href="#461-大型机小型机pc硬件先行的三次验证">4.6.1 大型机→小型机→PC：硬件先行的三次验证</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>计算范式</th><th>硬件先行</th><th>影响扩散</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>大型机</strong></td><td>IBM System/360定义了“兼容“的概念；晶体管和集成电路的突破使大型机从军事走向商业</td><td>企业数据处理、银行、航空、保险等行业信息化</td></tr>
+<tr><td><strong>小型机</strong></td><td>DEC PDP-8/PDP-11用十分之一的价格、百分之一的体积提供了“够用“的计算能力</td><td>大学、实验室、工厂车间第一次可以拥有自己的计算机</td></tr>
+<tr><td><strong>个人电脑</strong></td><td>Apple II/Macintosh和IBM PC把计算带入家庭和办公室</td><td>电子表格、文字处理、桌面排版——个人生产力的第一次飞跃</td></tr>
+</tbody>
+</table>
+</div>
+<p>三次范式转换的背后，是同一条规律的反复上演：<strong>新的硬件范式首先诞生→创造新的低成本/小体积供应的计算能力→软件和应用在新的硬件基础上爆发→催生全新的产业生态。</strong></p>
+<h3 id="462-对ai时代的核心启示"><a class="header" href="#462-对ai时代的核心启示">4.6.2 对AI时代的核心启示</a></h3>
+<p>为什么我们今天如此关注英伟达的GPU出货量、台积电的3nm良率、HBM的产能分配？</p>
+<p>因为历史告诉我们：<strong>如果你想预测AI时代的应用会在哪里爆发，先去半导体供应链的订单簿里找线索。</strong> 硬件的数据不会说谎——政府可以发表乐观的白皮书，VC可以做漂亮的PPT，但晶圆厂的订单是拿真金白银下的。</p>
+<p>计算的十年（1970s-1980s）告诉我们：当一种新的硬件范式开始大规模出货时，软件革命就在路上了。只是时间问题——通常1-3年。</p>
+<hr>
+<h3 id="本章关键要点"><a class="header" href="#本章关键要点">本章关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>硬件的“寒武纪大爆发“</td><td>1947年晶体管→1958年集成电路→1971年微处理器→1981年PC；每一步都在指数级降低计算成本</td></tr>
+<tr><td>IBM的垂直整合与自我颠覆</td><td>IBM PC选择了“开放架构“，虽然赢得了PC市场，但将生态主导权拱手让给了Intel和Microsoft</td></tr>
+<tr><td>DEC的兴衰</td><td>“上一个周期的成功是下一个周期的障碍”——小型机之王没能看到PC的革命</td></tr>
+<tr><td>“硬件先行“规律的确立</td><td>Apple II→VisiCalc, Macintosh→PageMaker——硬件创新在前，软件爆发在后，时滞约1-3年</td></tr>
+<tr><td>纳斯达克与苹果IPO</td><td>1971年纳斯达克创立+1980年苹果IPO，奠定了“VC投资→IPO退出“的科技金融闭环基础</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>IBM (1964). <em>System/360 Announcement</em>. IBM Archives.</li>
+<li>Chandler, A. D. (2001). <em>Inventing the Electronic Century</em>. Harvard University Press.</li>
+<li>Isaacson, W. (2014). <em>The Innovators</em>. Simon &amp; Schuster.（中文版：《创新者》，中信出版社）</li>
+<li>Christensen, C. M. (1997). <em>The Innovator’s Dilemma</em>. Harvard Business Review Press.（中文版：《创新者的窘境》）</li>
+<li>纳斯达克历史数据: https://www.nasdaq.com</li>
+<li>计算机历史博物馆: https://computerhistory.org</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-1/chapter-3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-1/chapter-3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

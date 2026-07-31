@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第十二章 半导体周期的AI时刻——三重共振与结构性分化 - 周期之眼：信息产业与AI的演进逻辑与投资框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="以周期为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波与佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-b35aae95.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cdc60685.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之眼：信息产业与AI的演进逻辑与投资框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第十二章-半导体周期的ai时刻三重共振与结构性分化"><a class="header" href="#第十二章-半导体周期的ai时刻三重共振与结构性分化">第十二章 半导体周期的AI时刻——三重共振与结构性分化</a></h1>
+<blockquote>
+<p><strong>共振还是背离：AI半导体的双重面孔</strong>
+<em>一端是三重周期的共振上行——GPU、HBM、光模块全面短缺。另一端是上游过热与中下游失血的极端分化。这轮半导体周期会如何演化？</em></p>
+</blockquote>
+<h2 id="121-三重共振的条件与判断"><a class="header" href="#121-三重共振的条件与判断">12.1 三重共振的条件与判断</a></h2>
+<h3 id="1211-当前三重周期的位置"><a class="header" href="#1211-当前三重周期的位置">12.1.1 当前三重周期的位置</a></h3>
+<p>在第三章中，我们建立了半导体周期的三重嵌套框架——需求周期（8-10年）、产能周期（4-6年）、库存周期（3-5个季度）。现在，将这套框架应用于2025-2026年的AI半导体产业（截至2026年中）：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期类型</th><th>当前所处阶段</th><th>方向</th><th>核心依据</th><th>对整体产业的影响</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>需求周期</strong></td><td>上升期前端</td><td>↑</td><td>AI训练和推理需求还在指数增长；GPU出货量同比+100%以上；大模型的“硅含量“阶跃式增长（H100 80G→B200 192GB HBM3E）</td><td>强劲上行——需求周期的上升期通常持续5-8年，我们可能只在前2-3年</td></tr>
+<tr><td><strong>产能周期</strong></td><td>上升期中段</td><td>↑</td><td>台积电CoWoS产能2024年翻倍，2025年再翻倍；SK海力士HBM产能2024年翻倍，2025年预计+100%+；英伟达已大幅增加对台积电的订单</td><td>加速扩张——产能正在追赶需求，但短期内（至2026年）仍供不应求</td></tr>
+<tr><td><strong>库存周期</strong></td><td>主动补库</td><td>↑</td><td>2023年芯片行业经历了一轮“主动去库“（全球半导体出货额同比-8.2%）；2024年库存恢复正常→“主动补库“启动；HBM等AI专用品类几乎没有库存——直接发货</td><td>库存对AI半导体是“助力“而非“阻力“——传统芯片的库存波动大，但AI芯片几乎没有库存积压</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：WSTS全球半导体出货额 (https://www.wsts.org)；SEMI晶圆厂产能与设备支出数据 (https://www.semi.org)；各公司财报与法说会资料。</p>
+<h3 id="1212-三重共振的概率评估"><a class="header" href="#1212-三重共振的概率评估">12.1.2 三重共振的概率评估</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>共振类型</th><th>当前状态</th><th>对AI半导体的含义</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>需求↑ + 产能↑ + 库存↑（超级牛市）</strong></td><td><strong>正在进行中</strong></td><td>三重周期方向一致向上——AI半导体正处于罕见的“共振上行“阶段。历史上，这种共振在互联网泡沫（1998-2000）和全球芯片短缺（2020-2021）中出现过——每次都带来了剧烈的价格上涨和全行业的繁荣</td></tr>
+<tr><td><strong>共振的可持续性</strong></td><td>需求周期的支撑最为坚实——AI应用仍处于S曲线陡峭段（第十一章）；产能周期的扩张在2026-2027年可能达到峰值；库存周期可能在2026年下半年面临“从主动补库切换到被动补库“的风险——但这取决于终端AI应用的需求能否持续超预期</td><td>三重共振全面持续的窗口可能在2026年底-2027年初开始收窄</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>核心判断</strong>：截至2026年中，AI半导体的三重共振已从2024-2025年H1的“超级牛市“阶段过渡到“增速放缓但方向仍然向上“的阶段——需求周期仍然向上（AI应用快速渗透），但产能周期正在加速释放（CoWoS/HBM产能大幅扩张），库存周期信号出现分化（GPU交期已从3-6个月缩短至1-2个月，但HBM仍然紧张）。三重共振全面持续的“甜蜜期“可能正在收窄——关键的观察窗口是2026年下半年至2027年初。</p>
+<h2 id="122-供给缺口全景扫描"><a class="header" href="#122-供给缺口全景扫描">12.2 供给缺口全景扫描</a></h2>
+<h3 id="1221-各环节的供需紧张程度"><a class="header" href="#1221-各环节的供需紧张程度">12.2.1 各环节的供需紧张程度</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>半导体环节</th><th>供给紧张程度（2025年中）</th><th>缺口量级估算</th><th>预计缓解时间</th><th>瓶颈性质</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>GPU（英伟达B200/H200）</strong></td><td>高度紧张</td><td>B200供不应求——交付周期从下单到交付约3-6个月</td><td>2026年H2——Blackwell全面量产后可能缓解</td><td>先进制程+CoWoS双重约束</td></tr>
+<tr><td><strong>HBM3E</strong></td><td>极度紧张</td><td>SK海力士2025年HBM产能已被全部预订；三星HBM3E良率爬坡慢于预期——年度缺口约10-15%</td><td>2026年末——SK海力士+三星+美光的合计HBM产能预计翻倍</td><td>3D堆叠良率+供应商集中（只有三家）</td></tr>
+<tr><td><strong>CoWoS先进封装</strong></td><td>极度紧张——是GPU出货的“物理瓶颈“</td><td>2024年台积电CoWoS产能约20万片/月（等效8英寸），2025年扩至35万片+——但仍不足</td><td>2026年末——台积电计划将CoWoS产能再翻倍至70万片+/月</td><td>设备可得性——CoWoS关键设备（如晶圆键合机）的交货周期长达12-18个月</td></tr>
+<tr><td><strong>光模块（800G/1.6T）</strong></td><td>紧张</td><td>800G光模块2024年需求量约500万只，2025年预计800万只+——供给勉强跟上</td><td>2026年——1.6T光模块产能爬坡需要时间</td><td>高速光芯片（EML、硅光）供给不足</td></tr>
+<tr><td><strong>AI服务器电源/散热</strong></td><td>紧张</td><td>液冷散热系统的产能扩张落后于GPU出货——部分数据中心因电力/散热不足而无法安装更多GPU</td><td>2026-2027——液冷供应链正在扩产</td><td>传统数据中心电力基础设施的升级需要时间</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：台积电法说会资料 (https://investor.tsmc.com)；SK海力士财报 (https://www.skhynix.com)；三星电子财报 (https://www.samsung.com/global/ir/)；英伟达财报 (https://investor.nvidia.com)；LightCounting光模块市场报告 (https://www.lightcounting.com)；行业调研综合。</p>
+<h3 id="1222-cowosai时代的物理瓶颈"><a class="header" href="#1222-cowosai时代的物理瓶颈">12.2.2 CoWoS：AI时代的“物理瓶颈“</a></h3>
+<p>在所有供给缺口中，台积电的<strong>CoWoS（Chip-on-Wafer-on-Substrate）先进封装</strong>是最关键的瓶颈。它决定了下游能拿到多少颗GPU——无论英伟达设计出多强的芯片，如果台积电封装不出来，就只是一张“设计图纸“。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>台积电CoWoS产能（等效8英寸晶圆/月，估算）</th><th>对应的GPU出货量（大致）</th><th>供需状况</th></tr>
+</thead>
+<tbody>
+<tr><td>2023年中</td><td>~8万片</td><td>—</td><td>严重不足——英伟达H100交付周期长达8-12个月</td></tr>
+<tr><td>2024年中</td><td>~16万片</td><td>—</td><td>紧张但有所缓解——交付周期降至3-6个月</td></tr>
+<tr><td>2024年底</td><td>~20万片</td><td>等效约300-400万颗GPU/年</td><td>仍然紧张——但“最严重的短缺“可能已过去</td></tr>
+<tr><td>2025年中（计划）</td><td>~35万片</td><td>—</td><td>产能大幅提升</td></tr>
+<tr><td>2026年底（计划）</td><td>~70万片（目标）</td><td>等效约600-800万颗GPU/年</td><td>如果产能目标达成，“供不应求“可能转变为“供过于求”</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：台积电法说会、分析师预估。等效GPU出货量为作者基于单颗GPU所需CoWoS面积的粗略估算，仅供参考。</p>
+<p><strong>CoWoS产能释放的“临界点“</strong>：当CoWoS产能从“瓶颈“变成“充足“时，GPU的稀缺性溢价将消失——英伟达的毛利率可能会从75%+回归到更正常的水平（60-65%）。这个“临界点“可能出现在2026年末到2027年之间——与第十一章推演的“狂热期接近顶部“的时间窗口高度吻合。</p>
+<h2 id="123-上游通胀英伟达的印钞机模式"><a class="header" href="#123-上游通胀英伟达的印钞机模式">12.3 上游通胀：英伟达的“印钞机模式“</a></h2>
+<h3 id="1231-财务数据的震撼"><a class="header" href="#1231-财务数据的震撼">12.3.1 财务数据的震撼</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>财务指标</th><th>FY2024（截至2024.1）</th><th>FY2025</th><th>FY2026（截至2026.1）</th><th>变化</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>数据中心营收</strong></td><td>$475亿</td><td>~$1300亿</td><td>~$1800亿</td><td>三年增长~12倍</td></tr>
+<tr><td><strong>数据中心营收同比增速</strong></td><td>+217%</td><td>~+150%</td><td>~+40%</td><td>增速从爆发期回归高增长</td></tr>
+<tr><td><strong>公司整体毛利率</strong></td><td>73%</td><td>75%+</td><td>~73%</td><td>从峰值温和回落</td></tr>
+<tr><td><strong>公司整体营业利润率</strong></td><td>54%</td><td>55%+</td><td>~53%</td><td>维持高位</td></tr>
+<tr><td><strong>自由现金流</strong></td><td>$270亿</td><td>~$600亿</td><td>~$750亿</td><td>持续增长</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：英伟达FY2024-FY2026年报 (https://investor.nvidia.com)。</p>
+<p>毛利率在FY2025达到峰值~76%后，在FY2026温和回落至~73%——这是否标志着第十二章讨论的“毛利率拐点“的开始？英伟达称回落的主要原因包括Blackwell平台的初期量产成本较高、以及产品组合中推理卡的占比提升（推理卡毛利率略低于训练卡）。但73%仍然是一个极高的水平——在任何正常竞争的市场中，这个毛利率都不可持续。</p>
+<h3 id="1232-英伟达高利润率的可持续性"><a class="header" href="#1232-英伟达高利润率的可持续性">12.3.2 英伟达高利润率的可持续性</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>侵蚀力量</th><th>触发时间</th><th>对英伟达毛利率的影响</th><th>概率评估</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>AMD/Intel在推理侧的竞争</strong></td><td>2025-2026年，AMD MI300X/MI400系列在推理场景中与H100/B200的差距在缩小</td><td>有限——AMD的软件生态（ROCm）与CUDA差距巨大，竞争主要限于“对CUDA依赖较弱“的推理场景</td><td>中</td></tr>
+<tr><td><strong>大客户自研ASIC</strong></td><td>Google TPU已迭代至v6、Amazon Trainium/Inferentia已到第2代、Microsoft Maia在研发中</td><td>中等——大客户自研芯片主要用于“内部推理负载“（搜索、广告排名、推荐系统），不会替代英伟达在“训练“和“对外云服务“中的位置</td><td>长期（3-5年）影响较大</td></tr>
+<tr><td><strong>CoWoS产能释放→GPU供给充裕→稀缺性溢价消退</strong></td><td>2026年末-2027年</td><td>高——当GPU不再“一卡难求“时，英伟达的定价权将从“卖方市场“回归“正常双边谈判“</td><td>高——这是毛利率下滑最可能的第一驱动</td></tr>
+<tr><td><strong>开源模型+更高效训练方法</strong></td><td>DeepSeek-V3/R1证明了“用更少的算力也能训出接近顶级的模型“</td><td>中——对“训练侧“的GPU需求可能有冲击，但“推理侧“的需求可能因此进一步增长（杰文斯悖论）</td><td>中</td></tr>
+<tr><td><strong>中国经济性替代（华为昇腾等）蚕食中国市场</strong></td><td>受制于出口管制，英伟达只能向中国出售“阉割版“H20（性能约为H100的20-30%）→华为昇腾在中国市场份额快速增长</td><td>低——中国市场本已受出口管制影响，“阉割版“GPU的销售占比已经较低</td><td>低（边际影响小，因为中国市场已经不是英伟达的主要增长来源）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>综合判断</strong>：英伟达的75%+毛利率大概率不是一个可以长期维持的水平。随着CoWoS产能释放和竞争加剧，毛利率可能在2027-2028年从75%+下滑至60-65%——这仍是一个非常优秀的水平（相当于ASML或台积电），但不再是“前无古人“的印钞机模式。毛利率的下滑将是一个重要的周期信号——它标志着AI半导体从“狂热期“进入“成熟期“甚至“产能过剩期“的开始。</p>
+<h2 id="124-中下游失血增收不增利的困境"><a class="header" href="#124-中下游失血增收不增利的困境">12.4 中下游失血：增收不增利的困境</a></h2>
+<h3 id="1241-收入涨得很快亏损涨得更快"><a class="header" href="#1241-收入涨得很快亏损涨得更快">12.4.1 “收入涨得很快，亏损涨得更快”</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>中下游AI公司</th><th>核心业务</th><th>年化营收（2026年估算）</th><th>盈利状况</th><th>核心困境</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>OpenAI</strong></td><td>API+ChatGPT订阅</td><td>~$100亿+（2026年化）</td><td>亏损大幅收窄——推理成本下降+付费用户快速增长</td><td>“收入增长快于成本增长”——UE模型正在改善</td></tr>
+<tr><td><strong>Anthropic</strong></td><td>API+Claude订阅</td><td>~$30亿（2026年化估算）</td><td>仍亏损</td><td>与OpenAI面临类似挑战，规模差距在缩小</td></tr>
+<tr><td><strong>Perplexity</strong></td><td>AI搜索</td><td>~$1.5亿（2026年化估算）</td><td>亏损——AI搜索每次查询成本仍高</td><td>广告模式探索中——能否复制Google的“免费+广告“路径？</td></tr>
+<tr><td><strong>GitHub Copilot</strong></td><td>AI编程</td><td>~$15亿+（2026年化，微软旗下）</td><td>接近盈亏平衡</td><td>推理成本下降速度超预期——Copilot从“战略性亏损“走向“盈亏平衡“</td></tr>
+<tr><td><strong>各AI Agent公司</strong></td><td>自主任务执行</td><td>仍在极早期（多数&lt;$5000万年化）</td><td>深度亏损</td><td>可靠性是最大瓶颈——“能完成一个任务”≠“能可靠完成100个任务”</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：各公司公开披露信息、行业调研、分析师综合估算。</p>
+<h3 id="1242-中下游失血的结构性成因"><a class="header" href="#1242-中下游失血的结构性成因">12.4.2 中下游失血的结构性成因</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>成因</th><th>分析</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>物理“漏出“——每一次推理都有成本</strong></td><td>SaaS的边际成本趋近于零——开发完软件后，多服务一个用户的增量成本是可忽略的。但MaaS（模型即服务）不同——每多一次API调用，GPU就要多运行一次浮点运算。这是物理限制，不是商业模式缺陷。只要推理成本没有下降到足够低的水平，中下游的毛利率就不会改善</td></tr>
+<tr><td><strong>竞争格局——中下游极度分散</strong></td><td>上游的集中度极高——英伟达（GPU 90%+）、SK海力士（HBM 50%+）、台积电（先进制程90%+）。中下游极度分散——几十家大模型公司、成百上千家AI应用公司。上游的“卖方定价权“ vs 中下游的“买方竞争“——结果是上游的赚的每一分钱，都是从几万家中下游公司身上“征收“的</td></tr>
+<tr><td><strong>价值捕获的“归因难题“</strong></td><td>上游的GPU和HBM已经证明了它们是不可或缺的——没有GPU，AI就不存在。但中下游的“价值“还有待证明——模型的性能优势是否可持续？AI应用的用户粘性是否足够强？这些问题的答案尚未明确。不确定性→对估值的压抑→融资成本更高→进一步挤压利润</td></tr>
+<tr><td><strong>“烧钱换增长“的历史重演</strong></td><td>OpenAI和Anthropic当前的行为——大量融资、不计成本地训练更大的模型、以低价甚至亏损的方式提供API服务——与1999年互联网公司“烧钱换用户“的模式有着结构上的相似性。如果这个类比对的话，那么“中下游失血“不是一个“bug“——它是一个“feature“——是“狂热期“的典型特征（第八章）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>结论</strong>：中下游的“失血“在短期内（2025-2027年）不会改善——因为推理成本虽然在大幅下降，但“模型升级→训练成本指数增长“的魔咒仍在。只有当推理成本下降到某一个临界点——使得即便最贵的模型训练成本也可以通过足够大规模的API调用量来摊销——中下游的公司才能从“失血“变成“盈利“。这个临界点何时到来？可能在2027-2029年——与第十一章推演的“狂热期末尾-转折点“时间窗口高度吻合。</p>
+<h2 id="125-结构性分化的成因演化与化解"><a class="header" href="#125-结构性分化的成因演化与化解">12.5 结构性分化的成因、演化与化解</a></h2>
+<h3 id="1251-上游集中-vs-中下游分散数据与历史类比"><a class="header" href="#1251-上游集中-vs-中下游分散数据与历史类比">12.5.1 上游集中 vs 中下游分散：数据与历史类比</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>产业链层级</th><th>集中度（CR1/CR3）</th><th>定价权</th><th>历史类比</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>上游：AI GPU</strong></td><td>CR1（英伟达）&gt;90%</td><td>极强——毛利率75%+</td><td>思科2000年（路由器市场份额~70%，毛利率65%+）</td></tr>
+<tr><td><strong>上游：HBM</strong></td><td>CR3（SK海力士+三星+美光）~95%</td><td>极强——SK海力士HBM产能预订至2026年</td><td>三星/海力士/美光在DRAM超级周期（2017-2018）</td></tr>
+<tr><td><strong>上游：先进制程</strong></td><td>CR1（台积电）在5nm以下~90%</td><td>极强——3nm报价$2万+/片</td><td>—</td></tr>
+<tr><td><strong>中游：大模型</strong></td><td>CR6（OpenAI+Google+Anthropic+Meta+DeepSeek+xAI）集中度在提升，但仍然分散</td><td>弱——用户可以用Claude替代GPT，可以用DeepSeek替代Llama</td><td>1999年搜索引擎行业——几十家搜索公司竞争，最终只剩Google一家</td></tr>
+<tr><td><strong>下游：AI应用</strong></td><td>极度分散——数千家公司</td><td>极弱——除非拥有独特的行业数据和用户粘性</td><td>1999年——成百上千个“.com“网站，没有一家有定价权</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1252-从思科2000到英伟达2026历史在押韵吗"><a class="header" href="#1252-从思科2000到英伟达2026历史在押韵吗">12.5.2 从思科2000到英伟达2026：历史在押韵吗？</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对比维度</th><th>思科（1998-2000）</th><th>英伟达（2023-2026）</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>“瓶颈“地位</strong></td><td>互联网的流量全部经过思科的路由器→没有思科，互联网就无法扩大规模</td><td>AI的算力全部依赖英伟达的GPU→没有英伟达，大模型就无法训练和推理</td></tr>
+<tr><td><strong>毛利率</strong></td><td>65-70%</td><td>73%（FY2026）——从FY2025峰值76%温和回落</td></tr>
+<tr><td><strong>营收增速</strong></td><td>同比+50-60%（1999-2000年）</td><td>数据中心营收同比+40%（FY2026）——从FY2025的+150%大幅减速</td></tr>
+<tr><td><strong>市值峰值</strong></td><td>~$5500亿（2000年3月）</td><td>~$3.5万亿（2025年，此后在$2.5-3.5万亿区间波动）</td></tr>
+<tr><td><strong>客户集中度</strong></td><td>分散——全球数千家电信公司和互联网公司</td><td>高度集中——前四大客户（微软/Amazon/Google/Meta）占英伟达数据中心营收的40%+</td></tr>
+<tr><td><strong>泡沫破裂后</strong></td><td>思科市值从$5500亿跌到$1000亿以下（跌80%+），但思科没有消失</td><td>FY2026增速已从+150%放缓至+40%，毛利率从76%回落至73%——如果这是“软着陆“而不是“暴跌“，那将是历史上极少见的“泡沫温和出清“</td></tr>
+<tr><td><strong>“过剩后“发生了什么？</strong></td><td>思科的路由器大量过剩→二手市场上路由器价格暴跌→新一代互联网公司（YouTube/Facebook等）受益于极低的硬件成本</td><td>如果英伟达的GPU大量过剩→二手GPU价格暴跌→AI推理成本进一步崩溃性下降→AI应用爆发？</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>关键差异</strong>：思科在2000年面对的是互联网公司已经开始了大规模破产——客户对路由器的需求在泡沫破裂后急剧萎缩。英伟达在2025-2026年面对的是云厂商（微软/Amazon/Google/Meta）——这些客户拥有$千亿级的现金流，即便AI泡沫破裂，它们的CapEx也不会一夜之间归零。英伟达的“下跌“可能不是思科式的暴跌（-80%），而更可能是“增速放缓+毛利率温和回归+估值倍数压缩“的“软着陆“。</p>
+<p>但另一个关键差异是<strong>客户集中度</strong>——思科的客户遍布全球数千家独立公司，单一客户的破产不会对思科造成系统性的冲击。英伟达的数据中心营收高度依赖五六家大型云厂商和AI公司——只要其中一到两家大幅削减订单，英伟达的营收和毛利率将面临急剧的压力。</p>
+<h3 id="1253-化解路径三条可能的路"><a class="header" href="#1253-化解路径三条可能的路">12.5.3 化解路径：三条可能的路</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>化解路径</th><th>逻辑</th><th>概率</th><th>对投资者的影响</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>路线A：软着陆——供给释放→成本下降→应用爆发</strong></td><td>CoWoS/HBM产能释放→GPU供给充裕→推理成本大幅下降→AI应用UE模型跑正→应用爆发→推理算力需求（杰文斯悖论）远超训练算力需求→全产业链从“零和“走向“正和“</td><td>中高（30-40%估计）</td><td>AI半导体产业链在2027-2030年经历一个“增速放缓但不下滑“的温和周期——上游毛利率从75%→60%，但下游应用的投资回报率大幅改善</td></tr>
+<tr><td><strong>路线B：硬着陆——产能释放+需求增速放缓→产能过剩→价格暴跌→产业链大洗牌</strong></td><td>2027年产能集中释放时，AI应用收入增速大幅低于预期→GPU从“稀缺品“变为“过剩品“→英伟达毛利率从75%急降至50%以下→整个AI半导体产业链进入类似2019年存储芯片暴跌的周期</td><td>中低（20-30%估计）</td><td>短期（2027-2029年）是灾难——AI半导体投资大面积亏损；长期（2029+年）是机遇——“建设过剩→成本下降→应用爆发“的循环再次启动（铁律二）</td></tr>
+<tr><td><strong>路线C：新技术路线颠覆GPU</strong></td><td>一种全新的AI芯片架构（如光子计算、存内计算、神经形态芯片）或算法突破（如不需要Transformer的新型架构、极高效的小模型），使得“对GPU数量的需求“在根本上被改变</td><td>极低（&lt;5%估计，在5-10年时间段内）</td><td>长期风险——目前在商业上没有任何一项替代技术已经证明了可以大规模替代GPU</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>当前概率最大的路径</strong>：路线A——软着陆。核心逻辑：推理算力需求（杰文斯悖论）的爆发力远超市场当前的估计（第十章10.5.3节）。当推理成本从“GPT-4 level“（$15/百万Token输出）继续下降100倍到“DeepSeek-V3 level“（$0.15/百万Token输出）时，AI应用的使用场景会以数量级的方式增长——“便宜到可以替代所有文字工作”→需求弹性驱动下，总算力需求不降反增。</p>
+<h2 id="126-ai半导体周期的前瞻推演"><a class="header" href="#126-ai半导体周期的前瞻推演">12.6 AI半导体周期的前瞻推演</a></h2>
+<h3 id="1261-2025-2030年ai半导体周期路线图"><a class="header" href="#1261-2025-2030年ai半导体周期路线图">12.6.1 2025-2030年AI半导体周期路线图</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>需求周期</th><th>产能周期</th><th>库存周期</th><th>综合判断</th><th>关键观察指标</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>2025年</strong></td><td>↑↑ AI训练和推理需求均在高速增长</td><td>↑↑ 产能大幅扩张（CoWoS、HBM、GPU）但仍落后于需求</td><td>↑ 主动补库——AI芯片几乎没有库存积压</td><td><strong>三重共振上行——AI半导体“超级牛市“持续</strong></td><td>英伟达毛利率、CoWoS产能利用率、HBM价格</td></tr>
+<tr><td><strong>2026年</strong></td><td>↑ 需求增速可能开始放缓（“二阶导“见顶）</td><td>↑↑ 产能继续大幅扩张，释放节奏加快</td><td>→ 从“主动补库“向“被动补库“过渡——需求增速放缓时最先出现</td><td><strong>三重共振的力量开始减弱——“甜蜜期“的尾声</strong></td><td>GPU交付周期（Lead Time）是否开始缩短？云厂商CapEx增速是否开始放缓？</td></tr>
+<tr><td><strong>2027年</strong></td><td>→ 需求增速进一步放缓——取决于AI应用收入增速能否接力</td><td>↑↑ CoWoS产能可能达到70万片/月——“产能瓶颈解除”</td><td>↓ 如果AI应用收入不达预期→“被动补库“转为“主动去库”</td><td><strong>三重共振可能解体——方向分化出现</strong></td><td>AI应用UE模型是否在这段时间验证成立？第一个AI“标志性IPO“是否出现？</td></tr>
+<tr><td><strong>2028-2029年</strong></td><td>取决于AI应用收入的验证 → 可能继续增长（路线A）或下滑（路线B）</td><td>→ 产能增长可能开始放缓——如果需求不及预期，部分扩产计划被推迟</td><td>↓ 如果是路线B→“主动去库“加剧→GPU和HBM价格大跌</td><td><strong>路线A（软着陆）或路线B（硬着陆）将在这段时间明朗</strong></td><td>—</td></tr>
+<tr><td><strong>2030+年</strong></td><td>无论A或B——AI最终将成为“新常态“——如同互联网在2005年后变成了“日用基础设施“</td><td>—</td><td>—</td><td><strong>黄金时代（A路线）或“废墟上的重建“（B路线后）</strong></td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1262-产能纪律这一次会不同吗"><a class="header" href="#1262-产能纪律这一次会不同吗">12.6.2 “产能纪律”——这一次会不同吗？</a></h3>
+<p>每一次半导体周期的“产能过剩“悲剧（第三章3.3节），都源于同一个错误：<strong>所有厂商在看到“产能紧张“信号时，同时做出了扩张产能的决定。</strong> 那么这一次——AI半导体周期的“产能纪律“是否比历史上更好？</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>产能纪律的支撑因素</th><th>产能纪律的瓦解因素</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>供应商集中度高</strong>——HBM只有三家、先进制程只有台积电一家——供应商可以“理性协调“产能扩张的节奏，避免过度竞争</td><td><strong>“囚徒困境“逻辑不变</strong>——SK海力士、三星、美光都看到了HBM的暴利——每一家都有动力“抢在竞争对手之前“扩大产能</td></tr>
+<tr><td><strong>需求端的“可见度“更高</strong>——云厂商（主要买家）的CapEx计划通常是多年的、提前披露的——供应商可以根据“已被预订“的产能来规划扩张，而不是基于“猜测“</td><td><strong>客户集中度极高</strong>——前五大客户（微软/Amazon/Google/Meta等）占英伟达数据中心营收的40%+——如果这些客户的任何一个大幅削减订单，供应商的“需求可见度“将被瞬间打破</td></tr>
+<tr><td><strong>各国政府的“芯片自主“补贴</strong>——美国芯片法案（$520亿）、欧盟芯片法案（€430亿）、中国的国家大基金——政府的补贴可能会催生“政治驱动的产能过剩“——即便市场信号显示“够了“，政府补贴仍然支持继续建厂</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>综合判断</strong>：这一次的“产能纪律“可能比2000年稍好——供应商集中度更高、需求可见度更高。但“囚徒困境“的逻辑没有变，政府补贴可能增加“政治驱动型过剩“的风险。第三章的核心教训——“建在价格最高点，投产在价格最低点”——对AI半导体同样适用。2025-2026年的“天量“产能投资，可能在2027-2028年迎来“考验时刻“。</p>
+<hr>
+<h3 id="本章关键要点"><a class="header" href="#本章关键要点">本章关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>三重共振</td><td>2025-2026年AI半导体处于需求↑ + 产能↑ + 库存↑的“超级牛市“共振——历史罕见；但共振的窗口可能在2026年末-2027年开始收窄</td></tr>
+<tr><td>CoWoS——物理瓶颈</td><td>台积电CoWoS产能从2023年8万片/月→2026年目标70万片/月——产能释放的“临界点“在2026-2027年——当瓶颈解除时，GPU稀缺性溢价将消退</td></tr>
+<tr><td>英伟达的毛利率</td><td>75%+（FY2025峰值）不可持续——FY2026已回落至73%；CoWoS产能释放+竞争加剧将在2027年前后推动毛利率向60-65%回归——毛利率的下滑是AI半导体从“狂热期“过渡到“成熟期“的重要信号</td></tr>
+<tr><td>中下游失血</td><td>物理“漏出“（每次推理都有成本）+中下游极度分散→上游定价权被最大化；但FY2026出现了改善迹象——OpenAI年化营收突破$100亿+且亏损大幅收窄，GitHub Copilot接近盈亏平衡——推理成本的大幅下降正在改善中下游的UE模型</td></tr>
+<tr><td>结构性分化的化解</td><td>2026年中，路线A（软着陆）的概率在上升——NVIDIA FY2026增速从+150%放缓至+40%，毛利率从76%回落至73%——但这不是暴跌，而是“温和出清“；AI应用UE模型的改善速度是决定软着陆vs硬着陆的关键变量</td></tr>
+<tr><td>产能纪律</td><td>这一次略好于2000年（供应商更集中），但“囚徒困境“逻辑不变——2025-2026年的天量产能投资将在2027-2028年面临考验</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li><strong>WSTS全球半导体出货额</strong>：https://www.wsts.org</li>
+<li><strong>SEMI晶圆厂产能与设备支出</strong>：https://www.semi.org</li>
+<li><strong>台积电法说会资料</strong>（CoWoS产能进展）：https://investor.tsmc.com</li>
+<li><strong>英伟达季度/年度财报</strong>：https://investor.nvidia.com</li>
+<li><strong>SK海力士财报</strong>（HBM产能与出货）：https://www.skhynix.com</li>
+<li><strong>三星电子财报</strong>：https://www.samsung.com/global/ir/</li>
+<li><strong>TrendForce HBM/DRAM市场分析</strong>：https://www.trendforce.com</li>
+<li><strong>LightCounting光模块市场报告</strong>：https://www.lightcounting.com</li>
+<li><strong>Susquehanna Financial芯片交货周期数据</strong>（Lead Time Tracker）</li>
+<li><strong>微软/Amazon/Google/Meta季度财报</strong>（CapEx数据）：各公司IR页面</li>
+<li><strong>OpenAI/Anthropic公开发布的API定价</strong>：https://openai.com/api/pricing/; https://www.anthropic.com/pricing</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-3/chapter-11.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-3/chapter-13.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-3/chapter-11.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-3/chapter-13.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

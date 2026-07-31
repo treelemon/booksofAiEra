@@ -1,0 +1,622 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第五章 软件的十年（1990-2000）——从微软到互联网泡沫 - 周期之眼：信息产业与AI的演进逻辑与投资框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="以周期为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波与佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-b35aae95.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cdc60685.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之眼：信息产业与AI的演进逻辑与投资框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第五章-软件的十年1990-2000从微软到互联网泡沫"><a class="header" href="#第五章-软件的十年1990-2000从微软到互联网泡沫">第五章 软件的十年（1990-2000）——从微软到互联网泡沫</a></h1>
+<blockquote>
+<p><strong>周期第二幕：软件扩散与泡沫膨胀</strong>
+<em>当硬件基础设施铺设完成，软件开始定义价值。但软件的繁荣往往伴随着泡沫——这是“烧钱换增长“的第一课。</em></p>
+</blockquote>
+<h2 id="51-wintel联盟pc时代的软硬件共治"><a class="header" href="#51-wintel联盟pc时代的软硬件共治">5.1 Wintel联盟：PC时代的软硬件共治</a></h2>
+<h3 id="511-从一家包办到分工协作"><a class="header" href="#511-从一家包办到分工协作">5.1.1 从“一家包办“到“分工协作“</a></h3>
+<p>第四章我们讲到，IBM通过PC的开放架构亲手解构了自己的垂直整合帝国。一个关键的结果是：PC产业不再是一家公司从芯片造到软件，而是每个环节都出现了专业玩家，它们之间形成了一种微妙的“相互锁定“关系。</p>
+<p>这就是Wintel联盟——Windows（Microsoft） + Intel。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>产业链环节</th><th>主导者</th><th>市场份额（1990年代末）</th><th>商业模式</th></tr>
+</thead>
+<tbody>
+<tr><td>CPU</td><td>Intel</td><td>约80%+</td><td>设计+制造——高固定成本，高规模效应</td></tr>
+<tr><td>操作系统</td><td>Microsoft</td><td>约90%+</td><td>授权——每台PC $30-$100的Windows许可费</td></tr>
+<tr><td>内存/存储</td><td>三星/美光/希捷等</td><td>分散</td><td>大宗商品化——拼规模和成本</td></tr>
+<tr><td>整机组装</td><td>Compaq/Dell/HP/联想</td><td>分散</td><td>低毛利组装——拼供应链效率</td></tr>
+<tr><td>应用软件</td><td>Microsoft Office/Adobe/Intuit等</td><td>分散（MS Office除外）</td><td>独立软件商（ISV）——每个赛道一个王者</td></tr>
+</tbody>
+</table>
+</div>
+<p>Wintel联盟的本质可以精炼为一句话：<strong>硬件和软件相互锁定，互为增长的引擎。</strong></p>
+<ul>
+<li>Intel每18-24个月推出更快的处理器→新处理器能跑更复杂的操作系统→Microsoft推出需要更强处理器的Windows新版本→消费者为了用新Windows而购买搭载新Intel处理器的PC→Intel获得更多营收用于研发下一代处理器。</li>
+</ul>
+<p>这是一个完美的正向循环。它像一个双发动机驱动的飞轮——硬件和软件相互加速，把整个PC产业推向了人类历史上最大规模的消费电子产品普及。</p>
+<h3 id="512-wintel联盟的数据实证"><a class="header" href="#512-wintel联盟的数据实证">5.1.2 Wintel联盟的数据实证</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>Intel旗舰CPU</th><th>晶体管数</th><th>Microsoft操作系统</th><th>全球PC出货量</th></tr>
+</thead>
+<tbody>
+<tr><td>1985</td><td>80386</td><td>275,000</td><td>Windows 1.0</td><td>~1100万</td></tr>
+<tr><td>1989</td><td>80486</td><td>1,200,000</td><td>Windows 3.0（1990）</td><td>~2100万</td></tr>
+<tr><td>1993</td><td>Pentium</td><td>3,100,000</td><td>Windows NT（1993）</td><td>~3800万</td></tr>
+<tr><td>1995</td><td>Pentium Pro</td><td>5,500,000</td><td>Windows 95</td><td>~5800万</td></tr>
+<tr><td>1997</td><td>Pentium II</td><td>7,500,000</td><td>Windows 98（1998）</td><td>~8000万</td></tr>
+<tr><td>1999</td><td>Pentium III</td><td>9,500,000</td><td>Windows 2000（2000）</td><td>~1.13亿</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Intel年度报告、Microsoft年度报告、IDC全球PC出货量数据。</p>
+<p>每四年，晶体管数量增长约10倍，PC出货量增长约3倍。这不是“硬件推着软件走“或“软件拉着硬件跑“的单向关系，而是<strong>双向锁定、共振上行</strong>。如果你在1995年买了一台Pentium Pro电脑，Windows 95的图形界面让一切变得更直观，你可以用它来做桌面排版、处理电子表格、甚至拨号上网浏览网页。但两年后，Windows 98更流畅、功能更多，而你的Pentium Pro已经有点跑不动了。于是你换一台Pentium II的新电脑——Wintel联盟的目标达成。</p>
+<h3 id="513-wintel联盟的帝国版图"><a class="header" href="#513-wintel联盟的帝国版图">5.1.3 Wintel联盟的帝国版图</a></h3>
+<p>到1999年，即互联网泡沫的顶点：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>公司</th><th>年营收</th><th>市值</th><th>占全球PC产业的利润份额（估算）</th></tr>
+</thead>
+<tbody>
+<tr><td>Microsoft</td><td>$197亿</td><td>~$6000亿</td><td>约40%</td></tr>
+<tr><td>Intel</td><td>$294亿</td><td>~$5000亿</td><td>约30%</td></tr>
+<tr><td>Compaq</td><td>$385亿</td><td>~$500亿</td><td>约5%</td></tr>
+<tr><td>Dell</td><td>$252亿</td><td>~$1000亿</td><td>约8%</td></tr>
+<tr><td>其余PC组装商</td><td>合计约$1000亿+</td><td>—</td><td>瓜分剩余不到20%</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：各公司1999年年报；市值数据为1999年末大致估算。</p>
+<p>注意这张表的利润结构——PC组装商（Compaq、Dell）的营收远高于Microsoft和Intel，但利润完全不在一个量级。Compaq 1999年营收$385亿，是Microsoft的近两倍，但市值只有Microsoft的十分之一不到。这是Wintel联盟最残酷的一面——<strong>生态的结构性租金，被操作系统和CPU两个“瓶颈“环节拿走了绝大部分。</strong> 我们将在第十章看到，AI产业链正在形成类似的结构——英伟达和台积电正在成为AI时代的Wintel。</p>
+<h2 id="52-软件产业的独立从附属品到核心价值"><a class="header" href="#52-软件产业的独立从附属品到核心价值">5.2 软件产业的独立——从附属品到核心价值</a></h2>
+<h3 id="521-软件凭什么成为独立的产业"><a class="header" href="#521-软件凭什么成为独立的产业">5.2.1 软件凭什么成为独立的产业？</a></h3>
+<p>在大型机时代，软件不是“产品“——它是硬件捆绑赠送的。IBM卖给你一台大型机，顺便帮你开发软件，软件的钱算在硬件里面。没有人会为“一个程序“单独付钱。</p>
+<p>软件的独立，需要三个条件同时满足：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>条件</th><th>为什么重要</th><th>何时被满足</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>标准化硬件平台</strong></td><td>软件一次开发，可以在不同品牌的PC上运行</td><td>1981年IBM PC开放架构+Killer App（电子表格）</td></tr>
+<tr><td><strong>足够大的装机量</strong></td><td>软件的固定成本极高（开发），边际成本极低（复制），必须有足够大的付费用户群才能实现盈利</td><td>1990年代初，全球PC装机量超过1亿台</td></tr>
+<tr><td><strong>知识产权保护</strong></td><td>如果用户可以无限复制软件而不付费，软件公司就无法生存</td><td>1980年《计算机软件保护法案》（美国）等全球立法</td></tr>
+</tbody>
+</table>
+</div>
+<p>在这三个条件成熟后，软件产业的“幂律商业逻辑“被释放出来：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>特征</th><th>说明</th><th>结果</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>固定成本极高</strong></td><td>Windows 95开发成本约$5亿（近千名工程师，三年时间）</td><td>进入壁垒——只有Microsoft能开发Windows</td></tr>
+<tr><td><strong>边际成本极低</strong></td><td>每多卖一份Windows 95的增量成本约为$0（一张光盘+包装）</td><td>规模效应——卖得越多，单位成本越低</td></tr>
+<tr><td><strong>网络效应</strong></td><td>越多人用Windows，越多开发者为其开发软件→越多软件，越多人用Windows</td><td>赢家通吃——第二名几乎没有生存空间</td></tr>
+<tr><td><strong>转换成本</strong></td><td>一旦企业的IT系统建立在Windows+Office上，切换到其他平台的成本极高</td><td>护城河——在位者的客户粘性极强</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>这就是“赢家通吃“的四重逻辑。</strong> 它解释了为什么PC操作系统是Microsoft一家独大、办公软件是Microsoft Office一家独大、企业数据库一度是Oracle一家独大。软件产业的竞争不是“谁的产品好一点“的问题，而是“一旦被甩开，就永远追不上“的残酷游戏。</p>
+<h3 id="522-三大软件巨头的崛起路径"><a class="header" href="#522-三大软件巨头的崛起路径">5.2.2 三大软件巨头的崛起路径</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>公司</th><th>创始年</th><th>核心产品</th><th>崛起的“奇点时刻“</th><th>1999年营收</th><th>市值（1999年底）</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Microsoft</strong></td><td>1975</td><td>Windows + Office</td><td>1981年与IBM签订MS-DOS许可协议（保留了向其他厂商授权的权利）；1985年Windows 1.0发布；1990年Office套装发布</td><td>$197亿</td><td>~$6000亿</td></tr>
+<tr><td><strong>Oracle</strong></td><td>1977</td><td>关系型数据库</td><td>1981年第一个商用SQL数据库；1986年上市，市值$2.7亿；抓住了企业从大型机向C/S架构迁移的窗口</td><td>$88亿</td><td>~$2000亿</td></tr>
+<tr><td><strong>SAP</strong></td><td>1972</td><td>企业资源计划（ERP）软件</td><td>1992年R/3发布（Client/Server架构），从德国走向全球；抓住了跨国公司管理标准化的需求</td><td>€51亿</td><td>~$400亿</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：各公司年报。</p>
+<p>三家公司的路径各有不同，但有两个共同点：</p>
+<ol>
+<li><strong>它们都不是第一个</strong>——Microsoft不是第一个做操作系统的（CP/M在先），Oracle不是第一个做数据库的（IBM的System R在先），SAP不是第一个做企业管理软件的。但它们都是<strong>第一个在正确的时间用正确的商业模式抓住机会的公司</strong>。</li>
+<li><strong>它们都受益于一个大的“范式转换窗口“</strong>——PC替代大型机、C/S架构替代主机-终端架构、全球化替代本地化。当范式转换来临时，新进入者有机会挑战旧格局。</li>
+</ol>
+<h2 id="53-浏览器战争与互联网的黎明"><a class="header" href="#53-浏览器战争与互联网的黎明">5.3 浏览器战争与互联网的黎明</a></h2>
+<h3 id="531-mosaic互联网走向大众的扳机"><a class="header" href="#531-mosaic互联网走向大众的扳机">5.3.1 Mosaic：互联网走向大众的“扳机“</a></h3>
+<p>1993年之前，互联网是存在的——美国政府资助的NSFNET、大学的电子邮件系统、科学家的FTP文件共享。但普通人根本不会用。接入互联网需要记住几十条命令行指令，屏幕上只有黑底白字。</p>
+<p>1993年4月，伊利诺伊大学厄巴纳-香槟分校的国家超级计算应用中心（NCSA）发布了一个叫<strong>Mosaic</strong>的软件。它是世界上第一个可以显示图片和文字混排的网页浏览器。</p>
+<p>Mosaic不需要命令行，不需要记忆指令。你打开它，输入一个网址，一个带图片的网页出现在你眼前。互联网从此有了“颜值“。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>事件</th><th>互联网用户数（全球，近似值）</th></tr>
+</thead>
+<tbody>
+<tr><td>1993年初</td><td>Mosaic尚未发布</td><td>约1400万</td></tr>
+<tr><td>1994年初</td><td>Mosaic发布不到一年</td><td>约2500万</td></tr>
+<tr><td>1995年初</td><td>Netscape发布</td><td>约4000万</td></tr>
+<tr><td>1996年中</td><td>浏览器战争打响</td><td>约5500万</td></tr>
+<tr><td>1997年初</td><td>Internet Explorer快速追赶</td><td>约7000万</td></tr>
+<tr><td>1999年底</td><td>互联网泡沫顶峰</td><td>约2.5亿</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Internet World Stats、IDC、Nua Internet Surveys。</p>
+<p>Mosaic的“扳机“效应是显著的——互联网用户从1993到1999年增长了近20倍。这个增长速度，与2022年底ChatGPT发布后AI的爆发曲线惊人地相似。我们在第十一章会专门讨论这两条曲线的可比性。</p>
+<h3 id="532-netscape闪电般的崛起"><a class="header" href="#532-netscape闪电般的崛起">5.3.2 Netscape：闪电般的崛起</a></h3>
+<p>Mosaic的核心开发者马克·安德森（Marc Andreessen）大学毕业后去了硅谷，和吉姆·克拉克（Jim Clark，硅谷传奇人物，此前创立了Silicon Graphics）一起创立了Netscape（网景）。</p>
+<p>1994年12月，Netscape Navigator 1.0发布。不到半年，市场份额超过80%。1995年8月9日，Netscape上市——这是一个载入金融史册的日子。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>网景IPO关键数据</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>上市日期</td><td>1995年8月9日</td></tr>
+<tr><td>发行价</td><td>$28/股（原计划$14/股，因需求旺盛上调至$28）</td></tr>
+<tr><td>开盘价</td><td>$71/股</td></tr>
+<tr><td>首日收盘价</td><td>$58.25/股</td></tr>
+<tr><td>首日涨幅</td><td>108%</td></tr>
+<tr><td>公司成立时间</td><td>16个月</td></tr>
+<tr><td>公司上一财年营收</td><td>$1660万</td></tr>
+<tr><td>公司盈利状况</td><td>亏损</td></tr>
+<tr><td>IPO时市值</td><td>约$22亿</td></tr>
+<tr><td>收盘市值</td><td>约$44亿</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Netscape招股说明书；纳斯达克历史交易数据。</p>
+<p>一个成立16个月、年营收仅$1660万、还在亏损的公司，上市当天市值达到$44亿——这是战后美国商业史上前所未有的事情。市场不是在为“Netscape已经赚了多少钱“买单，而是在为“互联网浏览器市场未来可能有多大“买单。</p>
+<p><strong>估值逻辑发生了根本性转变。</strong> 以前的IPO定价逻辑是：当前利润 × 合理的市盈率倍数。网景之后的IPO定价逻辑变成了：TAM（总可寻址市场） × 市场份额假设 × 未来的利润率假设 × 遥远的未来。这四个乘数，每一个都是极度主观的。当估值基于主观假设而不是客观利润时，泡沫就有了最丰厚的土壤。</p>
+<h3 id="533-浏览器战争巨人的反击"><a class="header" href="#533-浏览器战争巨人的反击">5.3.3 浏览器战争：巨人的反击</a></h3>
+<p>Netscape的胜利是短暂的。</p>
+<p>1995年5月26日，比尔·盖茨发了一封著名的内部备忘录——《互联网浪潮》（The Internet Tidal Wave）。在备忘录中，盖茨写道：“互联网是自1981年IBM PC发布以来最重要的单一技术进步……我想明确表示，我们对互联网的重视是最高的。”</p>
+<p>Microsoft的反击策略堪称教科书级的“降维打击“：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Microsoft的战术</th><th>具体措施</th><th>效果</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>免费</strong></td><td>Internet Explorer完全免费（Netscape对商业用户收费$49-$99）</td><td>用户没有理由付费买浏览器</td></tr>
+<tr><td><strong>绑定</strong></td><td>IE预装在每一台新Windows PC上</td><td>用户拿到电脑时已经有了IE，不需要下载Netscape</td></tr>
+<tr><td><strong>巨额投入</strong></td><td>据估计投入超过$1亿/年开发IE</td><td>IE的功能快速追赶甚至超过Netscape</td></tr>
+<tr><td><strong>生态依赖</strong></td><td>推动网站优化IE兼容性</td><td>越来越多网站“推荐使用IE浏览“</td></tr>
+</tbody>
+</table>
+</div>
+<p>到1998年，IE的市场份额超过Netscape。1998年11月，AOL以$42亿收购Netscape——在1995年IPO巅峰时，市场曾憧憬Netscape有一天能挑战Microsoft。三年后，它被吞并了。</p>
+<p>但浏览器战争的输家是Netscape，赢家也不是Microsoft。真正的赢家是<strong>整个互联网产业</strong>——免费的浏览器（Netscape被迫跟着免费）让互联网的使用门槛降到了零。如果浏览器一直是收费软件，互联网的普及会慢好几年。</p>
+<p><strong>这是“泡沫的积极功能“的又一个证据——我们将在第八章系统总结。</strong></p>
+<h2 id="54-互联网泡沫的膨胀"><a class="header" href="#54-互联网泡沫的膨胀">5.4 互联网泡沫的膨胀</a></h2>
+<h3 id="541-com狂潮的诞生"><a class="header" href="#541-com狂潮的诞生">5.4.1 “.com“狂潮的诞生</a></h3>
+<p>1995年网景上市之后，一个自我强化的循环开始了：</p>
+<p>每一个成功的互联网IPO→吸引了更多风险资本→更多资本催生了更多互联网创业公司→更多公司IPO→更多财富故事→更多资本涌入……</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>纳斯达克IPO数量</th><th>科技/互联网IPO占比</th><th>代表性IPO</th></tr>
+</thead>
+<tbody>
+<tr><td>1994</td><td>约220</td><td>~20%</td><td>—</td></tr>
+<tr><td>1995</td><td>约280</td><td>~30%</td><td>Netscape</td></tr>
+<tr><td>1996</td><td>约410</td><td>~40%</td><td>Yahoo!、eBay（1998）</td></tr>
+<tr><td>1997</td><td>约330</td><td>~40%</td><td>Amazon</td></tr>
+<tr><td>1998</td><td>约300</td><td>~40%</td><td>—</td></tr>
+<tr><td>1999</td><td><strong>约540</strong></td><td><strong>~60%</strong></td><td>VA Linux（首日涨698%）、FreeMarkets等</td></tr>
+<tr><td>2000</td><td>约390</td><td>~50%</td><td>—</td></tr>
+<tr><td>2001</td><td>约80</td><td>~10%</td><td>泡沫破裂后</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：纳斯达克年度IPO统计；Jay R. Ritter, University of Florida, IPO Data。</p>
+<p>1999年一年，纳斯达克新增了500多家上市公司——平均每个交易日超过两家。这个数量是正常年份的两到三倍。IPO的门槛被系统性地降低了——亏损公司上市成为常态，概念比产品重要，故事比数字重要。</p>
+<h3 id="542-烧钱换增长的商业模式"><a class="header" href="#542-烧钱换增长的商业模式">5.4.2 “烧钱换增长“的商业模式</a></h3>
+<p>互联网泡沫催生了一整套全新的商业逻辑，可以精炼为一个公式：</p>
+<p>$$
+\text{公司价值} = \frac{\text{用户数} \times \text{单用户“终身价值“假设}}{\text{折现率}}
+$$</p>
+<p>关键是——<strong>单用户终身价值是假设出来的。</strong> Amazon的创始人贝佐斯在1997年的致股东信中就已经写得很清楚：“我们相信，衡量我们成功与否的根本标准，是我们长期创造的股东价值……“但当时的“分析师“们是怎么估算这个“终身价值“的呢？他们假设互联网用户的增长会永续、单用户消费会持续增长、竞争对手不会出现、监管不会干预。</p>
+<p>在这套逻辑下，“烧钱“不再是失败的标志，而是“战略性投资“的证据。公司越亏钱，越说明它在“投资未来”——市场也越愿意给它高估值。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>公司</th><th>1999年营收</th><th>1999年净利润</th><th>1999年末市值</th><th>市销率（P/S）</th></tr>
+</thead>
+<tbody>
+<tr><td>Amazon</td><td>$16.4亿</td><td>-$7.2亿</td><td>~$280亿</td><td>约17倍</td></tr>
+<tr><td>Yahoo!</td><td>$5.9亿</td><td>$0.6亿</td><td>~$1200亿</td><td>约200倍（盈利太少）</td></tr>
+<tr><td>eBay</td><td>$2.2亿</td><td>$0.1亿</td><td>~$180亿</td><td>约80倍</td></tr>
+<tr><td>Priceline</td><td>$4.8亿</td><td>-$10.2亿</td><td>~$100亿</td><td>约20倍</td></tr>
+<tr><td>Webvan</td><td>&lt;$1000万</td><td>-$1.3亿</td><td>~$80亿（IPO时）</td><td>—（营收几乎为零）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：各公司1999年年报、市值数据为1999年末。</p>
+<p>最后一个数据最为触目惊心：Webvan，一家在线杂货配送公司，IPO时市值达到$80亿，但它1999年的营收只有不到1000万美元——也就是说，市销率超过800倍。市场在赌什么？在赌“在线杂货将取代所有实体超市“。</p>
+<p>一年后，Webvan破产清算。$8亿多的风险投资和IPO融资化为乌有。</p>
+<h3 id="543-纳斯达克10005048的五年狂飙"><a class="header" href="#543-纳斯达克10005048的五年狂飙">5.4.3 纳斯达克1000→5048的五年狂飙</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间节点</th><th>纳斯达克指数</th><th>事件</th></tr>
+</thead>
+<tbody>
+<tr><td>1995年1月</td><td>~750</td><td>互联网商业化初期</td></tr>
+<tr><td>1995年8月</td><td>~1000（突破）</td><td>网景上市，互联网热启动</td></tr>
+<tr><td>1996年底</td><td>~1300</td><td>—</td></tr>
+<tr><td>1997年底</td><td>~1600</td><td>亚洲金融危机短暂冲击后快速恢复</td></tr>
+<tr><td>1998年10月</td><td>~1400（低点）</td><td>亚洲金融危机+LTCM崩溃</td></tr>
+<tr><td>1999年11月</td><td>~3000（突破）</td><td>投资者开始“不问价格地买入“</td></tr>
+<tr><td>1999年12月</td><td>~4000</td><td>年底冲刺——基金“窗口粉饰“效应</td></tr>
+<tr><td>2000年3月10日</td><td>5048.62（历史峰值）</td><td>当天成交量超30亿股</td></tr>
+<tr><td>2000年4月</td><td>~3500</td><td>一个月跌超30%</td></tr>
+<tr><td>2000年底</td><td>~2500</td><td>年内腰斩</td></tr>
+<tr><td>2001年9月</td><td>~1400</td><td>9·11事件后</td></tr>
+<tr><td>2002年10月</td><td>1114.11（底部）</td><td>从最高点下跌约78%</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：雅虎财经历史数据、NASDAQ官方历史数据（https://www.nasdaq.com/market-activity/index/comp/historical）。</p>
+<p>从5048跌到1114，纳斯达克花了30个月。涨了5年到5048，跌了2.5年到1114——这印证了我们在第一章提到的周期非线性：<strong>涨是“上楼梯“，跌是“下电梯“。</strong></p>
+<h2 id="55-泡沫破裂2000年3月与漫长的出清"><a class="header" href="#55-泡沫破裂2000年3月与漫长的出清">5.5 泡沫破裂：2000年3月与漫长的出清</a></h2>
+<h3 id="551-泡沫为何在2000年3月破裂"><a class="header" href="#551-泡沫为何在2000年3月破裂">5.5.1 泡沫为何在2000年3月破裂？</a></h3>
+<p>没有单一的事件戳破了泡沫。泡沫的破裂是一系列因素叠加的结果：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>破裂的导火索</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>美联储加息</strong></td><td>1999年6月到2000年5月，美联储六次加息，联邦基金利率从4.75%升至6.5%。更高的利率=更高的折现率=更低的“未来价值“现值。</td></tr>
+<tr><td><strong>“烧钱“不可持续被曝光</strong></td><td>1999年Barron’s杂志发表著名文章《Burning Up》，指出大量互联网公司按照当前的“烧钱“速度，现金会在12个月内耗尽。</td></tr>
+<tr><td><strong>Microsoft反垄断判决</strong></td><td>2000年4月，联邦法官裁定Microsoft违反反垄断法，建议拆分公司——科技股的“定海神针“动摇，引发连锁恐慌。</td></tr>
+<tr><td><strong>日本经济衰退回归</strong></td><td>2000年日本再次进入衰退，全球科技产品需求骤降。</td></tr>
+<tr><td><strong>千年虫（Y2K）过度投资后遗症</strong></td><td>1999年全球企业为Y2K投入了约$3000亿升级IT系统，2000年IT支出骤然回落。</td></tr>
+</tbody>
+</table>
+</div>
+<p>但深层原因更简单：<strong>估值和基本面之间的鸿沟大到无法忽视了。</strong> 到2000年3月，纳斯达克100的整体市盈率（不含亏损公司）超过200倍。这意味着，如果公司保持当前利润不变，需要200年才能“赚回“股价。没有任何实体经济可以支撑这个估值水平。</p>
+<h3 id="552-幸存者与牺牲者"><a class="header" href="#552-幸存者与牺牲者">5.5.2 幸存者与牺牲者</a></h3>
+<p>泡沫破裂后，大量互联网公司消失了。但有些活了下来，并且在后来的二十年里成长为万亿美元巨头。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>幸存者</th><th>为什么活下来？</th><th>后来发生了什么？</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Amazon</strong></td><td>削减成本、关停不盈利业务（2001年裁员15%）、把“自由现金流“作为核心考核指标</td><td>从$280亿市值跌到$30亿（跌90%），然后在接下来20年涨到$2万亿——“在废墟中买了Amazon的人，实现了约600倍回报”</td></tr>
+<tr><td><strong>eBay</strong></td><td>商业模式天然具有网络效应，且是当时少有的互联网盈利公司</td><td>泡沫破裂时跌幅相对较小（约50%），随后稳步增长</td></tr>
+<tr><td><strong>Priceline</strong></td><td>商业模式具有真实价值（帮助航空公司和酒店填充剩余库存），成本结构灵活</td><td>从$100亿市值跌至$2亿，然后转型为Booking.com，涨到$1000亿+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>牺牲者</th><th>为什么死了？</th><th>典型错误</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Pets.com</strong></td><td>卖一袋狗粮亏损$20（运费比狗粮还贵），没有任何单位经济模型（UE）能跑正</td><td>“烧钱换增长“没有尽头——用户没有忠诚度</td></tr>
+<tr><td><strong>Webvan</strong></td><td>投资$10亿建自动化仓储，但订单密度远不够覆盖固定成本</td><td>基础设施投资远远超前于需求</td></tr>
+<tr><td><strong>eToys</strong></td><td>1999年IPO募资$1.66亿，上市一年后破产。玩具电商的物流成本极高、季节性极强</td><td>错把“有需求“当成“有商业模式“</td></tr>
+<tr><td><strong>Boo.com</strong></td><td>在线时尚零售商，成立不到两年烧掉$1.35亿，网站做了一年才上线（因为“技术太复杂“）</td><td>完美的产品，永远在开发中——忘了“快速上线、快速迭代“的互联网法则</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：各公司公告、SEC（美国证券交易委员会）EDGAR数据库（https://www.sec.gov/edgar）。</p>
+<p><strong>共同教训</strong>：活下来的公司，都在泡沫破裂后的严寒中，证明了它们的<strong>单位经济模型是成立的</strong>——每获取一个用户，这个用户创造的终身价值大于获取成本。死了的公司，单位经济模型从来就没跑正过——它们只是靠不断融资来掩盖这个事实。当融资窗口关闭时，真相暴露了。</p>
+<h3 id="553-泡沫破裂的财富破坏有多大"><a class="header" href="#553-泡沫破裂的财富破坏有多大">5.5.3 泡沫破裂的财富破坏有多大？</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>数据</th><th>来源</th></tr>
+</thead>
+<tbody>
+<tr><td>纳斯达克市值蒸发</td><td>约$5万亿</td><td>纳斯达克官方估计</td></tr>
+<tr><td>科技IPO数量从1999到2001</td><td>从540家降至约80家</td><td>Ritter IPO Data (https://site.warrington.ufl.edu/ritter/ipo-data/)</td></tr>
+<tr><td>VC募资额从2000到2002</td><td>从$1050亿降至$40亿（美国）</td><td>PitchBook / NVCA Yearbook (https://nvca.org/research/)</td></tr>
+<tr><td>互联网公司破产数量</td><td>约500家（2000-2002）</td><td>Webmergers.com</td></tr>
+<tr><td>硅谷失业率</td><td>从1.5%（2000）升至9%（2002）</td><td>加州就业发展部</td></tr>
+<tr><td>纳斯达克回到5048点的时间</td><td><strong>2015年4月23日</strong>（15年零1个月）</td><td>雅虎财经 (https://finance.yahoo.com/quote/%5EIXIC/history/)</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>$5万亿</strong>——这是人类历史上迄今为止最大规模的一次“纸上财富“的蒸发。</p>
+<p>但讽刺的是，泡沫破裂的废墟，恰恰是下一轮周期繁荣的基石。我们将在第六章看到，互联网泡沫期过剩的光纤和带宽，如何催生了YouTube、Netflix等一个全新的时代。</p>
+<h2 id="56-风险投资的第一个黄金时代"><a class="header" href="#56-风险投资的第一个黄金时代">5.6 风险投资的第一个黄金时代</a></h2>
+<h3 id="561-网景上市vc行业的大爆炸"><a class="header" href="#561-网景上市vc行业的大爆炸">5.6.1 网景上市：VC行业的“大爆炸“</a></h3>
+<p>1995年8月9日网景上市的意义，远不止于一家公司的成功。它改变了整个VC行业的底层逻辑。</p>
+<p>在网景之前，VC投资的退出主要依赖于两种方式：（1）被更大的公司收购，或（2）公司盈利后分红/回购。这两种退出方式的天花板都很清晰——收购方愿意支付的价格，不可能远高于这家公司的当前利润或可预见的近期利润。</p>
+<p>网景证明了第三条路径：<strong>一家成立16个月、营收$1660万、亏损的公司，可以通过IPO实现$44亿的市值。</strong> 这意味着，VC退出时的估值不再受限于“当前利润 × 合理的倍数“——它可以基于“对未来市场的乐观叙事“。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时代</th><th>VC的退出逻辑</th><th>投资决策的核心问题</th><th>对投资风格的影响</th></tr>
+</thead>
+<tbody>
+<tr><td>网景之前（1980s-1994）</td><td>公司盈利→上市或收购退出→估值基于当前利润</td><td>“这家公司什么时候能赚钱？”</td><td>耐心、谨慎、关注基本面</td></tr>
+<tr><td>网景之后（1995-2000）</td><td>公司有用户/流量→IPO退出→估值基于TAM（总可寻址市场）假设</td><td>“这家公司能长多大？”</td><td>激进、乐观、FOMO驱动</td></tr>
+</tbody>
+</table>
+</div>
+<p>这不是一个微妙的变化——这是整个行业投资逻辑的彻底翻转。当退出不需要以盈利为前提时，投资也不需要以盈利为前提。当退出估值由叙事决定时，投资决策也由叙事驱动。</p>
+<h3 id="562-vc行业的量级跃迁"><a class="header" href="#562-vc行业的量级跃迁">5.6.2 VC行业的量级跃迁</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>美国VC募资额</th><th>美国VC投资额</th><th>平均基金规模</th><th>代表性事件</th></tr>
+</thead>
+<tbody>
+<tr><td>1990</td><td>~$30亿</td><td>~$30亿</td><td>~$8000万</td><td>互联网尚未商业化，VC行业规模较小</td></tr>
+<tr><td>1994</td><td>~$80亿</td><td>~$50亿</td><td>~$1.2亿</td><td>互联网开始吸引VC注意</td></tr>
+<tr><td>1995</td><td>~$100亿</td><td>~$80亿</td><td>~$1.5亿</td><td>网景上市——VC大爆炸</td></tr>
+<tr><td>1996</td><td>~$120亿</td><td>~$110亿</td><td>~$2亿</td><td>Yahoo!上市</td></tr>
+<tr><td>1997</td><td>~$180亿</td><td>~$150亿</td><td>~$2.5亿</td><td>Amazon上市</td></tr>
+<tr><td>1998</td><td>~$300亿</td><td>~$220亿</td><td>~$3.5亿</td><td>泡沫开始膨胀</td></tr>
+<tr><td>1999</td><td>~$600亿</td><td>~$540亿</td><td>~$5亿</td><td>泡沫顶峰——“什么都能融到钱”</td></tr>
+<tr><td>2000</td><td>~$1050亿（峰值）</td><td>~$1000亿</td><td>~$6亿</td><td>泡沫破裂前最后的疯狂</td></tr>
+<tr><td>2001</td><td>~$400亿</td><td>~$400亿</td><td>~$3亿</td><td>泡沫开始破裂</td></tr>
+<tr><td>2002</td><td>~$40亿</td><td>~$220亿</td><td>~$1.5亿</td><td>回到1995年水平</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：PitchBook / NVCA Yearbook (https://nvca.org/research/)、Venture Economics。</p>
+<p>从1995年到2000年，美国VC募资额从$100亿暴涨到$1050亿——五年增加了十倍。同期，基金平均规模从$1.5亿升至$6亿。当一个行业的资金总量在五年内增长一个数量级时，投资纪律必然松弛——因为“拒绝投资“的机会成本变得太大了。如果你的竞争对手正在用$10亿规模的基金砸钱布局整个赛道，你用$1亿的基金说“这个估值太高了我不投“——那么下一次募资时，你的LP会说：“你为什么不投？你错失了整个互联网时代。”</p>
+<p>这就是第八章将系统论述的<strong>金融周期的自我强化机制</strong>。</p>
+<hr>
+<h3 id="本章关键要点"><a class="header" href="#本章关键要点">本章关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>Wintel联盟</td><td>硬件与软件相互锁定的双发动机模型——Intel升级CPU→推动Windows升级→带动PC换机潮→反哺Intel研发</td></tr>
+<tr><td>软件的幂律商业逻辑</td><td>高固定成本+低边际成本+网络效应+高转换成本=赢家通吃。Microsoft、Oracle、SAP分别统治了各自的赛道</td></tr>
+<tr><td>浏览器战争</td><td>Netscape在1995年上市点燃了互联网投资狂潮，但1998年被Microsoft免费捆绑策略击败。输家是Netscape，赢家是整个互联网——免费浏览器降低了全社会的上网门槛</td></tr>
+<tr><td>网景IPO的范式意义</td><td>改变了整个VC行业的投资逻辑——退出估值从“基于当前利润“变为“基于未来叙事的TAM假设“</td></tr>
+<tr><td>纳斯达克泡沫</td><td>1995年~750→2000年3月5048→2002年10月1114，市值蒸发约$5万亿，是人类历史上最大规模的纸上财富蒸发</td></tr>
+<tr><td>幸存者vs牺牲者</td><td>活下来的公司（Amazon、eBay）都证明了UE模型成立；死掉的公司（Pets.com、Webvan）从来就没有跑正单位经济模型</td></tr>
+<tr><td>VC的量级跃迁</td><td>1995-2000年，美国VC募资从$100亿暴涨至$1050亿——五年十倍；资金涌入→投资纪律松弛→泡沫自我强化</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li><strong>纳斯达克历史数据</strong>：https://www.nasdaq.com/market-activity/index/comp/historical</li>
+<li><strong>SEC EDGAR数据库</strong>（上市公司财务数据与招股书）：https://www.sec.gov/edgar</li>
+<li><strong>Ritter IPO Data</strong>（佛罗里达大学IPO研究数据库）：https://site.warrington.ufl.edu/ritter/ipo-data/</li>
+<li><strong>PitchBook / NVCA Yearbook</strong>（美国VC行业年度数据）：https://nvca.org/research/</li>
+<li><strong>雅虎财经</strong>（纳斯达克指数历史行情）：https://finance.yahoo.com/quote/%5EIXIC/history/</li>
+<li><strong>Internet World Stats</strong>（全球互联网用户历史数据）：https://www.internetworldstats.com/</li>
+<li><strong>盖茨 1995年《互联网浪潮》备忘录</strong>（PDF）：可通过互联网档案馆查阅 https://web.archive.org/</li>
+<li><strong>Barron’s (2000). “Burning Up.”</strong>（标志性的互联网泡沫预警文章）：https://www.barrons.com/</li>
+<li><strong>Cassidy, J. (2002). <em>Dot.con: The Greatest Story Ever Sold</em>.</strong> HarperCollins.（记录互联网泡沫的经典著作）</li>
+<li><strong>Lewis, M. (1999). <em>The New New Thing</em>.</strong> W. W. Norton.（硅谷文化与网景创始人吉姆·克拉克的传奇故事）</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-2/chapter-4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-2/chapter-4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

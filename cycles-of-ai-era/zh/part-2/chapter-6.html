@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第六章 互联网的十年（2000-2010）——光纤、搜索与平台经济 - 周期之眼：信息产业与AI的演进逻辑与投资框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="以周期为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波与佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-b35aae95.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cdc60685.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之眼：信息产业与AI的演进逻辑与投资框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第六章-互联网的十年2000-2010光纤搜索与平台经济"><a class="header" href="#第六章-互联网的十年2000-2010光纤搜索与平台经济">第六章 互联网的十年（2000-2010）——光纤、搜索与平台经济</a></h1>
+<blockquote>
+<p><strong>周期第三幕：基础设施的“建设性破坏“</strong>
+<em>泡沫破裂后，人们发现那些“过度投资“的光纤并没有浪费——它们让YouTube成为可能。这就是“建设过剩→成本下降→应用爆发“的循环。</em></p>
+</blockquote>
+<h2 id="61-废墟上的重建后泡沫时代的产业重整"><a class="header" href="#61-废墟上的重建后泡沫时代的产业重整">6.1 废墟上的重建——后泡沫时代的产业重整</a></h2>
+<h3 id="611-泡沫破裂后留下了什么"><a class="header" href="#611-泡沫破裂后留下了什么">6.1.1 泡沫破裂后，留下了什么？</a></h3>
+<p>2002年10月，纳斯达克指数触底1114点，从两年前的历史峰值5048下跌了78%。500多家互联网公司破产。硅谷的办公楼空置率从1%飙升至25%。《经济学人》杂志在封面把互联网称作“历史上最大的财富破坏机器“。</p>
+<p>在弥漫的悲观情绪中，很少有人注意到一个事实：<strong>泡沫破裂毁灭的是“估值“，但没有毁灭“光纤“。</strong></p>
+<p>互联网泡沫期间，全球通信公司（WorldCom、Global Crossing、Quest、Level 3等）在资本市场的狂热追捧下，铺设了天文数字级别的光纤网络。仅美国一地，1998-2001年间铺设的光纤长度就超过了此前所有年份的总和。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>泡沫高峰期（1999-2000）</th><th>泡沫破裂后（2002-2003）</th></tr>
+</thead>
+<tbody>
+<tr><td>美国长途光纤网络容量</td><td>约2800万兆比特/秒</td><td>约900万兆比特/秒被“点亮“使用（利用率&lt;35%）</td></tr>
+<tr><td>跨大西洋海底光缆容量</td><td>新建了约30条海底光缆</td><td>大部分处于“暗光纤“状态（已铺设但未激活）</td></tr>
+<tr><td>带宽批发价格</td><td>$1,200/Mbps/月（1999）</td><td>$100/Mbps/月（2003）——下降约92%</td></tr>
+<tr><td>全球通信公司市值</td><td>WorldCom峰值$1800亿</td><td>WorldCom破产（$110亿会计欺诈被曝光）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Telegeography海底光缆数据库（https://www.telegeography.com）；FCC《美国宽带部署报告》；WorldCom破产案SEC文件（https://www.sec.gov/Archives/edgar/data/723527/）。</p>
+<p>$1800亿市值的WorldCom在2002年申请破产——这是美国历史上最大的一宗破产案。但讽刺的是，WorldCom铺设的光纤并没有被埋进土里之后就消失了。当WorldCom破产清算时，这些光纤被债权人以“废铁价“（几分钱对一块钱）卖给了其他运营商。新东家不需要为光纤的建设成本买单——他们只需要支付运营和维护费用。这使得光纤带宽的供应成本一夜之间暴跌。</p>
+<h3 id="612-互联网基础设施投资的时间悖论"><a class="header" href="#612-互联网基础设施投资的时间悖论">6.1.2 互联网基础设施投资的时间悖论</a></h3>
+<p>这里存在一个深刻的时间悖论：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>谁投资？</th><th>谁的回报？</th><th>结论</th></tr>
+</thead>
+<tbody>
+<tr><td>WorldCom的股东和债权人</td><td>血本无归</td><td>投资人亏光了</td></tr>
+<tr><td>收购WorldCom光纤的运营商</td><td>以极低成本获得了全国性的光纤网络</td><td>收购方大赚</td></tr>
+<tr><td>YouTube（2005年成立）</td><td>带宽成本极低，$0成本支撑上亿用户的视频流</td><td>应用层公司是基础设施过热的最终受益者</td></tr>
+<tr><td>全球互联网用户</td><td>宽带从奢侈品变成日用品</td><td>全社会受益</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>基础设施过度投资的“收益“和“成本“发生了时间上和主体上的错位</strong>——投资的人（泡沫期的股东）承担了全部成本，但收获不了任何收益；而受益的人（泡沫破裂后的公司、用户、整个社会）一毛钱成本都没有出。</p>
+<p>这就是我们在第一章提到的<strong>泡沫的三重积极功能之一——基础设施投资</strong>。泡沫期的过度投资，为泡沫破裂后的应用爆发提供了廉价的物理基础。这听起来对泡沫期的投资者来说很残酷——但这就是技术革命进程中金融资本角色的本质：<strong>在狂热期投入，在崩溃期退出，把基础设施留给黄金时代的后来者。</strong></p>
+<h2 id="62-建设过剩成本下降应用爆发光纤的故事"><a class="header" href="#62-建设过剩成本下降应用爆发光纤的故事">6.2 “建设过剩→成本下降→应用爆发”——光纤的故事</a></h2>
+<h3 id="621-一个被低估的因果链"><a class="header" href="#621-一个被低估的因果链">6.2.1 一个被低估的因果链</a></h3>
+<p>2005年2月14日，三个前PayPal员工——陈士骏、查德·赫利和贾维德·卡里姆——注册了域名“youtube.com“。同年4月，第一个视频“Me at the zoo“上传。2006年11月，Google以$16.5亿收购了成立不到两年的YouTube。</p>
+<p>很多人把YouTube的成功归因于“抓住了视频分享的需求“。但这只是故事的一面。故事的另一面是：<strong>如果带宽成本还是1999年的水平，YouTube根本就不可能存在。</strong></p>
+<p>让我们算一笔简单的账：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>场景</th><th>带宽成本（每GB传输）</th><th>YouTube如果存在？</th></tr>
+</thead>
+<tbody>
+<tr><td>1999年（泡沫期）</td><td>~$3-$5/GB</td><td>不可能——一个用户平均每月看视频约20GB流量，仅带宽成本就$60-$100/月，远超用户愿意支付的价格</td></tr>
+<tr><td>2003年（泡沫后）</td><td>~$0.3-$0.5/GB</td><td>可能但艰难——每位用户月带宽成本约$6-$10，可以通过广告勉强覆盖</td></tr>
+<tr><td>2005年（YouTube诞生）</td><td>~$0.05-$0.10/GB</td><td>可行——每位用户月带宽成本约$1-$2，广告收入完全可以覆盖</td></tr>
+<tr><td>2010年</td><td>~$0.01-$0.02/GB</td><td>爆发——Netflix、Hulu、优酷/土豆等视频平台百花齐放</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：DrPeering.net带宽价格历史数据；Telegeography全球带宽定价报告（https://www.telegeography.com/research/）。</p>
+<p>从$3-$5到$0.01，带宽成本在十年间下降了300-500倍。这种级别的成本下降，不是任何一个“天才创业者“或“聪明的VC“能够创造的。它是<strong>互联网泡沫期过度投资的光纤遗留下来的“免费燃料“</strong>。</p>
+<h3 id="622-同样的故事不同的行业"><a class="header" href="#622-同样的故事不同的行业">6.2.2 同样的故事，不同的行业</a></h3>
+<p>“建设过剩→成本下降→应用爆发“这个循环不只发生在光纤上。它在信息产业的每个基础层面都反复上演：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>基础设施层</th><th>过度投资期</th><th>成本下降幅度</th><th>解锁的应用</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>光纤/带宽</strong></td><td>1998-2001</td><td>~300-500倍（1999-2010）</td><td>YouTube、Netflix流媒体、Zoom视频会议</td></tr>
+<tr><td><strong>NAND Flash</strong></td><td>2005-2007</td><td>~100倍（每GB从$50降到$0.5）</td><td>iPhone大容量存储、iPad、SSD固态硬盘取代机械硬盘</td></tr>
+<tr><td><strong>DRAM</strong></td><td>2006-2008</td><td>~20倍（每GB从$100降到$5）</td><td>服务器内存容量跃升、内存数据库（Redis、Memcached）</td></tr>
+<tr><td><strong>云计算（IaaS）</strong></td><td>2006-2010（AWS/Google/Azure大规模建数据中心）</td><td>~10倍（EC2实例小时价格）</td><td>创业公司可以“零固定成本“启动——不需要买服务器就能上线一个全球级应用</td></tr>
+</tbody>
+</table>
+</div>
+<p>每一次，投资者在“过度投资“的阶段都在惊呼“泡沫“、“非理性”、“浪费”。但事后回头看，这些“浪费“恰恰是下一阶段创新最宝贵的“公共品“——就像19世纪英国“过度投资“的铁路网，大部分铁路公司在19世纪末破产了，但铁路网留了下来，成为英国工业革命的骨架。</p>
+<h3 id="623-对ai时代的直接启示"><a class="header" href="#623-对ai时代的直接启示">6.2.3 对AI时代的直接启示</a></h3>
+<p>把同样的逻辑套到今天：<strong>如果说今天的AI算力基础设施相当于1999年的光纤，那么今天的“过度投资“是否正在为3-5年后的AI应用爆发铺设“免费燃料“？</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>光纤故事（1999-2005）</th><th>AI算力故事（2023-?）</th></tr>
+</thead>
+<tbody>
+<tr><td>光纤过度铺设→带宽成本暴跌90%+</td><td>GPU/数据中心过度建设→推理成本暴跌90%+？</td></tr>
+<tr><td>带宽成本暴跌→YouTube成为可能</td><td>推理成本暴跌→AI Agent/全模态交互/实时AI视频成为可能？</td></tr>
+<tr><td>WorldCom的股东亏光了→YouTube的创始人和用户赚翻了</td><td>今天疯狂投资AI数据中心的云厂商股东风险巨大→未来的AI应用公司和用户可能是最终受益者？</td></tr>
+</tbody>
+</table>
+</div>
+<p>这不是预测。这是<strong>在追问一个结构性规律是否会在新的领域重复自己</strong>。我们在第十二章将基于半导体产能周期数据对这个类比做量化分析。</p>
+<h2 id="63-搜索之战google的崛起"><a class="header" href="#63-搜索之战google的崛起">6.3 搜索之战：Google的崛起</a></h2>
+<h3 id="631-pagerank把链接变成投票"><a class="header" href="#631-pagerank把链接变成投票">6.3.1 PageRank：把“链接“变成“投票“</a></h3>
+<p>1996年，斯坦福大学的博士生拉里·佩奇（Larry Page）有了一个想法：<strong>如果把网页之间的超链接看作一种“投票“呢？</strong> 一个网页被越多的其他网页链接，说明它越重要；被越重要的网页链接，说明它越权威。</p>
+<p>这个想法变成了PageRank算法——Google的核心技术。与当时主流的搜索引擎（Yahoo!、AltaVista、Lycos）相比，Google的搜索结果质量高出一个数量级。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>搜索方式</th><th>代表性公司</th><th>排序逻辑</th><th>问题</th></tr>
+</thead>
+<tbody>
+<tr><td>目录式</td><td>Yahoo!</td><td>人工编辑分类目录，手动收录网站</td><td>互联网太大，人工根本编不过来</td></tr>
+<tr><td>关键词匹配</td><td>AltaVista</td><td>网页中出现关键词的次数越多排名越高</td><td>容易被作弊——在页面底部重复关键词1000次就能排到前面</td></tr>
+<tr><td>链接分析</td><td>Google</td><td>被链接越多、被越权威的页面链接，排名越高</td><td>颠覆性方案——搜索引擎第一次不需要“人工“就能给出高质量结果</td></tr>
+</tbody>
+</table>
+</div>
+<p>Google成立于1998年9月，正值互联网泡沫的顶峰。这是一个“完美“的出生时机——坏的一面是，泡沫期的资金环境让大量低质量的“Google替代品“也能融到钱，竞争异常激烈；好的一面是，Google自己也从泡沫的资金充裕中受益——1999年，Google从红杉资本和KPCB两家顶级VC那里融到了$2500万。</p>
+<h3 id="632-adwords免费广告商业模式的胜利"><a class="header" href="#632-adwords免费广告商业模式的胜利">6.3.2 AdWords：“免费+广告“商业模式的胜利</a></h3>
+<p>Google在技术上碾压了对手，但它面临的商业问题是老生常谈的：<strong>一个免费的搜索引擎怎么赚钱？</strong></p>
+<p>2000年10月，Google推出AdWords——一种基于关键词拍卖的广告系统。广告主为特定关键词出价，用户搜索这些关键词时，广告出现在搜索结果旁边。广告主只有在用户点击广告时才付费（CPC模式，Cost Per Click）。</p>
+<p>这个模式有三个精妙之处：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>AdWords的设计元素</th><th>为什么精妙？</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>按点击付费（CPC）</strong></td><td>广告主不为“展示“付费，只为“行动“付费——风险在Google这边，效果在广告主那边</td></tr>
+<tr><td><strong>关键词拍卖</strong></td><td>长尾关键词（如“北京海淀区修水管“）几乎没人竞价——广告成本极低——小企业也能投得起广告</td></tr>
+<tr><td><strong>质量得分</strong></td><td>不只是出价高就能排第一——点击率高的广告即使出价低也能排在前面——激励广告主做出更好的广告</td></tr>
+</tbody>
+</table>
+</div>
+<p>2002年，Google营收$4.4亿。2003年，$14.7亿。2004年，$31.9亿——三年增长7倍。更重要的是，Google证明了“免费服务+广告变现“这个商业模式的可行性。在此之后，几乎所有面向消费者的互联网产品——从Facebook到TikTok——都采用了这个模式。</p>
+<h3 id="633-2004年google-ipo荷兰式拍卖的革命"><a class="header" href="#633-2004年google-ipo荷兰式拍卖的革命">6.3.3 2004年Google IPO：荷兰式拍卖的革命</a></h3>
+<p>2004年8月19日，Google上市。但Google没有选择传统的IPO方式——它选择了“荷兰式拍卖“（Dutch Auction）。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对比维度</th><th>传统IPO（投行承销）</th><th>Google的荷兰式拍卖</th></tr>
+</thead>
+<tbody>
+<tr><td>定价方式</td><td>投行与机构投资者协商确定发行价</td><td>投资者提交愿意购买的价格和数量，系统从高到低匹配</td></tr>
+<tr><td>分配方式</td><td>投行将热门股票分给“关系户“（通常是机构投资者）</td><td>任何提交了有效出价的投资者都能买到</td></tr>
+<tr><td>投行角色</td><td>投行拥有巨大的定价权和分配权</td><td>投行被降格为“拍卖平台“</td></tr>
+<tr><td>首日涨幅</td><td>互联网泡沫时期首日涨幅平均65%</td><td>Google首日涨幅18%（从$85到$100.34）——避免了投行“故意低价发行→首日暴涨→让关系户暴赚“的操作</td></tr>
+<tr><td>上市时估值</td><td>—</td><td>$230亿（一个成立6年、营收$31.9亿的公司）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Google S-1招股说明书（https://www.sec.gov/Archives/edgar/data/1288776/）；Google历史股价（雅虎财经 https://finance.yahoo.com/quote/GOOGL/history/）。</p>
+<p>Google的IPO不仅是一次成功的融资，更是对华尔街投行制度的一次公开挑战。两位创始人在招股说明书中附了一封《致投资者的信》，开头就是Google的座右铭：“Don’t be evil.”（不作恶）。信中写道：“Google不是一家传统公司。我们也不打算成为一家传统公司。”</p>
+<p>截至2026年，Google的市值从IPO时的$230亿增长到$2万亿以上——20年，约100倍。它是泡沫破裂后从废墟中长出的最大的那棵树。</p>
+<h2 id="64-电商与社交平台的诞生"><a class="header" href="#64-电商与社交平台的诞生">6.4 电商与社交平台的诞生</a></h2>
+<h3 id="641-amazon的惊险一跃从亏损到自由现金流的拐点"><a class="header" href="#641-amazon的惊险一跃从亏损到自由现金流的拐点">6.4.1 Amazon的惊险一跃：从亏损到自由现金流的拐点</a></h3>
+<p>我们在第五章提到，Amazon从泡沫破裂中活了下来——但“活下来“和“成为万亿美元巨头“之间，还有一段惊险的路要走。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>Amazon营收</th><th>净利润</th><th>自由现金流</th><th>股价（大致范围）</th><th>关键事件</th></tr>
+</thead>
+<tbody>
+<tr><td>1999</td><td>$16.4亿</td><td>-$7.2亿</td><td>深度为负</td><td>$50-$100（拆股调整后）</td><td>年亏损超过年营收的40%</td></tr>
+<tr><td>2000</td><td>$27.6亿</td><td>-$14.1亿</td><td>深度为负</td><td>$8-$50</td><td>泡沫破裂，股价暴跌90%+</td></tr>
+<tr><td>2001</td><td>$31.2亿</td><td>-$5.7亿</td><td>开始转正</td><td>$6-$15</td><td>大规模裁员+关停不盈利业务；自由现金流首次转正</td></tr>
+<tr><td>2002</td><td>$39.3亿</td><td>-$1.5亿</td><td>$1.35亿（正向！）</td><td>$14-$25</td><td>成本削减见效</td></tr>
+<tr><td>2003</td><td>$52.6亿</td><td>+$3500万</td><td>$3.5亿</td><td>$20-$60</td><td>首次实现全年盈利</td></tr>
+<tr><td>2005</td><td>$84.9亿</td><td>+$3.6亿</td><td>$5.3亿</td><td>$30-$50</td><td>Prime会员推出——改变用户行为的“飞轮“启动</td></tr>
+<tr><td>2006</td><td>$107.1亿</td><td>+$1.9亿</td><td>$4.9亿</td><td>$25-$40</td><td>AWS正式上线——Amazon从一个“电商公司“开始变成一个“科技基础设施公司“</td></tr>
+<tr><td>2010</td><td>$342亿</td><td>+$11.5亿</td><td>$25亿</td><td>$100-$180</td><td>AWS快速增长，成为Amazon最赚钱的部门</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Amazon各年年报（https://ir.aboutamazon.com/annual-reports/）。</p>
+<p>注意2001年那个微妙的拐点——自由现金流首次转正。贝佐斯在那一年做了一个残酷但正确的决定：裁员15%，关停所有“不能证明单位经济模型成立“的业务。这不是一个科技公司常做的决策。在硅谷的文化中，“裁员“几乎等同于“承认失败”。但贝佐斯的逻辑是：<strong>如果一个业务的单位经济模型永远跑不正，给它再多时间也跑不正。</strong></p>
+<p>Amazon从泡沫破裂后的$30亿市值谷底，在接下来的20年里涨了约600倍。这不是一个“一直正确“的故事——Amazon在2000年差一点就死了。这是一个“在正确的时间做了正确的艰难决定“的故事。</p>
+<h3 id="642-aws基础设施即公共品的诞生"><a class="header" href="#642-aws基础设施即公共品的诞生">6.4.2 AWS：基础设施即公共品的诞生</a></h3>
+<p>2006年，Amazon推出了一个在当时看起来完全不务正业的产品——Amazon Web Services（AWS）。一个电商公司为什么要做云计算？</p>
+<p>答案出人意料又合乎逻辑：Amazon在运营全球最大电商平台的过程中，积累了大量的数据中心、服务器、网络基础设施。这些设施是为每年11-12月的购物季峰值负载准备的——这意味着在一年中的大部分时间，大量的计算能力是闲置的。把这些闲置的计算能力当作“公共事业“卖给其他公司，是一个意外的副业。</p>
+<p>但AWS的发展远超预期。到2010年，AWS已经成为Amazon增长最快、利润率最高的业务板块。它彻底改变了科技创业的经济学：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>AWS出现之前</th><th>AWS出现之后</th></tr>
+</thead>
+<tbody>
+<tr><td>创业启动成本</td><td>$50万-$500万（买服务器、租机房、招运维）</td><td>$0-$5000（一张信用卡+一个AWS账号）</td></tr>
+<tr><td>扩容时间</td><td>数周-数月（采购服务器、等待部署）</td><td>数分钟（在控制台拖动一个滑块）</td></tr>
+<tr><td>失败成本</td><td>极高——买了服务器如果创业失败，硬件投资化为乌有</td><td>极低——关掉AWS实例，不再付费</td></tr>
+<tr><td>创新速度</td><td>慢——硬件采购的物理时滞</td><td>快——从想法到上线可能只要一个周末</td></tr>
+</tbody>
+</table>
+</div>
+<p>AWS降低了创业的“实验成本“。当你可以用几百美元而不是几十万美元来测试一个商业想法时，你会做更多实验。更多的实验意味着更多的创新。更多的创新意味着更高的成功率——虽然每个单项实验的成功率仍然很低，但总量上去了。</p>
+<p><strong>这是信息产业基础设施的又一轮“成本崩溃→应用爆发“。</strong> 只不过这一次崩溃的不是光纤，而是计算资源。</p>
+<h3 id="643-facebook与社交网络互联网从信息的网络变成人的网络"><a class="header" href="#643-facebook与社交网络互联网从信息的网络变成人的网络">6.4.3 Facebook与社交网络：互联网从“信息的网络“变成“人的网络“</a></h3>
+<p>2004年2月，哈佛大学大二学生马克·扎克伯格上线了一个叫“TheFacebook“的网站。到2004年底，用户突破100万。2006年，向所有人开放注册。2008年，超越MySpace成为全球最大社交网络。</p>
+<p>Facebook的增长曲线令人窒息：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>时间</th><th>Facebook月活用户</th><th>关键事件</th></tr>
+</thead>
+<tbody>
+<tr><td>2004年底</td><td>100万</td><td>仅限哈佛等少数大学</td></tr>
+<tr><td>2005年底</td><td>600万</td><td>扩展到美国大部分大学</td></tr>
+<tr><td>2006年底</td><td>1200万</td><td>向所有人开放注册（不再需要.edu邮箱）</td></tr>
+<tr><td>2007年底</td><td>5800万</td><td>推出Facebook Platform——第三方可以在Facebook上开发应用</td></tr>
+<tr><td>2008年底</td><td>1.4亿</td><td>超越MySpace成为全球最大社交网络</td></tr>
+<tr><td>2009年底</td><td>3.6亿</td><td>移动端开始发力</td></tr>
+<tr><td>2010年底</td><td>6.1亿</td><td>全球范围内的增长——互联网从一个“信息的网络“变成“人的网络“</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Facebook SEC S-1招股说明书（https://www.sec.gov/Archives/edgar/data/1326801/）；Facebook季度报告（https://investor.fb.com/）。</p>
+<p>Facebook的核心洞察是：互联网不需要再发明内容了——<strong>最有价值的内容是“你的朋友在做什么“</strong>。一个高中女生发一张自拍、100个朋友点赞——这产生的参与度和粘性，远高于任何专业编辑精心制作的新闻文章。</p>
+<p>这是“用户生成内容“（UGC）模式的胜利。从这一刻开始，互联网平台的核心任务不再是“生产内容“，而是“让用户互相生产内容“——Facebook是人际关系的网络，YouTube是视频的网络，Twitter是即时信息的网络，Instagram是图片的网络。所有这些平台的共同特点是：<strong>它们不生产任何内容，但它们的用户生产了整个世界的内容。</strong></p>
+<h2 id="65-泡沫后的金融调整"><a class="header" href="#65-泡沫后的金融调整">6.5 泡沫后的金融调整</a></h2>
+<h3 id="651-vc行业的洗牌与重生"><a class="header" href="#651-vc行业的洗牌与重生">6.5.1 VC行业的洗牌与重生</a></h3>
+<p>互联网泡沫破裂后，VC行业经历了一场彻底的洗牌。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>2000年（泡沫顶峰）</th><th>2003年（泡沫谷底）</th><th>变化</th></tr>
+</thead>
+<tbody>
+<tr><td>美国活跃VC基金数量</td><td>~1,200家</td><td>~700家</td><td>-40%</td></tr>
+<tr><td>美国VC投资总额</td><td>~$1000亿</td><td>~$190亿</td><td>-81%</td></tr>
+<tr><td>平均单笔投资额</td><td>~$1400万（晚期）</td><td>~$700万（早期为主）</td><td>-50%</td></tr>
+<tr><td>VC基金平均IRR（内部收益率）</td><td>~+50%（1999年vintage）</td><td>~-30%（2000年vintage）</td><td>泡沫期入场的LP几乎全部亏损</td></tr>
+<tr><td>恢复到IPO窗口</td><td>—</td><td>2004年Google上市标志着VC退出通道重新打开</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：PitchBook / NVCA Yearbook (https://nvca.org/research/); Cambridge Associates U.S. Venture Capital Index。</p>
+<p>活下来的VC基金发生了根本性的变化：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>投资哲学维度</th><th>泡沫期（1999-2000）</th><th>泡沫后（2003-2007）</th></tr>
+</thead>
+<tbody>
+<tr><td>投资节奏</td><td>越快越好——“一周签Term Sheet”</td><td>审慎——更长的尽职调查，更多轮次的小额试投</td></tr>
+<tr><td>估值标准</td><td>“这个赛道有多大？”（TAM叙事）</td><td>“单位经济模型跑正了吗？”（UE分析）</td></tr>
+<tr><td>对盈利的态度</td><td>“赚钱说明你没有在积极投资增长”</td><td>“如果你能在增长的同时产生正向现金流，你就是传奇”</td></tr>
+<tr><td>对IPO的态度</td><td>IPO是起点——上市后继续融资</td><td>IPO是终点——上市前必须证明公司是可持续的</td></tr>
+</tbody>
+</table>
+</div>
+<p>泡沫后活下来的VC基金，在2004-2007年之间以一种完全不同的方式部署了资本。它们不再追逐概念，而是押注于那些在泡沫废墟中证明了UE模型的公司——Google、Salesforce、LinkedIn、Workday。这些公司的共同特点是：<strong>它们在泡沫最疯狂的年份里保持了冷静，在泡沫破裂后成为了真正的赢家。</strong></p>
+<h3 id="652-私募股权pe在科技并购中的新角色"><a class="header" href="#652-私募股权pe在科技并购中的新角色">6.5.2 私募股权（PE）在科技并购中的新角色</a></h3>
+<p>泡沫破裂后，一个历史上主要关注传统行业的资本力量开始大量进入科技领域——私募股权（PE）。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>代表性PE收购</th><th>时间</th><th>交易金额</th><th>模式</th></tr>
+</thead>
+<tbody>
+<tr><td>SunGard Data Systems</td><td>2005</td><td>$114亿</td><td>七家PE联合收购，科技史上最大PE收购案之一</td></tr>
+<tr><td>各种“分拆收购“</td><td>2003-2007</td><td>数十亿级</td><td>大型科技公司（HP、IBM等）剥离非核心业务→PE接手运营优化→转售或上市</td></tr>
+</tbody>
+</table>
+</div>
+<p>PE的玩法和VC完全不同。VC赌的是“这个公司未来可能值100倍“，PE赌的是“这个公司目前的运营效率太低，如果我能把利润率提升5个百分点，稳健经营3-5年，退出的回报就很可观“。在泡沫年代，这种“赚确定性的慢钱“的投资方式被VC圈子嗤之以鼻。但在泡沫破裂后，当“未来100倍“的梦想破灭时，“把利润率提升5个百分点“的安全垫变得极具吸引力。</p>
+<p>PE的进入标志着科技产业金融生态的成熟——从早期（只有VC）到成长期（VC+PE）的全生命周期覆盖。我们在第八章会展开这个演化逻辑。</p>
+<h2 id="66-本章小结基础设施过热的建设性破坏"><a class="header" href="#66-本章小结基础设施过热的建设性破坏">6.6 本章小结：基础设施过热的“建设性破坏“</a></h2>
+<h3 id="661-2000-2010十年的核心主题"><a class="header" href="#661-2000-2010十年的核心主题">6.6.1 2000-2010十年的核心主题</a></h3>
+<p>如果用一个词来概括互联网的十年，那就是“建设性破坏“（Creative Destruction，熊彼特的术语，但这里赋予了更具体的含义）。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>破坏的一面</th><th>建设的一面</th></tr>
+</thead>
+<tbody>
+<tr><td>纳斯达克暴跌78%</td><td>光纤成本暴跌300-500倍</td></tr>
+<tr><td>$5万亿市值蒸发</td><td>带宽从奢侈品变成日用品</td></tr>
+<tr><td>500+互联网公司破产</td><td>YouTube、Netflix流媒体成为可能</td></tr>
+<tr><td>VC行业缩水80%</td><td>活下来的VC学会了审慎投资、关注UE模型</td></tr>
+<tr><td>数十万科技从业者失业</td><td>AWS让创业启动成本从$50万降到$5000</td></tr>
+<tr><td>WorldCom/Enron等巨头破产</td><td>新的巨头（Google、Facebook）在废墟中崛起</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>破坏不是终点——破坏是重建的开始。</strong> 这句话不是心灵鸡汤。它是信息产业五十年来反复验证的规律。每一次泡沫破裂都淘汰了投机者、留下了基础设施、催生了真正的商业模式创新。如果泡沫没有破裂，光纤的价格不会暴跌90%+；如果光纤价格没有暴跌，YouTube不会在2005年成为可能。</p>
+<h3 id="662-对ai时代的投射"><a class="header" href="#662-对ai时代的投射">6.6.2 对AI时代的投射</a></h3>
+<p>站在2026年，我们正在目睹另一场类似的基础设施投资狂潮——这一次是GPU、HBM、数据中心、光互联。微软、Amazon、Google、Meta在2024-2025年的AI资本开支合计超过$2000亿/年，这个数字还在增长。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>历史类比维度</th><th>互联网泡沫期（1998-2001）</th><th>AI投资期（2023-2028?）</th></tr>
+</thead>
+<tbody>
+<tr><td>过度投资的基础设施</td><td>光纤、海底光缆</td><td>GPU算力集群、HBM存储、光互联</td></tr>
+<tr><td>谁在投资？</td><td>WorldCom、Global Crossing、Level 3</td><td>微软、Amazon、Google、Meta（以及各国的“国家AI算力中心“）</td></tr>
+<tr><td>投资者面临的风险</td><td>破产——$5万亿市值蒸发</td><td>资本回报率低于资本成本——如果AI应用的收入不能按预期增长</td></tr>
+<tr><td>如果泡沫破裂，谁受益？</td><td>YouTube、Netflix、全体互联网用户</td><td>未来的AI应用公司、使用AI的全体用户</td></tr>
+<tr><td>成本可能下降多少？</td><td>光纤带宽成本：约300-500倍（1999-2010）</td><td>GPU推理成本：预计100-1000倍（2023-2030?）</td></tr>
+<tr><td>可能解锁的杀手级应用</td><td>视频流（YouTube）、云存储、在线协作</td><td>实时全模态AI交互、真正的通用AI Agent、AI原生的工作和娱乐方式</td></tr>
+</tbody>
+</table>
+</div>
+<p>如果历史押韵（如我们所信），今天的AI基础设施过度投资，正在为2030年代的AI应用黄金时代铺设“免费燃料“。在短期内，投资者可能过度支付了；在长期内，全社会可能是最大的受益者。</p>
+<p>这就是“建设性破坏“的终极含义。</p>
+<hr>
+<h3 id="本章关键要点"><a class="header" href="#本章关键要点">本章关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>“建设过剩→成本下降→应用爆发“循环</td><td>光纤过度铺设→带宽成本暴跌90%+→YouTube成为可能。这一规律在NAND Flash、DRAM、云计算等各个基础设施层反复验证</td></tr>
+<tr><td>时间与主体的错位</td><td>投资者承担成本；后来的公司、用户和全社会收获收益。这是泡沫“积极功能“的核心机制</td></tr>
+<tr><td>Google的崛起</td><td>PageRank技术突破+ AdWords商业模式创新 + 2004年荷兰式拍卖IPO——泡沫破裂后从废墟中长出的最大一棵树</td></tr>
+<tr><td>Amazon的惊险一跃</td><td>2001年自由现金流首次转正——在泡沫破裂后证明了UE模型；AWS在2006年上线，降低了全社会的创业实验成本</td></tr>
+<tr><td>Facebook与UGC</td><td>“用户生成内容“模式——平台不生产内容，但用户生产了整个世界的内容</td></tr>
+<tr><td>金融生态的洗牌与重生</td><td>VC行业缩水80%→活下来的基金投资理念发生根本转变；PE进入科技领域，完善了全生命周期的金融支持体系</td></tr>
+<tr><td>对AI时代的投射</td><td>光纤故事（1999-2005）vs 算力故事（2023-?）——历史是否在押韵？</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li><strong>Telegeography海底光缆数据库</strong>：https://www.telegeography.com</li>
+<li><strong>WorldCom破产案SEC文件</strong>：https://www.sec.gov/Archives/edgar/data/723527/</li>
+<li><strong>DrPeering.net带宽价格历史数据</strong>：https://drpeering.net</li>
+<li><strong>Google S-1招股说明书（2004）</strong>：https://www.sec.gov/Archives/edgar/data/1288776/</li>
+<li><strong>Google历史股价</strong>：https://finance.yahoo.com/quote/GOOGL/history/</li>
+<li><strong>Amazon各年年报</strong>：https://ir.aboutamazon.com/annual-reports/</li>
+<li><strong>Facebook S-1招股说明书（2012）</strong>：https://www.sec.gov/Archives/edgar/data/1326801/</li>
+<li><strong>PitchBook / NVCA Yearbook</strong>（VC行业年度数据）：https://nvca.org/research/</li>
+<li><strong>Cambridge Associates U.S. Venture Capital Index</strong>（VC行业基准收益率）：https://www.cambridgeassociates.com/</li>
+<li><strong>FCC《美国宽带部署报告》</strong>：https://www.fcc.gov/reports-research/reports/</li>
+<li><strong>Battelle, J. (2005). <em>The Search: How Google and Its Rivals Rewrote the Rules of Business</em>.</strong> Portfolio.（Google崛起史）</li>
+<li><strong>Stone, B. (2013). <em>The Everything Store: Jeff Bezos and the Age of Amazon</em>.</strong> Little, Brown and Company.（Amazon全史）</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-2/chapter-5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-2/chapter-7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-2/chapter-5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-2/chapter-7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

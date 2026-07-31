@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第十四章 从周期到策略——长中短期的投资框架 - 周期之眼：信息产业与AI的演进逻辑与投资框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="以周期为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波与佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-b35aae95.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cdc60685.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之眼：信息产业与AI的演进逻辑与投资框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第十四章-从周期到策略长中短期的投资框架"><a class="header" href="#第十四章-从周期到策略长中短期的投资框架">第十四章 从周期到策略——长中短期的投资框架</a></h1>
+<blockquote>
+<p><strong>策略落地：把周期判断变成投资回报</strong>
+<em>知道处在周期的哪个位置是一回事，把这种认知转化为投资回报是另一回事。本章提供一套完整的“长期底仓+中期轮动+短期择时“复合策略框架。</em></p>
+</blockquote>
+<h2 id="141-长期策略3-10年锚定供需缺口布局核心资产"><a class="header" href="#141-长期策略3-10年锚定供需缺口布局核心资产">14.1 长期策略（3-10年）：锚定供需缺口，布局核心资产</a></h2>
+<h3 id="1411-长期策略的核心逻辑"><a class="header" href="#1411-长期策略的核心逻辑">14.1.1 长期策略的核心逻辑</a></h3>
+<p>长期策略的基本假设是：<strong>AI不是一时的风口，而是百年一遇的技术-经济范式转换。</strong> 在这个尺度上，短期的估值波动和情绪起伏都会被时间熨平——真正重要的是“哪些资产在十年后确定性地比今天更值钱“。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>长期核心资产</th><th>长期供需逻辑</th><th>确定性评级</th><th>当前（2026年中）的周期阶段</th><th>长期布局思路</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>AI算力芯片（GPU/ASIC）</strong></td><td>AI应用的“硅含量“在十年内只会增长不会减少——杰文斯悖论确保Token越便宜，总算力需求越大</td><td>★★★★★</td><td>狂热期——英伟达毛利率已从76%峰值回落至73%，增速从+150%放缓至+40%——正从“超级牛市“向“正常增长“过渡</td><td>左侧布局——当市场为“增速放缓“恐慌时，正是长期投资者建仓的时机。英伟达之外，关注AMD MI400系列和博通（定制ASIC）的崛起</td></tr>
+<tr><td><strong>HBM/先进存储</strong></td><td>每代GPU需要的HBM容量持续增长（H100 80GB→B200 192GB→下一代预计288GB+），HBM的“硅含量“增长甚至快于GPU</td><td>★★★★★</td><td>狂热期——SK海力士2026年HBM产能仍被预订一空，但产能扩张在加速</td><td>SK海力士（HBM龙头）、三星（HBM追赶者）、美光（HBM第三极）——三家都受益于HBM的十年增长</td></tr>
+<tr><td><strong>半导体设备</strong></td><td>无论谁做AI芯片，都需要设备来制造。ASML（光刻机）、应用材料（沉积/刻蚀）、东京电子——“卖铲子给卖铲子的人”</td><td>★★★★☆</td><td>成熟期——设备订单与AI芯片需求高度相关，但波动小于芯片本身</td><td>ASML（EUV光刻机垄断）、应用材料、泛林半导体——在周期低点（如果到来）布局</td></tr>
+<tr><td><strong>AI云平台</strong></td><td>AI推理和训练的最终载体——微软Azure、AWS、Google Cloud——“AI时代的操作系统”</td><td>★★★★☆</td><td>成长期——AI服务已成为三大云增速最快的收入来源</td><td>微软（Azure+OpenAI深度绑定）、Amazon（AWS+自有Trainium芯片）、Google（GCP+TPU+Gemini）</td></tr>
+<tr><td><strong>国产AI芯片（华为昇腾产业链）</strong></td><td>受地缘政治驱动，中国的AI算力“自主可控“是十年主线——无论全球周期如何波动，国产替代的逻辑是独立于周期的</td><td>★★★★☆</td><td>单点突破→系统替代过渡期——详见第十三章</td><td>华为昇腾产业链（先进封装、散热、服务器组装合作伙伴）；寒武纪（高弹性、高风险）；海光信息（稳健型）</td></tr>
+<tr><td><strong>AI应用龙头（左侧布局）</strong></td><td>当AI推理成本下降到某个临界点，AI应用将从“烧钱“转向“印钱“。此时以合理的估值提前布局，是十年维度上最大的不对称回报机会</td><td>★★★☆☆</td><td>导入期末端——UE模型正在改善，但尚未全面跑正（第十一章）</td><td>尚未明朗——当前最值得跟踪的候选者是那些“UE模型改善速度最快“的AI应用公司</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1412-长期策略的仓位管理"><a class="header" href="#1412-长期策略的仓位管理">14.1.2 长期策略的仓位管理</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期阶段</th><th>长期底仓建议仓位</th><th>逻辑</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>导入期</strong></td><td>30-40%（左侧分批建仓）</td><td>技术路线不确定，估值便宜——用“小额多批次“的方式分散时点风险</td></tr>
+<tr><td><strong>狂热期</strong></td><td>50-70%（核心仓位，不追高加仓）</td><td>趋势明确，但估值偏高——“持有≠加仓”。关键纪律：不在狂热期大幅增加长期仓位</td></tr>
+<tr><td><strong>崩溃期</strong></td><td>70-90%（逆向大幅加仓）</td><td>优质资产被错杀，估值处于历史低位——这是十年一遇的“播种“窗口。前提：你能承受短期的继续下跌</td></tr>
+<tr><td><strong>黄金时代</strong></td><td>50-60%（维持核心仓位，适度止盈）</td><td>估值回归合理，趋势稳健——“持有并享受复利”</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>当前（2026年中）的长期仓位建议</strong>：50-60%。我们接近狂热期——趋势明确，不急于大幅减仓（AI的十年故事远未结束），但也不在此时激进加仓（估值已不便宜）。保持核心仓位，预留30-40%的现金等待崩溃期（如果到来）的逆向布局机会。</p>
+<h2 id="142-中期策略1-3年把握利润再分配的轮动节奏"><a class="header" href="#142-中期策略1-3年把握利润再分配的轮动节奏">14.2 中期策略（1-3年）：把握利润再分配的轮动节奏</a></h2>
+<h3 id="1421-半导体产业链利润轮动的历史规律"><a class="header" href="#1421-半导体产业链利润轮动的历史规律">14.2.1 半导体产业链利润轮动的历史规律</a></h3>
+<p>在第三章中，我们总结了半导体周期的“利润轮动“规律——设备→设计→制造→封测→存储，利润在不同环节间按一定顺序流动。结合AI周期的特殊性，当前（2026年中）的轮动位置如下：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>产业链环节</th><th>利润轮动阶段</th><th>代表性企业或ETF参考</th><th>中期策略（1-3年）</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>半导体设备</strong></td><td>成熟期——受益于全球建厂潮和先进封装扩张，订单可见度较高</td><td>ASML、应用材料、泛林、东京电子</td><td>稳健配置——确定性高，但弹性不如芯片本身</td></tr>
+<tr><td><strong>AI算力芯片（设计）</strong></td><td>狂热期末端——英伟达增速从+150%放缓至+40%，毛利率从峰值回落</td><td>英伟达、AMD、博通</td><td>渐减配置——长期看好，但中短期估值扩张空间有限</td></tr>
+<tr><td><strong>晶圆代工</strong></td><td>上升期——台积电独家受益于AI芯片的先进制程和CoWoS需求</td><td>台积电</td><td>核心配置——台积电是AI芯片“物理瓶颈“的唯一解，周期风险远低于芯片设计公司</td></tr>
+<tr><td><strong>先进封装（CoWoS）</strong></td><td>上升期——产能仍在快速扩张，但2027年可能面临“瓶颈解除“</td><td>台积电（CoWoS）、日月光、安靠</td><td>配置——在未来1-2年确定性高，但需注意2027年后产能释放的风险</td></tr>
+<tr><td><strong>HBM/存储</strong></td><td>狂热期——HBM供不应求仍然严重，但传统DRAM/NAND可能在2026-2027年面临周期拐点</td><td>SK海力士、三星、美光</td><td>适度配置——HBM的结构性增长故事清晰，但存储的周期波动烈度大——控制仓位</td></tr>
+<tr><td><strong>光模块</strong></td><td>上升期——800G快速放量，1.6T即将爆发——AI数据中心的“神经系统“升级是确定性趋势</td><td>中际旭创、Coherent</td><td>超配——光模块的“量价齐升“周期尚未结束，确定性高，弹性大</td></tr>
+<tr><td><strong>服务器组装/液冷散热</strong></td><td>上升期——AI服务器出货量持续增长，液冷渗透率快速提升</td><td>工业富联、Vertiv、超微电脑（Super Micro）</td><td>配置——受益于AI基础设施的持续建设，但注意客户集中度风险</td></tr>
+<tr><td><strong>AI应用（UE模型改善者）</strong></td><td>导入期→成长期过渡——推理成本持续下降，部分AI应用UE模型接近跑正</td><td>—</td><td>分批左侧布局——最大的不对称回报机会，但个股风险极高——适合小仓位、分散化</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1422-中期轮动的关键信号指标"><a class="header" href="#1422-中期轮动的关键信号指标">14.2.2 中期轮动的关键信号指标</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>信号</th><th>如果出现……</th><th>策略调整</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>英伟达毛利率跌破65%</strong></td><td>GPU的稀缺性溢价大幅消退——AI芯片从“卖方市场“进入“买方市场“</td><td>减持AI芯片设计公司，增持中下游（模型+应用）——“上游利润向中下游转移“的窗口正在打开</td></tr>
+<tr><td><strong>台积电CoWoS产能利用率跌破85%</strong></td><td>先进封装从“瓶颈“变成“过剩“——这是AI芯片“产能过剩“最明确的信号</td><td>全线防御——AI半导体产业链的上行周期可能已接近顶部</td></tr>
+<tr><td><strong>一家头部互联网公司宣布“50%+推理负载迁移至国产芯片“</strong></td><td>国产AI芯片的“系统替代“里程碑达成（第十三章）</td><td>大幅增持国产AI芯片产业链——这是中国AI投资的下一个“超级主题“</td></tr>
+<tr><td><strong>AI应用UE模型跑正——多家AI应用公司开始产生正向自由现金流</strong></td><td>“烧钱换增长“阶段结束——AI应用从“需要融资输血“变成“可以自我造血”</td><td>大幅增持AI应用——这是第六章“光纤成本暴跌→YouTube爆发“时刻的AI版</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="143-短期策略3-12月波动中的择时与选股"><a class="header" href="#143-短期策略3-12月波动中的择时与选股">14.3 短期策略（3-12月）：波动中的择时与选股</a></h2>
+<h3 id="1431-短期策略的核心框架"><a class="header" href="#1431-短期策略的核心框架">14.3.1 短期策略的核心框架</a></h3>
+<p>短期策略的目标不是“准确预测三个月后AI股票的涨跌“——这是不可能的。短期策略的目标是：<strong>利用市场情绪的短期极端波动，获取“安全边际“——在悲观中买入，在乐观中减仓。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>市场情绪阶段</th><th>识别信号</th><th>短期策略</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>极悲观</strong></td><td>AI相关股票普遍下跌30%+；媒体头版“AI泡沫破裂“；社交媒体上“AI永远赚不到钱“成为主流叙事；AI ETF资金持续流出</td><td>买入——分批加仓优质AI资产。历史上，每一次极悲观情绪都是买入窗口——2002年（互联网泡沫底部）、2008年Q4（金融危机底部）、2022年Q4（科技股暴跌——ChatGPT恰好在那时发布）</td></tr>
+<tr><td><strong>悲观</strong></td><td>AI股票温和下跌或横盘；情绪偏负面但不极端</td><td>持有或小幅加仓——等待更好的买点或更清晰的趋势信号</td></tr>
+<tr><td><strong>中性</strong></td><td>AI股票正常波动；市场对AI的态度“不热不冷“</td><td>维持现有仓位——不需要操作</td></tr>
+<tr><td><strong>乐观</strong></td><td>AI股票持续上涨；“AI改变一切“的叙事回归；IPO/融资新闻增加</td><td>持有——但如果仓位过重，适度减仓至中性水平</td></tr>
+<tr><td><strong>极乐观</strong></td><td>AI股票每周都在创新高；社交媒体上人人都在炫耀“我买了AI股票赚了X倍“；连出租车司机都在讨论AI投资；AI IPO首日涨幅100%+（如果发生）</td><td>卖出——至少将仓位降至长期底仓水平。历史上，每一次极乐观情绪都是卖出窗口——1999年Q4（互联网泡沫顶部）、2021年Q4（科技大牛市顶部）</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1432-短期策略的具体战术"><a class="header" href="#1432-短期策略的具体战术">14.3.2 短期策略的具体战术</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>战术</th><th>适用场景</th><th>具体操作</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>超跌修复</strong></td><td>AI优质公司因市场整体恐慌而被错杀，跌幅30%+但基本面没有恶化</td><td>在恐慌情绪峰值（VIX飙升、媒体报道最负面时）分批买入——“在市场血流成河时买入，即使那血是你自己的”（罗斯柴尔德）</td></tr>
+<tr><td><strong>事件驱动</strong></td><td>英伟达GTC大会、OpenAI/Google新品发布、台积电法说会——这些事件经常触发短期股价波动</td><td>事件前适度建仓（如果是市场尚未充分定价的催化剂），事件后“买预期卖事实“（如果已被充分定价）</td></tr>
+<tr><td><strong>季节性规律</strong></td><td>半导体和科技股通常在Q4和Q1表现较好（年末“窗口粉饰“+年初新资金入场），Q2-Q3波动较大</td><td>在Q2-Q3的调整中寻找买点，在Q4-Q1的上涨中寻找卖点——不是铁律，但有统计显著性</td></tr>
+<tr><td><strong>资金流向跟踪</strong></td><td>AI主题ETF（如BOTZ、AIQ）的资金净流入/流出，往往领先于AI股票的价格走势</td><td>当ETF资金在AI股票下跌时仍然净流入→底部信号；当ETF资金在AI股票上涨时开始净流出→顶部预警</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1433-ai资本开支衍生板块的投资机会"><a class="header" href="#1433-ai资本开支衍生板块的投资机会">14.3.3 AI资本开支衍生板块的投资机会</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>衍生板块</th><th>受益逻辑</th><th>代表性企业或ETF参考</th><th>短期弹性</th><th>长期确定性</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>电力/能源</strong></td><td>“算力即电力”——AI数据中心是巨大的电力消耗者。单个超大规模数据中心的电力需求可达100-500MW</td><td>电力公用事业（Constellation Energy、Vistra）、核电（微软已签约三里岛核电站重启）、天然气</td><td>★★★</td><td>★★★★★</td></tr>
+<tr><td><strong>液冷散热</strong></td><td>GPU功耗从H100的700W→B200的1000W→下一代预计1200W+——空气冷却已达物理极限，液冷渗透率正在爆发</td><td>Vertiv、超微电脑</td><td>★★★★★</td><td>★★★★</td></tr>
+<tr><td><strong>数据中心REITs</strong></td><td>数据中心物理空间需求持续增长，REITs提供了“AI基础设施+稳定分红“的组合</td><td>Equinix、Digital Realty</td><td>★★</td><td>★★★★</td></tr>
+<tr><td><strong>服务器组装</strong></td><td>AI服务器出货量快速增长，但组装环节毛利率极低（&lt;10%）——“量升价稳、利薄”</td><td>工业富联、广达</td><td>★★★</td><td>★★</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="144-复合策略框架长期底仓中期轮动短期择时"><a class="header" href="#144-复合策略框架长期底仓中期轮动短期择时">14.4 复合策略框架：长期底仓+中期轮动+短期择时</a></h2>
+<h3 id="1441-三维仓位的动态分配"><a class="header" href="#1441-三维仓位的动态分配">14.4.1 三维仓位的动态分配</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期阶段判断</th><th>长期底仓</th><th>中期轮动仓位</th><th>短期择时仓位</th><th>现金/防御仓位</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>导入期</strong></td><td>30-40%</td><td>10-20%</td><td>10-20%</td><td>30-40%</td></tr>
+<tr><td><strong>狂热期前端（当前≈2026年中）</strong></td><td>50-60%</td><td>10-20%</td><td>10-15%</td><td>15-25%</td></tr>
+<tr><td><strong>狂热期后段（接近顶部）</strong></td><td>40-50%</td><td>5-10%</td><td>10-15%（快进快出，做短线）</td><td>30-40%</td></tr>
+<tr><td><strong>崩溃期</strong></td><td>60-80%（逆向大幅加仓）</td><td>5-10%</td><td>5-10%</td><td>10-20%</td></tr>
+<tr><td><strong>黄金时代</strong></td><td>50-60%</td><td>15-20%</td><td>5-10%</td><td>15-20%</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1442-仓位再平衡的触发机制"><a class="header" href="#1442-仓位再平衡的触发机制">14.4.2 仓位再平衡的触发机制</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>触发事件</th><th>仓位调整</th></tr>
+</thead>
+<tbody>
+<tr><td>AI股票整体上涨50%+（年度）——市场情绪明显偏乐观</td><td>将长期底仓下降10个百分点、现金仓位上调10个百分点——“被动止盈”</td></tr>
+<tr><td>AI股票整体下跌30%+（年度）——市场情绪从乐观骤转为悲观</td><td>将长期底仓上调15个百分点、现金仓位下降15个百分点——“被动加仓”</td></tr>
+<tr><td>周期阶段判断发生重大变化（如从“≈1998年“调整为“≈1999年Q4“）</td><td>大幅调整仓位——长期底仓降至40%，中期轮动降至5%，现金升至40%+</td></tr>
+<tr><td>个人资金需求或风险承受能力变化</td><td>优先从短期择时仓位中提取资金，维持长期底仓不动</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>核心纪律</strong>：<strong>永远不要让短期情绪决定长期仓位。</strong> 当你在“AI又涨停了，不买就错过了“的冲动下想要加仓时——回顾第八章的FOMO机制。当你在“AI跌了30%，完了完了“的恐慌中想要清仓时——回顾第六章的“幸存者偏差“——2002年清仓Amazon的投资者，错过了此后20年的600倍回报。</p>
+<h2 id="145-风险敞口管理"><a class="header" href="#145-风险敞口管理">14.5 风险敞口管理</a></h2>
+<h3 id="1451-周期误判风险的场景分析"><a class="header" href="#1451-周期误判风险的场景分析">14.5.1 周期误判风险的场景分析</a></h3>
+<p>任何周期判断都有出错的可能。本章的核心框架（AI≈1998-1999年间）如果错了——错在哪里？应该如何应对？</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>错误情景</th><th>如果发生了……</th><th>后果</th><th>应对预案</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>情景A：AI已经是2000年而非1999年</strong></td><td>泡沫破裂在即——AI估值已经严重透支了未来5-10年的增长</td><td>如果仓位过重，将面临类似2000-2002年纳斯达克暴跌的损失（-78%）</td><td><strong>触发条件</strong>：AI私募估值/营收比全面超过50倍、出现大量零营收AI公司上市或排队IPO、AI CapEx的“二阶导“转入负数。<strong>应对</strong>：将长期底仓降至30%以下，大幅持有现金</td></tr>
+<tr><td><strong>情景B：AI比1998年更早——我们还在1996年</strong></td><td>AI的狂热期远未到来——当前只是“开胃菜“，真正的爆发在5年之后</td><td>如果仓位太轻，将错失未来5年最大的投资机会</td><td><strong>触发条件</strong>：AI普及率仍在快速攀升（每年+15个百分点+）、AI应用UE模型持续改善但尚未引起市场广泛关注、私募估值温和（估值/营收比&lt;20倍）。<strong>应对</strong>：将长期底仓提高至60-70%</td></tr>
+<tr><td><strong>情景C：AI周期被地缘政治或外部冲击打断</strong></td><td>中美科技彻底脱钩——全球AI产业链断裂为两个互不兼容的世界；或全球性金融危机/战争使得AI投资全面停滞</td><td>AI公司的估值将遭受毁灭性打击——且复苏时间可能长达十年</td><td><strong>触发条件</strong>：美国对中国实施全面芯片禁运（连H20也不允许出售）、中国宣布类似的报复性技术禁令、或全球主要经济体进入战争动员。<strong>应对</strong>：迅速将AI相关仓位降至最低，转向黄金、短期国债等传统避险资产</td></tr>
+<tr><td><strong>情景D：AI技术路线遭遇根本性挑战</strong></td><td>出现了一种全新的AI架构，不需要海量GPU和电力——“Scaling Law“被证伪</td><td>所有基于“算力需求永续增长“假设的投资都将面临重定价</td><td><strong>触发条件</strong>：学术界和产业界的主流观点从“Scaling Law成立“转向“Scaling Law已失效“。<strong>应对</strong>：大幅减持GPU/HBM/数据中心等“算力密集型“资产，增持轻资产型AI应用和AI软件公司</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1452-风险对冲的工具箱"><a class="header" href="#1452-风险对冲的工具箱">14.5.2 风险对冲的“工具箱“</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对冲工具</th><th>保护什么风险？</th><th>使用方法</th><th>成本/代价</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>现金</strong></td><td>所有风险——最古老也最有效的对冲</td><td>占总资产15-40%，随周期位置动态调整</td><td>机会成本——在牛市中“持现“意味着放弃潜在收益</td></tr>
+<tr><td><strong>做多传统防御性资产（公用事业、消费必需品、医疗）</strong></td><td>AI股票的系统性下跌风险——当市场恐慌时，防御性资产通常跌幅较小</td><td>配置10-20%的仓位在AI周期中仍然受益的防御性资产——如电力公用事业（受益于AI电力需求）</td><td>在AI牛市中，防御性资产的回报远低于AI股</td></tr>
+<tr><td><strong>做多中国国产AI替代（A股/港股）</strong></td><td>美国AI泡沫破裂的风险——中国AI周期可能与美国周期脱钩</td><td>配置10-30%的AI仓位在中国国产替代主题上——如果情景C（科技脱钩）发生，这些资产的“自主可控“溢价可能抵消全球AI泡沫破裂的冲击</td><td>地缘政治风险——中美关系进一步恶化可能导致中国资产整体承压</td></tr>
+<tr><td><strong>做多黄金/比特币</strong></td><td>极端风险（情景C/D）——在系统性风险爆发时，黄金和（可能的）比特币通常受益于避险需求和货币贬值预期</td><td>配置5-10%</td><td>不生息——黄金和比特币不产生现金流，长期持有的机会成本高</td></tr>
+<tr><td><strong>购买看跌期权（Put）</strong></td><td>AI股票短期暴跌风险</td><td>在预期市场可能出现剧烈波动时（如英伟达财报前、OpenAI重大发布前），买入AI相关ETF的看跌期权作为“保险“</td><td>期权的时间价值衰减——如果预期的下跌没有在期权到期前发生，“保险费“就白交了</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="146-投资者类型与策略适配"><a class="header" href="#146-投资者类型与策略适配">14.6 投资者类型与策略适配</a></h2>
+<h3 id="1461-不同类型投资者的策略框架"><a class="header" href="#1461-不同类型投资者的策略框架">14.6.1 不同类型投资者的策略框架</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>投资者类型</th><th>典型特征</th><th>推荐策略</th><th>关键纪律</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>机构投资者（基金/养老金/捐赠基金）</strong></td><td>大规模资金、长期投资期限（10年+）、专业投研团队、流动性约束（大资金进出不易）</td><td><strong>长期底仓（60-70%）+ 中期轮动（20-30%）+ 极少或不参与短期择时</strong>。核心仓位在AI算力基础设施+云平台，辅以国产替代和应用左侧布局</td><td>“不攀比短期排名”——机构投资者的优势是“时间“，不是“速度“。不要在短期博弈中浪费自己的长钱优势</td></tr>
+<tr><td><strong>高净值个人</strong></td><td>较大规模资金、灵活的投资期限、不需要向LP汇报、没有“被迫卖出“的压力</td><td><strong>长期底仓（50-60%）+ 中期轮动（20-30%）+ 短期择时（10-20%）</strong>。充分利用“个人可以不随大流“的优势——在市场恐慌时不要恐慌，在市场狂热时不要狂热</td><td>“不被噪音干扰”——个人投资者最大的敌人是媒体头版+社交媒体+身边人的“暴富故事“。关掉行情APP，基于框架做决策</td></tr>
+<tr><td><strong>普通个人投资者</strong></td><td>小规模资金、对波动敏感、容易受到情绪影响</td><td><strong>简化版框架——长期底仓（40-50%，主要通过AI主题ETF配置） + 短期不参与（避免追涨杀跌）</strong>。如果你看好AI的十年，买一个低费率的AI ETF（如BOTZ或AIQ），然后忘记它。等三年再看</td><td>“不要试图战胜市场”——普通投资者的最大优势是“时间“，最大的劣势是“以为自己能做短线“。把90%的精力放在“不要乱操作“上</td></tr>
+<tr><td><strong>产业从业者（在AI公司工作、持有公司股票或期权）</strong></td><td>人力资本和金融资本高度集中在AI行业——“双重风险”</td><td><strong>核心策略：分散化！</strong> 你的工作和收入已经和AI绑定了，你的投资不要再全部押在AI上。AI仓位不要超过总资产的30%——其余的分散到其他行业或资产类别</td><td>“不要把所有的鸡蛋放在同一个篮子里——特别是当你的’人力鸡蛋’已经在这个篮子里时”</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1462-投资者自检清单"><a class="header" href="#1462-投资者自检清单">14.6.2 投资者自检清单</a></h3>
+<p>在做出任何AI相关的投资决策前，先用这张清单自检：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>自检问题</th><th>如果你的答案是“是“</th><th>如果你的答案是“否“</th></tr>
+</thead>
+<tbody>
+<tr><td>我是否清楚当前AI周期的大致位置？</td><td>✅ 可以继续</td><td>❌ 先读完本书至少第一至三章和第九至十一章，再做决策</td></tr>
+<tr><td>我买入是因为“研究后认为这家公司的长期价值被低估“，还是因为“它最近涨了很多“？</td><td>✅ 前者——基于基本面</td><td>❌ 后者——你在追涨。回顾第八章“FOMO“那一节</td></tr>
+<tr><td>我卖出是因为“对这家公司的长期判断发生了变化“，还是因为“它最近跌了很多“？</td><td>✅ 前者——基于基本面变化</td><td>❌ 后者——你在恐慌卖出。回顾第六章“在废墟中坚持“那一节</td></tr>
+<tr><td>如果这只股票明天跌了50%（且基本面没有变化），我会买入更多吗？</td><td>✅ 是——你有安全边际思维</td><td>❌ 否——你的仓位可能太重了，或者你对基本面的信心不足</td></tr>
+<tr><td>我是否已经为“我的周期判断完全错误“留出了缓冲空间？</td><td>✅ 是——现金或对冲工具已经准备好了</td><td>❌ 立即检查你的风险敞口（14.5节）</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id="本章关键要点"><a class="header" href="#本章关键要点">本章关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>长期策略（3-10年）</td><td>锚定供需缺口——AI算力芯片、HBM、半导体设备、云平台、国产替代——“在十年后确定性地比今天更值钱“的资产；当前（2026年中）长期仓位建议50-60%</td></tr>
+<tr><td>中期策略（1-3年）</td><td>把握利润再分配轮动——当前光模块超配、台积电核心配置、英伟达渐减配置、AI应用左侧分批布局；关键轮动信号：英伟达毛利率&lt;65%、CoWoS利用率&lt;85%、AI应用UE跑正</td></tr>
+<tr><td>短期策略（3-12月）</td><td>利用情绪的极端波动获取安全边际——“在别人贪婪时恐惧，在别人恐惧时贪婪“的量化落地；衍生板块：液冷散热弹性最大</td></tr>
+<tr><td>复合框架</td><td>长期底仓+中期轮动+短期择时的三维动态分配——周期位置决定仓位权重，触发机制决定再平衡节奏</td></tr>
+<tr><td>风险敞口</td><td>四种情景预案（2000年/1996年/地缘冲击/技术颠覆）+五种对冲工具（现金/防御资产/国产替代/黄金/看跌期权）</td></tr>
+<tr><td>投资者适配</td><td>机构做长期+轮动，高净值个人做全维策略，普通个人做ETF定投，产业从业者做分散化——“不要在自己最懂的行业里押上一切”</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li><strong>英伟达季度财报与GTC大会</strong>：https://investor.nvidia.com</li>
+<li><strong>台积电季度法说会</strong>（CoWoS产能、毛利率指引）：https://investor.tsmc.com</li>
+<li><strong>各云厂商季度财报</strong>（AI CapEx数据）：https://www.microsoft.com/en-us/Investor; https://ir.aboutamazon.com; https://abc.xyz/investor/; https://investor.fb.com</li>
+<li><strong>WSTS全球半导体出货额</strong>（需求周期跟踪）：https://www.wsts.org</li>
+<li><strong>SEMI晶圆厂设备支出</strong>（产能周期跟踪）：https://www.semi.org</li>
+<li><strong>TrendForce DRAM/HBM价格</strong>（库存周期跟踪）：https://www.trendforce.com</li>
+<li><strong>AI主题ETF</strong>：BOTZ (Global X Robotics &amp; AI ETF)、AIQ (Global X AI &amp; Technology ETF)</li>
+<li><strong>Marks, H. (2018). <em>Mastering the Market Cycle</em>.</strong> Houghton Mifflin Harcourt.（周期投资策略的经典——“在周期中获取优势”）</li>
+<li><strong>Graham, B. (1949). <em>The Intelligent Investor</em>.</strong> Harper &amp; Brothers.（“安全边际“概念的源头——第十四章的底层哲学）</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-3/chapter-13.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../part-3/chapter-15.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-3/chapter-13.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../part-3/chapter-15.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

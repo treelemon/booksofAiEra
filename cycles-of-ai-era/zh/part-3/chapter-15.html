@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第十五章 终局思辨——AI革命的终局与下一个周期 - 周期之眼：信息产业与AI的演进逻辑与投资框架</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="以周期为贯穿始终的分析主线，系统梳理信息产业近半个世纪的演进规律，聚焦当前AI浪潮的周期位置与投资逻辑。融合康波与佩雷斯理论、半导体三重周期嵌套、五十年历史复盘与AI产业解构。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-b35aae95.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-cdc60685.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">周期之眼：信息产业与AI的演进逻辑与投资框架</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第十五章-终局思辨ai革命的终局与下一个周期"><a class="header" href="#第十五章-终局思辨ai革命的终局与下一个周期">第十五章 终局思辨——AI革命的终局与下一个周期</a></h1>
+<blockquote>
+<p><strong>望向更远的未来</strong>
+<em>AI技术革命是百年一遇的技术-经济范式变革。在周期的浪潮中，我们能做的不是预测浪尖，而是理解洋流的方向。</em></p>
+</blockquote>
+<h2 id="151-百年一遇的范式变革从连接到认知"><a class="header" href="#151-百年一遇的范式变革从连接到认知">15.1 百年一遇的范式变革——从连接到认知</a></h2>
+<h3 id="1511-ai在技术文明史中的坐标"><a class="header" href="#1511-ai在技术文明史中的坐标">15.1.1 AI在技术文明史中的坐标</a></h3>
+<p>在第二章中，我们梳理了佩雷斯的两百年五次技术革命。现在，站在全书的尾声，我们要认真地追问一个问题：<strong>AI到底是不是第六次技术革命的开端？还是仅仅是第五次技术革命（信息技术）的延续？</strong></p>
+<p>这不是一个学术上的咬文嚼字。如果AI是“延续“——那么它遵循的是黄金时代的逻辑：技术成熟、增长稳定、利润率回归均值。如果AI是“开端“——那么它遵循的是导入期的逻辑：技术路线尚未收敛、泡沫在前方、颠覆在暗处。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>判断维度</th><th>AI是“第五次延续“的证据</th><th>AI是“第六次开端“的证据</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>技术连续性</strong></td><td>AI的核心硬件（GPU、HBM）和软件（CUDA、PyTorch）都是信息技术革命的直接产物——AI没有创造新的“底层物理“，它只是把已有的半导体技术用到了极致</td><td>从“连接“（互联网让信息传播成本趋近于零）到“认知“（AI让智力处理成本趋近于零）——这不是量的提升，是质的跃迁。就像电力不只是“更好的蒸汽机“，AI也不只是“更好的软件“</td></tr>
+<tr><td><strong>范式转换</strong></td><td>AI的产业链结构（上游芯片→中游模型→下游应用）与PC/互联网时代的产业分工没有本质区别</td><td>AI正在从根本上改变“生产的方式“——知识工作者的生产力被数倍到数十倍地提升。这类似于电力改变了“工厂的布局“——从集中式蒸汽动力→分布式电力→流水线成为可能。AI将改变“组织的布局“——从金字塔科层制→？</td></tr>
+<tr><td><strong>投资规模</strong></td><td>四大云厂商CapEx $3000亿+/年——但这笔钱的量级与互联网泡沫期的投资在GDP中的占比大致可比（互联网泡沫期美国电信投资/GDP的比例约2-3%，当前AI CapEx/GDP的比例类似）</td><td>AI投资的“绝对规模“（$3000亿+/年且增长）远超任何以往技术周期——且资金来源（大厂利润回流）是全新的范式</td></tr>
+<tr><td><strong>社会渗透深度</strong></td><td>ChatGPT月活2亿+——但互联网的月活用户超过50亿。AI的渗透率（35-38%）仍在追赶互联网（95%+）</td><td>AI的渗透速度比互联网快——ChatGPT达到1亿用户只用了两个月（互联网用了七年）。更重要的是，AI渗透的不是“上网“，而是“思考“——这是更根本的能力</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>本书的判断</strong>：<strong>AI大概率是第六次技术革命的开端，但我们目前只看见了它的“硬件先行“阶段。</strong> 基于本书贯穿始终的“硬件先行、软件跟进“铁律（第九章铁律一），AI的“大爆炸“（ChatGPT）在2022年才刚刚发生——按照佩雷斯模型，“导入期“通常持续10-15年。这意味着，AI技术革命的全貌要到2035年后才真正清晰。在此之前的所有判断——包括本书中的一切分析——都应被视为“在周期的早期对周期的探索”。</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>五次技术革命</th><th>核心“连接“的对象</th><th>第六次（AI）革命</th></tr>
+</thead>
+<tbody>
+<tr><td>第一次（工业革命）</td><td>连接了“人力和机器“——机械化</td><td>—</td></tr>
+<tr><td>第二次（蒸汽/铁路）</td><td>连接了“城市和城市“——运输网络</td><td>—</td></tr>
+<tr><td>第三次（电力/钢铁）</td><td>连接了“工厂和能源“——电气化</td><td>—</td></tr>
+<tr><td>第四次（石油/汽车）</td><td>连接了“个人和移动“——大众消费</td><td>—</td></tr>
+<tr><td>第五次（信息技术）</td><td>连接了“信息和信息“——互联网</td><td>—</td></tr>
+<tr><td><strong>第六次（AI）</strong></td><td><strong>连接了“问题和解决方案“——认知劳动自动化</strong></td><td><strong>从“信息连接“到“认知处理“的范式跃迁</strong></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1512-如果ai是新康波这意味着什么"><a class="header" href="#1512-如果ai是新康波这意味着什么">15.1.2 如果AI是新康波，这意味着什么？</a></h3>
+<p>如果AI确实是一轮新的康波周期的开启（第二章2.1节），那么康波的理论框架会给出一个惊人的预测：<strong>这轮周期的上升期将持续约20-25年（从2020s到2040s），整个康波周期将持续到2070s以后。</strong> 我们今天看到的AI——ChatGPT、Copilot、Sora——只是这轮康波的“第一章、第一页“。</p>
+<p>这意味着，我们这一代人——无论是投资者、从业者还是普通观察者——将用整个职业生涯来见证和参与这场技术革命。我们今天争论的“AI泡沫会不会在2028年破裂“，在二十年后的历史书中，可能只是“AI导入期的一次正常调整“。就像1847年的英国铁路危机在今天的历史书中只是一个脚注，而在当年却是令整个金融体系颤抖的大崩盘。</p>
+<h2 id="152-ai产业的黄金时代何时到来"><a class="header" href="#152-ai产业的黄金时代何时到来">15.2 AI产业的“黄金时代“何时到来？</a></h2>
+<h3 id="1521-基于佩雷斯模型的时间推演"><a class="header" href="#1521-基于佩雷斯模型的时间推演">15.2.1 基于佩雷斯模型的时间推演</a></h3>
+<p>将佩雷斯四阶段模型（第二章）应用于AI革命，结合第十一章的周期定位判断（≈1998-1999年），我们可以推演出一个粗略但有用的大时间表：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>佩雷斯阶段</th><th>大致时间</th><th>AI产业的特征</th><th>投资环境</th><th>关键标志</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>导入期</strong></td><td>2017-2027?</td><td>技术路线尚未收敛（Transformer vs 新架构、开源 vs 闭源、GPU vs ASIC）；基础设施疯狂投入；“大爆炸“已发生（ChatGPT2022），但大多数人仍在观望</td><td>高不确定性、高潜在回报——“赌对了路线就赢了”</td><td>标志：第一个AI原生公司的标志性IPO（第十一章）；AI普及率突破50%</td></tr>
+<tr><td><strong>狂热泡沫期</strong></td><td>2027-2032?</td><td>金融资本全面接管——AI私募估值和IPO估值达到不可思议的水平；基础设施过度投资达到顶点；“AI将解决一切问题“成为社会共识</td><td>“鸡犬升天”——什么AI公司都能融到钱，什么AI概念股都在涨；但泡沫的“倒计时“已经启动</td><td>转折点标志：一次重大的AI泡沫破裂事件——可能是某家头部AI公司估值崩塌、或AI IPO窗口骤然关闭、或云厂商AI CapEx首次大幅削减</td></tr>
+<tr><td><strong>制度重构期（转折点）</strong></td><td>2032-2037?</td><td>泡沫破裂后的出清——投机者被淘汰，基础设施（过剩的GPU、数据中心、光纤）留给幸存者；监管框架建立；“UE模型+自由现金流“重新成为估值标准</td><td>“废墟上的重建”——最好的公司以最便宜的价格出现；“剩者为王”（铁律三）</td><td>标志：AI产业中出现第一个“万亿美元市值的AI应用公司“——不是在泡沫期，而是在泡沫破裂后的重建期</td></tr>
+<tr><td><strong>黄金时代</strong></td><td>2037+?</td><td>AI像电力一样“无处不在但不可见“——没有人讨论“AI“，因为AI已经融入了每一个产品、每一个服务、每一个工作流；技术完全成熟，应用生态繁荣，资本回报稳定且优秀</td><td>“躺着赚钱”——但只能赚合理的钱。超额回报的时代结束了，“选股“取代“押赛道”</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：佩雷斯（2002）四阶段模型；作者基于AI当前数据的推演。<strong>所有时间推演仅供参考——佩雷斯本人反复强调，阶段之间的过渡没有精确的时间表，只能识别“信号“而不能预测“日期“。</strong></p>
+<h3 id="1522-黄金时代的样貌"><a class="header" href="#1522-黄金时代的样貌">15.2.2 黄金时代的样貌</a></h3>
+<p>如果AI的黄金时代在2037年之后到来，它会是什么样的？基于历史上技术革命黄金时代的共同特征，我们可以大胆地描绘一个轮廓：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>维度</th><th>AI黄金时代的特征</th><th>历史参照</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>技术感知</strong></td><td>AI“消失“了——不再是新闻头条，而是像数据库、操作系统一样成为“基础设施“。没有人会说“我们公司用AI“——就像今天没有人会说“我们公司用电“</td><td>电力在1920s后不再是“新闻“，而成为了所有产业的基础设施</td></tr>
+<tr><td><strong>产业组织</strong></td><td>AI Agent成为每一个知识工作者的“标配助手“——就像今天的办公软件。企业不再问“要不要引入AI“，而是问“我们的AI Agent的效率和准确性在行业中排名如何“</td><td>PC在1990s后成为每一个白领的标配工具</td></tr>
+<tr><td><strong>资本回报</strong></td><td>AI投资的超额回报时代结束——硬件厂商的毛利率回归正常（英伟达从75%→40-50%），AI应用的利润率回归SaaS行业平均水平（20-30%净利率）</td><td>互联网在2010s后的成熟期——Google和Facebook仍然非常赚钱，但“投资任何一家.com公司都能赚100倍“的时代一去不复返</td></tr>
+<tr><td><strong>社会契约</strong></td><td>AI带来的生产力提升被社会制度（税收、教育、劳动法）重新分配——就像20世纪的电力革命最终带来了每周40小时工作制和全民高中教育</td><td>20世纪的“制度重构“——大萧条后的新政、《瓦格纳法案》（保障工会权益）、社会保障体系的建立</td></tr>
+<tr><td><strong>下一个周期</strong></td><td>当AI的黄金时代走向尾声时（可能在2050s-2060s），新一代的颠覆性技术已经在某个实验室里萌芽了——恰如1971年Intel 4004微处理器在AI时代的“黄金时代“到来之前50年就已经被发明了</td><td>每一个黄金时代的尾声，都是下一个康波周期的“导入期的前奏“</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="153-泡沫的必然性与穿越泡沫的策略"><a class="header" href="#153-泡沫的必然性与穿越泡沫的策略">15.3 泡沫的必然性与穿越泡沫的策略</a></h2>
+<h3 id="1531-为什么泡沫不应该被消灭"><a class="header" href="#1531-为什么泡沫不应该被消灭">15.3.1 为什么泡沫不应该被“消灭“？</a></h3>
+<p>在第八章和第九章中，我们反复论述了一个命题：泡沫是技术革命进程中“金融资本阶段性接管生产资本“的必然结果——它承担了三重积极功能（基础设施投资、试错筛选、社会共识培育）。</p>
+<p>在这里，我们要把这个命题推到一个更“反直觉“的境地：<strong>如果人类真的有能力“消灭AI泡沫“——通过完美的监管和理性的投资者教育——那恰恰是人类能对AI革命做出的最坏的事情。</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>如果泡沫被“消灭“……</th><th>会发生什么？</th><th>历史上的思想实验</th></tr>
+</thead>
+<tbody>
+<tr><td>光纤网络不会过度投资</td><td>YouTube、Netflix、Zoom的带宽成本不会暴跌90%+——视频流媒体革命推迟十年或更久</td><td>如果1999年监管机构以“防止过度投资“为由限制光纤铺设——互联网革命的速度将大幅减慢</td></tr>
+<tr><td>风险投资的“幂律逻辑“被抑制</td><td>VC不会投那些“90%可能失败但10%可能改变世界“的项目——因为他们被要求“理性投资、控制风险“</td><td>如果没有VC在1999年疯狂投资互联网——Google可能在2001年就因资金耗尽而关门</td></tr>
+<tr><td>散户被禁止投资“不盈利的科技公司“</td><td>Amazon在上市后的前八年里几乎从未盈利——如果监管要求“盈利才能上市“，Amazon就无法在1997年IPO，也就没有资本熬过2000-2002年的寒冬</td><td>中国A股至今仍要求企业“连续盈利“才能上市——这恰恰是A股错过了整个互联网时代最优秀公司的原因（腾讯、阿里、百度、美团全部在境外上市）</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>核心论点</strong>：<strong>泡沫是技术革命“探索成本“的资本化。</strong> 技术革命要找到正确的技术路线和商业模式，需要大量的试错。这些试错需要有人买单。泡沫的作用，就是把“探索成本“从社会整体分散到愿意承担高风险高回报的投资者身上。这不是“市场失灵“——这是市场在发挥其最根本的功能——风险分配。</p>
+<h3 id="1532-穿越泡沫的三条生存法则"><a class="header" href="#1532-穿越泡沫的三条生存法则">15.3.2 穿越泡沫的三条生存法则</a></h3>
+<p>既然泡沫是不可避免的，而且也不应该被避免——那么对于身处AI周期中的投资者和从业者来说，问题不是“如何避开泡沫“，而是“如何在泡沫中活下来，并在泡沫破裂后成为’剩者’“。</p>
+<p>基于本书第四至第九章的五十年历史复盘，提炼出三条穿越泡沫的核心法则：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>法则</th><th>核心内容</th><th>历史验证</th><th>对AI时代的应用</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>法则一：现金流是冬天里的棉衣</strong></td><td>泡沫期的估值会欺骗你——“我的公司估值$10亿，我很安全”。但泡沫破裂后，估值归零——唯一真实的是<strong>正向自由现金流</strong>。那些在泡沫期就有正向现金流（或至少UE模型成立）的公司，能够不依赖外部融资度过“融资寒冬“。那些完全依赖下一轮融资续命的公司——死路一条</td><td>Amazon在2000年自由现金流转正（第六章6.4.1节）；Pets.com/Webvan从来没有任何正向现金流——死了</td><td>2026年的AI公司中，哪些是“有正向现金流（或UE模型接近跑正）“的？GitHub Copilot接近盈亏平衡；一些AI SaaS公司正在逼近这个拐点。哪些是“烧钱换增长“的？大量AI Agent初创公司的营收几乎为零</td></tr>
+<tr><td><strong>法则二：不要在狂热期做人生最大的投资决策</strong></td><td>“1999年辞职创业做.com“和“2003年加入Amazon”——两者都是在互联网行业工作，但命运天差地别。狂热期是“开公司/加入创业公司/大举投资“的最差时机——因为估值最高、竞争最激烈、你的参考价格已被严重扭曲</td><td>MBA毕业生在2000年蜂拥到硅谷加入.com初创公司，两年后失业；那些在2003年加入Amazon的人，赶上了此后20年的600倍增长</td><td>2025-2027年的AI狂热期——如果你正在考虑“辞职创业做AI“或“把全部身家押在AI股票上“——先读完本节</td></tr>
+<tr><td><strong>法则三：在崩溃期保持现金和勇气的双重储备</strong></td><td>泡沫破裂时，“用便宜的价格买最好的资产“的机会出现了——但大多数人此时既没有现金（因为在狂热期买贵了），也没有勇气（因为被暴跌吓怕了）。成功穿越周期的人，是那些在狂热期保持了现金储备、在崩溃期保持了“逆向买入“勇气的人</td><td>巴菲特在2008年金融危机最恐慌时写下《Buy American. I Am.》（买入美国。我买了。）——此后美股开启了十三年大牛市</td><td>如果预判AI泡沫在2028-2031年破裂——那么从今天（2026年中）开始，逐步积累现金；在泡沫破裂后市场一片绝望时，大胆买入“现金流健康“的AI幸存者</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="154-下一个周期量子计算生物智能脑机接口"><a class="header" href="#154-下一个周期量子计算生物智能脑机接口">15.4 下一个周期：量子计算、生物智能、脑机接口</a></h2>
+<h3 id="1541-第六次之后的第七次技术革命"><a class="header" href="#1541-第六次之后的第七次技术革命">15.4.1 第六次之后的第七次技术革命？</a></h3>
+<p>如果AI是第六次技术革命，那么在AI的黄金时代走向尾声时（可能在2050s-2060s），人类将迎来第七次技术革命。基于当前科学技术的前沿探索，三项技术最有可能成为下一场革命的候选者：</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>候选技术</th><th>核心技术突破</th><th>与AI革命的“衔接“</th><th>最可能的时间窗口</th><th>如果实现——对半导体和AI产业链意味着什么？</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>量子计算</strong></td><td>实现“量子优越性“在商业问题上的应用——不是实验室里的几十个量子比特，而是有数千到数万个稳定逻辑量子比特的可编程量子计算机</td><td>量子计算不会“替代“AI——但它会“解锁“AI在药物发现、材料科学、金融模拟等领域的新应用。“AI+量子“的融合可能是下一轮康波的主导技术集群</td><td>2040-2060年（乐观）到“遥遥无期“（悲观）之间</td><td>如果量子计算实现，GPU不再是唯一的高性能计算选项——英伟达+台积电的“算力垄断“可能在一个全新的维度上被颠覆</td></tr>
+<tr><td><strong>生物智能/合成生物学</strong></td><td>能够“编程“生物系统——设计和构建具有特定功能的生物回路、细胞和有机体；DNA读写成本下降到“基因编辑像写代码一样便宜“</td><td>AI（尤其是AlphaFold等蛋白质结构预测AI）正在加速生物学的进步——这是“AI革命→生物革命“的科技外溢效应</td><td>2040-2070年</td><td>影响将远远超出半导体产业——它可能改变“生命“的定义。但半导体的“物理心跳“（第三章）不会因此停止——只是其在整个经济中的相对权重会下降</td></tr>
+<tr><td><strong>脑机接口（BCI）</strong></td><td>高带宽、双向、安全的脑-计算机通信——从“用键盘和鼠标输入“到“用意念和思想直接与AI交互“</td><td>如果BCI实现——它将是“AI革命“的终极限延伸——“人类智能和人工智能的融合”。它也可能是下一场独立的技术革命的起点</td><td>2050-2100年（高度不确定）</td><td>如果BCI成为“下一个终端“——就像智能手机取代了PC成为“终端“一样——整个半导体产业链将围绕BCI的需求重新配置，“硅含量“将再一次数量级跃升</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>数据来源</strong>：Nature/Science等顶级学术期刊的综述文章；DARPA、国家量子计划等政府项目的公开路线图。<strong>所有时间推演都极其不确定——技术预测的准确率在十年以上是非常低的。</strong></p>
+<h3 id="1542-投资视角下一个周期的左侧布局指南"><a class="header" href="#1542-投资视角下一个周期的左侧布局指南">15.4.2 投资视角：下一个周期的“左侧布局“指南</a></h3>
+<p>对于极长线投资者来说（如大学捐赠基金、主权基金、家族办公室——投资期限50年+），现在（2026年）是否就应该开始布局“下一个周期“？</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>布局方式</th><th>逻辑</th><th>在当前（2026年）的可操作性</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>量子计算</strong></td><td>投资量子计算ETF或领先的量子计算公司（IonQ、Rigetti、D-Wave等）——这些公司当前的营收极低、亏损极高——是“纯左侧“的押注</td><td>可操作——但仓位应极小（&lt;1%总资产），且准备接受90%+的波动和“该公司可能在十年内无法实现盈利“</td></tr>
+<tr><td><strong>生物科技</strong></td><td>投资合成生物学公司（Ginkgo Bioworks、Twist Bioscience等）或AI驱动的药物发现公司（Recursion、 Schrödinger等）——“AI赋能生物“是未来20年确定性最高的跨学科方向</td><td>可操作——比量子计算更接近商业化（已有产品），但风险仍极高。仓位1-3%</td></tr>
+<tr><td><strong>脑机接口</strong></td><td>Neuralink（未上市，Elon Musk旗下）、Synchron（未上市）、BlackRock Neurotech（未上市）——好的脑机接口公司基本上都还在私募市场</td><td>目前对公众投资者来说几乎不可操作——除非你是合格的私募投资者</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>核心建议</strong>：对于99%的投资者来说，“布局下一个周期“的最佳方式不是直接押注量子计算或脑机接口公司——而是<strong>坚持持有当前的AI优质资产，让AI革命的黄金时代先充分展开</strong>。1950年代投资“电力相关公司“的人，比1890年代投资“电力创业公司“的人要安全得多，收益也并不少多少。在康波上升期的“黄金时代“上车，比在“导入期“赌技术路线，风险和回报的性价比要高得多。</p>
+<h2 id="155-周期规律会被ai自身改变吗"><a class="header" href="#155-周期规律会被ai自身改变吗">15.5 周期规律会被AI自身改变吗？</a></h2>
+<h3 id="1551-元技术的元反思"><a class="header" href="#1551-元技术的元反思">15.5.1 “元技术“的元反思</a></h3>
+<p>AI与其他所有技术有一个根本性的不同：<strong>AI是一种“元技术“（meta-technology）——它是一种能够加速一切其他技术进步的技术。</strong> 如果AI真的能系统性地加速科技创新，那么本书讨论的所有周期规律——康波的50-60年、佩雷斯的四阶段时长、半导体的三重周期嵌套——会不会被AI本身所改变？</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>周期规律</th><th>AI可能如何改变它？</th><th>改变的置信度</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>康波周期（50-60年）</strong></td><td>AI加速了技术创新→新的康波可能不需要50年，或许30-40年就能完成？</td><td>低——康波的周期长度不仅由技术进步的速度决定，还由技术在社会经济系统中的扩散速度决定。“扩散“比“发明“慢得多——AI可能加速发明，但无法加速人类制度的变革、教育体系的适应、社会规范的演化</td></tr>
+<tr><td><strong>佩雷斯的四阶段时长</strong></td><td>AI的自我迭代能力→导入期和狂热期可能被压缩？</td><td>中——导入期可能在缩短（ChatGPT从“大爆炸“到“狂热“只用了不到三年）。但制度重构期是“人类制度追赶技术“的阶段——AI无法加速制度的变革，所以这个阶段可能不仅不会缩短，反而会延长</td></tr>
+<tr><td><strong>半导体的产能周期（“建在价格最高点，投产在价格最低点”）</strong></td><td>AI可能会改善晶圆厂的需求预测——用AI而不是人类的直觉来规划产能</td><td>低——产能周期的根本问题不是“预测不准“，而是“囚徒困境“——每家公司独立做出最优决策，汇总成全行业的过剩。AI可以改善预测，但无法消除博弈</td></tr>
+<tr><td><strong>泡沫的烈度</strong></td><td>AI驱动的交易（量化基金、AI投顾）可能会导致泡沫膨胀得更快、破裂得更猛烈——因为AI没有FOMO（错失恐惧），但有“趋势跟踪“</td><td>中——AI交易在二级市场已是主流（量化基金占美股交易量的60%+）。AI交易不会“制造泡沫“，但会“加速泡沫的膨胀和破裂“——因为当趋势信号反转时，机器会在毫秒级时间尺度上一同卖出</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="1552-一个无法回答但必须追问的问题"><a class="header" href="#1552-一个无法回答但必须追问的问题">15.5.2 一个无法回答但必须追问的问题</a></h3>
+<p>如果有一天，AI强大到能够<strong>准确预测技术革命的周期</strong>——知道泡沫将在何时膨胀、将在何时破裂、哪些公司能活下来——那么泡沫还会发生吗？</p>
+<p>这是一个具有哲学深度的悖论。如果所有人都知道2000年3月是纳斯达克的高点，那么不会有人在1999年买入——泡沫根本就不会膨胀起来。但如果泡沫不膨胀，那些“过度投资“的光纤就不会被铺设，带宽成本就不会暴跌，YouTube就不会诞生。<strong>准确预测周期的能力，恰恰会阻止周期中最重要的“积极功能“的发生。</strong></p>
+<p>这个悖论指向一个深刻的认识：<strong>周期存在的根源，不是人类的“愚蠢“或“非理性“，而是人类在面对未来时的一种结构性的“无法全知“。</strong> 只要未来仍然是不确定的——金融资本就会在新技术的蓝海面前蜂拥而上，然后又在新技术的“现实检验“面前仓皇撤退。这不是人类的缺陷。这是任何“在不完美信息下做决策“的系统都会产生的风险分配机制。</p>
+<p>AI可以变得更聪明。但它不可能“全知“。只要未来仍然是开放的——周期就永远是人类技术进步的“内置操作系统“。</p>
+<h2 id="156-结语在周期的浪潮中保持清醒"><a class="header" href="#156-结语在周期的浪潮中保持清醒">15.6 结语：在周期的浪潮中保持清醒</a></h2>
+<h3 id="1561-全书之旅的回望"><a class="header" href="#1561-全书之旅的回望">15.6.1 全书之旅的回望</a></h3>
+<p>我们用了十五个章节，完成了一段漫长的旅程：</p>
+<ul>
+<li><strong>第一至三章</strong>：我们建立了一套“望远镜+显微镜“——康波长波告诉我们技术革命有50-60年的宏观节律，佩雷斯的四阶段模型告诉我们金融资本与生产资本的互动是节奏的核心，半导体三重周期嵌套告诉我们需求、产能和库存如何驱动微观的涨落。</li>
+<li><strong>第四至九章</strong>：我们回望了信息产业五十年的五个周期——计算的十年、软件的十年、互联网的十年、移动互联网的十年、贯穿其间的资本的杠杆。在第九章，我们提炼了五条跨越周期的铁律。</li>
+<li><strong>第十至十五章</strong>：我们将镜头拉回到当下——拆解了AI产业链的结构、定位了AI在历史周期中的位置、分析了半导体周期的AI时刻、探讨了中国AI的独立周期、构建了长中短期的投资策略框架，最后走到了这里——望向更远的未来。</li>
+</ul>
+<p>这段旅程的核心信息，可以浓缩为三句话：</p>
+<p><strong>第一句：周期是技术进步的“内置操作系统“。</strong> 它不是市场的“失灵“，不是人类的“愚蠢“，而是在不完美信息下，金融资本与生产资本互动的必然节律。硬件的“心跳“领先软件的繁荣；基础设施的过度投资终将成为下一阶段应用的“免费燃料“；泡沫的破裂是投机者的葬礼和幸存者的加冕礼。</p>
+<p><strong>第二句：AI处于导入期末端、狂热期前端。</strong> 如果以互联网作参照——大致在1998-1999年之间。普及率刚刚跨越30%的门槛（2025年），正在向50%快速攀升。资本正在从“理性的乐观“滑向“系统性的狂热“。泡沫在前方——大概率在2028-2031年之间的某个时点。但泡沫不是终点——泡沫破裂后的废墟，将是AI黄金时代的地基。</p>
+<p><strong>第三句：周期不会告诉你明天发生什么，但会告诉你今天在哪里。</strong> 知道自己在周期中的位置，就是智慧的开始。在导入期大胆，在狂热期谨慎，在崩溃期逆向，在黄金时代享受复利——这是穿越每一轮技术周期的四步舞步。而我们这一代人，正站在AI这轮康波的第一个舞步上。</p>
+<h3 id="1562-最后的寄语"><a class="header" href="#1562-最后的寄语">15.6.2 最后的寄语</a></h3>
+<p>如果这本书只能说最后一句话，那会是：</p>
+<p><strong>保持清醒。</strong></p>
+<p>在所有人都在喊“AI改变一切“时，保持清醒——问一句“哪些是不会改变的？“在所有人都在喊“AI泡沫要爆了“时，保持清醒——问一句“这次破裂后，什么会留下来？“在你自己因为AI股票暴涨而兴奋时，保持清醒——问一句“我买入是因为它值这么多钱，还是因为它最近涨了很多？“在你自己因为AI股票暴跌而恐惧时，保持清醒——问一句“这个故事的基本面变了吗？还是只是情绪变了？”</p>
+<p>清醒不是冷漠。清醒是一种<strong>带着理解的热情</strong>。你可以相信AI将改变世界——事实上你也应该相信——但你要用“周期的眼睛“去理解这个改变的过程：它会经过导入期的挣扎、狂热期的泡沫、崩溃期的痛苦和黄金时代的辉煌。你不会在狂热期倾家荡产，也不会在崩溃期绝望离场。你会在每一个阶段做出那个阶段最理性的决策。</p>
+<p>这就是“周期之眼“——不是让你看见未来，而是让你看清现在。</p>
+<p>周金涛在2016年写道：“人生发财靠康波。“他用这句话表达了一个朴素但深刻的真理：一个人的财富命运，很大程度上取决于他是否生在了康波上升期的位置。</p>
+<p>我们无法选择自己出生在哪一个康波阶段。但我们可以选择——去理解它。</p>
+<p>当你理解了技术革命的周期节奏，你就不会在ChatGPT发布之初说“这不过是另一个聊天机器人“；当你理解了“硬件先行“的铁律，你就会在2023年英伟达暴涨之初问一句“哪些软件会在这个硬件基础上爆发？“；当你理解了泡沫的积极功能，你就不会被“AI是不是泡沫“的争论吓退——因为你知道，泡沫是技术革命的“出厂设置”，真正的赢家出现在泡沫破裂之后。</p>
+<p>历史不会简单重复，但它会押韵。</p>
+<p>愿你，听懂这韵律。</p>
+<hr>
+<h3 id="本章关键要点"><a class="header" href="#本章关键要点">本章关键要点</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>核心概念</th><th>关键结论</th></tr>
+</thead>
+<tbody>
+<tr><td>AI是第六次技术革命</td><td>AI大概率是新的康波周期的开端——从“连接“到“认知“的范式跃迁。上升期可能持续到2040s，整个康波可能持续到2070s</td></tr>
+<tr><td>黄金时代时间表</td><td>导入期（2017-2027?）→狂热泡沫期（2027-2032?）→制度重构期（2032-2037?）→黄金时代（2037+?）——AI的黄金时代可能在十五年后到来</td></tr>
+<tr><td>泡沫的必然性</td><td>泡沫是“探索成本“的资本化——不应该被消灭。穿越泡沫的三条法则：现金流是棉衣、不在狂热期做最大决策、在崩溃期保持现金和勇气</td></tr>
+<tr><td>下一个周期</td><td>量子计算（2040-2060?）、生物智能（2040-2070?）、脑机接口（2050-2100?）——但这些时间窗口过于遥远且不确定，当前最佳策略是让AI革命的黄金时代先充分展开</td></tr>
+<tr><td>周期规律会被AI改变吗？</td><td>AI作为“元技术“可能加速发明，但无法加速制度变革和社会适应——康波周期可能不会大幅缩短。“全知悖论”：如果AI能完美预测周期，泡沫就不会发生——但完美的预测本身是不可能的</td></tr>
+<tr><td>结语</td><td>周期不会告诉你明天发生什么，但会告诉你今天在哪里。知道自己在哪里——就是在导入期大胆、在狂热期谨慎、在崩溃期逆向、在黄金时代享受复利</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="关键参考资源"><a class="header" href="#关键参考资源">关键参考资源</a></h3>
+<ul>
+<li>Perez, C. (2002). <em>Technological Revolutions and Financial Capital</em>. Edward Elgar.（全书的理论基石——第五至六次技术革命的判断框架）</li>
+<li>Schumpeter, J. A. (1942). <em>Capitalism, Socialism and Democracy</em>. Harper &amp; Brothers.（“创造性破坏“概念的原始出处——第十五章“泡沫的积极功能“的理论根基）</li>
+<li>周金涛 等 (2018). 《涛动周期论》. 机械工业出版社.（“人生发财靠康波”——中国周期投资思想的标志性著作）</li>
+<li>Kurzweil, R. (2005). <em>The Singularity Is Near</em>. Viking.（关于“AI加速技术进步“的最著名（也最激进）的论述）</li>
+<li>Harari, Y. N. (2015). <em>Homo Deus: A Brief History of Tomorrow</em>. Harper.（关于“AI时代的人类命运“的哲学反思）</li>
+<li>英文版佩雷斯全书：https://www.carlotaperez.org</li>
+<li>Nature/Science 量子计算进展综述（2024-2026）——追踪下一次技术革命的前沿</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part-3/chapter-14.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../appendices/appendix-a.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part-3/chapter-14.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../appendices/appendix-a.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
