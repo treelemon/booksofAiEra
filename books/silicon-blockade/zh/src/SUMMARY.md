@@ -17,7 +17,7 @@
 
 - [第六章 釜底抽薪——当台积电停止代工](part-3/chapter-6.md)
 - [第七章 绝地反击——中芯国际的7nm奇迹](part-3/chapter-7.md)
-- [第八章 偷袭三星——中国存储芯片的闪电战](part-3/chapter-8.md)
+- [第八章 奇袭三星——中国存储芯片的闪电战](part-3/chapter-8.md)
 - [第九章 风起于青萍之末——AI芯片、GPU与算力自主](part-3/chapter-9.md)
 - [第十章 隐形冠军——封测、设备与材料的长征路](part-3/chapter-10.md)
 
