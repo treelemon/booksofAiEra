@@ -1,0 +1,652 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>封锁与突围：中国芯片产业的血色长征</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="一部关于制裁、生存与逆袭的产业史诗。从第一块集成电路到7nm突破，从张汝京三起三落到华为海思备胎转正，三条线索交织讲述中国芯片产业六十年的技术长征。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-e96d0476.css">
+        <link rel="stylesheet" href="css/chrome-d279d366.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0b494f87.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-f53848c9.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">封锁与突围：中国芯片产业的血色长征</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="前言"><a class="header" href="#前言">前言</a></h1>
+<h2 id="德克萨斯州的冬夜2022年10月7日"><a class="header" href="#德克萨斯州的冬夜2022年10月7日">德克萨斯州的冬夜——2022年10月7日</a></h2>
+<p>2022年10月7日，德克萨斯州，奥斯汀。</p>
+<p>BIS（美国商务部工业与安全局）发布了一份长达139页的新规。这份文件的核心只有一句话：<strong>任何使用美国技术制造的先进芯片，都不得在没有许可证的情况下向中国出口。</strong></p>
+<p>消息传到深圳坂田华为总部时，已是北京时间10月8日凌晨。余承东收到一条内部消息：“台积电确认，从今天起，所有未完成的先进制程订单全部冻结。”</p>
+<p>一个小时后，任正非在内部会议上说了八个字。</p>
+<p>那八个字，我们留到全书的结尾再说。</p>
+<hr>
+<p>那一夜之后，中国芯片产业再也没有回头路。</p>
+<p>但那一夜之前的故事，更长，更复杂，更少有人知道。这本书要讲的，就是那一夜之前六十年的故事——以及那一夜之后，中国芯片产业如何在“铁幕“之下，走出一条没有人走过的路。</p>
+<h2 id="为什么写这本书"><a class="header" href="#为什么写这本书">为什么写这本书？</a></h2>
+<p>中国芯片产业是一个被反复书写的主题。政策文件、行业报告、新闻报道、学术论文——关于“中国芯“的讨论，几乎覆盖了每一种文体。</p>
+<p>但绝大多数讨论，都缺少三样东西。</p>
+<p><strong>第一，缺少“人“。</strong> 芯片不是政策文件写出来的，是人造出来的。张汝京三起三落，任正非十年“备胎“，长江存储一群年轻人偷袭三星腹地——这些人、这些故事，才是中国芯片产业真正的内核。</p>
+<p><strong>第二，缺少“封锁线“。</strong> 中国芯片产业的历史，就是一部被封锁的历史。从1950年代的巴黎统筹委员会（巴统），到1996年的《瓦森纳协定》，到2019年至今的全方位制裁——每一次封锁都更猛烈，每一次封锁的失效也更具戏剧性。把“封锁“作为一条独立的主线，才能看清中国芯片产业为什么是今天这个样子。</p>
+<p><strong>第三，缺少“判断“。</strong> 大多数关于中国芯片的书写流于“数据+政策+展望“的三段式——这本书不做那样的事。在每一个关键节点，我都会给出明确的判断：做成了什么？没做成什么？为什么？下一步最大的风险是什么？</p>
+<h2 id="这本书在做什么"><a class="header" href="#这本书在做什么">这本书在做什么</a></h2>
+<p>这本书的三条线索交织推进：</p>
+<p><strong>明线</strong>：技术长征——从1956年“四项紧急措施“到2026年7nm等效量产，六十年的技术演进。</p>
+<p><strong>暗线</strong>：封锁与反封锁——巴统、《瓦森纳协定》、实体清单、芯片法案、BIS新规……每一次封锁如何推动了中国芯片产业的“被迫进化“。</p>
+<p><strong>人物线</strong>：张汝京、任正非、王守武、林兰英、赵伟国——他们是这部史诗的主角。</p>
+<p>全书共三篇十章。</p>
+<p><strong>上篇（第一至二章）</strong> 写“蹒跚学步“。从109厂的第一块集成电路开始，到909工程的首条8英寸线结尾。这是一个“为何起步不晚，却被拉开差距“的故事。</p>
+<p><strong>中篇（第三至五章）</strong> 写“星星之火“。张汝京创立中芯国际、任正非秘密组建海思、大基金以国家资本重塑产业格局——企业家的觉醒，是这一阶段最大的变量。</p>
+<p><strong>下篇（第六至十章）</strong> 写“全面战争“。制裁铁幕落下之后，设计、制造、存储、AI芯片、设备材料——每一场战役的胜负，都在书写中国芯片产业的命运。</p>
+<p><strong>终章</strong>给出三个判断：成熟制程的规模碾压、AI芯片的平行宇宙、下一个“华为“在哪里。不回避争议，不温和收场。</p>
+<h2 id="这本书不是什么"><a class="header" href="#这本书不是什么">这本书不是什么</a></h2>
+<p>这本书不是一本“国产替代光荣榜“。做成了的写，没做成的也写。长江存储232层NAND是胜利，但EUV光刻机的遥不可及也是现实。中芯国际7nm“奇迹“值得鼓掌，但良率、产能与台积电的差距也坦率面对。</p>
+<p>这本书也不回避争议。大基金有没有投错项目？有。地方政府有没有盲目建厂？有。产业有没有“内卷“？有。真实的产业史，从来不是“胜利-胜利-胜利“的单调叙事。</p>
+<p>真实的产业史，是“差一点就死了-活过来了-又差一点死了-又活过来了“的循环。</p>
+<p>这就是“血色长征“这个名字的由来。</p>
+<hr>
+<p><strong>treelemon</strong></p>
+<p>2026年夏</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第一章-109厂的秘密第一块集成电路背后的无名者"><a class="header" href="#第一章-109厂的秘密第一块集成电路背后的无名者">第一章 109厂的秘密——第一块集成电路背后的无名者</a></h1>
+<blockquote>
+<p><strong>蹒跚学步</strong>
+<em>在外部封锁的铁幕下，中国第一代半导体人用算盘打出晶体管参数，在饥饿中造出了第一块集成电路。</em></p>
+</blockquote>
+<h2 id="11-一份改变命运的紧急报告"><a class="header" href="#11-一份改变命运的紧急报告">1.1 一份改变命运的紧急报告</a></h2>
+<p>1956年1月，中国科学院一位刚从美国回来的科学家，向周恩来总理提交了一份报告。报告的核心建议只有一条：<strong>中国必须立即启动电子计算机和半导体的研制。</strong></p>
+<p>这位科学家的名字，今天已经没有多少人记得了。正是这份报告，催生了“四项紧急措施“——中国半导体产业的起源。</p>
+<h2 id="12-109厂中国半导体零号工程"><a class="header" href="#12-109厂中国半导体零号工程">1.2 109厂：中国半导体“零号工程“</a></h2>
+<p>1960年，中国科学院109厂在北京成立。这不是一座普通的工厂——它是整个中国半导体产业的“种子“。</p>
+<h2 id="13-算盘时代的晶体管"><a class="header" href="#13-算盘时代的晶体管">1.3 算盘时代的晶体管</a></h2>
+<p>那时的条件有多艰苦？一个细节：109厂的工程师们没有计算机辅助设计，他们用算盘来计算晶体管的参数。</p>
+<h2 id="14-1965年比世界只晚了七年"><a class="header" href="#14-1965年比世界只晚了七年">1.4 1965年：比世界只晚了七年</a></h2>
+<p>1965年，中国第一块集成电路在109厂诞生。这个时间只比德州仪器的杰克·基尔比晚了七年——在那个年代，这是一个了不起的成就。</p>
+<h2 id="15-为什么起步不晚却被拉开了差距"><a class="header" href="#15-为什么起步不晚却被拉开了差距">1.5 为什么起步不晚却被拉开了差距？</a></h2>
+<p>1965年到1995年，中国半导体与世界的差距从7年拉大到了20年。发生了什么？</p>
+<p>【本章以王守武、林兰英等第一代半导体科学家的命运为主线，讲述中国半导体从零到一的艰难历程。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二章-引进的陷阱为什么买来产线却买不来能力"><a class="header" href="#第二章-引进的陷阱为什么买来产线却买不来能力">第二章 引进的陷阱——为什么买来产线却买不来能力？</a></h1>
+<blockquote>
+<p><strong>引进的悖论</strong>
+<em>中国花了几十亿美元引进集成电路生产线，却始终无法缩小与世界的差距。而日本和韩国，在同样的起点上走出了完全不同的路。</em></p>
+</blockquote>
+<h2 id="21-531到909一条用钱铺不出来的路"><a class="header" href="#21-531到909一条用钱铺不出来的路">2.1 “531“到“909”：一条用钱铺不出来的路</a></h2>
+<p>从1978年第一次引进，到“531战略““908工程”“909工程”——国家持续投入，但效果始终不及预期。</p>
+<h2 id="22-上海贝岭与华虹nec两座标杆的真实故事"><a class="header" href="#22-上海贝岭与华虹nec两座标杆的真实故事">2.2 上海贝岭与华虹NEC：两座“标杆“的真实故事</a></h2>
+<p>引进了产线，引进了设备，甚至引进了外方管理团队——为什么还是不行？</p>
+<h2 id="23-三条道路中日韩半导体起跑线的分流"><a class="header" href="#23-三条道路中日韩半导体起跑线的分流">2.3 三条道路：中日韩半导体起跑线的分流</a></h2>
+<p>同一个时代，日本通过“VLSI计划“实现了反超，韩国通过“逆周期投资“杀出了一条血路。中国选择了“引进“——结果是被“锁定“在低端。</p>
+<h2 id="24-巴黎统筹委员会看不见的枷锁"><a class="header" href="#24-巴黎统筹委员会看不见的枷锁">2.4 巴黎统筹委员会：看不见的枷锁</a></h2>
+<p>从1950年代的巴统到1996年的《瓦森纳协定》，中国半导体产业始终被一道看不见的“铁幕“笼罩着。引进是被允许的，但最先进的技术永远被排除在外。</p>
+<p>【本章核心判断：引进没有错，但“引进依赖“是错的。日本和韩国同样是引进起家，但它们的成功在于“引进-消化-再创新“——而中国长期停留在“引进-使用-再引进“的循环中。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第三章-张汝京的赌注中芯国际与一个时代的开始"><a class="header" href="#第三章-张汝京的赌注中芯国际与一个时代的开始">第三章 张汝京的赌注——中芯国际与一个时代的开始</a></h1>
+<blockquote>
+<p><strong>破冰者的决意</strong>
+<em>一个人、一座厂、一个时代的缩影。张汝京带着德州仪器二十年的经验回到大陆，在稻田上建起了中国第一座现代化晶圆厂。</em></p>
+</blockquote>
+<h2 id="31-德州仪器二十年的淬炼"><a class="header" href="#31-德州仪器二十年的淬炼">3.1 德州仪器二十年的淬炼</a></h2>
+<p>张汝京，1948年生于南京，在台湾长大，在美国德州仪器工作了二十年。他是那个年代极少数同时拥有半导体技术深度和国际化视野的华人。</p>
+<h2 id="32-世大半导体的惊险一役"><a class="header" href="#32-世大半导体的惊险一役">3.2 世大半导体的惊险一役</a></h2>
+<p>在创立中芯国际之前，张汝京在台湾创办了世大半导体——一家在三年内就成为台湾第三大晶圆代工厂的公司。2000年，台积电以$50亿收购世大——张汝京失去了他创建的第一家公司。</p>
+<h2 id="33-稻田上的奇迹"><a class="header" href="#33-稻田上的奇迹">3.3 稻田上的奇迹</a></h2>
+<p>2000年，张汝京带着一批跟随他的工程师来到上海浦东的一片稻田。他要在一年之内，在这里建起中国第一座能够量产0.25微米的现代化晶圆厂。</p>
+<h2 id="34-台积电的围剿"><a class="header" href="#34-台积电的围剿">3.4 台积电的围剿</a></h2>
+<p>从2003年到2009年，台积电对中芯国际提起了多次诉讼。2009年，中芯国际被迫向台积电支付$2亿、交出10%股权、张汝京本人被迫辞去CEO职务。这是他第三次失去自己创建的公司。</p>
+<h2 id="35-张汝京模式一个人的产业政策"><a class="header" href="#35-张汝京模式一个人的产业政策">3.5 张汝京模式——“一个人的产业政策”</a></h2>
+<p>中芯国际的意义不仅在于它为中国建起了第一座现代化晶圆厂——更在于它证明了一个人在中国是可以改变一个产业的。在政策尚未就位的年代，企业家的孤勇填补了制度的空白。</p>
+<p>【全章以张汝京的个人命运为主线，融入18号文件、中国加入WTO的时代背景。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第四章-备胎的诞生华为海思的极限生存计划"><a class="header" href="#第四章-备胎的诞生华为海思的极限生存计划">第四章 备胎的诞生——华为海思的极限生存计划</a></h1>
+<blockquote>
+<p><strong>十年磨一剑</strong>
+<em>2004年，任正非在深圳成立了一家叫“海思“的公司。他说了一句当时没人当真的话。十年后，这句话变成了华为最坚硬的铠甲。</em></p>
+</blockquote>
+<h2 id="41-2004年一个不务正业的决定"><a class="header" href="#41-2004年一个不务正业的决定">4.1 2004年：一个“不务正业“的决定</a></h2>
+<p>那一年，华为还是一家年营收不到$60亿的通信设备公司。任正非拿出一笔巨款——据称超过$10亿——成立了一家芯片设计公司。“即使有一天我们不能再从美国买芯片了，我们也要有自己的备胎。”</p>
+<h2 id="42-k3v2的耻辱从被全网嘲讽开始"><a class="header" href="#42-k3v2的耻辱从被全网嘲讽开始">4.2 K3V2的耻辱：从被全网嘲讽开始</a></h2>
+<p>2012年，海思推出了第一款面向智能手机的SoC——K3V2。发热严重、性能落后、功耗失控。“华为手机+海思芯片=电子垃圾”——这是当时科技媒体的主流评价。</p>
+<h2 id="43-麒麟的逆袭"><a class="header" href="#43-麒麟的逆袭">4.3 麒麟的逆袭</a></h2>
+<p>从K3V2到麒麟9000，海思走了八年。2020年秋，麒麟9000发布——全球首款5nm 5G SoC，性能在多个维度上超越了同代的高通骁龙和苹果A系列。但这也是海思在台积电代工的最后一代旗舰芯片。</p>
+<h2 id="44-2020年9月14日铁幕落下"><a class="header" href="#44-2020年9月14日铁幕落下">4.4 2020年9月14日：铁幕落下</a></h2>
+<p>美国禁令生效，台积电停止向华为供货。麒麟9000成为“绝唱“。海思的设计能力仍在，但制造能力被切断。华为一夜之间从“领跑者“变成了“被困的巨人“。</p>
+<h2 id="45-备胎的备胎昇腾的被迫转正"><a class="header" href="#45-备胎的备胎昇腾的被迫转正">4.5 备胎的“备胎“——昇腾的被迫转正</a></h2>
+<p>当手机芯片被切断，AI芯片昇腾被迫“转正“。在中国AI算力的巨大缺口面前，华为昇腾成了唯一的选择——这不是最优解，但是唯一的解。</p>
+<p>【本章的核心叙事：从“所有人都在嘲笑“到“所有人都在依赖“——一家公司的芯片之路，是中国芯片产业从被看不起到被仰望的缩影。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第五章-大基金的野望国家资本如何重塑产业格局"><a class="header" href="#第五章-大基金的野望国家资本如何重塑产业格局">第五章 大基金的野望——国家资本如何重塑产业格局</a></h1>
+<blockquote>
+<p><strong>国家意志的金融武器</strong>
+<em>当市场机制不足以支撑芯片产业时，国家资本出手了。大基金一期1387亿、二期2042亿、三期3440亿——这是一场史无前例的国家级产业赌博。</em></p>
+</blockquote>
+<h2 id="51-为什么需要大基金"><a class="header" href="#51-为什么需要大基金">5.1 为什么需要大基金？</a></h2>
+<p>芯片产业的特点是“烧钱、慢回报、高风险“——这与市场化VC的“快进快出“逻辑天然冲突。2014年，国务院发文——《国家集成电路产业发展推进纲要》——宣布了大基金的成立。这是中国历史上第一次用“国家级引导基金“的方式大规模投资半导体产业。</p>
+<h2 id="52-大基金一期1387亿的布局"><a class="header" href="#52-大基金一期1387亿的布局">5.2 大基金一期：1387亿的布局</a></h2>
+<p>一期资金重仓制造——中芯国际、华虹半导体、长江存储、长鑫存储——这些今天中国芯片产业的“底仓“，几乎全部是大基金一期撒下的种子。</p>
+<h2 id="53-大基金二期2000亿的深水区"><a class="header" href="#53-大基金二期2000亿的深水区">5.3 大基金二期：2000亿的深水区</a></h2>
+<p>二期资金从“铺赛道“转向“攻据点“——设备、材料、EDA——这些长期以来被VC“嫌弃“的领域，在大基金的推动下开始得到持续投入。</p>
+<h2 id="54-大基金三期3440亿的总攻"><a class="header" href="#54-大基金三期3440亿的总攻">5.4 大基金三期：3440亿的“总攻“</a></h2>
+<p>2024年5月，大基金三期宣布成立——规模超过一期和二期之和。三期的重点方向直指AI芯片和制造设备——这是“最难啃的骨头“。</p>
+<h2 id="55-争议与反思大基金不是万能药"><a class="header" href="#55-争议与反思大基金不是万能药">5.5 争议与反思：大基金不是“万能药“</a></h2>
+<p>大基金有没有投错项目？有。紫光集团的债务危机、部分被投企业的低效扩张、“大基金概念股“的投机炒作——这些都是真实发生的。国家资本的纪律性、退出机制和“如何避免大而不强”——是本章必须正面回应的问题。</p>
+<p>【本章以数据为骨架，以争议为血肉——“国家资本+芯片产业“这个组合，成功了什么，失败了什么，对未来的启示是什么。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第六章-釜底抽薪当台积电停止代工"><a class="header" href="#第六章-釜底抽薪当台积电停止代工">第六章 釜底抽薪——当台积电停止代工</a></h1>
+<blockquote>
+<p><strong>设计的“断腕“之痛</strong>
+<em>中国有3900多家芯片设计公司，但最先进的制造工艺被切断了。设计能力再强，造不出来，就只是图纸。</em></p>
+</blockquote>
+<h2 id="61-中国芯片设计业的黄金十年"><a class="header" href="#61-中国芯片设计业的黄金十年">6.1 中国芯片设计业的“黄金十年“</a></h2>
+<p>2006到2025年，中国芯片设计业的年均复合增长率19.6%。销售额过亿的设计企业从不到100家增长到800多家。这是一个被严重低估的成就。</p>
+<h2 id="62-制裁的精准打击"><a class="header" href="#62-制裁的精准打击">6.2 制裁的“精准打击“</a></h2>
+<p>2020年9月14日之后，华为海思的麒麟芯片无法再生产。制裁的设计是高度精准的：不禁止中国设计芯片，只禁止最先进的工艺为中国的设计公司代工。</p>
+<h2 id="63-华为海思的选择"><a class="header" href="#63-华为海思的选择">6.3 华为海思的选择</a></h2>
+<p>海思没有解散。它的设计团队继续研发——在无法确定何时能恢复代工的情况下。2023年8月，Mate 60 Pro搭载麒麟9000S回归——中芯国际的7nm N+2工艺。虽然性能与同期高通/苹果差距明显，但“存在“本身就说明了问题。</p>
+<h2 id="64-紫光展锐韦尔股份与设计业的分化"><a class="header" href="#64-紫光展锐韦尔股份与设计业的分化">6.4 紫光展锐、韦尔股份与设计业的分化</a></h2>
+<p>在最先进制程被封锁的背景下，中国芯片设计业正在分化为两条路径：一条路径是在成熟制程（28nm及以上）上做到极致性价比、极致市占率——韦尔股份的CMOS传感器已经占全球30%+；另一条路径是等待国产先进制程的突破。</p>
+<h2 id="65-设计业的达摩克利斯之剑"><a class="header" href="#65-设计业的达摩克利斯之剑">6.5 设计业的“达摩克利斯之剑“</a></h2>
+<p>3900多家设计企业中，有多少家真正拥有不可替代的技术？有多少家在“内卷式“的价格战中消耗生命力？制裁锁住了天花板，但地板上的“内卷“同样危险。</p>
+<p>【本章以3900家设计企业的全景图为背景，聚焦制裁后设计业的分化与求存之路。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第七章-绝地反击中芯国际的7nm奇迹"><a class="header" href="#第七章-绝地反击中芯国际的7nm奇迹">第七章 绝地反击——中芯国际的7nm奇迹</a></h1>
+<blockquote>
+<p><strong>用三流武器打赢一流战争</strong>
+<em>没有EUV光刻机，中芯国际用DUV多重曝光实现了等效7nm量产。良率超90%。这不是“弯道超车“，这是“在没有路的地方硬闯出一条路“。</em></p>
+</blockquote>
+<h2 id="71-中芯国际的至暗时刻"><a class="header" href="#71-中芯国际的至暗时刻">7.1 中芯国际的“至暗时刻“</a></h2>
+<p>2020年12月，中芯国际被列入美国实体清单。“10nm及以下工艺的设备，一概不能卖给中芯国际。“那时的中芯国际，刚刚实现14nm量产——距离7nm还很远，通往7nm的路却被封死了。</p>
+<h2 id="72-duv多重曝光用笨办法突破工艺天花板"><a class="header" href="#72-duv多重曝光用笨办法突破工艺天花板">7.2 DUV多重曝光：用“笨办法“突破工艺天花板</a></h2>
+<p>EUV（极紫外光刻）可以在一次曝光中完成7nm的图案转移。中芯国际没有EUV，只能用DUV（深紫外光刻）进行多次曝光。这意味着需要更多的光罩、更长的生产时间、更低的良率——但这是唯一的路。</p>
+<h2 id="73-麒麟9000s的真相"><a class="header" href="#73-麒麟9000s的真相">7.3 麒麟9000S的真相</a></h2>
+<p>2023年8月，华为Mate 60 Pro发布。国际分析机构TechInsights的拆解报告证实：芯片上的“SMIC 7nm“字样——中芯国际实现了等效7nm的量产。良率超90%的数据让整个半导体行业为之震动。</p>
+<h2 id="74-从7nm到5nm鸿沟有多深"><a class="header" href="#74-从7nm到5nm鸿沟有多深">7.4 从7nm到5nm：鸿沟有多深？</a></h2>
+<p>中芯国际的7nm“奇迹“固然振奋——但7nm之后，每前进一步，没有EUV的代价呈指数级增加。DUV能做到7nm，但5nm？3nm？物理定律不会因为意志而改变。</p>
+<h2 id="75-产能的账本规模永远追不上台积电"><a class="header" href="#75-产能的账本规模永远追不上台积电">7.5 产能的账本：规模永远追不上台积电</a></h2>
+<p>中芯国际月产能107.8万片（折合8英寸）——这个数字不小。但台积电的先进制程月产能是中芯国际的数倍。差距不仅在“能不能造“，还在“能造多少“。</p>
+<p>【本章只讲一个核心故事：在没有EUV的条件下实现7nm。这是一场“意志对物理极限的硬刚“。写它的辉煌，也写它的极限。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第八章-偷袭三星中国存储芯片的闪电战"><a class="header" href="#第八章-偷袭三星中国存储芯片的闪电战">第八章 偷袭三星——中国存储芯片的闪电战</a></h1>
+<blockquote>
+<p><strong>从1%到13%：一段被低估的逆袭</strong>
+<em>三星、SK海力士、美光统治了全球存储芯片市场二十年。没有人想到，打破这个铁三角的，会是一家成立不到十年的中国公司。</em></p>
+</blockquote>
+<h2 id="81-存储芯片全球最残酷的大赌场"><a class="header" href="#81-存储芯片全球最残酷的大赌场">8.1 存储芯片：全球最残酷的“大赌场“</a></h2>
+<p>DRAM和NAND Flash是半导体产业中最“血腥“的赛道。周期性极强、资金门槛极高、技术迭代极快。过去的二十年里，这个市场的玩家从几十家减少到了三家——直到中国公司杀了进来。</p>
+<h2 id="82-长江存储232层xtacking的技术奇袭"><a class="header" href="#82-长江存储232层xtacking的技术奇袭">8.2 长江存储：232层Xtacking的“技术奇袭“</a></h2>
+<p>长江存储没有走三星/海力士/美光的老路——它发明了自己的Xtacking架构。这个架构将存储阵列和逻辑电路分开制造，再用混合键合技术“粘“在一起。2023-2024年，长江存储的232层NAND量产——技术指标与三星的同期产品处于同一水平。</p>
+<h2 id="83-偷袭的经济学"><a class="header" href="#83-偷袭的经济学">8.3 “偷袭“的经济学</a></h2>
+<p>长江存储从全球份额不到1%起步，到2026年已占据13%。这不仅是技术的胜利——更是“以成本换份额“的闪电战：在三星和海力士维持高毛利率的同时，长江存储以更低的定价抢夺市场。2026年Q1，长江存储营收同比增长近445%。</p>
+<h2 id="84-长鑫存储dram的第二条战线"><a class="header" href="#84-长鑫存储dram的第二条战线">8.4 长鑫存储：DRAM的“第二条战线“</a></h2>
+<p>与长江存储在NAND领域的突进并行，长鑫存储在DRAM领域从DDR4起步，稳步推进到DDR5、LPDDR5X，并已切入12层HBM——这是一条门槛更高的赛道。</p>
+<h2 id="85-两长的极限与三星的反击"><a class="header" href="#85-两长的极限与三星的反击">8.5 “两长“的极限与三星的反击</a></h2>
+<p>三星不会坐视自己的地盘被侵蚀。当长江存储的份额突破10%时，三星的反制措施已经启动——降价、加速技术迭代、利用地缘政治限制中国存储芯片的海外扩张。“偷袭“成功了第一阶段，但战争的终局远未到来。</p>
+<p>【本章以长江存储为首要案例——一家公司的崛起改变了全球存储格局。写胜利，也写胜利背后的脆弱。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第九章-风起于青萍之末ai芯片gpu与算力自主"><a class="header" href="#第九章-风起于青萍之末ai芯片gpu与算力自主">第九章 风起于青萍之末——AI芯片、GPU与算力自主</a></h1>
+<blockquote>
+<p><strong>算力长征的新战场</strong>
+<em>GPU是被制裁的重灾区。但AI的爆发让“算力自主“从可选项变成了必选项。华为昇腾、寒武纪、壁仞科技——谁能在封锁中杀出一条血路？</em></p>
+</blockquote>
+<h2 id="91-英伟达的天堑一道用软件筑起的护城河"><a class="header" href="#91-英伟达的天堑一道用软件筑起的护城河">9.1 英伟达的“天堑“：一道用软件筑起的护城河</a></h2>
+<p>英伟达GPU在中国云计算市场曾经占据超过90%的份额。CUDA生态的迁移成本比硬件追赶的成本高出十倍——这才是“封锁“之外的另一道墙。</p>
+<h2 id="92-华为昇腾的被迫转正"><a class="header" href="#92-华为昇腾的被迫转正">9.2 华为昇腾的“被迫转正“</a></h2>
+<p>2023年，美国限制A100/H100对华出口。英伟达被迫推出“阉割版“H20——性能仅为H100的20-30%。华为昇腾910B/910C成为唯一可大规模采购的国产AI芯片替代方案。</p>
+<h2 id="93-寒武纪从a股明星到制裁风暴的过山车"><a class="header" href="#93-寒武纪从a股明星到制裁风暴的过山车">9.3 寒武纪：从A股明星到制裁风暴的“过山车“</a></h2>
+<p>寒武纪曾是中国AI芯片第一股，市值一度超过￥3000亿。2022年被列入实体清单后，7nm代工被切断。2025-2026年，思元690在中芯国际7nm产能上实现了回归——FP16算力超700 TFLOPS。</p>
+<h2 id="94-国产gpu四小龙的混战与洗牌"><a class="header" href="#94-国产gpu四小龙的混战与洗牌">9.4 国产GPU“四小龙“的混战与洗牌</a></h2>
+<p>壁仞科技、摩尔线程、沐曦股份、燧原科技——2025-2026年相继登陆资本市场。资本在“赌“谁能在AI推理和训练芯片赛道上跑出来。</p>
+<h2 id="95-平行宇宙的前夜"><a class="header" href="#95-平行宇宙的前夜">9.5 “平行宇宙“的前夜</a></h2>
+<p>美国有CUDA生态，中国有华为CANN/昇腾生态——两个互不兼容的AI算力宇宙正在形成。未来会出现“CUDA应用“和“国产算力应用“两套体系并存的格局。对软件开发者和企业用户来说，这意味着“一个应用要开发两个版本“的额外成本。</p>
+<p>【本章的核心判断：AI芯片的斗争不是一轮“国产替代“战役，而是两个技术生态的长期共存与竞争。这是一场没有终点的马拉松。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十章-隐形冠军封测设备与材料的长征路"><a class="header" href="#第十章-隐形冠军封测设备与材料的长征路">第十章 隐形冠军——封测、设备与材料的长征路</a></h1>
+<blockquote>
+<p><strong>没有光刻机，造不出7nm；没有刻蚀机，连28nm都造不出</strong>
+<em>长电科技全球第三、北方华创刻蚀设备突破、沪硅产业12英寸大硅片——这些名字不出现在新闻头条上，但它们是中国芯片产业的“地基“。</em></p>
+</blockquote>
+<h2 id="101-封测最先上岸的环节"><a class="header" href="#101-封测最先上岸的环节">10.1 封测：最先“上岸“的环节</a></h2>
+<p>长电科技2026年H1净利润预计同比增长63-102%，通富微电同比增长288-337%。先进封装（2.5D/3D、Chiplet、HBM封装）正在成为封测业增长的新引擎。盛合晶微是华为昇腾AI芯片的“御用封测“企业——在这条产业链上，封测是最接近“自主可控“的环节。</p>
+<h2 id="102-设备从0到1的突破从1到n的煎熬"><a class="header" href="#102-设备从0到1的突破从1到n的煎熬">10.2 设备：从0到1的突破，从1到N的煎熬</a></h2>
+<p>2025年国产半导体设备自给率达到35%。北方华创、中微公司突破了刻蚀和薄膜沉积的核心技术——但EUV光刻机的国产化仍然遥不可及。DUV光刻机是上海微电子的主攻方向，但HMI光刻设备的国产化还没有时间表。</p>
+<h2 id="103-材料日韩垄断的裂缝"><a class="header" href="#103-材料日韩垄断的裂缝">10.3 材料：日韩垄断的裂缝</a></h2>
+<p>在光刻胶、高纯化学品、大硅片、CMP抛光液等关键材料领域，沪硅产业、安集科技、鼎龙股份、南大光电、江丰电子等一批企业正在从“进口替代“的裂缝中生长。但高端光刻胶的进口依赖度仍有79%——材料是产业链中“最长的那块短板“。</p>
+<h2 id="104-eda从一超多强到全流程突破"><a class="header" href="#104-eda从一超多强到全流程突破">10.4 EDA：从“一超多强“到“全流程突破“</a></h2>
+<p>华大九天已是国内唯一的全流程EDA厂商，支持7/5nm先进制程。概伦电子、广立微、芯华章在各自细分领域各有建树。EDA受制裁影响较小，但生态惯性使得“从三大家切换“的过程缓慢而痛苦。</p>
+<p>【本章写产业链的“底座“——封测、设备、材料、EDA。这些隐形冠军是中国芯片产业最不起眼但最重要的基石。设备材料国产化率35%——即喜悦，也刺痛。】</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="终章芯火未来十年的三个判断"><a class="header" href="#终章芯火未来十年的三个判断">终章：芯火——未来十年的三个判断</a></h1>
+<blockquote>
+<p><strong>不是结束，而是开始</strong>
+<em>当2022年10月7日那个凌晨的八个字最终揭晓——我们会发现，那八个字不是结束语，而是开场白。</em></p>
+</blockquote>
+<h2 id="判断一成熟制程的规模碾压"><a class="header" href="#判断一成熟制程的规模碾压">判断一：成熟制程的“规模碾压“</a></h2>
+<p>到2030年，中国占全球成熟制程产能的比重将达到52%。这意味着——全球每两颗“不先进但必需“的芯片中，有一颗将产自中国。</p>
+<p>这不是技术领先，而是成本领先。28nm及以上制程的芯片——用于汽车、家电、工业控制、物联网——占据了全球芯片消耗量的70%以上。当中国以无可匹敌的规模压低成熟制程的成本时，全球的芯片供应链将在“底层“上被重新定价。</p>
+<p>但规模是一把双刃剑。如果产能扩张远超需求增速，“产能过剩+价格战“将是中国芯片产业的下一场噩梦。“内卷“不仅存在于低端制造，同样可能存在于芯片——而且芯片的“内卷“代价是百亿美元级别的。</p>
+<h2 id="判断二ai芯片的平行宇宙"><a class="header" href="#判断二ai芯片的平行宇宙">判断二：AI芯片的“平行宇宙“</a></h2>
+<p>中美两国的AI算力生态正在走向分裂——这不是“脱钩“，而是“一个世界、两套系统“。</p>
+<p>在CUDA生态内，英伟达、台积电、SK海力士的“铁三角“继续升级。在国产AI生态内，华为昇腾+中芯国际+长鑫存储的“替代链“正在成形。两个生态互不兼容——软件开发者和企业用户将被迫在两个世界之间做出选择，或者同时投入两套人马。</p>
+<p>这对全球AI产业意味着什么？效率的损失。当每一个AI应用都需要在两套算力平台上分别开发和优化时，“让AI无处不在“的理想将会付出更高的成本。但这也是中国芯片产业的“防火墙”——只要华为昇腾+中芯国际这条线不断，外部封锁就无法彻底切断中国的AI算力供给。</p>
+<h2 id="判断三下一个华为在哪里"><a class="header" href="#判断三下一个华为在哪里">判断三：下一个“华为“在哪里？</a></h2>
+<p>中国芯片产业最大的隐忧不是制裁，而是<strong>创新的参照系消失了</strong>。</p>
+<p>二十年前，中国企业很清楚自己的目标——“追上Intel”、“追上高通”、“追上英伟达”。追赶者的路径是清晰的：看第一名的技术路线图，跟着走。但现在，在某些领域——华为的麒麟芯片（在制裁前）、长江存储的Xtacking、DeepSeek的极致效率训练——中国企业已经“追到了最前面“，前方没有参照物了。</p>
+<p>从“追赶者“变成“定义者“，需要一种中国企业历史上从未系统拥有的能力——<strong>从0到1的原始创新</strong>。“韬定律”（华为提出的以“时间缩微“替代“几何缩微“）是一个方向，但它是否足够支撑一个产业从“并跑“到“领跑“的质变，还需要时间来回答。</p>
+<hr>
+<h2 id="结语那八个字"><a class="header" href="#结语那八个字">结语：那八个字</a></h2>
+<p>2022年10月8日凌晨，深圳坂田华为总部。</p>
+<p>任正非在内部会议上说的八个字是：</p>
+<p><strong>“活下去。十年后见。”</strong></p>
+<p>不是“我们一定会赢“，不是“封锁打不倒我们“——是“活下去“。</p>
+<p>因为他知道，这场战争不是一两年的事，是十年、二十年、三十年的事。不是因为对手太强大——而是因为芯片产业本身就是一条需要用“代际“来丈量的长征路。台积电从成立到全球第一走了三十年。三星从模仿者到DRAM霸主走了二十年。中国芯片产业的“血色长征“，才走了不到一半。</p>
+<p>“活下去”——意味着不被制裁压垮，不因为“内卷“而自毁，不因为暂时的胜利而自大，不因为暂时的挫折而放弃。</p>
+<p>“十年后见”——意味着这场长征的终局，不在今天，不在明年，而在我们这代人的整个职业生涯中。</p>
+<p>芯火相传。这团火，始于109厂的算盘时代，燃于张汝京的稻田工厂，烈于海思的麒麟绝唱，旺于长江存储的闪电突袭。下一堆薪，在谁的手上？</p>
+<hr>
+<p><strong>treelemon</strong></p>
+<p>2026年夏</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录一中国集成电路产业发展大事记19562026"><a class="header" href="#附录一中国集成电路产业发展大事记19562026">附录一：中国集成电路产业发展大事记（1956—2026）</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>事件</th><th>意义</th></tr>
+</thead>
+<tbody>
+<tr><td>1956</td><td>四项紧急措施</td><td>中国半导体产业的起源</td></tr>
+<tr><td>1960</td><td>中科院109厂成立</td><td>中国第一个半导体器件研制基地</td></tr>
+<tr><td>1965</td><td>第一块集成电路</td><td>比世界首块晚7年</td></tr>
+<tr><td>1972</td><td>第一块LSI PMOS电路</td><td>大规模集成电路起步</td></tr>
+<tr><td>1978</td><td>首次引进生产线</td><td>从封闭到开放</td></tr>
+<tr><td>1990</td><td>908工程</td><td>半导体产业化尝试</td></tr>
+<tr><td>1996</td><td>909工程——华虹NEC 8英寸线</td><td>中国大陆首条8英寸线</td></tr>
+<tr><td>2000</td><td>18号文件+中芯国际成立</td><td>政策与企业家共振</td></tr>
+<tr><td>2004</td><td>海思半导体成立</td><td>华为“备胎计划“</td></tr>
+<tr><td>2014</td><td>国家大基金一期（￥1387亿）</td><td>国家意志入场</td></tr>
+<tr><td>2016</td><td>长江存储、长鑫存储成立</td><td>存储双雄起航</td></tr>
+<tr><td>2019</td><td>实体清单+EDA断供</td><td>封锁开始升级</td></tr>
+<tr><td>2020</td><td>台积电断供华为/中芯国际遭制裁</td><td>制造被“釜底抽薪“</td></tr>
+<tr><td>2022</td><td>BIS新规+长江存储入实体清单</td><td>存储+AI芯片被封杀</td></tr>
+<tr><td>2023</td><td>麒麟9000S回归（SMIC 7nm）</td><td>逆袭第一弹</td></tr>
+<tr><td>2024</td><td>大基金三期￥3440亿</td><td>总攻信号</td></tr>
+<tr><td>2025</td><td>国产GPU四小龙上市</td><td>AI算力新力量</td></tr>
+<tr><td>2026</td><td>芯片年产量4842亿块/国产EDA全流程突破</td><td>规模初现、短板补位</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>本年表随产业进展持续更新。</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录二国家集成电路产业投资基金大基金概览"><a class="header" href="#附录二国家集成电路产业投资基金大基金概览">附录二：国家集成电路产业投资基金（大基金）概览</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>对比维度</th><th>大基金一期</th><th>大基金二期</th><th>大基金三期</th></tr>
+</thead>
+<tbody>
+<tr><td>成立时间</td><td>2014年9月</td><td>2019年10月</td><td>2024年5月</td></tr>
+<tr><td>注册资本</td><td>￥1387亿</td><td>￥2042亿</td><td>￥3440亿</td></tr>
+<tr><td>实际募资</td><td>￥1387亿</td><td>￥2042亿</td><td>￥3440亿</td></tr>
+<tr><td>投资期限</td><td>15年（2014-2029）</td><td>15年（2019-2034）</td><td>15年（2024-2039）</td></tr>
+<tr><td>重点投资方向</td><td>制造（65%）、设计（17%）、封测（10%）、装备材料（8%）</td><td>设备材料（占比大幅提升）、存储芯片</td><td>AI芯片、高端制造设备、先进封装</td></tr>
+<tr><td>标志性项目</td><td>中芯国际、长江存储、长鑫存储、华虹半导体</td><td>中芯南方、长江存储二期、北方华创、中微公司</td><td>华为昇腾产业链、AI算力基础设施</td></tr>
+<tr><td>管理模式</td><td>华芯投资管理（GP）</td><td>华芯投资管理（GP）</td><td>华芯投资+新设管理平台</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="大基金的核心争议"><a class="header" href="#大基金的核心争议">大基金的核心争议</a></h2>
+<ol>
+<li><strong>投资纪律</strong>：部分被投企业利用“大基金概念“炒作估值，投资后业绩不及预期</li>
+<li><strong>退出机制</strong>：大基金的15年存续期要求退出——通过IPO或并购退出目前仍在探索中</li>
+<li><strong>效率vs公平</strong>：国家资本的“选择“机制能否准确识别最具创新力的企业——还是会被“关系“和“政策导向“稀释效率</li>
+<li><strong>与市场VC的关系</strong>：大基金的“巨量资金“是否挤出了社会资本——还是“引导“了更多社会资本进入半导体领域</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录三中国主要半导体企业名录及核心产品索引"><a class="header" href="#附录三中国主要半导体企业名录及核心产品索引">附录三：中国主要半导体企业名录及核心产品索引</a></h1>
+<h2 id="一晶圆制造"><a class="header" href="#一晶圆制造">一、晶圆制造</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>企业</th><th>核心产品/技术</th><th>关键技术节点</th></tr>
+</thead>
+<tbody>
+<tr><td>中芯国际</td><td>晶圆代工</td><td>7nm等效（N+2）、14nm、28nm</td></tr>
+<tr><td>华虹半导体</td><td>特色工艺代工</td><td>55nm、90nm</td></tr>
+<tr><td>华力微电子</td><td>12英寸代工</td><td>40nm、55/65nm</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="二芯片设计"><a class="header" href="#二芯片设计">二、芯片设计</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>细分赛道</th><th>代表企业</th><th>核心产品</th></tr>
+</thead>
+<tbody>
+<tr><td>手机SoC</td><td>华为海思</td><td>麒麟系列</td></tr>
+<tr><td>CPU/服务器</td><td>海光信息、龙芯中科、飞腾</td><td>海光5000/6000、3A6000、腾锐S2500</td></tr>
+<tr><td>AI芯片</td><td>寒武纪、华为昇腾</td><td>思元690、Ascend 910C</td></tr>
+<tr><td>GPU</td><td>壁仞科技、摩尔线程、沐曦</td><td>BR2xx系列</td></tr>
+<tr><td>CIS传感器</td><td>韦尔股份</td><td>CMOS图像传感器</td></tr>
+<tr><td>存储器</td><td>兆易创新、澜起科技</td><td>NOR Flash、内存接口芯片</td></tr>
+<tr><td>射频</td><td>卓胜微</td><td>射频前端芯片</td></tr>
+<tr><td>MCU</td><td>兆易创新、中颖电子</td><td>32位ARM MCU</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="三存储芯片"><a class="header" href="#三存储芯片">三、存储芯片</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>企业</th><th>技术路线</th><th>核心产品</th></tr>
+</thead>
+<tbody>
+<tr><td>长江存储</td><td>3D NAND</td><td>232层/294层 Xtacking</td></tr>
+<tr><td>长鑫存储</td><td>DRAM (IDM)</td><td>DDR4/DDR5/LPDDR5X/12层HBM</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="四封装测试"><a class="header" href="#四封装测试">四、封装测试</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>企业</th><th>全球排名</th><th>核心能力</th></tr>
+</thead>
+<tbody>
+<tr><td>长电科技</td><td>第3</td><td>XDFOI、2.5D/3D、HBM3E封测</td></tr>
+<tr><td>通富微电</td><td>第4</td><td>AMD AI芯片封测（MI300/MI400）</td></tr>
+<tr><td>华天科技</td><td>前10</td><td>AI算力、服务器存储封测</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="五半导体设备"><a class="header" href="#五半导体设备">五、半导体设备</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>设备类型</th><th>代表企业</th><th>核心产品</th></tr>
+</thead>
+<tbody>
+<tr><td>刻蚀设备</td><td>中微公司、北方华创</td><td>等离子体刻蚀、ICP刻蚀</td></tr>
+<tr><td>薄膜沉积</td><td>拓荆科技、北方华创</td><td>PVD/CVD/ALD</td></tr>
+<tr><td>光刻设备</td><td>上海微电子</td><td>DUV光刻机</td></tr>
+<tr><td>清洗设备</td><td>盛美半导体</td><td>单片清洗设备</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="六半导体材料"><a class="header" href="#六半导体材料">六、半导体材料</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>材料类型</th><th>代表企业</th><th>核心产品</th></tr>
+</thead>
+<tbody>
+<tr><td>大硅片</td><td>沪硅产业</td><td>12英寸硅片</td></tr>
+<tr><td>CMP抛光</td><td>安集科技、鼎龙股份</td><td>抛光液/抛光垫</td></tr>
+<tr><td>光刻胶</td><td>南大光电</td><td>ArF光刻胶</td></tr>
+<tr><td>溅射靶材</td><td>江丰电子</td><td>高纯溅射靶材（3nm）</td></tr>
+<tr><td>电子特气</td><td>华特气体</td><td>高纯氟碳类气体</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="七eda工具"><a class="header" href="#七eda工具">七、EDA工具</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>企业</th><th>定位</th><th>核心能力</th></tr>
+</thead>
+<tbody>
+<tr><td>华大九天</td><td>全流程EDA</td><td>模拟/数字全流程，7/5nm</td></tr>
+<tr><td>概伦电子</td><td>器件建模</td><td>SPICE仿真</td></tr>
+<tr><td>广立微</td><td>良率测试</td><td>晶圆测试</td></tr>
+<tr><td>芯华章/合见工软</td><td>数字验证</td><td>逻辑仿真与形式验证</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>企业名录随产业演进持续更新，数据截至2026年中。</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录四核心政策文件与关键数据"><a class="header" href="#附录四核心政策文件与关键数据">附录四：核心政策文件与关键数据</a></h1>
+<h2 id="一核心政策文件"><a class="header" href="#一核心政策文件">一、核心政策文件</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>政策/事件</th><th>核心内容</th></tr>
+</thead>
+<tbody>
+<tr><td>1956</td><td>四项紧急措施</td><td>半导体、计算机等列为国家紧急攻关项目</td></tr>
+<tr><td>2000</td><td>国务院18号文件</td><td>《鼓励软件产业和集成电路产业发展的若干政策》——首次系统化支持IC产业</td></tr>
+<tr><td>2014</td><td>《国家集成电路产业发展推进纲要》</td><td>成立大基金，建立“国家意志+市场机制“模式</td></tr>
+<tr><td>2015</td><td>《中国制造2025》</td><td>集成电路列为重点突破领域</td></tr>
+<tr><td>2020</td><td>国务院8号文件</td><td>《新时期促进集成电路产业和软件产业高质量发展的若干政策》——将IC提升至“国家战略“</td></tr>
+<tr><td>2024</td><td>大基金三期</td><td>注册资本￥3440亿——总投资规模超过前两期之和</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="二关键产业数据"><a class="header" href="#二关键产业数据">二、关键产业数据</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>指标</th><th>2016年</th><th>2020年</th><th>2025年</th><th>2026年</th></tr>
+</thead>
+<tbody>
+<tr><td>集成电路产业销售收入</td><td>￥4336亿</td><td>￥8848亿</td><td>￥1.73万亿</td><td>—</td></tr>
+<tr><td>芯片年产量（亿块）</td><td>1318</td><td>2613</td><td>4046</td><td>4842（H1 15亿块/天）</td></tr>
+<tr><td>集成电路出口额</td><td>$615亿</td><td>$1168亿</td><td>$2018.97亿</td><td>—</td></tr>
+<tr><td>晶圆代工产能（万片/月，8英寸当量）</td><td>~120</td><td>~200</td><td>—</td><td>~400（中国大陆，全球34.4%）</td></tr>
+<tr><td>半导体设备国产化率</td><td>~10%</td><td>~20%</td><td>~35%</td><td>—</td></tr>
+<tr><td>芯片设计企业数量</td><td>~1300</td><td>~2200</td><td>3901</td><td>—</td></tr>
+<tr><td>成熟制程（28nm+）全球产能占比</td><td>~15%</td><td>~20%</td><td>~30%</td><td>~37%（22-40nm）</td></tr>
+</tbody>
+</table>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
