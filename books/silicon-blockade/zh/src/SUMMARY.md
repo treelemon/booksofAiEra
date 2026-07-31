@@ -31,3 +31,4 @@
 - [附录二：国家集成电路产业投资基金（大基金）概览](appendices/appendix-b.md)
 - [附录三：中国主要半导体企业名录及核心产品索引](appendices/appendix-c.md)
 - [附录四：核心政策文件与关键数据](appendices/appendix-d.md)
+- [附录五：芯片产业专业名词解释](appendices/appendix-e.md)
