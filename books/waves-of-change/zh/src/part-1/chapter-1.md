@@ -163,10 +163,10 @@
 
 ### 关键参考资源
 
-- 佩蕾丝《技术革命与金融资本》（*Technological Revolutions and Financial Capital*, Edward Elgar, 2002）——全书的理论基石，定义了五轮技术周期和四阶段模型
-- Dimson, Marsh & Staunton《乐观主义者的胜利：全球投资回报101年》（*Triumph of the Optimists*, 普林斯顿大学出版社, 2002）——1900年以来全球主要国家股票、债券、货币市场回报的系统性数据库
-- CRSP美国股市数据库（芝加哥大学布斯商学院）——1925年至今的美股行业分类和市值数据
-- 申万宏源行业轮动系列报告——A股行业轮动速度和极差数据的实证来源
-- 纳斯达克历史指数数据——2000年互联网泡沫的经典数据
-- Chancellor《时间的代价：利率的真实故事》（*The Price of Time*, 2022）——金融泡沫史的系统论述
-- Shiller《非理性繁荣》（*Irrational Exuberance*, 普林斯顿大学出版社, 2000/2005/2015）——泡沫和结构性行情的理论框架
+- [佩蕾丝《技术革命与金融资本》](https://www.carlotaperez.org)——全书的理论基石，定义了五轮技术周期和四阶段模型
+- [Dimson, Marsh & Staunton《乐观主义者的胜利》](https://press.princeton.edu/books/hardcover/9780691091945/triumph-of-the-optimists)——1900年以来全球主要国家股票、债券、货币市场回报的系统性数据库
+- [CRSP美国股市数据库](https://www.crsp.org)——1925年至今的美股行业分类和市值数据
+- [申万宏源研究](https://www.swsresearch.com)——A股行业轮动速度和极差数据的实证来源
+- [纳斯达克历史指数](https://www.nasdaq.com/market-activity/index/comp/historical)——2000年互联网泡沫的经典数据
+- [Chancellor《时间的代价》](https://www.penguinrandomhouse.com/books/624734/the-price-of-time-by-edward-chancellor/)——金融泡沫史的系统论述
+- [Shiller《非理性繁荣》](https://press.princeton.edu/books/paperback/9780691173122/irrational-exuberance)——泡沫和结构性行情的理论框架
