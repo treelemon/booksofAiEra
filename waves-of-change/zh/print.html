@@ -1,0 +1,592 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>浪潮之轮：技术革命、行业轮动与结构性行情的两百年</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="一部关于产业变迁与资本市场共振的历史逻辑与投资启示录。横跨1771年至今255年历史跨度，以技术革命驱动产业变迁、产业变迁映射为行业轮动、行业轮动呈现为结构性行情为核心逻辑链条。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-e96d0476.css">
+        <link rel="stylesheet" href="css/chrome-d279d366.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-4e40b54c.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-91e62e36.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">浪潮之轮：技术革命、行业轮动与结构性行情的两百年</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="第一章-一个被忽视的两百年规律"><a class="header" href="#第一章-一个被忽视的两百年规律">第一章 一个被忽视的两百年规律</a></h1>
+<blockquote>
+<p><strong>行业轮动不是战术问题，而是战略问题；结构性行情不是异常现象，而是技术革命导入期的常态。</strong></p>
+</blockquote>
+<p>以当前AI行情与传统板块的极致分化为切入点，引出全书核心命题——行业轮动与结构性行情究竟是短期资金博弈，还是技术革命推动产业变迁的必然映射？</p>
+<h2 id="11-被忽略的长期视角"><a class="header" href="#11-被忽略的长期视角">1.1 被忽略的长期视角</a></h2>
+<h2 id="12-行业轮动的战略本质"><a class="header" href="#12-行业轮动的战略本质">1.2 行业轮动的战略本质</a></h2>
+<h2 id="13-结构性行情的必然性"><a class="header" href="#13-结构性行情的必然性">1.3 结构性行情的必然性</a></h2>
+<h2 id="14-全书的方法论框架"><a class="header" href="#14-全书的方法论框架">1.4 全书的方法论框架</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二章-佩蕾丝与五轮技术周期一个分析框架"><a class="header" href="#第二章-佩蕾丝与五轮技术周期一个分析框架">第二章 佩蕾丝与五轮技术周期：一个分析框架</a></h1>
+<blockquote>
+<p><strong>技术范式的演进速度与金融资本的配置速度之间存在系统性错配，这种错配催生了技术泡沫。</strong></p>
+</blockquote>
+<p>系统介绍卡萝塔·佩蕾丝《技术革命与金融资本》的理论框架。将1771年以来的工业革命划分为五轮技术周期，详解“导入期→转折点→展开期→成熟期“四阶段模型。</p>
+<h2 id="21-佩蕾丝的理论核心"><a class="header" href="#21-佩蕾丝的理论核心">2.1 佩蕾丝的理论核心</a></h2>
+<h2 id="22-五轮技术周期的全景划分"><a class="header" href="#22-五轮技术周期的全景划分">2.2 五轮技术周期的全景划分</a></h2>
+<h2 id="23-四阶段模型详解"><a class="header" href="#23-四阶段模型详解">2.3 四阶段模型详解</a></h2>
+<h2 id="24-技术与金融的系统性错配"><a class="header" href="#24-技术与金融的系统性错配">2.4 技术与金融的系统性错配</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第三章-从纺织机到互联网产业版图的五次重塑"><a class="header" href="#第三章-从纺织机到互联网产业版图的五次重塑">第三章 从纺织机到互联网：产业版图的五次重塑</a></h1>
+<blockquote>
+<p><strong>每一轮技术革命都创造一个新主导产业，同时淘汰一个旧主导产业。</strong></p>
+</blockquote>
+<p>逐轮展开五轮技术革命对全球经济产业结构的重塑过程——纺织机革命、铁路时代、钢铁电力时代、汽车石油时代、互联网时代。通过产业变迁的纵向比较揭示核心规律。</p>
+<h2 id="31-第一次技术革命纺织机的冲击"><a class="header" href="#31-第一次技术革命纺织机的冲击">3.1 第一次技术革命：纺织机的冲击</a></h2>
+<h2 id="32-第二次技术革命铁路的时代"><a class="header" href="#32-第二次技术革命铁路的时代">3.2 第二次技术革命：铁路的时代</a></h2>
+<h2 id="33-第三次技术革命钢铁与电力"><a class="header" href="#33-第三次技术革命钢铁与电力">3.3 第三次技术革命：钢铁与电力</a></h2>
+<h2 id="34-第四次技术革命石油与汽车"><a class="header" href="#34-第四次技术革命石油与汽车">3.4 第四次技术革命：石油与汽车</a></h2>
+<h2 id="35-第五次技术革命信息与互联网"><a class="header" href="#35-第五次技术革命信息与互联网">3.5 第五次技术革命：信息与互联网</a></h2>
+<h2 id="36-产业变迁的纵向规律"><a class="header" href="#36-产业变迁的纵向规律">3.6 产业变迁的纵向规律</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第四章-k型分化的三个维度"><a class="header" href="#第四章-k型分化的三个维度">第四章 K型分化的三个维度</a></h1>
+<blockquote>
+<p><strong>分化在泡沫出清前不会收敛。</strong></p>
+</blockquote>
+<p>系统阐述K型分化在三个维度的同步展开——产业层面新旧经济增速的裂口、资本市场层面新旧产业股价的分化、居民收入层面资本与劳动回报的失衡。</p>
+<h2 id="41-k型分化的定义与表征"><a class="header" href="#41-k型分化的定义与表征">4.1 K型分化的定义与表征</a></h2>
+<h2 id="42-维度一产业层面的新旧裂口"><a class="header" href="#42-维度一产业层面的新旧裂口">4.2 维度一：产业层面的新旧裂口</a></h2>
+<h2 id="43-维度二资本市场层面的股价分化"><a class="header" href="#43-维度二资本市场层面的股价分化">4.3 维度二：资本市场层面的股价分化</a></h2>
+<h2 id="44-维度三收入分配层面的失衡"><a class="header" href="#44-维度三收入分配层面的失衡">4.4 维度三：收入分配层面的失衡</a></h2>
+<h2 id="45-以英国17711846年数据为例"><a class="header" href="#45-以英国17711846年数据为例">4.5 以英国1771—1846年数据为例</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第五章-资本市场的k型分化五轮周期的共同叙事"><a class="header" href="#第五章-资本市场的k型分化五轮周期的共同叙事">第五章 资本市场的K型分化：五轮周期的共同叙事</a></h1>
+<blockquote>
+<p><strong>导入期新兴产业股票大幅跑赢，泡沫破裂后分化收窄甚至反转。</strong></p>
+</blockquote>
+<p>逐轮复盘五轮技术周期中资本市场的K型分化案例——铁路股与非铁路股的急速分化与反转、电气板块的超额收益、电气设备与纺织的巨大差距。</p>
+<h2 id="51-铁路时代的分化与反转18431845"><a class="header" href="#51-铁路时代的分化与反转18431845">5.1 铁路时代的分化与反转（1843—1845）</a></h2>
+<h2 id="52-钢铁电力时代的板块分化1895年后"><a class="header" href="#52-钢铁电力时代的板块分化1895年后">5.2 钢铁电力时代的板块分化（1895年后）</a></h2>
+<h2 id="53-汽车石油时代的极致分化19191929"><a class="header" href="#53-汽车石油时代的极致分化19191929">5.3 汽车石油时代的极致分化（1919—1929）</a></h2>
+<h2 id="54-互联网时代的科技与传统裂口"><a class="header" href="#54-互联网时代的科技与传统裂口">5.4 互联网时代的科技与传统裂口</a></h2>
+<h2 id="55-k型分化的普遍规律"><a class="header" href="#55-k型分化的普遍规律">5.5 K型分化的普遍规律</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第六章-泡沫技术革命的必经一幕"><a class="header" href="#第六章-泡沫技术革命的必经一幕">第六章 泡沫：技术革命的“必经一幕“</a></h1>
+<blockquote>
+<p><strong>技术泡沫并非异常事故，而是技术革命展开的必经环节。</strong></p>
+</blockquote>
+<p>论证技术泡沫的必然性与积极功能——每一轮技术周期均经历金融清算：1845年铁路股崩盘、1929年股市大崩溃、2000年互联网泡沫。泡沫的功能：为新技术募集资本、筛选真正的商业模式、淘汰低效产能。</p>
+<h2 id="61-泡沫为什么不可避免"><a class="header" href="#61-泡沫为什么不可避免">6.1 泡沫为什么不可避免？</a></h2>
+<h2 id="62-三次经典泡沫的复盘"><a class="header" href="#62-三次经典泡沫的复盘">6.2 三次经典泡沫的复盘</a></h2>
+<h2 id="63-泡沫的积极功能"><a class="header" href="#63-泡沫的积极功能">6.3 泡沫的积极功能</a></h2>
+<h2 id="64-必要的恶还是可以避免的错"><a class="header" href="#64-必要的恶还是可以避免的错">6.4 “必要的恶“还是“可以避免的错”？</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第七章-k型分化何时收敛"><a class="header" href="#第七章-k型分化何时收敛">第七章 K型分化何时收敛？</a></h1>
+<blockquote>
+<p><strong>当技术范式成熟、制度框架完善、技术红利从资本端向劳动端扩散时，K型格局才会逐步收窄。</strong></p>
+</blockquote>
+<p>探讨K型分化的收敛条件——历史表明，分化在泡沫破裂和制度重构之前不会自动收敛。分析泡沫破裂后“协同黄金时代“的形成机制。</p>
+<h2 id="71-分化的收敛条件"><a class="header" href="#71-分化的收敛条件">7.1 分化的收敛条件</a></h2>
+<h2 id="72-泡沫破裂后的制度重构"><a class="header" href="#72-泡沫破裂后的制度重构">7.2 泡沫破裂后的制度重构</a></h2>
+<h2 id="73-协同黄金时代的形成机制"><a class="header" href="#73-协同黄金时代的形成机制">7.3 “协同黄金时代“的形成机制</a></h2>
+<h2 id="74-对ai时代的启示"><a class="header" href="#74-对ai时代的启示">7.4 对AI时代的启示</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第八章-集中度一个被误读的指标"><a class="header" href="#第八章-集中度一个被误读的指标">第八章 集中度：一个被误读的指标</a></h1>
+<blockquote>
+<p><strong>市场集中度并非现代异常，而是一个反复出现的结构性模式——通常在牛市中上升、熊市中下降。</strong></p>
+</blockquote>
+<p>反驳“当前集中度畸高“的流行观点。通过对235年美国股市历史的技术性回顾，揭示集中度急剧上升往往是繁荣牛市的标志，而非崩盘的前兆。</p>
+<h2 id="81-集中度畸高论的流行与误区"><a class="header" href="#81-集中度畸高论的流行与误区">8.1 “集中度畸高论“的流行与误区</a></h2>
+<h2 id="82-235年美股集中度的技术性回顾"><a class="header" href="#82-235年美股集中度的技术性回顾">8.2 235年美股集中度的技术性回顾</a></h2>
+<h2 id="83-集中度上升--繁荣标志而非崩盘前兆"><a class="header" href="#83-集中度上升--繁荣标志而非崩盘前兆">8.3 集中度上升 = 繁荣标志，而非崩盘前兆</a></h2>
+<h2 id="84-如何正确使用集中度指标"><a class="header" href="#84-如何正确使用集中度指标">8.4 如何正确使用集中度指标</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第九章-七个集中度周期1790年以来的行业主导权更替"><a class="header" href="#第九章-七个集中度周期1790年以来的行业主导权更替">第九章 七个集中度周期：1790年以来的行业主导权更替</a></h1>
+<blockquote>
+<p><strong>行业轮动本质上是“主导产业权“的交接。</strong></p>
+</blockquote>
+<p>梳理1790年以来的七个显著集中度周期：金融业主导→铁路/交通运输业主导→铁路股超60%总市值→“第一代七巨头“主导三十年→科技股集中度从16%升至32%以上。每个周期都由当时的主导产业驱动。</p>
+<h2 id="91-周期一17901840年金融业主导"><a class="header" href="#91-周期一17901840年金融业主导">9.1 周期一：1790—1840年金融业主导</a></h2>
+<h2 id="92-周期二18401875年交通运输业主导"><a class="header" href="#92-周期二18401875年交通运输业主导">9.2 周期二：1840—1875年交通运输业主导</a></h2>
+<h2 id="93-周期三18681873年铁路股巅峰"><a class="header" href="#93-周期三18681873年铁路股巅峰">9.3 周期三：1868—1873年铁路股巅峰</a></h2>
+<h2 id="94-周期四19291964年第一代七巨头"><a class="header" href="#94-周期四19291964年第一代七巨头">9.4 周期四：1929—1964年第一代七巨头</a></h2>
+<h2 id="95-周期五六七石油金融到科技"><a class="header" href="#95-周期五六七石油金融到科技">9.5 周期五/六/七：石油、金融到科技</a></h2>
+<h2 id="96-集中度周期的统一逻辑"><a class="header" href="#96-集中度周期的统一逻辑">9.6 集中度周期的统一逻辑</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十章-行业构成的两百年之变"><a class="header" href="#第十章-行业构成的两百年之变">第十章 行业构成的两百年之变</a></h1>
+<blockquote>
+<p><strong>交通运输从38%萎缩至2%，信息技术从0%升至12%——两百年的行业兴衰记录了技术革命的全部力量。</strong></p>
+</blockquote>
+<p>以1900年与2018年美股行业市值占比的对比为核心，展示200年行业轮动的终极形态。深入分析每个行业兴衰的背后逻辑：铁路为何“不会过时“却最终让位？金融为何穿越周期？科技为何从无到有成为主导？</p>
+<h2 id="101-1900年的美股一个消失的世界"><a class="header" href="#101-1900年的美股一个消失的世界">10.1 1900年的美股：一个消失的世界</a></h2>
+<h2 id="102-2018年的美股一个全新的版图"><a class="header" href="#102-2018年的美股一个全新的版图">10.2 2018年的美股：一个全新的版图</a></h2>
+<h2 id="103-各行业兴衰的逻辑"><a class="header" href="#103-各行业兴衰的逻辑">10.3 各行业兴衰的逻辑</a></h2>
+<h2 id="104-行业轮动的一百年维度"><a class="header" href="#104-行业轮动的一百年维度">10.4 行业轮动的“一百年维度“</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十一章-集中度周期与行业轮动的共振"><a class="header" href="#第十一章-集中度周期与行业轮动的共振">第十一章 集中度周期与行业轮动的共振</a></h1>
+<blockquote>
+<p><strong>集中度上升期对应“主线行情“，集中度下降期对应“轮动行情“。</strong></p>
+</blockquote>
+<p>建立集中度周期与行业轮动之间的理论联系——集中度上升期资金向少数主导行业集中，行业轮动速度下降；集中度下降期资金分散，行业快速轮动。引入“强弱行业收益差““行业轮动速度指数“等监测指标。</p>
+<h2 id="111-集中度与轮动速度的反向关系"><a class="header" href="#111-集中度与轮动速度的反向关系">11.1 集中度与轮动速度的反向关系</a></h2>
+<h2 id="112-主线行情与轮动行情的切换"><a class="header" href="#112-主线行情与轮动行情的切换">11.2 “主线行情“与“轮动行情“的切换</a></h2>
+<h2 id="113-监测指标体系"><a class="header" href="#113-监测指标体系">11.3 监测指标体系</a></h2>
+<h2 id="114-实战应用框架"><a class="header" href="#114-实战应用框架">11.4 实战应用框架</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十二章-a股行业轮动的历史数据"><a class="header" href="#第十二章-a股行业轮动的历史数据">第十二章 A股行业轮动的历史数据</a></h1>
+<blockquote>
+<p><strong>2012年以来行业轮动策略年化超额收益10%以上，年度最好最差行业收益差常超100个百分点。</strong></p>
+</blockquote>
+<p>系统梳理A股自成立以来的行业轮动历史。呈现关键数据，论证A股行业轮动效应长期有效，且分化程度不亚于甚至超过成熟市场。</p>
+<h2 id="121-a股行业轮动的实证数据"><a class="header" href="#121-a股行业轮动的实证数据">12.1 A股行业轮动的实证数据</a></h2>
+<h2 id="122-年度行业收益的极端分化"><a class="header" href="#122-年度行业收益的极端分化">12.2 年度行业收益的极端分化</a></h2>
+<h2 id="123-行业轮动策略的超额收益"><a class="header" href="#123-行业轮动策略的超额收益">12.3 行业轮动策略的超额收益</a></h2>
+<h2 id="124-与美股历史规律的对比"><a class="header" href="#124-与美股历史规律的对比">12.4 与美股历史规律的对比</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十三章-a股的共识行情四次历史复盘"><a class="header" href="#第十三章-a股的共识行情四次历史复盘">第十三章 A股的“共识行情“：四次历史复盘</a></h1>
+<blockquote>
+<p><strong>每一轮共识行情都有相似的剧本——启动于分歧、加速于共识、终结于过度拥挤。</strong></p>
+</blockquote>
+<p>复盘2010年以来A股的四段共识行情——2013—2015年互联网+行情、2017年核心资产行情、2019—2021年新能源行情、2023年至今的AI算力行情。运用“五大指标“逐一剖析每段共识行情的启动、演进与终结。</p>
+<h2 id="131-共识行情的定义与识别"><a class="header" href="#131-共识行情的定义与识别">13.1 共识行情的定义与识别</a></h2>
+<h2 id="132-第一次共识20132015年互联网"><a class="header" href="#132-第一次共识20132015年互联网">13.2 第一次共识：2013—2015年互联网+</a></h2>
+<h2 id="133-第二次共识2017年核心资产"><a class="header" href="#133-第二次共识2017年核心资产">13.3 第二次共识：2017年核心资产</a></h2>
+<h2 id="134-第三次共识20192021年新能源"><a class="header" href="#134-第三次共识20192021年新能源">13.4 第三次共识：2019—2021年新能源</a></h2>
+<h2 id="135-第四次共识2023年至今ai算力"><a class="header" href="#135-第四次共识2023年至今ai算力">13.5 第四次共识：2023年至今AI算力</a></h2>
+<h2 id="136-共识行情的共同规律"><a class="header" href="#136-共识行情的共同规律">13.6 共识行情的共同规律</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十四章-牛市中的板块轮动规律"><a class="header" href="#第十四章-牛市中的板块轮动规律">第十四章 牛市中的板块轮动规律</a></h1>
+<blockquote>
+<p><strong>牛市前期、中期、后期的领涨行业各有不同——“强者恒强“与“高低切“交替上演。</strong></p>
+</blockquote>
+<p>复盘2005年以来A股6轮牛市，总结三个阶段中领涨行业的特征。揭示“强者恒强“与“高低切“两种轮动模式的适用条件。分析2018年后A股风格轮动规律发生的结构性变化。</p>
+<h2 id="141-a股六轮牛市的复盘"><a class="header" href="#141-a股六轮牛市的复盘">14.1 A股六轮牛市的复盘</a></h2>
+<h2 id="142-牛市三阶段的领涨行业特征"><a class="header" href="#142-牛市三阶段的领涨行业特征">14.2 牛市三阶段的领涨行业特征</a></h2>
+<h2 id="143-强者恒强的条件"><a class="header" href="#143-强者恒强的条件">14.3 “强者恒强“的条件</a></h2>
+<h2 id="144-高低切的触发机制"><a class="header" href="#144-高低切的触发机制">14.4 “高低切“的触发机制</a></h2>
+<h2 id="145-2018年后的结构性变化"><a class="header" href="#145-2018年后的结构性变化">14.5 2018年后的结构性变化</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十五章-a股的行业轮动监测体系"><a class="header" href="#第十五章-a股的行业轮动监测体系">第十五章 A股的行业轮动监测体系</a></h1>
+<blockquote>
+<p><strong>构建一套可操作的行业轮动监测仪表盘。</strong></p>
+</blockquote>
+<p>包括：基于申万一级行业的轮动指数构建方法、行业轮动速度的量化测算、五强交易集中度的阈值设定、行业估值溢价的横向与纵向比较。</p>
+<h2 id="151-轮动指数的构建"><a class="header" href="#151-轮动指数的构建">15.1 轮动指数的构建</a></h2>
+<h2 id="152-轮动速度的量化测算"><a class="header" href="#152-轮动速度的量化测算">15.2 轮动速度的量化测算</a></h2>
+<h2 id="153-五强交易集中度的阈值"><a class="header" href="#153-五强交易集中度的阈值">15.3 五强交易集中度的阈值</a></h2>
+<h2 id="154-估值溢价的比较框架"><a class="header" href="#154-估值溢价的比较框架">15.4 估值溢价的比较框架</a></h2>
+<h2 id="155-实战中的指标运用指南"><a class="header" href="#155-实战中的指标运用指南">15.5 实战中的指标运用指南</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十六章-a股的特殊性政策投资者结构与制度环境"><a class="header" href="#第十六章-a股的特殊性政策投资者结构与制度环境">第十六章 A股的特殊性：政策、投资者结构与制度环境</a></h1>
+<blockquote>
+<p><strong>在普适性历史规律的基础上，识别A股的独特变量。</strong></p>
+</blockquote>
+<p>分析A股行业轮动与美股历史规律的异同——产业政策的引导作用、散户主导的市场结构对轮动速度的影响、注册制改革对行业市值结构的重塑。</p>
+<h2 id="161-与美股历史规律的异同"><a class="header" href="#161-与美股历史规律的异同">16.1 与美股历史规律的异同</a></h2>
+<h2 id="162-产业政策的引导与干扰"><a class="header" href="#162-产业政策的引导与干扰">16.2 产业政策的引导与干扰</a></h2>
+<h2 id="163-散户主导的市场结构"><a class="header" href="#163-散户主导的市场结构">16.3 散户主导的市场结构</a></h2>
+<h2 id="164-注册制改革的影响"><a class="header" href="#164-注册制改革的影响">16.4 注册制改革的影响</a></h2>
+<h2 id="165-a股的独特变量总结"><a class="header" href="#165-a股的独特变量总结">16.5 A股的独特变量总结</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十七章-我们处于什么位置第六轮技术革命ai的导入期"><a class="header" href="#第十七章-我们处于什么位置第六轮技术革命ai的导入期">第十七章 我们处于什么位置？——第六轮技术革命（AI）的导入期</a></h1>
+<blockquote>
+<p><strong>当前正处于第五轮康波周期的尾声与第六轮（AI）的起点。“硅基向上、碳基向下“正是导入期K型分化的历史重演。</strong></p>
+</blockquote>
+<p>论证AI技术当前所处的阶段——越过商业化临界点、渗透率向关键阈值推进、资本市场已出现典型的K型分化。</p>
+<h2 id="171-康波周期中的位置"><a class="header" href="#171-康波周期中的位置">17.1 康波周期中的位置</a></h2>
+<h2 id="172-ai越过商业化临界点的证据"><a class="header" href="#172-ai越过商业化临界点的证据">17.2 AI越过商业化临界点的证据</a></h2>
+<h2 id="173-k型分化的重演"><a class="header" href="#173-k型分化的重演">17.3 K型分化的重演</a></h2>
+<h2 id="174-导入期的投资含义"><a class="header" href="#174-导入期的投资含义">17.4 导入期的投资含义</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十八章-卖铲子逻辑的200年验证"><a class="header" href="#第十八章-卖铲子逻辑的200年验证">第十八章 “卖铲子“逻辑的200年验证</a></h1>
+<blockquote>
+<p><strong>每一轮技术浪潮中，最先受益且涨幅最大的往往是基础设施环节。</strong></p>
+</blockquote>
+<p>从铁路时代的铁轨与机车制造商、互联网时代的光缆与芯片厂商，到当前的算力基建与光模块——“卖铲子“环节在导入期的超额收益具有历史持续性。</p>
+<h2 id="181-什么是卖铲子逻辑"><a class="header" href="#181-什么是卖铲子逻辑">18.1 什么是“卖铲子“逻辑？</a></h2>
+<h2 id="182-五轮技术革命的铲子复盘"><a class="header" href="#182-五轮技术革命的铲子复盘">18.2 五轮技术革命的“铲子“复盘</a></h2>
+<h2 id="183-铲子超额收益的持续性"><a class="header" href="#183-铲子超额收益的持续性">18.3 “铲子“超额收益的持续性</a></h2>
+<h2 id="184-何时应该警惕铲子过热"><a class="header" href="#184-何时应该警惕铲子过热">18.4 何时应该警惕“铲子过热“？</a></h2>
+<h2 id="185-ai时代的铲子在哪里"><a class="header" href="#185-ai时代的铲子在哪里">18.5 AI时代的“铲子“在哪里？</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第十九章-历史的警示泡沫终将破裂然后呢"><a class="header" href="#第十九章-历史的警示泡沫终将破裂然后呢">第十九章 历史的警示：泡沫终将破裂，然后呢？</a></h1>
+<blockquote>
+<p><strong>每一轮泡沫破裂后都迎来了真正的“协同黄金时代“——关键在于识别哪些技术真正改变了世界。</strong></p>
+</blockquote>
+<p>复盘1845年铁路股崩盘、1929年股市崩溃、2000年互联网泡沫的触发条件与过程。讨论当前AI行情的泡沫特征与安全边际。更重要的是回答“泡沫破裂后怎么办“。</p>
+<h2 id="191-三次经典泡沫的触发机制"><a class="header" href="#191-三次经典泡沫的触发机制">19.1 三次经典泡沫的触发机制</a></h2>
+<h2 id="192-当前ai行情的泡沫特征"><a class="header" href="#192-当前ai行情的泡沫特征">19.2 当前AI行情的泡沫特征</a></h2>
+<h2 id="193-泡沫破裂后的黄金时代"><a class="header" href="#193-泡沫破裂后的黄金时代">19.3 泡沫破裂后的“黄金时代“</a></h2>
+<h2 id="194-穿越泡沫的策略"><a class="header" href="#194-穿越泡沫的策略">19.4 穿越泡沫的策略</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="第二十章-结语在长周期中理解短波动"><a class="header" href="#第二十章-结语在长周期中理解短波动">第二十章 结语：在长周期中理解短波动</a></h1>
+<blockquote>
+<p><strong>从“选股“到“选时代“、从“逃顶抄底“到“理解周期“、从“规避波动“到“拥抱分化“——投资者需要的三个认知升级。</strong></p>
+</blockquote>
+<p>总结全书的核心理念——行业轮动与结构性行情不是市场先生的随机漫步，而是技术革命推动产业变迁在资本市场的必然映射。</p>
+<h2 id="201-认知升级一从选股到选时代"><a class="header" href="#201-认知升级一从选股到选时代">20.1 认知升级一：从“选股“到“选时代“</a></h2>
+<h2 id="202-认知升级二从逃顶抄底到理解周期"><a class="header" href="#202-认知升级二从逃顶抄底到理解周期">20.2 认知升级二：从“逃顶抄底“到“理解周期“</a></h2>
+<h2 id="203-认知升级三从规避波动到拥抱分化"><a class="header" href="#203-认知升级三从规避波动到拥抱分化">20.3 认知升级三：从“规避波动“到“拥抱分化“</a></h2>
+<h2 id="204-以200年历史为镜"><a class="header" href="#204-以200年历史为镜">20.4 以200年历史为镜</a></h2>
+<h2 id="205-结语"><a class="header" href="#205-结语">20.5 结语</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录一五轮技术革命大事年表17712026"><a class="header" href="#附录一五轮技术革命大事年表17712026">附录一：五轮技术革命大事年表（1771—2026）</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>技术革命</th><th>时间</th><th>标志性技术</th><th>代表产业</th><th>金融泡沫</th></tr>
+</thead>
+<tbody>
+<tr><td>第一次</td><td>1771年起</td><td>棉纺织机械化、水力</td><td>纺织业、煤炭业</td><td>1793—1797年运河狂热</td></tr>
+<tr><td>第二次</td><td>1829年起</td><td>蒸汽机、铁路、铁</td><td>铁路、运输业</td><td>1845年铁路股崩盘</td></tr>
+<tr><td>第三次</td><td>1875年起</td><td>酸性转炉炼钢、电力</td><td>钢铁、电力、重化工</td><td>1893—1907年投资热</td></tr>
+<tr><td>第四次</td><td>1908年起</td><td>内燃机、流水线</td><td>汽车、石油、化工</td><td>1929年股市大崩溃</td></tr>
+<tr><td>第五次</td><td>1971年起</td><td>微处理器、互联网</td><td>信息技术、通信</td><td>2000年互联网泡沫</td></tr>
+<tr><td>第六次</td><td>2022年（推测）</td><td>大语言模型、生成式AI</td><td>AI算力、大模型</td><td>待展开</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>本表基于佩蕾丝（2002）框架整理，第六轮为作者推测。</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录二美股行业市值占比变迁数据19002020"><a class="header" href="#附录二美股行业市值占比变迁数据19002020">附录二：美股行业市值占比变迁数据（1900—2020）</a></h1>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>行业</th><th>1900年占比</th><th>2018年占比</th><th>变化（百分点）</th></tr>
+</thead>
+<tbody>
+<tr><td>交通运输（铁路为主）</td><td>38%</td><td>2%</td><td>-36</td></tr>
+<tr><td>金融</td><td>15%</td><td>16%</td><td>+1</td></tr>
+<tr><td>信息技术</td><td>0%</td><td>12%</td><td>+12</td></tr>
+<tr><td>通信</td><td>5%</td><td>14%</td><td>+9</td></tr>
+<tr><td>医疗健康</td><td>0%</td><td>9%</td><td>+9</td></tr>
+<tr><td>消费</td><td>—</td><td>8%</td><td>—</td></tr>
+<tr><td>能源</td><td>—</td><td>6%</td><td>—</td></tr>
+<tr><td>制造业</td><td>—</td><td>10%</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>数据来源：CRSP数据库、Bloomberg、Wind综合整理。1900年与2018年为代表性年份，行业分类标准随时代有所调整。</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录三a股行业轮动关键数据汇编20052026"><a class="header" href="#附录三a股行业轮动关键数据汇编20052026">附录三：A股行业轮动关键数据汇编（2005—2026）</a></h1>
+<h2 id="年度行业收益极差前五名与后五名"><a class="header" href="#年度行业收益极差前五名与后五名">年度行业收益极差（前五名与后五名）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>年份</th><th>涨幅第一行业</th><th>涨幅</th><th>跌幅第一行业</th><th>跌幅</th><th>极差</th></tr>
+</thead>
+<tbody>
+<tr><td>2013</td><td>传媒</td><td>+108%</td><td>采掘</td><td>-31%</td><td>139pp</td></tr>
+<tr><td>2015</td><td>计算机</td><td>+126%</td><td>银行</td><td>-7%</td><td>133pp</td></tr>
+<tr><td>2017</td><td>食品饮料</td><td>+65%</td><td>国防军工</td><td>-18%</td><td>83pp</td></tr>
+<tr><td>2020</td><td>电气设备</td><td>+94%</td><td>房地产</td><td>-11%</td><td>105pp</td></tr>
+<tr><td>2021</td><td>电力设备</td><td>+81%</td><td>家用电器</td><td>-24%</td><td>105pp</td></tr>
+<tr><td>2023</td><td>通信</td><td>+45%</td><td>商贸零售</td><td>-32%</td><td>77pp</td></tr>
+<tr><td>2024</td><td>通信</td><td>+68%</td><td>医药生物</td><td>-15%</td><td>83pp</td></tr>
+<tr><td>2025</td><td>有色金属</td><td>+94.7%</td><td>食品饮料</td><td>-9.69%</td><td>104pp</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="行业轮动策略年化收益20122025"><a class="header" href="#行业轮动策略年化收益20122025">行业轮动策略年化收益（2012—2025）</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>策略</th><th>年化收益</th><th>年化超额收益</th><th>最大回撤</th></tr>
+</thead>
+<tbody>
+<tr><td>申万行业动量策略（月度调仓）</td><td>约18%</td><td>10%+</td><td>—</td></tr>
+<tr><td>申万行业反转策略（季度调仓）</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>五强集中持仓策略</td><td>—</td><td>—</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>数据来源：Wind、申万宏源研究、作者测算。策略收益为回测结果，不代表未来表现。</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录四行业轮动监测指标计算手册"><a class="header" href="#附录四行业轮动监测指标计算手册">附录四：行业轮动监测指标计算手册</a></h1>
+<h2 id="一行业轮动速度指数"><a class="header" href="#一行业轮动速度指数">一、行业轮动速度指数</a></h2>
+<p><strong>计算方法</strong>：计算最近N个交易日（通常N=20或60）申万一级行业（共31个）日收益率的截面标准差。该标准差越大说明行业间收益的分化越大。</p>
+<p><strong>实战含义</strong>：轮动速度指数上行→行业间分化加剧→适合“强者恒强“策略；轮动速度指数下行→行业间趋于同步→适合分散配置或“高低切“策略。</p>
+<h2 id="二五强交易集中度"><a class="header" href="#二五强交易集中度">二、五强交易集中度</a></h2>
+<p><strong>计算方法</strong>：当日成交金额排名前五的行业成交额 / 全市场成交额。</p>
+<p><strong>阈值设定</strong>：</p>
+<ul>
+<li>
+<blockquote>
+<p>40%：过度集中，警惕拥挤交易风险</p>
+</blockquote>
+</li>
+<li>30-40%：正常集中，主线行情特征</li>
+<li>&lt;25%：分散阶段，无明确主线</li>
+</ul>
+<h2 id="三强弱行业收益差"><a class="header" href="#三强弱行业收益差">三、强弱行业收益差</a></h2>
+<p><strong>计算方法</strong>：过去60个交易日涨幅前五行业平均收益 - 跌幅前五行业平均收益。</p>
+<p><strong>实战含义</strong>：收益差扩大→结构性行情强化；收益差收窄→轮动加速或风格切换。</p>
+<h2 id="四行业估值溢价横向"><a class="header" href="#四行业估值溢价横向">四、行业估值溢价（横向）</a></h2>
+<p><strong>计算方法</strong>：目标行业PE（TTM）/ 全市场PE中位数 - 1。</p>
+<h2 id="五行业估值溢价纵向"><a class="header" href="#五行业估值溢价纵向">五、行业估值溢价（纵向）</a></h2>
+<p><strong>计算方法</strong>：目标行业当前PE（TTM）/ 自身过去5年PE中位数 - 1。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="附录五延伸阅读书目"><a class="header" href="#附录五延伸阅读书目">附录五：延伸阅读书目</a></h1>
+<h2 id="一技术革命与经济周期"><a class="header" href="#一技术革命与经济周期">一、技术革命与经济周期</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>书名</th><th>作者</th><th>推荐理由</th></tr>
+</thead>
+<tbody>
+<tr><td>《技术革命与金融资本》</td><td>卡萝塔·佩蕾丝</td><td>本书核心理论来源，必读</td></tr>
+<tr><td>《涛动周期论》</td><td>周金涛</td><td>“周期天王“代表作</td></tr>
+<tr><td>《繁荣与萧条》</td><td>欧文·费雪</td><td>债务-通缩理论经典</td></tr>
+<tr><td>《逃不开的经济周期》</td><td>拉斯·特维德</td><td>经济周期史通俗读本</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="二资本市场与行业轮动"><a class="header" href="#二资本市场与行业轮动">二、资本市场与行业轮动</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>书名</th><th>作者</th></tr>
+</thead>
+<tbody>
+<tr><td>《漫步华尔街》</td><td>伯顿·马尔基尔</td></tr>
+<tr><td>《投资中最重要的事》</td><td>霍华德·马克斯</td></tr>
+<tr><td>《周期》</td><td>霍华德·马克斯</td></tr>
+<tr><td>《非理性繁荣》</td><td>罗伯特·希勒</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="三技术史与经济史"><a class="header" href="#三技术史与经济史">三、技术史与经济史</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>书名</th><th>作者</th></tr>
+</thead>
+<tbody>
+<tr><td>《浪潮之巅》</td><td>吴军</td></tr>
+<tr><td>《创新者的窘境》</td><td>克莱顿·克里斯坦森</td></tr>
+<tr><td>《美国经济增长的起落》</td><td>罗伯特·戈登</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="四a股行业轮动研究"><a class="header" href="#四a股行业轮动研究">四、A股行业轮动研究</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>来源</th></tr>
+</thead>
+<tbody>
+<tr><td>申万宏源行业轮动系列报告</td></tr>
+<tr><td>中信建投策略研究</td></tr>
+<tr><td>天风证券行业比较框架</td></tr>
+</tbody>
+</table>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
