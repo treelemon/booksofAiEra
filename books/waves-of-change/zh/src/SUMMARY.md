@@ -41,9 +41,10 @@
 # 附录
 
 - [附录一：五轮技术革命大事年表（1771—2026）](appendices/appendix-a.md)
-- [附录二：美股行业市值占比变迁数据（1900—2020）](appendices/appendix-b.md)
+- [附录二：中美行业市值占比变迁数据（1900—2026）](appendices/appendix-b.md)
 - [附录三：A股行业轮动关键数据汇编（2005—2026）](appendices/appendix-c.md)
 - [附录四：行业轮动监测指标计算手册](appendices/appendix-d.md)
 - [附录五：延伸阅读书目](appendices/appendix-e.md)
+- [附录六：专业术语解释](appendices/appendix-f.md)
 
 [结语：在长周期中理解短波动](conclusion.md)
