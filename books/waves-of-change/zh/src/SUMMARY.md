@@ -45,3 +45,5 @@
 - [附录三：A股行业轮动关键数据汇编（2005—2026）](appendices/appendix-c.md)
 - [附录四：行业轮动监测指标计算手册](appendices/appendix-d.md)
 - [附录五：延伸阅读书目](appendices/appendix-e.md)
+
+[结语：在长周期中理解短波动](conclusion.md)
