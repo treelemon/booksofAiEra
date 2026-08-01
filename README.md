@@ -22,6 +22,7 @@ A collection of living field guides to the AI era — continuously updated in En
 | 三驾马车：财富管理、科技金融与跨境金融——银行业未来确定性机会 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/three-carriages/zh/ |
 | 周期之眼：信息产业与AI的演进逻辑与投资框架 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/cycles-of-ai-era/zh/ |
 | 封锁与突围：中国芯片产业的血色长征 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/silicon-blockade/zh/ |
+| 浪潮之轮：技术革命、行业轮动与结构性行情的两百年 | 🇨🇳 中文 | https://treelemon.github.io/booksofAiEra/waves-of-change/zh/ |
 
 ---
 
@@ -43,6 +44,10 @@ booksofAiEra/
 │       ├── book.toml
 │       └── src/
 ├── silicon-blockade/         # Book: 封锁与突围（中国芯片产业的血色长征）
+│   └── zh/
+│       ├── book.toml
+│       └── src/
+├── waves-of-change/          # Book: 浪潮之轮（技术革命、行业轮动与结构性行情）
 │   └── zh/
 │       ├── book.toml
 │       └── src/

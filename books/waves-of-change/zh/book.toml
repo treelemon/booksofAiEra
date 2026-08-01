@@ -1,0 +1,15 @@
+[book]
+authors = ["treelemon"]
+language = "zh"
+src = "src"
+title = "浪潮之轮：技术革命、行业轮动与结构性行情的两百年"
+description = "一部关于产业变迁与资本市场共振的历史逻辑与投资启示录。横跨1771年至今255年历史跨度，以技术革命驱动产业变迁、产业变迁映射为行业轮动、行业轮动呈现为结构性行情为核心逻辑链条。"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/treelemon/booksofAiEra"
+edit-url-template = "https://github.com/treelemon/booksofAiEra/edit/main/books/waves-of-change/zh/{path}"
+site-url = "/booksofAiEra/books/waves-of-change/zh/"
+copyright = "© 2026 treelemon. 保留所有权利。商业用途需获授权。"
