@@ -214,7 +214,7 @@
 - [Chancellor《魔鬼拿走了最聪明的人》](https://www.penguinrandomhouse.com/books/291328/devil-take-the-hindmost-by-edward-chancellor/)——铁路狂热的经典数据
 - [Gayer, Rostow & Schwartz《英国经济的增长与波动1790—1850》](https://www.amazon.com/Growth-Fluctuation-British-Economy-1790-1850/dp/006492275X)——铁路泡沫前后的英国股票价格数据
 - [Cowles Commission美国股票价格历史数据](https://www.cowles.yale.edu/)——1895—1929年美国各行业板块股价的原始数据
-- [佩蕾丝《技术革命与金融资本》](https://www.carlotaperez.org)——"导入期→转折点→展开期"的三阶段框架
+- [佩蕾丝《技术革命与金融资本》](https://www.carlotaperez.org)——"导入期→狂热泡沫期→转折点→展开期"的四阶段框架
 - [纳斯达克历史指数](https://www.nasdaq.com/market-activity/index/comp/historical)——1995—2002年互联网泡沫的分化数据
 - [SEC EDGAR数据库](https://www.sec.gov/edgar)——各互联网公司1999—2001年财务报表的官方来源
 - [Shiller《非理性繁荣》](https://press.princeton.edu/books/paperback/9780691173122/irrational-exuberance)——"叙事经济学"和泡沫心理学的经典论述
